@@ -6,44 +6,44 @@
     <clipPath id="lens"><circle cx="690" cy="250" r="94"/></clipPath>
   </defs>
   <text x="40" y="44" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#222222">A flight feather and its interlocking barbs</text>
-  <path d="M150 257 C 260 221, 460 213, 562 258 L150 258 Z" fill="#dde6ec" stroke="#222222" stroke-width="1.5"/>
-  <path d="M150 263 C 230 362, 470 352, 562 262 L150 262 Z" fill="#dde6ec" stroke="#222222" stroke-width="1.5"/>
-  <g clip-path="url(#vo)" stroke="#7d8b95" stroke-width="1">
+  <path d="M150 257 C 260 221, 460 213, 562 258 L150 258 Z" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="1.5"/>
+  <path d="M150 263 C 230 362, 470 352, 562 262 L150 262 Z" fill="#C4E3C9" stroke="#2F7D4F" stroke-width="1.5"/>
+  <g clip-path="url(#vo)" stroke="#2E6DA4" stroke-opacity="0.55" stroke-width="1">
     <line x1="170" y1="258" x2="200" y2="200"/><line x1="200" y1="258" x2="230" y2="200"/><line x1="230" y1="258" x2="260" y2="200"/><line x1="260" y1="258" x2="290" y2="200"/><line x1="290" y1="258" x2="320" y2="200"/><line x1="320" y1="258" x2="350" y2="200"/><line x1="350" y1="258" x2="380" y2="200"/><line x1="380" y1="258" x2="410" y2="200"/><line x1="410" y1="258" x2="440" y2="200"/><line x1="440" y1="258" x2="470" y2="200"/><line x1="470" y1="258" x2="500" y2="200"/><line x1="500" y1="258" x2="530" y2="200"/>
   </g>
-  <g clip-path="url(#vi)" stroke="#7d8b95" stroke-width="1">
+  <g clip-path="url(#vi)" stroke="#2F7D4F" stroke-opacity="0.55" stroke-width="1">
     <line x1="170" y1="262" x2="230" y2="370"/><line x1="200" y1="262" x2="260" y2="370"/><line x1="230" y1="262" x2="290" y2="370"/><line x1="260" y1="262" x2="320" y2="370"/><line x1="290" y1="262" x2="350" y2="370"/><line x1="320" y1="262" x2="380" y2="370"/><line x1="350" y1="262" x2="410" y2="370"/><line x1="380" y1="262" x2="440" y2="370"/><line x1="410" y1="262" x2="470" y2="370"/><line x1="440" y1="262" x2="500" y2="370"/><line x1="470" y1="262" x2="530" y2="370"/><line x1="500" y1="262" x2="560" y2="370"/>
   </g>
-  <line x1="150" y1="260" x2="564" y2="260" stroke="#222222" stroke-width="3"/>
-  <line x1="62" y1="260" x2="150" y2="260" stroke="#222222" stroke-width="6" stroke-linecap="round"/>
+  <line x1="150" y1="260" x2="564" y2="260" stroke="#A0781A" stroke-width="3"/>
+  <line x1="62" y1="260" x2="150" y2="260" stroke="#A0781A" stroke-width="6" stroke-linecap="round"/>
   <circle cx="455" cy="300" r="9" fill="none" stroke="#222222" stroke-width="1.5"/>
   <line x1="463" y1="296" x2="598" y2="262" stroke="#222222" stroke-width="1" stroke-dasharray="4 3"/>
   <circle cx="690" cy="250" r="94" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
-  <g clip-path="url(#lens)" stroke="#222222" fill="none">
-    <line x1="590" y1="205" x2="790" y2="205" stroke-width="4"/>
-    <line x1="590" y1="298" x2="790" y2="298" stroke-width="4"/>
-    <g stroke-width="1.5">
+  <g clip-path="url(#lens)" fill="none">
+    <line x1="590" y1="205" x2="790" y2="205" stroke="#444444" stroke-width="4"/>
+    <line x1="590" y1="298" x2="790" y2="298" stroke="#444444" stroke-width="4"/>
+    <g stroke="#C8691C" stroke-width="1.8">
       <path d="M610 207 L630 248 l4 -3"/><path d="M630 207 L650 248 l4 -3"/><path d="M650 207 L670 248 l4 -3"/><path d="M670 207 L690 248 l4 -3"/><path d="M690 207 L710 248 l4 -3"/><path d="M710 207 L730 248 l4 -3"/><path d="M730 207 L750 248 l4 -3"/><path d="M750 207 L770 248 l4 -3"/>
     </g>
-    <g stroke-width="1.5" stroke="#5f7d92">
+    <g stroke="#6B4FA0" stroke-width="1.8">
       <path d="M600 296 L640 252 M620 296 L660 252 M640 296 L680 252 M660 296 L700 252 M680 296 L720 252 M700 296 L740 252 M720 296 L760 252 M740 296 L780 252"/>
     </g>
   </g>
-  <g font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#222222">
-    <text x="40" y="330">Calamus (quill)</text>
-    <line x1="92" y1="315" x2="100" y2="266" stroke="#222222"/>
-    <text x="170" y="150">Outer vane: narrow, leads into the airflow</text>
-    <line x1="290" y1="156" x2="320" y2="232" stroke="#222222"/>
-    <text x="400" y="185">Rachis (shaft)</text>
-    <line x1="440" y1="191" x2="430" y2="256" stroke="#222222"/>
-    <text x="150" y="420">Inner vane: wide, trailing edge</text>
-    <line x1="250" y1="404" x2="300" y2="330" stroke="#222222"/>
-    <text x="410" y="420">Barbs branch from the rachis</text>
+  <g font-family="Helvetica, Arial, sans-serif" font-size="15">
+    <text x="40" y="330" fill="#7F5F14">Calamus (quill)</text>
+    <line x1="92" y1="315" x2="100" y2="266" stroke="#7F5F14"/>
+    <text x="170" y="150" fill="#2E6DA4">Outer vane: narrow, leads into the airflow</text>
+    <line x1="290" y1="156" x2="320" y2="232" stroke="#2E6DA4"/>
+    <text x="400" y="185" fill="#7F5F14">Rachis (shaft)</text>
+    <line x1="440" y1="191" x2="430" y2="256" stroke="#7F5F14"/>
+    <text x="150" y="420" fill="#2F7D4F">Inner vane: wide, trailing edge</text>
+    <line x1="250" y1="404" x2="300" y2="330" stroke="#2F7D4F"/>
+    <text x="410" y="420" fill="#222222">Barbs branch from the rachis</text>
     <line x1="470" y1="404" x2="440" y2="345" stroke="#222222"/>
-    <text x="690" y="136" text-anchor="middle">Magnified view</text>
-    <text x="600" y="198" font-size="14" text-anchor="end">Barb</text>
-    <text x="690" y="368" text-anchor="middle" font-size="14">Hooked barbules (above) catch</text>
-    <text x="690" y="386" text-anchor="middle" font-size="14">grooved barbules (below)</text>
-    <text x="690" y="404" text-anchor="middle" font-size="14">of the next barb, like a zipper</text>
+    <text x="690" y="136" text-anchor="middle" fill="#222222">Magnified view</text>
+    <text x="600" y="198" font-size="14" text-anchor="end" fill="#444444">Barb</text>
+    <text x="690" y="368" text-anchor="middle" font-size="14" fill="#C8691C">Hooked barbules (orange) catch</text>
+    <text x="690" y="386" text-anchor="middle" font-size="14" fill="#6B4FA0">grooved barbules (purple)</text>
+    <text x="690" y="404" text-anchor="middle" font-size="14" fill="#222222">of the next barb, like a zipper</text>
   </g>
 </svg>

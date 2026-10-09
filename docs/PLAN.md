@@ -73,7 +73,34 @@ Course  (code, title, catalog description, prerequisites, objectives, est. hours
 | Primary sources | Real expertise lives there | Homework reading |
 | Observation / lab | Learning that leaves the screen | Challenge prompts that send you outside (birding, sky diary) |
 
-## 5. What's built now (prototype v0.1)
+## 5. Accuracy system
+
+Accuracy is the first requirement. A learner relies on every sentence.
+
+1. **Writing rules.** Every prompt tells Claude to state only well-established facts. It must never invent statistics, studies, quotes, dates or sources, should round or omit figures it is unsure of, and should separate consensus from open debate.
+2. **Fact-check pass on every chapter.** After writing, a second pass on Claude's most capable model checks every claim, figure label, slide, explanation and citation. It returns exact text spans and their corrections, which are applied automatically.
+3. **Blind answer-key check.** Every multiple-choice question (practice, quizzes, final) is re-solved without the key. Any disagreement goes to a third pass that decides the correct answer, or rewrites the question if it has two defensible answers.
+4. **Citation screening.** Readings judged likely invented are removed, and uncertain ones are labeled "Unverified." Every reading links to WorldCat or Google Scholar so you can confirm it.
+5. **Fact-check report** at the top of every chapter: the date, the answer-key agreement, and every change before and after, with the reason.
+6. **Learner error reports.** "Report an error" under each section. Dr. Professor checks the report, fixes the text if the report is right (or explains if it isn't), and logs the change in the report.
+7. **The seed chapter** (ORN 101 Ch. 1) was checked by an independent agent against published sources. It found 1 factual error and 23 imprecise wordings, all corrected; 16/16 answer keys were confirmed.
+
+**Limit:** the in-app fact-check uses Claude's own knowledge; it cannot look anything up. The standalone app (v1.0) adds web search and citation lookups (Crossref, Open Library) to the fact-check.
+
+## 6. Visual design
+
+- **College textbook, in color.** Each course has a subject color carried through the course cover, the chapter opener (large chapter number), key terms in the text, slide headers and figure numbers.
+- **Color-coded boxes,** the same in every course:
+  - Objectives (subject color)
+  - Key terms (blue)
+  - Worked example (green)
+  - Practice (amber)
+  - Common misconception, Myth vs. Fact (red)
+  - Fact-check (purple)
+- **Figures are full-color illustrations** where color carries meaning: parts colored by region, labels matching their parts, and the field's standard colors where they exist (ICS colors for geologic periods).
+- Works in light and dark mode and at phone width.
+
+## 7. What's built now (prototype v0.2)
 
 `app/dr-professor.html` is a single-page app published as a private Claude artifact. Courses are written live by Claude on the viewer's own account through the artifact `sample` capability.
 
@@ -90,7 +117,7 @@ Course  (code, title, catalog description, prerequisites, objectives, est. hours
 
 | Code | Course | Level | State |
 |---|---|---|---|
-| ORN 101 | Birds: Anatomy, Behavior, and Field Identification | Beginner | Syllabus + Chapter 1 fully written by hand as the quality bar (3 figures, 12 practice problems, 9 slides, 8-question quiz, 2 challenges) |
+| ORN 101 | Birds: Anatomy, Behavior, and Field Identification | Beginner | Syllabus + Chapter 1 written by hand as the quality bar and independently fact-checked (3 color figures, 4 misconception boxes, 12 practice problems, 9 slides, 8-question quiz, 2 challenges) |
 | GDS 201 | Game Design: Systems, Mechanics, and Player Experience | Intermediate | Syllabus; chapters generate on open |
 | AST 050 | Outer Space from the Ground Up | Noob | Syllabus (short, 5 chapters) |
 | ENR 301 | Energy Systems: Conversion, Storage, and the Electric Grid | Advanced | Syllabus |
@@ -102,7 +129,7 @@ Course  (code, title, catalog description, prerequisites, objectives, est. hours
 - **Grading** is by the model against a rubric. It's useful feedback but not proctored.
 - **The final exam is open-book** and can be retaken. The certificate is a record of completion, not an accredited credential.
 
-## 6. Roadmap
+## 8. Roadmap
 
 **v0.2: make it feel like a course**
 - Placement test → level recommendation.
@@ -127,7 +154,7 @@ Course  (code, title, catalog description, prerequisites, objectives, est. hours
 - Audio lessons for birding by ear.
 - Instructor mode: edit and lock a course, then publish it to a class.
 
-## 7. Open questions for John and Jack
+## 9. Open questions for John and Jack
 
 1. **Who is it for first:** you two, or the public? That decides whether the artifact is enough or v1.0 is needed.
 2. **Certificate weight:** should it require full coursework (no credit by exam)? Should the final be timed?
@@ -135,7 +162,7 @@ Course  (code, title, catalog description, prerequisites, objectives, est. hours
 4. **Media priority:** real photos and video (needs the v1.0 backend) or generated diagrams and slide videos first?
 5. **Cost:** generation runs on each viewer's Claude account in the prototype. A public app would need API billing.
 
-## 8. How to test the prototype
+## 10. How to test the prototype
 
 1. Open the artifact link and go to **ORN 101 → Chapter 1** to see the target quality.
 2. Open **GDS 201 → Chapter 1** and press **Write chapter 1** to watch it generate live (one to three minutes).
