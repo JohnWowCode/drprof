@@ -1,0 +1,222 @@
+{
+  "n": 1,
+  "figureFiles": [
+    { "section": "1.1", "file": "fig-1-1-feather.svg", "caption": "A flight feather has a narrow outer vane and a wide inner vane on either side of the rachis. In the magnified view, the hooked barbules of one barb catch the grooved barbules of the next, which holds the vane together as a single surface." },
+    { "section": "1.2", "file": "fig-1-2-skeleton.svg", "caption": "The main fused bones (furcula, carpometacarpus, synsacrum, pygostyle) and the keeled sternum. The joint most people call a bird’s backward-bending knee is its ankle; the real knee sits close to the body." },
+    { "section": "1.3", "file": "fig-1-3-timeline.svg", "caption": "Archaeopteryx lived about 150 million years ago, and feathered dinosaurs such as Anchiornis are even older. Only one branch of dinosaurs, the birds, survived the asteroid impact 66 million years ago. The gap between the impact and today is shorter than the span of the Jurassic alone." }
+  ],
+  "lesson": {
+    "overview": "This chapter answers the question the rest of the course depends on: what is a bird? You will see that one trait, the feather, sets birds apart from every other living animal, and that much of a bird’s skeleton is built around flight. You will also learn where birds come from (they are the one surviving branch of the dinosaurs) and how scientists name and organize the roughly 11,000 species alive today. By the end you will have the vocabulary used in every later chapter, from flight in Chapter 2 to field identification in Chapter 4.",
+    "objectives": [
+      "Name the parts of a feather and explain how barbs and barbules hold a vane together.",
+      "Identify the fused bones and the keeled sternum in a bird skeleton and explain what each does.",
+      "Explain why birds are classified as living dinosaurs, using Archaeopteryx and feathered dinosaurs as evidence.",
+      "Read a scientific name and place a species in the hierarchy from class to species."
+    ],
+    "sections": [
+      {
+        "n": "1.1",
+        "title": "Feathers: the defining trait",
+        "reading": [
+          "Many traits we associate with birds are shared with other animals. Bats and insects fly. Crocodiles and turtles lay eggs. Turtles have beaks. Only one trait belongs to birds alone among living animals: **feathers**. Every one of the roughly 11,000 living bird species has them, from the Bee Hummingbird of Cuba, which weighs about 2 grams, to the Common Ostrich, which can weigh more than 100 kilograms. If an animal alive today has feathers, it is a bird; if it lacks them, it is not.",
+          "A feather is made of **keratin**, the same family of tough proteins found in your fingernails and in reptile scales. Look at a large wing feather and you will see its basic plan. The hollow base, the **calamus**, sits in a follicle in the skin. It continues as the **rachis**, the central shaft. On each side of the rachis is a flat **vane** made of hundreds of side branches called **barbs**.",
+          "The vane holds together because of a smaller level of branching. Each barb carries tiny branches of its own, the **barbules**. Barbules on one side of a barb have minute hooks; barbules on the other side are grooved. The hooks of one barb catch the grooves of the next barb, the way the teeth of a zipper lock together. When a feather is ruffled, the barbs separate. When the bird runs the feather through its bill, a behavior called **preening**, the hooks catch again and the vane is restored.",
+          "Feathers come in several types. **Contour feathers** cover the body and give it its smooth outer shape. **Flight feathers** are the large, stiff feathers of the wing (the **remiges**) and the tail (the **rectrices**). **Down feathers** lie under the contour feathers; their barbules have no hooks, so they stay fluffy and trap warm air. Birds also have hair-like **filoplumes**, which sense the position of the other feathers, and stiff **bristles** around the eyes and mouth in birds such as nightjars and flycatchers.",
+          "Feathers do far more than make flight possible. They insulate, and many birds waterproof them with oil from a **preen gland** at the base of the tail. They carry color: the red of a Northern Cardinal comes from carotenoid pigments the bird gets from its food, while the blue of a Blue Jay is a **structural color**, made by the way tiny structures inside the feather scatter light rather than by any blue pigment. Feathers also camouflage, signal to mates and rivals, and in some species make sound.",
+          "Feathers wear out, so birds replace them in a process called **molt**. Most birds molt all their feathers at least once a year, usually a few at a time so they can still fly. The number of feathers varies enormously. Classic counts found about 940 feathers on a Ruby-throated Hummingbird and more than 25,000 on a Tundra Swan, most of the swan’s on its long neck and head."
+        ],
+        "keyTerms": [
+          { "term": "Feather", "def": "A branched keratin structure growing from the skin; among living animals, found only in birds." },
+          { "term": "Rachis", "def": "The central shaft of a feather, which carries the vanes." },
+          { "term": "Barb", "def": "One of the side branches of the rachis that together form the vane." },
+          { "term": "Barbule", "def": "A small branch of a barb; hooked barbules lock onto grooved barbules of the neighboring barb." },
+          { "term": "Remiges and rectrices", "def": "The flight feathers of the wing (remiges) and of the tail (rectrices)." },
+          { "term": "Molt", "def": "The regular shedding and replacement of feathers." }
+        ],
+        "example": {
+          "title": "Worked example: identifying a feather found on a walk",
+          "steps": [
+            "Look at the vane on either side of the rachis. On this feather one side is about a quarter the width of the other, so the vane is strongly asymmetric.",
+            "Asymmetric vanes are a sign of a flight feather from the outer wing. The narrow side faces forward into the air and works like the leading edge of an airplane wing.",
+            "Look at the base of the vane. On this feather the barbs near the calamus are loose and fluffy, but the rest of the vane is tight. Tight vanes mean hooked barbules; the fluffy base keeps the bird warm where the feather overlaps others.",
+            "Conclusion: a primary flight feather (one of the remiges) from the outer part of a wing.",
+            "Photograph it and leave it where it lies. In the United States, the Migratory Bird Treaty Act of 1918 makes it illegal to keep feathers of most native wild birds without a permit."
+          ],
+          "takeaway": "Vane symmetry tells you where a feather came from: strongly asymmetric feathers come from the wing, symmetric ones from the body or the middle of the tail."
+        },
+        "practice": [
+          { "type": "mc", "q": "Which of these traits is found in all living birds and in no other living animals?", "choices": ["Laying eggs", "Flight", "Feathers", "A beak"], "answer": 2, "explanation": "Many reptiles and the platypus lay eggs, bats and insects fly, and turtles have beaks. Only birds have feathers, and all birds have them, including flightless ones." },
+          { "type": "short", "q": "A gull lands after a storm with ragged, split-looking wing feathers. A few minutes later the feathers look smooth again. Explain what the gull did and why it worked, using the words barb and barbule.", "answer": "The gull preened, drawing the feathers through its bill. The storm had pulled the barbs apart, unhooking the hooked barbules from the grooved barbules of neighboring barbs. Preening pushes the barbs back together so the hooks catch again, restoring a continuous vane.", "explanation": "A good answer names preening, says the barbs had separated, and explains that hooked barbules relock onto grooved ones." },
+          { "type": "mc", "q": "A Blue Jay feather is crushed into powder, and the powder looks gray-brown rather than blue. What does this tell you?", "choices": ["The blue came from a pigment that broke down", "The blue is a structural color produced by the feather’s internal structure", "Blue Jays get their color from carotenoids in their food", "The feather was a down feather"], "answer": 1, "explanation": "Structural colors depend on the arrangement of tiny structures that scatter light. Crushing destroys the arrangement, so the blue disappears. A pigment would still color the powder." }
+        ]
+      },
+      {
+        "n": "1.2",
+        "title": "The avian skeleton: light and strong",
+        "reading": [
+          "A bird’s skeleton has two jobs that pull in different directions: it must be strong enough to survive the forces of flapping and landing, and light enough to lift. Birds solve this partly by **fusing** bones that are separate in other animals. Fused bones make a rigid frame without heavy joints and ligaments. Four fusions are worth learning now: the **furcula**, or wishbone, made from the two collarbones; the **carpometacarpus**, made from hand bones; the **synsacrum**, made from the lower back vertebrae and the hip bones; and the **pygostyle**, made from the last tail vertebrae, which anchors the tail feathers.",
+          "The most striking bone in a flying bird is the breastbone, or **sternum**. It carries a deep ridge called the **keel**, which anchors the flight muscles. The large **pectoralis** muscle pulls the wing down on the power stroke. A second muscle, the **supracoracoideus**, lifts the wing; its tendon runs over the shoulder through a pulley-like opening, so a muscle on the chest can pull the wing upward. In strong fliers such as pigeons, the flight muscles make up a quarter or more of body weight. Ostriches and emus, which do not fly, have a flat sternum without a keel.",
+          "Many bird bones are hollow and connect to the air sacs of the breathing system, which you will study in Chapter 3. Inside, thin bony struts brace the walls, like the cross-braces in a bridge. A common claim is that birds have unusually light skeletons. The full story is more interesting. A 2010 study by Elizabeth Dumont found that bird bones are actually denser than mammal bones, and that bird skeletons weigh about as much as mammal skeletons of the same body size. Birds get strength for their weight from bone shape and fusion, not from a lighter skeleton overall.",
+          "The head shows the same theme. Birds have no teeth. Their jaws are covered by a **beak** made of a keratin sheath over bone, which keeps growing throughout life and is shaped by diet, from the hooked bill of a hawk to the cone of a seed-eating finch. Losing teeth and heavy jaw muscles moves weight away from the front of the body; much of the grinding work is done instead by a muscular stomach, the **gizzard**, which sits near the bird’s center of gravity.",
+          "A bird’s neck is long and flexible. Almost all mammals, giraffes included, have seven neck vertebrae; birds have between about 11 and 25, and swans have the most. The legs hold a surprise as well. Birds walk on their toes. The joint you see bending backward halfway down a bird’s leg is its **ankle**, not its knee. The real knee is tucked up against the body under the feathers, and the long bone below the ankle, the **tarsometatarsus**, is made of fused foot bones."
+        ],
+        "keyTerms": [
+          { "term": "Furcula", "def": "The wishbone, formed by the fusion of the two collarbones." },
+          { "term": "Keel", "def": "The ridge on the sternum of flying birds that anchors the flight muscles." },
+          { "term": "Pygostyle", "def": "Fused tail vertebrae that support the tail feathers." },
+          { "term": "Synsacrum", "def": "A single bony unit formed from the lower back vertebrae fused with the hip bones." },
+          { "term": "Pneumatic bone", "def": "A hollow bone connected to the air sac system." },
+          { "term": "Tarsometatarsus", "def": "The fused foot bones that form the visible lower leg of a bird." }
+        ],
+        "example": {
+          "title": "Worked example: finding the knee on a chicken leg",
+          "steps": [
+            "Start at the toes. Chickens have four: three point forward and one points back.",
+            "Move up the scaly, featherless part of the leg. This is the tarsometatarsus, made of fused foot bones.",
+            "The next joint bends with the heel moving backward. Compare it with your own ankle when you stand on your toes. This is the bird’s ankle.",
+            "Above the ankle is the drumstick, the tibiotarsus. In a cooked chicken this is the meaty piece you hold.",
+            "Above the drumstick is the thigh, which contains the femur. The knee joint between drumstick and thigh is hidden under feathers next to the body, and it bends forward, as yours does."
+          ],
+          "takeaway": "Birds walk on their toes; the backward-bending joint is the ankle, and the knee is hidden close to the body."
+        },
+        "practice": [
+          { "type": "mc", "q": "Which bone would you expect to be flat, with no keel, in an Emu?", "choices": ["The furcula", "The sternum", "The pygostyle", "The synsacrum"], "answer": 1, "explanation": "The keel is the ridge on the sternum that anchors flight muscles. Emus do not fly, and like other ratites they have a flat sternum." },
+          { "type": "short", "q": "A friend says, “Birds can fly because their skeletons weigh much less than ours would at the same size.” Using this section, explain what is wrong with this claim and what is actually true.", "answer": "Bird skeletons weigh about the same as mammal skeletons of the same body size, and bird bone is denser (Dumont 2010). What makes the skeleton suited to flight is its design: fused bones that form a rigid frame, thin-walled hollow bones braced by struts, a keeled sternum for flight muscles, and the loss of heavy teeth and jaws.", "explanation": "A full answer corrects the claim with the skeleton-mass comparison and names at least two design features that give strength for weight." },
+          { "type": "mc", "q": "A heron is standing in a pond and the joint halfway down its leg bends backward. Which joint is it?", "choices": ["The knee", "The hip", "The ankle", "A joint between two toes"], "answer": 2, "explanation": "Birds walk on their toes. The long bone below the visible joint is the tarsometatarsus, made of foot bones, so the visible joint is the ankle. The knee is hidden under the body feathers." }
+        ]
+      },
+      {
+        "n": "1.3",
+        "title": "Birds are dinosaurs",
+        "reading": [
+          "Birds are dinosaurs. This is not a figure of speech. Biologists group living things by ancestry: a group includes a common ancestor and all of its descendants. Birds descend from a group of two-legged, mostly meat-eating dinosaurs called **theropods**, the same group that includes *Tyrannosaurus* and *Velociraptor*. So birds belong inside the dinosaurs, in the same way that bats belong inside the mammals even though they fly. Scientists call the extinct dinosaurs that were not birds **non-avian dinosaurs**.",
+          "The first strong evidence came early. In 1861, two years after Charles Darwin published *On the Origin of Species*, quarry workers in the Solnhofen limestone of Bavaria, Germany, found a fossil of an animal about the size of a raven. It had feathered wings and a wishbone like a bird, but also teeth, clawed fingers, and a long bony tail like a small dinosaur. It was named **Archaeopteryx** and is about 150 million years old, from the Late Jurassic period.",
+          "For more than a century, Archaeopteryx was almost alone. That changed in 1996, when a farmer in Liaoning Province, China, found **Sinosauropteryx**, a small theropod about 125 million years old, covered in simple filament-like feathers. It was clearly not a bird, yet it had feathers. Since then, dozens of feathered dinosaurs have been found, including *Microraptor*, which had long feathers on both its arms and its legs, and *Yutyrannus*, a relative of *Tyrannosaurus* about 9 meters long with a coat of filaments. Microscopic pigment structures preserved in some fossils even let researchers reconstruct color; Sinosauropteryx had a reddish-brown tail with pale rings.",
+          "These fossils show that **feathers came before flight**. The earliest feathers were simple filaments, probably useful for warmth and display. Over millions of years they became branched, then formed flat vanes, and only later were large vaned feathers on the arms used to glide and fly. When you see a feather on a bird today, you are looking at a structure that is older than birds themselves.",
+          "About 66 million years ago, an asteroid roughly 10 kilometers wide struck what is now the Yucatán Peninsula in Mexico. The impact and its aftermath ended the non-avian dinosaurs, along with about three quarters of all species on Earth. Some birds survived. Research suggests the survivors were small, toothless, beaked birds that lived on the ground. Their descendants spread rapidly into the space left behind, and most modern groups of birds appeared within about 15 million years. Every bird you see today is a member of that surviving branch."
+        ],
+        "keyTerms": [
+          { "term": "Theropod", "def": "A group of two-legged dinosaurs, mostly meat-eaters, that includes Tyrannosaurus, Velociraptor and birds." },
+          { "term": "Non-avian dinosaur", "def": "Any dinosaur that is not a bird; all of them are extinct." },
+          { "term": "Archaeopteryx", "def": "A feathered, toothed animal from about 150 million years ago, long regarded as the earliest known bird." },
+          { "term": "Feathered dinosaur", "def": "A non-avian dinosaur with feathers, such as Sinosauropteryx or Microraptor." },
+          { "term": "Mass extinction", "def": "A geologically brief event in which a large fraction of species dies out, such as the one 66 million years ago." }
+        ],
+        "example": {
+          "title": "Worked example: is it a bird? Testing Archaeopteryx",
+          "steps": [
+            "List the traits of a modern bird: feathers, wings, a wishbone, a toothless beak, a short tail ending in a pygostyle.",
+            "Check Archaeopteryx against the list. Feathers: yes. Feathered wings: yes. Wishbone: yes.",
+            "Toothless beak: no, Archaeopteryx had teeth. Pygostyle: no, it had a long bony tail. Clawed fingers: yes, which modern adult birds mostly lack.",
+            "Now check Velociraptor. It also had feathers and a wishbone, but its arms were not wings that could support flight.",
+            "Conclusion: there is no sharp line. Traits we think of as bird traits appeared one by one in theropod dinosaurs, and Archaeopteryx sits partway along that sequence."
+          ],
+          "takeaway": "The bird body plan was assembled gradually in dinosaurs; “bird or not” is often a question of where you draw a line on a continuum."
+        },
+        "practice": [
+          { "type": "mc", "q": "Why did the discovery of Sinosauropteryx in 1996 matter so much?", "choices": ["It was the oldest bird ever found", "It showed that a dinosaur that was not a bird had feathers", "It proved that dinosaurs could fly", "It was the first dinosaur found in China"], "answer": 1, "explanation": "Sinosauropteryx was a small theropod with filament-like feathers but no wings for flight. It showed that feathers existed in non-avian dinosaurs, supporting the idea that feathers came before birds and before flight." },
+          { "type": "short", "q": "Explain in two or three sentences why scientists say birds are dinosaurs rather than simply “descended from dinosaurs.”", "answer": "Scientists group organisms by ancestry, and a group includes the common ancestor and all of its descendants. Birds descend from theropod dinosaurs, so they fall inside the dinosaur group, just as bats fall inside the mammals. Saying birds are only descended from dinosaurs would leave the group incomplete.", "explanation": "Look for the rule that groups include all descendants, and an analogy or reasoning that places birds inside the dinosaurs." },
+          { "type": "mc", "q": "If feathers first evolved for warmth and display, which prediction should the fossil record support?", "choices": ["The oldest feathers are large, vaned flight feathers", "Simple filament feathers appear in dinosaurs that could not fly", "Feathers appear only after the asteroid impact", "Only Archaeopteryx has feathers among Jurassic animals"], "answer": 1, "explanation": "If feathers did not start as flight equipment, we should find simple feathers on flightless dinosaurs, which is what Sinosauropteryx, Yutyrannus and others show." }
+        ]
+      },
+      {
+        "n": "1.4",
+        "title": "How many birds, and how we name them",
+        "reading": [
+          "Scientists recognize about 11,000 species of birds. The exact number depends on which list you use, because experts sometimes disagree about whether two populations are one species or two. When a species is divided into two, it is called a **split**; when two are combined, a **lump**. The number of individual birds is far larger. One 2021 study estimated about 50 billion birds alive on Earth, though estimates like this are uncertain.",
+          "To avoid confusion, every species has a two-part **scientific name**, a system set out by the Swedish naturalist Carl Linnaeus in 1758. The first part is the **genus**, written with a capital letter; the second is the specific name, written in lowercase. Both are written in italics. The American Robin is *Turdus migratorius*: *Turdus* is Latin for thrush, and *migratorius* means migratory.",
+          "Scientific names solve a real problem. Common names change from place to place. In Britain, “robin” means the European Robin, *Erithacus rubecula*, a small orange-breasted bird in a different family from the American Robin. The two birds were given the same common name by English settlers who were reminded of the robin at home, but their scientific names show at once that they are not closely related.",
+          "Species are grouped into a nested hierarchy. Birds make up the **class** Aves. The class is divided into **orders**, whose names end in -iformes; orders into **families**, whose names end in -idae; families into **genera**; and genera into **species**. The American Robin sits in order Passeriformes, family Turdidae, genus *Turdus*. The Passeriformes, often called perching birds or songbirds, are the largest order: about 60 percent of all bird species belong to it.",
+          "In North America, official English names are set by the American Ornithological Society, and they are capitalized (American Robin) to show that they are the name of one species, not a description. In 2023 the society announced that it would change the English names of birds in its region that are named after people. For a beginner, the most useful step is to learn families first. Once you can tell that a bird is a thrush, a warbler or a woodpecker, you have narrowed thousands of possibilities to a handful, which is exactly how field guides and the identification methods in Chapter 4 work."
+        ],
+        "keyTerms": [
+          { "term": "Species", "def": "The basic unit of classification; a group of organisms that interbreed and are separate from other such groups." },
+          { "term": "Scientific name", "def": "A two-part Latin name, genus plus specific name, written in italics, for example Turdus migratorius." },
+          { "term": "Genus", "def": "A group of closely related species; the first part of a scientific name." },
+          { "term": "Family", "def": "A group of related genera; bird family names end in -idae." },
+          { "term": "Order", "def": "A group of related families; bird order names end in -iformes." },
+          { "term": "Split and lump", "def": "Dividing one recognized species into two (split) or combining two into one (lump)." }
+        ],
+        "example": {
+          "title": "Worked example: reading the scientific name of the Bald Eagle",
+          "steps": [
+            "The name is *Haliaeetus leucocephalus*. The first word is the genus, the second the specific name.",
+            "Break the genus into Greek parts: *hali-* means sea and *aetos* means eagle. So *Haliaeetus* means sea eagle, the group of large fish-eating eagles.",
+            "Break the specific name: *leuco-* means white and *cephalus* means head. So *leucocephalus* means white-headed.",
+            "This explains the common name: “bald” comes from an old English word meaning white, as in piebald. The bird is not bald at all.",
+            "Place it in the hierarchy: class Aves, order Accipitriformes (hawks, eagles and relatives), family Accipitridae, genus *Haliaeetus*."
+          ],
+          "takeaway": "Scientific names are often short descriptions in Latin or Greek; decoding them helps you remember the bird and its relatives."
+        },
+        "practice": [
+          { "type": "mc", "q": "Which of these is written correctly as a scientific name?", "choices": ["Turdus Migratorius", "*Turdus migratorius*", "*turdus migratorius*", "Turdus-migratorius"], "answer": 1, "explanation": "The genus is capitalized, the specific name is lowercase, and both are written in italics." },
+          { "type": "short", "q": "A birder in London and a birder in Boston each report seeing “a robin.” Explain why a scientist would ask for the scientific name, and what the two names would be.", "answer": "“Robin” refers to different species in different places. The London birder most likely saw the European Robin, Erithacus rubecula, and the Boston birder the American Robin, Turdus migratorius. The two belong to different families, so the scientific names remove the ambiguity.", "explanation": "A good answer says common names vary by region and gives both scientific names." },
+          { "type": "mc", "q": "Woodpeckers are in the family Picidae. Which statement must be true?", "choices": ["Picidae is an order", "All woodpeckers belong to the same genus", "Picidae contains one or more genera", "Picidae is a species"], "answer": 2, "explanation": "Names ending in -idae are families, and a family contains one or more genera. Woodpeckers are spread across many genera." }
+        ]
+      }
+    ]
+  },
+  "assess": {
+    "slides": [
+      { "title": "Chapter 1: What makes a bird a bird", "bullets": ["Feathers: the one trait unique to birds", "A skeleton built for flight and two-legged walking", "Birds are living dinosaurs", "Counting and naming about 11,000 species"], "notes": "Today we set up the vocabulary for the whole course. Everything later, from flight to identification, rests on these four ideas." },
+      { "title": "Only birds have feathers", "bullets": ["Flight, eggs and beaks are shared with other animals", "All about 11,000 living species have feathers", "Range: Bee Hummingbird (about 2 g) to Common Ostrich (over 100 kg)"], "notes": "If you remember one sentence from today, make it this: among living animals, feathers mean bird. Penguins, ostriches and kiwis all have them even though they do not fly." },
+      { "title": "Anatomy of a feather", "bullets": ["Calamus: the hollow base in the skin", "Rachis: the central shaft", "Vane: made of barbs", "Barbules hook together like a zipper"], "notes": "Look at Figure 1.1 as I go. The zipper comparison is close to literal: hooks on one barb catch grooves on the next, and preening re-zips them." },
+      { "title": "Feather types and jobs", "bullets": ["Contour, flight (remiges and rectrices), down", "Filoplumes sense; bristles protect", "Insulation, waterproofing, color, signaling, sound", "Molt replaces worn feathers at least once a year"], "notes": "Color is a good example of how much feathers do. Cardinal red comes from food pigments; Blue Jay blue comes from structure, not pigment." },
+      { "title": "A skeleton of fused bones", "bullets": ["Furcula: fused collarbones", "Carpometacarpus: fused hand", "Synsacrum: fused back and hip", "Pygostyle: fused tail tip"], "notes": "Fusion trades flexibility for rigidity. A flying body needs a stiff frame for the flight muscles to pull against." },
+      { "title": "The keel and the flight muscles", "bullets": ["Keel on the sternum anchors the flight muscles", "Pectoralis: downstroke", "Supracoracoideus: upstroke, via a pulley at the shoulder", "Flightless ratites have no keel"], "notes": "Hollow bones are part of the story, but bird skeletons are not lighter overall than mammal skeletons of the same size. The advantage is in design, not in total weight." },
+      { "title": "Birds are dinosaurs", "bullets": ["Birds descend from theropod dinosaurs", "Archaeopteryx, about 150 million years ago: feathers plus teeth and a bony tail", "Sinosauropteryx (found 1996): feathers on a non-bird dinosaur", "Feathers came before flight"], "notes": "Use Figure 1.3. Notice how short the time since the asteroid is compared with the Jurassic and Cretaceous." },
+      { "title": "Naming birds", "bullets": ["Scientific names: Genus species, in italics", "Turdus migratorius, American Robin", "Class, order (-iformes), family (-idae), genus, species", "Passeriformes: about 60 percent of species"], "notes": "The robin example is the reason scientific names exist: the same common name means unrelated birds in Britain and North America." },
+      { "title": "Summary", "bullets": ["Feathers are the defining trait of birds", "Fused bones and a keel suit the skeleton to flight", "Birds are the surviving branch of the dinosaurs", "Learn families first; it makes identification easier"], "notes": "Before the quiz, do the practice problems in each section and write one sentence in your notes for each of these four points." }
+    ],
+    "quiz": [
+      { "q": "Which part of a feather is the hollow base that sits in the skin?", "choices": ["Rachis", "Calamus", "Vane", "Barbule"], "answer": 1, "explanation": "The calamus, or quill, is the hollow base. The rachis is the shaft above it." },
+      { "q": "Down feathers are fluffy because:", "choices": ["They have no rachis at all", "Their barbules lack hooks, so the barbs do not lock together", "They are made of a different protein from other feathers", "They are filoplumes"], "answer": 1, "explanation": "Without hooked barbules the barbs stay loose and trap warm air." },
+      { "q": "A bird species has a large keel on its sternum. What can you most reasonably conclude?", "choices": ["It has very powerful flight muscles", "It cannot fly", "It has teeth", "It has more neck vertebrae than other birds"], "answer": 0, "explanation": "The keel anchors the flight muscles. A large keel goes with large flight muscles; flightless ratites lack a keel." },
+      { "q": "Which statement about bird skeletons is supported by research described in this chapter?", "choices": ["Bird skeletons weigh much less than mammal skeletons of the same body size", "Bird bones are less dense than mammal bones", "Bird skeletons weigh about the same as mammal skeletons of the same body size, and bird bone is denser", "Birds have no hollow bones"], "answer": 2, "explanation": "Dumont (2010) found bird bone denser and skeleton mass similar to mammals at the same body size. Strength for weight comes from design." },
+      { "q": "What did Archaeopteryx have that modern birds do not?", "choices": ["Feathers", "A wishbone", "Teeth and a long bony tail", "Wings"], "answer": 2, "explanation": "Archaeopteryx combined feathers and a wishbone with teeth, clawed fingers and a long bony tail." },
+      { "q": "A newly found fossil dinosaur, about 130 million years old, has simple filament-like feathers and short arms that could not have been used for flight. How does this fossil fit the ideas in this chapter?", "choices": ["It contradicts the idea that birds are dinosaurs", "It supports the idea that feathers evolved before flight", "It shows that feathers evolved after the asteroid impact", "It must be a bird because it has feathers"], "answer": 1, "explanation": "Feathers on a flightless non-avian dinosaur fit the pattern that feathers came first and were later adapted for flight. Feathers define birds only among living animals." },
+      { "q": "In the name Haliaeetus leucocephalus, what does leucocephalus refer to?", "choices": ["The genus", "The family", "The specific name, meaning white-headed", "The order"], "answer": 2, "explanation": "The second word is the specific name. Leuco- means white and -cephalus means head." },
+      { "q": "A field guide groups the American Robin with the Hermit Thrush and the Eastern Bluebird. Based on this chapter, what do these birds most likely share?", "choices": ["The same species", "The same family, Turdidae", "The same specific name", "Nothing; field guides group birds by color"], "answer": 1, "explanation": "Field guides are arranged by taxonomic groups. All three are thrushes in the family Turdidae." }
+    ],
+    "challenge": [
+      {
+        "title": "The bird-or-not test",
+        "prompt": "Decide which of these five animals are birds: a Little Brown Bat, an Emperor Penguin, Archaeopteryx, Velociraptor, and a Common Ostrich. For each one, list the evidence for and against, using at least three traits from this chapter (feathers, keel, wishbone, teeth, pygostyle, toothless beak, flight). Then explain where you drew the line for the two fossil animals and why reasonable scientists might draw it differently.",
+        "deliverable": "A short table or list (one entry per animal, with the traits you checked) followed by one paragraph of 100 to 200 words on the fossil cases.",
+        "rubric": [
+          "Classifies the bat as not a bird and the penguin and ostrich as birds, using feathers as the deciding trait among living animals",
+          "Uses at least three anatomical traits correctly across the five animals",
+          "Explains that Archaeopteryx and Velociraptor sit on a continuum of bird-like traits in theropod dinosaurs",
+          "Recognizes that birds are dinosaurs, so the question is where the bird group begins, not whether the two are related"
+        ]
+      },
+      {
+        "title": "Classify a bird you can see",
+        "prompt": "Choose a bird you can observe this week, outside or in a clear photograph from a reliable source. Identify it to species with a field guide or the Cornell Lab’s All About Birds website. Write out its full classification from class to species, decode what its scientific name means, and describe three features from this chapter that you can actually see on the bird or in the photo.",
+        "deliverable": "The species’ common and scientific names, its class, order, family and genus, a decoding of the scientific name, and three observed features with one or two sentences each on what each feature does.",
+        "rubric": [
+          "Gives a correct, consistent classification from class to species",
+          "Writes the scientific name in the correct format",
+          "Decodes the scientific name accurately, or explains what is known about it",
+          "Describes three visible features and correctly explains their function using this chapter"
+        ]
+      }
+    ],
+    "readings": [
+      { "citation": "Lovette, I. J., and J. W. Fitzpatrick, eds. 2016. Handbook of Bird Biology, 3rd ed. Wiley-Blackwell and the Cornell Lab of Ornithology.", "kind": "book", "why": "The standard introductory text. Read its chapters on feathers and on avian anatomy alongside sections 1.1 and 1.2.", "pages": "" },
+      { "citation": "Prum, R. O., and A. H. Brush. 2003. Which came first, the feather or the bird? Scientific American 288(3): 84–93.", "kind": "article", "why": "A readable account, by the researchers who proposed it, of how feathers evolved in stages before flight. Supports section 1.3.", "pages": "" },
+      { "citation": "Sibley, D. A. 2014. The Sibley Guide to Birds, 2nd ed. Alfred A. Knopf.", "kind": "book", "why": "Browse the opening pages on bird topography and the order of families. You will use a field guide like this in Chapter 4.", "pages": "Introductory pages" },
+      { "citation": "Cornell Lab of Ornithology. All About Birds (allaboutbirds.org).", "kind": "website", "why": "Free species accounts with photos, sounds and classification. Use it for the second challenge exercise.", "pages": "" }
+    ],
+    "videos": [
+      { "search": "how feathers work barbs barbules hooks microscope", "why": "Look for close-up footage of barbules hooking together, and of a bird preening a split vane back into place." },
+      { "search": "birds are dinosaurs evolution Archaeopteryx feathered dinosaurs lecture", "why": "Choose a lecture from a museum or university. Watch for the sequence of feather stages and the 1996 Sinosauropteryx discovery." },
+      { "search": "bird skeleton keel flight muscles explained", "why": "Watch how the pectoralis and supracoracoideus move the wing, and where the keel sits." }
+    ],
+    "images": [
+      { "search": "Archaeopteryx Berlin specimen", "source": "wikimedia", "why": "The most famous fossil. Find the feather impressions, the teeth, the clawed fingers and the long tail." },
+      { "search": "bird skeleton museum sternum keel", "source": "wikimedia", "why": "Compare the keel of a flying bird with the flat sternum of an ostrich or emu." },
+      { "search": "feather barbules scanning electron microscope", "source": "wikimedia", "why": "See the hooks and grooves of barbules at high magnification." }
+    ]
+  }
+}

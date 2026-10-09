@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480">
+  <rect width="800" height="480" fill="#ffffff"/>
+  <text x="40" y="40" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#222222">Birds in the history of the dinosaurs (to scale, 3.5 px per million years)</text>
+  <g stroke="#222222" stroke-width="1">
+    <rect x="60" y="200" width="192.5" height="30" fill="#dfe8ee"/>
+    <rect x="252.5" y="200" width="276.5" height="30" fill="#ece6d8"/>
+    <rect x="529" y="200" width="150.5" height="30" fill="#dfe8ee"/>
+    <rect x="679.5" y="200" width="71.5" height="30" fill="#ece6d8"/>
+    <rect x="751" y="200" width="9" height="30" fill="#e3ebdc"/>
+  </g>
+  <g font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222222" text-anchor="middle">
+    <text x="156" y="220">Jurassic</text>
+    <text x="391" y="220">Cretaceous</text>
+    <text x="604" y="220">Paleogene</text>
+    <text x="715" y="220">Neogene</text>
+  </g>
+  <g stroke="#222222" stroke-width="1">
+    <line x1="60" y1="230" x2="60" y2="240"/><line x1="147.5" y1="230" x2="147.5" y2="236"/><line x1="235" y1="230" x2="235" y2="240"/><line x1="322.5" y1="230" x2="322.5" y2="236"/><line x1="410" y1="230" x2="410" y2="240"/><line x1="497.5" y1="230" x2="497.5" y2="236"/><line x1="585" y1="230" x2="585" y2="240"/><line x1="672.5" y1="230" x2="672.5" y2="236"/><line x1="760" y1="230" x2="760" y2="240"/>
+  </g>
+  <g font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222222" text-anchor="middle">
+    <text x="60" y="256">200</text><text x="235" y="256">150</text><text x="410" y="256">100</text><text x="585" y="256">50</text><text x="760" y="256">0</text>
+    <text x="410" y="420">Millions of years ago</text>
+  </g>
+  <g stroke="#222222" stroke-width="1.5" fill="#222222">
+    <line x1="200" y1="112" x2="200" y2="200"/><circle cx="200" cy="200" r="4"/>
+    <line x1="235" y1="160" x2="235" y2="200"/><circle cx="235" cy="200" r="4"/>
+    <line x1="322.5" y1="230" x2="322.5" y2="270"/><circle cx="322.5" cy="230" r="4"/>
+    <line x1="529" y1="116" x2="529" y2="200"/><circle cx="529" cy="200" r="4"/>
+    <line x1="758" y1="160" x2="758" y2="200"/><circle cx="758" cy="200" r="4"/>
+    <path d="M529 330 L529 320 L581.5 320 L581.5 330" fill="none"/>
+  </g>
+  <g font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222222">
+    <text x="196" y="92" text-anchor="end">Anchiornis (~160)</text>
+    <text x="196" y="110" text-anchor="end">feathered dinosaur</text>
+    <text x="241" y="148">Archaeopteryx (~150)</text>
+    <text x="241" y="166">feathers, wishbone, teeth</text>
+    <text x="328" y="286">Sinosauropteryx (~125)</text>
+    <text x="328" y="304">first feathered non-bird dinosaur found (1996)</text>
+    <text x="535" y="96">Asteroid impact (66)</text>
+    <text x="535" y="114">non-bird dinosaurs die out</text>
+    <text x="752" y="148" text-anchor="end">Today: about 11,000 species</text>
+    <text x="760" y="352" text-anchor="end">Most modern bird orders appear within</text>
+    <text x="760" y="370" text-anchor="end">about 15 million years of the impact</text>
+  </g>
+</svg>
