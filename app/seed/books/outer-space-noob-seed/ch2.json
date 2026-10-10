@@ -9,12 +9,12 @@
     {
       "section": "2.2",
       "file": "ch2-fig-2.svg",
-      "caption": "Average distances from the Sun in astronomical units (AU). The four rocky planets crowd within about 1.5 AU of the Sun, while each giant planet lies one and a half to two times as far out as the one before it, and the Kuiper Belt begins near Neptune’s orbit."
+      "caption": "Average distances from the Sun in astronomical units (AU). The four rocky planets crowd within about 1.5 AU of the Sun, Jupiter lies more than three times as far out as Mars, each later giant planet lies one and a half to two times as far out as the one before it, and the Kuiper Belt begins near Neptune’s orbit."
     },
     {
       "section": "2.3",
       "file": "ch2-fig-3.svg",
-      "caption": "The largest moons, the planet Mercury and three dwarf planets at one scale. Ganymede and Titan are wider than Mercury, and seven moons are larger than Pluto, which is why size is not one of the tests the IAU uses to define a planet."
+      "caption": "The largest moons, the planet Mercury and three dwarf planets at one scale. Ganymede and Titan are wider than Mercury, and seven moons are larger than Pluto, which shows that size alone does not decide whether a body is a planet."
     }
   ],
   "lesson": {
@@ -44,31 +44,36 @@
             "n": 1,
             "citation": "Williams, D. R. (n.d.). Planetary fact sheet: Metric. NASA Space Science Data Coordinated Archive. https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
             "kind": "website",
-            "supports": "Diameters, densities, distances in AU, orbital periods and rotation periods of the rocky planets."
+            "supports": "Diameters, densities, distances in AU, orbital periods and rotation periods of the rocky planets.",
+            "checked": true
           },
           {
             "n": 2,
             "citation": "Fraknoi, A., Morrison, D., & Wolff, S. C. (2022). Astronomy 2e. OpenStax. https://openstax.org/details/books/astronomy-2e",
             "kind": "book",
-            "supports": "Chapters 7, 9 and 10: the layout of the solar system, the Sun’s share of its mass, Mercury’s temperatures, Venus’s atmosphere and landers, and the geology of Mars."
+            "supports": "Chapters 7, 9 and 10: the layout of the solar system, the Sun’s share of its mass, Mercury’s temperatures, Venus’s atmosphere and landers, and the geology of Mars.",
+            "checked": true
           },
           {
             "n": 3,
-            "citation": "Lawrence, D. J., Feldman, W. C., Goldsten, J. O., Maurice, S., Peplowski, P. N., Anderson, B. W., . . . Solomon, S. C. (2013). Evidence for water ice near Mercury’s north pole from MESSENGER Neutron Spectrometer measurements. Science, 339(6117), 292–296.",
+            "citation": "Lawrence, D. J., Feldman, W. C., Goldsten, J. O., Maurice, S., Peplowski, P. N., et al. (2013). Evidence for water ice near Mercury’s north pole from MESSENGER Neutron Spectrometer measurements. Science, 339(6117), 292–296.",
             "kind": "article",
-            "supports": "MESSENGER evidence for water ice in permanently shadowed polar craters on Mercury."
+            "supports": "MESSENGER evidence for water ice in permanently shadowed polar craters on Mercury.",
+            "checked": true
           },
           {
             "n": 4,
             "citation": "Grotzinger, J. P., Sumner, D. Y., Kah, L. C., Stack, K., Gupta, S., Edgar, L., . . . MSL Science Team. (2014). A habitable fluvio-lacustrine environment at Yellowknife Bay, Gale crater, Mars. Science, 343(6169), Article 1242777.",
             "kind": "article",
-            "supports": "Curiosity found ancient lake mudstones in Gale crater that could have supported microbial life."
+            "supports": "Curiosity found ancient lake mudstones in Gale crater that could have supported microbial life.",
+            "checked": true
           },
           {
             "n": 5,
             "citation": "Ottewell, G. (1989). The thousand-yard model: Or, the Earth as a peppercorn. Universal Workshop.",
             "kind": "book",
-            "supports": "The scale model: an 8-inch Sun, with Mercury at 10 yards, Venus at 19, Earth at 26 and Mars at 40."
+            "supports": "The scale model: an 8-inch Sun, with Mercury at 10 yards, Venus at 19, Earth at 26 and Mars at 40.",
+            "checked": true
           }
         ],
         "keyTerms": [
@@ -151,7 +156,7 @@
         "reading": [
           "Beyond Mars the spacing changes completely. In the pocket model, Mars sits 37 m (40 yards) from the Sun, but Jupiter, the next planet, sits 123 m (135 yards) out, nearly 90 more meters of almost empty space with only scattered dust grains, the asteroids of section 2.3, in between [3]. Jupiter, Saturn, Uranus and Neptune are the **giant planets**; the smallest of them, Neptune, is still almost four times as wide as Earth [1]. They have no solid surface to land on. Their outer layers are gas that becomes denser and hotter with depth until it behaves like a liquid. Jupiter and Saturn are mostly hydrogen and helium, so they are called **gas giants**. Uranus and Neptune contain a much larger share of water, methane and ammonia, which planetary scientists call ices even when they are hot fluids deep inside, so they are called **ice giants** [2].",
           "Density tells the same kind of story it told for the rocky planets. Jupiter’s density is about 1.3 grams per cubic centimeter, only a quarter of Earth’s, and Saturn’s is about 0.7, less than water [1]. No rocky world could be that light; these planets must be made mostly of the lightest elements. They are also enormous. **Jupiter** is 142,984 km across, about 11 times Earth’s width, and has 318 times Earth’s mass, two and a half times as much as all the other planets put together [1]. It spins once in under 10 hours, which flattens it slightly and draws its clouds into the colored bands you can see in a small telescope. Among them is the **Great Red Spot**, a storm wider than Earth that astronomers have watched for more than 150 years [2]. Jupiter takes 11.9 years to orbit the Sun.",
-          "**Saturn**, 120,536 km across, is the second-largest planet; it orbits at about 9.6 AU and takes 29.4 years to circle the Sun [1]. Its rings are made of countless separate pieces of mostly water ice, from dust-sized grains to chunks as big as a house, each orbiting Saturn like a tiny moon. The main rings span about 270,000 km, about 70 percent of the distance from Earth to the Moon, yet they are typically only about 10 meters thick [2]. NASA’s Cassini spacecraft orbited Saturn from 2004 to 2017, and in 2005 it dropped the European Huygens probe onto Saturn’s largest moon, Titan. In the pocket model, Saturn is a hazelnut or an acorn, almost 2 cm (about 0.7 inch) across, 226 m (247 yards) from the Sun, with rings about 4 cm wide [3].",
+          "**Saturn**, 120,536 km across, is the second-largest planet; it orbits at about 9.6 AU and takes 29.4 years to circle the Sun [1]. Its rings are made of countless separate pieces of mostly water ice, from dust-sized grains to chunks as big as a house, each orbiting Saturn like a tiny moon. The main rings span about 270,000 km, about 70 percent of the distance from Earth to the Moon, yet they are typically only about 10 meters thick [2]. NASA’s Cassini spacecraft orbited Saturn from 2004 to 2017, and the European Huygens probe it carried landed on Saturn’s largest moon, Titan, in January 2005. In the pocket model, Saturn is a hazelnut or an acorn, almost 2 cm (about 0.7 inch) across, 226 m (247 yards) from the Sun, with rings about 4 cm wide [3].",
           "**Uranus** was the first planet discovered with a telescope. William Herschel, a musician and amateur astronomer in Bath, England, spotted it in 1781; every planet out to Saturn had been known since ancient times [2]. Uranus is 51,118 km across, four times Earth’s width, and orbits at about 19.2 AU, taking 84 years to go around the Sun [1]. Methane gas in its upper atmosphere absorbs red light, which leaves its pale blue-green color. Its strangest feature is its tilt. Chapter 1 showed that Earth’s tilt of 23.4 degrees gives us seasons. Uranus is tipped over by about 98 degrees, so it rolls around the Sun on its side. Near each pole there are about 42 years of continuous daylight, then about 42 years of night [1, 2]. Only one spacecraft has ever visited Uranus: Voyager 2, which flew past in January 1986.",
           "**Neptune** was found with mathematics before anyone saw it. By the 1840s astronomers knew that Uranus was drifting off its predicted path, as if an unseen planet were pulling on it. The French mathematician Urbain Le Verrier calculated where that planet should be, and on 23 September 1846 Johann Galle at the Berlin Observatory found Neptune within about one degree of the predicted spot. In England, John Couch Adams had made a similar calculation [2]. Neptune is 49,528 km across and orbits at about 30 AU, so sunlight takes about four hours to reach it [1]. A year there lasts about 164 Earth years. Neptune has the fastest winds measured on any planet, up to about 2,000 km per hour, clocked by Voyager 2 when it flew past in 1989 [2]. In the pocket model, Uranus and Neptune are peanuts or coffee beans about 8 mm (0.3 inch) across, 454 m (496 yards) and 711 m (777 yards) from the Sun [3].",
           "Five planets are easy to see with no equipment at all: Mercury, Venus, Mars, Jupiter and Saturn. People have watched them for thousands of years, and the word planet comes from the Greek word for wanderer, because these points of light drift against the background stars from week to week. As Chapter 1 noted, they stay close to the ecliptic and usually shine with a steadier light than stars. Venus is the brightest, Jupiter usually comes next, Mars glows orange-red and is brightest about every 26 months, when Earth overtakes it, and Saturn looks like a steady yellowish star. Uranus is at the very limit of naked-eye vision, visible only from a dark site if you know exactly where to look, and Neptune always needs binoculars or a telescope [2]. Steady binoculars also show Jupiter’s four largest moons as tiny points lined up beside it, the same moons Galileo saw in 1610."
@@ -161,19 +166,22 @@
             "n": 1,
             "citation": "Williams, D. R. (n.d.). Planetary fact sheet: Ratio to Earth values. NASA Space Science Data Coordinated Archive. https://nssdc.gsfc.nasa.gov/planetary/factsheet/planet_table_ratio.html",
             "kind": "website",
-            "supports": "Diameters, masses, densities, distances in AU, orbital periods and axial tilts of the giant planets."
+            "supports": "Diameters, masses, densities, distances in AU, orbital periods and axial tilts of the giant planets.",
+            "checked": true
           },
           {
             "n": 2,
             "citation": "Fraknoi, A., Morrison, D., & Wolff, S. C. (2022). Astronomy 2e. OpenStax. https://openstax.org/details/books/astronomy-2e",
             "kind": "book",
-            "supports": "Chapters 11 and 12: composition of the giant planets, the Great Red Spot, Saturn’s rings, the discoveries of Uranus and Neptune, Neptune’s winds, and which planets are visible to the eye."
+            "supports": "Chapters 11 and 12: composition of the giant planets, the Great Red Spot, Saturn’s rings, the discoveries of Uranus and Neptune, Neptune’s winds, and which planets are visible to the eye.",
+            "checked": true
           },
           {
             "n": 3,
             "citation": "Ottewell, G. (1989). The thousand-yard model: Or, the Earth as a peppercorn. Universal Workshop.",
             "kind": "book",
-            "supports": "Scale-model objects and distances: Jupiter at 135 yards, Saturn at 247, Uranus at 496, Neptune at 777."
+            "supports": "Scale-model objects and distances: Jupiter at 135 yards, Saturn at 247, Uranus at 496, Neptune at 777.",
+            "checked": true
           }
         ],
         "keyTerms": [
@@ -254,7 +262,7 @@
           "Galileo discovered Jupiter’s four largest moons, Io, Europa, Ganymede and Callisto, in January 1610; they were the first objects ever seen orbiting another planet. Io is the most volcanically active world known, heated from inside as Jupiter’s gravity squeezes and flexes it. Europa and Saturn’s small moon Enceladus almost certainly hide oceans of salty liquid water under their icy crusts, and Cassini flew through jets of water ice spraying from Enceladus’s south pole. Titan has a thick nitrogen atmosphere and lakes of liquid methane and ethane; in 2005 the Huygens probe landed there, still the most distant landing ever made. Neptune’s largest moon, Triton, orbits in the opposite direction to Neptune’s spin, a sign that Neptune probably captured it from the Kuiper Belt [2]. NASA’s Europa Clipper, launched in October 2024, is on its way to study whether Europa’s ocean could support life.",
           "**Asteroids** are rocky or metallic bodies left over from the time the planets formed, about 4.6 billion years ago, that never grew into planets. More than a million are known. Most orbit in the **main asteroid belt** between Mars and Jupiter, roughly 2.2 to 3.2 AU from the Sun [2]. The largest, Ceres, 940 km across, was also the first found, by Giuseppe Piazzi on 1 January 1801. Movies show a crowded field of tumbling boulders, but the asteroids are so far apart that many spacecraft, starting with Pioneer 10 in 1972, have crossed the belt safely, and together they add up to only a few percent of our Moon’s mass. In the pocket model the whole belt is a few specks of dust scattered around a ring 50 to 75 m from the Sun. When a small piece of rock from space burns up in our air, its streak of light is a **meteor**; a piece that survives to reach the ground is a meteorite [2].",
           "**Comets** are mixtures of ice, dust and rock, typically a few kilometers across, that spend most of their time far from the Sun. Near the Sun, sunlight turns some of the ice to gas, which streams off with dust to form a glowing cloud around the solid core, the nucleus, and long tails that point away from the Sun. The European Space Agency’s Rosetta spacecraft orbited comet 67P/Churyumov–Gerasimenko from 2014 to 2016 and set a small lander, Philae, down on it. Halley’s Comet returns about every 76 years; it last passed in 1986 and will be back in 2061. Comets also leave trails of dust along their orbits, and when Earth crosses a trail each year the grains burn up as a meteor shower: the Perseids every August come from comet Swift–Tuttle [2]. Comets with very long orbits come from the Oort Cloud, a vast shell of icy bodies thousands of AU away that has never been seen directly.",
-          "Pluto was discovered in 1930 by Clyde Tombaugh, a 24-year-old assistant at Lowell Observatory in Arizona, and for 76 years it was counted as the ninth planet. It is far smaller than first thought, 2,377 km across, less than our Moon, and its orbit is so stretched that from 1979 to 1999 it was closer to the Sun than Neptune [2]. In 1992 David Jewitt and Jane Luu found a small object beyond Neptune, now called 1992 QB1, the first known member, after Pluto and its moon Charon, of a whole region of icy bodies, the **Kuiper Belt**, which stretches from about 30 to 50 AU [4]. Thousands are now known, and Pluto is one of the largest. In 2005 a team led by Mike Brown announced Eris, which is almost as wide as Pluto, and in 2007 the orbit of its moon showed that Eris has about 27 percent more mass than Pluto [5]. Astronomers had to decide whether there were ten planets, many more, or fewer.",
+          "Pluto was discovered in 1930 by Clyde Tombaugh, a 24-year-old assistant at Lowell Observatory in Arizona, and for 76 years it was counted as the ninth planet. It is far smaller than first thought, 2,377 km across, less than our Moon, and its orbit is so stretched that from 1979 to 1999 it was closer to the Sun than Neptune [2]. In 1992 David Jewitt and Jane Luu found a small object beyond Neptune, first designated 1992 QB1 and now named Albion, the first known member, after Pluto and its moon Charon, of a whole region of icy bodies, the **Kuiper Belt**, which stretches from about 30 to 50 AU [4]. Thousands are now known, and Pluto is one of the largest. In 2005 a team led by Mike Brown announced Eris, which is almost as wide as Pluto, and in 2007 the orbit of its moon showed that Eris has about 27 percent more mass than Pluto [5]. Astronomers had to decide whether there were ten planets, many more, or fewer.",
           "On 24 August 2006, in Prague, the International Astronomical Union (IAU), the world body of professional astronomers, adopted a definition. A **planet** is a body that (a) orbits the Sun, (b) has enough mass that its own gravity has pulled it into a nearly round shape, and (c) has cleared the neighborhood around its orbit, meaning it is by far the dominant body in its orbital zone [1]. A **dwarf planet** meets the first two conditions but not the third, and is not a moon. Pluto orbits the Sun and is round, but it shares its zone with many Kuiper Belt objects and crosses Neptune’s orbit, so it fails the third test, while each of the eight planets far outweighs everything else in its zone [1, 2]. The IAU recognizes five dwarf planets: Ceres, Pluto, Eris, Haumea and Makemake. Some planetary scientists, including New Horizons leader Alan Stern, still argue that any round body orbiting the Sun should count as a planet, so the debate goes on."
         ],
         "sources": [
@@ -262,31 +270,36 @@
             "n": 1,
             "citation": "International Astronomical Union. (2006). Resolution B5: Definition of a planet in the Solar System; Resolution B6: Pluto [Resolutions adopted at the XXVIth General Assembly, Prague]. https://www.iau.org/static/resolutions/Resolution_GA26-5-6.pdf",
             "kind": "report",
-            "supports": "The three criteria for a planet, the definition of a dwarf planet, and Pluto’s classification as a dwarf planet (24 August 2006)."
+            "supports": "The three criteria for a planet, the definition of a dwarf planet, and Pluto’s classification as a dwarf planet (24 August 2006).",
+            "checked": true
           },
           {
             "n": 2,
             "citation": "Fraknoi, A., Morrison, D., & Wolff, S. C. (2022). Astronomy 2e. OpenStax. https://openstax.org/details/books/astronomy-2e",
             "kind": "book",
-            "supports": "Chapters 12 and 13: the Galilean moons, Titan, Triton, Enceladus, Pluto, asteroids, meteors, comets, meteor showers and the Oort Cloud."
+            "supports": "Chapters 12 to 14: the Galilean moons, Titan, Triton, Enceladus, Pluto, asteroids, meteors, comets, meteor showers and the Oort Cloud.",
+            "checked": true
           },
           {
             "n": 3,
             "citation": "NASA Science. (n.d.). Moons: Facts. https://science.nasa.gov/solar-system/moons/facts/",
             "kind": "website",
-            "supports": "Moon counts for each planet, including 274 confirmed moons of Saturn as of March 2025; the count changes as new moons are confirmed."
+            "supports": "Moon counts for each planet, including 274 confirmed moons of Saturn as of March 2025; the count changes as new moons are confirmed.",
+            "checked": true
           },
           {
             "n": 4,
             "citation": "Jewitt, D., & Luu, J. (1993). Discovery of the candidate Kuiper belt object 1992 QB1. Nature, 362(6422), 730–732. https://doi.org/10.1038/362730a0",
             "kind": "article",
-            "supports": "Discovery of 1992 QB1, the first Kuiper Belt object found after Pluto and Charon."
+            "supports": "Discovery of 1992 QB1, the first Kuiper Belt object found after Pluto and Charon.",
+            "checked": true
           },
           {
             "n": 5,
             "citation": "Brown, M. E., & Schaller, E. L. (2007). The mass of dwarf planet Eris. Science, 316(5831), 1585.",
             "kind": "article",
-            "supports": "Eris’s mass, measured from the orbit of its moon Dysnomia, is about 1.27 times Pluto’s."
+            "supports": "Eris’s mass, measured from the orbit of its moon Dysnomia, is about 1.27 times Pluto’s.",
+            "checked": true
           }
         ],
         "keyTerms": [
@@ -359,7 +372,7 @@
               "One of Jupiter’s moons"
             ],
             "answer": 0,
-            "explanation": "A fuzzy glow with a tail pointing away from the Sun is the sign of a comet, whose ice turns to gas near the Sun. A meteor is a streak that lasts a second or so. Dwarf planets are far too faint to see without a large telescope, and Jupiter’s moons look like sharp points beside Jupiter."
+            "explanation": "A fuzzy glow with a tail pointing away from the Sun is the sign of a comet, whose ice turns to gas near the Sun. A meteor is a streak that lasts a second or so. Dwarf planets look like faint, star-like points with no tail, and most need a telescope; Jupiter’s moons look like sharp points beside Jupiter."
           }
         ]
       }
@@ -769,7 +782,7 @@
     "challenge": [
       {
         "title": "A pocket solar system on a strip of paper",
-        "prompt": "Take a strip of paper 1 m long (adding-machine tape or taped-together paper works). Mark the Sun at one end and Pluto at the other, so 1 cm stands for about 0.4 AU. Fold the strip in half and mark Uranus at the crease, fold the half nearest the Sun in half again for Saturn, and once more for Jupiter. Then calculate the exact positions (distance in AU ÷ 39.5 × 100 cm) for all eight planets, the asteroid belt and Neptune, mark them, and compare them with your folds.",
+        "prompt": "Take a strip of paper 1 m long (adding-machine tape or taped-together paper works). Mark the Sun at one end and Pluto at the other, so 1 cm stands for about 0.4 AU. Fold the strip in half and mark Uranus at the crease, fold the half nearest the Sun in half again for Saturn, and once more for Jupiter. Then calculate the exact positions (distance in AU ÷ 39.5 × 100 cm) for all eight planets and the edges of the asteroid belt, mark them, and compare them with your folds.",
         "deliverable": "A table listing each object, its distance in AU, its calculated position in centimeters and where your fold or mark landed, followed by 100 to 150 words on what the strip shows about the inner and outer solar system and how it compares with the pocket model, in which Earth is 24 m from the Sun.",
         "rubric": [
           "Uses correct distances (Mercury 0.39, Venus 0.72, Earth 1.00, Mars 1.52, Jupiter 5.2, Saturn 9.6, Uranus 19.2, Neptune 30, Pluto 39.5 AU) and computes positions correctly",
@@ -796,25 +809,29 @@
         "citation": "Fraknoi, A., Morrison, D., & Wolff, S. C. (2022). Astronomy 2e. OpenStax. https://openstax.org/details/books/astronomy-2e",
         "kind": "book",
         "why": "A free university textbook. Chapter 7 surveys the solar system; chapters 9 to 13 cover each kind of world in more depth than this chapter.",
-        "pages": "Chapters 7 and 9–13"
+        "pages": "Chapters 7 and 9–13",
+        "checked": true
       },
       {
         "citation": "Ottewell, G. (1989). The thousand-yard model: Or, the Earth as a peppercorn. Universal Workshop.",
         "kind": "book",
         "why": "The original instructions for the walking scale model this book uses. Read it before you build your own.",
-        "pages": ""
+        "pages": "",
+        "checked": true
       },
       {
         "citation": "Brown, M. (2010). How I killed Pluto and why it had it coming. Spiegel & Grau.",
         "kind": "book",
         "why": "The discoverer of Eris tells, in plain language, how Kuiper Belt discoveries led to the 2006 decision.",
-        "pages": ""
+        "pages": "",
+        "checked": true
       },
       {
         "citation": "Stern, A., & Grinspoon, D. (2018). Chasing New Horizons: Inside the epic first mission to Pluto. Picador.",
         "kind": "book",
         "why": "The story behind the flyby in this chapter’s opening, told by the mission’s leader, who also argues that Pluto should still be called a planet.",
-        "pages": ""
+        "pages": "",
+        "checked": true
       }
     ],
     "videos": [
@@ -848,5 +865,84 @@
         "why": "A map of Venus’s surface made by radar through the clouds. Compare it with how Venus looks to the eye: a featureless bright point."
       }
     ]
+  },
+  "review": {
+    "full": true,
+    "at": 1791600000000,
+    "by": "Researched and written with web-search verification; then fact-checked independently by a second agent (WebSearch was available and was used for the Lawrence et al. 2013 and Grotzinger et al. 2014 citations, Brown & Schaller 2007, the IAU 2006 resolutions, 2025 moon counts and the naming of 1992 QB1; direct page fetches of NASA, NSSDCA, IAU and Crossref failed, so planetary fact-sheet values, mission dates and the Ottewell distances were checked by expert review and recomputed by hand, e.g. 1 inch = 100,000 miles gives 10, 19, 26, 39–40, 134–135, 246–247, 496, 776–777 and 1,019 yards; all SVG radii and positions were measured against their stated scales); every answer key re-solved blind.",
+    "keysChecked": 14,
+    "keysAgreed": 14,
+    "keyFixes": [],
+    "corrections": [
+      {
+        "where": "2.3 reading",
+        "before": "In 1992 David Jewitt and Jane Luu found a small object beyond Neptune, now called 1992 QB1,",
+        "after": "In 1992 David Jewitt and Jane Luu found a small object beyond Neptune, first designated 1992 QB1 and now named Albion,",
+        "why": "The object received the official name (15760) Albion in January 2018; 1992 QB1 is its provisional designation, so 'now called 1992 QB1' is out of date. Discovery year and discoverers are correct (Jewitt & Luu 1993, Nature 362, 730–732).",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "P2.3-2 explanation",
+        "before": "Dwarf planets are far too faint to see without a large telescope, and Jupiter’s moons look like sharp points beside Jupiter.",
+        "after": "Dwarf planets look like faint, star-like points with no tail, and most need a telescope; Jupiter’s moons look like sharp points beside Jupiter.",
+        "why": "Ceres, a dwarf planet named in this same section, reaches about magnitude 6.7 at favorable oppositions and is easy in ordinary binoculars, so 'far too faint to see without a large telescope' is false for it. The key (A, comet) is still correct; the distinguishing clue is the fuzzy coma and tail.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "2.2 reading",
+        "before": "NASA’s Cassini spacecraft orbited Saturn from 2004 to 2017, and in 2005 it dropped the European Huygens probe onto Saturn’s largest moon, Titan.",
+        "after": "NASA’s Cassini spacecraft orbited Saturn from 2004 to 2017, and the European Huygens probe it carried landed on Saturn’s largest moon, Titan, in January 2005.",
+        "why": "Cassini released Huygens on 25 December 2004; Huygens descended and landed on 14 January 2005. 'In 2005 it dropped' puts the release in the wrong year; stating the landing date is accurate and consistent with the 2.3 reading.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "figure 2 caption",
+        "before": "The four rocky planets crowd within about 1.5 AU of the Sun, while each giant planet lies one and a half to two times as far out as the one before it, and the Kuiper Belt begins near Neptune’s orbit.",
+        "after": "The four rocky planets crowd within about 1.5 AU of the Sun, Jupiter lies more than three times as far out as Mars, each later giant planet lies one and a half to two times as far out as the one before it, and the Kuiper Belt begins near Neptune’s orbit.",
+        "why": "The planet before Jupiter is Mars, and 5.2 / 1.52 ≈ 3.4, not 1.5–2. The 1.5–2 ratio holds only for Saturn/Jupiter (1.84), Uranus/Saturn (2.0) and Neptune/Uranus (1.57). The slide notes already say Jupiter is more than three times as far as Mars.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "figure 3 caption",
+        "before": "Ganymede and Titan are wider than Mercury, and seven moons are larger than Pluto, which is why size is not one of the tests the IAU uses to define a planet.",
+        "after": "Ganymede and Titan are wider than Mercury, and seven moons are larger than Pluto, which shows that size alone does not decide whether a body is a planet.",
+        "why": "The IAU resolution gives no such reason, so 'which is why' invents a motive. It also sits awkwardly with criterion (b), which is a size-related (mass) condition, as the 2.3 misconception itself says. The arithmetic is right: Ganymede, Titan, Callisto, Io, the Moon, Europa and Triton are all wider than Pluto's 2,377 km.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "challenge 1 prompt",
+        "before": "Then calculate the exact positions (distance in AU ÷ 39.5 × 100 cm) for all eight planets, the asteroid belt and Neptune, mark them, and compare them with your folds.",
+        "after": "Then calculate the exact positions (distance in AU ÷ 39.5 × 100 cm) for all eight planets and the edges of the asteroid belt, mark them, and compare them with your folds.",
+        "why": "Neptune is one of the eight planets, so listing it again is redundant and confusing for a beginner. The arithmetic in the rubric is correct (belt 5.6–8.1 cm, Neptune 76 cm, Mars 3.85 cm; folds at 19.75, 9.9 and 4.9 AU land near Uranus, Saturn and Jupiter).",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "2.3 source 2 supports",
+        "before": "Chapters 12 and 13: the Galilean moons, Titan, Triton, Enceladus, Pluto, asteroids, meteors, comets, meteor showers and the Oort Cloud.",
+        "after": "Chapters 12 to 14: the Galilean moons, Titan, Triton, Enceladus, Pluto, asteroids, meteors, comets, meteor showers and the Oort Cloud.",
+        "why": "In OpenStax Astronomy 2e, meteors and meteor showers are covered in Chapter 14 (Cosmic Samples and the Origin of the Solar System, section 14.1 Meteors), not in Chapters 12 or 13.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "2.1 source 3 citation",
+        "before": "Lawrence, D. J., Feldman, W. C., Goldsten, J. O., Maurice, S., Peplowski, P. N., Anderson, B. W., . . . Solomon, S. C. (2013).",
+        "after": "Lawrence, D. J., Feldman, W. C., Goldsten, J. O., Maurice, S., Peplowski, P. N., et al. (2013).",
+        "why": "Web search confirmed the paper is real: David J. Lawrence (APL) is lead author, Feldman and Prettyman are co-authors, the title matches, and it appeared in Science after release on Science Express in November 2012. Volume 339, issue 6117, pages 292–296 fit the companion papers (Neumann et al. 339:296; Paige et al. 339:300). The tail of the author list could not be checked. From memory, the sixth author is Brian J. Anderson, not 'B. W.', and the final author is S. Z. Weider, not Solomon, so in APA ellipsis style the name after '. . .' is probably wrong. Shorten the list rather than guess.",
+        "severity": "unverifiable",
+        "applied": true
+      }
+    ],
+    "readingsRemoved": [],
+    "srcChecked": 13,
+    "srcWithdrawn": 0,
+    "summary": "The chapter is highly accurate. All planet diameters, distances, periods, densities, Ottewell model distances, moon counts as of 2025, IAU criteria, mission dates and figure scales checked out, and all 14 multiple-choice keys are correct. The fixes are small: an outdated name for 1992 QB1, an overstatement that dwarf planets need a large telescope (Ceres does not), a wrong ratio in the Figure 2 caption, a Huygens date slip, an invented IAU motive in the Figure 3 caption, a redundant phrase in a challenge, a mis-cited OpenStax chapter range, and an uncertain author tail in the Lawrence et al. citation.",
+    "style": {}
   }
 }

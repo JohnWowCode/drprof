@@ -1,0 +1,60 @@
+{
+  "method": "Researched and written with web-search verification; then fact-checked independently by a second agent using live web search (WebSearch; WebFetch could not resolve publisher hosts, so the full texts were checked through search-result abstracts and summaries), backed by expert review and recomputation of all arithmetic, explorer formulas and figure geometry; every answer key re-solved blind.",
+  "keysChecked": 16,
+  "keysAgreed": 16,
+  "keyFixes": [],
+  "corrections": [
+    {
+      "where": "2.4 sources [2]",
+      "quote": "McNab, B. K. (1994). Energy conservation and the evolution of flightlessness in birds. The American Naturalist, 144(4). https://doi.org/10.1086/285697",
+      "correction": "McNab, B. K. (1994). Energy conservation and the evolution of flightlessness in birds. The American Naturalist, 144(4), 628–642. https://doi.org/10.1086/285697",
+      "why": "The citation has no page range. Search confirmed the author, title, year, volume 144, issue 4 and DOI 10.1086/285697. The pages 628–642 come from the standard citation of this paper. The abstract supports the sentences it is cited for: flightless rails have low basal rates that fall as pectoral muscle mass falls, kiwis are included, and penguins and flightless ducks do not show the pattern.",
+      "severity": "imprecise"
+    },
+    {
+      "where": "2.1 worked example step 4",
+      "quote": "Holding its weight would take a lift coefficient near 3.7, far beyond what any wing can reach before it stalls.",
+      "correction": "Holding its weight would take a lift coefficient near 3.7, far beyond what a bird’s wing can reach in steady flight before it stalls.",
+      "why": "The arithmetic is right: 3.43 N ÷ (0.5 × 1.225 × 25 × 0.06 = 0.92 N) ≈ 3.7. But 'any wing' goes too far. Aircraft wings with flaps and slats reach lift coefficients of about 3, and flapping wings can briefly go higher. A bird's wing in steady gliding stays well below this, at about 1.5 or less, which is why the explorer slider stops at 1.6.",
+      "severity": "imprecise"
+    },
+    {
+      "where": "P2.3-1 model answer",
+      "quote": "Distance per unit of fuel depends on power divided by speed.",
+      "correction": "Fuel burned per kilometer is power divided by speed, so distance per unit of fuel is speed divided by power.",
+      "why": "As written, the sentence suggests distance per unit of fuel rises with power ÷ speed. In fact it rises with speed ÷ power, the inverse. A beginner could take away the wrong relationship. The rest of the answer, including the tangent from the origin, is correct.",
+      "severity": "imprecise"
+    },
+    {
+      "where": "2.4 reading, paragraph 4",
+      "quote": "In people, faults in such genes cause conditions in which bones stop growing too early [5].",
+      "correction": "In people, faults in such genes cause skeletal disorders, often with unusually short limbs [5].",
+      "why": "Burga et al. (2017) tie the cormorant's variants to genes that cause human skeletal ciliopathies. These are marked by short limbs and other skeletal defects caused by faulty cartilage growth. 'Bones stop growing too early' describes a particular mechanism, premature growth-plate closure, that the source does not claim.",
+      "severity": "imprecise"
+    },
+    {
+      "where": "2.4 worked example step 3 (second clue)",
+      "quote": "Second clue: DNA places the rail among a group of small South American rails, all of which fly.",
+      "correction": "Second clue: DNA places the rail among small rails of the Americas; its closest living relative, the Dot-winged Crake of South America, can fly.",
+      "why": "Stervander et al. (2019) found the closest relative is the Dot-winged Crake (Porzana/Laterallus spiloptera). The group also contains the Black Rail of North and South America and probably the Galápagos Crake, which is a weak, nearly flightless flier. 'All of which fly' and 'South American' are therefore not strictly true. The point the step makes, a flying close relative, still stands.",
+      "severity": "imprecise"
+    },
+    {
+      "where": "2.4 reading, paragraph 5",
+      "quote": "vanished after people arrived with the predators they brought",
+      "correction": "vanished after people arrived, through hunting and the predators people brought",
+      "why": "Moa were driven extinct mainly by human hunting within about two centuries of Polynesian settlement, not mainly by introduced predators. The Dodo's decline also involved hunting along with introduced animals. As worded, the sentence names predators as the only cause.",
+      "severity": "imprecise"
+    },
+    {
+      "where": "2.3 key terms (Downstroke and upstroke)",
+      "quote": "The two halves of a wingbeat; in most birds the downstroke makes the lift and thrust while the upstroke repositions the wing.",
+      "correction": "The two halves of a wingbeat; in most birds the downstroke makes most of the lift and thrust while the upstroke mainly repositions the wing.",
+      "why": "The reading correctly limits the 'downstroke only' claim to slow flight, and Warrick et al. (2005) show hummingbirds get about 25 percent of support from the upstroke. In faster flight many birds also get some lift on the upstroke. The definition states as absolute what the reading presents as a slow-flight rule.",
+      "severity": "imprecise"
+    }
+  ],
+  "sourcesChecked": 19,
+  "sourcesWithdrawn": [],
+  "summary": "The chapter is accurate. The hook (Hedenström et al. 2016, Current Biology 26, 3066–3070), Gill et al. 2009 (all ten authors, Proc R Soc B 276, 447–457, doi 10.1098/rspb.2008.1142), Weimerskirch et al. 2000, Williams et al. 2020, Lee et al. 2015 and the other citations check out. So do the four-force and glide geometry in figure 1 (lift is perpendicular to the path, L = W cos θ, D = W sin θ), the power-curve tangent in figure 3, the explorer formulas (a pigeon's minimum speed is 9.7 m/s, wing loading is in N/m²) and all 16 answer keys. The seven corrections are wording-level imprecisions: a missing page range for McNab 1994, an overstatement about 'any wing', an inverted fuel/distance phrase, and over-general statements about ciliopathies, the rail's relatives, moa extinction and the upstroke."
+}
