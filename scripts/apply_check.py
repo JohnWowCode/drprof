@@ -47,7 +47,7 @@ for s in ch["lesson"]["sections"]:
         if f"S{s['n']}-{x['n']}" in withdrawn: x["withdrawn"] = True; x.pop("checked", None)
         else: x["checked"] = True
 for r in ch["assess"].get("readings", []): r["checked"] = True
-ch["review"] = {"full": True, "at": 1791600000000, "by": "Researched and written with web-search verification, then fact-checked independently by a second agent against published sources; every answer key was re-solved blind.",
+ch["review"] = {"full": True, "at": 1791600000000, "by": ck.get("method") or "Researched and written with web-search verification, then fact-checked independently by a second agent; every answer key was re-solved blind.",
                 "keysChecked": ck.get("keysChecked", 0), "keysAgreed": ck.get("keysAgreed", 0), "keyFixes": ck.get("keyFixes", []),
                 "corrections": out, "readingsRemoved": [], "srcChecked": ck.get("sourcesChecked", 0), "srcWithdrawn": len(withdrawn),
                 "summary": ck.get("summary", ""), "style": {}}
