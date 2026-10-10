@@ -65,7 +65,7 @@
   <!-- Centre notes: the definition's other traits -->
   <g font-family="Helvetica, Arial, sans-serif" font-size="15" text-anchor="middle">
     <text x="370" y="214" fill="#B0303A" font-weight="bold">Goal: clear rows, score high,</text>
-    <text x="370" y="234" fill="#B0303A" font-weight="bold">delay the end (no way to win)</text>
+    <text x="370" y="234" fill="#B0303A" font-weight="bold">delay the end (endless mode: no win)</text>
     <text x="370" y="272" fill="#444444">Voluntary: the player may</text>
     <text x="370" y="292" fill="#444444">stop at any moment</text>
   </g>

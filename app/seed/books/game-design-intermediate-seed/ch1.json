@@ -35,32 +35,36 @@
           "Suits’s short version is famous: “playing a game is the voluntary attempt to overcome unnecessary obstacles” [1]. His full version has four parts. There is a **prelusory goal**, a state of affairs you can describe before any game exists, such as a ball resting in a hole. There are **constitutive rules**, which forbid the most efficient ways of reaching that goal. There are lusory means, the ways of acting that the rules still allow. And there is the **lusory attitude**, the player’s acceptance of the rules just because they make the activity possible. Golf is his clearest case. The easiest way to get a ball into a hole is to walk over and drop it in. Golfers instead stand far away and hit it with a club, and they do it on purpose [1].",
           "Game designers have offered definitions built for their own work. Katie Salen and Eric Zimmerman, in *Rules of Play* (2003), define a game as “a system in which players engage in an artificial conflict, defined by rules, that results in a quantifiable outcome” [2]. *System* is the word this book leans on hardest: a game is a set of parts whose relationships produce behavior. *Artificial* marks the conflict as set apart from ordinary life, an idea Salen and Zimmerman connect to the historian Johan Huizinga’s image of the **magic circle**, the special space and time inside which a game’s rules hold [2]. Jesper Juul, in *Half-Real* (2005), surveyed earlier definitions and proposed a classic game model with six features: rules, a variable and quantifiable outcome, values attached to the possible outcomes, player effort, a player who cares about the outcome, and real-life consequences that are negotiable [3].",
           "Definitions earn their keep at the edges. Juul places open-ended simulations, in which no outcome counts as winning, among his borderline cases rather than inside or outside the category [3]. Jane McGonigal, in *Reality Is Broken* (2011), drew on Suits to boil the tradition down to four traits she argues all games share: a goal, rules, a feedback system and voluntary participation [4]. Her list is the one this section uses, because each trait points at a designer’s job. The goal aims the player’s attention. The rules make reaching it interesting. The **feedback system** tells players how close they are. Voluntary participation means the player accepts all three, and can walk away at any time.",
-          "Run *Tetris* (1984) through those four traits. Its goal is unusual: you cannot win, so the real goal is to clear rows and score as much as possible before the stack reaches the top. Its rules are few. In the familiar versions, seven shapes fall into a well ten cells wide and twenty tall, full rows vanish, and the pieces speed up as you clear more rows. Its feedback is constant, from the flash of a cleared row to the score, the level number and the height of the stack itself, which you read at a glance (Figure 1.1). And nobody has to play it. Because players can quit at any moment, a game has to keep earning their attention, which is why feedback, pacing and difficulty each get a chapter later in this book."
+          "Run *Tetris* (1984) through those four traits. Its goal is unusual: in its classic endless mode you cannot win, so the real goal is to clear rows and score as much as possible before the stack reaches the top. Its rules are few. In the familiar versions, seven shapes fall into a well ten cells wide and twenty tall, full rows vanish, and the pieces speed up as you clear more rows. Its feedback is constant, from the flash of a cleared row to the score, the level number and the height of the stack itself, which you read at a glance (Figure 1.1). And nobody has to play it. Because players can quit at any moment, a game has to keep earning their attention, which is why feedback, pacing and difficulty each get a chapter later in this book."
         ],
         "sources": [
           {
             "n": 1,
             "citation": "Suits, B. (1978). The grasshopper: Games, life and utopia. University of Toronto Press.",
             "kind": "book",
-            "supports": "Suits’s definition of game playing, its four parts, the golf example, and the book’s dialogue form and response to Wittgenstein."
+            "supports": "Suits’s definition of game playing, its four parts, the golf example, and the book’s dialogue form and response to Wittgenstein.",
+            "checked": true
           },
           {
             "n": 2,
             "citation": "Salen, K., & Zimmerman, E. (2003). Rules of play: Game design fundamentals. MIT Press.",
             "kind": "book",
-            "supports": "Salen and Zimmerman’s definition of a game and their use of Huizinga’s magic circle."
+            "supports": "Salen and Zimmerman’s definition of a game and their use of Huizinga’s magic circle.",
+            "checked": true
           },
           {
             "n": 3,
             "citation": "Juul, J. (2005). Half-real: Video games between real rules and fictional worlds. MIT Press.",
             "kind": "book",
-            "supports": "Juul’s classic game model of six features and its borderline cases."
+            "supports": "Juul’s classic game model of six features and its borderline cases.",
+            "checked": true
           },
           {
             "n": 4,
             "citation": "McGonigal, J. (2011). Reality is broken: Why games make us better and how they can change the world. Penguin Press.",
             "kind": "book",
-            "supports": "McGonigal’s four traits shared by all games, drawing on Suits."
+            "supports": "McGonigal’s four traits shared by all games, drawing on Suits.",
+            "checked": true
           }
         ],
         "keyTerms": [
@@ -96,13 +100,13 @@
             "Salen and Zimmerman: the game is a system of pieces, well, score and speed. The conflict is artificial, the player against a rising stack. The outcome is quantifiable as a score and a row count. It passes.",
             "Juul: rules, yes. A variable, quantifiable outcome, yes (scores differ every game). Values on outcomes, yes (higher is better). Effort and attachment, yes. Negotiable consequences, yes: nothing in your life changes when the stack tops out. It passes all six.",
             "McGonigal: goal, rules and feedback are all present, and play is voluntary. It passes, with the twist that the goal is to delay an ending rather than to reach a victory.",
-            "Conclusion: *Tetris* is a game under every definition here, even though no one can win it. The definitions ask for a measurable outcome, not for a winner."
+            "Conclusion: *Tetris* is a game under every definition here, even though its classic endless mode cannot be won. The definitions ask for a measurable outcome, not for a winner."
           ],
           "takeaway": "A game needs an outcome that can be measured and valued, not necessarily a win; a score that players care about is enough."
         },
         "misconception": {
           "myth": "If nobody wins or loses, it isn’t really a game.",
-          "fact": "None of the definitions in this section require a winner. Salen and Zimmerman ask for a quantifiable outcome and Juul for outcomes with different values, and a score meets both. *Tetris* and many single-player games have no victory at all, only better and worse results."
+          "fact": "None of the definitions in this section require a winner. Salen and Zimmerman ask for a quantifiable outcome and Juul for outcomes with different values, and a score meets both. Endless *Tetris* and many single-player games have no victory at all, only better and worse results."
         },
         "practice": [
           {
@@ -145,32 +149,36 @@
           "The framework’s most useful idea is that designers and players meet the same game from opposite ends (Figure 1.2). A designer works from mechanics outward: you write rules, watch the dynamics they produce, and hope those dynamics create the aesthetics you were aiming for. A player starts at the other end. They feel the tension or the delight first, notice patterns of play second, and may never think about the underlying rules at all [1]. Salen and Zimmerman call game design a **second-order design** problem for the same reason: designers shape play only indirectly, by setting up the rules from which play emerges [2]. You cannot write “the player feels clever” into a rulebook. You can only write rules and then test whether they make players feel clever.",
           "MDA also replaced the vague word *fun* with a vocabulary. The paper lists eight kinds of aesthetic, each with a short gloss: Sensation (game as sense-pleasure), Fantasy (game as make-believe), Narrative (game as drama), Challenge (game as obstacle course), Fellowship (game as social framework), Discovery (game as uncharted territory), Expression (game as self-discovery) and Submission (game as pastime). The authors say plainly that the list is not complete and that most games pursue several aesthetics at once; their profile of the *Final Fantasy* series (from 1987) combines Fantasy, Narrative, Expression, Discovery, Challenge and Submission [1]. Naming the target has practical effects. A team that agrees it is making a Challenge game will cut and keep different features from a team making a Fellowship game, even with the same theme.",
           "Watch the three layers work in *Tetris*. In the 1989 version for the Nintendo Entertainment System, one mechanic is the scoring table. Clearing one row scores 40 points times the level plus one, while clearing four rows at once, a move players call a *tetris*, scores 1,200 times the level plus one. Four single clears are worth 160 points at level 0; one tetris is worth 7.5 times as much. That single mechanic produces a dynamic every skilled player knows. They stack pieces high, keep one column empty, and wait for the long straight piece. The stack climbs while they wait, and the aesthetic that results is Challenge, laced with tension and relief. The rules never tell anyone to build a well and gamble. They just make it the best strategy, and players found it.",
-          "Dynamics include what players do with their hands and eyes. In a 1994 study, the cognitive scientists David Kirsh and Paul Maglio found that *Tetris* players often rotate a falling piece more than its final placement requires. The extra turns are not errors. Turning the piece on screen can be quicker than turning it in your head, so players use the game itself as a thinking aid. Kirsh and Maglio called such moves **epistemic actions**: actions taken to gain information rather than to change the world [3]. MDA has limits worth knowing. It says little about fiction and theme, which Juul argues matter alongside rules in video games [4], and its use of *aesthetics* for emotions confuses people who expect the word to mean art style. As a way to trace rules to experience, it is still the standard starting point, and you will use it in every chapter."
+          "Dynamics include what players do with their hands and eyes. In a 1994 study, the cognitive scientists David Kirsh and Paul Maglio found that *Tetris* players often rotate a falling piece more than its final placement requires. The extra turns are not errors. Turning the piece on screen can be quicker than turning it in your head, so players use the game itself as a thinking aid. Kirsh and Maglio called such moves **epistemic actions**: actions taken to gain information or make thinking easier, rather than to move closer to the goal [3]. MDA has limits worth knowing. It says little about fiction and theme, which Juul argues matter alongside rules in video games [4], and its use of *aesthetics* for emotions confuses people who expect the word to mean art style. As a way to trace rules to experience, it is still the standard starting point, and you will use it in every chapter."
         ],
         "sources": [
           {
             "n": 1,
             "citation": "Hunicke, R., LeBlanc, M., & Zubek, R. (2004). MDA: A formal approach to game design and game research. In Proceedings of the AAAI Workshop on Challenges in Game AI (Technical Report WS-04-04, pp. 1–5). AAAI Press.",
             "kind": "chapter",
-            "supports": "The MDA framework, its definitions of mechanics, dynamics and aesthetics, the designer and player perspectives, the eight aesthetics, and its origin in the GDC tuning workshop of 2001 to 2004."
+            "supports": "The MDA framework, its definitions of mechanics, dynamics and aesthetics, the designer and player perspectives, the eight aesthetics, and its origin in the GDC tuning workshop of 2001 to 2004.",
+            "checked": true
           },
           {
             "n": 2,
             "citation": "Salen, K., & Zimmerman, E. (2003). Rules of play: Game design fundamentals. MIT Press.",
             "kind": "book",
-            "supports": "Game design as a second-order design problem."
+            "supports": "Game design as a second-order design problem.",
+            "checked": true
           },
           {
             "n": 3,
             "citation": "Kirsh, D., & Maglio, P. (1994). On distinguishing epistemic from pragmatic action. Cognitive Science, 18(4), 513–549.",
             "kind": "article",
-            "supports": "*Tetris* players rotate pieces to gain information; the concept of epistemic action."
+            "supports": "*Tetris* players rotate pieces to gain information; the concept of epistemic action.",
+            "checked": true
           },
           {
             "n": 4,
             "citation": "Juul, J. (2005). Half-real: Video games between real rules and fictional worlds. MIT Press.",
             "kind": "book",
-            "supports": "Video games combine real rules with fictional worlds, and both shape the player’s experience."
+            "supports": "Video games combine real rules with fictional worlds, and both shape the player’s experience.",
+            "checked": true
           }
         ],
         "keyTerms": [
@@ -248,9 +256,9 @@
         "title": "Formal and dramatic elements",
         "reading": [
           "MDA tells you how rules turn into experience, but it does not give you a parts list. For that, many designers use the vocabulary of Tracy Fullerton, who teaches game design at the University of Southern California, set out in *Game Design Workshop*, now in its fifth edition (2024). Fullerton defines a game as “a closed, formal system that engages players in structured conflict and resolves its uncertainty in an unequal outcome” [1]. She divides a game’s structure into eight **formal elements**: players, objectives, procedures, rules, resources, conflict, boundaries and outcome. Her test of the list is to take a familiar card game such as gin rummy and change or remove one element at a time. Remove the objective and play loses its point; change a procedure and the game takes on a different character [1].",
-          "Take *Super Mario Bros.* (1985) as a first case. **Players**: one, or two taking turns. **Objectives**: reach the flagpole at the end of each level and, finally, rescue Princess Toadstool (later renamed Peach) from Bowser. **Procedures** are the actions players take and the methods of play: press A to jump, hold B to run. **Rules** define the game’s objects and what is allowed: stomping a Goomba defeats it, touching one from the side costs Mario his power-up or a life, and a Super Mushroom makes him big. Fullerton separates procedures from rules because they answer different questions. Procedures say what the player does; rules say what those actions mean and what the game forbids [1]. In a paper game the difference is visible on the page, while in a video game the code enforces both.",
-          "*Slay the Spire*, a deck-building game from the small studio Mega Crit, shows the other four (Figure 1.3). Its **resources** are many: hit points that carry from fight to fight, three energy per turn to spend on cards, gold for shops, the cards themselves, relics with passive powers, and potions. **Conflict** comes from enemies, and one of the game’s cleverest rules is that each enemy shows its intent for the coming turn, such as an attack of a stated size, so the player’s problem becomes planning rather than guessing. Its **boundaries** are a single run across a branching map. Its **outcome** is unequal in exactly Fullerton’s sense: you defeat the final boss or you die, and a new run begins from scratch [1]. Its Ascension levels, which add handicaps for players who have already won, raise the difficulty of reaching that outcome without touching the other elements.",
-          "Formal elements describe structure. **Dramatic elements** make players care about it. Fullerton’s list is challenge, play, premise, character and story [1]. Many students are surprised that the first two have nothing to do with plot. *Tetris* has no characters and no story, and its premise is barely more than falling blocks, yet it grips players through rising challenge and the endless small experiments of play. *Super Mario Bros.* adds a light **premise**, a plumber rescuing a princess, and that thin fiction does real work. Juul argues that a game’s fiction helps players understand its rules [2]. A mushroom that makes Mario grow tells you, without a word of text, that mushrooms are good to collect.",
+          "Take *Super Mario Bros.* (1985) as a first case. **Players**: one, or two taking turns. **Objectives**: reach the end of each level, usually marked by a flagpole, and, finally, rescue Princess Toadstool (called Peach in Japan, a name later used everywhere) from Bowser. **Procedures** are the actions players take and the methods of play: press A to jump, hold B to run. **Rules** define the game’s objects and what is allowed: stomping a Goomba defeats it, touching one from the side costs Mario his power-up or a life, and a Super Mushroom makes him big. Fullerton separates procedures from rules because they answer different questions. Procedures say what the player does; rules say what those actions mean and what the game forbids [1]. In a paper game the difference is visible on the page, while in a video game the code enforces both.",
+          "*Slay the Spire*, a deck-building game from the small studio Mega Crit, shows the other four (Figure 1.3). Its **resources** are many: hit points that carry from fight to fight, three energy per turn to spend on cards, gold for shops, the cards themselves, relics with passive powers, and potions. **Conflict** comes from enemies, and one of the game’s cleverest rules is that each enemy shows its intent for the coming turn, such as an attack of a stated size, so the player’s problem becomes planning rather than guessing. Its **boundaries** are a single run across a branching map. Its **outcome** is unequal in exactly Fullerton’s sense: you defeat the final boss or you die, and a new run begins from scratch [1]. Its Ascension levels, which add handicaps for players who have already won, such as tougher enemies and scarcer resources, raise the difficulty of reaching that outcome while leaving the objective unchanged.",
+          "Formal elements describe structure. **Dramatic elements** make players care about it. Fullerton’s core list is challenge, play, premise, character and story [1]. Many students are surprised that the first two have nothing to do with plot. *Tetris* has no characters and no story, and its premise is barely more than falling blocks, yet it grips players through rising challenge and the endless small experiments of play. *Super Mario Bros.* adds a light **premise**, a plumber rescuing a princess, and that thin fiction does real work. Juul argues that a game’s fiction helps players understand its rules [2]. A mushroom that makes Mario grow tells you, without a word of text, that mushrooms are good to collect.",
           "Together, the two lists form a diagnostic checklist. When a prototype feels flat, the cause is often an element nobody specified. A card game with no clear objective drifts. One with no conflict is a puzzle with nothing pushing back. One with no resource that players can run short of seldom forces hard choices. Boundaries need special care in physical games, because they include the shared agreement about when the game is on and off, the magic circle from section 1.1 [3]. You will use this checklist at the end of the chapter to write the first version of your pocket card game. Chapter 2 then looks at what players actually do moment to moment, and Chapter 4 returns to resources as a full economy."
         ],
         "sources": [
@@ -258,19 +266,22 @@
             "n": 1,
             "citation": "Fullerton, T. (2024). Game design workshop: A playcentric approach to creating innovative games (5th ed.). CRC Press.",
             "kind": "book",
-            "supports": "Fullerton’s definition of a game, the eight formal elements, the five dramatic elements, the distinction between procedures and rules, and the gin rummy exercise."
+            "supports": "Fullerton’s definition of a game, the eight formal elements, the five dramatic elements, the distinction between procedures and rules, and the gin rummy exercise.",
+            "checked": true
           },
           {
             "n": 2,
             "citation": "Juul, J. (2005). Half-real: Video games between real rules and fictional worlds. MIT Press.",
             "kind": "book",
-            "supports": "A game’s fiction cues players to understand its rules."
+            "supports": "A game’s fiction cues players to understand its rules.",
+            "checked": true
           },
           {
             "n": 3,
             "citation": "Salen, K., & Zimmerman, E. (2003). Rules of play: Game design fundamentals. MIT Press.",
             "kind": "book",
-            "supports": "The magic circle as the boundary of a game."
+            "supports": "The magic circle as the boundary of a game.",
+            "checked": true
           }
         ],
         "keyTerms": [
@@ -303,7 +314,7 @@
           "title": "Worked example: taking apart the card game War",
           "steps": [
             "Players and objectives: two players; the objective is to win every card in the deck.",
-            "Procedures: split the deck face down, each player turns over the top card, and the higher card takes both. On a tie, each player puts down three cards face down and one face up, and the higher face-up card takes the whole pile.",
+            "Procedures: split the deck face down, each player turns over the top card, and the higher card takes both. On a tie, each player puts down one or more cards face down (house rules vary, often one or three) and one face up, and the higher face-up card takes the whole pile.",
             "Rules and resources: card ranks decide each contest; the cards in your pile are your only resource.",
             "Conflict, boundaries and outcome: each flip pits your card against your opponent’s; the game uses one standard deck on a table; it ends when one player holds every card, which can take a very long time.",
             "Diagnosis: every formal element is present, yet at no point does a player choose anything. The shuffle decides the whole outcome. That missing decision is why War is a game for young children and a warning for designers."
@@ -354,7 +365,7 @@
       "type": "timeline",
       "section": "1.1",
       "title": "Landmark games and ideas",
-      "intro": "Tap each event. Notice that the ideas in this chapter came from philosophers and historians first, then from working designers, and that the games came long before the frameworks used to explain them.",
+      "intro": "Tap each event. Notice that the ideas in this chapter came from philosophers and historians first, then from working designers, and that the two oldest games came long before the frameworks used to explain them.",
       "unit": "year",
       "reverse": false,
       "events": [
@@ -386,7 +397,7 @@
         {
           "t": 2001,
           "label": "MDA taught at GDC",
-          "detail": "Hunicke, LeBlanc and Zubek begin teaching the framework at the Game Design and Tuning Workshop."
+          "detail": "The framework is developed and taught at the GDC Game Design and Tuning Workshop, which runs from 2001 to 2004."
         },
         {
           "t": 2003,
@@ -738,31 +749,36 @@
         "citation": "Salen, K., & Zimmerman, E. (2003). Rules of play: Game design fundamentals. MIT Press.",
         "kind": "book",
         "why": "The fullest treatment of games as systems. Read the chapters on defining games and on games as systems for sections 1.1 and 1.2.",
-        "pages": ""
+        "pages": "",
+        "checked": true
       },
       {
         "citation": "Hunicke, R., LeBlanc, M., & Zubek, R. (2004). MDA: A formal approach to game design and game research. In Proceedings of the AAAI Workshop on Challenges in Game AI (Technical Report WS-04-04, pp. 1–5). AAAI Press.",
         "kind": "chapter",
         "why": "The original MDA paper is only five pages. Read it in full, including the eight aesthetics and the example game profiles.",
-        "pages": "1–5"
+        "pages": "1–5",
+        "checked": true
       },
       {
         "citation": "Fullerton, T. (2024). Game design workshop: A playcentric approach to creating innovative games (5th ed.). CRC Press.",
         "kind": "book",
         "why": "The standard studio-style design textbook. Chapters 3 and 4 cover formal and dramatic elements, with exercises you can do with a deck of cards.",
-        "pages": "Chapters 3–4"
+        "pages": "Chapters 3–4",
+        "checked": true
       },
       {
         "citation": "Suits, B. (2014). The grasshopper: Games, life and utopia (3rd ed.). Broadview Press.",
         "kind": "book",
-        "why": "Short, witty and still the most careful definition of game playing. The current edition adds an introduction by Thomas Hurka.",
-        "pages": ""
+        "why": "Short, witty and still the most careful definition of game playing. The current edition includes an introduction by Thomas Hurka.",
+        "pages": "",
+        "checked": true
       },
       {
         "citation": "Juul, J. (2005). Half-real: Video games between real rules and fictional worlds. MIT Press.",
         "kind": "book",
         "why": "Chapter 2, “Video Games and the Classic Game Model,” sets out Juul’s six features and their borderline cases.",
-        "pages": "Chapter 2"
+        "pages": "Chapter 2",
+        "checked": true
       }
     ],
     "videos": [
@@ -799,5 +815,116 @@
   },
   "prov": {
     "note": "Text, figures, practice, lecture and quiz hand-written in Claude Code by Claude (configured model claude-opus-5-5), October 2026."
+  },
+  "review": {
+    "full": true,
+    "at": 1791600000000,
+    "by": "Researched and written with web-search verification; then fact-checked independently by a second agent using web search (WebSearch worked; direct page fetches failed on DNS, so some details such as Fullerton's 5th-edition section headings and the GDC workshop staffing were checked from expert knowledge and softened where uncertain); every answer key re-solved blind.",
+    "keysChecked": 14,
+    "keysAgreed": 14,
+    "keyFixes": [],
+    "corrections": [
+      {
+        "where": "1.1 reading",
+        "before": "Its goal is unusual: you cannot win, so the real goal is to clear rows and score as much as possible before the stack reaches the top.",
+        "after": "Its goal is unusual: in its classic endless mode you cannot win, so the real goal is to clear rows and score as much as possible before the stack reaches the top.",
+        "why": "Not all Tetris modes are unwinnable: NES and Game Boy Tetris (1989) have a B-Type mode that ends in success once 25 lines are cleared, and modern versions have 40-line sprints. The claim holds for the endless (A-Type/marathon) mode the chapter discusses.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "1.1 example",
+        "before": "Conclusion: *Tetris* is a game under every definition here, even though no one can win it.",
+        "after": "Conclusion: *Tetris* is a game under every definition here, even though its classic endless mode cannot be won.",
+        "why": "Same issue: NES/Game Boy B-Type mode is won by clearing 25 lines; only the endless mode has no win.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "1.1 misconception",
+        "before": "*Tetris* and many single-player games have no victory at all, only better and worse results.",
+        "after": "Endless *Tetris* and many single-player games have no victory at all, only better and worse results.",
+        "why": "Some Tetris modes (NES/Game Boy B-Type, 40-line sprint) do have a completion condition.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "figure 1 label",
+        "before": "delay the end (no way to win)",
+        "after": "delay the end (endless mode: no win)",
+        "why": "Only the endless mode has no win; B-Type modes end in success after 25 lines.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "1.2 reading",
+        "before": "Kirsh and Maglio called such moves **epistemic actions**: actions taken to gain information rather than to change the world [3].",
+        "after": "Kirsh and Maglio called such moves **epistemic actions**: actions taken to gain information or make thinking easier, rather than to move closer to the goal [3].",
+        "why": "Kirsh and Maglio contrast epistemic actions with pragmatic actions, which bring the agent physically closer to a goal. Epistemic actions do change the world (the piece really rotates); what distinguishes them is that they are done to uncover information or simplify mental computation. The chapter's own key-term definition already says this correctly.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "1.3 reading",
+        "before": "**Objectives**: reach the flagpole at the end of each level and, finally, rescue Princess Toadstool (later renamed Peach) from Bowser.",
+        "after": "**Objectives**: reach the end of each level, usually marked by a flagpole, and, finally, rescue Princess Toadstool (called Peach in Japan, a name later used everywhere) from Bowser.",
+        "why": "Castle levels (World x-4) end at the bridge and axe, not a flagpole. The princess was named Peach in the Japanese original from 1985; Toadstool was the English localization name, replaced by Peach in the West in the 1990s, so 'later renamed' misstates the history.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "1.3 reading",
+        "before": "Its Ascension levels, which add handicaps for players who have already won, raise the difficulty of reaching that outcome without touching the other elements.",
+        "after": "Its Ascension levels, which add handicaps for players who have already won, such as tougher enemies and scarcer resources, raise the difficulty of reaching that outcome while leaving the objective unchanged.",
+        "why": "Ascension modifiers directly change other formal elements: deadlier normal enemies, elites and bosses (conflict), and lower max HP, starting damaged, fewer potion slots and higher shop prices (resources). They do not leave the other elements untouched.",
+        "severity": "error",
+        "applied": true
+      },
+      {
+        "where": "1.3 reading",
+        "before": "Fullerton’s list is challenge, play, premise, character and story [1].",
+        "after": "Fullerton’s core list is challenge, play, premise, character and story [1].",
+        "why": "Her chapter 'Working with Dramatic Elements' also treats world building and the dramatic arc (in the editions this checker knows; the 5th-edition section list could not be confirmed by search). Calling these five 'the list' overstates its closure; 'core list' is safe.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "1.3 example",
+        "before": "On a tie, each player puts down three cards face down and one face up, and the higher face-up card takes the whole pile.",
+        "after": "On a tie, each player puts down one or more cards face down (house rules vary, often one or three) and one face up, and the higher face-up card takes the whole pile.",
+        "why": "War has no single authoritative rule here; common published rules use one face-down card, and three is a widespread variant. Stating three as the rule is too specific.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "interactive 1",
+        "before": "Hunicke, LeBlanc and Zubek begin teaching the framework at the Game Design and Tuning Workshop.",
+        "after": "The framework is developed and taught at the GDC Game Design and Tuning Workshop, which runs from 2001 to 2004.",
+        "why": "The MDA paper says only that MDA was developed and taught as part of the workshop at GDC San Jose 2001–2004; it does not establish that all three authors began teaching it together in 2001 (Marc LeBlanc led the workshop, whose staff changed over the years). Could not confirm the stronger claim.",
+        "severity": "unverifiable",
+        "applied": true
+      },
+      {
+        "where": "interactive 1",
+        "before": "and that the games came long before the frameworks used to explain them",
+        "after": "and that the two oldest games came long before the frameworks used to explain them",
+        "why": "The timeline itself places Slay the Spire (2019) after Rules of Play (2003) and the MDA paper (2004), so not all the games came before the frameworks.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "readings (Suits 2014)",
+        "before": "The current edition adds an introduction by Thomas Hurka.",
+        "after": "The current edition includes an introduction by Thomas Hurka.",
+        "why": "Hurka's introduction first appeared in the 2005 Broadview edition, so it is not new to the 2014 third edition.",
+        "severity": "imprecise",
+        "applied": true
+      }
+    ],
+    "readingsRemoved": [],
+    "srcChecked": 11,
+    "srcWithdrawn": 0,
+    "summary": "The chapter is accurate on its load-bearing facts: Willis Gibson's level-157 crash, NES Tetris scoring and the 7.5 ratio, the MDA paper (venue, WS-04-04, pp. 1–5, definitions, eight aesthetics, Final Fantasy profile), Kirsh and Maglio 1994, Suits, Salen and Zimmerman, Juul's six features and borderline cases, McGonigal, Fullerton 5th ed. (2024) and the gin rummy exercise, and Slay the Spire's mechanics all check out, and all 14 answer keys are correct. The one real error is the claim that Ascension leaves the other formal elements untouched; the remaining fixes soften overgeneralizations (Tetris 'cannot be won', epistemic actions 'not changing the world', the Peach naming, flagpoles, War's tie rule, timeline wording).",
+    "style": {}
   }
 }
