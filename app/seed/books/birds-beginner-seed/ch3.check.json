@@ -69,8 +69,8 @@
   },
   {
    "where": "3.4 misconception fact",
-   "quote": "Many birds smell well. Turkey Vultures find hidden carcasses by odor, kiwis sniff for worms through nostrils at the tip of the bill, and tubenoses track the smell of dimethyl sulfide across the ocean.",
-   "correction": "Many birds smell well. Turkey Vultures find hidden carcasses by odor, kiwis sniff for worms through nostrils at the tip of the bill, and many tubenoses track the smell of dimethyl sulfide across the ocean.",
+   "quote": "Turkey Vultures find hidden carcasses by odor, kiwis sniff for worms through nostrils at the tip of the bill, and tubenoses track the smell of dimethyl sulfide across the ocean.",
+   "correction": "Turkey Vultures find hidden carcasses by odor, kiwis sniff for worms through nostrils at the tip of the bill, and many tubenoses track the smell of dimethyl sulfide across the ocean.",
    "why": "Attraction to DMS varies among tubenose species (Nevitt et al. 1995), so the statement should not cover the whole group.",
    "severity": "imprecise"
   }
