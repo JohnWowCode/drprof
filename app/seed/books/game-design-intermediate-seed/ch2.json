@@ -576,7 +576,7 @@
    "type": "case",
    "section": "2.4",
    "title": "The kill screen that was not",
-   "intro": "NES Tetris (1989) set a held direction to repeat after 16 frames and then every 6 frames, and made pieces fall one row per frame from level 29. For about three decades, level 29 was treated as the end of the game. Think through each question before revealing the answer.",
+   "intro": "NES Tetris (1989) set a held direction to repeat after 16 frames and then every 6 frames, and made pieces fall one row per frame from level 29. For many years, level 29 was treated as the end of the game. Think through each question before revealing the answer.",
    "steps": [
     {
      "q": "Was level 29 a designed ending?",
@@ -842,7 +842,7 @@
    {
     "citation": "Salen, K., & Zimmerman, E. (2003). Rules of play: Game design fundamentals. MIT Press.",
     "kind": "book",
-    "why": "Read the chapters on core mechanics and on games as emergent systems for the definitions used in sections 2.1 and 2.4.",
+    "why": "Read its discussion of the core mechanic and its chapter on games as emergent systems for the definitions used in sections 2.1 and 2.4.",
     "pages": ""
    },
    {
