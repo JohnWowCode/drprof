@@ -1,0 +1,102 @@
+{
+ "method": "Researched and written with web-search verification; then fact-checked independently by a second agent using web search (WebSearch worked; direct page fetches of allaboutbirds.org and other sites failed with DNS errors, so page contents were checked through search-result excerpts, with expert review for details search could not reach); figures were rendered in Chromium and measured from the SVG coordinates; every answer key re-solved blind.",
+ "keysChecked": 16,
+ "keysAgreed": 16,
+ "keyFixes": [],
+ "corrections": [
+  {
+   "where": "hook",
+   "quote": "Its idea was simple and new: you do not need a bird in your hand to name it.",
+   "correction": "Its idea was simple, and Peterson made it work better than anyone before him: you do not need a bird in your hand to name it.",
+   "why": "Identifying living birds by sight without collecting them was not new in 1934; earlier field books, notably Ralph Hoffmann's Guide to the Birds of New England and Eastern New York (1904), which Peterson acknowledged as an influence, already aimed at this. Peterson's novelty was the comparative, pattern-based system of plates and marks.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "4.2 reading",
+   "quote": "Instead of describing every feather, he showed similar species together and pointed out only the marks that separate them, an approach he called identification by elimination, combining field marks with knowledge of range [1].",
+   "correction": "Instead of describing every feather, he showed similar species together and pointed out only the marks that separate them, an approach often described as identification by elimination, combining field marks with knowledge of range [1].",
+   "why": "Secondary sources describe Peterson's method as narrowing possibilities by elimination, but I could not confirm that Peterson himself named it 'identification by elimination'; attributing the term to him is unverified.",
+   "severity": "unverifiable"
+  },
+  {
+   "where": "4.2 reading",
+   "quote": "His later guides became famous for small arrows pointing straight at the marks that matter.",
+   "correction": "His guides became famous for small arrows pointing straight at the marks that matter.",
+   "why": "Several sources (e.g., descriptions of the Peterson Identification System and of the 1934 first edition) say the first edition already used arrows to point to key marks; others are silent. Saying 'later guides' implies the arrows were added afterward, which is not established. Dropping 'later' is true either way.",
+   "severity": "unverifiable"
+  },
+  {
+   "where": "4.2 reading",
+   "quote": "A female Purple Finch has a whitish stripe over the eye and a dark stripe running back from the bill, framing a brown cheek; a female House Finch has a plain brown face [5].",
+   "correction": "A female Purple Finch has a bold face pattern, with a whitish stripe over the eye, a dark brown cheek and a dark stripe down the side of the throat; a female House Finch has a plain brown face [5].",
+   "why": "In female Purple Finch the dark cheek is framed by the whitish eyebrow above and a whitish mustache stripe below; the dark stripe from the bill base is a malar stripe running down the side of the throat, and it does not frame the cheek. Standard guide wording (FeederWatch, All About Birds) is 'whitish eyebrow and dark stripe down the side of the throat'.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "P4.2-1 answer",
+   "quote": "Female Purple Finches have a bold face pattern, a whitish stripe over the eye and a dark stripe back from the bill framing a brown cheek, while female House Finches have a plain brown face.",
+   "correction": "Female Purple Finches have a bold face pattern, with a whitish stripe over the eye, a dark brown cheek and a dark stripe down the side of the throat, while female House Finches have a plain brown face.",
+   "why": "Same face-pattern issue as the 4.2 reading: the dark malar stripe runs down the side of the throat; the cheek is framed by whitish stripes.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "P4.2-1 answer",
+   "quote": "The long, thin, blurry breast streaks also fit a House Finch better than the short, thick, smudged streaks of a Purple Finch.",
+   "correction": "The blurry, indistinct breast streaks also fit a House Finch better than the crisper, more sharply defined streaks of a Purple Finch.",
+   "why": "Female Purple Finch underparts are whiter with crisp, well-defined dark streaks; it is the female House Finch whose streaks are blurry and smudgy. Calling Purple Finch streaks 'smudged' inverts the usual contrast and would mislead a beginner.",
+   "severity": "error"
+  },
+  {
+   "where": "4.3 worked example",
+   "quote": "Ruby-throated Hummingbirds have left for Central America by then.",
+   "correction": "Ruby-throated Hummingbirds have left for Mexico and Central America by then.",
+   "why": "Most Ruby-throated Hummingbirds winter from southern Mexico through Central America (a few along the Gulf Coast and in Florida), not in Central America alone.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "interactive 3 (case), step 4 answer",
+   "quote": "Golden Eagles occur in the East mainly in migration and winter.",
+   "correction": "Golden Eagles occur in the East mainly in migration and winter, and a dark young Bald Eagle, common in Pennsylvania in July, soars on flat, plank-like wings and has a large head.",
+   "why": "The case asks which look-alikes are possible in central Pennsylvania in July, and step 1 lists eagles, but the only eagle it rules out is the Golden Eagle (by season). The eagle actually likely there in summer is the Bald Eagle, whose dark immatures are a real Turkey Vulture look-alike; without it the claim that 'the look-alikes [are] excluded' is incomplete.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "interactive 4 (order)",
+   "quote": "Read the shape and place the bird in a family",
+   "correction": "Combine size with shape to place the bird in a family",
+   "why": "As written, steps 1 (size) and 2 (shape) can be done in either order, and the chapter's own Downy/Hairy worked example does 'Shape first' and size second, so a learner who swaps them is marked wrong while following the book. Making step 2 the step that combines size and shape gives the order a single defensible answer.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "4.4 worked example",
+   "quote": "Enter “House Finch, 3” along with every other species you identified in those 30 minutes, give the start time, duration and distance (zero for a stationary count), and mark the checklist complete only if nothing you identified was left off.",
+   "correction": "Enter “House Finch, 3” along with every other species you identified in those 30 minutes, give the start time and duration (choosing the stationary protocol, which has no distance, for a count from one spot), and mark the checklist complete only if nothing you identified was left off.",
+   "why": "In eBird a count from one spot is entered with the Stationary protocol, which has no distance field; distance is entered only for the Traveling protocol. Telling a beginner to enter zero distance misdescribes the form.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "interactive 2 (sort), Mallard",
+   "quote": "Flat bill, sits low on the water, short legs.",
+   "correction": "Flat bill, floats on the water with its tail held up, short legs.",
+   "why": "Dabbling ducks such as the Mallard ride high on the water with the tail raised; it is diving ducks, loons and cormorants that sit low. Field guides use 'rides high' versus 'sits low' to separate dabblers from divers, so this is the wrong cue for a Mallard.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "figure 2 label",
+   "quote": "flat bill; sits low on the water",
+   "correction": "flat bill; floats on the water",
+   "why": "Same issue as the sort item: the drawn duck is a dabbler-type (Mallard-like) duck, and dabblers ride high on the water.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "figure 2 label",
+   "quote": "clings upright, braced on stiff tail",
+   "correction": "clings upright, facing the trunk, braced on stiff tail",
+   "why": "The woodpecker drawing faces away from the tree: its bill points left (x≈365) while the trunk is on the right (x=435–469), so its back, feet and tail are pressed against the bark. A clinging woodpecker faces the trunk, belly and feet against the bark and bill toward the wood. The drawing must be mirrored horizontally so the bill points at the trunk (with the feet and tail still touching it); the label change makes the intended posture explicit.",
+   "severity": "error"
+  }
+ ],
+ "sourcesChecked": 18,
+ "sourcesWithdrawn": [],
+ "summary": "The chapter is accurate on the points given extra scrutiny: Peterson's 1934 print run, royalties, rejections and sell-out; the Cornell four keys; every All About Birds length; Figure 4.1's true scale (9 px/cm: 16, 24 and 46 cm exactly); all 21 topography leaders; genus names; and all 16 multiple-choice keys. The problems are one drawing error (the Figure 4.2 woodpecker faces away from its trunk), an inverted Purple/House Finch streak contrast in a practice answer, and several soft spots: arrows and 'identification by elimination' attributed too firmly, the 'new' idea in the hook, the Mallard 'sits low' cue, a missing Bald Eagle look-alike, an ambiguous order item, and eBird's stationary-protocol distance."
+}

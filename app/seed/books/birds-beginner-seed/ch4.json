@@ -18,7 +18,7 @@
   }
  ],
  "lesson": {
-  "hook": "In April 1934, a 25-year-old art teacher at a school near Boston published a slim book that several publishers had already turned down. His publisher, Houghton Mifflin, printed just 2,000 copies and paid him no royalties on the first thousand. The printing sold out within weeks. The teacher was Roger Tory Peterson, and the book was *A Field Guide to the Birds*. Its idea was simple and new: you do not need a bird in your hand to name it. You need to know the few visible marks that separate it from every similar bird, and where and when it lives. More than ninety years later, field guides and identification apps still build on that idea. This chapter teaches you the method behind it, one step at a time.",
+  "hook": "In April 1934, a 25-year-old art teacher at a school near Boston published a slim book that several publishers had already turned down. His publisher, Houghton Mifflin, printed just 2,000 copies and paid him no royalties on the first thousand. The printing sold out within weeks. The teacher was Roger Tory Peterson, and the book was *A Field Guide to the Birds*. Its idea was simple, and Peterson made it work better than anyone before him: you do not need a bird in your hand to name it. You need to know the few visible marks that separate it from every similar bird, and where and when it lives. More than ninety years later, field guides and identification apps still build on that idea. This chapter teaches you the method behind it, one step at a time.",
   "overview": "This chapter turns the anatomy of the first three chapters into a practical skill: naming the bird in front of you. You will learn the order in which experienced birders gather evidence. First comes size and shape, which usually tells you the family (the level of classification Chapter 1 told you to learn first). Then come field marks, read with the standard names for the parts of a bird, which build on the feather groups of Chapter 1. Then come behavior, habitat, range and season, where the wing shapes and flight styles of Chapter 2 and the bills of Chapter 3 earn their keep. The last section shows how field guides are organized and how to keep a checklist, the record you will submit in Chapter 8. Identifying birds by ear waits for Chapter 5.",
   "objectives": [
    "Estimate a bird’s size against reference birds and place it in a shape family from its silhouette.",
@@ -43,25 +43,29 @@
       "n": 1,
       "citation": "Cornell Lab of Ornithology. (n.d.). Building skills: The 4 keys to bird identification. All About Birds. https://www.allaboutbirds.org/news/building-skills-the-4-keys-to-bird-identification/",
       "kind": "website",
-      "supports": "The four keys (size and shape, color pattern, behavior, habitat) and their order; the Evening Grosbeak and American Goldfinch example."
+      "supports": "The four keys (size and shape, color pattern, behavior, habitat) and their order; the Evening Grosbeak and American Goldfinch example.",
+      "checked": true
      },
      {
       "n": 2,
       "citation": "Cornell Lab of Ornithology. (n.d.). All About Birds: Online bird guide [Species identification pages]. https://www.allaboutbirds.org/guide/",
       "kind": "website",
-      "supports": "Lengths of the House Sparrow, American Robin, American Crow, Rock Pigeon, Downy and Hairy Woodpeckers; the bill-length test for Downy and Hairy; size overlap and tail and head shape in Sharp-shinned and Cooper’s Hawks."
+      "supports": "Lengths of the House Sparrow, American Robin, American Crow, Rock Pigeon, Downy and Hairy Woodpeckers; the bill-length test for Downy and Hairy; size overlap and tail and head shape in Sharp-shinned and Cooper’s Hawks.",
+      "checked": true
      },
      {
       "n": 3,
       "citation": "Kaufman, K. (2011). Kaufman field guide to advanced birding: Understanding what you see and hear. Houghton Mifflin Harcourt.",
       "kind": "book",
-      "supports": "Structure and proportion as the basis of identification; learning families first."
+      "supports": "Structure and proportion as the basis of identification; learning families first.",
+      "checked": true
      },
      {
       "n": 4,
       "citation": "Sibley, D. A. (2014). The Sibley guide to birds (2nd ed.). Alfred A. Knopf.",
       "kind": "book",
-      "supports": "Field-guide length is measured from bill tip to tail tip."
+      "supports": "Field-guide length is measured from bill tip to tail tip.",
+      "checked": true
      }
     ],
     "keyTerms": [
@@ -138,11 +142,11 @@
     "n": "4.2",
     "title": "Field marks and bird topography",
     "reading": [
-     "A **field mark** is a visible feature that helps tell one species from similar ones: a stripe over the eye, bars on the wing, spots on the tail, a patch of color on the rump. Peterson built his 1934 guide around this idea. Instead of describing every feather, he showed similar species together and pointed out only the marks that separate them, an approach he called identification by elimination, combining field marks with knowledge of range [1]. His later guides became famous for small arrows pointing straight at the marks that matter. Every modern guide, from Sibley’s paintings to photographic guides, still works this way [2].",
+     "A **field mark** is a visible feature that helps tell one species from similar ones: a stripe over the eye, bars on the wing, spots on the tail, a patch of color on the rump. Peterson built his 1934 guide around this idea. Instead of describing every feather, he showed similar species together and pointed out only the marks that separate them, an approach often described as identification by elimination, combining field marks with knowledge of range [1]. His guides became famous for small arrows pointing straight at the marks that matter. Every modern guide, from Sibley’s paintings to photographic guides, still works this way [2].",
      "To use field marks you need words for where they are. Birders and ornithologists share a standard vocabulary for the outside of a bird, called **bird topography** (Figure 4.3). On the head, the **crown** is the top, the forehead is in front of it and the **nape** is the back of the neck. The **lores** are the small area between the eye and the bill. A stripe above the eye is the **supercilium**, or eyebrow; a ring of feathers around the eye is an eye-ring. A dark stripe running back from the base of the lower bill, between the cheek and the throat, is a **malar stripe**. The bill has an upper and a lower **mandible** [2, 3].",
      "The body divides into upperparts and underparts. Above are the back, the **rump** just in front of the tail, and the tail itself. Below are the throat, breast, belly, the **flanks** along the sides under the folded wing, and the **undertail coverts**, the feathers that cover the base of the tail from below. On a perched bird the folded wing shows rows of covert feathers overlapping like roof shingles. When the coverts of two rows have pale tips, they form two pale lines across the wing, the **wing bars**. Behind them lie the **tertials**, the innermost flight feathers, and at the wingtip the primaries, the remiges you met in Chapter 1 [2, 3].",
      "Now read a familiar bird with these words. An adult American Robin has a blackish-gray head with white arcs above and below the eye, a broken eye-ring rather than a complete one. The bill is yellow. The throat is white with dark streaks, the breast warm orange, and the lower belly and undertail coverts white. The back and wings are gray-brown, with no wing bars. Females are usually paler than males, but the two overlap [4]. Each item in that description names a part, so anyone with a field guide can check it.",
-     "Field marks matter most when two species look alike, and the best marks are often about pattern and where color sits rather than the exact shade. Male House Finches (*Haemorhous mexicanus*) have red mostly on the head, breast and rump, with brown streaks on the flanks. Male Purple Finches (*Haemorhous purpureus*) look as if they were dipped in raspberry juice: the pinkish-red washes over the back and wings too, and the flanks lack distinct streaks. Females are easier still. A female Purple Finch has a whitish stripe over the eye and a dark stripe running back from the bill, framing a brown cheek; a female House Finch has a plain brown face [5].",
+     "Field marks matter most when two species look alike, and the best marks are often about pattern and where color sits rather than the exact shade. Male House Finches (*Haemorhous mexicanus*) have red mostly on the head, breast and rump, with brown streaks on the flanks. Male Purple Finches (*Haemorhous purpureus*) look as if they were dipped in raspberry juice: the pinkish-red washes over the back and wings too, and the flanks lack distinct streaks. Females are easier still. A female Purple Finch has a bold face pattern, with a whitish stripe over the eye, a dark brown cheek and a dark stripe down the side of the throat; a female House Finch has a plain brown face [5].",
      "Field marks vary, so never rely on just one. Males and females often differ, as in the finches. Young birds differ from adults; a juvenile robin has a spotted breast. Many species change plumage between breeding and nonbreeding seasons, and molt and feather wear change a bird’s appearance through the year, as Chapter 1 described [3]. Light matters too: the same red can look orange in low sun or brown in shade. A guide shows a typical bird in good light. Your bird may differ in small ways, and the marks that separate it from its look-alikes are the ones to check."
     ],
     "sources": [
@@ -150,31 +154,36 @@
       "n": 1,
       "citation": "Peterson, R. T. (1934). A field guide to the birds: Giving field marks of all species found east of the Rockies. Houghton Mifflin.",
       "kind": "book",
-      "supports": "Peterson’s field-mark method of identification by elimination, using field marks and range."
+      "supports": "Peterson’s field-mark method of identification by elimination, using field marks and range.",
+      "checked": true
      },
      {
       "n": 2,
       "citation": "Sibley, D. A. (2014). The Sibley guide to birds (2nd ed.). Alfred A. Knopf.",
       "kind": "book",
-      "supports": "Standard topography of a bird and the field-mark approach of a modern illustrated guide."
+      "supports": "Standard topography of a bird and the field-mark approach of a modern illustrated guide.",
+      "checked": true
      },
      {
       "n": 3,
       "citation": "Lovette, I. J., & Fitzpatrick, J. W. (Eds.). (2016). Handbook of bird biology (3rd ed.). Wiley-Blackwell; Cornell Lab of Ornithology.",
       "kind": "book",
-      "supports": "Names of feather tracts and wing feathers; plumage variation with age, sex, season, molt and wear."
+      "supports": "Names of feather tracts and wing feathers; plumage variation with age, sex, season, molt and wear.",
+      "checked": true
      },
      {
       "n": 4,
       "citation": "Cornell Lab of Ornithology. (n.d.). All About Birds: Online bird guide [Species identification pages]. https://www.allaboutbirds.org/guide/",
       "kind": "website",
-      "supports": "Plumage of the American Robin: broken white eye-ring, yellow bill, streaked throat, orange breast, white undertail, paler females."
+      "supports": "Plumage of the American Robin: broken white eye-ring, yellow bill, streaked throat, orange breast, white undertail, paler females.",
+      "checked": true
      },
      {
       "n": 5,
       "citation": "Project FeederWatch. (n.d.). Tricky bird IDs. Cornell Lab of Ornithology; Birds Canada. https://feederwatch.org/learn/tricky-bird-ids/",
       "kind": "website",
-      "supports": "Field marks separating male and female House Finches and Purple Finches."
+      "supports": "Field marks separating male and female House Finches and Purple Finches.",
+      "checked": true
      }
     ],
     "keyTerms": [
@@ -234,7 +243,7 @@
      {
       "type": "short",
       "q": "A brown, streaky finch with a thick bill visits your feeder. Its face is plain brown, with no stripe over the eye, and its breast has long, thin, blurry streaks. Is it more likely a female House Finch or a female Purple Finch? Explain using field marks.",
-      "answer": "A female House Finch. Female Purple Finches have a bold face pattern, a whitish stripe over the eye and a dark stripe back from the bill framing a brown cheek, while female House Finches have a plain brown face. The long, thin, blurry breast streaks also fit a House Finch better than the short, thick, smudged streaks of a Purple Finch.",
+      "answer": "A female House Finch. Female Purple Finches have a bold face pattern, with a whitish stripe over the eye, a dark brown cheek and a dark stripe down the side of the throat, while female House Finches have a plain brown face. The blurry, indistinct breast streaks also fit a House Finch better than the crisper, more sharply defined streaks of a Purple Finch.",
       "explanation": "A good answer names the face pattern (supercilium and dark stripe in Purple Finch, plain face in House Finch) as the deciding mark."
      },
      {
@@ -266,25 +275,29 @@
       "n": 1,
       "citation": "Cornell Lab of Ornithology. (n.d.). All About Birds: Online bird guide [Species identification pages]. https://www.allaboutbirds.org/guide/",
       "kind": "website",
-      "supports": "American Robin foraging behavior; White-breasted Nuthatch climbing headfirst down trunks; Eastern Phoebe tail-pumping; Turkey Vulture dihedral and teetering versus the flat wings of a soaring Red-tailed Hawk; Ruby-throated Hummingbird as the only breeding hummingbird of eastern North America."
+      "supports": "American Robin foraging behavior; White-breasted Nuthatch climbing headfirst down trunks; Eastern Phoebe tail-pumping; Turkey Vulture dihedral and teetering versus the flat wings of a soaring Red-tailed Hawk; Ruby-throated Hummingbird as the only breeding hummingbird of eastern North America.",
+      "checked": true
      },
      {
       "n": 2,
       "citation": "Cornell Lab of Ornithology. (n.d.). Building skills: The 4 keys to bird identification. All About Birds. https://www.allaboutbirds.org/news/building-skills-the-4-keys-to-bird-identification/",
       "kind": "website",
-      "supports": "Behavior and habitat as identification keys, the Killdeer example, and keeping a running list of likely species for the place and season."
+      "supports": "Behavior and habitat as identification keys, the Killdeer example, and keeping a running list of likely species for the place and season.",
+      "checked": true
      },
      {
       "n": 3,
       "citation": "Cornell Lab of Ornithology. (n.d.). Is it unusual to see American Robins in the middle of winter? All About Birds. https://www.allaboutbirds.org/news/is-it-unusual-to-see-american-robins-in-the-middle-of-winter/",
       "kind": "website",
-      "supports": "Many American Robins stay year-round; winter flocks, fruit-eating and roosting; January reports in every state except Hawaii; why robins seem to return in spring."
+      "supports": "Many American Robins stay year-round; winter flocks, fruit-eating and roosting; January reports in every state except Hawaii; why robins seem to return in spring.",
+      "checked": true
      },
      {
       "n": 4,
       "citation": "Sullivan, B. L., Wood, C. L., Iliff, M. J., Bonney, R. E., Fink, D., & Kelling, S. (2009). eBird: A citizen-based bird observation network in the biological sciences. Biological Conservation, 142(10), 2282–2292.",
       "kind": "article",
-      "supports": "eBird checklists and its review of unusual records by data filters and regional experts."
+      "supports": "eBird checklists and its review of unusual records by data filters and regional experts.",
+      "checked": true
      }
     ],
     "keyTerms": [
@@ -315,7 +328,7 @@
       "Shape and behavior: a tiny bird with a needle-thin bill hovers at a feeder on a blur of wings. That places it among the hummingbirds before you see any color.",
       "Range and season: the place is Ohio and the month is July. The Ruby-throated Hummingbird is the only hummingbird that breeds in eastern North America, so it is by far the most likely species.",
       "Field marks: in good light an adult male shows a glowing red throat. A female or young bird lacks the red throat, but range and season have already made Ruby-throated the strong favorite.",
-      "Now change one fact: the same bird visits in December. Ruby-throated Hummingbirds have left for Central America by then. The usual answer no longer fits, so the bird could be a vagrant from the West, and it deserves photographs and a report.",
+      "Now change one fact: the same bird visits in December. Ruby-throated Hummingbirds have left for Mexico and Central America by then. The usual answer no longer fits, so the bird could be a vagrant from the West, and it deserves photographs and a report.",
       "Conclusion: in July, Ruby-throated Hummingbird; in December, an unknown hummingbird that needs field marks and documentation before anyone names it."
      ],
      "takeaway": "Range and season decide which species to expect; field marks and evidence must carry the identification when the expected answer does not fit."
@@ -372,31 +385,36 @@
       "n": 1,
       "citation": "Peterson, R. T. (1934). A field guide to the birds: Giving field marks of all species found east of the Rockies. Houghton Mifflin.",
       "kind": "book",
-      "supports": "The design of the 1934 guide: similar species side by side, and text limited to distinguishing marks and range."
+      "supports": "The design of the 1934 guide: similar species side by side, and text limited to distinguishing marks and range.",
+      "checked": true
      },
      {
       "n": 2,
       "citation": "Carlson, D. (2007). Roger Tory Peterson: A biography. University of Texas Press.",
       "kind": "book",
-      "supports": "Peterson’s life and the making and reception of the 1934 field guide."
+      "supports": "Peterson’s life and the making and reception of the 1934 field guide.",
+      "checked": true
      },
      {
       "n": 3,
       "citation": "Sibley, D. A. (2014). The Sibley guide to birds (2nd ed.). Alfred A. Knopf.",
       "kind": "book",
-      "supports": "Organization of a modern field guide: taxonomic order, plumages illustrated, species accounts and range maps."
+      "supports": "Organization of a modern field guide: taxonomic order, plumages illustrated, species accounts and range maps.",
+      "checked": true
      },
      {
       "n": 4,
       "citation": "Sullivan, B. L., Wood, C. L., Iliff, M. J., Bonney, R. E., Fink, D., & Kelling, S. (2009). eBird: A citizen-based bird observation network in the biological sciences. Biological Conservation, 142(10), 2282–2292.",
       "kind": "article",
-      "supports": "eBird’s launch by the Cornell Lab of Ornithology and National Audubon Society, its checklist and effort data, and the value of complete checklists."
+      "supports": "eBird’s launch by the Cornell Lab of Ornithology and National Audubon Society, its checklist and effort data, and the value of complete checklists.",
+      "checked": true
      },
      {
       "n": 5,
       "citation": "Weidensaul, S. (2007). Of a feather: A brief history of American birding. Harcourt.",
       "kind": "book",
-      "supports": "The influence of Peterson’s guide on the growth of American birding."
+      "supports": "The influence of Peterson’s guide on the growth of American birding.",
+      "checked": true
      }
     ],
     "keyTerms": [
@@ -428,7 +446,7 @@
       "Find the family. The conical bill and size say finch. In a taxonomically arranged guide, the finches are near the back, among the songbirds.",
       "Compare the facing plates. The Purple Finch male is washed with raspberry red on the back and lacks flank streaks; the female has a white eyebrow. Your notes match House Finch on both sexes.",
       "Check the range map. House Finches live year-round across most of the United States, so the bird is expected here.",
-      "Record it. Enter “House Finch, 3” along with every other species you identified in those 30 minutes, give the start time, duration and distance (zero for a stationary count), and mark the checklist complete only if nothing you identified was left off."
+      "Record it. Enter “House Finch, 3” along with every other species you identified in those 30 minutes, give the start time and duration (choosing the stationary protocol, which has no distance, for a count from one spot), and mark the checklist complete only if nothing you identified was left off."
      ],
      "takeaway": "Notes written before opening the guide, compared against the right family pages and a range map, become a record that others can check and scientists can use."
     },
@@ -567,7 +585,7 @@
     {
      "text": "Mallard",
      "bucket": 2,
-     "why": "Flat bill, sits low on the water, short legs."
+     "why": "Flat bill, floats on the water with its tail held up, short legs."
     },
     {
      "text": "Red-tailed Hawk",
@@ -601,7 +619,7 @@
     },
     {
      "q": "Range, season and look-alikes: what else could it be in Pennsylvania in July, and how would you rule it out?",
-     "a": "The Black Vulture also lives in Pennsylvania. It has a short tail, white patches near the wingtips, and flies with bursts of quick flaps. Golden Eagles occur in the East mainly in migration and winter. With shape, behavior, field marks, range and season all agreeing and the look-alikes excluded, the answer is a Turkey Vulture."
+     "a": "The Black Vulture also lives in Pennsylvania. It has a short tail, white patches near the wingtips, and flies with bursts of quick flaps. Golden Eagles occur in the East mainly in migration and winter, and a dark young Bald Eagle, common in Pennsylvania in July, soars on flat, plank-like wings and has a large head. With shape, behavior, field marks, range and season all agreeing and the look-alikes excluded, the answer is a Turkey Vulture."
     }
    ]
   },
@@ -612,7 +630,7 @@
    "intro": "Arrange the steps in the order this chapter teaches, from first look to finished record.",
    "steps": [
     "Judge size against a reference bird",
-    "Read the shape and place the bird in a family",
+    "Combine size with shape to place the bird in a family",
     "Note field marks, named by topography",
     "Watch behavior and note the habitat",
     "Check range and season in a field guide",
@@ -863,25 +881,29 @@
     "citation": "Sibley, D. A. (2014). The Sibley guide to birds (2nd ed.). Alfred A. Knopf.",
     "kind": "book",
     "why": "Read the introductory pages on bird topography and how to use the guide, then compare the woodpecker and finch pages with Sections 4.1 and 4.2.",
-    "pages": "Introductory pages"
+    "pages": "Introductory pages",
+    "checked": true
    },
    {
     "citation": "Kaufman, K. (2011). Kaufman field guide to advanced birding: Understanding what you see and hear. Houghton Mifflin Harcourt.",
     "kind": "book",
     "why": "Its opening chapters on identification principles explain why structure, variation and probability matter, at a level a motivated beginner can follow.",
-    "pages": "Opening chapters on identification principles"
+    "pages": "Opening chapters on identification principles",
+    "checked": true
    },
    {
     "citation": "Cornell Lab of Ornithology. (n.d.). Building skills: The 4 keys to bird identification. All About Birds. https://www.allaboutbirds.org/news/building-skills-the-4-keys-to-bird-identification/",
     "kind": "website",
     "why": "A short, free summary of the method in Sections 4.1 to 4.3, with photographed examples.",
-    "pages": ""
+    "pages": "",
+    "checked": true
    },
    {
     "citation": "Weidensaul, S. (2007). Of a feather: A brief history of American birding. Harcourt.",
     "kind": "book",
     "why": "A readable history of American bird study from Alexander Wilson and Audubon to modern birding, including the story of Peterson’s guide.",
-    "pages": ""
+    "pages": "",
+    "checked": true
    }
   ],
   "videos": [
@@ -918,5 +940,124 @@
  },
  "prov": {
   "note": "Text, figures, practice, lecture and quiz hand-written in Claude Code by Claude (configured model claude-opus-5-5), with facts checked against Cornell Lab of Ornithology and other published sources by web search, October 2026."
+ },
+ "review": {
+  "full": true,
+  "at": 1791600000000,
+  "by": "Researched and written with web-search verification; then fact-checked independently by a second agent using web search (WebSearch worked; direct page fetches of allaboutbirds.org and other sites failed with DNS errors, so page contents were checked through search-result excerpts, with expert review for details search could not reach); figures were rendered in Chromium and measured from the SVG coordinates; every answer key re-solved blind.",
+  "keysChecked": 16,
+  "keysAgreed": 16,
+  "keyFixes": [],
+  "corrections": [
+   {
+    "where": "hook",
+    "before": "Its idea was simple and new: you do not need a bird in your hand to name it.",
+    "after": "Its idea was simple, and Peterson made it work better than anyone before him: you do not need a bird in your hand to name it.",
+    "why": "Identifying living birds by sight without collecting them was not new in 1934; earlier field books, notably Ralph Hoffmann's Guide to the Birds of New England and Eastern New York (1904), which Peterson acknowledged as an influence, already aimed at this. Peterson's novelty was the comparative, pattern-based system of plates and marks.",
+    "severity": "imprecise",
+    "applied": true
+   },
+   {
+    "where": "4.2 reading",
+    "before": "Instead of describing every feather, he showed similar species together and pointed out only the marks that separate them, an approach he called identification by elimination, combining field marks with knowledge of range [1].",
+    "after": "Instead of describing every feather, he showed similar species together and pointed out only the marks that separate them, an approach often described as identification by elimination, combining field marks with knowledge of range [1].",
+    "why": "Secondary sources describe Peterson's method as narrowing possibilities by elimination, but I could not confirm that Peterson himself named it 'identification by elimination'; attributing the term to him is unverified.",
+    "severity": "unverifiable",
+    "applied": true
+   },
+   {
+    "where": "4.2 reading",
+    "before": "His later guides became famous for small arrows pointing straight at the marks that matter.",
+    "after": "His guides became famous for small arrows pointing straight at the marks that matter.",
+    "why": "Several sources (e.g., descriptions of the Peterson Identification System and of the 1934 first edition) say the first edition already used arrows to point to key marks; others are silent. Saying 'later guides' implies the arrows were added afterward, which is not established. Dropping 'later' is true either way.",
+    "severity": "unverifiable",
+    "applied": true
+   },
+   {
+    "where": "4.2 reading",
+    "before": "A female Purple Finch has a whitish stripe over the eye and a dark stripe running back from the bill, framing a brown cheek; a female House Finch has a plain brown face [5].",
+    "after": "A female Purple Finch has a bold face pattern, with a whitish stripe over the eye, a dark brown cheek and a dark stripe down the side of the throat; a female House Finch has a plain brown face [5].",
+    "why": "In female Purple Finch the dark cheek is framed by the whitish eyebrow above and a whitish mustache stripe below; the dark stripe from the bill base is a malar stripe running down the side of the throat, and it does not frame the cheek. Standard guide wording (FeederWatch, All About Birds) is 'whitish eyebrow and dark stripe down the side of the throat'.",
+    "severity": "imprecise",
+    "applied": true
+   },
+   {
+    "where": "P4.2-1 answer",
+    "before": "Female Purple Finches have a bold face pattern, a whitish stripe over the eye and a dark stripe back from the bill framing a brown cheek, while female House Finches have a plain brown face.",
+    "after": "Female Purple Finches have a bold face pattern, with a whitish stripe over the eye, a dark brown cheek and a dark stripe down the side of the throat, while female House Finches have a plain brown face.",
+    "why": "Same face-pattern issue as the 4.2 reading: the dark malar stripe runs down the side of the throat; the cheek is framed by whitish stripes.",
+    "severity": "imprecise",
+    "applied": true
+   },
+   {
+    "where": "P4.2-1 answer",
+    "before": "The long, thin, blurry breast streaks also fit a House Finch better than the short, thick, smudged streaks of a Purple Finch.",
+    "after": "The blurry, indistinct breast streaks also fit a House Finch better than the crisper, more sharply defined streaks of a Purple Finch.",
+    "why": "Female Purple Finch underparts are whiter with crisp, well-defined dark streaks; it is the female House Finch whose streaks are blurry and smudgy. Calling Purple Finch streaks 'smudged' inverts the usual contrast and would mislead a beginner.",
+    "severity": "error",
+    "applied": true
+   },
+   {
+    "where": "4.3 worked example",
+    "before": "Ruby-throated Hummingbirds have left for Central America by then.",
+    "after": "Ruby-throated Hummingbirds have left for Mexico and Central America by then.",
+    "why": "Most Ruby-throated Hummingbirds winter from southern Mexico through Central America (a few along the Gulf Coast and in Florida), not in Central America alone.",
+    "severity": "imprecise",
+    "applied": true
+   },
+   {
+    "where": "interactive 3 (case), step 4 answer",
+    "before": "Golden Eagles occur in the East mainly in migration and winter.",
+    "after": "Golden Eagles occur in the East mainly in migration and winter, and a dark young Bald Eagle, common in Pennsylvania in July, soars on flat, plank-like wings and has a large head.",
+    "why": "The case asks which look-alikes are possible in central Pennsylvania in July, and step 1 lists eagles, but the only eagle it rules out is the Golden Eagle (by season). The eagle actually likely there in summer is the Bald Eagle, whose dark immatures are a real Turkey Vulture look-alike; without it the claim that 'the look-alikes [are] excluded' is incomplete.",
+    "severity": "imprecise",
+    "applied": true
+   },
+   {
+    "where": "interactive 4 (order)",
+    "before": "Read the shape and place the bird in a family",
+    "after": "Combine size with shape to place the bird in a family",
+    "why": "As written, steps 1 (size) and 2 (shape) can be done in either order, and the chapter's own Downy/Hairy worked example does 'Shape first' and size second, so a learner who swaps them is marked wrong while following the book. Making step 2 the step that combines size and shape gives the order a single defensible answer.",
+    "severity": "imprecise",
+    "applied": true
+   },
+   {
+    "where": "4.4 worked example",
+    "before": "Enter “House Finch, 3” along with every other species you identified in those 30 minutes, give the start time, duration and distance (zero for a stationary count), and mark the checklist complete only if nothing you identified was left off.",
+    "after": "Enter “House Finch, 3” along with every other species you identified in those 30 minutes, give the start time and duration (choosing the stationary protocol, which has no distance, for a count from one spot), and mark the checklist complete only if nothing you identified was left off.",
+    "why": "In eBird a count from one spot is entered with the Stationary protocol, which has no distance field; distance is entered only for the Traveling protocol. Telling a beginner to enter zero distance misdescribes the form.",
+    "severity": "imprecise",
+    "applied": true
+   },
+   {
+    "where": "interactive 2 (sort), Mallard",
+    "before": "Flat bill, sits low on the water, short legs.",
+    "after": "Flat bill, floats on the water with its tail held up, short legs.",
+    "why": "Dabbling ducks such as the Mallard ride high on the water with the tail raised; it is diving ducks, loons and cormorants that sit low. Field guides use 'rides high' versus 'sits low' to separate dabblers from divers, so this is the wrong cue for a Mallard.",
+    "severity": "imprecise",
+    "applied": true
+   },
+   {
+    "where": "figure 2 label",
+    "before": "flat bill; sits low on the water",
+    "after": "flat bill; floats on the water",
+    "why": "Same issue as the sort item: the drawn duck is a dabbler-type (Mallard-like) duck, and dabblers ride high on the water.",
+    "severity": "imprecise",
+    "applied": true
+   },
+   {
+    "where": "figure 2 label",
+    "before": "clings upright, braced on stiff tail",
+    "after": "clings upright, facing the trunk, braced on stiff tail",
+    "why": "The woodpecker drawing faces away from the tree: its bill points left (x≈365) while the trunk is on the right (x=435–469), so its back, feet and tail are pressed against the bark. A clinging woodpecker faces the trunk, belly and feet against the bark and bill toward the wood. The drawing must be mirrored horizontally so the bill points at the trunk (with the feet and tail still touching it); the label change makes the intended posture explicit.",
+    "severity": "error",
+    "applied": true
+   }
+  ],
+  "readingsRemoved": [],
+  "srcChecked": 18,
+  "srcWithdrawn": 0,
+  "summary": "The chapter is accurate on the points given extra scrutiny: Peterson's 1934 print run, royalties, rejections and sell-out; the Cornell four keys; every All About Birds length; Figure 4.1's true scale (9 px/cm: 16, 24 and 46 cm exactly); all 21 topography leaders; genus names; and all 16 multiple-choice keys. The problems are one drawing error (the Figure 4.2 woodpecker faces away from its trunk), an inverted Purple/House Finch streak contrast in a practice answer, and several soft spots: arrows and 'identification by elimination' attributed too firmly, the 'new' idea in the hook, the Mallard 'sits low' cue, a missing Bald Eagle look-alike, an ambiguous order item, and eBird's stationary-protocol distance. After the check, the woodpecker in Figure 4.2 was redrawn so that it faces the trunk.",
+  "style": {}
  }
 }
