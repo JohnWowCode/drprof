@@ -238,7 +238,7 @@
           {
             "type": "short",
             "q": "Starting from T_H = 873.15 K and T_C = 306.15 K, which raises the Carnot efficiency more: raising T_H by 50 K, or lowering T_C by 50 K? Show both numbers, then explain why plant designers nevertheless concentrate on the hot side.",
-            "answer": "Baseline η_C = 1 − 306.15/873.15 = 0.649. Raising T_H to 923.15 K gives 1 − 306.15/923.15 = 0.668 (+1.9 points). Lowering T_C to 256.15 K gives 1 − 256.15/873.15 = 0.707 (+5.7 points). The cold side has more leverage because ∂η/∂T_C = −1/T_H is larger in magnitude than ∂η/∂T_H = T_C/T_H². But T_C cannot fall below the temperature of the environment that absorbs the heat; a condenser at −17 °C would need refrigeration costing more work than it gained. T_H can be raised with better materials, so that is where effort goes.",
+            "answer": "Baseline η_C = 1 − 306.15/873.15 = 0.649. Raising T_H to 923.15 K gives 1 − 306.15/923.15 = 0.668 (+1.9 points). Lowering T_C to 256.15 K gives 1 − 256.15/873.15 = 0.707 (+5.7 points). The cold side is more sensitive because ∂η/∂T_C = −1/T_H is larger in magnitude than ∂η/∂T_H = T_C/T_H². But T_C cannot fall below the temperature of the environment that absorbs the heat; a condenser at −17 °C would need refrigeration costing more work than it gained. T_H can be raised with better materials, so that is where effort goes.",
             "explanation": "A strong answer computes both cases in kelvin, identifies the cold side as more sensitive, and explains that the environment fixes the practical floor for T_C."
           },
           {
