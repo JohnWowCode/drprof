@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480">
+<rect width="800" height="480" fill="#ffffff"/>
+<text x="24" y="34" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#222222">Four wing types (after Savile, 1957): right wings seen from above, not to scale</text>
+<rect x="20" y="62" width="370" height="198" rx="6" fill="none" stroke="#DDDDDD" stroke-width="1.5"/>
+<text x="34" y="86" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#2F7D4F">Elliptical</text>
+<text x="34" y="106" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2F7D4F">Short, broad: fast takeoff, tight turns</text>
+<g transform="translate(20,120)">
+<path d="M20 -4 Q 0 50 20 104" fill="#DDDDDD" stroke="#444444" stroke-width="1.5"/>
+<path d="M20 5 C 100 -2, 175 20, 182 55 C 180 86, 110 100, 20 95 Z" fill="#C4E3C9" stroke="#2F7D4F" stroke-width="2" stroke-linejoin="round"/>
+</g>
+<text x="34" y="248" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444">e.g. grouse, sparrows, most woodland songbirds</text>
+<rect x="410" y="62" width="370" height="198" rx="6" fill="none" stroke="#DDDDDD" stroke-width="1.5"/>
+<text x="424" y="86" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E6DA4">High-speed</text>
+<text x="424" y="106" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2E6DA4">Pointed, swept back: fast, efficient flapping</text>
+<g transform="translate(410,120)">
+<path d="M20 -4 Q 0 50 20 104" fill="#DDDDDD" stroke="#444444" stroke-width="1.5"/>
+<path d="M20 20 C 120 12, 250 30, 345 88 C 250 68, 120 70, 20 72 Z" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="2" stroke-linejoin="round"/>
+</g>
+<text x="424" y="248" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444">e.g. falcons, swifts, godwits and other shorebirds</text>
+<rect x="20" y="270" width="370" height="198" rx="6" fill="none" stroke="#DDDDDD" stroke-width="1.5"/>
+<text x="34" y="294" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#6B4FA0">High aspect ratio</text>
+<text x="34" y="314" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6B4FA0">Long and narrow: gliding over windy seas</text>
+<g transform="translate(20,328)">
+<path d="M20 -4 Q 0 50 20 104" fill="#DDDDDD" stroke="#444444" stroke-width="1.5"/>
+<path d="M20 36 C 150 28, 300 32, 352 47 C 300 58, 150 62, 20 66 Z" fill="#DCD2EE" stroke="#6B4FA0" stroke-width="2" stroke-linejoin="round"/>
+</g>
+<text x="34" y="456" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444">e.g. albatrosses, shearwaters</text>
+<rect x="410" y="270" width="370" height="198" rx="6" fill="none" stroke="#DDDDDD" stroke-width="1.5"/>
+<text x="424" y="294" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#C8691C">Slotted high-lift</text>
+<text x="424" y="314" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#C8691C">Broad, slotted tips: slow soaring on rising air</text>
+<g transform="translate(410,328)">
+<path d="M20 -4 Q 0 50 20 104" fill="#DDDDDD" stroke="#444444" stroke-width="1.5"/>
+<ellipse cx="204.3" cy="2.0" rx="33.2" ry="6.5" transform="rotate(-14.0 204.3 2.0)" fill="#F6D2AE" stroke="#C8691C" stroke-width="1.6"/>
+<ellipse cx="208.4" cy="21.1" rx="36.8" ry="6.5" transform="rotate(-8.4 208.4 21.1)" fill="#F6D2AE" stroke="#C8691C" stroke-width="1.6"/>
+<ellipse cx="212.2" cy="41.0" rx="40.2" ry="6.5" transform="rotate(-2.8 212.2 41.0)" fill="#F6D2AE" stroke="#C8691C" stroke-width="1.6"/>
+<ellipse cx="212.2" cy="61.5" rx="40.2" ry="6.5" transform="rotate(2.8 212.2 61.5)" fill="#F6D2AE" stroke="#C8691C" stroke-width="1.6"/>
+<ellipse cx="208.4" cy="81.4" rx="36.8" ry="6.5" transform="rotate(8.4 208.4 81.4)" fill="#F6D2AE" stroke="#C8691C" stroke-width="1.6"/>
+<ellipse cx="204.3" cy="100.5" rx="33.2" ry="6.5" transform="rotate(14.0 204.3 100.5)" fill="#F6D2AE" stroke="#C8691C" stroke-width="1.6"/>
+<path d="M20 2 Q 100 -6 180 6 Q 190 52 180 100 L 20 102 Z" fill="#F6D2AE" stroke="#C8691C" stroke-width="2" stroke-linejoin="round"/>
+</g>
+<text x="424" y="456" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444">e.g. eagles, hawks, vultures, condors</text>
+<text x="700" y="372" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#C8691C">slots</text>
+<text x="700" y="389" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#C8691C">between</text>
+<text x="700" y="406" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#C8691C">primaries</text>
+<line x1="697" y1="383" x2="660" y2="382" stroke="#C8691C" stroke-width="1"/>
+</svg>

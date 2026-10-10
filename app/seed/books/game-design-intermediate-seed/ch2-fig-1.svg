@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480">
+  <rect width="800" height="480" fill="#ffffff"/>
+  <defs>
+    <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#444444"/></marker>
+    <marker id="ap" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#6B4FA0"/></marker>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#B0303A"/></marker>
+  </defs>
+  <g font-family="Helvetica, Arial, sans-serif">
+    <text x="30" y="38" font-size="18" fill="#222222">The core loop of Tetris (NES version, 1989)</text>
+
+    <!-- legend -->
+    <rect x="610" y="56" width="14" height="14" fill="#BBD5EE" stroke="#2E6DA4"/>
+    <text x="632" y="68" font-size="14" fill="#2E6DA4">Player decides or acts</text>
+    <rect x="610" y="78" width="14" height="14" fill="#F6D2AE" stroke="#C8691C"/>
+    <text x="632" y="90" font-size="14" fill="#C8691C">Game responds</text>
+    <rect x="610" y="100" width="14" height="14" fill="#DCD2EE" stroke="#6B4FA0"/>
+    <text x="632" y="112" font-size="14" fill="#6B4FA0">Feedback on the loop</text>
+    <rect x="610" y="122" width="14" height="14" fill="#F2C4C8" stroke="#B0303A"/>
+    <text x="632" y="134" font-size="14" fill="#B0303A">Loop ends</text>
+
+    <!-- A: new piece -->
+    <rect x="285" y="64" width="230" height="58" rx="10" fill="#F6D2AE" stroke="#C8691C" stroke-width="1.5"/>
+    <text x="400" y="89" font-size="15" text-anchor="middle" fill="#C8691C">New piece appears;</text>
+    <text x="400" y="109" font-size="15" text-anchor="middle" fill="#C8691C">the next one is previewed</text>
+
+    <!-- B: read board -->
+    <rect x="540" y="172" width="230" height="58" rx="10" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="1.5"/>
+    <text x="655" y="197" font-size="15" text-anchor="middle" fill="#2E6DA4">Player reads the board</text>
+    <text x="655" y="217" font-size="15" text-anchor="middle" fill="#2E6DA4">and picks a landing spot</text>
+
+    <!-- C: verbs -->
+    <rect x="500" y="330" width="250" height="58" rx="10" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="1.5"/>
+    <text x="625" y="355" font-size="15" text-anchor="middle" fill="#2E6DA4">Verbs: move, rotate, soft drop,</text>
+    <text x="625" y="375" font-size="15" text-anchor="middle" fill="#2E6DA4">while gravity pulls it down</text>
+
+    <!-- D: lock -->
+    <rect x="70" y="330" width="230" height="58" rx="10" fill="#F6D2AE" stroke="#C8691C" stroke-width="1.5"/>
+    <text x="185" y="355" font-size="15" text-anchor="middle" fill="#C8691C">Piece touches the stack</text>
+    <text x="185" y="375" font-size="15" text-anchor="middle" fill="#C8691C">and locks in place</text>
+
+    <!-- E: clear -->
+    <rect x="30" y="172" width="230" height="58" rx="10" fill="#F6D2AE" stroke="#C8691C" stroke-width="1.5"/>
+    <text x="145" y="197" font-size="15" text-anchor="middle" fill="#C8691C">Full rows clear; score</text>
+    <text x="145" y="217" font-size="15" text-anchor="middle" fill="#C8691C">and line count go up</text>
+
+    <!-- loop arrows -->
+    <path d="M517 100 L 598 168" fill="none" stroke="#444444" stroke-width="2" marker-end="url(#ag)"/>
+    <path d="M655 232 L 632 326" fill="none" stroke="#444444" stroke-width="2" marker-end="url(#ag)"/>
+    <path d="M498 359 L 304 359" fill="none" stroke="#444444" stroke-width="2" marker-end="url(#ag)"/>
+    <path d="M165 328 L 148 234" fill="none" stroke="#444444" stroke-width="2" marker-end="url(#ag)"/>
+    <path d="M140 170 Q 160 96 281 93" fill="none" stroke="#444444" stroke-width="2" marker-end="url(#ag)"/>
+
+    <!-- feedback -->
+    <rect x="300" y="208" width="200" height="58" rx="10" fill="#DCD2EE" stroke="#6B4FA0" stroke-width="1.5"/>
+    <text x="400" y="233" font-size="15" text-anchor="middle" fill="#6B4FA0">Every 10 lines: level +1,</text>
+    <text x="400" y="253" font-size="15" text-anchor="middle" fill="#6B4FA0">pieces fall faster</text>
+    <path d="M262 214 L 296 226" fill="none" stroke="#6B4FA0" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#ap)"/>
+    <path d="M470 268 L 560 326" fill="none" stroke="#6B4FA0" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#ap)"/>
+
+    <!-- exit -->
+    <path d="M185 390 L 185 422" fill="none" stroke="#B0303A" stroke-width="2" marker-end="url(#ar)"/>
+    <text x="70" y="444" font-size="15" fill="#B0303A">If the stack reaches the top: game over</text>
+
+    <text x="500" y="444" font-size="14" fill="#444444">One piece is one turn of the loop</text>
+  </g>
+</svg>

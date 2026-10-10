@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480">
+  <rect width="800" height="480" fill="#ffffff"/>
+  <text x="24" y="34" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#222222">The MDA framework: one game, seen from two ends</text>
+
+  <!-- Designer arrow -->
+  <text x="40" y="74" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#6B4FA0" font-weight="bold">Designer’s view: writes mechanics, watches dynamics, aims at aesthetics</text>
+  <line x1="40" y1="96" x2="748" y2="96" stroke="#6B4FA0" stroke-width="3"/>
+  <polygon points="760,96 746,88 746,104" fill="#6B4FA0"/>
+
+  <!-- Three layer boxes -->
+  <rect x="40" y="122" width="220" height="104" rx="10" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="2"/>
+  <rect x="290" y="122" width="220" height="104" rx="10" fill="#C4E3C9" stroke="#2F7D4F" stroke-width="2"/>
+  <rect x="540" y="122" width="220" height="104" rx="10" fill="#F6D2AE" stroke="#C8691C" stroke-width="2"/>
+  <g font-family="Helvetica, Arial, sans-serif" text-anchor="middle">
+    <text x="150" y="154" font-size="18" font-weight="bold" fill="#2E6DA4">Mechanics</text>
+    <text x="150" y="180" font-size="14" fill="#2E6DA4">rules, data and</text>
+    <text x="150" y="200" font-size="14" fill="#2E6DA4">algorithms</text>
+    <text x="400" y="154" font-size="18" font-weight="bold" fill="#2F7D4F">Dynamics</text>
+    <text x="400" y="180" font-size="14" fill="#2F7D4F">behavior when rules</text>
+    <text x="400" y="200" font-size="14" fill="#2F7D4F">meet players over time</text>
+    <text x="650" y="154" font-size="18" font-weight="bold" fill="#A4520F">Aesthetics</text>
+    <text x="650" y="180" font-size="14" fill="#A4520F">emotional responses</text>
+    <text x="650" y="200" font-size="14" fill="#A4520F">in the player</text>
+  </g>
+  <g fill="#444444">
+    <line x1="262" y1="174" x2="278" y2="174" stroke="#444444" stroke-width="2.5"/>
+    <polygon points="289,174 278,168 278,180"/>
+    <line x1="512" y1="174" x2="528" y2="174" stroke="#444444" stroke-width="2.5"/>
+    <polygon points="539,174 528,168 528,180"/>
+  </g>
+
+  <!-- Player arrow -->
+  <line x1="52" y1="252" x2="760" y2="252" stroke="#B0303A" stroke-width="3"/>
+  <polygon points="40,252 54,244 54,260" fill="#B0303A"/>
+  <text x="760" y="280" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#B0303A" font-weight="bold" text-anchor="end">Player’s view: feels aesthetics first, notices dynamics, may never see mechanics</text>
+
+  <!-- Tetris example panel -->
+  <rect x="40" y="304" width="720" height="152" rx="8" fill="#F4F4F4" stroke="#DDDDDD" stroke-width="1.5"/>
+  <text x="56" y="328" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#444444" font-weight="bold">Example: Tetris on the NES (1989)</text>
+  <g font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle">
+    <text x="150" y="358" fill="#2E6DA4">1 row cleared: 40 points</text>
+    <text x="150" y="380" fill="#2E6DA4">4 rows at once: 1,200</text>
+    <text x="150" y="402" fill="#2E6DA4">(both times level + 1)</text>
+    <text x="150" y="424" fill="#2E6DA4">pieces fall faster later</text>
+    <text x="400" y="358" fill="#2F7D4F">players stack high and</text>
+    <text x="400" y="380" fill="#2F7D4F">keep one column empty,</text>
+    <text x="400" y="402" fill="#2F7D4F">waiting for the long piece;</text>
+    <text x="400" y="424" fill="#2F7D4F">the stack climbs meanwhile</text>
+    <text x="650" y="358" fill="#A4520F">Challenge</text>
+    <text x="650" y="380" fill="#A4520F">tension while waiting,</text>
+    <text x="650" y="402" fill="#A4520F">relief at the clear;</text>
+    <text x="650" y="424" fill="#A4520F">for some, Submission</text>
+  </g>
+  <g stroke="#DDDDDD" stroke-width="1.5">
+    <line x1="275" y1="342" x2="275" y2="440"/>
+    <line x1="525" y1="342" x2="525" y2="440"/>
+  </g>
+</svg>

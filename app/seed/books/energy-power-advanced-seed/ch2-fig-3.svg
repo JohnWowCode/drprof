@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480">
+  <rect width="800" height="480" fill="#ffffff"/>
+  <text x="24" y="34" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#222222">A combined-cycle plant: the steam cycle runs on gas-turbine exhaust</text>
+  <g font-family="Helvetica, Arial, sans-serif">
+    <!-- gas turbine train -->
+    <line x1="72" y1="190" x2="250" y2="190" stroke="#444444" stroke-width="4"/>
+    <circle cx="50" cy="190" r="22" fill="#DDDDDD" stroke="#444444" stroke-width="2"/>
+    <text x="50" y="196" font-size="16" text-anchor="middle" fill="#444444">G</text>
+    <polygon points="90,140 160,165 160,215 90,240" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="2"/>
+    <polygon points="250,165 320,140 320,240 250,215" fill="#F6D2AE" stroke="#C8691C" stroke-width="2"/>
+    <rect x="175" y="92" width="60" height="36" rx="5" fill="#F2C4C8" stroke="#B0303A" stroke-width="2"/>
+    <path d="M160 170 L190 128" fill="none" stroke="#2E6DA4" stroke-width="3"/>
+    <path d="M220 128 L250 170" fill="none" stroke="#B0303A" stroke-width="3"/>
+    <line x1="205" y1="62" x2="205" y2="84" stroke="#A0781A" stroke-width="3"/>
+    <polygon points="205,92 199,82 211,82" fill="#A0781A"/>
+    <text x="215" y="72" font-size="14" fill="#A0781A">natural gas</text>
+    <text x="125" y="262" font-size="14" text-anchor="middle" fill="#2E6DA4">compressor</text>
+    <text x="168" y="106" font-size="14" text-anchor="end" fill="#B0303A">combustor</text>
+    <text x="285" y="262" font-size="14" text-anchor="middle" fill="#C8691C">gas turbine</text>
+    <line x1="60" y1="120" x2="86" y2="150" stroke="#2E6DA4" stroke-width="3"/>
+    <polygon points="92,157 80,152 89,145" fill="#2E6DA4"/>
+    <text x="24" y="112" font-size="14" fill="#2E6DA4">air in</text>
+    <!-- exhaust duct -->
+    <polygon points="320,170 440,170 440,210 320,210" fill="#F6D2AE" stroke="#C8691C" stroke-width="1.5"/>
+    <text x="380" y="160" font-size="14" text-anchor="middle" fill="#C8691C">exhaust</text>
+    <text x="380" y="230" font-size="14" text-anchor="middle" fill="#C8691C">about 600 °C</text>
+    <!-- HRSG -->
+    <rect x="440" y="150" width="180" height="80" rx="4" fill="#F6D2AE" stroke="#C8691C" stroke-width="2"/>
+    <path d="M460 222 L460 160 L480 160 L480 222 L500 222 L500 160 L520 160 L520 222 L540 222 L540 160 L560 160 L560 222 L580 222 L580 160 L600 160 L600 222" fill="none" stroke="#2E6DA4" stroke-width="2"/>
+    <text x="530" y="140" font-size="14" text-anchor="middle" fill="#C8691C">heat-recovery steam generator</text>
+    <rect x="630" y="70" width="34" height="160" fill="#DDDDDD" stroke="#444444" stroke-width="2"/>
+    <line x1="620" y1="200" x2="630" y2="200" stroke="#444444" stroke-width="2"/>
+    <line x1="647" y1="66" x2="647" y2="48" stroke="#444444" stroke-width="2"/>
+    <polygon points="647,42 641,52 653,52" fill="#444444"/>
+    <text x="674" y="90" font-size="14" fill="#444444">stack:</text>
+    <text x="674" y="108" font-size="14" fill="#444444">cooled</text>
+    <text x="674" y="126" font-size="14" fill="#444444">exhaust</text>
+    <!-- steam loop -->
+    <path d="M460 230 L460 262 L420 262 L420 320 L450 320" fill="none" stroke="#B0303A" stroke-width="3"/>
+    <text x="412" y="300" font-size="14" text-anchor="end" fill="#B0303A">steam</text>
+    <polygon points="450,305 530,282 530,368 450,345" fill="#C4E3C9" stroke="#2F7D4F" stroke-width="2"/>
+    <text x="490" y="390" font-size="14" text-anchor="middle" fill="#2F7D4F">steam turbine</text>
+    <line x1="530" y1="325" x2="578" y2="325" stroke="#444444" stroke-width="4"/>
+    <circle cx="600" cy="325" r="22" fill="#DDDDDD" stroke="#444444" stroke-width="2"/>
+    <text x="600" y="331" font-size="16" text-anchor="middle" fill="#444444">G</text>
+    <path d="M530 360 L560 360 L560 405" fill="none" stroke="#6B4FA0" stroke-width="3"/>
+    <rect x="520" y="405" width="110" height="44" rx="5" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="2"/>
+    <text x="575" y="432" font-size="14" text-anchor="middle" fill="#2E6DA4">condenser</text>
+    <path d="M630 427 L690 427" fill="none" stroke="#2E6DA4" stroke-width="3"/>
+    <circle cx="706" cy="427" r="16" fill="#DCD2EE" stroke="#6B4FA0" stroke-width="2"/>
+    <path d="M706 411 L706 260 L600 260 L600 230" fill="none" stroke="#2E6DA4" stroke-width="3"/>
+    <text x="716" y="300" font-size="14" fill="#2E6DA4">feed-</text>
+    <text x="716" y="318" font-size="14" fill="#2E6DA4">water</text>
+    <text x="726" y="460" font-size="14" fill="#6B4FA0">pump</text>
+    <!-- energy panel -->
+    <rect x="24" y="290" width="340" height="176" rx="8" fill="#ffffff" stroke="#DDDDDD" stroke-width="1.5"/>
+    <text x="38" y="314" font-size="15" fill="#222222">Per 100 units of fuel energy (rounded):</text>
+    <text x="38" y="338" font-size="15" fill="#C8691C">gas turbine electricity: 43</text>
+    <text x="38" y="360" font-size="15" fill="#C8691C">exhaust heat to HRSG: 57</text>
+    <text x="38" y="382" font-size="15" fill="#2F7D4F">steam turbine electricity: 21</text>
+    <text x="38" y="404" font-size="15" fill="#2E6DA4">condenser and stack: 36</text>
+    <text x="38" y="430" font-size="15" fill="#6B4FA0">η<tspan dy="4" font-size="14">cc</tspan><tspan dy="-4"> = 0.43 + 0.37 × (1 − 0.43) ≈ 0.64</tspan></text>
+    <text x="38" y="454" font-size="14" fill="#444444">Schematic, not to scale.</text>
+  </g>
+</svg>

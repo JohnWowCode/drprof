@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480">
+<rect width="800" height="480" fill="#ffffff"/>
+<text x="24" y="32" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#222222">One-way airflow through a bird’s lung (schematic, not to scale)</text>
+<defs>
+<marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#2E6DA4"/></marker>
+<marker id="ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#2F7D4F"/></marker>
+<marker id="ao" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#C8691C"/></marker>
+</defs>
+<line x1="400" y1="52" x2="400" y2="420" stroke="#DDDDDD" stroke-width="2"/>
+<text x="14" y="66" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#222222">1. Breathing in</text>
+<ellipse cx="62" cy="262" rx="44" ry="36" fill="#DCD2EE" stroke="#6B4FA0" stroke-width="2"/>
+<ellipse cx="318" cy="300" rx="46" ry="42" fill="#DCD2EE" stroke="#6B4FA0" stroke-width="2"/>
+<rect x="100" y="150" width="180" height="66" rx="12" fill="#C4E3C9" stroke="#2F7D4F" stroke-width="2"/>
+<line x1="146" y1="164" x2="270" y2="164" stroke="#2F7D4F" stroke-width="1" stroke-opacity="0.6"/>
+<line x1="146" y1="176" x2="270" y2="176" stroke="#2F7D4F" stroke-width="1" stroke-opacity="0.6"/>
+<line x1="146" y1="188" x2="270" y2="188" stroke="#2F7D4F" stroke-width="1" stroke-opacity="0.6"/>
+<path d="M125 88 L125 204 L252 204 L290 268" fill="none" stroke="#444444" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/><path d="M125 88 L125 204 L252 204 L290 268" fill="none" stroke="#DDDDDD" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M92 236 L112 214" fill="none" stroke="#444444" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/><path d="M92 236 L112 214" fill="none" stroke="#DDDDDD" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M318 258 L282 178" fill="none" stroke="#444444" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/><path d="M318 258 L282 178" fill="none" stroke="#DDDDDD" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M262 182 L156 182" fill="none" stroke="#2F7D4F" stroke-width="3.5" stroke-linecap="round" marker-end="url(#ag)"/>
+<path d="M144 90 L144 140" fill="none" stroke="#2E6DA4" stroke-width="3.5" stroke-linecap="round" marker-end="url(#ab)"/>
+<path d="M258 222 L284 266" fill="none" stroke="#2E6DA4" stroke-width="3.5" stroke-linecap="round" marker-end="url(#ab)"/>
+<path d="M98 214 L78 236" fill="none" stroke="#C8691C" stroke-width="3.5" stroke-linecap="round" marker-end="url(#ao)"/>
+<text x="414" y="66" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#222222">2. Breathing out</text>
+<ellipse cx="462" cy="262" rx="44" ry="36" fill="#DCD2EE" stroke="#6B4FA0" stroke-width="2"/>
+<ellipse cx="718" cy="300" rx="46" ry="42" fill="#DCD2EE" stroke="#6B4FA0" stroke-width="2"/>
+<rect x="500" y="150" width="180" height="66" rx="12" fill="#C4E3C9" stroke="#2F7D4F" stroke-width="2"/>
+<line x1="546" y1="164" x2="670" y2="164" stroke="#2F7D4F" stroke-width="1" stroke-opacity="0.6"/>
+<line x1="546" y1="176" x2="670" y2="176" stroke="#2F7D4F" stroke-width="1" stroke-opacity="0.6"/>
+<line x1="546" y1="188" x2="670" y2="188" stroke="#2F7D4F" stroke-width="1" stroke-opacity="0.6"/>
+<path d="M525 88 L525 204 L652 204 L690 268" fill="none" stroke="#444444" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/><path d="M525 88 L525 204 L652 204 L690 268" fill="none" stroke="#DDDDDD" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M492 236 L512 214" fill="none" stroke="#444444" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/><path d="M492 236 L512 214" fill="none" stroke="#DDDDDD" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M718 258 L682 178" fill="none" stroke="#444444" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/><path d="M718 258 L682 178" fill="none" stroke="#DDDDDD" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M662 182 L556 182" fill="none" stroke="#2F7D4F" stroke-width="3.5" stroke-linecap="round" marker-end="url(#ag)"/>
+<path d="M738 254 L704 182" fill="none" stroke="#2E6DA4" stroke-width="3.5" stroke-linecap="round" marker-end="url(#ab)"/>
+<path d="M470 230 L492 206" fill="none" stroke="#C8691C" stroke-width="3.5" stroke-linecap="round" marker-end="url(#ao)"/>
+<path d="M506 140 L506 90" fill="none" stroke="#C8691C" stroke-width="3.5" stroke-linecap="round" marker-end="url(#ao)"/>
+<text x="20" y="104" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start">Trachea</text>
+<line x1="76" y1="100" x2="116" y2="100" stroke="#444444" stroke-width="1"/>
+<text x="176" y="128" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2F7D4F" text-anchor="start">Lung (parabronchi)</text>
+<text x="62" y="318" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6B4FA0" text-anchor="middle">Cranial air sacs</text>
+<text x="62" y="335" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6B4FA0" text-anchor="middle">(front)</text>
+<text x="318" y="360" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6B4FA0" text-anchor="middle">Caudal air sacs</text>
+<text x="318" y="377" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6B4FA0" text-anchor="middle">(rear)</text>
+<text x="152" y="104" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2E6DA4" text-anchor="start">Fresh air</text>
+<text x="560" y="128" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2F7D4F" text-anchor="start">Lung (parabronchi)</text>
+<text x="412" y="104" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#C8691C" text-anchor="start">Used air out</text>
+<text x="20" y="404" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2E6DA4" text-anchor="start">Most fresh air passes the lung to the caudal sacs;</text>
+<text x="20" y="421" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#C8691C" text-anchor="start">air in the lung moves on to the cranial sacs.</text>
+<text x="420" y="404" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2E6DA4" text-anchor="start">Caudal sacs push their fresh air through the lung;</text>
+<text x="420" y="421" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#C8691C" text-anchor="start">cranial sacs empty used air out the trachea.</text>
+<text x="400" y="458" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#2F7D4F" text-anchor="middle">In both phases air crosses the parabronchi in the same direction, from back to front.</text>
+</svg>

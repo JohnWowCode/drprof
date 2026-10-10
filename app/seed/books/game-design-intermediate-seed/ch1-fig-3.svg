@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480">
+  <rect width="800" height="480" fill="#ffffff"/>
+  <text x="24" y="34" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#222222">Fullerton’s formal and dramatic elements, mapped onto Slay the Spire</text>
+  <text x="24" y="62" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#2E6DA4" font-weight="bold">Formal elements: the structure</text>
+
+  <!-- Row 1 -->
+  <g stroke-width="2">
+    <rect x="24" y="74" width="176" height="104" rx="8" fill="#BBD5EE" stroke="#2E6DA4"/>
+    <rect x="216" y="74" width="176" height="104" rx="8" fill="#BBD5EE" stroke="#2E6DA4"/>
+    <rect x="408" y="74" width="176" height="104" rx="8" fill="#C4E3C9" stroke="#2F7D4F"/>
+    <rect x="600" y="74" width="176" height="104" rx="8" fill="#C4E3C9" stroke="#2F7D4F"/>
+    <rect x="24" y="190" width="176" height="104" rx="8" fill="#F6D2AE" stroke="#C8691C"/>
+    <rect x="216" y="190" width="176" height="104" rx="8" fill="#F6D2AE" stroke="#C8691C"/>
+    <rect x="408" y="190" width="176" height="104" rx="8" fill="#DCD2EE" stroke="#6B4FA0"/>
+    <rect x="600" y="190" width="176" height="104" rx="8" fill="#DCD2EE" stroke="#6B4FA0"/>
+  </g>
+  <g font-family="Helvetica, Arial, sans-serif" text-anchor="middle">
+    <text x="112" y="100" font-size="16" font-weight="bold" fill="#2E6DA4">Players</text>
+    <text x="112" y="124" font-size="14" fill="#2E6DA4">one player</text>
+    <text x="112" y="144" font-size="14" fill="#2E6DA4">against the game</text>
+
+    <text x="304" y="100" font-size="16" font-weight="bold" fill="#2E6DA4">Objectives</text>
+    <text x="304" y="124" font-size="14" fill="#2E6DA4">climb the Spire and</text>
+    <text x="304" y="144" font-size="14" fill="#2E6DA4">defeat the final boss</text>
+
+    <text x="496" y="100" font-size="16" font-weight="bold" fill="#2F7D4F">Procedures</text>
+    <text x="496" y="124" font-size="14" fill="#2F7D4F">each turn: draw 5,</text>
+    <text x="496" y="144" font-size="14" fill="#2F7D4F">spend 3 energy on</text>
+    <text x="496" y="164" font-size="14" fill="#2F7D4F">cards, end the turn</text>
+
+    <text x="688" y="100" font-size="16" font-weight="bold" fill="#2F7D4F">Rules</text>
+    <text x="688" y="124" font-size="14" fill="#2F7D4F">block wears off at</text>
+    <text x="688" y="144" font-size="14" fill="#2F7D4F">your next turn;</text>
+    <text x="688" y="164" font-size="14" fill="#2F7D4F">HP carries over</text>
+
+    <text x="112" y="216" font-size="16" font-weight="bold" fill="#A4520F">Resources</text>
+    <text x="112" y="240" font-size="14" fill="#A4520F">HP, energy, gold,</text>
+    <text x="112" y="260" font-size="14" fill="#A4520F">cards, relics,</text>
+    <text x="112" y="280" font-size="14" fill="#A4520F">potions</text>
+
+    <text x="304" y="216" font-size="16" font-weight="bold" fill="#A4520F">Conflict</text>
+    <text x="304" y="240" font-size="14" fill="#A4520F">enemies that show</text>
+    <text x="304" y="260" font-size="14" fill="#A4520F">their intent for</text>
+    <text x="304" y="280" font-size="14" fill="#A4520F">the next turn</text>
+
+    <text x="496" y="216" font-size="16" font-weight="bold" fill="#6B4FA0">Boundaries</text>
+    <text x="496" y="240" font-size="14" fill="#6B4FA0">one run on a</text>
+    <text x="496" y="260" font-size="14" fill="#6B4FA0">branching map;</text>
+    <text x="496" y="280" font-size="14" fill="#6B4FA0">each run starts fresh</text>
+
+    <text x="688" y="216" font-size="16" font-weight="bold" fill="#6B4FA0">Outcome</text>
+    <text x="688" y="240" font-size="14" fill="#6B4FA0">win the run, or die</text>
+    <text x="688" y="260" font-size="14" fill="#6B4FA0">and start again;</text>
+    <text x="688" y="280" font-size="14" fill="#6B4FA0">unequal by design</text>
+  </g>
+
+  <text x="24" y="330" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7F5F14" font-weight="bold">Dramatic elements: why players care</text>
+  <g stroke-width="2" fill="#EFE0B4" stroke="#A0781A">
+    <rect x="24" y="342" width="139" height="96" rx="8"/>
+    <rect x="183" y="342" width="139" height="96" rx="8"/>
+    <rect x="342" y="342" width="139" height="96" rx="8"/>
+    <rect x="501" y="342" width="139" height="96" rx="8"/>
+    <rect x="660" y="342" width="116" height="96" rx="8"/>
+  </g>
+  <g font-family="Helvetica, Arial, sans-serif" text-anchor="middle" fill="#7F5F14">
+    <text x="93" y="368" font-size="16" font-weight="bold">Challenge</text>
+    <text x="93" y="392" font-size="14">a hard choice</text>
+    <text x="93" y="412" font-size="14">every turn</text>
+    <text x="252" y="368" font-size="16" font-weight="bold">Play</text>
+    <text x="252" y="392" font-size="14">a new deck</text>
+    <text x="252" y="412" font-size="14">each run</text>
+    <text x="411" y="368" font-size="16" font-weight="bold">Premise</text>
+    <text x="411" y="392" font-size="14">climb a spire</text>
+    <text x="411" y="412" font-size="14">full of monsters</text>
+    <text x="570" y="368" font-size="16" font-weight="bold">Character</text>
+    <text x="570" y="392" font-size="14">the Ironclad and</text>
+    <text x="570" y="412" font-size="14">other heroes</text>
+    <text x="718" y="368" font-size="16" font-weight="bold">Story</text>
+    <text x="718" y="392" font-size="14">thin: told in</text>
+    <text x="718" y="412" font-size="14">brief events</text>
+  </g>
+  <text x="776" y="464" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="end">Elements after Fullerton, Game Design Workshop</text>
+</svg>

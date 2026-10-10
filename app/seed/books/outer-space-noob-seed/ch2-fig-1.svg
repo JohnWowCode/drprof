@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480">
+<rect width="800" height="480" fill="#ffffff"/>
+<text x="24" y="32" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#222222">The planets to one scale: 1 pixel = 1,000 km</text>
+<circle cx="-650.4" cy="262" r="696.4" fill="#F6D2AE" stroke="#C8691C" stroke-width="2"/>
+<text x="60.0" y="64.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#C8691C" text-anchor="start">Sun (only its edge fits): 1.39 million km across, about 109 Earths</text>
+<defs><clipPath id="front"><rect x="300" y="262" width="320" height="60"/></clipPath></defs>
+<path d="M323.2,262 a136.8,23.3 0 1,0 273.6,0 a136.8,23.3 0 1,0 -273.6,0 Z M385.5,262 a74.5,12.7 0 1,0 149.0,0 a74.5,12.7 0 1,0 -149.0,0 Z" fill="#EFE0B4" fill-rule="evenodd" stroke="#A0781A" stroke-width="1"/>
+<circle cx="70.0" cy="262.0" r="2.44" fill="#DDDDDD" stroke="#444444" stroke-width="1"/>
+<circle cx="92.0" cy="262.0" r="6.05" fill="#EFE0B4" stroke="#A0781A" stroke-width="1.5"/>
+<circle cx="118.0" cy="262.0" r="6.38" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="1.5"/>
+<circle cx="142.0" cy="262.0" r="3.40" fill="#F2C4C8" stroke="#B0303A" stroke-width="1"/>
+<circle cx="240.0" cy="262.0" r="71.49" fill="#F6D2AE" stroke="#C8691C" stroke-width="1.5"/>
+<circle cx="460.0" cy="262.0" r="60.27" fill="#EFE0B4" stroke="#A0781A" stroke-width="1.5"/>
+<circle cx="640.0" cy="262.0" r="25.56" fill="#C4E3C9" stroke="#2F7D4F" stroke-width="1.5"/>
+<circle cx="712.0" cy="262.0" r="24.76" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="1.5"/>
+<circle cx="764.0" cy="262.0" r="1.19" fill="#DCD2EE" stroke="#6B4FA0" stroke-width="1"/>
+<path d="M323.2,262 a136.8,23.3 0 1,0 273.6,0 a136.8,23.3 0 1,0 -273.6,0 Z M385.5,262 a74.5,12.7 0 1,0 149.0,0 a74.5,12.7 0 1,0 -149.0,0 Z" fill="#EFE0B4" fill-rule="evenodd" stroke="#A0781A" stroke-width="1" clip-path="url(#front)"/>
+<text x="240.0" y="158.5" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#C8691C" text-anchor="middle" font-weight="bold">Jupiter</text>
+<text x="240.0" y="176.5" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#C8691C" text-anchor="middle">142,984 km</text>
+<text x="460.0" y="169.7" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#A0781A" text-anchor="middle" font-weight="bold">Saturn</text>
+<text x="460.0" y="187.7" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#A0781A" text-anchor="middle">120,536 km</text>
+<text x="640.0" y="204.4" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#2F7D4F" text-anchor="middle" font-weight="bold">Uranus</text>
+<text x="640.0" y="222.4" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2F7D4F" text-anchor="middle">51,118 km</text>
+<text x="712.0" y="308.8" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#2E6DA4" text-anchor="middle" font-weight="bold">Neptune</text>
+<text x="712.0" y="326.8" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2E6DA4" text-anchor="middle">49,528 km</text>
+<line x1="70.0" y1="266.4" x2="70.0" y2="443.0" stroke="#444444" stroke-width="1"/>
+<text x="75.0" y="447.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start">Mercury 4,879 km</text>
+<line x1="92.0" y1="270.1" x2="92.0" y2="418.0" stroke="#A0781A" stroke-width="1"/>
+<text x="97.0" y="422.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#A0781A" text-anchor="start">Venus 12,104 km</text>
+<line x1="118.0" y1="270.4" x2="118.0" y2="393.0" stroke="#2E6DA4" stroke-width="1"/>
+<text x="123.0" y="397.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2E6DA4" text-anchor="start">Earth 12,756 km</text>
+<line x1="142.0" y1="267.4" x2="142.0" y2="368.0" stroke="#B0303A" stroke-width="1"/>
+<text x="147.0" y="372.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#B0303A" text-anchor="start">Mars 6,792 km</text>
+<line x1="764.0" y1="266.0" x2="764.0" y2="352.0" stroke="#6B4FA0" stroke-width="1"/>
+<text x="790.0" y="368.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6B4FA0" text-anchor="end">Pluto (dwarf</text>
+<text x="790.0" y="385.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6B4FA0" text-anchor="end">planet) 2,377 km</text>
+<line x1="560.0" y1="430.0" x2="610.0" y2="430.0" stroke="#444444" stroke-width="2"/>
+<line x1="560.0" y1="425.0" x2="560.0" y2="435.0" stroke="#444444" stroke-width="2"/>
+<line x1="610.0" y1="425.0" x2="610.0" y2="435.0" stroke="#444444" stroke-width="2"/>
+<text x="618.0" y="435.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start">50,000 km</text>
+<text x="24.0" y="470.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start">Sizes are to scale. Distances between the planets are not to scale.</text>
+</svg>

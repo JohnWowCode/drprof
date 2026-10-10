@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480">
+<rect width="800" height="480" fill="#ffffff"/>
+<text x="20" y="32" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#222222">Primary energy counted for 1 kWh delivered to a socket</text>
+<text x="20.0" y="56.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">Same delivered kWh, different sources and accounting methods. Assumes 5% grid losses.</text>
+<text x="288.0" y="95.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222222" text-anchor="end" font-weight="bold">Gas, combined cycle</text>
+<text x="288.0" y="112.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="end" font-weight="normal">physical content, 55%</text>
+<rect x="300" y="80" width="125.0" height="36" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="1.5"/>
+<rect x="425.0" y="80" width="6.6" height="36" fill="#EFE0B4" stroke="#A0781A" stroke-width="1.5"/>
+<rect x="431.6" y="80" width="107.7" height="36" fill="#DDDDDD" stroke="#444444" stroke-width="1.5"/>
+<text x="547.2" y="95.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">1.91 kWh</text>
+<text x="547.2" y="112.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">= 6.89 MJ</text>
+<text x="288.0" y="157.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222222" text-anchor="end" font-weight="bold">Nuclear</text>
+<text x="288.0" y="174.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="end" font-weight="normal">physical content, 33%</text>
+<rect x="300" y="142" width="125.0" height="36" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="1.5"/>
+<rect x="425.0" y="142" width="6.6" height="36" fill="#EFE0B4" stroke="#A0781A" stroke-width="1.5"/>
+<rect x="431.6" y="142" width="267.1" height="36" fill="#DDDDDD" stroke="#444444" stroke-width="1.5"/>
+<text x="706.7" y="157.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">3.19 kWh</text>
+<text x="706.7" y="174.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">= 11.48 MJ</text>
+<text x="288.0" y="219.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222222" text-anchor="end" font-weight="bold">Nuclear</text>
+<text x="288.0" y="236.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="end" font-weight="normal">direct equivalent</text>
+<rect x="300" y="204" width="125.0" height="36" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="1.5"/>
+<rect x="425.0" y="204" width="6.6" height="36" fill="#EFE0B4" stroke="#A0781A" stroke-width="1.5"/>
+<text x="439.6" y="219.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">1.05 kWh</text>
+<text x="439.6" y="236.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">= 3.79 MJ</text>
+<text x="288.0" y="281.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222222" text-anchor="end" font-weight="bold">Wind</text>
+<text x="288.0" y="298.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="end" font-weight="normal">physical content or direct eq.</text>
+<rect x="300" y="266" width="125.0" height="36" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="1.5"/>
+<rect x="425.0" y="266" width="6.6" height="36" fill="#EFE0B4" stroke="#A0781A" stroke-width="1.5"/>
+<text x="439.6" y="281.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">1.05 kWh</text>
+<text x="439.6" y="298.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">= 3.79 MJ</text>
+<text x="288.0" y="343.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222222" text-anchor="end" font-weight="bold">Wind</text>
+<text x="288.0" y="360.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="end" font-weight="normal">substitution, 40%</text>
+<rect x="300" y="328" width="125.0" height="36" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="1.5"/>
+<rect x="425.0" y="328" width="6.6" height="36" fill="#EFE0B4" stroke="#A0781A" stroke-width="1.5"/>
+<rect x="431.6" y="328" width="197.4" height="36" fill="#F2C4C8" stroke="#B0303A" stroke-width="1.5" stroke-dasharray="5 3"/>
+<text x="636.9" y="343.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">2.63 kWh</text>
+<text x="636.9" y="360.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">= 9.47 MJ</text>
+<rect x="20" y="405" width="22" height="16" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="1.5"/>
+<text x="50.0" y="418.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2E6DA4" text-anchor="start" font-weight="normal">Delivered, 1 kWh = 3.6 MJ</text>
+<rect x="250" y="405" width="22" height="16" fill="#EFE0B4" stroke="#A0781A" stroke-width="1.5"/>
+<text x="280.0" y="418.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#A0781A" text-anchor="start" font-weight="normal">Grid losses</text>
+<rect x="380" y="405" width="22" height="16" fill="#DDDDDD" stroke="#444444" stroke-width="1.5"/>
+<text x="410.0" y="418.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">Heat rejected at the plant</text>
+<rect x="600" y="405" width="22" height="16" fill="#F2C4C8" stroke="#B0303A" stroke-width="1.5" stroke-dasharray="5 3"/>
+<text x="630.0" y="418.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#B0303A" text-anchor="start" font-weight="normal">Notional fuel</text>
+<line x1="300" y1="452" x2="425" y2="452" stroke="#444444" stroke-width="2"/>
+<line x1="300" y1="446" x2="300" y2="458" stroke="#444444" stroke-width="2"/><line x1="425" y1="446" x2="425" y2="458" stroke="#444444" stroke-width="2"/>
+<text x="435.0" y="457.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">1 kWh (bars drawn to scale)</text>
+</svg>

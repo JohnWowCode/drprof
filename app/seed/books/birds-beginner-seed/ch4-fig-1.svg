@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480">
+<rect width="800" height="480" fill="#ffffff"/>
+<text x="40" y="34" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#222222">Reference birds drawn to scale: length is bill tip to tail tip</text>
+<path d="M 110.0 77.4 L 123.0 70.9 C 125.8 62.9 133.0 54.8 141.7 54.8 C 150.3 54.8 156.1 61.3 161.8 64.5 C 176.2 67.7 189.2 69.3 199.3 72.5 C 205.0 74.2 209.4 75.8 213.7 77.4 L 254.0 82.2 L 252.6 88.7 L 210.8 88.7 C 205.0 91.9 199.3 96.7 190.6 100.0 C 176.2 104.8 159.0 104.8 148.9 98.3 C 138.8 93.5 130.2 87.1 127.3 83.8 L 123.0 84.6 Z" fill="#EFE0B4" stroke="#A0781A" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M 154.6 72.5 C 167.6 67.7 189.2 70.9 205.0 79.0 L 228.1 83.8 C 210.8 90.3 190.6 93.5 176.2 91.9 C 163.3 90.3 156.1 83.8 154.6 72.5 Z" fill="none" stroke="#A0781A" stroke-width="1.2"/>
+<line x1="110.7" y1="77.4" x2="123.0" y2="77.4" stroke="#A0781A" stroke-width="1"/>
+<circle cx="134.5" cy="67.7" r="2.0" fill="#A0781A"/>
+<path d="M 173.4 102.4 L 171.9 112.0 M 180.6 101.9 L 179.8 112.0" stroke="#A0781A" stroke-width="1.6" fill="none"/>
+<line x1="156.1" y1="113.5" x2="202.2" y2="113.5" stroke="#444444" stroke-width="3" stroke-linecap="round"/>
+<g stroke="#A0781A" stroke-width="1.4"><line x1="110.0" y1="126" x2="254.0" y2="126"/><line x1="110.0" y1="121" x2="110.0" y2="131"/><line x1="254.0" y1="121" x2="254.0" y2="131"/></g>
+<text x="274" y="88" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#7F5F14">House Sparrow</text>
+<text x="274" y="107" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#7F5F14">15–17 cm long (drawn at 16 cm)</text>
+<path d="M 110.0 174.5 L 129.4 168.9 C 133.8 155.0 144.6 148.6 157.5 148.6 C 170.5 148.6 179.1 152.9 187.8 157.2 C 209.4 161.5 228.8 163.7 243.9 168.0 C 252.6 170.2 259.0 172.3 265.5 174.5 L 326.0 181.0 L 323.8 189.6 L 261.2 189.6 C 252.6 193.9 243.9 200.4 231.0 204.7 C 209.4 211.2 183.4 211.2 168.3 202.6 C 153.2 196.1 140.2 187.4 135.9 183.1 L 129.4 179.7 Z" fill="#F6D2AE" stroke="#C8691C" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M 177.0 168.0 C 196.4 161.5 228.8 165.8 252.6 176.6 L 287.1 183.1 C 261.2 191.8 231.0 196.1 209.4 193.9 C 189.9 191.8 179.1 183.1 177.0 168.0 Z" fill="none" stroke="#C8691C" stroke-width="1.2"/>
+<line x1="111.1" y1="174.5" x2="129.4" y2="174.5" stroke="#C8691C" stroke-width="1"/>
+<circle cx="146.7" cy="161.5" r="3.0" fill="#C8691C"/>
+<path d="M 205.0 208.0 L 203.5 222.0 M 215.8 207.5 L 214.8 222.0" stroke="#C8691C" stroke-width="1.6" fill="none"/>
+<line x1="179.1" y1="223.5" x2="248.2" y2="223.5" stroke="#444444" stroke-width="3" stroke-linecap="round"/>
+<g stroke="#C8691C" stroke-width="1.4"><line x1="110.0" y1="236" x2="326.0" y2="236"/><line x1="110.0" y1="231" x2="110.0" y2="241"/><line x1="326.0" y1="231" x2="326.0" y2="241"/></g>
+<text x="346" y="198" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#A4520F">American Robin</text>
+<text x="346" y="217" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#A4520F">20–28 cm long (drawn at 24 cm)</text>
+<path d="M 110.0 296.6 L 159.7 275.9 C 167.7 262.3 187.7 252.7 211.7 252.7 C 235.7 252.7 251.8 258.5 267.8 266.1 C 307.8 273.7 343.8 277.5 371.9 285.1 C 387.9 288.9 399.9 292.7 411.9 296.6 L 524.0 308.0 L 520.0 323.2 L 403.9 323.2 C 387.9 330.8 371.9 342.3 347.8 349.9 C 307.8 361.3 259.8 361.3 231.7 346.1 C 203.7 334.6 179.7 319.4 171.7 311.8 L 159.7 311.5 Z" fill="#DDDDDD" stroke="#444444" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M 247.8 285.1 C 283.8 273.7 343.8 281.3 387.9 300.4 L 451.9 311.8 C 403.9 327.0 347.8 334.6 307.8 330.8 C 271.8 327.0 251.8 311.8 247.8 285.1 Z" fill="none" stroke="#444444" stroke-width="1.2"/>
+<line x1="112.1" y1="296.6" x2="159.7" y2="296.6" stroke="#444444" stroke-width="1"/>
+<circle cx="203.7" cy="273.7" r="4.0" fill="#444444"/>
+<path d="M 292.2 355.6 L 290.7 382.0 M 312.9 355.1 L 310.8 382.0" stroke="#444444" stroke-width="1.6" fill="none"/>
+<line x1="242.5" y1="383.5" x2="375.0" y2="383.5" stroke="#444444" stroke-width="3" stroke-linecap="round"/>
+<g stroke="#444444" stroke-width="1.4"><line x1="110.0" y1="396" x2="524.0" y2="396"/><line x1="110.0" y1="391" x2="110.0" y2="401"/><line x1="524.0" y1="391" x2="524.0" y2="401"/></g>
+<text x="544" y="358" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#222222">American Crow</text>
+<text x="544" y="377" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222222">40–53 cm long (drawn at 46 cm)</text>
+<line x1="110" y1="424" x2="560.0" y2="424" stroke="#222222" stroke-width="1.5"/>
+<line x1="110.0" y1="424" x2="110.0" y2="433" stroke="#222222" stroke-width="1"/>
+<text x="110.0" y="448" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222222" text-anchor="middle">0</text>
+<line x1="119.0" y1="424" x2="119.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="128.0" y1="424" x2="128.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="137.0" y1="424" x2="137.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="146.0" y1="424" x2="146.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="155.0" y1="424" x2="155.0" y2="430" stroke="#222222" stroke-width="1"/>
+<line x1="164.0" y1="424" x2="164.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="173.0" y1="424" x2="173.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="182.0" y1="424" x2="182.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="191.0" y1="424" x2="191.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="200.0" y1="424" x2="200.0" y2="433" stroke="#222222" stroke-width="1"/>
+<text x="200.0" y="448" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222222" text-anchor="middle">10</text>
+<line x1="209.0" y1="424" x2="209.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="218.0" y1="424" x2="218.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="227.0" y1="424" x2="227.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="236.0" y1="424" x2="236.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="245.0" y1="424" x2="245.0" y2="430" stroke="#222222" stroke-width="1"/>
+<line x1="254.0" y1="424" x2="254.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="263.0" y1="424" x2="263.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="272.0" y1="424" x2="272.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="281.0" y1="424" x2="281.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="290.0" y1="424" x2="290.0" y2="433" stroke="#222222" stroke-width="1"/>
+<text x="290.0" y="448" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222222" text-anchor="middle">20</text>
+<line x1="299.0" y1="424" x2="299.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="308.0" y1="424" x2="308.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="317.0" y1="424" x2="317.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="326.0" y1="424" x2="326.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="335.0" y1="424" x2="335.0" y2="430" stroke="#222222" stroke-width="1"/>
+<line x1="344.0" y1="424" x2="344.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="353.0" y1="424" x2="353.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="362.0" y1="424" x2="362.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="371.0" y1="424" x2="371.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="380.0" y1="424" x2="380.0" y2="433" stroke="#222222" stroke-width="1"/>
+<text x="380.0" y="448" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222222" text-anchor="middle">30</text>
+<line x1="389.0" y1="424" x2="389.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="398.0" y1="424" x2="398.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="407.0" y1="424" x2="407.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="416.0" y1="424" x2="416.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="425.0" y1="424" x2="425.0" y2="430" stroke="#222222" stroke-width="1"/>
+<line x1="434.0" y1="424" x2="434.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="443.0" y1="424" x2="443.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="452.0" y1="424" x2="452.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="461.0" y1="424" x2="461.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="470.0" y1="424" x2="470.0" y2="433" stroke="#222222" stroke-width="1"/>
+<text x="470.0" y="448" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222222" text-anchor="middle">40</text>
+<line x1="479.0" y1="424" x2="479.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="488.0" y1="424" x2="488.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="497.0" y1="424" x2="497.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="506.0" y1="424" x2="506.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="515.0" y1="424" x2="515.0" y2="430" stroke="#222222" stroke-width="1"/>
+<line x1="524.0" y1="424" x2="524.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="533.0" y1="424" x2="533.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="542.0" y1="424" x2="542.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="551.0" y1="424" x2="551.0" y2="427" stroke="#222222" stroke-width="1"/>
+<line x1="560.0" y1="424" x2="560.0" y2="433" stroke="#222222" stroke-width="1"/>
+<text x="560.0" y="448" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222222" text-anchor="middle">50</text>
+<text x="576.0" y="429" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222222">centimeters</text>
+<text x="40" y="470" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444">Ranges from the Cornell Lab’s All About Birds. A perched bird hunches and looks shorter than its measured length.</text>
+</svg>

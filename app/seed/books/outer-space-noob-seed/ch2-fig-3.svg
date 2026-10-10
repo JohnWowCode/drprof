@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480">
+<rect width="800" height="480" fill="#ffffff"/>
+<text x="24" y="32" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#222222">Big moons, Mercury and dwarf planets to one scale (1 pixel = 45 km)</text>
+<circle cx="32.0" cy="56.0" r="7.00" fill="#F6D2AE" stroke="#C8691C" stroke-width="1.5"/>
+<text x="46.0" y="61.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#C8691C" text-anchor="start">Planet</text>
+<circle cx="132.0" cy="56.0" r="7.00" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="1.5"/>
+<text x="146.0" y="61.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2E6DA4" text-anchor="start">Moon</text>
+<circle cx="216.0" cy="56.0" r="7.00" fill="#DCD2EE" stroke="#6B4FA0" stroke-width="1.5"/>
+<text x="230.0" y="61.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6B4FA0" text-anchor="start">Dwarf planet</text>
+<circle cx="103.5" cy="152.0" r="58.53" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="1.5"/>
+<text x="103.5" y="232.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#2E6DA4" text-anchor="middle" font-weight="bold">Ganymede</text>
+<text x="103.5" y="250.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2E6DA4" text-anchor="middle">5,268 km</text>
+<text x="103.5" y="267.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2E6DA4" text-anchor="middle">moon of Jupiter</text>
+<circle cx="241.3" cy="152.0" r="57.22" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="1.5"/>
+<text x="241.3" y="232.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#2E6DA4" text-anchor="middle" font-weight="bold">Titan</text>
+<text x="241.3" y="250.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2E6DA4" text-anchor="middle">5,150 km</text>
+<text x="241.3" y="267.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2E6DA4" text-anchor="middle">moon of Saturn</text>
+<circle cx="374.7" cy="152.0" r="54.21" fill="#F6D2AE" stroke="#C8691C" stroke-width="1.5"/>
+<text x="374.7" y="232.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#C8691C" text-anchor="middle" font-weight="bold">Mercury</text>
+<text x="374.7" y="250.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#C8691C" text-anchor="middle">4,879 km</text>
+<circle cx="504.5" cy="152.0" r="53.57" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="1.5"/>
+<text x="504.5" y="232.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#2E6DA4" text-anchor="middle" font-weight="bold">Callisto</text>
+<text x="504.5" y="250.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2E6DA4" text-anchor="middle">4,821 km</text>
+<text x="504.5" y="267.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2E6DA4" text-anchor="middle">moon of Jupiter</text>
+<circle cx="620.5" cy="152.0" r="40.48" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="1.5"/>
+<text x="620.5" y="232.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#2E6DA4" text-anchor="middle" font-weight="bold">Io</text>
+<text x="620.5" y="250.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2E6DA4" text-anchor="middle">3,643 km</text>
+<text x="620.5" y="267.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2E6DA4" text-anchor="middle">moon of Jupiter</text>
+<circle cx="721.6" cy="152.0" r="38.61" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="1.5"/>
+<text x="721.6" y="232.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#2E6DA4" text-anchor="middle" font-weight="bold">Moon</text>
+<text x="721.6" y="250.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2E6DA4" text-anchor="middle">3,475 km</text>
+<text x="721.6" y="267.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2E6DA4" text-anchor="middle">moon of Earth</text>
+<circle cx="110.0" cy="336.0" r="34.69" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="1.5"/>
+<text x="110.0" y="400.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#2E6DA4" text-anchor="middle" font-weight="bold">Europa</text>
+<text x="110.0" y="418.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2E6DA4" text-anchor="middle">3,122 km</text>
+<text x="110.0" y="435.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2E6DA4" text-anchor="middle">moon of Jupiter</text>
+<circle cx="250.0" cy="336.0" r="30.08" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="1.5"/>
+<text x="250.0" y="400.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#2E6DA4" text-anchor="middle" font-weight="bold">Triton</text>
+<text x="250.0" y="418.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2E6DA4" text-anchor="middle">2,707 km</text>
+<text x="250.0" y="435.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2E6DA4" text-anchor="middle">moon of Neptune</text>
+<circle cx="390.0" cy="336.0" r="26.41" fill="#DCD2EE" stroke="#6B4FA0" stroke-width="1.5"/>
+<text x="390.0" y="400.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#6B4FA0" text-anchor="middle" font-weight="bold">Pluto</text>
+<text x="390.0" y="418.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6B4FA0" text-anchor="middle">2,377 km</text>
+<text x="390.0" y="435.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6B4FA0" text-anchor="middle">dwarf planet</text>
+<circle cx="530.0" cy="336.0" r="25.84" fill="#DCD2EE" stroke="#6B4FA0" stroke-width="1.5"/>
+<text x="530.0" y="400.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#6B4FA0" text-anchor="middle" font-weight="bold">Eris</text>
+<text x="530.0" y="418.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6B4FA0" text-anchor="middle">2,326 km</text>
+<text x="530.0" y="435.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6B4FA0" text-anchor="middle">dwarf planet</text>
+<circle cx="670.0" cy="336.0" r="10.44" fill="#DCD2EE" stroke="#6B4FA0" stroke-width="1.5"/>
+<text x="670.0" y="400.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#6B4FA0" text-anchor="middle" font-weight="bold">Ceres</text>
+<text x="670.0" y="418.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6B4FA0" text-anchor="middle">940 km</text>
+<text x="670.0" y="435.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6B4FA0" text-anchor="middle">dwarf planet</text>
+<text x="24.0" y="468.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start">Diameters from NASA, ESA and New Horizons measurements, rounded. Seven moons are larger than Pluto.</text>
+</svg>

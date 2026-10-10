@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480">
+<rect width="800" height="480" fill="#ffffff"/>
+<text x="24" y="32" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#222222">Distances from the Sun to scale, in astronomical units (AU)</text>
+<rect x="472.0" y="112" width="288.0" height="24" fill="#DCD2EE" stroke="#6B4FA0" stroke-width="1"/>
+<text x="616.0" y="170.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6B4FA0" text-anchor="middle">Kuiper Belt: about 30 to 50 AU</text>
+<rect x="36" y="108" width="87.2" height="32" fill="none" stroke="#444444" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="40.0" y1="124.0" x2="760.0" y2="124.0" stroke="#444444" stroke-width="2"/>
+<line x1="40.0" y1="124.0" x2="40.0" y2="132.0" stroke="#444444" stroke-width="1"/>
+<text x="40.0" y="148.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="middle">0</text>
+<line x1="184.0" y1="124.0" x2="184.0" y2="132.0" stroke="#444444" stroke-width="1"/>
+<text x="184.0" y="148.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="middle">10</text>
+<line x1="328.0" y1="124.0" x2="328.0" y2="132.0" stroke="#444444" stroke-width="1"/>
+<text x="328.0" y="148.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="middle">20</text>
+<line x1="472.0" y1="124.0" x2="472.0" y2="132.0" stroke="#444444" stroke-width="1"/>
+<text x="472.0" y="148.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="middle">30</text>
+<line x1="616.0" y1="124.0" x2="616.0" y2="132.0" stroke="#444444" stroke-width="1"/>
+<text x="616.0" y="148.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="middle">40</text>
+<line x1="760.0" y1="124.0" x2="760.0" y2="132.0" stroke="#444444" stroke-width="1"/>
+<text x="760.0" y="148.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="middle">50</text>
+<text x="400.0" y="194.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="middle">Distance from the Sun (AU). The dashed box is enlarged below.</text>
+<path d="M40,115 A9,9 0 0,0 40,133 Z" fill="#F6D2AE" stroke="#C8691C" stroke-width="1.5"/>
+<line x1="114.9" y1="120.0" x2="114.9" y2="78.0" stroke="#C8691C" stroke-width="1"/>
+<circle cx="114.9" cy="124.0" r="4.00" fill="#F6D2AE" stroke="#C8691C" stroke-width="1.5"/>
+<text x="114.9" y="72.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#C8691C" text-anchor="middle">Jupiter 5.2 AU</text>
+<line x1="177.8" y1="120.0" x2="177.8" y2="104.0" stroke="#A0781A" stroke-width="1"/>
+<circle cx="177.8" cy="124.0" r="4.00" fill="#EFE0B4" stroke="#A0781A" stroke-width="1.5"/>
+<text x="177.8" y="98.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#A0781A" text-anchor="middle">Saturn 9.6 AU</text>
+<line x1="316.0" y1="120.0" x2="316.0" y2="104.0" stroke="#2F7D4F" stroke-width="1"/>
+<circle cx="316.0" cy="124.0" r="4.00" fill="#C4E3C9" stroke="#2F7D4F" stroke-width="1.5"/>
+<text x="316.0" y="98.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2F7D4F" text-anchor="middle">Uranus 19.2 AU</text>
+<line x1="474.6" y1="120.0" x2="474.6" y2="104.0" stroke="#2E6DA4" stroke-width="1"/>
+<circle cx="474.6" cy="124.0" r="4.00" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="1.5"/>
+<text x="474.6" y="98.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2E6DA4" text-anchor="middle">Neptune 30 AU</text>
+<line x1="608.5" y1="120.0" x2="608.5" y2="104.0" stroke="#6B4FA0" stroke-width="1"/>
+<circle cx="608.5" cy="124.0" r="4.00" fill="#DCD2EE" stroke="#6B4FA0" stroke-width="1.5"/>
+<text x="608.5" y="98.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6B4FA0" text-anchor="middle">Pluto 39.5 AU</text>
+<circle cx="45.6" cy="124.0" r="2.20" fill="#DDDDDD" stroke="#444444" stroke-width="1"/>
+<circle cx="50.4" cy="124.0" r="2.20" fill="#EFE0B4" stroke="#A0781A" stroke-width="1"/>
+<circle cx="54.4" cy="124.0" r="2.20" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="1"/>
+<circle cx="61.9" cy="124.0" r="2.20" fill="#F2C4C8" stroke="#B0303A" stroke-width="1"/>
+<text x="24.0" y="226.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#222222" text-anchor="start">Close-up of the boxed part: the Sun to Jupiter, stretched 9 times</text>
+<rect x="328.0" y="334" width="130.9" height="24" fill="#EFE0B4" stroke="#A0781A" stroke-width="1"/>
+<text x="393.5" y="300.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#A0781A" text-anchor="middle">Main asteroid belt</text>
+<text x="393.5" y="318.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#A0781A" text-anchor="middle">about 2.2 to 3.2 AU</text>
+<line x1="40.0" y1="346.0" x2="760.0" y2="346.0" stroke="#444444" stroke-width="2"/>
+<line x1="40.0" y1="346.0" x2="40.0" y2="354.0" stroke="#444444" stroke-width="1"/>
+<text x="40.0" y="370.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="middle">0</text>
+<line x1="170.9" y1="346.0" x2="170.9" y2="354.0" stroke="#444444" stroke-width="1"/>
+<text x="170.9" y="370.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="middle">1</text>
+<line x1="301.8" y1="346.0" x2="301.8" y2="354.0" stroke="#444444" stroke-width="1"/>
+<text x="301.8" y="370.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="middle">2</text>
+<line x1="432.7" y1="346.0" x2="432.7" y2="354.0" stroke="#444444" stroke-width="1"/>
+<text x="432.7" y="370.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="middle">3</text>
+<line x1="563.6" y1="346.0" x2="563.6" y2="354.0" stroke="#444444" stroke-width="1"/>
+<text x="563.6" y="370.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="middle">4</text>
+<line x1="694.5" y1="346.0" x2="694.5" y2="354.0" stroke="#444444" stroke-width="1"/>
+<text x="694.5" y="370.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="middle">5</text>
+<path d="M40,332 A14,14 0 0,0 40,360 Z" fill="#F6D2AE" stroke="#C8691C" stroke-width="1.5"/>
+<text x="26.0" y="390.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#C8691C" text-anchor="start">Sun</text>
+<line x1="90.7" y1="340.0" x2="90.7" y2="324.0" stroke="#444444" stroke-width="1"/>
+<circle cx="90.7" cy="346.0" r="5.00" fill="#DDDDDD" stroke="#444444" stroke-width="1.5"/>
+<text x="90.7" y="300.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="middle" font-weight="bold">Mercury</text>
+<text x="90.7" y="317.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="middle">0.39 AU</text>
+<line x1="134.6" y1="340.0" x2="134.6" y2="284.0" stroke="#A0781A" stroke-width="1"/>
+<circle cx="134.6" cy="346.0" r="5.00" fill="#EFE0B4" stroke="#A0781A" stroke-width="1.5"/>
+<text x="134.6" y="260.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#A0781A" text-anchor="middle" font-weight="bold">Venus</text>
+<text x="134.6" y="277.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#A0781A" text-anchor="middle">0.72 AU</text>
+<line x1="170.9" y1="340.0" x2="170.9" y2="324.0" stroke="#2E6DA4" stroke-width="1"/>
+<circle cx="170.9" cy="346.0" r="5.00" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="1.5"/>
+<text x="170.9" y="300.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2E6DA4" text-anchor="middle" font-weight="bold">Earth</text>
+<text x="170.9" y="317.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2E6DA4" text-anchor="middle">1.00 AU</text>
+<line x1="239.0" y1="340.0" x2="239.0" y2="284.0" stroke="#B0303A" stroke-width="1"/>
+<circle cx="239.0" cy="346.0" r="5.00" fill="#F2C4C8" stroke="#B0303A" stroke-width="1.5"/>
+<text x="239.0" y="260.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#B0303A" text-anchor="middle" font-weight="bold">Mars</text>
+<text x="239.0" y="277.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#B0303A" text-anchor="middle">1.52 AU</text>
+<line x1="720.7" y1="340.0" x2="720.7" y2="324.0" stroke="#C8691C" stroke-width="1"/>
+<circle cx="720.7" cy="346.0" r="5.00" fill="#F6D2AE" stroke="#C8691C" stroke-width="1.5"/>
+<text x="720.7" y="300.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#C8691C" text-anchor="middle" font-weight="bold">Jupiter</text>
+<text x="720.7" y="317.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#C8691C" text-anchor="middle">5.20 AU</text>
+<text x="24.0" y="418.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start">Pocket scale model: 1 AU = about 24 m (26 yards). Neptune is about 710 m (777 yards) out.</text>
+<text x="24.0" y="442.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start">Sunlight takes about 8.3 minutes to cross 1 AU, so it reaches Neptune in about 4 hours.</text>
+<text x="24.0" y="468.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start">Planet dots are not to scale; distances are average distances (NASA NSSDCA).</text>
+</svg>

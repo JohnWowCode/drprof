@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480">
+  <rect width="800" height="480" fill="#ffffff"/>
+  <text x="24" y="34" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#222222">A heat engine between two reservoirs</text>
+  <rect x="110" y="58" width="340" height="62" rx="6" fill="#F2C4C8" stroke="#B0303A" stroke-width="2"/>
+  <text x="280" y="86" font-family="Helvetica, Arial, sans-serif" font-size="16" text-anchor="middle" fill="#B0303A">Hot reservoir: steam source</text>
+  <text x="280" y="108" font-family="Helvetica, Arial, sans-serif" font-size="15" text-anchor="middle" fill="#B0303A">T<tspan dy="4" font-size="14">H</tspan><tspan dy="-4"> = 823 K (550 °C)</tspan></text>
+  <rect x="110" y="372" width="340" height="62" rx="6" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="2"/>
+  <text x="280" y="400" font-family="Helvetica, Arial, sans-serif" font-size="16" text-anchor="middle" fill="#2E6DA4">Cold reservoir: condenser</text>
+  <text x="280" y="422" font-family="Helvetica, Arial, sans-serif" font-size="15" text-anchor="middle" fill="#2E6DA4">T<tspan dy="4" font-size="14">C</tspan><tspan dy="-4"> = 319 K (46 °C)</tspan></text>
+  <polygon points="255,120 305,120 305,168 315,168 280,190 245,168 255,168" fill="#F2C4C8" stroke="#B0303A" stroke-width="2"/>
+  <circle cx="280" cy="240" r="50" fill="#EFE0B4" stroke="#A0781A" stroke-width="2"/>
+  <text x="280" y="246" font-family="Helvetica, Arial, sans-serif" font-size="16" text-anchor="middle" fill="#7F5F14">Engine</text>
+  <polygon points="265,290 295,290 295,346 305,346 280,370 255,346 265,346" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="2"/>
+  <polygon points="330,230 456,230 456,220 480,240 456,260 456,250 330,250" fill="#C4E3C9" stroke="#2F7D4F" stroke-width="2"/>
+  <text x="240" y="152" font-family="Helvetica, Arial, sans-serif" font-size="16" text-anchor="end" fill="#B0303A">Q<tspan dy="4" font-size="14">H</tspan><tspan dy="-4"> = 100 MJ</tspan></text>
+  <text x="250" y="330" font-family="Helvetica, Arial, sans-serif" font-size="16" text-anchor="end" fill="#2E6DA4">Q<tspan dy="4" font-size="14">C</tspan><tspan dy="-4"> = 59 MJ</tspan></text>
+  <text x="400" y="214" font-family="Helvetica, Arial, sans-serif" font-size="16" text-anchor="middle" fill="#2F7D4F">W = 41 MJ</text>
+  <text x="412" y="284" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2F7D4F">ideal Rankine, Section 2.3</text>
+  <rect x="505" y="130" width="275" height="230" rx="8" fill="#ffffff" stroke="#DDDDDD" stroke-width="1.5"/>
+  <g font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#444444">
+    <text x="520" y="158" fill="#222222">First law (energy is conserved):</text>
+    <text x="536" y="182">Q<tspan dy="4" font-size="14">H</tspan><tspan dy="-4"> = W + </tspan>Q<tspan dy="4" font-size="14">C</tspan><tspan dy="-4"></tspan></text>
+    <text x="520" y="214" fill="#222222">Second law (entropy):</text>
+    <text x="536" y="238">Q<tspan dy="4" font-size="14">C</tspan><tspan dy="-4"> / </tspan>T<tspan dy="4" font-size="14">C</tspan><tspan dy="-4"> ≥ </tspan>Q<tspan dy="4" font-size="14">H</tspan><tspan dy="-4"> / </tspan>T<tspan dy="4" font-size="14">H</tspan><tspan dy="-4"></tspan></text>
+    <text x="520" y="270" fill="#222222">Together:</text>
+    <text x="536" y="294">W / Q<tspan dy="4" font-size="14">H</tspan><tspan dy="-4"> ≤ 1 − </tspan>T<tspan dy="4" font-size="14">C</tspan><tspan dy="-4"> / </tspan>T<tspan dy="4" font-size="14">H</tspan><tspan dy="-4"></tspan></text>
+    <text x="536" y="318">1 − 319 / 823 = 0.61</text>
+    <text x="520" y="346" fill="#6B4FA0">Carnot limit 61%; ideal cycle 41%</text>
+  </g>
+  <text x="24" y="466" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444">Arrow widths are proportional to energy per 100 MJ of heat supplied.</text>
+</svg>
