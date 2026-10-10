@@ -442,7 +442,7 @@ const S = {
   courses: new Map(), catalogLoaded: false, catalogError: null,
   chapters: {}, finals: {}, prog: {}, profile: { name: "" },
   form: { topic: "", level: "beginner", focus: "", length: "standard", persona: "professor", engine: "default" },
-  gen: {}, slide: {}, quizSel: {}, chat: {}, busy: {}, errata: {}, errOpen: {}, wx: {}, ix: {},
+  gen: {}, slide: {}, quizSel: {}, chat: {}, busy: {}, errata: {}, errOpen: {}, wx: {}, wxAll: {}, ix: {},
   names: {}, altPick: {}, rvPick: {}, loadedAll: {}, pendingAnchor: null,
   audio: { key: null, idx: 0, playing: false, rate: 1, voice: null, gen: 0, tOpen: false },
 };
@@ -1306,6 +1306,7 @@ function viewChapter(c, n) {
   const figHTML = (f) => { figNo++; return `<figure class="fig"><div class="plate"><img class="fig-img" alt="${esc(f.caption)}" src="${svgSrc(f.svg)}"></div><figcaption><b>Figure ${n}.${figNo}</b> ${fmt(f.caption)}</figcaption></figure>`; };
   const sectionIds = new Set(L.sections.map((s) => s.n));
   const IX = S.ix[key] = normInteractives(chap.interactives);
+  S.wx = S.wxAll[key] = S.wxAll[key] || {}; // widget state lives per chapter, so ids like wx-1-0 never collide across books
   const wxFor = (sec) => IX.map((it, k) => ((sec ? it.section === sec : !sectionIds.has(it.section)) ? wxHTML(`wx-${n}-${k}`, it) : "")).join("");
   const loose = arr(chap.figures).filter((f) => !sectionIds.has(f.section));
   const rail = `<nav class="rail" aria-label="Chapter contents"><div class="eyebrow">Contents</div><ol>

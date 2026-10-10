@@ -1,0 +1,53 @@
+{
+ "method": "Researched and written with web-search verification; then fact-checked independently by a second agent using web search (search results confirmed the Kao 2020 findings and volume, the Hicks et al. 2018 DiGRA entry and survey method, the Juul and Begy 2016 design and preference result, the Breath of the Wild GDC 2017 session details and date, the Guardiola ACE 2016 pages, and the rolling/hypertapping history; direct page fetches and DOI lookups were blocked, so the Guardiola DOI suffix could not be confirmed) plus expert review for the NES Tetris timing tables, Sicart, Swink, Gardner, Shannon and Juul 2002; the glider in figure 3 and the worked example were simulated cell by cell under Life's rules; every answer key re-solved blind.",
+ "keysChecked": 16,
+ "keysAgreed": 16,
+ "keyFixes": [],
+ "corrections": [
+  {
+   "where": "2.2 reading",
+   "quote": "In a game started at level 0, every 10 lines raises the level and makes pieces fall faster, so success in the core loop makes the core loop harder.",
+   "correction": "In a game started at level 0, every 10 lines raises the level, and pieces fall faster as the level climbs, so success in the core loop makes the core loop harder.",
+   "why": "NES Tetris gravity does not change at every level-up. After level 10 the speed holds for several levels (5 frames per row at levels 10-12, 4 at 13-15, 3 at 16-18, 2 at 19-28), so only about half of the level-ups between levels 0 and 29 actually speed the pieces up. The overall trend is right; the 'every 10 lines ... faster' wording is not.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "2.3 worked example step 4",
+   "quote": "The game is barely playable there with a held button, which matches the experience of players at that level.",
+   "correction": "In this simple model the margin is tiny; real players widen it, for example by keeping the auto-shift charged between pieces so that a shift starts at the 6-frame rate.",
+   "why": "The claim that the result 'matches the experience of players' is unsupported and overstated. Expert players who used held-button (DAS) play handled levels 19-28 routinely in max-out games, because NES Tetris keeps the DAS counter charged while a direction is held across pieces (including during the entry delay) and against the wall. The 2-frame figure applies only to a shift starting from rest, so it says nothing about how playable the level is in practice.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "2.1 reading",
+   "quote": "And it sorts mechanics into tiers:",
+   "correction": "And his paper goes on to sort mechanics into tiers:",
+   "why": "The quoted one-line definition does not itself sort mechanics into tiers. Sicart makes the core/primary/secondary distinction separately later in the paper, where primary and secondary mechanics are kinds of core mechanics. Saying 'his wording' does this job misattributes the tiers to the definition.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "2.4 reading",
+   "quote": "Emergence gives a game depth no one planned, but the same process yields exploits and dominant strategies, the subject of Chapter 3.",
+   "correction": "Emergence gives a game depth no one planned, but the same process yields exploits and dominant strategies, the subjects of Chapters 3 and 4.",
+   "why": "According to the course outline, Chapter 3 covers dominant strategies and Chapter 4 ('Inflation and exploits') covers exploits. The chapter's own slide notes say 'Chapters 3 and 4'.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "P2.4-0 choice D",
+   "quote": "It dies again",
+   "correction": "It comes alive, then dies",
+   "why": "A dead cell that 'dies again' ends up dead, which is the same outcome as the keyed answer 'It stays dead'. A careful learner could defend D, so the question has two defensible answers. The replacement distractor is clearly wrong.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "S2.2-1",
+   "quote": "Association for Computing Machinery. https://doi.org/10.1145/3001773.3001791",
+   "correction": "Association for Computing Machinery.",
+   "why": "The paper, its venue (ACE 2016, Osaka, the 13th ACE) and its pages (Article 23, 1-7, per DBLP) are confirmed. The ACE 2016 proceedings prefix 10.1145/3001773 is consistent, but no search result confirmed the article suffix .3001791. Drop the DOI unless someone checks it in the ACM Digital Library.",
+   "severity": "unverifiable"
+  }
+ ],
+ "sourcesChecked": 14,
+ "sourcesWithdrawn": [],
+ "summary": "The chapter is accurate on nearly every checkable point: the NES Tetris gravity and DAS numbers, the explorer formula, Gibson's level-157 crash on 21 December 2023, Kao's four-condition result, the GDC 2017 talk details and the figure 3 glider (verified by simulation) are all correct, and all 16 answer keys agree. The six corrections are minor: an overgeneralized claim that every level-up speeds the pieces, an unsupported claim about how playable level 19 is, a distractor equivalent to the keyed answer, a misattributed sentence about Sicart, a chapter cross-reference, and one unconfirmed DOI suffix."
+}

@@ -1,0 +1,67 @@
+{
+ "method": "Researched and written with web-search verification; then fact-checked independently by a second agent. WebSearch worked and was used to confirm the Foucault Panthéon details (28 kg bob, 67 m wire, about 11.3 degrees per hour at Paris), Foucault's Comptes rendus 32, 135-138 paper (presented 3 February 1851), and Ottewell's Thousand-Yard Model (1989, Universal Workshop; NOIRLab URL eduprog032; 1 inch = 100,000 miles, 8-inch Sun, peppercorn Earth 26 yards away). Direct page fetches failed (NASA, NOIRLab and university hosts could not be reached), so the NASA fact-sheet values were checked from expert knowledge. All numbers were recomputed independently: equator speed, sunlight ratio, pendulum rate, day lengths at 40 degrees N and in Oslo, noon Sun heights, scale-model sizes, and the error of the explorer's declination formula (at most about 1.4 degrees). Every figure's geometry was checked from its SVG coordinates. Every answer key was re-solved blind.",
+ "keysChecked": 14,
+ "keysAgreed": 14,
+ "keyFixes": [],
+ "corrections": [
+  {
+   "where": "1.1 source 2",
+   "quote": "Williams, D. R. (2024, November 15). Earth fact sheet.",
+   "correction": "Williams, D. R. (n.d.). Earth fact sheet.",
+   "why": "The page and its values are real (sidereal rotation 23.9345 h, equatorial radius 6,378.137 km, perihelion 147.1 and aphelion 152.1 million km, obliquity 23.44 degrees), but I could not confirm a 'Last Updated: 15 November 2024' date (the NASA host could not be reached, and searches did not show the footer). Use n.d., as the chapter already does for the Moon fact sheet.",
+   "severity": "unverifiable"
+  },
+  {
+   "where": "1.3 source 1",
+   "quote": "Williams, D. R. (2024, November 15). Earth fact sheet.",
+   "correction": "Williams, D. R. (n.d.). Earth fact sheet.",
+   "why": "Same citation as 1.1 source 2. The update date could not be confirmed, so it should be n.d.",
+   "severity": "unverifiable"
+  },
+  {
+   "where": "1.1 reading",
+   "quote": "A pendulum keeps swinging in the same direction in space; nothing makes it turn.",
+   "correction": "Nothing in a pendulum makes its swing turn by itself.",
+   "why": "The swing plane stays fixed in space only at the poles. At other latitudes it turns relative to the ground at 15 degrees times sin(latitude) per hour (about 11.3 degrees per hour at Paris, 48.85 degrees north). That is why the next sentences say the rate depends on latitude. Saying the swing keeps one direction in space contradicts that and would confuse a careful beginner.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "1.1 worked example step 4",
+   "quote": "so the Moon gains a little less height than the full three fists",
+   "correction": "so the Moon gains only about two fists of height",
+   "why": "I worked this out for 40 degrees north. Starting 10 degrees up, 30 degrees of turning along the slanted path raises the Moon to about 31 to 33 degrees: a gain of about 21 to 23 degrees, or two fists, not 'a little less than three'. The step's conclusion, about three fists above the horizon, is correct only because the gain is about two fists.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "1.2 reading",
+   "quote": "like a grain of fine sand",
+   "correction": "like a grain of sand",
+   "why": "In the model the Moon is about 0.55 mm across (3,475 km at 1 inch per 100,000 miles). Fine sand is about 0.125 to 0.25 mm; a 0.5 mm grain is medium to coarse sand.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "1.3 reading",
+   "quote": "In the Northern Hemisphere the noon shadow is shortest around the June solstice and longest around the December solstice.",
+   "correction": "North of the tropics, the noon shadow is shortest around the June solstice and longest around the December solstice.",
+   "why": "Between the equator and 23.4 degrees north, the noon shadow is shortest, and vanishes, on the days the Sun passes overhead (spring and late summer), not at the June solstice. On the June solstice the shadow there points south.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "1.3 reading",
+   "quote": "The five planets you can see with your eyes alone",
+   "correction": "The five planets that are easy to see with your eyes alone",
+   "why": "Uranus (about magnitude 5.7) can just be seen with the naked eye under very dark skies. The five classical planets are the ones that are easy to see.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "S1.1-3 slide notes (slide 'Proof: Foucault’s pendulum, 1851')",
+   "quote": "This was the first experiment anyone could watch that showed the ground itself turning.",
+   "correction": "It let anyone watch the ground itself turning.",
+   "why": "Earlier falling-body experiments (Guglielmini 1791, Benzenberg 1802, Reich 1831) had already detected Earth's rotation, so 'first' depends on the exact wording and is hard to check. The softened sentence keeps the point without a priority claim.",
+   "severity": "unverifiable"
+  }
+ ],
+ "sourcesChecked": 12,
+ "sourcesWithdrawn": [],
+ "summary": "The chapter is accurate. Every key number I recomputed is correct (1,670 km/h, 7 percent, 11 degrees per hour and 32 hours, 73 and 27 degrees, 15 and 9 hours, almost 19 hours in Oslo, 0.5 mm and 6 cm, 24 m), all 14 answer keys are right, and all three figures are geometrically correct, down to the Arctic Circle touching the terminator. The corrections are minor: an unconfirmed fact-sheet date, a pendulum sentence that contradicts the latitude dependence, an overstated height gain in one worked example, and three small over-generalizations."
+}

@@ -28,7 +28,7 @@ courses = json.loads((SEED / "courses.json").read_text())
 for c in courses:
     folder = SEED / "books" / c["id"]
     written = dict(c.get("written") or {})
-    for f in sorted(folder.glob("ch*.json"), key=lambda p: int(p.stem[2:])) if folder.exists() else []:
+    for f in sorted((p for p in folder.glob("ch*.json") if p.stem[2:].isdigit()), key=lambda p: int(p.stem[2:])) if folder.exists() else []:
         ch = json.loads(f.read_text())
         n = ch["n"]
         figures = [{"section": x["section"], "caption": x["caption"], "svg": (folder / x["file"]).read_text().strip()}
