@@ -1,0 +1,95 @@
+{
+ "method": "Researched and written with web-search verification; then fact-checked independently by a second agent using web search (WebSearch worked; direct page fetches failed on DNS, so some details such as Fullerton's 5th-edition section headings and the GDC workshop staffing were checked from expert knowledge and softened where uncertain); every answer key re-solved blind.",
+ "keysChecked": 14,
+ "keysAgreed": 14,
+ "keyFixes": [],
+ "corrections": [
+  {
+   "where": "1.1 reading",
+   "quote": "Its goal is unusual: you cannot win, so the real goal is to clear rows and score as much as possible before the stack reaches the top.",
+   "correction": "Its goal is unusual: in its classic endless mode you cannot win, so the real goal is to clear rows and score as much as possible before the stack reaches the top.",
+   "why": "Not all Tetris modes are unwinnable: NES and Game Boy Tetris (1989) have a B-Type mode that ends in success once 25 lines are cleared, and modern versions have 40-line sprints. The claim holds for the endless (A-Type/marathon) mode the chapter discusses.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "1.1 example",
+   "quote": "Conclusion: *Tetris* is a game under every definition here, even though no one can win it.",
+   "correction": "Conclusion: *Tetris* is a game under every definition here, even though its classic endless mode cannot be won.",
+   "why": "Same issue: NES/Game Boy B-Type mode is won by clearing 25 lines; only the endless mode has no win.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "1.1 misconception",
+   "quote": "*Tetris* and many single-player games have no victory at all, only better and worse results.",
+   "correction": "Endless *Tetris* and many single-player games have no victory at all, only better and worse results.",
+   "why": "Some Tetris modes (NES/Game Boy B-Type, 40-line sprint) do have a completion condition.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "figure 1 label",
+   "quote": "delay the end (no way to win)",
+   "correction": "delay the end (endless mode: no win)",
+   "why": "Only the endless mode has no win; B-Type modes end in success after 25 lines.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "1.2 reading",
+   "quote": "Kirsh and Maglio called such moves **epistemic actions**: actions taken to gain information rather than to change the world [3].",
+   "correction": "Kirsh and Maglio called such moves **epistemic actions**: actions taken to gain information or make thinking easier, rather than to move closer to the goal [3].",
+   "why": "Kirsh and Maglio contrast epistemic actions with pragmatic actions, which bring the agent physically closer to a goal. Epistemic actions do change the world (the piece really rotates); what distinguishes them is that they are done to uncover information or simplify mental computation. The chapter's own key-term definition already says this correctly.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "1.3 reading",
+   "quote": "**Objectives**: reach the flagpole at the end of each level and, finally, rescue Princess Toadstool (later renamed Peach) from Bowser.",
+   "correction": "**Objectives**: reach the end of each level, usually marked by a flagpole, and, finally, rescue Princess Toadstool (called Peach in Japan, a name later used everywhere) from Bowser.",
+   "why": "Castle levels (World x-4) end at the bridge and axe, not a flagpole. The princess was named Peach in the Japanese original from 1985; Toadstool was the English localization name, replaced by Peach in the West in the 1990s, so 'later renamed' misstates the history.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "1.3 reading",
+   "quote": "Its Ascension levels, which add handicaps for players who have already won, raise the difficulty of reaching that outcome without touching the other elements.",
+   "correction": "Its Ascension levels, which add handicaps for players who have already won, such as tougher enemies and scarcer resources, raise the difficulty of reaching that outcome while leaving the objective unchanged.",
+   "why": "Ascension modifiers directly change other formal elements: deadlier normal enemies, elites and bosses (conflict), and lower max HP, starting damaged, fewer potion slots and higher shop prices (resources). They do not leave the other elements untouched.",
+   "severity": "error"
+  },
+  {
+   "where": "1.3 reading",
+   "quote": "Fullerton’s list is challenge, play, premise, character and story [1].",
+   "correction": "Fullerton’s core list is challenge, play, premise, character and story [1].",
+   "why": "Her chapter 'Working with Dramatic Elements' also treats world building and the dramatic arc (in the editions this checker knows; the 5th-edition section list could not be confirmed by search). Calling these five 'the list' overstates its closure; 'core list' is safe.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "1.3 example",
+   "quote": "On a tie, each player puts down three cards face down and one face up, and the higher face-up card takes the whole pile.",
+   "correction": "On a tie, each player puts down one or more cards face down (house rules vary, often one or three) and one face up, and the higher face-up card takes the whole pile.",
+   "why": "War has no single authoritative rule here; common published rules use one face-down card, and three is a widespread variant. Stating three as the rule is too specific.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "interactive 1",
+   "quote": "Hunicke, LeBlanc and Zubek begin teaching the framework at the Game Design and Tuning Workshop.",
+   "correction": "The framework is developed and taught at the GDC Game Design and Tuning Workshop, which runs from 2001 to 2004.",
+   "why": "The MDA paper says only that MDA was developed and taught as part of the workshop at GDC San Jose 2001–2004; it does not establish that all three authors began teaching it together in 2001 (Marc LeBlanc led the workshop, whose staff changed over the years). Could not confirm the stronger claim.",
+   "severity": "unverifiable"
+  },
+  {
+   "where": "interactive 1",
+   "quote": "and that the games came long before the frameworks used to explain them",
+   "correction": "and that the two oldest games came long before the frameworks used to explain them",
+   "why": "The timeline itself places Slay the Spire (2019) after Rules of Play (2003) and the MDA paper (2004), so not all the games came before the frameworks.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "readings (Suits 2014)",
+   "quote": "The current edition adds an introduction by Thomas Hurka.",
+   "correction": "The current edition includes an introduction by Thomas Hurka.",
+   "why": "Hurka's introduction first appeared in the 2005 Broadview edition, so it is not new to the 2014 third edition.",
+   "severity": "imprecise"
+  }
+ ],
+ "sourcesChecked": 11,
+ "sourcesWithdrawn": [],
+ "summary": "The chapter is accurate on its load-bearing facts: Willis Gibson's level-157 crash, NES Tetris scoring and the 7.5 ratio, the MDA paper (venue, WS-04-04, pp. 1–5, definitions, eight aesthetics, Final Fantasy profile), Kirsh and Maglio 1994, Suits, Salen and Zimmerman, Juul's six features and borderline cases, McGonigal, Fullerton 5th ed. (2024) and the gin rummy exercise, and Slay the Spire's mechanics all check out, and all 14 answer keys are correct. The one real error is the claim that Ascension leaves the other formal elements untouched; the remaining fixes soften overgeneralizations (Tetris 'cannot be won', epistemic actions 'not changing the world', the Peach naming, flagpoles, War's tie rule, timeline wording)."
+}

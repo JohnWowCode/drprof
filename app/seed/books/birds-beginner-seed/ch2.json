@@ -1,0 +1,949 @@
+{
+  "n": 2,
+  "figureFiles": [
+    {
+      "section": "2.1",
+      "file": "ch2-fig-1.svg",
+      "caption": "In a steady glide (A), lift acts at right angles to the airflow and drag acts backward along the flight path; together they exactly balance weight, so the bird slides down a shallow slope, exaggerated here. In cross-section (B), the cambered, tilted wing bends the passing air, lowering the pressure above the wing and turning the air downward behind it."
+    },
+    {
+      "section": "2.2",
+      "file": "ch2-fig-2.svg",
+      "caption": "The four wing types described by Savile (1957). Compare the short, broad elliptical wing with the long, narrow high-aspect-ratio wing, and notice the slots between the spread outer primaries of the soaring land birds."
+    },
+    {
+      "section": "2.3",
+      "file": "ch2-fig-3.svg",
+      "caption": "Theory predicts that flapping flight is costly at low speed, where making lift takes the most power, and at high speed, where drag rises steeply, with a minimum in between. A bird that wants to stay aloft longest flies at the minimum-power speed; one that wants to go farthest on its fuel flies a little faster, at the maximum-range speed."
+    }
+  ],
+  "lesson": {
+    "hook": "Somewhere over Africa, on a winter day in Europe, a Common Swift (*Apus apus*) is flying, and it has probably not touched the ground for months. Swedish researchers fitted swifts with data loggers weighing about a gram and recaptured the birds when they came back to breed. The loggers showed that the swifts had stayed airborne for about ten months of the year, landing for less than 1 percent of that time; some never landed at all. They fed on insects caught in the air, and the birds that never landed even grew new flight feathers on the wing. Staying up that long is possible only because of the physics of a wing, and because of the shape of the swift’s own wings: long, narrow and swept back like a crescent. That physics, and what wing shape reveals, is where this chapter begins.",
+    "overview": "Chapter 1 showed you a body built for flight: feathers with locked vanes, fused bones, a keeled sternum and the large flight muscles it anchors. This chapter shows how that equipment flies. Section 2.1 explains the four forces on a flying bird and how a wing makes lift. Section 2.2 reads wing shape as a clue to a bird’s way of life, using two simple measurements, aspect ratio and wing loading. Section 2.3 compares flapping, gliding, soaring and hovering and what each one costs, with evidence from wind tunnels, tracking tags and heart-rate recorders. Section 2.4 asks why some birds gave flight up. The ideas return often: in Chapter 3 on the energy that flight burns, in Chapter 4 where flight style and silhouette become field marks, and in Chapter 7 on migration.",
+    "objectives": [
+      "Describe the four forces on a flying bird and explain how a wing produces lift.",
+      "Use the lift equation to predict how lift changes with airspeed, wing area and angle of attack.",
+      "Classify a wing as one of four types and infer a bird’s flight style from its aspect ratio and wing loading.",
+      "Compare the energy costs of flapping, gliding, soaring and hovering, citing the evidence for each.",
+      "Explain why some birds, especially on islands, have lost flight, and how DNA shows this happened many times."
+    ],
+    "sections": [
+      {
+        "n": "2.1",
+        "title": "Lift, drag and the wing",
+        "reading": [
+          "Four forces act on a bird in flight. **Weight** pulls it straight down. **Lift**, made by the wings, acts at right angles to the oncoming air. **Drag**, the resistance of the air, acts backward along the direction of motion. **Thrust**, the forward push that balances drag, comes from flapping. A gliding bird has no thrust at all. It trades height for distance, sloping gently downward so that lift tilts slightly forward and helps pull it along against drag, as Figure 2.1 shows. When the four forces balance, the bird flies at a steady speed; when they do not, it speeds up, slows down, climbs or sinks [1, 4].",
+          "Cut through a bird’s wing from front to back and you see an **airfoil**: rounded at the leading edge, thin at the trailing edge, and usually **cambered**, curved so that the upper surface bulges more than the lower. The wing meets the air at a slight tilt called the **angle of attack**. As air flows past, the curved, tilted wing bends the flow. Air can follow a curved path only if pressure pushes it around the curve, so the pressure above the wing falls below that of the surrounding air and the pressure below rises a little [2]. That pressure difference, acting over the whole wing, is lift. The same flow can be described another way: the wing throws a large mass of air downward, the **downwash**, and by Newton’s third law the air pushes the wing up [1]. These are two accounts of one event, not rival theories.",
+          "Engineers sum up what lift depends on in one equation: lift = ½ × air density × airspeed² × wing area × lift coefficient. Air at sea level has a density of about 1.225 kilograms per cubic meter, so a cubic meter of air has a little more mass than a liter of water. The **lift coefficient** captures the wing’s shape and angle of attack. The squared speed matters most. Double the airspeed with everything else unchanged and lift rises fourfold; halve it and lift falls to a quarter [1]. That is why an American Robin (*Turdus migratorius*) taking off from a lawn beats its wings so hard: at low speed it has little airflow to work with. It also explains why thin air at high altitude makes flight harder, a problem you will meet in Chapter 3.",
+          "Tilting the wing more steeply raises the lift coefficient, but only up to a point. Beyond it the air can no longer follow the curved upper surface; it breaks away in swirls, lift collapses and drag soars. This is a **stall**. Birds come close to stalling every time they land, flying slowly with their wings steeply tilted, and they carry a device that helps. The **alula** is a small tuft of stiff feathers on the bird’s thumb, at the front of the wing near the wrist; watch a pigeon coming in to land and you may see it spring out from the leading edge [4]. In 2015 a team in Seoul tested magpie wings in a wind tunnel with and without the alula raised. Raising it increased lift and often delayed the stall, because it set up a small swirl of air that kept the flow attached to the upper surface [3].",
+          "Drag comes in two main kinds. **Profile drag**, together with drag on the body, comes from air rubbing past the bird and being pushed aside; it grows with the square of speed, which is why fast fliers are smooth and streamlined. **Induced drag** is the price of making lift. Because pressure is higher below the wing than above it, air spills around each wingtip and rolls up into a trailing **wingtip vortex**. Induced drag is largest at low speed, when the wing must work hardest, and it is smaller for long wings, which spread the work over a wider sweep of air [1]. Much of what we know about these forces in birds comes from wind tunnels. In the 1960s Colin Pennycuick trained pigeons to glide in a tilting wind tunnel so that he could measure their gliding at different speeds, the start of a long effort to turn bird flight into a measurable science [1]."
+        ],
+        "sources": [
+          {
+            "n": 1,
+            "citation": "Pennycuick, C. J. (2008). Modelling the flying bird (Theoretical Ecology Series, Vol. 5). Academic Press.",
+            "kind": "book",
+            "supports": "The four forces, the lift equation, downwash, profile and induced drag, and the history of wind-tunnel studies of bird flight."
+          },
+          {
+            "n": 2,
+            "citation": "Babinsky, H. (2003). How do wings work? Physics Education, 38(6), 497–503.",
+            "kind": "article",
+            "supports": "Lift arises from the wing curving the airflow, which requires lower pressure above the wing; the equal-transit-time explanation is wrong."
+          },
+          {
+            "n": 3,
+            "citation": "Lee, S.-i., Kim, J., Park, H., Jabłoński, P. G., & Choi, H. (2015). The function of the alula in avian flight. Scientific Reports, 5, Article 9914. https://doi.org/10.1038/srep09914",
+            "kind": "article",
+            "supports": "Wind-tunnel tests on magpie wings showing the alula raises lift, delays stall and acts as a vortex generator."
+          },
+          {
+            "n": 4,
+            "citation": "Lovette, I. J., & Fitzpatrick, J. W. (Eds.). (2016). Handbook of bird biology (3rd ed.). Wiley-Blackwell; Cornell Lab of Ornithology.",
+            "kind": "book",
+            "supports": "Forces in flight and the structure and use of the alula."
+          }
+        ],
+        "keyTerms": [
+          {
+            "term": "Lift",
+            "def": "The force a wing produces at right angles to the oncoming air, which supports the bird’s weight."
+          },
+          {
+            "term": "Drag",
+            "def": "The resistance of the air, acting backward along the direction of motion."
+          },
+          {
+            "term": "Angle of attack",
+            "def": "The angle between the wing’s chord line and the direction of the oncoming air."
+          },
+          {
+            "term": "Lift coefficient",
+            "def": "A number that sums up how much lift a wing makes for its size and speed; it rises with angle of attack until the stall."
+          },
+          {
+            "term": "Stall",
+            "def": "The sudden loss of lift when the angle of attack is so steep that airflow breaks away from the upper surface of the wing."
+          },
+          {
+            "term": "Alula",
+            "def": "A small group of feathers on the thumb that can be raised at low speed to keep airflow attached and delay a stall."
+          }
+        ],
+        "example": {
+          "title": "Worked example: how slowly can a pigeon-sized bird fly?",
+          "steps": [
+            "Take a bird of 350 grams, about the mass of a Rock Pigeon (*Columba livia*), with about 0.06 square meters of wing. Its weight is 0.35 kg × 9.81 m/s² ≈ 3.4 newtons.",
+            "At an airspeed of 10 m/s, ½ × 1.225 × 10² ≈ 61 pascals. Multiplied by the wing area, 61 × 0.06 ≈ 3.7 newtons of lift for each unit of lift coefficient.",
+            "To carry 3.4 newtons the bird needs a lift coefficient of 3.4 ÷ 3.7 ≈ 0.93, which a cambered wing at a moderate angle of attack can produce.",
+            "Now slow to 5 m/s. Speed halves, so lift at the same lift coefficient falls to a quarter: about 0.9 newtons. Holding its weight would take a lift coefficient near 3.7, far beyond what any wing can reach before it stalls.",
+            "So at 5 m/s gliding is impossible. The bird must flap hard, as birds do at takeoff and landing, to make extra airflow over its wings."
+          ],
+          "takeaway": "Lift grows with the square of airspeed, so halving speed cuts lift to a quarter, which is why slow flight is the hardest flight."
+        },
+        "misconception": {
+          "myth": "The air going over the top of the wing has farther to travel, so it has to speed up to meet the air from underneath at the back edge.",
+          "fact": "Nothing forces the two streams to meet again. Smoke tests in wind tunnels show the air over the top reaching the trailing edge well before the air underneath. Lift comes from the wing bending the airflow: curved flow needs lower pressure above the wing, and the air leaves the wing turned downward."
+        },
+        "practice": [
+          {
+            "type": "mc",
+            "q": "A Rock Pigeon doubles its airspeed while keeping the same wing shape and angle of attack. What happens to its lift?",
+            "choices": [
+              "It doubles",
+              "It becomes four times as large",
+              "It stays the same",
+              "It halves"
+            ],
+            "answer": 1,
+            "explanation": "Lift depends on airspeed squared, so doubling speed multiplies lift by 2 × 2 = 4. Lift would only double if it depended on speed directly, and it would stay the same only if speed did not matter."
+          },
+          {
+            "type": "short",
+            "q": "A pigeon coming in to land slows down and tilts its wings steeply. Explain why this brings it close to a stall, and how raising the alula helps.",
+            "answer": "At low speed the wing makes less lift, so to keep supporting its weight the pigeon raises the angle of attack. A steep angle of attack is close to the point where airflow can no longer follow the upper surface and breaks away, which is a stall. Raising the alula creates a small vortex that keeps air flowing smoothly over the wing, raising lift and delaying the stall.",
+            "explanation": "A good answer links low speed to the need for a high angle of attack, defines the stall as airflow separating from the upper surface, and says the alula keeps the flow attached."
+          },
+          {
+            "type": "mc",
+            "q": "Which change would reduce induced drag for a gliding bird of the same weight?",
+            "choices": [
+              "Flying more slowly",
+              "Having longer wings",
+              "Tilting its wings more steeply",
+              "Partly folding its wings"
+            ],
+            "answer": 1,
+            "explanation": "Induced drag is the cost of making lift. It is smaller for long wings, which spread the work over more air, and smaller at higher speed. Flying slowly, tilting the wings more steeply or folding them all make the wing work harder and raise induced drag."
+          }
+        ]
+      },
+      {
+        "n": "2.2",
+        "title": "Wing shapes and what they tell you",
+        "reading": [
+          "Lay the wing of a grouse beside the wing of a swift and the difference is obvious: one is short and broad, the other long and narrow. Wing shape is a record of how a bird lives. In 1957 the naturalist D. B. O. Savile sorted bird wings into four broad types, and his scheme is still the usual starting point (Figure 2.2) [1]. Two measurements make the comparison exact. **Aspect ratio** is wingspan squared divided by wing area; for a rectangle it is simply length divided by width, so long, narrow wings score high. **Wing loading** is the bird’s weight divided by its wing area. From the lift equation in section 2.1, a bird with high wing loading must fly faster to stay up, while a high aspect ratio cuts induced drag and makes gliding efficient [2].",
+          "**Elliptical wings** are short and broad, with rounded tips and a low aspect ratio. They belong to gamebirds such as grouse and to most songbirds that live among trees and shrubs. They give a fast, steep takeoff and tight turns in cluttered places, at the cost of efficiency over long distances; a grouse bursting from the forest floor is the classic case [1, 2]. **High-speed wings** are pointed, often swept back, and taper to the tip. Falcons, swifts, swallows and shorebirds have them, and they suit fast, efficient flapping flight [1]. The extreme case is the Common Swift. Its loggers, described at the start of this chapter, showed it airborne for about ten months of the year, landing for less than 1 percent of that time [4].",
+          "**High-aspect-ratio wings** are long, narrow and pointed, the wings of seabirds that glide for hours over open ocean, such as albatrosses and shearwaters. They have very low induced drag and glide superbly, but they are poor for taking off and turning in tight spaces [1, 2]. The Wandering Albatross (*Diomedea exulans*) has the longest wingspan of any living bird, around 3 meters [2]. Albatrosses travel by **dynamic soaring**, drawing energy from the wind itself. In 2012 researchers tracked free-flying Wandering Albatrosses with high-precision GPS and showed how: each bird repeats an up-and-down swooping curve, adjusted to the wind, that gains energy from the difference in wind speed near the waves and higher up [5].",
+          "**Slotted high-lift wings** are broad, with large area, and their outer primary feathers spread apart at the tip like fingers, leaving gaps called slots. Eagles, hawks, vultures and condors have them. Their low wing loading lets them fly slowly and circle tightly inside rising air, and the slotted tips are thought to reduce induced drag and help keep the airflow attached at low speed [1, 2]. Broad wings also give the lift needed to take off from the ground, sometimes carrying prey. Look up at a soaring hawk or vulture and count the separated primaries at each wingtip; the slots are easy to see against the sky.",
+          "These types are more than a convenient filing system. In 2020 Catherine Sheard and colleagues measured the **hand-wing index**, a measure of how long and pointed a wing is, for 10,338 species, more than 99 percent of living birds. Pointed wings were commoner in migratory birds and at high latitudes, where seasons are strongly marked, and rounder wings in territorial birds that stay put [3]. Wing shape is therefore a clue you can use in the field. A long, pointed wing hints at a long-distance traveler or an aerial hunter; a short, rounded one at a bird of dense cover. Chapter 4 uses these silhouettes for identification, and Chapter 7 returns to the wings of migrants."
+        ],
+        "sources": [
+          {
+            "n": 1,
+            "citation": "Savile, D. B. O. (1957). Adaptive evolution in the avian wing. Evolution, 11(2), 212–224.",
+            "kind": "article",
+            "supports": "The four wing types (elliptical, high-speed, high aspect ratio, slotted high-lift) and the birds that have them."
+          },
+          {
+            "n": 2,
+            "citation": "Lovette, I. J., & Fitzpatrick, J. W. (Eds.). (2016). Handbook of bird biology (3rd ed.). Wiley-Blackwell; Cornell Lab of Ornithology.",
+            "kind": "book",
+            "supports": "Aspect ratio, wing loading, the trade-offs of each wing type, and the wingspan of the Wandering Albatross."
+          },
+          {
+            "n": 3,
+            "citation": "Sheard, C., Neate-Clegg, M. H. C., Alioravainen, N., Jones, S. E. I., Vincent, C., MacGregor, H. E. A., Bregman, T. P., Claramunt, S., & Tobias, J. A. (2020). Ecological drivers of global gradients in avian dispersal inferred from wing morphology. Nature Communications, 11, Article 2463. https://doi.org/10.1038/s41467-020-16313-6",
+            "kind": "article",
+            "supports": "Hand-wing index for 10,338 species; more pointed wings in migrants and at high latitudes, rounder wings in territorial species."
+          },
+          {
+            "n": 4,
+            "citation": "Hedenström, A., Norevik, G., Warfvinge, K., Andersson, A., Bäckman, J., & Åkesson, S. (2016). Annual 10-month aerial life phase in the common swift Apus apus. Current Biology, 26, 3066–3070.",
+            "kind": "article",
+            "supports": "Common Swifts stay airborne for about ten months of the non-breeding period, landing for less than 1 percent of the time."
+          },
+          {
+            "n": 5,
+            "citation": "Sachs, G., Traugott, J., Nesterova, A. P., Dell’Omo, G., Kümmeth, F., Heidrich, W., Vyssotski, A. L., & Bonadonna, F. (2012). Flying at no mechanical energy cost: Disclosing the secret of wandering albatrosses. PLoS ONE, 7(9), Article e41449. https://doi.org/10.1371/journal.pone.0041449",
+            "kind": "article",
+            "supports": "GPS tracking shows albatrosses gain energy from the wind by a repeated up-and-down curve adjusted to the wind."
+          }
+        ],
+        "keyTerms": [
+          {
+            "term": "Aspect ratio",
+            "def": "Wingspan squared divided by wing area; long, narrow wings have a high aspect ratio."
+          },
+          {
+            "term": "Wing loading",
+            "def": "A bird’s weight divided by its wing area; the higher it is, the faster the bird must fly to stay aloft."
+          },
+          {
+            "term": "Elliptical wing",
+            "def": "A short, broad, rounded wing suited to quick takeoff and maneuvering among trees and shrubs."
+          },
+          {
+            "term": "High-speed wing",
+            "def": "A pointed, tapering, often swept-back wing suited to fast, efficient flapping flight."
+          },
+          {
+            "term": "High-aspect-ratio wing",
+            "def": "A long, narrow wing with low induced drag, suited to gliding over the sea."
+          },
+          {
+            "term": "Slotted high-lift wing",
+            "def": "A broad wing with spread outer primaries, suited to slow soaring in rising air over land."
+          }
+        ],
+        "example": {
+          "title": "Worked example: reading two wings by the numbers",
+          "steps": [
+            "Two birds each weigh 0.5 kilograms. Bird A has a wingspan of 1.0 meter and a wing area of 0.10 square meters. Bird B has a span of 0.7 meters and an area of 0.11 square meters.",
+            "Aspect ratio: Bird A, 1.0² ÷ 0.10 = 10. Bird B, 0.7² ÷ 0.11 ≈ 4.5. Bird A’s wings are long and narrow; Bird B’s are short and broad.",
+            "Wing loading: the weight of each is 0.5 × 9.81 ≈ 4.9 newtons. Bird A, 4.9 ÷ 0.10 = 49 newtons per square meter. Bird B, 4.9 ÷ 0.11 ≈ 45 newtons per square meter.",
+            "Interpret: Bird A’s high aspect ratio means low induced drag and efficient gliding, the pattern of a seabird. Bird B’s low aspect ratio fits the elliptical type, a bird that takes off quickly and turns in cover.",
+            "Bird B’s slightly lower wing loading also means it can fly a little more slowly before it stalls."
+          ],
+          "takeaway": "Aspect ratio tells you how efficiently a wing glides; wing loading tells you how slowly a bird can fly; together they predict a flight style."
+        },
+        "misconception": {
+          "myth": "Pointed wings are good wings; birds with short, rounded wings are just weak fliers.",
+          "fact": "Every wing shape is a trade-off. Short, rounded wings give the explosive takeoff and tight turns a grouse or a sparrow needs among branches, which a long-winged albatross cannot match. No single shape is best at everything."
+        },
+        "practice": [
+          {
+            "type": "mc",
+            "q": "A seabird has very long, narrow, pointed wings and spends hours gliding low over ocean waves, seldom flapping. Which wing type does it have?",
+            "choices": [
+              "Elliptical",
+              "High-speed",
+              "High aspect ratio",
+              "Slotted high-lift"
+            ],
+            "answer": 2,
+            "explanation": "Long, narrow wings gliding over the sea are the high-aspect-ratio type of albatrosses and shearwaters. Elliptical wings are short and broad, high-speed wings suit fast flapping, and slotted wings suit soaring over land."
+          },
+          {
+            "type": "short",
+            "q": "A bird’s wings have a span of 0.8 meters and an area of 0.064 square meters. Calculate the aspect ratio, and say whether this bird is more likely to excel at long glides or at quick turns among branches, compared with a bird whose aspect ratio is 4.",
+            "answer": "Aspect ratio = 0.8² ÷ 0.064 = 0.64 ÷ 0.064 = 10. This is much higher than 4, so the wings are long and narrow, with low induced drag. The bird is more likely to excel at long, efficient glides, while the bird with an aspect ratio of 4 is better at quick takeoffs and tight turns.",
+            "explanation": "A full answer shows the calculation (span squared over area), gets 10, and links high aspect ratio to low induced drag and efficient gliding."
+          },
+          {
+            "type": "mc",
+            "q": "An Osprey lifts a heavy fish from a lake. While it carries the fish, compared with flying without it:",
+            "choices": [
+              "Its wing loading falls, so it can fly more slowly",
+              "Its wing loading rises, so it must fly faster to stay aloft",
+              "Its aspect ratio changes",
+              "Nothing about its flight changes"
+            ],
+            "answer": 1,
+            "explanation": "Wing loading is weight divided by wing area. The fish adds weight but no wing area, so wing loading rises, and by the lift equation the minimum speed needed to carry the load goes up. Aspect ratio depends only on wing shape, which has not changed."
+          }
+        ]
+      },
+      {
+        "n": "2.3",
+        "title": "Flapping, gliding, soaring and hovering",
+        "reading": [
+          "In flapping flight the wing does two jobs at once: it supports the bird and pushes it forward. On the **downstroke**, powered by the pectoralis muscle you met in Chapter 1, the wing sweeps down and forward, and because it moves through the air at an angle, the force on it tilts forward, giving both lift and thrust. On the **upstroke**, driven by the supracoracoideus, most birds bend the wing at the wrist and draw it in toward the body to cut drag. In slow flight most birds get essentially all of their weight support from the downstroke [5]. Many small birds, such as finches and woodpeckers, alternate bursts of flapping with brief pauses on folded wings, which gives their flight its bounding, undulating look.",
+          "Aerodynamic theory predicts that the power needed for flapping flight follows a U-shaped **power curve** (Figure 2.3). At low speed, induced power is high, because the wings must throw a great deal of air downward to stay up. At high speed, the power needed to overcome profile and body drag rises steeply. In between lies a **minimum-power speed**, the cheapest way to stay aloft, and a somewhat faster **maximum-range speed**, the best way to cover distance on a fixed amount of fuel [1]. Testing this on live birds is hard. In 2003 Bret Tobalske and colleagues flew cockatiels and ringed turtle-doves in a wind tunnel with sensors that recorded the force and length change of the pectoralis muscle. The cockatiel’s curve was strongly U-shaped, the dove’s shallower, and an earlier study of magpies had found a nearly flat curve over most speeds. Theory gets the general shape right, but each species’ wings and wingbeat bend the curve [1].",
+          "A gliding bird holds its wings out and does not flap. Without thrust it must lose height, and its **glide ratio**, the distance it travels forward for each meter it sinks, equals its ratio of lift to drag. **Soaring** is gliding in air that rises at least as fast as the bird sinks. Over land, soaring birds circle in **thermals**, columns of warm air rising from sunlit ground, or ride updrafts where wind meets a ridge; over the ocean, albatrosses use dynamic soaring (section 2.2). Soaring is remarkably cheap. In 2020 Hannah Williams and colleagues fitted eight young Andean Condors (*Vultur gryphus*) with recorders that logged every wingbeat. Across more than 216 hours of flight the condors flapped for only about 1 percent of the time, mostly during takeoff, and one bird flew for five hours, covering about 172 kilometers, without flapping [2].",
+          "Heart-rate recorders tell the same story at sea. Wandering Albatrosses flying with the wind behind them or from the side had heart rates, a measure of energy use, close to those of birds resting on land; flying into a headwind, taking off and landing cost far more [3]. Where there is no rising air and no strong wind to exploit, a bird must flap. Bar-tailed Godwits (*Limosa lapponica*) leaving Alaska in autumn cross the Pacific toward New Zealand and eastern Australia without stopping. Satellite tags on seven females recorded nonstop flights of 8,117 to 11,680 kilometers lasting six to nine days, along a route the researchers described as a wind-assisted corridor [4]. Chapter 7 follows these flights in detail.",
+          "**Hovering**, holding still in the air, is the most expensive mode of all, because the bird has no forward speed and its wings must create all the airflow themselves (the left end of Figure 2.3). Hummingbirds are the specialists. A hovering hummingbird holds its body steeply upright and sweeps its wings forward and back, turning each wing over at the end of the stroke so that the backstroke makes lift too. In 2005 Douglas Warrick and colleagues used a laser to light up tiny particles in the air around hovering Rufous Hummingbirds (*Selasphorus rufus*) and filmed the swirling wake. About 75 percent of the weight support came from the downstroke and 25 percent from the upstroke, unlike insects, which split it about evenly, and unlike other birds, which rely on the downstroke alone when flying slowly [5]. A Ruby-throated Hummingbird (*Archilochus colubris*) beats its wings more than 50 times a second as it hovers at a flower; the fuel this burns is a subject of Chapter 3."
+        ],
+        "sources": [
+          {
+            "n": 1,
+            "citation": "Tobalske, B. W., Hedrick, T. L., Dial, K. P., & Biewener, A. A. (2003). Comparative power curves in bird flight. Nature, 421(6921), 363–366.",
+            "kind": "article",
+            "supports": "Theory predicts a U-shaped power curve; muscle-force measurements gave a U-shaped curve in cockatiels, a shallower one in doves, after a nearly flat curve in magpies."
+          },
+          {
+            "n": 2,
+            "citation": "Williams, H. J., Shepard, E. L. C., Holton, M. D., Alarcón, P. A. E., Wilson, R. P., & Lambertucci, S. A. (2020). Physical limits of flight performance in the heaviest soaring bird. Proceedings of the National Academy of Sciences, 117(30), 17884–17890.",
+            "kind": "article",
+            "supports": "Andean Condors flapped for about 1 percent of more than 216 hours of flight, mostly at takeoff; one flew five hours and about 172 km without flapping."
+          },
+          {
+            "n": 3,
+            "citation": "Weimerskirch, H., Guionnet, T., Martin, J., Shaffer, S. A., & Costa, D. P. (2000). Fast and fuel efficient? Optimal use of wind by flying albatrosses. Proceedings of the Royal Society of London. Series B: Biological Sciences, 267, 1869–1874.",
+            "kind": "article",
+            "supports": "Heart rates of albatrosses flying with tail or side winds were close to resting levels; headwinds, takeoff and landing were costly."
+          },
+          {
+            "n": 4,
+            "citation": "Gill, R. E., Jr., Tibbitts, T. L., Douglas, D. C., Handel, C. M., Mulcahy, D. M., Gottschalck, J. C., Warnock, N., McCaffery, B. J., Battley, P. F., & Piersma, T. (2009). Extreme endurance flights by landbirds crossing the Pacific Ocean: Ecological corridor rather than barrier? Proceedings of the Royal Society B: Biological Sciences, 276, 447–457. https://doi.org/10.1098/rspb.2008.1142",
+            "kind": "article",
+            "supports": "Satellite-tracked Bar-tailed Godwits flew nonstop 8,117 to 11,680 km in about six to nine days along a wind-assisted route."
+          },
+          {
+            "n": 5,
+            "citation": "Warrick, D. R., Tobalske, B. W., & Powers, D. R. (2005). Aerodynamics of the hovering hummingbird. Nature, 435(7045), 1094–1097.",
+            "kind": "article",
+            "supports": "Hovering Rufous Hummingbirds get about 75 percent of weight support from the downstroke and 25 percent from the upstroke; other birds rely on the downstroke in slow flight."
+          }
+        ],
+        "keyTerms": [
+          {
+            "term": "Downstroke and upstroke",
+            "def": "The two halves of a wingbeat; in most birds the downstroke makes the lift and thrust while the upstroke repositions the wing."
+          },
+          {
+            "term": "Power curve",
+            "def": "A graph of the power needed to fly against airspeed, predicted to be U-shaped."
+          },
+          {
+            "term": "Glide ratio",
+            "def": "The distance a gliding bird travels forward for each unit of height it loses; equal to its lift-to-drag ratio."
+          },
+          {
+            "term": "Soaring",
+            "def": "Gliding in air that rises at least as fast as the bird sinks, or drawing energy from the wind, so that height is kept or gained without flapping."
+          },
+          {
+            "term": "Thermal",
+            "def": "A rising column of warm air over sun-heated ground, used by soaring birds to gain height."
+          },
+          {
+            "term": "Hovering",
+            "def": "Flying in one place with no forward speed, so the wings alone must create all the airflow."
+          }
+        ],
+        "example": {
+          "title": "Worked example: a hawk gliding between thermals",
+          "steps": [
+            "A hawk leaves the top of a thermal 600 meters above flat ground. Suppose its glide ratio is 12 and it glides at an airspeed of 12 meters per second.",
+            "In still air it can travel 600 × 12 = 7,200 meters, about 7 kilometers, before reaching the ground.",
+            "Its sinking speed is roughly its airspeed divided by its glide ratio: 12 ÷ 12 = 1 meter per second. So the glide lasts about 600 seconds, or 10 minutes.",
+            "It finds a thermal rising at 2 meters per second. Circling inside it, the hawk still sinks through the air at about 1 meter per second, but the air carries it up at 2, so it climbs at about 1 meter per second, a little less in practice because circling raises its sinking speed.",
+            "At that rate it regains the 600 meters in roughly 10 minutes and sets off on the next glide, without a single flap. Watch a soaring hawk or vulture and you will see this pattern: slow circles to climb, then a long straight glide."
+          ],
+          "takeaway": "A soaring bird travels by gliding down through still air and climbing back up in rising air, so the sun’s heating, not its own muscles, pays for its height."
+        },
+        "misconception": {
+          "myth": "Gliding and soaring are the same thing.",
+          "fact": "A gliding bird always sinks relative to the air around it. Soaring is gliding in air that rises at least as fast as the bird sinks, as in a thermal or a ridge updraft, or drawing energy from wind, as albatrosses do. A gliding bird must eventually land or flap; a soaring bird can stay up for hours."
+        },
+        "practice": [
+          {
+            "type": "mc",
+            "q": "Which kind of flight takes the most power per second?",
+            "choices": [
+              "Gliding",
+              "Soaring in a thermal",
+              "Hovering",
+              "Flapping at the minimum-power speed"
+            ],
+            "answer": 2,
+            "explanation": "In hovering the bird has no forward speed, so its wings must create all the airflow, putting it at the costly left end of the power curve. Gliding and soaring need almost no flapping, and the minimum-power speed is by definition the cheapest flapping speed."
+          },
+          {
+            "type": "short",
+            "q": "A migrating songbird has a fixed amount of fat to burn and must cross a stretch of desert. Using the power curve in Figure 2.3, explain why it should fly a little faster than its minimum-power speed.",
+            "answer": "The minimum-power speed keeps the bird aloft for the longest time per unit of fuel, but the aim here is distance. Distance per unit of fuel depends on power divided by speed. Flying a little faster costs a little more power per second but covers ground faster, so each unit of fat carries the bird farther. That best speed is the maximum-range speed, where a line from the origin just touches the curve.",
+            "explanation": "Look for the distinction between time aloft (minimum power) and distance per unit of fuel (maximum range), and the idea that a modest increase in power buys a larger gain in speed."
+          },
+          {
+            "type": "mc",
+            "q": "A Turkey Vulture circles for half an hour over a sunny field, never flapping, and slowly gains height. What is the best explanation?",
+            "choices": [
+              "It is gliding and will soon have to flap",
+              "It is soaring in a thermal that rises faster than it sinks",
+              "Its wings produce thrust without flapping",
+              "It is hovering"
+            ],
+            "answer": 1,
+            "explanation": "Gaining height without flapping requires rising air. A thermal over sunlit ground rises faster than the vulture sinks through it. A glide always loses height, wings make no thrust without flapping, and hovering is powered flight with no forward speed."
+          }
+        ]
+      },
+      {
+        "n": "2.4",
+        "title": "Flightless birds",
+        "reading": [
+          "Flight is enormously useful, and it is also expensive to keep. Flight muscles are large and costly to maintain, and a flying body limits how heavy a bird can become. Where flight stops paying for itself, birds lose it. Living flightless birds include the **ratites** (ostriches, rheas, the Emu, cassowaries and kiwis), the penguins, and a scattering of island species such as the Kakapo, a heavy, ground-dwelling parrot of New Zealand, and a number of rails [1, 2]. Each case is a natural experiment: it shows which parts of the flying body disappear when they are no longer needed, and which stay.",
+          "The ratites show what happens when flight goes. As Chapter 1 showed, they have a flat sternum without a keel and small flight muscles. Their wings are reduced, in kiwis to stubs hidden in the plumage, and their feathers lack the hooked barbules that lock a vane into one surface, so ostrich plumes are soft and loose [1]. Ratites were long thought to share a single flightless ancestor that rode the pieces of the southern supercontinent Gondwana as it broke apart. DNA has overturned that idea. The tinamous of Central and South America, which can fly, sit inside the ratite family tree. In 2014 a team that recovered DNA from bones of the extinct elephant birds of Madagascar found that their closest relatives were the kiwis of New Zealand, not the ostriches of nearby Africa. The simplest explanation is that ratite ancestors could fly, spread across oceans, and lost flight several times over [3].",
+          "Islands are where flight is lost most often. Where there are no rats, cats or other ground predators, a bird that walks risks little, and a bird that stops building big flight muscles saves energy. In 1994 Brian McNab showed that flightless island rails have unusually low resting metabolic rates, and that the rates fall as their flight muscles shrink; kiwis show the same pattern [2]. The smallest flightless bird alive, the Inaccessible Island Rail (*Atlantisia rogersi*), weighs about 40 grams, less than a chicken’s egg, and lives only on Inaccessible Island in the South Atlantic. Its DNA shows that its closest relatives are small rails of South America that can fly, and that its ancestor reached the island about 1.5 million years ago. It must have flown there, then lost the ability [4].",
+          "Flight can be lost quickly. The Galápagos Cormorant (*Phalacrocorax harrisi*, now often placed in the genus *Nannopterum*) is the only flightless species among about 40 cormorants, and it split from flying relatives within the last 2 million years. When Alejandro Burga and colleagues compared its genome with those of flying cormorants in 2017, they found changes in genes needed for the primary cilium, a tiny structure on cells that helps control skeletal growth. In people, faults in such genes cause conditions in which bones stop growing too early [5]. A small number of genetic changes, in other words, can shrink a wing.",
+          "Penguins took a different path. They gave up flight in air but kept a deep keel and powerful flight muscles, because they use their wings to fly underwater. McNab found that, unlike flightless rails, penguins do not have low metabolic rates, which fits their continued use of the wings for locomotion [2]. Loss of flight has a darker side, too. Many island flightless birds, from the Dodo of Mauritius, a giant relative of pigeons, to the moa of New Zealand, vanished after people arrived with the predators they brought. Chapter 8 returns to that story."
+        ],
+        "sources": [
+          {
+            "n": 1,
+            "citation": "Lovette, I. J., & Fitzpatrick, J. W. (Eds.). (2016). Handbook of bird biology (3rd ed.). Wiley-Blackwell; Cornell Lab of Ornithology.",
+            "kind": "book",
+            "supports": "The groups of flightless birds and the anatomy of ratites: flat sternum, reduced wings and loose feathers."
+          },
+          {
+            "n": 2,
+            "citation": "McNab, B. K. (1994). Energy conservation and the evolution of flightlessness in birds. The American Naturalist, 144(4). https://doi.org/10.1086/285697",
+            "kind": "article",
+            "supports": "Flightless rails and kiwis have low basal metabolic rates linked to small flight muscles; penguins, which swim with their wings, do not; island rails repeatedly lost flight."
+          },
+          {
+            "n": 3,
+            "citation": "Mitchell, K. J., Llamas, B., Soubrier, J., Rawlence, N. J., Worthy, T. H., Wood, J., Lee, M. S. Y., & Cooper, A. (2014). Ancient DNA reveals elephant birds and kiwi are sister taxa and clarifies ratite bird evolution. Science, 344(6186), 898–900.",
+            "kind": "article",
+            "supports": "Elephant birds are the closest relatives of kiwis; ratite lineages dispersed by flight and lost flight independently."
+          },
+          {
+            "n": 4,
+            "citation": "Stervander, M., Ryan, P. G., Melo, M., & Hansson, B. (2019). The origin of the world’s smallest flightless bird, the Inaccessible Island Rail Atlantisia rogersi (Aves: Rallidae). Molecular Phylogenetics and Evolution, 130, 92–98.",
+            "kind": "article",
+            "supports": "The Inaccessible Island Rail descends from flying South American rails and colonized the island about 1.5 million years ago."
+          },
+          {
+            "n": 5,
+            "citation": "Burga, A., Wang, W., Ben-David, E., Wolf, P. C., Ramey, A. M., Verdugo, C., Lyons, K., Parker, P. G., & Kruglyak, L. (2017). A genetic signature of the evolution of loss of flight in the Galapagos cormorant. Science, 356(6341), Article eaal3345. https://doi.org/10.1126/science.aal3345",
+            "kind": "article",
+            "supports": "The Galápagos Cormorant is the only flightless cormorant, diverged within 2 million years, and carries variants in cilia-related genes linked to skeletal growth."
+          }
+        ],
+        "keyTerms": [
+          {
+            "term": "Flightlessness",
+            "def": "The evolutionary loss of the ability to fly in a lineage descended from flying ancestors."
+          },
+          {
+            "term": "Ratite",
+            "def": "A flightless bird with a flat, keel-less sternum, such as an ostrich, rhea, Emu, cassowary or kiwi."
+          },
+          {
+            "term": "Tinamou",
+            "def": "A ground bird of Central and South America that can fly and sits inside the ratite family tree."
+          },
+          {
+            "term": "Basal metabolic rate",
+            "def": "The energy an animal uses when resting, warm and not digesting food."
+          },
+          {
+            "term": "Wing-propelled diving",
+            "def": "Swimming underwater by flapping the wings, as penguins do."
+          }
+        ],
+        "example": {
+          "title": "Worked example: did the Inaccessible Island Rail walk or fly to its island?",
+          "steps": [
+            "The question: the rail cannot fly, yet it lives on a small volcanic island in the middle of the South Atlantic, far from any continent. When the species was described in 1923, its describer suggested its ancestors had walked there over land bridges since sunk beneath the sea.",
+            "First clue: the island is volcanic and rose from the sea floor, so there is no geological sign of a land bridge to a continent.",
+            "Second clue: DNA places the rail among a group of small South American rails, all of which fly.",
+            "Third clue: the DNA divergence dates its arrival to about 1.5 million years ago, long after the island formed, at least 3 million years ago.",
+            "Conclusion: the ancestor flew, or was blown, across the ocean from South America and then lost flight on an island with no ground predators."
+          ],
+          "takeaway": "A flightless bird on a remote island is usually evidence of a flying ancestor, not of an animal that never flew."
+        },
+        "misconception": {
+          "myth": "Flightless birds are primitive birds whose ancestors never learned to fly.",
+          "fact": "Every flightless bird alive descends from flying ancestors. Feathers came before flight (Chapter 1), flight came next, and flightlessness evolved later, many separate times, in ratites, penguins, rails, a parrot, a cormorant and others."
+        },
+        "practice": [
+          {
+            "type": "mc",
+            "q": "Penguins cannot fly in air, yet unlike ostriches they have a deep keel on the sternum. Why?",
+            "choices": [
+              "Penguins are more closely related to flying birds than any ratite is",
+              "Penguins use large flight muscles to swim with their wings",
+              "Penguins need the keel to stand upright",
+              "Ostriches lost the keel because they are larger"
+            ],
+            "answer": 1,
+            "explanation": "The keel anchors the flight muscles. Penguins still beat their wings powerfully, underwater rather than in air, so they keep large muscles and a keel. Ostriches do not use their wings for locomotion."
+          },
+          {
+            "type": "short",
+            "q": "A flying species of pigeon colonizes a remote island with no mammals and plenty of food on the ground. Predict what might happen to its flight over many generations, and explain why, using the idea of energy cost.",
+            "answer": "Over many generations it may lose the ability to fly. With no ground predators, flight is rarely needed to escape, and food can be reached on foot. Flight muscles are expensive to grow and maintain, so birds that invest less in them save energy, and selection can favor smaller flight muscles and wings until flight is lost. The Dodo of Mauritius, a flightless relative of pigeons, is an example.",
+            "explanation": "A good answer names the absence of predators, the energy cost of flight muscles, and natural selection gradually reducing them, ideally with a real example."
+          },
+          {
+            "type": "mc",
+            "q": "Which finding best shows that ratites lost flight more than once?",
+            "choices": [
+              "Ostriches are the largest living birds",
+              "The closest relatives of elephant birds are kiwis, and flying tinamous sit inside the ratite tree",
+              "All ratites have a flat sternum",
+              "Most ratites live on southern continents"
+            ],
+            "answer": 1,
+            "explanation": "If flying tinamous sit inside the ratite tree and kiwis are closest to elephant birds across an ocean, the ancestors must have flown, and flight was lost separately in different lineages. A flat sternum is shared, but it could come from convergence, and size or geography alone does not show how many times flight was lost."
+          }
+        ]
+      }
+    ]
+  },
+  "interactives": [
+    {
+      "type": "explorer",
+      "section": "2.1",
+      "title": "Lift, speed and wing area",
+      "intro": "Start with a pigeon-sized bird: 0.35 kg and 0.06 square meters of wing. Find the slowest speed at which lift still equals weight, then double the speed and watch lift. Then try a large soaring bird of about 10 kg with about 1 square meter of wing, and compare the minimum speeds.",
+      "inputs": [
+        {
+          "id": "v",
+          "label": "Airspeed",
+          "unit": "m/s",
+          "min": 0,
+          "max": 30,
+          "step": 0.5,
+          "value": 10
+        },
+        {
+          "id": "S",
+          "label": "Wing area (both wings)",
+          "unit": "m²",
+          "min": 0.01,
+          "max": 1.2,
+          "step": 0.01,
+          "value": 0.06
+        },
+        {
+          "id": "CL",
+          "label": "Lift coefficient (set by angle of attack)",
+          "unit": "",
+          "min": 0.1,
+          "max": 1.6,
+          "step": 0.05,
+          "value": 1.0
+        },
+        {
+          "id": "m",
+          "label": "Body mass",
+          "unit": "kg",
+          "min": 0.05,
+          "max": 12,
+          "step": 0.05,
+          "value": 0.35
+        }
+      ],
+      "constants": {
+        "rho": 1.225,
+        "g": 9.81
+      },
+      "outputs": [
+        {
+          "label": "Lift",
+          "unit": "N",
+          "expr": "0.5*rho*v^2*S*CL",
+          "digits": 2
+        },
+        {
+          "label": "Weight",
+          "unit": "N",
+          "expr": "m*g",
+          "digits": 2
+        },
+        {
+          "label": "Lift as a percentage of weight",
+          "unit": "%",
+          "expr": "100*0.5*rho*v^2*S*CL/(m*g)",
+          "digits": 0
+        },
+        {
+          "label": "Slowest speed that supports the weight at this lift coefficient",
+          "unit": "m/s",
+          "expr": "sqrt(2*m*g/(rho*S*CL))",
+          "digits": 1
+        },
+        {
+          "label": "Wing loading",
+          "unit": "N/m²",
+          "expr": "m*g/S",
+          "digits": 0
+        }
+      ],
+      "takeaway": "Lift grows with the square of airspeed, so heavy birds with small wings for their weight (high wing loading) must fly fast, while birds with large wings for their weight can fly slowly."
+    },
+    {
+      "type": "sort",
+      "section": "2.2",
+      "title": "Which wing type?",
+      "intro": "Place each bird in one of Savile’s four wing types. Picture its wing shape and how it flies; Figure 2.2 will help.",
+      "buckets": [
+        "Elliptical",
+        "High-speed",
+        "High aspect ratio",
+        "Slotted high-lift"
+      ],
+      "items": [
+        {
+          "text": "Ruffed Grouse",
+          "bucket": 0,
+          "why": "Short, broad, rounded wings for an explosive takeoff from the forest floor."
+        },
+        {
+          "text": "House Sparrow",
+          "bucket": 0,
+          "why": "A small songbird with short, rounded wings for quick takeoffs and turns."
+        },
+        {
+          "text": "Peregrine Falcon",
+          "bucket": 1,
+          "why": "Pointed, tapering wings for fast, powerful flapping and chasing birds in the open."
+        },
+        {
+          "text": "Common Swift",
+          "bucket": 1,
+          "why": "Long, swept-back, crescent wings for fast, efficient flight; it stays airborne for about ten months a year."
+        },
+        {
+          "text": "Bar-tailed Godwit",
+          "bucket": 1,
+          "why": "Like other shorebirds it has long, pointed wings that suit fast, sustained flapping on long migrations."
+        },
+        {
+          "text": "Wandering Albatross",
+          "bucket": 2,
+          "why": "The longest wingspan of any living bird, long and narrow for dynamic soaring over the ocean."
+        },
+        {
+          "text": "Shearwater",
+          "bucket": 2,
+          "why": "Long, narrow wings for gliding low over the waves, like a small albatross."
+        },
+        {
+          "text": "Andean Condor",
+          "bucket": 3,
+          "why": "Broad wings with widely spread primaries for slow soaring in thermals; it flaps about 1 percent of the time."
+        },
+        {
+          "text": "Red-tailed Hawk",
+          "bucket": 3,
+          "why": "Broad wings with slotted tips for circling in rising air over open country."
+        }
+      ]
+    },
+    {
+      "type": "case",
+      "section": "2.3",
+      "title": "Across the Pacific without stopping: the Bar-tailed Godwit",
+      "intro": "Each autumn Bar-tailed Godwits leave Alaska and cross the Pacific toward New Zealand and eastern Australia without stopping. Satellite tags on seven females recorded nonstop flights of 8,117 to 11,680 kilometers, lasting six to nine days. Think about each question before you reveal the answer.",
+      "steps": [
+        {
+          "q": "Over the open Pacific there are no thermals or ridges, and a godwit, unlike an albatross, has no safe place to land on the sea. Which mode of flight must it use, and how does that compare with a condor’s?",
+          "a": "It must flap for almost the whole journey, powered by its pectoralis muscles and fueled by fat stored before departure. That is the opposite of an Andean Condor, which soars on rising air and flaps only about 1 percent of the time. Flapping flight is far more costly per hour than soaring."
+        },
+        {
+          "q": "Godwits have long, pointed wings. Which of Savile’s wing types is this, and why does it suit the trip?",
+          "a": "It is the high-speed type shared by other shorebirds, falcons and swifts. Pointed, tapering wings keep drag low and make fast, sustained flapping efficient, which is what a long nonstop flight demands."
+        },
+        {
+          "q": "The researchers described the route as a wind-assisted corridor. Why would a tailwind matter so much to a bird burning a fixed load of fat?",
+          "a": "A tailwind adds to the bird’s speed over the ground without adding to its airspeed. The bird burns fat at the same rate per hour but covers more kilometers in each hour, so the same fuel carries it farther. A headwind does the reverse."
+        },
+        {
+          "q": "Using the power curve in Figure 2.3, at what airspeed should a godwit fly to cover the most distance on its fuel?",
+          "a": "At its maximum-range speed, a little faster than its minimum-power speed, where a line from the origin just touches the curve. Theory also predicts that the best airspeed rises in a headwind and falls slightly in a tailwind, because what matters is distance over the ground."
+        }
+      ]
+    }
+  ],
+  "assess": {
+    "slides": [
+      {
+        "title": "Chapter 2: Flight",
+        "bullets": [
+          "Lift, drag and the wing",
+          "Wing shapes and what they tell you",
+          "Flapping, gliding, soaring and hovering",
+          "Flightless birds"
+        ],
+        "notes": "Chapter 1 gave us a body built for flight. Today we see how it flies, what wing shape reveals, what each kind of flight costs, and why some birds gave flight up."
+      },
+      {
+        "title": "Four forces",
+        "bullets": [
+          "Weight pulls down",
+          "Lift acts at right angles to the airflow",
+          "Drag acts backward along the flight path",
+          "Thrust comes from flapping; a glider has none"
+        ],
+        "notes": "Use Figure 2.1. In a steady glide, lift and drag together exactly balance weight, and the bird slides down a gentle slope."
+      },
+      {
+        "title": "How a wing makes lift",
+        "bullets": [
+          "Cambered airfoil at an angle of attack",
+          "The wing curves the airflow",
+          "Lower pressure above, higher below",
+          "Air is thrown downward; the wing is pushed up"
+        ],
+        "notes": "The pressure account and the downwash account describe the same flow. The equal-transit-time story is wrong: nothing forces the air above and below to meet again."
+      },
+      {
+        "title": "The lift equation and the stall",
+        "bullets": [
+          "Lift = ½ × density × speed² × area × lift coefficient",
+          "Double the speed, four times the lift",
+          "Too steep an angle of attack: stall",
+          "The alula delays the stall at low speed"
+        ],
+        "notes": "Work the pigeon example aloud: at 10 meters per second a 350-gram bird glides comfortably; at 5 meters per second it would need an impossible lift coefficient."
+      },
+      {
+        "title": "Two numbers that describe a wing",
+        "bullets": [
+          "Aspect ratio = span² ÷ area",
+          "Wing loading = weight ÷ area",
+          "High aspect ratio: low induced drag, good gliding",
+          "High wing loading: must fly fast"
+        ],
+        "notes": "These two numbers turn a wing’s outline into predictions about flight. Have students calculate both for the two birds in the worked example."
+      },
+      {
+        "title": "Four wing types (Savile, 1957)",
+        "bullets": [
+          "Elliptical: grouse, most woodland songbirds",
+          "High-speed: falcons, swifts, shorebirds",
+          "High aspect ratio: albatrosses, shearwaters",
+          "Slotted high-lift: eagles, hawks, vultures, condors"
+        ],
+        "notes": "Use Figure 2.2. The global hand-wing study shows the pattern holds across more than 10,000 species: more pointed wings in migrants and at high latitudes."
+      },
+      {
+        "title": "Flapping and the power curve",
+        "bullets": [
+          "Downstroke makes lift and thrust",
+          "Theory predicts a U-shaped power curve",
+          "Minimum-power speed: longest time aloft",
+          "Maximum-range speed: farthest on the fuel"
+        ],
+        "notes": "Use Figure 2.3. Measured curves differ among species: strongly U-shaped in cockatiels, shallower in doves, nearly flat in magpies."
+      },
+      {
+        "title": "Gliding and soaring",
+        "bullets": [
+          "Glide ratio = lift ÷ drag",
+          "Soaring: rising air or wind pays for height",
+          "Andean Condors flap about 1 percent of the time",
+          "Albatross heart rates near resting with a following wind"
+        ],
+        "notes": "The evidence comes from tags that log every wingbeat and from heart-rate recorders. Where there is no rising air, as for godwits over the Pacific, birds must flap."
+      },
+      {
+        "title": "Hovering",
+        "bullets": [
+          "The costliest mode: no forward speed",
+          "Hummingbirds turn the wing over on the backstroke",
+          "About 75 percent of support from the downstroke, 25 from the upstroke",
+          "Ruby-throated Hummingbird: more than 50 wingbeats a second"
+        ],
+        "notes": "Warrick and colleagues measured this by lighting particles in the air with a laser and filming the wake. Insects split lift about evenly; other birds rely on the downstroke."
+      },
+      {
+        "title": "Flightless birds",
+        "bullets": [
+          "Ratites, penguins and many island birds",
+          "DNA: ratites lost flight several times",
+          "Islands without predators favor saving energy",
+          "Penguins kept the keel to fly underwater"
+        ],
+        "notes": "The Inaccessible Island Rail and the Galápagos Cormorant show that flight can be lost on islands, sometimes within a couple of million years."
+      },
+      {
+        "title": "Summary",
+        "bullets": [
+          "Wings make lift by bending the airflow",
+          "Lift rises with speed squared; slow flight is hard",
+          "Wing shape predicts flight style",
+          "Soaring is cheap, hovering costly; flight is lost when it stops paying"
+        ],
+        "notes": "Before the quiz, do the practice problems in each section, then go outside and watch one flapping bird and one soaring bird."
+      }
+    ],
+    "quiz": [
+      {
+        "sec": "2.1",
+        "q": "In a steady glide, which force acts at right angles to the oncoming air?",
+        "choices": [
+          "Drag",
+          "Weight",
+          "Lift",
+          "Thrust"
+        ],
+        "answer": 2,
+        "explanation": "Lift is defined as the force at right angles to the oncoming air. Drag acts along the flight path, weight acts straight down, and a gliding bird produces no thrust."
+      },
+      {
+        "sec": "2.1",
+        "q": "A bird flying at 8 m/s speeds up to 16 m/s without changing its wing shape or angle of attack. Its lift becomes:",
+        "choices": [
+          "Four times as large",
+          "Twice as large",
+          "Unchanged",
+          "Half as large"
+        ],
+        "answer": 0,
+        "explanation": "Lift depends on airspeed squared. Doubling speed multiplies lift by four."
+      },
+      {
+        "sec": "2.2",
+        "q": "How is the aspect ratio of a wing calculated?",
+        "choices": [
+          "Weight divided by wing area",
+          "Wing area divided by wingspan",
+          "Wingspan divided by body length",
+          "Wingspan squared divided by wing area"
+        ],
+        "answer": 3,
+        "explanation": "Aspect ratio is span squared over area, which for a rectangle is length over width. Weight divided by area is wing loading."
+      },
+      {
+        "sec": "2.2",
+        "q": "A large bird with broad wings and widely separated, finger-like outer primaries circles slowly over a hillside on a sunny afternoon. Its wing type is most likely:",
+        "choices": [
+          "Elliptical",
+          "Slotted high-lift",
+          "High-speed",
+          "High aspect ratio"
+        ],
+        "answer": 1,
+        "explanation": "Broad wings with slotted tips, used for slow circling in rising air over land, are the slotted high-lift type of eagles, hawks and vultures."
+      },
+      {
+        "sec": "2.3",
+        "q": "What did the 2020 study of Andean Condors find?",
+        "choices": [
+          "They flap for about half of their flight time",
+          "They flapped for about 1 percent of their flight time, mostly at takeoff",
+          "They cannot soar in strong winds",
+          "They glide only at night"
+        ],
+        "answer": 1,
+        "explanation": "Recorders logging every wingbeat over more than 216 hours showed the condors flapped about 1 percent of the time, with most flapping during takeoff."
+      },
+      {
+        "sec": "2.3",
+        "q": "A hummingbird hovers in front of a feeder. Based on the 2005 measurements by Warrick and colleagues, which statement is correct?",
+        "choices": [
+          "Its lift comes only from the downstroke, as in other birds",
+          "Its two strokes share the lift exactly equally, as in insects",
+          "Its upstroke makes most of the lift",
+          "Its downstroke gives about three quarters of the weight support and its upstroke about one quarter"
+        ],
+        "answer": 3,
+        "explanation": "Hovering Rufous Hummingbirds got about 75 percent of their weight support from the downstroke and 25 percent from the upstroke, a split unlike both insects and other birds."
+      },
+      {
+        "sec": "2.4",
+        "q": "Which statement about ratites is best supported by DNA evidence?",
+        "choices": [
+          "They lost flight more than once, and the closest relatives of elephant birds are kiwis",
+          "They share one flightless ancestor that rode the drifting continents",
+          "They are more closely related to penguins than to tinamous",
+          "Their ancestors never flew"
+        ],
+        "answer": 0,
+        "explanation": "Flying tinamous sit inside the ratite tree, and elephant birds are closest to kiwis, across an ocean. Both point to flying ancestors and several separate losses of flight."
+      },
+      {
+        "sec": "2.4",
+        "q": "Biologists find a flightless rail on a remote island. It has small flight muscles and a low resting metabolic rate, and its closest relatives on the mainland can fly. What is the best interpretation?",
+        "choices": [
+          "It is a primitive rail whose ancestors never flew",
+          "Its ancestors walked to the island over a land bridge",
+          "It descends from flying ancestors and lost flight on the island, which saved energy",
+          "Its low metabolic rate came first and prevented it from ever flying"
+        ],
+        "answer": 2,
+        "explanation": "Flying mainland relatives point to a flying ancestor that reached the island by air. McNab found that flightless island rails have low metabolic rates linked to reduced flight muscles, consistent with energy saving after flight was lost."
+      }
+    ],
+    "challenge": [
+      {
+        "title": "Predict flight from the wing",
+        "prompt": "Choose five bird species with clearly different wings, for example a Ruffed Grouse, a Peregrine Falcon, a Wandering Albatross, a Turkey Vulture and a Ruby-throated Hummingbird. Find a clear photo of each with the wings spread (Wikimedia Commons or the Macaulay Library are good sources). From the photo alone, classify each wing into one of the four types or as a hovering specialist, and predict how the bird flies: mostly flapping, bounding, gliding, soaring or hovering, and whether it is fast or maneuverable. Then watch a video of each species in flight and check your predictions.",
+        "deliverable": "A table with one row per species: wing type, the visible features you used, your prediction, and what the video showed. Then one paragraph of 100 to 200 words on the prediction you got most wrong and why.",
+        "rubric": [
+          "Assigns each species a defensible wing type using visible features such as length, width, pointedness and slotted tips",
+          "Makes a specific prediction of flight style for each species before checking",
+          "Reports honestly what each video showed",
+          "Explains at least one mismatch using ideas from the chapter, such as aspect ratio, wing loading or the cost of hovering"
+        ]
+      },
+      {
+        "title": "Flap or soar: a field count",
+        "prompt": "Go outside and watch two birds in flight for at least two minutes each: one that flaps steadily (such as a Rock Pigeon, an American Robin or a crow) and one that soars or glides (such as a gull, hawk or vulture). For each bird, use a phone timer to estimate the fraction of the time it spends flapping and the fraction spent gliding, and note whether it circled, bounded or flew straight. Sketch each bird’s wing outline as seen from below.",
+        "deliverable": "An observation log with date, place, weather, species and your timings, two wing sketches, and 150 to 250 words explaining the difference between the two birds using wing shape, rising air and the energy cost of each mode of flight.",
+        "rubric": [
+          "Records observations with time, place, conditions and species",
+          "Estimates flapping and gliding time for each bird in a clear, repeatable way",
+          "Links each bird’s wing shape to its flight style using the four wing types",
+          "Explains the difference in energy cost, mentioning soaring on rising air or wind where relevant"
+        ]
+      }
+    ],
+    "readings": [
+      {
+        "citation": "Lovette, I. J., & Fitzpatrick, J. W. (Eds.). (2016). Handbook of bird biology (3rd ed.). Wiley-Blackwell; Cornell Lab of Ornithology.",
+        "kind": "book",
+        "why": "The standard introductory text. Read its chapter on flight alongside sections 2.1 to 2.3.",
+        "pages": ""
+      },
+      {
+        "citation": "Babinsky, H. (2003). How do wings work? Physics Education, 38(6), 497–503.",
+        "kind": "article",
+        "why": "A short, clear explanation of lift by a Cambridge aerodynamicist, written for physics students, that takes apart the equal-transit-time story. Supports section 2.1.",
+        "pages": "497–503"
+      },
+      {
+        "citation": "Pennycuick, C. J. (2008). Modelling the flying bird (Theoretical Ecology Series, Vol. 5). Academic Press.",
+        "kind": "book",
+        "why": "For readers who want the physics behind the power curve, wing loading and gliding, by the scientist who trained pigeons to fly in wind tunnels. Read the opening chapters.",
+        "pages": ""
+      },
+      {
+        "citation": "Williams, H. J., Shepard, E. L. C., Holton, M. D., Alarcón, P. A. E., Wilson, R. P., & Lambertucci, S. A. (2020). Physical limits of flight performance in the heaviest soaring bird. Proceedings of the National Academy of Sciences, 117(30), 17884–17890.",
+        "kind": "article",
+        "why": "An open-access study showing how wingbeat-logging tags revealed that condors almost never flap. Read the introduction and the figures for section 2.3.",
+        "pages": ""
+      }
+    ],
+    "videos": [
+      {
+        "search": "hummingbird hovering slow motion wing upstroke",
+        "why": "Watch the wing turn over at the end of each stroke so that the backstroke also makes lift, and notice how upright the body is."
+      },
+      {
+        "search": "bird landing slow motion alula",
+        "why": "Look for the small alula springing up from the front of the wing as the bird slows and tilts its wings steeply just before landing."
+      },
+      {
+        "search": "Andean condor soaring thermal flight",
+        "why": "Count how rarely the condor flaps, and watch it circle to climb before gliding away."
+      }
+    ],
+    "images": [
+      {
+        "search": "Turkey Vulture soaring wing primaries",
+        "source": "wikimedia",
+        "why": "Count the slotted outer primaries and note the broad wing of the slotted high-lift type."
+      },
+      {
+        "search": "Wandering Albatross in flight",
+        "source": "wikimedia",
+        "why": "See the long, narrow high-aspect-ratio wing; compare its length with its width."
+      },
+      {
+        "search": "kiwi skeleton",
+        "source": "wikimedia",
+        "why": "Find the tiny wing bones and the flat sternum without a keel."
+      }
+    ]
+  },
+  "prov": {
+    "note": "Text, figures, practice, lecture and quiz hand-written in Claude Code by Claude (configured model claude-opus-5-5) from sources checked by web search, October 2026."
+  }
+}
