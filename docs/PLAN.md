@@ -102,28 +102,43 @@ Accuracy is the first requirement. A learner relies on every sentence.
 - **Book page:** cover, progress, Continue button, a contents list with status, then the coach and "About this book". Objectives, preface and edition record are collapsible.
 - **Look:** calm warm surfaces, rounded cards and 44px touch targets. Literata for reading and headings, Source Sans 3 for the interface, Libre Caslon Text for the gilt cloth book covers. Light and dark themes.
 
-## 7. Authors and personal tutoring
+## 7. One teacher, coherent books
 
-**Dr. Professor is the house author and the default for every new book.** The other voices are alternates, and any section can be re-explained in any of them. Every writing prompt now carries the reader's profile, so books are written with John in mind.
+**Every book has one author, Dr. Professor:** a world-class expert in that subject with deep, wide knowledge of its history, evidence, methods and open questions, who is also an engaging teacher. The character voices from v0.3 are gone, because they risked uneven writing.
 
-**The textbook is shared; the tutoring is personal.** A book is written once, in one author's voice, and everyone reads the same fact-checked text. Around it sits a private tutoring layer tuned to each learner.
+**A book bible keeps each book coherent.** It's drafted with the syllabus and stored on the book:
+- **teacher:** the expert stance for this subject (for example, "as an ornithologist would: from museum specimens, field observation, experiments and the fossil record").
+- **promise:** what the reader will be able to do by the end.
+- **threads:** two to four ideas that run through every chapter.
+- **running examples:** real cases revisited across chapters (the American Robin through the whole Birds book; *Tetris*, *Super Mario Bros.* 1-1 and *Slay the Spire* plus the reader's own pocket card game in Game Design; one scale model of the solar system; one kilowatt-hour followed from source to socket).
+- **conventions:** names, units and notation.
 
-| Author | Voice |
-|---|---|
-| **Dr. Professor (house author, default)** | Logical and evidence-first: every claim shows how we know it (observation, measurement, experiment or derivation), then what follows. First principles over lists. Says plainly what is a model or an open question. Written for the reader's profile. |
-| The Scholar | Formal, rigorous, evidence first, history of ideas |
-| The Kindergarten Teacher | Warm, very simple words, concrete; facts stay exact |
-| Socrates | Teaches by questions; you reason your way to each idea |
-| The Brainiac | Dense, fast, cross-disciplinary |
-| The Straight Shooter | Plain and short: the fact, then why it matters |
-| The Storyteller | Through the true people and discoveries behind ideas |
-| The Practitioner | How the work is actually done, common mistakes |
+**Continuity.** When a chapter is written, the prompt includes what earlier chapters already taught (their overviews and key terms), so chapters build on each other and refer back by number instead of re-teaching. Every chapter opens with a true, vivid **hook**.
 
-- **No AI voice.** Every prompt carries a style guide that bans stock AI phrasing (delve, tapestry, crucial, em dashes, rule-of-three habits, summarizing morals). A built-in style checker counts leftovers, and the fact-check rewrites them.
-- **Study profile** (private): favorite tutor, how you learn best (reading, diagrams, worked examples, practice, discussion, listening, stories, real-world use), goal, background and daily study time.
-- **Explain it differently:** any section can be re-explained by any author for you. The re-explanation uses your profile and targets your wrong answers in that section.
-- **Study coach:** your accuracy per section is tracked from practice and quizzes. For weak sections it writes a personal review sheet: the idea you are missing, why your wrong answer was tempting, a fresh example, a new check question, and a plan for your next session.
-- Office hours also use your profile.
+**Personal tutoring uses teaching modes, not characters.** Any section can be explained again Simpler, Deeper, With an analogy, Step by step, Through a real example, or as The story behind it. The study profile stores a preferred mode.
+
+## 7b. Interactive lab
+
+These are built-in components. Chapters supply only data, and a small arithmetic parser evaluates explorer formulas, so AI-written code never runs.
+
+| Type | What the learner does | Example |
+|---|---|---|
+| Explorer | Moves sliders; outputs update from real formulas | Lift vs airspeed and wing area; Carnot efficiency vs temperatures |
+| Sort it | Puts items in buckets, with instant feedback and reasons | Bird or not a bird; energy vs power |
+| Put in order | Taps steps into sequence, then sees the right order | One breath through a bird's air sacs; the Rankine cycle |
+| Timeline | Clicks events on a real time axis | Feathered dinosaurs to modern birds |
+| To scale | Compares real quantities, linear or log | Hummingbird to ostrich mass; planet sizes |
+| Case study | Thinks, then reveals each step of a real case | Identifying a mystery bird; the Pluto decision |
+
+Generated chapters now include 2-3 interactives, designed together with the figures.
+
+## 7c. How the seed books are written (research pipeline)
+
+The seed books are researched and written in Claude Code, so they can be read right away:
+1. A **book bible** per book (`app/seed/courses.json`) and a strict **chapter spec** (`docs/CHAPTER_SPEC.md`).
+2. One **research-and-writing agent per chapter**. It verifies every fact and citation by web search, draws figures and looks at its own renders, builds interactives, and must pass `scripts/validate_chapter.py` (structure, citations, answer keys, banned AI phrasing, formulas).
+3. One **independent fact-check agent per chapter**. It re-solves every answer key blind and checks every claim, figure label, formula and citation. `scripts/apply_check.py` applies the corrections and records each change in the chapter's fact-check report.
+4. `scripts/build_seed.py` assembles the books, and they are loaded into the app's shared library.
 
 ### Learning methods built in (v0.4)
 | Method | What it is | Where |

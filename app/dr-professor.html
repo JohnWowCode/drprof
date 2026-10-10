@@ -21,7 +21,7 @@
   --bad: #A53A2F;
   --mark: #FBEFC6;
   --subj: #2F5D46;
-  --c-terms: #2F6690; --c-example: #2F7A45; --c-practice: #A3670F; --c-myth: #A53A2F; --c-check: #5F4FA0;
+  --c-terms: #2F6690; --c-example: #2F7A45; --c-practice: #A3670F; --c-myth: #A53A2F; --c-check: #5F4FA0; --c-lab: #1D7373;
   --shadow: 0 1px 2px rgba(31, 27, 22, 0.05), 0 8px 24px rgba(31, 27, 22, 0.06);
   --f-head: "Literata", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
   --f-read: "Literata", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
@@ -33,7 +33,7 @@
   :root:not([data-theme="light"]) {
     --bg: #12110F; --surface: #1C1A17; --surface-2: #23201C; --ink: #EEE8DE; --muted: #A89F92; --line: #2F2B26; --line-strong: #474038;
     --accent: #8FC3A3; --accent-ink: #0F2018; --accent-soft: #1F2E26; --ok: #8FD0A0; --warn: #E8BA66; --bad: #EF9C90; --mark: #4A3E1C;
-    --c-terms: #8DBCE0; --c-example: #8FD0A0; --c-practice: #E8BA66; --c-myth: #EF9C90; --c-check: #BDB0EC;
+    --c-terms: #8DBCE0; --c-example: #8FD0A0; --c-practice: #E8BA66; --c-myth: #EF9C90; --c-check: #BDB0EC; --c-lab: #7ED0CC;
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.25);
     color-scheme: dark;
   }
@@ -41,7 +41,7 @@
 :root[data-theme="dark"] {
   --bg: #12110F; --surface: #1C1A17; --surface-2: #23201C; --ink: #EEE8DE; --muted: #A89F92; --line: #2F2B26; --line-strong: #474038;
   --accent: #8FC3A3; --accent-ink: #0F2018; --accent-soft: #1F2E26; --ok: #8FD0A0; --warn: #E8BA66; --bad: #EF9C90; --mark: #4A3E1C;
-  --c-terms: #8DBCE0; --c-example: #8FD0A0; --c-practice: #E8BA66; --c-myth: #EF9C90; --c-check: #BDB0EC;
+  --c-terms: #8DBCE0; --c-example: #8FD0A0; --c-practice: #E8BA66; --c-myth: #EF9C90; --c-check: #BDB0EC; --c-lab: #7ED0CC;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.25);
   color-scheme: dark;
 }
@@ -337,6 +337,36 @@ details.report summary { cursor: pointer; font-size: 0.92rem; font-weight: 700; 
 .rate .again { color: var(--bad); } .rate .hard { color: var(--warn); } .rate .good { color: var(--ok); } .rate .easy { color: var(--c-terms); }
 .progress-dots { display: flex; gap: 4px; flex-wrap: wrap; }
 
+.k-lab { --k: var(--c-lab); }
+.hook { font-family: var(--f-read); font-size: 1.2rem; line-height: 1.62; max-width: 64ch; border-left: 3px solid var(--subj-ink); padding-left: 16px; }
+.wx-inputs { display: grid; gap: 12px; }
+.wx-slider { display: grid; grid-template-columns: minmax(7rem, 12rem) minmax(0, 1fr) minmax(5.5rem, auto); gap: 10px; align-items: center; }
+.wx-slider input[type="range"] { width: 100%; accent-color: var(--c-lab); min-height: 32px; }
+.wx-l { font-weight: 600; font-size: 0.95rem; }
+.wx-v { text-align: right; font-size: 0.95rem; }
+@media (max-width: 560px) { .wx-slider { grid-template-columns: 1fr auto; } .wx-slider input[type="range"] { grid-column: 1 / -1; grid-row: 2; } }
+.wx-outs { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+.wx-out { display: grid; gap: 2px; padding: 12px 14px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); }
+.wx-num { font-size: 1.6rem; font-weight: 700; color: var(--c-lab); line-height: 1.1; }
+.wx-sort { display: grid; gap: 10px; }
+.wx-item { display: grid; gap: 8px; padding: 12px 14px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); }
+.wx-item.ok { border-color: color-mix(in srgb, var(--ok) 55%, var(--line)); }
+.wx-item.bad { border-color: color-mix(in srgb, var(--bad) 55%, var(--line)); }
+.wx-item-t { font-weight: 600; }
+ol.wx-picked { margin: 0; padding-left: 1.4em; display: grid; gap: 6px; }
+ol.wx-picked li.bad { color: var(--bad); }
+ol.wx-picked li.ok::marker { color: var(--ok); }
+.wx-tl { position: relative; height: 26px; margin: 8px 10px 0; border-bottom: 3px solid var(--line-strong); }
+.wx-dot { position: absolute; bottom: -10px; width: 18px; height: 18px; margin-left: -9px; border-radius: 50%; border: 2px solid var(--surface); background: var(--c-lab); cursor: pointer; padding: 0; }
+.wx-dot.on { transform: scale(1.3); background: var(--accent); }
+.wx-tl-ends { display: flex; justify-content: space-between; margin: 8px 0 4px; }
+.wx-detail { padding: 12px 14px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); display: grid; gap: 4px; }
+.wx-bars { display: grid; gap: 12px; }
+.wx-bar { display: grid; gap: 4px; }
+.wx-track { height: 12px; border-radius: 999px; background: var(--line); overflow: hidden; }
+.wx-track span { display: block; height: 100%; border-radius: 999px; background: var(--c-lab); transition: width 0.3s; }
+.wx-case, .wx-step { display: grid; gap: 10px; }
+
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }
 </style>
 
@@ -412,7 +442,7 @@ const S = {
   courses: new Map(), catalogLoaded: false, catalogError: null,
   chapters: {}, finals: {}, prog: {}, profile: { name: "" },
   form: { topic: "", level: "beginner", focus: "", length: "standard", persona: "professor", engine: "default" },
-  gen: {}, slide: {}, quizSel: {}, chat: {}, busy: {}, errata: {}, errOpen: {},
+  gen: {}, slide: {}, quizSel: {}, chat: {}, busy: {}, errata: {}, errOpen: {}, wx: {}, ix: {},
   names: {}, altPick: {}, rvPick: {}, loadedAll: {}, pendingAnchor: null,
   audio: { key: null, idx: 0, playing: false, rate: 1, voice: null, gen: 0, tOpen: false },
 };
@@ -531,6 +561,15 @@ const PERSONAS = [
     sample: "Found a feather on the trail? Check the vane first. It tells you where on the bird it grew.",
     voice: "Write as an experienced working professional in this field teaching an apprentice: practical, hands-on, how the work is actually done, the mistakes beginners make, rules of thumb and where they break down, the tools of the trade." },
 ];
+const MODES = [
+  { id: "simpler", name: "Simpler", how: "Explain it again more simply: shorter sentences, everyday words, one idea at a time, and a concrete everyday comparison. Keep every fact exact." },
+  { id: "deeper", name: "Deeper", how: "Go one level deeper: the mechanism underneath, the evidence and the numbers, and where the simple version breaks down." },
+  { id: "analogy", name: "With an analogy", how: "Build one strong, accurate analogy, map each part of it to the real thing, then say exactly where the analogy stops working." },
+  { id: "steps", name: "Step by step", how: "Rebuild the idea as a numbered chain of small logical steps, each following from the last, ending at the section's main conclusion." },
+  { id: "example", name: "Through a real example", how: "Teach the idea through one detailed real-world case, then generalize from it." },
+  { id: "story", name: "The story behind it", how: "Tell the true story of how this was discovered or worked out (who, when, what evidence), then state the idea it established. Never invent details." },
+];
+const modeOf = (id) => MODES.find((m) => m.id === id) || MODES[0];
 const persona = (id) => PERSONAS.find((p) => p.id === id) || PERSONAS[0];
 const ENGINES = { default: "Standard", complex: "Most capable", quick: "Fast" };
 const STYLE_RULES = "STYLE. The text must read as if a skilled human author wrote it. Never use these words or phrases: delve, tapestry, testament, realm, embark, unlock, unleash, harness, foster, crucial, pivotal, vibrant, intricate, myriad, multifaceted, robust, seamless, paramount, underscore, showcase, leverage, elevate, game-changer, ever-evolving, in today's world, it's important to note, it is worth noting, in conclusion, in summary, ultimately, at its core, plays a crucial role, a testament to, let's dive in, fascinating world; and never use landscape, journey or navigate as metaphors. Do not open with a rhetorical question or with \"Imagine\". Do not end paragraphs with a summarizing moral. Do not use em dashes; use commas, colons, parentheses or separate sentences. Do not habitually group things in threes. Vary sentence length and structure. Prefer concrete nouns, specific numbers and named examples to abstractions. Stay in the author's voice throughout.";
@@ -581,21 +620,34 @@ async function askData(prompt, { signal, onLen, tier } = {}) {
 async function askJSON(prompt, opts) { return (await askData(prompt, opts)).data; }
 const stamp = (tier, extra) => ({ tier, at: Date.now(), by: Store.uid || null, v: PROMPT_V, ...extra });
 
-function preamble(c, personaId) {
-  const L = lvl(c.level), P = persona(personaId || c.persona);
+function preamble(c, extra) {
+  const L = lvl(c.level), b = c.bible || {};
+  const plan = [b.promise ? "Promise: " + b.promise : "", arr(b.threads).length ? "Threads that run through every chapter: " + b.threads.join(" ") : "",
+    arr(b.runningExamples).length ? "Running examples to reuse: " + b.runningExamples.map((x) => `${x.name} (${x.use})`).join("; ") + "." : "",
+    arr(b.conventions).length ? "Conventions: " + b.conventions.join(" ") : ""].filter(Boolean).join(" ");
   return [
-    "You are Dr. Professor, writing original course material for a self-paced learner.",
+    "You are Dr. Professor, writing a textbook for a self-paced learner.",
     `Course: ${c.code} — ${c.title}`,
-    `Subject requested: ${c.topic}`,
+    `Subject: ${c.topic}`,
     `Level: ${L.name}. ${L.guide}`,
     c.focus ? `Learner's stated focus: ${c.focus}` : "",
-    `AUTHOR VOICE: ${P.name}. ${P.voice}`,
+    `THE TEACHER: Dr. Professor, a world-class expert in this subject with deep, wide knowledge of its history, evidence, methods and open questions, and a gifted, engaging teacher. ${str(b.teacher)} Build every idea step by step from what the reader already knows. For each important claim, show how we know it, then what follows from it. Bring the subject alive with real cases, numbers, people and discoveries. Clear, warm and direct; never padded or chatty.`,
+    plan ? `BOOK PLAN (keep the whole book coherent): ${plan}` : "",
+    extra || "",
     `READER PROFILE (the person this book is written for): ${profileText()}`,
     "ACCURACY COMES FIRST. State only facts you are confident are true and well established. Never invent statistics, studies, quotations, dates, names, places or sources. If you are not sure of a precise figure, give a rounded figure or a range you are sure of, or leave it out. Name a study or author only when you are certain of who and when. Separate settled consensus from open debate, and say which is which. A learner will rely on every sentence.",
     STYLE_RULES,
     SOURCE_RULES,
     "Formatting: American English. Write formulas in plain Unicode text (E = mc², v = d / t), never LaTeX. Inside strings you may use **bold** for a key term's first use and *italic* for emphasis; no other markdown, no headings, no HTML.",
   ].filter(Boolean).join("\n");
+}
+function priorText(c, n) {
+  const parts = [];
+  for (let k = 1; k < n; k++) {
+    const d = S.chapters[`${c.id}:${k}`];
+    if (d && d.lesson) parts.push(`Chapter ${k} "${c.chapters[k - 1].title}": ${stripCites(d.lesson.overview).slice(0, 400)} Key terms already defined: ${d.lesson.sections.flatMap((s) => s.keyTerms.map((t) => t.term)).join(", ")}.`);
+  }
+  return parts.length ? `\nWHAT EARLIER CHAPTERS ALREADY TAUGHT (build on it, refer back by chapter number, do not re-teach it):\n${parts.join("\n")}\n` : "";
 }
 function outline(c) {
   return c.chapters.map((ch, i) => `Chapter ${i + 1}: ${ch.title}\n` + ch.sections.map((s, j) => `  ${i + 1}.${j + 1} ${s.title} — ${s.summary}`).join("\n")).join("\n");
@@ -611,6 +663,7 @@ function profileText() {
   if (pr.goal) parts.push("Goal: " + pr.goal);
   if (pr.background) parts.push("Already knows: " + pr.background);
   if (pr.minutes) parts.push(`Studies about ${pr.minutes} minutes a day.`);
+  if (pr.mode) parts.push(`Prefers explanations: ${modeOf(pr.mode).name.toLowerCase()}.`);
   return parts.join(" ") || "No study profile given.";
 }
 
@@ -622,7 +675,7 @@ Subject: ${f.topic}
 Level: ${L.name}. ${L.guide}
 Learner's stated focus: ${f.focus || "none given"}
 Number of chapters: ${n}
-AUTHOR VOICE for the preface: ${P.name}. ${P.voice}
+THE TEACHER: Dr. Professor, a world-class expert in this subject and a gifted, engaging teacher. Write the preface in Dr. Professor's voice: warm, clear and direct.
 ${STYLE_RULES}
 
 Reply with only a JSON object of this shape:
@@ -632,6 +685,7 @@ Reply with only a JSON object of this shape:
   "department": "academic department name",
   "description": "catalog description, 3-4 sentences",
   "preface": "the author's preface, 2-3 paragraphs separated by blank lines, in the author voice: what the book covers, who it is for, and how to use it (read each section, do its practice, then the quiz and challenges)",
+  "bible": { "teacher": "one sentence: the expert stance Dr. Professor teaches this subject from", "promise": "one sentence: what the reader will be able to do by the end", "threads": ["2-4 ideas that run through every chapter"], "runningExamples": [ { "name": "a real example, case or reader project reused across chapters", "use": "how the chapters use it" } ], "conventions": ["2-4 terminology, notation or unit conventions"] },
   "prerequisites": ["what the learner should already know; empty array if nothing"],
   "objectives": ["5-7 measurable objectives, each starting with a verb"],
   "hours": 30,
@@ -657,10 +711,12 @@ Reply with only a JSON object: { "svg": "<svg ...>...</svg>" }`;
 Full syllabus, for context only:
 ${outline(c)}
 
+${priorText(c, n)}
 Write the textbook and workbook content of ${chapterBrief(c, n)}
 
 Reply with only a JSON object of this shape:
 {
+  "hook": "an opening paragraph of 80-150 words: a true, vivid puzzle, event or surprising fact that makes the reader want this chapter",
   "overview": "one paragraph introducing the chapter and linking it to earlier chapters",
   "objectives": ["3-5 objectives for this chapter, each starting with a verb"],
   "sections": [
@@ -696,7 +752,16 @@ Style: a full-color modern science-textbook illustration. Use color to carry mea
 
 SVG rules: the root is <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480">; its first child is <rect width="800" height="480" fill="#ffffff"/>. A title at top left, font-size 18. All text uses font-family="Helvetica, Arial, sans-serif", font-size between 14 and 18, in a dark palette color or #222222. Keep every label inside the viewBox and clear of shapes and of other labels; use thin leader lines from labels to the parts they name. No <script>, <image>, <foreignObject>, <style>, filters, external links or event attributes. Under 10000 characters per SVG.
 
-Reply with only a JSON array: [ { "section": "${n}.1", "caption": "one or two sentences that say what to notice", "svg": "<svg ...>...</svg>" } ]`;
+Also design 2-3 INTERACTIVE pieces for this chapter, chosen for what teaches best. Each is one of these built-in types; you supply only data:
+- "explorer": sliders drive formulas. "inputs": [ { "id": "v", "label": "...", "unit": "...", "min": 0, "max": 30, "step": 0.5, "value": 10 } ], optional "constants": { "rho": 1.225 }, "outputs": [ { "label": "...", "unit": "...", "expr": "0.5*rho*v^2", "digits": 1 } ], "takeaway". Expressions use only numbers, input ids, constants, pi, e, + - * / ^, parentheses and sqrt abs sin cos tan log log10 exp min max pow round floor ceil. Physically correct formulas and realistic ranges only.
+- "sort": "buckets": ["...", "..."], "items": [ { "text": "...", "bucket": 0, "why": "..." } ] (6-10 items).
+- "order": "steps": ["in the correct order", ...] (4-7), "explain".
+- "timeline": "unit": "...", "reverse": true if larger numbers are earlier, "events": [ { "t": 150, "label": "...", "detail": "..." } ] (5-9, real dates).
+- "scale": "unit": "...", "log": true|false, "items": [ { "label": "...", "value": 2.0, "note": "..." } ] (4-8 real values).
+- "case": a think-then-reveal showcase. "intro" sets a real scenario; "steps": [ { "q": "question to think about", "a": "answer and reasoning" } ] (2-4).
+Every interactive has "type", "section" (e.g. "${n}.1"), "title" and "intro" (what to try or notice). Every fact and number in them must be accurate.
+
+Reply with only a JSON object: { "figures": [ { "section": "${n}.1", "caption": "one or two sentences that say what to notice", "svg": "<svg ...>...</svg>" } ], "interactives": [ { "type": "...", "section": "${n}.1", "title": "...", "intro": "..." } ] }`;
   },
   assess(c, n) {
     return `${preamble(c)}
@@ -799,20 +864,20 @@ Reply with only a JSON object: { "segments": [ { "sec": "intro|${n}.1|...|outro"
 CHAPTER
 ${chapterText(chap, { forAudio: true }).slice(0, 100000)}`;
   },
-  alt(c, chap, s, personaId, misses) {
-    return `${preamble(c, personaId)}
+  alt(c, chap, s, modeId, misses) {
+    const m = modeOf(modeId);
+    return `${preamble(c, "TUTORING MODE: " + m.how)}
 
-You are tutoring one learner privately. Explain section ${s.n} "${s.title}" again, in your own voice and approach, for this learner.
-Learner profile: ${profileText()}
-${misses.length ? "Questions this learner got wrong in this section (address each misunderstanding directly):\n" + misses.map((m) => `- ${m}`).join("\n") : "The learner asked for a fresh explanation."}
+You are tutoring one learner privately. Explain section ${s.n} "${s.title}" again, in the tutoring mode above, for this learner.
+${misses.length ? "Questions this learner got wrong in this section (address each misunderstanding directly):\n" + misses.map((x) => `- ${x}`).join("\n") : "The learner asked for a fresh explanation."}
 
-Use a different angle and different examples from the textbook text below, matched to how this learner learns best. Keep every fact consistent with the textbook. 4-8 short paragraphs separated by blank lines. Plain text; **bold** allowed. No citation markers.
+Keep every fact consistent with the textbook section below, and do not simply repeat it. 4-8 short paragraphs separated by blank lines. Plain text; **bold** allowed. No citation markers.
 
 TEXTBOOK SECTION
 ${sectionText(chap, s)}`;
   },
   coach(c, items) {
-    return `${preamble(c, S.profile.persona || c.persona)}
+    return `${preamble(c, S.profile.mode ? "TUTORING MODE: " + modeOf(S.profile.mode).how : "")}
 
 Write a personal review sheet for one learner in this course, built around the questions they got wrong.
 Learner profile: ${profileText()}
@@ -828,7 +893,7 @@ Reply with only a JSON object:
   "plan": ["3-5 concrete next steps for the next study session"] }`;
   },
   feynman(c, chap, s, text) {
-    return `${preamble(c, "professor")}
+    return `${preamble(c)}
 
 A learner just studied section ${s.n} "${s.title}" and explained it back in their own words, as if teaching a friend. Judge the explanation against the textbook section below. Be specific and fair: credit correct ideas in the learner's own words, and do not require the textbook's wording.
 
@@ -885,10 +950,10 @@ function normLesson(raw, c, n) {
     };
   });
   if (!sections.some((s) => s.reading.length)) throw { code: "bad_shape" };
-  return { overview: str(raw.overview), objectives: arr(raw.objectives).map(str).filter(Boolean), sections };
+  return { hook: str(raw.hook), overview: str(raw.overview), objectives: arr(raw.objectives).map(str).filter(Boolean), sections };
 }
 function normFigures(raw) {
-  const list = arr(raw).map((f) => ({ section: str(f.section), caption: str(f.caption), svg: str(f.svg) })).filter((f) => /^<svg[\s>]/i.test(f.svg));
+  const list = arr(Array.isArray(raw) ? raw : raw && raw.figures).map((f) => ({ section: str(f.section), caption: str(f.caption), svg: str(f.svg) })).filter((f) => /^<svg[\s>]/i.test(f.svg));
   if (!list.length) throw { code: "bad_shape" };
   return list;
 }
@@ -1184,8 +1249,8 @@ function viewProfile() {
     <p class="lede">Dr. Professor uses this to tailor your tutoring: re-explanations, review sheets and office hours. The textbooks stay the same for everyone; the tutoring layer is yours.</p></div>
   <form class="sheet stack-sm" id="profile-form" autocomplete="off">
     <div class="field"><label for="pf-name">Your name <span class="muted" style="font-weight:400">(printed on certificates)</span></label><input class="input" id="pf-name" data-inp="pf-name" maxlength="80" value="${esc(pr.name || "")}"></div>
-    <fieldset class="field" style="border:0;padding:0;margin:0"><legend class="legend" style="margin-bottom:6px">Favorite tutor</legend>
-      <div class="authors">${PERSONAS.map((p) => `<label class="author"><input type="radio" name="pf-persona" id="pf-p-${p.id}" data-inp="pf-persona" value="${p.id}" ${pr.persona === p.id ? "checked" : ""}><span><b>${esc(p.name)}</b><span class="muted small">${esc(p.blurb)}</span></span></label>`).join("")}</div></fieldset>
+    <fieldset class="field" style="border:0;padding:0;margin:0"><legend class="legend" style="margin-bottom:6px">When something doesn't click, explain it</legend>
+      <div class="authors">${MODES.map((m) => `<label class="author"><input type="radio" name="pf-mode" id="pf-m-${m.id}" data-inp="pf-mode" value="${m.id}" ${pr.mode === m.id ? "checked" : ""}><span><b>${esc(m.name)}</b><span class="muted small">${esc(m.how.split(":")[0])}</span></span></label>`).join("")}</div></fieldset>
     <fieldset class="field" style="border:0;padding:0;margin:0"><legend class="legend" style="margin-bottom:6px">How you learn best</legend>
       <div class="checks">${LEARN_PREFS.map((x, i) => `<label class="check"><input type="checkbox" id="pf-pref-${i}" data-inp="pf-pref" value="${esc(x)}" ${arr(pr.prefs).includes(x) ? "checked" : ""}> ${esc(x)}</label>`).join("")}</div></fieldset>
     <div class="field"><label for="pf-goal">Your goal</label><textarea class="input" id="pf-goal" data-inp="pf-goal" maxlength="600" placeholder="For example: pass a certification, build a game, teach my kids, satisfy curiosity">${esc(pr.goal || "")}</textarea></div>
@@ -1240,6 +1305,8 @@ function viewChapter(c, n) {
   let figNo = 0;
   const figHTML = (f) => { figNo++; return `<figure class="fig"><div class="plate"><img class="fig-img" alt="${esc(f.caption)}" src="${svgSrc(f.svg)}"></div><figcaption><b>Figure ${n}.${figNo}</b> ${fmt(f.caption)}</figcaption></figure>`; };
   const sectionIds = new Set(L.sections.map((s) => s.n));
+  const IX = S.ix[key] = normInteractives(chap.interactives);
+  const wxFor = (sec) => IX.map((it, k) => ((sec ? it.section === sec : !sectionIds.has(it.section)) ? wxHTML(`wx-${n}-${k}`, it) : "")).join("");
   const loose = arr(chap.figures).filter((f) => !sectionIds.has(f.section));
   const rail = `<nav class="rail" aria-label="Chapter contents"><div class="eyebrow">Contents</div><ol>
       <li><a href="#top">Overview</a></li>
@@ -1252,11 +1319,13 @@ function viewChapter(c, n) {
   const missing = !A || !chap.figures || !reviewed;
   return `<div class="ch-grid">${rail}<div class="ch-main">
     <section class="unit" id="top">${head}
+      ${L.hook ? `<p class="hook">${fmt(L.hook)}</p>` : ""}
       <div class="prose">${paras(L.overview)}</div>
       ${L.objectives.length ? `<div class="cbox k-subj"><div class="cbox-h"><span>After this chapter you can</span></div><div class="cbox-b"><ul class="plain">${L.objectives.map((o) => `<li>${fmt(o)}</li>`).join("")}</ul></div></div>` : ""}
       ${chap.review ? reviewBox(chap.review) : ""}
       ${provLine(c, chap)}
       ${loose.map(figHTML).join("")}
+      ${wxFor(null)}
       ${missing ? `<div class="sheet stack-sm" id="gen-box">${genBox(c, n, chap)}</div>` : ""}
     </section>
     <section class="unit" id="listen"><div class="sec-head"><h2 class="h2">Audio edition</h2><span class="eyebrow">Listen</span></div><div id="player">${playerHTML(c, n, chap)}</div></section>
@@ -1268,6 +1337,7 @@ function viewChapter(c, n) {
       ${figuresFor(chap, s.n).map(figHTML).join("")}
       ${refsBlock(s)}
       ${altBlock(c, n, s)}
+      ${wxFor(s.n)}
       ${s.misconception && s.misconception.myth ? `<div class="cbox k-myth"><div class="cbox-h"><span>Common misconception</span></div><div class="cbox-b"><div class="myth"><b>Myth</b><span>${fmt(s.misconception.myth)}</span><b class="fact">Fact</b><span>${fmt(s.misconception.fact)}</span></div></div></div>` : ""}
       ${s.keyTerms.length ? `<div class="cbox k-terms"><div class="cbox-h"><span>Key terms</span><span>${s.keyTerms.length}</span></div><div class="cbox-b"><dl class="terms">${s.keyTerms.map((t) => `<dt>${esc(t.term)}</dt><dd>${fmt(t.def)}</dd>`).join("")}</dl></div></div>` : ""}
       ${s.example.steps.length ? `<div class="cbox k-example"><div class="cbox-h"><span>Worked example</span></div><div class="cbox-b"><div class="h3">${fmt(s.example.title.replace(/^Worked example:\s*/i, ""))}</div><ol class="steps">${s.example.steps.map((x) => `<li>${fmt(x)}</li>`).join("")}</ol>${s.example.takeaway ? `<p class="small"><strong>Takeaway.</strong> ${fmt(s.example.takeaway)}</p>` : ""}</div></div>` : ""}
@@ -1345,12 +1415,13 @@ function refsBlock(s) {
 function altBlock(c, n, s) {
   const p = S.prog[c.id], a = p.alt && p.alt[s.n], key = `${c.id}:${s.n}`;
   const busy = S.busy["alt:" + key];
-  const cur = S.altPick[key] || (a && a.persona) || S.profile.persona || (c.persona === "professor" ? "socrates" : "professor");
+  const cur = S.altPick[key] || (a && a.mode) || S.profile.mode || "simpler";
+  const label = a ? (a.mode ? modeOf(a.mode).name : persona(a.persona).name) : "";
   return `<div class="alt" id="alt-${esc(s.n)}">
-    <div class="row alt-bar"><label class="small" for="altp-${esc(s.n)}">Explain ${esc(s.n)} differently, as</label>
-      <select class="input sel" id="altp-${esc(s.n)}" data-inp="alt-pick" data-sec="${esc(s.n)}">${PERSONAS.map((P) => `<option value="${P.id}" ${P.id === cur ? "selected" : ""}>${esc(P.name)}</option>`).join("")}</select>
-      ${busy ? `<button class="btn ghost sm" data-act="stop" data-k="alt:${esc(key)}">Stop</button>` : `<button class="btn ghost sm" data-act="alt-explain" data-sec="${esc(s.n)}">${a ? "Explain it again" : "Explain it"}</button>`}</div>
-    ${a ? `<div class="cbox k-subj"><div class="cbox-h"><span>Your tutor: ${esc(persona(a.persona).name)} on ${esc(s.n)}</span><span>Private to you</span></div><div class="cbox-b"><div class="prose alt-text">${a.text ? paras(a.text) : "<p class='muted'>Thinking…</p>"}</div>${a.err ? `<p class="status err">${esc(a.err)}</p>` : ""}</div></div>` : ""}
+    <div class="row alt-bar"><label class="small" for="altp-${esc(s.n)}">Explain ${esc(s.n)} again:</label>
+      <select class="input sel" id="altp-${esc(s.n)}" data-inp="alt-pick" data-sec="${esc(s.n)}">${MODES.map((m) => `<option value="${m.id}" ${m.id === cur ? "selected" : ""}>${esc(m.name)}</option>`).join("")}</select>
+      ${busy ? `<button class="btn ghost sm" data-act="stop" data-k="alt:${esc(key)}">Stop</button>` : `<button class="btn ghost sm" data-act="alt-explain" data-sec="${esc(s.n)}">${a ? "Explain again" : "Explain"}</button>`}</div>
+    ${a ? `<div class="cbox k-subj"><div class="cbox-h"><span>Dr. Professor · ${esc(label)}</span><span>Private to you</span></div><div class="cbox-b"><div class="prose alt-text">${a.text ? paras(a.text) : "<p class='muted'>Thinking…</p>"}</div>${a.err ? `<p class="status err">${esc(a.err)}</p>` : ""}</div></div>` : ""}
   </div>`;
 }
 
@@ -1371,7 +1442,7 @@ function pager(c, n) {
 
 function genBox(c, n, chap) {
   const key = `${c.id}:${n}`, g = S.gen[key];
-  const parts = [["lesson", "Textbook text, worked examples, misconceptions and practice"], ["figures", "Color figures"], ["assess", "Lecture slides, quiz, challenges and study list"], ["review", "Fact-check: claims, figure labels and citations; every answer key re-solved blind"]];
+  const parts = [["lesson", "Textbook text, worked examples, misconceptions and practice"], ["figures", "Color figures and interactive pieces"], ["assess", "Lecture slides, quiz, challenges and study list"], ["review", "Fact-check: claims, figure labels and citations; every answer key re-solved blind"]];
   const has = (k) => chap && (k === "review" ? chap.review && chap.review.full : chap[k]);
   const running = g && g.running;
   const st = (k) => {
@@ -1567,6 +1638,148 @@ function viewTranscript() {
     </tbody></table></div>` : `<div class="empty">Nothing on your record yet. Open a course from the catalog and mark a section as read to start.</div>`}</div>`;
 }
 
+/* ---------- interactive lab: fixed components; chapters supply only data ---------- */
+const MATHF = { sqrt: Math.sqrt, abs: Math.abs, sin: Math.sin, cos: Math.cos, tan: Math.tan, log: Math.log, log10: Math.log10, exp: Math.exp, min: Math.min, max: Math.max, pow: Math.pow, round: Math.round, floor: Math.floor, ceil: Math.ceil };
+/* A tiny arithmetic parser: numbers, names, + - * / ^, parentheses and the functions above. Never evaluates code. */
+function compileExpr(src, names) {
+  const s = String(src || "");
+  const toks = s.match(/\d+\.?\d*(?:[eE][-+]?\d+)?|[A-Za-z_]\w*|\*\*|[-+*/^(),]/g) || [];
+  if (toks.join("") !== s.replace(/\s+/g, "")) throw new Error("unsupported characters");
+  let i = 0;
+  const peek = () => toks[i], next = () => toks[i++];
+  const expr = () => { let a = term(); while (peek() === "+" || peek() === "-") { const op = next(), b = term(), l = a; a = op === "+" ? (v) => l(v) + b(v) : (v) => l(v) - b(v); } return a; };
+  const term = () => { let a = unary(); while (peek() === "*" || peek() === "/") { const op = next(), b = unary(), l = a; a = op === "*" ? (v) => l(v) * b(v) : (v) => l(v) / b(v); } return a; };
+  const unary = () => { if (peek() === "-") { next(); const a = unary(); return (v) => -a(v); } if (peek() === "+") { next(); return unary(); } return power(); };
+  const power = () => { const a = atom(); if (peek() === "^" || peek() === "**") { next(); const b = unary(); return (v) => Math.pow(a(v), b(v)); } return a; };
+  const atom = () => {
+    const t = next();
+    if (t === undefined) throw new Error("unexpected end");
+    if (t === "(") { const a = expr(); if (next() !== ")") throw new Error("missing )"); return a; }
+    if (/^\d/.test(t)) { const x = parseFloat(t); return () => x; }
+    if (/^[A-Za-z_]/.test(t)) {
+      if (peek() === "(") {
+        next(); const fn = MATHF[t]; if (!fn) throw new Error("unknown function " + t);
+        const args = []; if (peek() !== ")") { args.push(expr()); while (peek() === ",") { next(); args.push(expr()); } }
+        if (next() !== ")") throw new Error("missing )");
+        return (v) => fn(...args.map((g) => g(v)));
+      }
+      if (t === "pi") return () => Math.PI;
+      if (t === "e") return () => Math.E;
+      if (!names.has(t)) throw new Error("unknown name " + t);
+      return (v) => v[t];
+    }
+    throw new Error("unexpected " + t);
+  };
+  const f = expr();
+  if (i !== toks.length) throw new Error("unexpected " + toks[i]);
+  return f;
+}
+const num = (x, d) => (Number.isFinite(+x) ? +x : d);
+function normInteractives(list) {
+  return arr(list).map((it) => {
+    const base = { type: str(it.type), section: str(it.section), title: str(it.title), intro: str(it.intro) };
+    if (!base.title) return null;
+    if (base.type === "explorer") {
+      const inputs = arr(it.inputs).map((x) => ({ id: str(x.id), label: str(x.label), unit: str(x.unit), min: num(x.min, 0), max: num(x.max, 1), step: num(x.step, 0.1), value: num(x.value, 0) })).filter((x) => /^[A-Za-z_]\w*$/.test(x.id) && x.max > x.min);
+      const constants = {};
+      Object.entries(it.constants || {}).forEach(([k, v]) => { if (/^[A-Za-z_]\w*$/.test(k) && Number.isFinite(+v)) constants[k] = +v; });
+      const names = new Set([...inputs.map((x) => x.id), ...Object.keys(constants)]);
+      const outputs = arr(it.outputs).map((o) => { try { compileExpr(o.expr, names); return { label: str(o.label), unit: str(o.unit), expr: str(o.expr), digits: Math.max(0, Math.min(6, num(o.digits, 2))) }; } catch { return null; } }).filter(Boolean);
+      return inputs.length && outputs.length ? { ...base, inputs, constants, outputs, takeaway: str(it.takeaway) } : null;
+    }
+    if (base.type === "sort") {
+      const buckets = arr(it.buckets).map(str).filter(Boolean);
+      const items = arr(it.items).map((x) => ({ text: str(x.text), bucket: +x.bucket, why: str(x.why) })).filter((x) => x.text && Number.isInteger(x.bucket) && x.bucket >= 0 && x.bucket < buckets.length);
+      return buckets.length >= 2 && items.length >= 2 ? { ...base, buckets, items } : null;
+    }
+    if (base.type === "order") { const steps = arr(it.steps).map(str).filter(Boolean); return steps.length >= 3 ? { ...base, steps, explain: str(it.explain) } : null; }
+    if (base.type === "timeline") {
+      const events = arr(it.events).map((x) => ({ t: +x.t, label: str(x.label), detail: str(x.detail) })).filter((x) => Number.isFinite(x.t) && x.label);
+      return events.length >= 2 ? { ...base, unit: str(it.unit), reverse: !!it.reverse, events } : null;
+    }
+    if (base.type === "scale") {
+      const items = arr(it.items).map((x) => ({ label: str(x.label), value: +x.value, note: str(x.note) })).filter((x) => x.label && x.value > 0);
+      return items.length >= 2 ? { ...base, unit: str(it.unit), log: !!it.log, items } : null;
+    }
+    if (base.type === "case") { const steps = arr(it.steps).map((x) => ({ q: str(x.q), a: str(x.a) })).filter((x) => x.q && x.a); return steps.length ? { ...base, steps } : null; }
+    return null;
+  }).filter(Boolean);
+}
+const WX_LABEL = { explorer: "Explore", sort: "Sort it", order: "Put in order", timeline: "Timeline", scale: "To scale", case: "Case study" };
+const fmtNum = (x, d) => (Number.isFinite(x) ? x.toLocaleString(undefined, { maximumFractionDigits: d, minimumFractionDigits: 0 }) : "—");
+const hashShuffle = (list, seed) => list.map((x, i) => ({ x, i, k: hashStr(seed + ":" + i) })).sort((a, b) => a.k - b.k).map((o) => o);
+function wxState(id, init) { return (S.wx[id] = S.wx[id] || init()); }
+function wxHTML(id, it) {
+  return `<div class="cbox k-lab wx" id="${esc(id)}"><div class="cbox-h"><span>${esc(WX_LABEL[it.type] || "Try it")}</span><span>Interactive</span></div><div class="cbox-b">
+    <div class="h3">${esc(it.title)}</div>${it.intro ? `<p class="small muted">${fmt(it.intro)}</p>` : ""}<div class="wx-body">${wxBody(id, it)}</div></div></div>`;
+}
+function wxBody(id, it) {
+  if (it.type === "explorer") {
+    const st = wxState(id, () => Object.fromEntries(it.inputs.map((x) => [x.id, x.value])));
+    return `<div class="wx-inputs">${it.inputs.map((x) => `<label class="wx-slider"><span class="wx-l">${esc(x.label)}</span>
+        <input type="range" id="${esc(id)}-${esc(x.id)}" min="${x.min}" max="${x.max}" step="${x.step}" value="${st[x.id]}" data-inp="wx-in" data-wx="${esc(id)}" data-id="${esc(x.id)}">
+        <span class="wx-v num" id="${esc(id)}-${esc(x.id)}-v">${fmtNum(st[x.id], 4)} ${esc(x.unit)}</span></label>`).join("")}</div>
+      <div class="wx-outs" id="${esc(id)}-outs">${wxOutputs(id, it)}</div>${it.takeaway ? `<p class="small"><b>Notice:</b> ${fmt(it.takeaway)}</p>` : ""}`;
+  }
+  if (it.type === "sort") {
+    const st = wxState(id, () => ({}));
+    const done = Object.keys(st).length, right = it.items.filter((x, i) => st[i] === x.bucket).length;
+    return `<div class="wx-sort">${it.items.map((x, i) => {
+      const pick = st[i];
+      return `<div class="wx-item ${pick == null ? "" : pick === x.bucket ? "ok" : "bad"}"><div class="wx-item-t">${fmt(x.text)}</div>
+        <div class="chips">${it.buckets.map((b, j) => `<button type="button" class="chip ${pick === j ? "on" : ""}" data-act="wx-sort" data-wx="${esc(id)}" data-i="${i}" data-j="${j}" ${pick != null ? "disabled" : ""}>${esc(b)}</button>`).join("")}</div>
+        ${pick != null ? `<p class="small">${pick === x.bucket ? "<b>Right.</b> " : `<b>It belongs in ${esc(it.buckets[x.bucket])}.</b> `}${fmt(x.why)}</p>` : ""}</div>`;
+    }).join("")}</div>
+    <div class="row"><span class="small muted num">${right} of ${it.items.length} right${done < it.items.length ? `, ${it.items.length - done} to go` : ""}</span>${done ? `<button class="linkbtn" data-act="wx-reset" data-wx="${esc(id)}">Start over</button>` : ""}</div>`;
+  }
+  if (it.type === "order") {
+    const st = wxState(id, () => ({ picked: [] }));
+    const shuffled = hashShuffle(it.steps, id);
+    const complete = st.picked.length === it.steps.length;
+    const correct = complete && st.picked.every((k, pos) => k === pos);
+    return `<p class="small">Tap the steps in the order they happen.</p>
+      <ol class="wx-picked">${st.picked.map((k, pos) => `<li class="${complete ? (k === pos ? "ok" : "bad") : ""}">${fmt(it.steps[k])}</li>`).join("")}</ol>
+      ${complete ? "" : `<div class="choices">${shuffled.filter((o) => !st.picked.includes(o.i)).map((o) => `<button type="button" class="choice" data-act="wx-order" data-wx="${esc(id)}" data-k="${o.i}">${fmt(o.x)}</button>`).join("")}</div>`}
+      ${complete ? `<p class="verdict ${correct ? "ok" : "bad"}">${correct ? "All in the right order." : "Not quite. The correct order:"}</p>${correct ? "" : `<ol class="wx-picked">${it.steps.map((x) => `<li>${fmt(x)}</li>`).join("")}</ol>`}${it.explain ? `<p class="small">${fmt(it.explain)}</p>` : ""}` : ""}
+      ${st.picked.length ? `<div><button class="linkbtn" data-act="wx-reset" data-wx="${esc(id)}">Start over</button></div>` : ""}`;
+  }
+  if (it.type === "timeline") {
+    const st = wxState(id, () => ({ sel: 0 }));
+    const ev = [...it.events].sort((a, b) => (it.reverse ? b.t - a.t : a.t - b.t));
+    const ts = ev.map((x) => x.t), lo = Math.min(...ts), hi = Math.max(...ts), span = hi - lo || 1;
+    const pos = (t) => (it.reverse ? (hi - t) / span : (t - lo) / span) * 100;
+    const cur = ev[Math.min(st.sel, ev.length - 1)];
+    return `<div class="wx-tl" role="list">${ev.map((x, i) => `<button type="button" class="wx-dot ${i === st.sel ? "on" : ""}" style="left:${pos(x.t).toFixed(2)}%" data-act="wx-tl" data-wx="${esc(id)}" data-i="${i}" aria-label="${esc(x.label)}"></button>`).join("")}</div>
+      <div class="wx-tl-ends small muted"><span>${fmtNum(it.reverse ? hi : lo, 2)}</span><span>${esc(it.unit)}</span><span>${fmtNum(it.reverse ? lo : hi, 2)}</span></div>
+      <div class="chips">${ev.map((x, i) => `<button type="button" class="chip ${i === st.sel ? "on" : ""}" data-act="wx-tl" data-wx="${esc(id)}" data-i="${i}">${esc(x.label)}</button>`).join("")}</div>
+      <div class="wx-detail"><b>${esc(cur.label)}</b> <span class="muted num">${fmtNum(cur.t, 3)} ${esc(it.unit)}</span>${cur.detail ? `<p>${fmt(cur.detail)}</p>` : ""}</div>`;
+  }
+  if (it.type === "scale") {
+    const st = wxState(id, () => ({ log: it.log }));
+    const vals = it.items.map((x) => x.value), mx = Math.max(...vals), mn = Math.min(...vals);
+    const w = (v) => (st.log ? (mn === mx ? 100 : (4 + 96 * (Math.log10(v) - Math.log10(mn)) / (Math.log10(mx) - Math.log10(mn)))) : Math.max(0.6, (100 * v) / mx));
+    return `<div class="wx-bars">${it.items.map((x) => `<div class="wx-bar"><div class="wx-bar-l"><b>${esc(x.label)}</b> <span class="num muted">${fmtNum(x.value, 3)} ${esc(it.unit)}</span></div>
+        <div class="wx-track"><span style="width:${w(x.value).toFixed(2)}%"></span></div>${x.note ? `<div class="small muted">${fmt(x.note)}</div>` : ""}</div>`).join("")}</div>
+      <div class="row"><button class="btn ghost sm" data-act="wx-log" data-wx="${esc(id)}">${st.log ? "Show linear scale" : "Show log scale"}</button>
+        <span class="small muted">${st.log ? "Log scale: each step to the right is a multiple, not an addition." : `Linear scale: the largest is ${fmtNum(mx / mn, 0)} times the smallest.`}</span></div>`;
+  }
+  if (it.type === "case") {
+    const st = wxState(id, () => ({ shown: 0 }));
+    return `<div class="wx-case">${it.steps.map((x, i) => i > st.shown ? "" : `<div class="wx-step"><p class="q"><b>${i + 1}.</b> ${fmt(x.q)}</p>
+        ${i < st.shown ? `<div class="expl">${fmt(x.a)}</div>` : `<button class="btn ghost sm" data-act="wx-reveal" data-wx="${esc(id)}">Think first, then reveal</button>`}</div>`).join("")}</div>`;
+  }
+  return "";
+}
+function wxOutputs(id, it) {
+  const v = { ...it.constants, ...S.wx[id] }, names = new Set(Object.keys(v));
+  return it.outputs.map((o) => { let val; try { val = compileExpr(o.expr, names)(v); } catch { val = NaN; } return `<div class="wx-out"><span class="small muted">${esc(o.label)}</span><span class="wx-num num">${fmtNum(val, o.digits)}</span><span class="small muted">${esc(o.unit)}</span></div>`; }).join("");
+}
+function wxFind(id) {
+  const c = S.courses.get(S.courseId), IX = c && S.ix[`${c.id}:${S.chapterN}`];
+  return IX && IX[+String(id).split("-").pop()];
+}
+function wxPaint(id) { const it = wxFind(id), el = document.getElementById(id); if (it && el) el.querySelector(".wx-body").innerHTML = wxBody(id, it); }
+
 /* ---------- app screens: desk, library, new book, review ---------- */
 const ICON = {
   desk: '<path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v10h5v-6h4v6h5V10"/>',
@@ -1641,7 +1854,7 @@ function viewLibrary() {
 }
 
 function viewNew() {
-  const f = S.form, P = persona(f.persona);
+  const f = S.form;
   return `<div class="stack col">
     <div class="stack-sm"><h1 class="h1">New book</h1><p class="muted">Dr. Professor drafts the syllabus, preface and cover in about a minute. Each chapter is written, cited and fact-checked when you open it.</p></div>
     <form class="tile stack" id="enroll" autocomplete="off">
@@ -1651,9 +1864,7 @@ function viewNew() {
       <div class="field"><span class="legend">Your level</span>
         <div class="chips" id="lv-chips">${LEVELS.map((l) => `<button type="button" class="chip ${f.level === l.id ? "on" : ""}" aria-pressed="${f.level === l.id}" data-act="pick-level" data-v="${l.id}">${l.name}</button>`).join("")}</div>
         <p class="small muted" id="lv-desc">${esc(lvl(f.level).short)}</p></div>
-      <div class="field"><span class="legend">Author</span>
-        <div class="author-card" id="author-card"><b>${esc(P.name)}${P.id === "professor" ? " (recommended)" : ""}</b><span class="small muted">${esc(P.blurb)}</span><i>“${esc(P.sample)}”</i></div>
-        <details class="more"><summary>Choose a different author</summary><div class="more-b"><div class="authors">${PERSONAS.map((p) => `<label class="author"><input type="radio" name="persona" id="f-p-${p.id}" data-inp="persona" value="${p.id}" ${f.persona === p.id ? "checked" : ""}><span><b>${esc(p.name)}</b><span class="muted small">${esc(p.blurb)}</span><i>“${esc(p.sample)}”</i></span></label>`).join("")}</div></div></details></div>
+      <p class="small muted">Written by Dr. Professor: an expert teacher in whatever you choose, with a plan that keeps every chapter connected. Each chapter is cited and fact-checked.</p>
       <details class="more"><summary>More options</summary><div class="more-b">
         <div class="field"><label for="f-focus">What do you want out of it?</label><textarea class="input" id="f-focus" data-inp="focus" maxlength="600" placeholder="For example: identify birds by ear in the eastern US; design levels for a 2D platformer">${esc(f.focus)}</textarea></div>
         <div class="field"><span class="legend">Length</span><div class="radio-row">${Object.entries(LENGTHS).map(([k, v]) => `<label><input type="radio" name="length" id="f-len-${k}" data-inp="length" value="${k}" ${f.length === k ? "checked" : ""}> ${k[0].toUpperCase() + k.slice(1)} (${v} chapters)</label>`).join("")}</div></div>
@@ -1804,7 +2015,7 @@ async function draftSyllabus() {
     const dept = str(raw.dept).toUpperCase().replace(/[^A-Z]/g, "").slice(0, 4) || "GEN";
     const c = {
       id: `${slug(f.topic)}-${L.id}-${rand(4)}`, v: 1, topic: f.topic.trim(), level: L.id, focus: f.focus.trim(), length: f.length,
-      persona: persona(f.persona).id, engine: f.engine === "complex" ? "complex" : "default",
+      persona: "professor", bible: raw.bible && typeof raw.bible === "object" ? { teacher: str(raw.bible.teacher), promise: str(raw.bible.promise), threads: arr(raw.bible.threads).map(str).filter(Boolean), runningExamples: arr(raw.bible.runningExamples).map((x) => ({ name: str(x.name), use: str(x.use) })).filter((x) => x.name), conventions: arr(raw.bible.conventions).map(str).filter(Boolean) } : null, engine: f.engine === "complex" ? "complex" : "default",
       code: `${dept} ${L.num}`, title: str(raw.title) || f.topic, department: str(raw.department), description: str(raw.description), preface: str(raw.preface),
       prerequisites: arr(raw.prerequisites).map(str).filter(Boolean), objectives: arr(raw.objectives).map(str).filter(Boolean),
       hours: Number(raw.hours) || null, chapters, written: {}, color: SUBJ[hashStr(f.topic.trim().toLowerCase()) % SUBJ.length],
@@ -1812,7 +2023,7 @@ async function draftSyllabus() {
     };
     await Store.set(coursePath(c.id), c);
     S.courses.set(c.id, c);
-    S.form = { ...S.form, topic: "", focus: "" };
+    S.form = { ...S.form, topic: "", focus: "", persona: "professor" };
     S.gen.syllabusMsg = "";
     S.busy.syllabus = false;
     go("course", c.id);
@@ -1855,23 +2066,23 @@ function missesFor(c, p, sec) {
 async function altExplain(c, n, sec) {
   const key = `${c.id}:${sec}`, p = S.prog[c.id], chap = S.chapters[`${c.id}:${n}`];
   const s = chap.lesson.sections.find((x) => x.n === sec);
-  const pid = S.altPick[key] || S.profile.persona || (c.persona === "professor" ? "socrates" : "professor");
+  const pid = S.altPick[key] || S.profile.mode || "simpler";
   const sample = await caps.sample;
   p.alt = p.alt || {};
   const box = () => document.getElementById("alt-" + sec);
   const paint = () => { const el = box(); if (el) el.outerHTML = altBlock(c, n, s); };
-  if (!sample) { p.alt[sec] = { persona: pid, text: "", err: errCopy({ code: "unavailable_here" }) }; paint(); return; }
+  if (!sample) { p.alt[sec] = { mode: pid, text: "", err: errCopy({ code: "unavailable_here" }) }; paint(); return; }
   const ctl = new AbortController(); ctls["alt:" + key] = ctl;
   S.busy["alt:" + key] = true;
   const prev = p.alt[sec];
-  p.alt[sec] = { persona: pid, text: "", at: Date.now() };
+  p.alt[sec] = { mode: pid, text: "", at: Date.now() };
   paint();
   try {
     const res = await sample(PROMPTS.alt(c, chap, s, pid, missesFor(c, p, sec)), {
       signal: ctl.signal, cache: false, modelTier: c.engine || "default",
       onText: ({ text }) => { p.alt[sec].text = text; const el = box() && box().querySelector(".alt-text"); if (el) el.innerHTML = paras(text); },
     });
-    p.alt[sec] = { persona: pid, text: res.text, at: Date.now(), tier: res.modelTierApplied };
+    p.alt[sec] = { mode: pid, text: res.text, at: Date.now(), tier: res.modelTierApplied };
     saveProg(c.id, true);
   } catch (e) {
     if (e && e.text) p.alt[sec].text = e.text;
@@ -2067,6 +2278,7 @@ async function writeChapter(c, n) {
   const path = chapterPath(c.id, n);
   const existing = (await Store.get(path)) || S.chapters[key] || {};
   S.chapters[key] = existing;
+  await loadChapters(c).catch(() => {});
   const todo = ["lesson", "figures", "assess"].filter((k) => !existing[k]);
   const needReview = !(existing.review && existing.review.full);
   if (!todo.length && !needReview) { render(); return; }
@@ -2083,7 +2295,8 @@ async function writeChapter(c, n) {
       const res = await askData(PROMPTS[k](c, n), { signal: ctl.signal, onLen: onLen(k), tier: k === "figures" ? "default" : (c.engine || "default") });
       const raw = res.data;
       const val = k === "lesson" ? normLesson(raw, c, n) : k === "figures" ? normFigures(raw) : normAssess(raw);
-      const doc = { ...S.chapters[key], [k]: val, n, updatedAt: Date.now(), prov: { ...(S.chapters[key].prov || {}), [k]: stamp(res.tier, { persona: c.persona || "scholar" }) } };
+      const extra = k === "figures" ? { interactives: normInteractives(raw && raw.interactives) } : {};
+      const doc = { ...S.chapters[key], [k]: val, ...extra, n, updatedAt: Date.now(), prov: { ...(S.chapters[key].prov || {}), [k]: stamp(res.tier, { persona: c.persona || "scholar" }) } };
       S.chapters[key] = doc;
       g.parts[k] = { state: "done" };
       await Store.set(path, doc);
@@ -2389,6 +2602,12 @@ document.addEventListener("click", (e) => {
     case "rv-end": S.rv = null; render(); break;
     case "pre-pick": { const p = S.prog[c.id]; p.pre = { ...(p.pre || {}), [a.dataset.sec]: +a.dataset.j }; saveProg(c.id); const sx = S.chapters[`${c.id}:${S.chapterN}`].lesson.sections.find((x) => x.n === a.dataset.sec); document.getElementById("pre-" + a.dataset.sec).outerHTML = pretestBlock(c, sx); break; }
     case "fy-check": feynCheck(c, S.chapterN, a.dataset.sec); break;
+    case "wx-sort": { const st = S.wx[a.dataset.wx] = S.wx[a.dataset.wx] || {}; st[+a.dataset.i] = +a.dataset.j; wxPaint(a.dataset.wx); break; }
+    case "wx-order": S.wx[a.dataset.wx].picked.push(+a.dataset.k); wxPaint(a.dataset.wx); break;
+    case "wx-tl": S.wx[a.dataset.wx].sel = +a.dataset.i; wxPaint(a.dataset.wx); break;
+    case "wx-log": S.wx[a.dataset.wx].log = !S.wx[a.dataset.wx].log; wxPaint(a.dataset.wx); break;
+    case "wx-reveal": S.wx[a.dataset.wx].shown++; wxPaint(a.dataset.wx); break;
+    case "wx-reset": delete S.wx[a.dataset.wx]; wxPaint(a.dataset.wx); break;
     case "go-transcript": go("transcript"); break;
     case "open-course": go("course", a.dataset.id); break;
     case "open-chapter": go("chapter", S.courseId, +a.dataset.n, a.dataset.anchor || null); break;
@@ -2483,6 +2702,15 @@ document.addEventListener("input", (e) => {
     else S.profile[f] = t.value;
     const st = $("#pf-status"); if (st) st.textContent = "Saving…";
     saveProfile(); return;
+  }
+  if (k === "wx-in") {
+    const id = t.dataset.wx, it = wxFind(id), st = S.wx[id];
+    if (!it || !st) return;
+    st[t.dataset.id] = +t.value;
+    const inp = it.inputs.find((x) => x.id === t.dataset.id), vEl = document.getElementById(t.id + "-v");
+    if (vEl && inp) vEl.textContent = `${fmtNum(+t.value, 4)} ${inp.unit}`;
+    const out = document.getElementById(id + "-outs"); if (out) out.innerHTML = wxOutputs(id, it);
+    return;
   }
   if (k === "fy" && p) { p.feynman = p.feynman || {}; const r = p.feynman[t.dataset.sec] = p.feynman[t.dataset.sec] || {}; r.text = t.value; saveProg(c.id); return; }
   if (k === "alt-pick") { S.altPick[`${c.id}:${t.dataset.sec}`] = t.value; return; }
