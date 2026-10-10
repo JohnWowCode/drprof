@@ -220,6 +220,40 @@
       "note": "Syllabus, preface and Chapter 1 hand-written in Claude Code by Claude (configured model claude-opus-5-5), then fact-checked and citation-verified by independent Claude agents with web search, October 2026.",
       "requester": "John, for the Dr. Professor prototype",
       "v": "dp-0.3"
+    },
+    "bible": {
+      "teacher": "Dr. Professor teaches this book as an ornithologist would: from museum specimens, field observation, experiments and the fossil record.",
+      "promise": "By the last page you will look at any bird and see how it is built, how it flies, how it lives, and how we know.",
+      "threads": [
+        "Form follows function: every structure is explained by the job it does.",
+        "How we know: each big claim is tied to the evidence behind it (specimens, field counts, experiments, tracking, fossils).",
+        "Birds are living dinosaurs: evolution explains the body plan.",
+        "Go outside: every chapter ends with something to watch for on a real bird."
+      ],
+      "runningExamples": [
+        {
+          "name": "American Robin (Turdus migratorius)",
+          "use": "The everyday bird followed through the whole book: its skeleton and feathers, how it flies, what it sees and eats, its song, its nest and eggs, its migration."
+        },
+        {
+          "name": "Rock Pigeon (Columba livia)",
+          "use": "The anatomy and flight model: flight muscles, the keel, navigation experiments."
+        },
+        {
+          "name": "Ruby-throated Hummingbird and Bar-tailed Godwit",
+          "use": "The extremes: hovering and metabolism; record nonstop migration."
+        },
+        {
+          "name": "Archaeopteryx",
+          "use": "The fossil that anchors the dinosaur story."
+        }
+      ],
+      "conventions": [
+        "Official English bird names are capitalized (American Robin); a group is lowercase (thrushes).",
+        "Give the scientific name in italics at a species' first mention in a chapter.",
+        "Metric units; give a familiar comparison for any number a beginner cannot picture.",
+        "Refer back to earlier chapters by number when building on them (\"In Chapter 1 we saw...\")."
+      ]
     }
   },
   {
@@ -420,14 +454,46 @@
     "createdAt": 1791559940000,
     "createdBy": null,
     "color": "#553A5C",
-    "persona": "practitioner",
-    "preface": "I wrote this book for people who have played a lot of games, maybe built a prototype or two, and now want to work the way designers in studios work. It is a working manual more than a theory text. Each chapter hands you one set of tools (core loops, feedback, economies, difficulty curves, level layout, playtesting) and then asks you to use them on a real design.\n\nDo the exercises. You can read about a dominant strategy in five minutes; you learn to spot one by breaking your own card game on a Tuesday night. Paper, index cards and a spreadsheet are all you need for every challenge here, and paper prototypes will teach you faster than code because you can change a rule in ten seconds.\n\nExpect your first designs to be bad. Everyone's are. The skill this book is really about is noticing why a design is not working and changing it, which is why the chapter on playtesting matters more than any other.",
+    "persona": "professor",
+    "preface": "This book is for people who have played a lot of games, maybe built a prototype or two, and now want to work the way designers in studios work. Each chapter gives you one set of tools, shows it at work in games you probably know (*Tetris*, *Super Mario Bros.*, *Slay the Spire*), and then asks you to use it on a design of your own.\n\nThat design is a small card game you start in Chapter 1 and improve in every chapter after it. Paper, index cards and a spreadsheet are all you need. Paper is faster than code for learning design, because you can change a rule in ten seconds and play again.\n\nExpect your first versions to be bad; everyone's are. The real skill this book teaches is noticing why a design is not working and changing it, which is why playtesting runs through every chapter and gets one of its own.",
     "coverSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\"><g fill=\"none\" stroke=\"#FFFFFF\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"200\" cy=\"200\" r=\"130\" stroke-width=\"2.5\" stroke-dasharray=\"6 10\"/><path d=\"M200 70 l-12 -9 m12 9 l-12 9\" stroke-width=\"3\"/><path d=\"M312 265 l14 2 m-14 -2 l3 13\" stroke-width=\"3\"/><path d=\"M88 265 l-3 13 m3 -13 l-14 2\" stroke-width=\"3\"/><circle cx=\"200\" cy=\"70\" r=\"16\" fill=\"#FFFFFF\" fill-opacity=\"0.3\" stroke-width=\"2.5\"/><circle cx=\"313\" cy=\"265\" r=\"16\" fill=\"#FFFFFF\" fill-opacity=\"0.3\" stroke-width=\"2.5\"/><circle cx=\"87\" cy=\"265\" r=\"16\" fill=\"#FFFFFF\" fill-opacity=\"0.3\" stroke-width=\"2.5\"/><path d=\"M200 145 L255 175 L255 238 L200 268 L145 238 L145 175 Z\" fill=\"#FFFFFF\" fill-opacity=\"0.14\" stroke-width=\"3\"/><path d=\"M145 175 L200 205 L255 175 M200 205 L200 268\" stroke-width=\"2.5\"/><circle cx=\"200\" cy=\"175\" r=\"6\" fill=\"#FFFFFF\" stroke=\"none\"/><circle cx=\"172\" cy=\"215\" r=\"6\" fill=\"#FFFFFF\" stroke=\"none\"/><circle cx=\"172\" cy=\"245\" r=\"6\" fill=\"#FFFFFF\" stroke=\"none\"/><circle cx=\"228\" cy=\"215\" r=\"6\" fill=\"#FFFFFF\" stroke=\"none\"/><circle cx=\"228\" cy=\"245\" r=\"6\" fill=\"#FFFFFF\" stroke=\"none\"/></g></svg>",
     "engine": "default",
     "prov": {
       "note": "Syllabus and preface hand-written in Claude Code by Claude (configured model claude-opus-5-5), October 2026. Chapters are written by the app, with the Standard engine, when a reader opens them.",
       "requester": "John, for the Dr. Professor prototype",
       "v": "dp-0.3"
+    },
+    "bible": {
+      "teacher": "Dr. Professor teaches this book as a working game designer would: from shipped games, playtests, prototypes and spreadsheets.",
+      "promise": "By the last page you will be able to take a game apart, say why it works, and design, test and improve one of your own.",
+      "threads": [
+        "A game is a system of rules that produces player experience (mechanics to dynamics to aesthetics).",
+        "Prototype on paper and playtest early: evidence beats opinion.",
+        "Every concept is shown in real, well-known games, then applied to your own design."
+      ],
+      "runningExamples": [
+        {
+          "name": "Tetris",
+          "use": "A minimal system: core loop, feedback, difficulty curve."
+        },
+        {
+          "name": "Super Mario Bros. (1985), World 1-1",
+          "use": "Teaching through play and level design."
+        },
+        {
+          "name": "Slay the Spire",
+          "use": "Systems, economies, balance and dominant strategies."
+        },
+        {
+          "name": "Your pocket card game",
+          "use": "A small original card game the reader designs and improves chapter by chapter, starting in Chapter 1."
+        }
+      ],
+      "conventions": [
+        "Italicize game titles and give the release year at first mention.",
+        "Use MDA terms consistently: mechanics, dynamics, aesthetics.",
+        "Every chapter ends with a concrete step on the reader's pocket card game."
+      ]
     }
   },
   {
@@ -551,14 +617,42 @@
     "createdAt": 1791559880000,
     "createdBy": null,
     "color": "#283C5E",
-    "persona": "teacher",
-    "preface": "Hello. This book is about space, and it starts right where you are standing. You do not need to know anything yet. You only need to look up.\n\nWe will start with things you can see with your own eyes: the Sun, the Moon, the planets and the stars. Then we will go a little farther in each chapter, past the planets, out to other stars, and all the way to other galaxies. Each part is short. Read it, look at the pictures, and try the little questions at the end. If a question is hard, that is fine. Go back and read it again.\n\nSome numbers in space are very big. When they are, I will compare them to things you know, like a walk to the store or a grain of sand. Every fact in this book is true and checked, even when the words are simple.",
+    "persona": "professor",
+    "preface": "This book is about space, and it starts right where you are standing. You do not need to know anything yet. You only need to look up.\n\nWe begin with what your own eyes can see (the Sun, the Moon, the planets and the stars) and go a little farther out in each chapter, past the planets, out to other stars and on to other galaxies. To make the huge distances feel real, we will build one scale model and keep extending it: in it, the Sun is a ball the size of a bowling ball and Earth is a peppercorn across a football field.\n\nYou will also keep a sky diary, a few lines about what you see on clear nights. Every fact in this book is checked, and every big claim comes with the story of how someone found it out.",
     "coverSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\"><g fill=\"none\" stroke=\"#FFFFFF\" stroke-linecap=\"round\"><circle cx=\"200\" cy=\"205\" r=\"78\" fill=\"#FFFFFF\" fill-opacity=\"0.16\" stroke-width=\"3\"/><path d=\"M128 190 Q 200 176 272 190 M124 214 Q 200 202 276 216 M132 240 Q 200 230 268 242\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><ellipse cx=\"200\" cy=\"205\" rx=\"150\" ry=\"38\" transform=\"rotate(-16 200 205)\" stroke-width=\"3\"/><ellipse cx=\"200\" cy=\"205\" rx=\"128\" ry=\"29\" transform=\"rotate(-16 200 205)\" stroke-width=\"1.5\" stroke-opacity=\"0.7\"/><g fill=\"#FFFFFF\" stroke=\"none\"><circle cx=\"70\" cy=\"70\" r=\"3\"/><circle cx=\"330\" cy=\"60\" r=\"2.5\"/><circle cx=\"350\" cy=\"320\" r=\"3\"/><circle cx=\"60\" cy=\"330\" r=\"2\"/><circle cx=\"120\" cy=\"45\" r=\"1.8\"/><circle cx=\"300\" cy=\"350\" r=\"1.8\"/><circle cx=\"40\" cy=\"200\" r=\"2\"/><circle cx=\"365\" cy=\"170\" r=\"2\"/></g></g></svg>",
     "engine": "default",
     "prov": {
       "note": "Syllabus and preface hand-written in Claude Code by Claude (configured model claude-opus-5-5), October 2026. Chapters are written by the app, with the Standard engine, when a reader opens them.",
       "requester": "John, for the Dr. Professor prototype",
       "v": "dp-0.3"
+    },
+    "bible": {
+      "teacher": "Dr. Professor teaches this book as an astronomer who loves showing the sky to people seeing it for the first time.",
+      "promise": "By the last page you will know what you are looking at in the night sky, how far away it is, and how we found out.",
+      "threads": [
+        "Start with what your own eyes can see, then go farther out each chapter.",
+        "Make huge numbers feel real with one consistent scale model.",
+        "How we know: every big fact is tied to an observation someone made."
+      ],
+      "runningExamples": [
+        {
+          "name": "The pocket scale model",
+          "use": "One consistent model used all book: if the Sun were a ball about 20 cm (8 inches) across, Earth would be a peppercorn about 24 m (26 yards) away (Guy Ottewell's Thousand-Yard Model). Extend it chapter by chapter."
+        },
+        {
+          "name": "Your sky diary",
+          "use": "A simple observing log the reader keeps from Chapter 1: the Moon's shape, a bright planet, a star's color."
+        },
+        {
+          "name": "The Moon",
+          "use": "The nearest world, revisited as the book moves outward."
+        }
+      ],
+      "conventions": [
+        "Simple words; define every term the first time; never talk down.",
+        "Give big numbers with a comparison to something familiar.",
+        "Say what you can see with the naked eye, with binoculars, and only with telescopes."
+      ]
     }
   },
   {
@@ -764,14 +858,42 @@
     "createdAt": 1791559820000,
     "createdBy": null,
     "color": "#6B2A2A",
-    "persona": "brainiac",
-    "preface": "Every energy system is a chain of conversions, and every link in the chain loses something. This book traces those chains with numbers: from fuel, wind or sunlight, through engines, turbines and semiconductors, onto a grid that must match supply to demand second by second, and into the motors, lights and heat pumps where energy finally does useful work.\n\nThe tools are thermodynamics, circuit theory and a little economics. If you are comfortable with calculus and introductory physics, you have what you need; the first chapters rebuild the rest. Expect to compute: Carnot limits, line losses, capacity factors, levelized costs. Build the habit of order-of-magnitude reasoning, because most bad energy arguments fail at the first multiplication.\n\nThe last chapter puts the pieces together on the question that now drives the field: how to run an electric system with far less carbon. You will finish able to read a decarbonization study and say which of its assumptions matter.",
+    "persona": "professor",
+    "preface": "Every energy system is a chain of conversions, and every link in the chain loses something. This book traces those chains with numbers: from fuel, wind or sunlight, through engines, turbines and semiconductors, onto a grid that must match supply and demand second by second, and into the motors, lights and heat pumps where energy finally does useful work.\n\nThe tools are thermodynamics, circuit theory and a little economics. If you are comfortable with calculus and introductory physics, you have what you need. Expect to compute: Carnot limits, line losses, capacity factors, levelized costs. We will follow one kilowatt-hour from source to socket, and return again and again to a gas plant, a wind farm and a real day on a large grid.\n\nThe last chapter puts the pieces together on the question that now drives the field, how to run an electric system with far less carbon, so that you can read a decarbonization study and say which of its assumptions matter.",
     "coverSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\"><g fill=\"none\" stroke=\"#FFFFFF\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M195 168 L189 330 L211 330 L205 168 Z\" fill=\"#FFFFFF\" fill-opacity=\"0.2\" stroke-width=\"2.5\"/><circle cx=\"200\" cy=\"160\" r=\"10\" fill=\"#FFFFFF\" fill-opacity=\"0.4\" stroke-width=\"2.5\"/><path d=\"M200 150 C 196 110, 198 70, 204 40 C 210 75, 208 115, 204 150 Z\" fill=\"#FFFFFF\" fill-opacity=\"0.25\" stroke-width=\"2.5\"/><path d=\"M200 150 C 196 110, 198 70, 204 40 C 210 75, 208 115, 204 150 Z\" transform=\"rotate(120 200 160)\" fill=\"#FFFFFF\" fill-opacity=\"0.25\" stroke-width=\"2.5\"/><path d=\"M200 150 C 196 110, 198 70, 204 40 C 210 75, 208 115, 204 150 Z\" transform=\"rotate(240 200 160)\" fill=\"#FFFFFF\" fill-opacity=\"0.25\" stroke-width=\"2.5\"/><path d=\"M40 360 C 70 330, 100 330, 130 360 S 190 390, 220 360 S 280 330, 310 360 S 370 390, 370 375\" stroke-width=\"2.5\"/><path d=\"M40 330 L360 330\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/></g></svg>",
     "engine": "default",
     "prov": {
       "note": "Syllabus and preface hand-written in Claude Code by Claude (configured model claude-opus-5-5), October 2026. Chapters are written by the app, with the Standard engine, when a reader opens them.",
       "requester": "John, for the Dr. Professor prototype",
       "v": "dp-0.3"
+    },
+    "bible": {
+      "teacher": "Dr. Professor teaches this book as an energy systems engineer would: every argument is a calculation with units, and every efficiency has a limit from physics.",
+      "promise": "By the last page you will trace any kilowatt-hour from source to use, compute what is lost along the way, and judge a decarbonization plan by its numbers.",
+      "threads": [
+        "Every system is a chain of conversions, and every link loses something.",
+        "Order-of-magnitude reasoning first, precision second.",
+        "Physics sets the ceiling (Carnot, Betz, Shockley-Queisser); engineering and economics decide how close we get."
+      ],
+      "runningExamples": [
+        {
+          "name": "One kilowatt-hour",
+          "use": "Followed from primary energy through conversion, transmission and end use, with the losses at each step."
+        },
+        {
+          "name": "A combined-cycle gas plant and a wind farm",
+          "use": "Reference plants revisited for efficiency, capacity factor and cost."
+        },
+        {
+          "name": "A real grid day",
+          "use": "Hour-by-hour demand and supply on a large grid, used for dispatch and the duck curve."
+        }
+      ],
+      "conventions": [
+        "SI units with explicit unit conversions; kWh, MWh, TWh for energy, kW, MW, GW for power; never confuse energy and power.",
+        "Show each worked calculation with units at every step.",
+        "State data years for any statistic (\"in 2023\")."
+      ]
     }
   }
 ]

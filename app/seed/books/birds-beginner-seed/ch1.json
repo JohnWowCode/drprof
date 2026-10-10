@@ -3,17 +3,17 @@
   "figureFiles": [
     {
       "section": "1.1",
-      "file": "fig-1-1-feather.svg",
+      "file": "ch1-fig-1.svg",
       "caption": "A flight feather has a narrow outer vane and a wide inner vane on either side of the rachis. In the magnified view, the hooked barbules of one barb catch the grooved barbules of the next, which holds the vane together as a single surface."
     },
     {
       "section": "1.2",
-      "file": "fig-1-2-skeleton.svg",
+      "file": "ch1-fig-2.svg",
       "caption": "The main fused bones (furcula, carpometacarpus, synsacrum, pygostyle) and the keeled sternum. The joint most people call a bird’s backward-bending knee is its ankle; the real knee sits close to the body."
     },
     {
       "section": "1.3",
-      "file": "fig-1-3-timeline.svg",
+      "file": "ch1-fig-3.svg",
       "caption": "Archaeopteryx lived about 150 million years ago, and feathered dinosaurs such as Anchiornis are even older. Only one branch of dinosaurs, the birds, survived the asteroid impact 66 million years ago. The 66 million years since the impact is shorter than the Cretaceous period alone, which lasted about 79 million years."
     }
   ],
@@ -514,7 +514,8 @@
           }
         ]
       }
-    ]
+    ],
+    "hook": "Walk outside almost anywhere on Earth, from a city sidewalk to an Antarctic beach, and within a few minutes you will probably see a dinosaur. It might be a pigeon on a ledge or a sparrow in a hedge. That is not a figure of speech. It is the conclusion of more than 150 years of fossil discoveries, beginning with a feathered skeleton found in a German quarry in 1861. To see why scientists are so confident of it, we first need to answer a plainer question: what, exactly, makes a bird a bird? The answer starts with something you can pick up on almost any walk, the feather."
   },
   "assess": {
     "slides": [
@@ -1041,5 +1042,144 @@
   },
   "prov": {
     "note": "Text, figures, practice, lecture and quiz hand-written in Claude Code by Claude (configured model claude-opus-5-5); fact-checked and citation-verified by independent Claude agents with web search, October 2026."
-  }
+  },
+  "interactives": [
+    {
+      "type": "scale",
+      "section": "1.1",
+      "title": "From hummingbird to ostrich",
+      "intro": "Every bird on this scale has feathers, across a range of body mass of more than 50,000 to 1. Switch between linear and log scale to see the small birds at all.",
+      "unit": "grams",
+      "log": true,
+      "items": [
+        {
+          "label": "Bee Hummingbird",
+          "value": 2,
+          "note": "The smallest bird alive, endemic to Cuba."
+        },
+        {
+          "label": "Ruby-throated Hummingbird",
+          "value": 3,
+          "note": "About 940 contour feathers in a classic count."
+        },
+        {
+          "label": "American Robin",
+          "value": 77,
+          "note": "Our running example through this book."
+        },
+        {
+          "label": "Rock Pigeon",
+          "value": 350,
+          "note": "Our anatomy and flight model."
+        },
+        {
+          "label": "Bald Eagle",
+          "value": 4700,
+          "note": "Females are larger than males."
+        },
+        {
+          "label": "Common Ostrich",
+          "value": 110000,
+          "note": "Large males can exceed 140 kilograms."
+        }
+      ]
+    },
+    {
+      "type": "sort",
+      "section": "1.1",
+      "title": "Bird or not a bird?",
+      "intro": "Use the one test from section 1.1: among living animals, feathers mean bird. Tap a bucket for each animal.",
+      "buckets": [
+        "Bird",
+        "Not a bird"
+      ],
+      "items": [
+        {
+          "text": "Emperor Penguin",
+          "bucket": 0,
+          "why": "It cannot fly, but it is covered in feathers."
+        },
+        {
+          "text": "Little Brown Bat",
+          "bucket": 1,
+          "why": "It flies, but it has fur and no feathers. Bats are mammals."
+        },
+        {
+          "text": "Kiwi",
+          "bucket": 0,
+          "why": "Its feathers look like hair, but they are feathers."
+        },
+        {
+          "text": "Platypus",
+          "bucket": 1,
+          "why": "It lays eggs and has a bill, but it is a furred mammal."
+        },
+        {
+          "text": "Bee Hummingbird",
+          "bucket": 0,
+          "why": "The smallest bird alive, about 2 grams, fully feathered."
+        },
+        {
+          "text": "Hummingbird hawk-moth",
+          "bucket": 1,
+          "why": "It hovers at flowers like a hummingbird, but it is an insect with scales, not feathers."
+        },
+        {
+          "text": "Common Ostrich",
+          "bucket": 0,
+          "why": "The largest living bird; flightless, but feathered."
+        },
+        {
+          "text": "Velociraptor",
+          "bucket": 1,
+          "why": "A feathered dinosaur, but by the usual definition it sits just outside the bird group. Section 1.3 explains why the line is drawn there."
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "section": "1.3",
+      "title": "From feathered dinosaurs to modern birds",
+      "intro": "Tap each event. Notice how much of the story happened before the asteroid, and how quickly modern birds spread after it.",
+      "unit": "million years ago",
+      "reverse": true,
+      "events": [
+        {
+          "t": 160,
+          "label": "Anchiornis",
+          "detail": "A small feathered dinosaur from China, older than Archaeopteryx."
+        },
+        {
+          "t": 150,
+          "label": "Archaeopteryx",
+          "detail": "Feathered wings and a wishbone, but also teeth and a long bony tail. Found in Bavaria in 1861."
+        },
+        {
+          "t": 125,
+          "label": "Sinosauropteryx",
+          "detail": "The first non-bird dinosaur found with feathers, discovered and named in 1996."
+        },
+        {
+          "t": 120,
+          "label": "Microraptor",
+          "detail": "Long feathers on both arms and legs."
+        },
+        {
+          "t": 66,
+          "label": "Asteroid impact",
+          "detail": "Non-bird dinosaurs die out; a few ground-dwelling bird lineages survive."
+        },
+        {
+          "t": 50,
+          "label": "Modern groups established",
+          "detail": "Most major groups of modern birds appeared within a few million to roughly 15 million years after the impact."
+        },
+        {
+          "t": 0,
+          "label": "Today",
+          "detail": "About 11,000 living species."
+        }
+      ]
+    }
+  ]
 }
