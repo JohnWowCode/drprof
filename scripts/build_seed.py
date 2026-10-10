@@ -27,5 +27,5 @@ figures = [
     {"section": f["section"], "caption": f["caption"], "svg": (SEED / f["file"]).read_text().strip()}
     for f in ch.pop("figureFiles")
 ]
-doc = {"n": ch["n"], "lesson": ch["lesson"], "figures": figures, "assess": ch["assess"], "review": ch["review"], "updatedAt": 1760004000000}
+doc = {"n": ch["n"], "lesson": ch["lesson"], "figures": figures, "assess": ch["assess"], "review": ch["review"], "prov": ch["prov"], "updatedAt": 1760004000000}
 write("courses/birds-beginner-seed/chapters/ch1", doc)

@@ -1,45 +1,56 @@
 <title>Dr. Professor</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Libre+Caslon+Display&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Source+Sans+3:wght@400;600&display=swap">
 <style>
-/* Layout: a registrar's bar on top, one textbook reading column (about 68ch), a sticky contents rail beside it on wide screens. Tables and ruled lists, not cards. */
+/* Layout: a reading room. A warm desk (paper by day, walnut and lamplight after hours), books standing on wooden shelves, and each chapter laid out as a page on the desk with a contents rail beside it. */
 :root {
-  --paper: #F4F6F7;
-  --sheet: #FFFFFF;
-  --ink: #15191D;
-  --muted: #59626B;
-  --rule: #D6DBDF;
-  --rule-strong: #A3ACB4;
-  --accent: #1C4F6E;
-  --accent-soft: #E3ECF2;
-  --ok: #2B6A3D;
-  --warn: #8A5A00;
-  --bad: #9A2B2B;
-  --mark: #FFF2B8;
-  --subj: #1C4F6E;
-  --c-terms: #2E6DA4; --c-example: #2F7D4F; --c-practice: #A8670F; --c-myth: #B0303A; --c-check: #6B4FA0;
-  --f-read: "Source Serif 4", "Source Serif Pro", Georgia, "Times New Roman", serif;
-  --f-ui: "IBM Plex Sans", "Helvetica Neue", Arial, system-ui, sans-serif;
-  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
-  --s-xs: 0.75rem; --s-sm: 0.8125rem; --s-base: 0.9375rem; --s-read: 1.0625rem; --s-h3: 1.125rem; --s-h2: 1.375rem; --s-h1: 1.875rem;
+  --paper: #ECE4D3;
+  --sheet: #F8F3E7;
+  --card: #FBF7EE;
+  --ink: #2A221B;
+  --muted: #6E6152;
+  --rule: #DACDB4;
+  --rule-strong: #B19F80;
+  --accent: #24503E;
+  --accent-soft: #DCE5D6;
+  --brass: #A07A3A;
+  --gilt: #E6C67D;
+  --wood: #6A4429;
+  --wood-dark: #3E2617;
+  --glow: rgba(255, 210, 130, 0.42);
+  --ok: #2F6B3A;
+  --warn: #8A5A12;
+  --bad: #8E2F2B;
+  --stamp: #8E2F2B;
+  --mark: #F5E1A0;
+  --subj: #24503E;
+  --c-terms: #2F5D7C; --c-example: #3B6B45; --c-practice: #94641A; --c-myth: #8E2F2B; --c-check: #5E4B8B;
+  --grain: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .32 0 0 0 0 .22 0 0 0 0 .12 0 0 0 .09 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  --f-display: "Libre Caslon Display", "Libre Caslon Text", "Big Caslon", "Baskerville", Georgia, serif;
+  --f-read: "Literata", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --f-ui: "Source Sans 3", "Source Sans Pro", "Segoe UI", system-ui, sans-serif;
+  --f-mono: "Courier Prime", "Courier New", Courier, ui-monospace, monospace;
+  --s-xs: 0.78rem; --s-sm: 0.875rem; --s-base: 1rem; --s-read: 1.0625rem; --s-h3: 1.15rem; --s-h2: 1.7rem; --s-h1: 2.35rem;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --paper: #0F1316; --sheet: #161B1F; --ink: #E3E7EA; --muted: #98A2AB; --rule: #2A3238; --rule-strong: #4B5660;
-    --accent: #8CB9D6; --accent-soft: #1A2833; --ok: #7CC291; --warn: #E2B556; --bad: #EC8F8F; --mark: #3B3519;
-    --c-terms: #7FB2E5; --c-example: #7CC291; --c-practice: #E2B556; --c-myth: #EC8F8F; --c-check: #B9A3E3;
+    --paper: #1B1612; --sheet: #241D17; --card: #2A221B; --ink: #EDE3D0; --muted: #B4A68F; --rule: #3B3128; --rule-strong: #5E4F3F;
+    --accent: #9CC7A8; --accent-soft: #24332B; --brass: #D2AC68; --gilt: #E6C67D; --wood: #4B2F1C; --wood-dark: #24160C; --glow: rgba(255, 186, 100, 0.16);
+    --ok: #8CCB98; --warn: #E3B85E; --bad: #E6948C; --stamp: #E6948C; --mark: #4A3B1A;
+    --c-terms: #8DB7D8; --c-example: #8CCB98; --c-practice: #E3B85E; --c-myth: #E6948C; --c-check: #BFAEE6;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --paper: #0F1316; --sheet: #161B1F; --ink: #E3E7EA; --muted: #98A2AB; --rule: #2A3238; --rule-strong: #4B5660;
-  --accent: #8CB9D6; --accent-soft: #1A2833; --ok: #7CC291; --warn: #E2B556; --bad: #EC8F8F; --mark: #3B3519;
-  --c-terms: #7FB2E5; --c-example: #7CC291; --c-practice: #E2B556; --c-myth: #EC8F8F; --c-check: #B9A3E3;
+  --paper: #1B1612; --sheet: #241D17; --card: #2A221B; --ink: #EDE3D0; --muted: #B4A68F; --rule: #3B3128; --rule-strong: #5E4F3F;
+  --accent: #9CC7A8; --accent-soft: #24332B; --brass: #D2AC68; --gilt: #E6C67D; --wood: #4B2F1C; --wood-dark: #24160C; --glow: rgba(255, 186, 100, 0.16);
+  --ok: #8CCB98; --warn: #E3B85E; --bad: #E6948C; --stamp: #E6948C; --mark: #4A3B1A;
+  --c-terms: #8DB7D8; --c-example: #8CCB98; --c-practice: #E3B85E; --c-myth: #E6948C; --c-check: #BFAEE6;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
-body { background: var(--paper); color: var(--ink); font-family: var(--f-ui); font-size: var(--s-base); line-height: 1.5; }
+body { background-color: var(--paper); background-image: radial-gradient(ellipse 90% 420px at 50% 0, var(--glow), transparent 75%), var(--grain); color: var(--ink); font-family: var(--f-ui); font-size: var(--s-base); line-height: 1.5; }
 a { color: var(--accent); }
 button, input, textarea, select { font: inherit; color: inherit; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
@@ -48,10 +59,10 @@ p { margin: 0; }
 code { font-family: var(--f-mono); font-size: 0.9em; background: var(--accent-soft); padding: 0 0.25em; }
 
 /* Registrar bar */
-.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--sheet); border-bottom: 1px solid var(--rule-strong); }
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--sheet); border-bottom: 3px double var(--brass); }
 .bar-in { max-width: 1180px; margin: 0 auto; padding-inline: 16px; display: flex; align-items: center; gap: 16px; min-height: 48px; flex-wrap: wrap; }
-.mark { font-family: var(--f-mono); font-weight: 500; font-size: var(--s-sm); letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink); text-decoration: none; display: flex; gap: 10px; align-items: baseline; }
-.mark small { letter-spacing: 0.04em; color: var(--muted); text-transform: none; font-weight: 400; }
+.mark { font-family: var(--f-display); font-size: 1.45rem; color: var(--ink); text-decoration: none; display: flex; gap: 12px; align-items: baseline; }
+.mark small { font-family: var(--f-mono); font-size: var(--s-xs); letter-spacing: 0.14em; color: var(--brass); text-transform: uppercase; }
 .nav { margin-left: auto; display: flex; gap: 4px; }
 .nav button { background: none; border: 0; padding: 6px 10px; cursor: pointer; font-size: var(--s-sm); color: var(--muted); }
 .nav button[aria-current="page"] { color: var(--ink); box-shadow: inset 0 -2px 0 var(--accent); }
@@ -64,8 +75,8 @@ main { max-width: 1180px; margin: 0 auto; padding-inline: 16px; padding-block: 2
 .stack-sm { display: grid; gap: 12px; }
 
 .eyebrow { font-family: var(--f-mono); font-size: var(--s-xs); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
-.h1 { font-family: var(--f-read); font-weight: 600; font-size: var(--s-h1); line-height: 1.2; }
-.h2 { font-family: var(--f-read); font-weight: 600; font-size: var(--s-h2); line-height: 1.25; }
+.h1 { font-family: var(--f-display); font-weight: 400; font-size: var(--s-h1); line-height: 1.12; }
+.h2 { font-family: var(--f-display); font-weight: 400; font-size: var(--s-h2); line-height: 1.2; }
 .h3 { font-family: var(--f-ui); font-weight: 600; font-size: var(--s-h3); }
 .sec-head { display: flex; align-items: baseline; gap: 12px; border-bottom: 1px solid var(--rule-strong); padding-bottom: 6px; }
 .sec-head .eyebrow { margin-left: auto; }
@@ -246,15 +257,110 @@ details.report summary { cursor: pointer; font-size: var(--s-sm); font-weight: 6
 .errata { font-size: var(--s-sm); display: grid; gap: 8px; }
 .linkbtn { background: none; border: 0; padding: 0; color: var(--muted); text-decoration: underline; text-underline-offset: 2px; cursor: pointer; font-size: var(--s-sm); }
 
+/* Books: covers, shelf and title page */
+.book { position: relative; aspect-ratio: 2 / 3; width: 100%; color: #FFFFFF; display: grid; grid-template-rows: auto auto 1fr auto auto; padding: 9% 9% 7% 13%; overflow: hidden; text-align: left;
+  background: linear-gradient(155deg, color-mix(in srgb, var(--subj) 82%, #FFFFFF) 0%, var(--subj) 42%, color-mix(in srgb, var(--subj) 72%, #000000) 100%);
+  box-shadow: inset 7px 0 0 rgba(0, 0, 0, 0.22), inset 9px 0 0 rgba(255, 255, 255, 0.14), 0 1px 2px rgba(0, 0, 0, 0.25), 0 10px 22px rgba(0, 0, 0, 0.18);
+  border-radius: 2px 5px 5px 2px; transition: transform 0.15s; }
+.book-top { display: flex; justify-content: space-between; gap: 8px; font-family: var(--f-mono); font-size: 0.6em; letter-spacing: 0.12em; text-transform: uppercase; border-bottom: 1px solid rgba(255, 255, 255, 0.55); padding-bottom: 0.5em; }
+.book-title { font-family: var(--f-read); font-weight: 600; font-size: 1.3em; line-height: 1.1; margin-top: 0.75em; text-wrap: balance; }
+.book-title small { display: block; font-weight: 400; font-size: 0.6em; line-height: 1.25; margin-top: 0.4em; opacity: 0.92; }
+.book .cover-art { width: 80%; max-height: 100%; justify-self: center; align-self: center; aspect-ratio: 1; object-fit: contain; }
+.cover-pattern { background: repeating-radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.2) 0 1px, transparent 1px 11px); border-radius: 50%; }
+.book-author { font-family: var(--f-read); font-size: 0.82em; line-height: 1.25; }
+.book-author span { font-style: italic; opacity: 0.9; }
+.book-pub { font-family: var(--f-mono); font-size: 0.52em; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.8; border-top: 1px solid rgba(255, 255, 255, 0.45); padding-top: 0.55em; margin-top: 0.6em; }
+.book.sm { font-size: 13px; }
+.book.lg { font-size: 21px; max-width: 300px; }
+@media (max-width: 560px) { .book.lg { font-size: 16px; max-width: 230px; } }
+.shelf { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 24px 18px; }
+.shelf-item { background: none; border: 0; padding: 0; text-align: left; cursor: pointer; display: grid; gap: 8px; color: inherit; font: inherit; align-content: start; }
+.shelf-item:hover .book, .shelf-item:focus-visible .book { transform: translateY(-4px); }
+.shelf-cap { font-size: var(--s-sm); line-height: 1.4; }
+.book-front { display: grid; gap: 28px; }
+@media (min-width: 760px) { .book-front { grid-template-columns: 280px minmax(0, 1fr); align-items: start; } }
+.byline { font-family: var(--f-read); font-size: 1.1rem; }
+.signature { font-family: var(--f-read); font-style: italic; color: var(--muted); }
+.authors { display: grid; border: 1px solid var(--rule-strong); }
+.author { display: grid; grid-template-columns: auto 1fr; gap: 10px; padding: 8px 10px; border-top: 1px solid var(--rule); cursor: pointer; align-items: start; }
+.author:first-child { border-top: 0; }
+.author:has(input:checked) { background: var(--accent-soft); }
+.author b { display: block; }
+.author i { display: block; font-family: var(--f-read); color: var(--ink); margin-top: 2px; font-size: var(--s-sm); }
+.checks { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 6px; }
+select.sel { width: auto; max-width: 100%; padding: 4px 8px; }
+
+/* Citations and sources */
+sup.cite { font-size: 0.68em; line-height: 0; }
+sup.cite a { text-decoration: none; color: var(--subj-ink); font-family: var(--f-ui); font-weight: 600; }
+.refs-wrap summary { cursor: pointer; }
+ol.refs { margin: 8px 0 0; padding-left: 1.8em; display: grid; gap: 7px; font-size: var(--s-sm); overflow-wrap: anywhere; }
+ol.refs li.withdrawn { text-decoration: line-through; color: var(--muted); }
+ol.refs li:target { background: var(--mark); }
+ol.refs.biblio { font-size: var(--s-base); gap: 12px; }
+.prov { border-top: 1px dashed var(--rule-strong); padding-top: 8px; }
+.alt { display: grid; gap: 10px; }
+.alt-bar { gap: 8px; }
+
+/* Audio edition */
+.player .row { gap: 8px; }
+.transcript { display: grid; gap: 6px; max-height: 340px; overflow: auto; margin-top: 8px; font-family: var(--f-read); }
+.transcript p { cursor: pointer; padding: 3px 8px; border-left: 3px solid transparent; }
+.transcript p.now { background: var(--mark); border-left-color: var(--subj); }
+
+/* ---- Reading-room layer ---- */
+/* Library-bound books: bookcloth, gilt rules, a gold-foil emblem */
+.book { color: var(--gilt);
+  background:
+    repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.035) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.06) 0 1px, transparent 1px 3px),
+    linear-gradient(160deg, color-mix(in srgb, var(--subj) 86%, #FFFFFF) 0%, var(--subj) 40%, color-mix(in srgb, var(--subj) 70%, #000000) 100%);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.35); }
+.book::before { content: ""; position: absolute; inset: 4.5% 5% 4.5% 9.5%; border: 1px solid rgba(230, 198, 125, 0.55); outline: 1px solid rgba(230, 198, 125, 0.25); outline-offset: 3px; pointer-events: none; }
+.book-top { border-bottom-color: rgba(230, 198, 125, 0.6); }
+.book-pub { border-top-color: rgba(230, 198, 125, 0.5); }
+.book-title { font-family: var(--f-display); font-weight: 400; font-size: 1.42em; }
+.book .cover-art.foil { background: linear-gradient(135deg, #F6E2A6 0%, #C99A45 45%, #F2D58A 70%, #B98B3C 100%);
+  -webkit-mask-size: contain; mask-size: contain; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: center; mask-position: center; }
+.cover-pattern { background: repeating-radial-gradient(circle at 50% 50%, rgba(230, 198, 125, 0.45) 0 1px, transparent 1px 11px); }
+/* Shelves */
+.shelf { column-gap: 0; row-gap: 34px; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+.shelf-item { gap: 0; padding: 0 12px; }
+.shelf-item .book { width: 100%; }
+.plank { display: block; height: 14px; margin: 0 -12px; background: linear-gradient(180deg, color-mix(in srgb, var(--wood) 80%, #FFFFFF) 0, var(--wood) 3px, var(--wood-dark) 100%); box-shadow: 0 7px 9px -3px rgba(40, 20, 5, 0.35); }
+.shelf-cap { margin-top: 10px; }
+/* The request form as a catalog card */
+.card { background-color: var(--card); border: 1px solid var(--rule-strong); border-radius: 3px; position: relative; padding-bottom: 34px;
+  background-image: linear-gradient(var(--stamp), var(--stamp)), repeating-linear-gradient(180deg, transparent 0 27px, color-mix(in srgb, var(--c-terms) 9%, transparent) 27px 28px);
+  background-size: 100% 1.5px, 100% 100%; background-position: 0 58px, 0 0; background-repeat: no-repeat, repeat;
+  box-shadow: 0 1px 2px rgba(40, 20, 5, 0.12), 0 10px 24px rgba(40, 20, 5, 0.10); }
+.card::after { content: ""; position: absolute; left: 50%; bottom: 10px; width: 16px; height: 16px; margin-left: -8px; border-radius: 50%; background: var(--paper); box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.35); }
+.card .sec-head { border-bottom: 0; }
+/* Each chapter is a page on the desk */
+.ch-main { background: var(--sheet); padding: clamp(14px, 3.5vw, 44px); box-shadow: 0 1px 2px rgba(40, 20, 5, 0.10), 0 14px 34px rgba(40, 20, 5, 0.12); border-radius: 2px; }
+.opener { position: relative; }
+.opener .big { font-family: var(--f-display); font-weight: 400; }
+.opener .h1 { font-family: var(--f-display); }
+.stamp { font-family: var(--f-mono); text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.72rem; line-height: 1.35; text-align: center; color: #FFFFFF;
+  border: 3px double rgba(255, 255, 255, 0.85); border-radius: 50%; width: 118px; height: 118px; display: grid; place-content: center; transform: rotate(-11deg); opacity: 0.88; justify-self: start; }
+.stamp b { font-size: 0.95rem; letter-spacing: 0.08em; }
+@media (min-width: 760px) { .stamp { position: absolute; top: 18px; right: 22px; } }
+@media (max-width: 759px) { .stamp { grid-column: 1 / -1; width: 104px; height: 104px; } }
+.sec-head { border-bottom: 1px solid var(--rule-strong); box-shadow: 0 2px 0 -1px var(--rule); }
+.btn { box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 2px rgba(40, 20, 5, 0.2); }
+.tbl-wrap, .sheet { background-color: var(--card); }
+.lede, .byline { color: var(--ink); }
+.prose p:first-child::first-letter { }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }
 </style>
 
 <header class="bar">
   <div class="bar-in">
-    <a class="mark" href="#" data-act="go-catalog">Dr. Professor <small>Courses on any subject, at any level</small></a>
+    <a class="mark" href="#" data-act="go-catalog">Dr. Professor <small>The Reading Room</small></a>
     <nav class="nav" aria-label="Main">
       <button type="button" data-act="go-catalog" id="nav-catalog">Catalog</button>
       <button type="button" data-act="go-transcript" id="nav-transcript">Transcript</button>
+      <button type="button" data-act="go-profile" id="nav-profile">Profile</button>
     </nav>
   </div>
 </header>
@@ -304,7 +410,7 @@ const rand = (n) => Math.random().toString(36).slice(2, 2 + n);
 const clone = (o) => JSON.parse(JSON.stringify(o));
 const LETTERS = "ABCDEFGH";
 /* Subject colors: deep, print-like hues that carry white text in either theme */
-const SUBJ = ["#2F7D4F", "#3949AB", "#7B3F8C", "#B9531B", "#0F7C80", "#A82E3A", "#7F6312", "#3D5A80"];
+const SUBJ = ["#2E5339", "#283C5E", "#6B2A2A", "#553A5C", "#1E5656", "#6E5320", "#3F4B3B", "#4E3A2B"]; /* bookcloth: forest, navy, oxblood, plum, teal, tan leather, olive, brown leather */
 const hashStr = (s) => [...String(s)].reduce((h, ch) => (h * 31 + ch.charCodeAt(0)) >>> 0, 7);
 const subj = (c) => (c && /^#[0-9a-f]{6}$/i.test(c.color || "") ? c.color : SUBJ[hashStr(c ? c.topic || c.id : "") % SUBJ.length]);
 const words = (L) => L.sections.reduce((n, s) => n + s.reading.join(" ").split(/\s+/).length, 0);
@@ -318,8 +424,10 @@ const S = {
   view: "catalog", courseId: null, chapterN: null,
   courses: new Map(), catalogLoaded: false, catalogError: null,
   chapters: {}, finals: {}, prog: {}, profile: { name: "" },
-  form: { topic: "", level: "beginner", focus: "", length: "standard" },
+  form: { topic: "", level: "beginner", focus: "", length: "standard", persona: "scholar", engine: "default" },
   gen: {}, slide: {}, quizSel: {}, chat: {}, busy: {}, errata: {}, errOpen: {},
+  names: {}, altPick: {}, rvPick: {}, loadedAll: {}, pendingAnchor: null,
+  audio: { key: null, idx: 0, playing: false, rate: 1, voice: null, gen: 0, tOpen: false },
 };
 
 /* ---------- storage: db when served, browser storage otherwise ---------- */
@@ -351,7 +459,10 @@ const Store = {
       LS.keys("courses/").filter((k) => k.split("/").length === 2).forEach((k) => { const c = LS.get(k); if (c && c.id) S.courses.set(c.id, c); });
       S.catalogLoaded = true; onCoursesChanged();
     }
-    S.profile = (await this.getUser("profile")) || { name: "" };
+    S.profile = { name: "", persona: "", prefs: [], goal: "", background: "", minutes: "", ...((await this.getUser("profile")) || {}) };
+    if (S.profile.persona && !S.form.topic) S.form.persona = S.profile.persona;
+    S.audio.voice = LS.get("me/voice");
+    if (S.view === "profile") render();
   },
   async get(path) {
     if (this.db) { try { const s = await this.db.doc(path).get(); return s.exists ? clone(s.data()) : null; } catch { return null; } }
@@ -403,10 +514,45 @@ function saveErr(e) {
 }
 
 /* ---------- Claude ---------- */
+const PROMPT_V = "dp-0.3";
+const PERSONAS = [
+  { id: "scholar", name: "The Scholar", blurb: "Formal, rigorous and precise. Evidence first, with the history of ideas.",
+    sample: "What defines a bird has a precise answer, and it rests on a single structure.",
+    voice: "Write as a distinguished university professor writing a respected textbook: formal but never stuffy, precise word choice, careful qualification, evidence before conclusions, brief historical context for key ideas." },
+  { id: "teacher", name: "The Kindergarten Teacher", blurb: "Warm, patient, very simple words. Everything is concrete.",
+    sample: "Look closely at a feather. See the stiff stick down the middle? That is the shaft.",
+    voice: "Write as a gifted, warm kindergarten teacher explaining this subject: very short sentences, everyday words, concrete things the reader can picture or touch, one idea at a time, gentle checks for understanding. The facts stay exactly as accurate as in a university text; only the language gets simpler." },
+  { id: "socrates", name: "Socrates", blurb: "Teaches by asking. You reason your way to each idea.",
+    sample: "A creature flies and lays eggs. Is it a bird? Then what shall we say of the bat?",
+    voice: "Write in the manner of Socrates: lead the reader to each idea through a sequence of genuine questions, provisional answers and counterexamples, then state the conclusion plainly. Short exchanges between Teacher and Student are welcome now and then. Never quote or invent words of the historical Socrates." },
+  { id: "brainiac", name: "The Brainiac", blurb: "Dense, fast, connects ideas across fields. For quick minds.",
+    sample: "A feather solves three engineering problems at once: lift, insulation and signaling.",
+    voice: "Write as a brilliant, fast-thinking polymath: high information density, exact technical vocabulary, connections to physics, mathematics, engineering and history, compressed explanations, occasional dry wit. Assume a quick reader and skip what is obvious." },
+  { id: "straight", name: "The Straight Shooter", blurb: "Plain, short, no fluff. What it is and why it matters.",
+    sample: "Only birds have feathers. That is the test. The rest of this chapter builds on it.",
+    voice: "Write plainly and directly: short paragraphs, short sentences, the fact and then why it matters. No warm-up, no flourish, no repetition. Every sentence earns its place." },
+  { id: "storyteller", name: "The Storyteller", blurb: "Teaches through the people, discoveries and history behind each idea.",
+    sample: "In 1861, two years after Darwin's book appeared, a quarry worker in Bavaria split open a slab of limestone.",
+    voice: "Write as a master science storyteller: teach each idea through the real people, places, discoveries and dead ends behind it, with narrative momentum, keeping every fact exact. Every story must be true and verifiable; never invent scenes, quotations or details." },
+  { id: "practitioner", name: "The Practitioner", blurb: "A working expert: how it is really done, common mistakes, field tips.",
+    sample: "Found a feather on the trail? Check the vane first. It tells you where on the bird it grew.",
+    voice: "Write as an experienced working professional in this field teaching an apprentice: practical, hands-on, how the work is actually done, the mistakes beginners make, rules of thumb and where they break down, the tools of the trade." },
+];
+const persona = (id) => PERSONAS.find((p) => p.id === id) || PERSONAS[0];
+const ENGINES = { default: "Standard", complex: "Most capable", quick: "Fast" };
+const STYLE_RULES = "STYLE. The text must read as if a skilled human author wrote it. Never use these words or phrases: delve, tapestry, testament, realm, embark, unlock, unleash, harness, foster, crucial, pivotal, vibrant, intricate, myriad, multifaceted, robust, seamless, paramount, underscore, showcase, leverage, elevate, game-changer, ever-evolving, in today's world, it's important to note, it is worth noting, in conclusion, in summary, ultimately, at its core, plays a crucial role, a testament to, let's dive in, fascinating world; and never use landscape, journey or navigate as metaphors. Do not open with a rhetorical question or with \"Imagine\". Do not end paragraphs with a summarizing moral. Do not use em dashes; use commas, colons, parentheses or separate sentences. Do not habitually group things in threes. Vary sentence length and structure. Prefer concrete nouns, specific numbers and named examples to abstractions. Stay in the author's voice throughout.";
+const SOURCE_RULES = "SOURCES. Cite only sources of academic standing: peer-reviewed journal articles, university-press or standard academic textbooks and monographs, and authoritative scientific or government bodies (for example NASA, NOAA, USGS, NIH, IPCC, IEA, national academies, major museums and learned societies). Never cite Wikipedia, blogs, news sites, content farms or forums. Cite only well-known works you are certain exist, with authors, year, title and venue exactly right, in APA 7 style; include a DOI only if you are certain of it. Fewer real sources are far better than one doubtful one. At every level, including the simplest, sources stay academic; only the writing gets simpler.";
+const STOCK = ["delve", "tapestry", "testament to", "in the realm of", "embark", "unlock", "unleash", "harness", "foster", "crucial", "pivotal", "vibrant", "intricate", "myriad", "multifaceted", "seamless", "paramount", "underscore", "showcase", "leverage", "game-changer", "ever-evolving", "it's important to note", "it is important to note", "it is worth noting", "in conclusion", "in summary", "at its core", "let's dive in", "fascinating world", "navigate the", "journey of", "landscape of", "—"];
+function styleLint(text) {
+  const t = String(text).toLowerCase(), hits = {};
+  STOCK.forEach((w) => { const n = t.split(w).length - 1; if (n) hits[w === "—" ? "em dash" : w] = n; });
+  return hits;
+}
+
 function errCopy(e) {
   const code = e && e.code;
   return ({
-    unavailable_here: "Writing courses needs Claude, which is only available when this page is open in Claude (claude.ai or the Claude app).",
+    unavailable_here: "Writing needs Claude, which is only available when this page is open in Claude (claude.ai or the Claude app).",
     not_granted: "Dr. Professor needs permission to use Claude on your account. Reload the page and choose Allow.",
     sampling_disabled: "Claude is not available for this account.",
     rate_limited: "Your Claude usage limit is reached for now. Try again in a few minutes.",
@@ -419,22 +565,42 @@ function errCopy(e) {
     bad_shape: "The draft was missing required parts. Try again.",
   })[code] || `Writing failed (${code || "unknown error"}). Try again.`;
 }
-async function askJSON(prompt, { signal, onLen, tier } = {}) {
+function parseLoose(text) {
+  const t = String(text || "").trim();
+  try { return JSON.parse(t); } catch {}
+  const fence = t.match(/```(?:json)?\s*([\s\S]*?)```/);
+  if (fence) { try { return JSON.parse(fence[1]); } catch {} }
+  const starts = ["{", "["].map((ch) => t.indexOf(ch)).filter((i) => i >= 0);
+  const a = starts.length ? Math.min(...starts) : -1, b = Math.max(t.lastIndexOf("}"), t.lastIndexOf("]"));
+  if (a >= 0 && a < b) { try { return JSON.parse(t.slice(a, b + 1)); } catch {} }
+  throw { code: "invalid_json" };
+}
+/* Every Claude call returns its data plus the tier that actually answered, for the provenance record. */
+async function askData(prompt, { signal, onLen, tier } = {}) {
   const sample = await caps.sample;
   if (!sample) throw { code: "unavailable_here" };
-  return sample.json(prompt, { signal, cache: false, modelTier: tier || "default", onText: onLen ? ({ text }) => onLen(text.length) : undefined });
+  const res = await sample(prompt + "\n\nReply with the JSON only, with no text before or after it.", {
+    signal, cache: false, modelTier: tier || "default", onText: onLen ? ({ text }) => onLen(text.length) : undefined,
+  });
+  if (res.truncated) throw { code: "invalid_json" };
+  return { data: parseLoose(res.text), tier: res.modelTierApplied || tier || "default" };
 }
+async function askJSON(prompt, opts) { return (await askData(prompt, opts)).data; }
+const stamp = (tier, extra) => ({ tier, at: Date.now(), by: Store.uid || null, v: PROMPT_V, ...extra });
 
-function preamble(c) {
-  const L = lvl(c.level);
+function preamble(c, personaId) {
+  const L = lvl(c.level), P = persona(personaId || c.persona);
   return [
     "You are Dr. Professor, writing original course material for a self-paced learner.",
     `Course: ${c.code} — ${c.title}`,
     `Subject requested: ${c.topic}`,
     `Level: ${L.name}. ${L.guide}`,
     c.focus ? `Learner's stated focus: ${c.focus}` : "",
+    `AUTHOR VOICE: ${P.name}. ${P.voice}`,
     "ACCURACY COMES FIRST. State only facts you are confident are true and well established. Never invent statistics, studies, quotations, dates, names, places or sources. If you are not sure of a precise figure, give a rounded figure or a range you are sure of, or leave it out. Name a study or author only when you are certain of who and when. Separate settled consensus from open debate, and say which is which. A learner will rely on every sentence.",
-    "Writing standards: specific; real names, numbers, dates, units and examples instead of generalities; no filler, hype, emoji or exclamation marks; American English. Write formulas in plain Unicode text (E = mc², v = d / t), never LaTeX. Inside strings you may use **bold** for a key term's first use and *italic* for emphasis; no other markdown, no headings, no HTML.",
+    STYLE_RULES,
+    SOURCE_RULES,
+    "Formatting: American English. Write formulas in plain Unicode text (E = mc², v = d / t), never LaTeX. Inside strings you may use **bold** for a key term's first use and *italic* for emphasis; no other markdown, no headings, no HTML.",
   ].filter(Boolean).join("\n");
 }
 function outline(c) {
@@ -444,22 +610,34 @@ function chapterBrief(c, n) {
   const ch = c.chapters[n - 1];
   return `Chapter ${n}: "${ch.title}" — ${ch.summary}\nSections:\n` + ch.sections.map((s, j) => `${n}.${j + 1} ${s.title} — ${s.summary}`).join("\n");
 }
+function profileText() {
+  const pr = S.profile || {};
+  const parts = [];
+  if (arr(pr.prefs).length) parts.push("Learns best through: " + pr.prefs.join(", ") + ".");
+  if (pr.goal) parts.push("Goal: " + pr.goal);
+  if (pr.background) parts.push("Already knows: " + pr.background);
+  if (pr.minutes) parts.push(`Studies about ${pr.minutes} minutes a day.`);
+  return parts.join(" ") || "No study profile given.";
+}
 
 const PROMPTS = {
   syllabus(f) {
-    const L = lvl(f.level), n = LENGTHS[f.length] || 8;
-    return `You are Dr. Professor, designing a complete self-paced course.
+    const L = lvl(f.level), n = LENGTHS[f.length] || 8, P = persona(f.persona);
+    return `You are Dr. Professor, designing a complete self-paced course that will be published as a textbook.
 Subject: ${f.topic}
 Level: ${L.name}. ${L.guide}
 Learner's stated focus: ${f.focus || "none given"}
 Number of chapters: ${n}
+AUTHOR VOICE for the preface: ${P.name}. ${P.voice}
+${STYLE_RULES}
 
 Reply with only a JSON object of this shape:
 {
   "dept": "3-4 letter department abbreviation, e.g. ORN, AST, GDS, ENR",
-  "title": "specific course title, e.g. \\"Birds: Anatomy, Behavior, and Field Identification\\"",
+  "title": "specific book title, e.g. \\"Birds: Anatomy, Behavior, and Field Identification\\"",
   "department": "academic department name",
   "description": "catalog description, 3-4 sentences",
+  "preface": "the author's preface, 2-3 paragraphs separated by blank lines, in the author voice: what the book covers, who it is for, and how to use it (read each section, do its practice, then the quiz and challenges)",
   "prerequisites": ["what the learner should already know; empty array if nothing"],
   "objectives": ["5-7 measurable objectives, each starting with a verb"],
   "hours": 30,
@@ -468,7 +646,16 @@ Reply with only a JSON object of this shape:
       "sections": [ { "title": "...", "summary": "one sentence" } ] }
   ]
 }
-Rules: exactly ${n} chapters with 3 or 4 sections each. Order chapters so each builds on the earlier ones: foundations first, the last chapter integrates the course. A section is one sitting of 20-40 minutes. "hours" is the realistic total study time as a number. Match depth and vocabulary to the level.`;
+Rules: exactly ${n} chapters with 3 or 4 sections each. Order chapters so each builds on the earlier ones: foundations first, the last chapter integrates the course. A section is one sitting of 20-40 minutes. "hours" is the realistic total study time as a number. Match depth and vocabulary to the level. Every fact in titles and summaries must be accurate.`;
+  },
+  cover(c) {
+    return `Design the cover illustration for a textbook: ${c.code} — ${c.title} (subject: ${c.topic}).
+
+Draw one original emblem in the style of a refined scientific engraving or a modern academic-press cover: a single strong, recognizable motif drawn from the subject itself (for example a feather or a bird in flight for ornithology, a ringed planet for astronomy, a turbine or field lines for energy), anatomically and physically accurate, elegant and uncluttered.
+
+SVG rules: root <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">. NO background rectangle: the drawing sits on a solid colored book cover. Use only white: stroke="#FFFFFF" for lines (stroke-width 1.5 to 4), and fill="#FFFFFF" with fill-opacity between 0.12 and 0.4 for shapes. No text, no letters, no <script>, <image>, <foreignObject>, <style>, filters or external links. Under 7000 characters.
+
+Reply with only a JSON object: { "svg": "<svg ...>...</svg>" }`;
   },
   lesson(c, n) {
     return `${preamble(c)}
@@ -486,7 +673,8 @@ Reply with only a JSON object of this shape:
     {
       "n": "${n}.1",
       "title": "...",
-      "reading": ["4-6 paragraphs of textbook prose, 80-160 words each"],
+      "reading": ["4-6 paragraphs of textbook prose, 80-160 words each, with numbered citations like [1] or [1, 2] placed before the final period of sentences that make important factual claims"],
+      "sources": [ { "n": 1, "citation": "full APA 7 reference", "kind": "article|book|chapter|report|website", "supports": "which claim it supports" } ],
       "keyTerms": [ { "term": "...", "def": "one-sentence definition" } ],
       "example": { "title": "Worked example: ...", "steps": ["each step of the worked example, in order"], "takeaway": "one sentence" },
       "misconception": { "myth": "a common wrong belief about this section's topic, phrased the way people say it", "fact": "the correction and the reason it is wrong" },
@@ -497,7 +685,7 @@ Reply with only a JSON object of this shape:
     }
   ]
 }
-Rules: one entry per section, using exactly the section numbers and titles listed above. 3-6 key terms per section. Exactly 3 practice problems per section, mixing "mc" and "short"; at least one must make the learner apply the idea to a new case, not recall it. "answer" for "mc" is the 0-based index of the correct choice; vary its position.`;
+Rules: one entry per section, using exactly the section numbers and titles listed above. 2-5 sources per section, numbered from 1 within the section, every number used in the reading appearing in "sources". 3-6 key terms per section. Exactly 3 practice problems per section, mixing "mc" and "short"; at least one must make the learner apply the idea to a new case, not recall it. "answer" for "mc" is the 0-based index of the correct choice; vary its position.`;
   },
   figures(c, n) {
     const ch = c.chapters[n - 1];
@@ -527,13 +715,13 @@ Write the lecture, assessments and study list for ${chapterBrief(c, n)}
 Reply with only a JSON object of this shape:
 {
   "slides": [ { "title": "...", "bullets": ["3-5 short bullets"], "notes": "2-4 sentences the lecturer says on this slide" } ],
-  "quiz": [ { "q": "...", "choices": ["...", "...", "...", "..."], "answer": 0, "explanation": "..." } ],
+  "quiz": [ { "sec": "${n}.1", "q": "...", "choices": ["...", "...", "...", "..."], "answer": 0, "explanation": "..." } ],
   "challenge": [ { "title": "...", "prompt": "the task in 2-5 sentences", "deliverable": "exactly what the learner submits", "rubric": ["3-5 grading criteria"] } ],
-  "readings": [ { "citation": "Author(s). Year. Title. Publisher or journal.", "kind": "book|chapter|article|paper|website", "why": "what to read it for", "pages": "chapter or pages if known, else empty" } ],
-  "videos": [ { "search": "a YouTube search query that finds a strong lecture or demonstration", "why": "what to watch for" } ],
+  "readings": [ { "citation": "full APA 7 reference", "kind": "book|chapter|article|paper|report|website", "why": "what to read it for", "pages": "chapter or pages if known, else empty" } ],
+  "videos": [ { "search": "a YouTube search query that finds a strong lecture or demonstration from a university, museum or agency", "why": "what to watch for" } ],
   "images": [ { "search": "an image search query", "source": "wikimedia or nasa", "why": "what to look for" } ]
 }
-Rules: 8-12 slides covering the chapter in order; the first states the agenda and the last summarizes. Exactly 8 quiz questions spread across all sections, at least 3 requiring application or analysis; "answer" is the 0-based index, vary its position. Exactly 2 challenge exercises that are harder than the practice problems and combine the chapter's ideas; the deliverable must be something the learner can type as text. 3-5 readings, only real, well-known, verifiable works or official institutional sources; never invent a title, and leave out any detail you are unsure of. 2-3 videos and 2-3 images; use "nasa" only for space subjects.`;
+Rules: 8-12 slides covering the chapter in order; the first states the agenda and the last summarizes. Exactly 8 quiz questions spread across all sections, each tagged with the section number it tests in "sec", at least 3 requiring application or analysis; "answer" is the 0-based index, vary its position. Exactly 2 challenge exercises that are harder than the practice problems and combine the chapter's ideas; the deliverable must be something the learner can type as text. 3-5 readings for further study, following the SOURCES rules strictly. 2-3 videos and 2-3 images; use "nasa" only for space subjects.`;
   },
   final(c) {
     return `${preamble(c)}
@@ -564,17 +752,22 @@ Grade strictly but fairly against the rubric at the stated level. Reply with onl
 If the submission is empty, off-topic or not a genuine attempt, score it 0 and say so.`;
   },
   factcheck(c, n, chap) {
-    return `You are the fact-checker at a textbook publisher, reviewing Chapter ${n} of ${c.code} — ${c.title} (${lvl(c.level).name} level, subject: ${c.topic}). You are a subject expert and a skeptic: treat every claim as possibly wrong until you have checked it against what you know with confidence.
+    const lint = styleLint(proseOf(chap));
+    return `You are the fact-checker and copy editor at an academic publisher, reviewing Chapter ${n} of ${c.code} — ${c.title} (${lvl(c.level).name} level, subject: ${c.topic}, author voice: ${persona(c.persona).name}). You are a subject expert and a skeptic: treat every claim as possibly wrong until you have checked it against what you know with confidence.
 
-Check every factual claim: numbers, units, dates, names, places, attributions to studies or people, definitions, mechanisms, figure captions and labels, slide bullets, explanations and model answers. Check that each answer key and explanation is right and that every multiple-choice question has exactly one defensible answer. For each reading, judge whether it is a real, existing work with these authors, year and title.
+1. Check every factual claim: numbers, units, dates, names, places, attributions to studies or people, definitions, mechanisms, figure captions and labels, slide bullets, explanations and model answers.
+2. Check that each answer key and explanation is right and that every multiple-choice question has exactly one defensible answer.
+3. Check every section source (ids like S${n}.1-2) and reading (ids like R1): is it a real, existing work with exactly these authors, year, title and venue? Is it of academic standing? Does it support the claim it is cited for? When you are certain of a wrong detail (year, volume, pages, author spelling), correct it as an issue.
+4. Flag machine-sounding prose: stock phrases, em dashes, formulaic rhythm.${Object.keys(lint).length ? " An automatic checker found: " + Object.entries(lint).map(([w, k]) => `"${w}" x${k}`).join(", ") + "." : ""} Give a natural rewrite in the author's voice, with severity "style".
 
-Report only real problems; do not rewrite for style. For each problem, copy the exact text to replace character for character from the chapter below (a short unique span, under about 200 characters, never spanning two paragraphs or a label and its neighbor), and give replacement text that fits in its place. If a claim cannot be confirmed, soften or remove it rather than guess.
+Report only real problems. For each, copy the exact text to replace character for character from the chapter below (a short unique span under about 200 characters, never spanning two paragraphs or two labels) and give replacement text that fits in its place. If a claim cannot be confirmed, soften or remove it rather than guess.
 
 Reply with only a JSON object:
-{ "issues": [ { "where": "e.g. 1.2 reading, Q3 explanation, figure label", "quote": "exact text", "correction": "replacement text", "problem": "what is wrong, briefly", "severity": "error|imprecise|unverifiable" } ],
+{ "issues": [ { "where": "e.g. 1.2 reading, Q3 explanation, figure label, S1.2-3", "quote": "exact text", "correction": "replacement text", "problem": "what is wrong, briefly", "severity": "error|imprecise|unverifiable|style" } ],
   "keys": [ { "id": "Q3", "problem": "why this key or question is wrong or ambiguous" } ],
+  "sources": [ { "id": "S${n}.1-2", "verdict": "real|uncertain|likely-invented", "supports": "yes|partly|no", "note": "brief" } ],
   "readings": [ { "id": "R1", "verdict": "real|uncertain|likely-invented", "note": "brief" } ],
-  "summary": "one or two sentences on the chapter's overall accuracy" }
+  "summary": "one or two sentences on the chapter's overall accuracy and style" }
 Use empty arrays when there is nothing to report.
 
 CHAPTER
@@ -594,6 +787,51 @@ ${items.map((it) => `[${it.id}] ${it.ref.q}\n${mcText(it.ref)}`).join("\n\n")}`;
 Reply with only a JSON array: [ { "id": "Q1", "answer": 0, "explanation": "why this answer is right and the others are wrong", "rewrite": null } ] where "answer" is a 0-based index into the existing choices, and "rewrite" is null or { "q": "...", "choices": ["...", "...", "...", "..."], "answer": 0 } when the question had to be rewritten.
 
 ${disputes.map((d) => `[${d.id}] ${d.ref.q}\n${mcText(d.ref)}\n  Answer key: ${LETTERS[d.ref.answer]}. Key's explanation: ${d.ref.explanation}\n  Second reader: ${d.blind && Number.isInteger(+d.blind.answer) && d.ref.choices[+d.blind.answer] !== undefined ? LETTERS[+d.blind.answer] : "no answer"}${d.blind && str(d.blind.problem) ? `; noted: ${str(d.blind.problem)}` : ""}${d.extra ? `\n  Fact-checker noted: ${d.extra}` : ""}`).join("\n\n")}`;
+  },
+  audio(c, n, chap) {
+    return `${preamble(c)}
+
+Turn Chapter ${n} below into the script of an audiobook narrated by its author. Keep every fact exactly; change only the form, for listening:
+- spoken sentences in the author's voice, short paragraphs, natural transitions between sections;
+- open by announcing the chapter number and title; at each section say its number and title;
+- describe each figure in words where it matters (what it shows, what to notice), never "see Figure 1.2";
+- drop citation markers like [1]; you may say "researchers found" where a source matters;
+- say symbols, abbreviations and units the way a narrator would ("about two grams", "sixty-six million years");
+- read the misconception boxes as part of the narration; skip practice problems;
+- close with a recap of about three sentences.
+
+Reply with only a JSON object: { "segments": [ { "sec": "intro|${n}.1|...|outro", "title": "...", "paras": ["..."] } ] }
+
+CHAPTER
+${chapterText(chap, { forAudio: true }).slice(0, 100000)}`;
+  },
+  alt(c, chap, s, personaId, misses) {
+    return `${preamble(c, personaId)}
+
+You are tutoring one learner privately. Explain section ${s.n} "${s.title}" again, in your own voice and approach, for this learner.
+Learner profile: ${profileText()}
+${misses.length ? "Questions this learner got wrong in this section (address each misunderstanding directly):\n" + misses.map((m) => `- ${m}`).join("\n") : "The learner asked for a fresh explanation."}
+
+Use a different angle and different examples from the textbook text below, matched to how this learner learns best. Keep every fact consistent with the textbook. 4-8 short paragraphs separated by blank lines. Plain text; **bold** allowed. No citation markers.
+
+TEXTBOOK SECTION
+${sectionText(chap, s)}`;
+  },
+  coach(c, items) {
+    return `${preamble(c, S.profile.persona || c.persona)}
+
+Write a personal review sheet for one learner in this course, built around the questions they got wrong.
+Learner profile: ${profileText()}
+
+MISSED QUESTIONS AND THE TEXTBOOK SECTIONS THEY COME FROM
+${items.map((it) => `[${it.sec}] ${it.title}\nKey ideas: ${it.ideas}\nMissed: ${it.misses.join(" | ")}`).join("\n\n")}
+
+For each section, explain the idea the learner is missing, say why their wrong answer was tempting, give one fresh concrete example, and end with one new check question. Match the learner's preferences.
+
+Reply with only a JSON object:
+{ "intro": "two sentences to the learner",
+  "items": [ { "sec": "1.2", "title": "...", "explain": "1-3 short paragraphs separated by blank lines", "whyTempting": "one or two sentences", "example": "...", "check": { "q": "...", "choices": ["...", "...", "...", "..."], "answer": 0, "explanation": "..." } } ],
+  "plan": ["3-5 concrete next steps for the next study session"] }`;
   },
   errata(c, chap, s, text) {
     return `A learner in ${c.code} — ${c.title} (${lvl(c.level).name} level) reported a possible error in section ${s.n}. Check the report against what you know with confidence. Be fair both ways: fix real errors, and when the text is right, say so and explain why.
@@ -616,8 +854,10 @@ Use an empty "fixes" array when nothing needs to change.`;
 const normMC = (q) => {
   const choices = arr(q.choices).map(str).filter(Boolean);
   const answer = Number.isInteger(+q.answer) ? +q.answer : 0;
-  return choices.length >= 2 && answer >= 0 && answer < choices.length ? { q: str(q.q), choices, answer, explanation: str(q.explanation), ch: q.ch ? +q.ch : undefined } : null;
+  return choices.length >= 2 && answer >= 0 && answer < choices.length
+    ? { q: str(q.q), choices, answer, explanation: str(q.explanation), ch: q.ch ? +q.ch : undefined, sec: str(q.sec) || undefined } : null;
 };
+const normSources = (list) => arr(list).map((x, i) => ({ n: Number.isInteger(+x.n) && +x.n > 0 ? +x.n : i + 1, citation: str(x.citation), kind: str(x.kind), supports: str(x.supports) })).filter((x) => x.citation);
 function normLesson(raw, c, n) {
   const ch = c.chapters[n - 1];
   const got = arr(raw && raw.sections);
@@ -627,6 +867,7 @@ function normLesson(raw, c, n) {
     return {
       n: `${n}.${j + 1}`, title: s.title,
       reading: arr(r.reading).map(str).filter(Boolean),
+      sources: normSources(r.sources),
       keyTerms: arr(r.keyTerms).map((t) => ({ term: str(t.term), def: str(t.def) })).filter((t) => t.term),
       example: { title: str(ex.title), steps: arr(ex.steps).map(str).filter(Boolean), takeaway: str(ex.takeaway) },
       misconception: { myth: str((r.misconception || {}).myth), fact: str((r.misconception || {}).fact) },
@@ -654,13 +895,18 @@ function normAssess(raw) {
   if (!out.quiz.length || !out.slides.length) throw { code: "bad_shape" };
   return out;
 }
+function normAudio(raw) {
+  const segs = arr(raw && raw.segments).map((s) => ({ sec: str(s.sec), title: str(s.title), paras: arr(s.paras).map(str).filter(Boolean) })).filter((s) => s.paras.length);
+  if (!segs.length) throw { code: "bad_shape" };
+  return { segments: segs };
+}
 
 /* ---------- navigation ---------- */
 function go(view, courseId = null, chapterN = null, anchor = null) {
-  S.view = view; S.courseId = courseId; S.chapterN = chapterN;
-  render();
-  if (anchor) { const el = document.getElementById(anchor); if (el) { el.scrollIntoView(); return; } }
+  if (S.audio.playing && (view !== "chapter" || chapterN !== S.chapterN)) auStop();
+  S.view = view; S.courseId = courseId; S.chapterN = chapterN; S.pendingAnchor = anchor;
   window.scrollTo(0, 0);
+  render();
 }
 function onCoursesChanged() {
   if (S.view === "catalog") { const el = $("#catalog-list"); if (el) el.innerHTML = catalogList(); else render(); loadAllProg(); }
@@ -705,20 +951,26 @@ function render() {
   if (S.view === "catalog") $("#nav-catalog").setAttribute("aria-current", "page");
   $("#nav-transcript").toggleAttribute("aria-current", S.view === "transcript");
   if (S.view === "transcript") $("#nav-transcript").setAttribute("aria-current", "page");
+  $("#nav-profile").toggleAttribute("aria-current", S.view === "profile");
+  if (S.view === "profile") $("#nav-profile").setAttribute("aria-current", "page");
   const c = S.courses.get(S.courseId);
-  if (c && S.view !== "catalog" && S.view !== "transcript") main.style.setProperty("--subj", subj(c)); else main.style.removeProperty("--subj");
+  if (c && !["catalog", "transcript", "profile"].includes(S.view)) main.style.setProperty("--subj", subj(c)); else main.style.removeProperty("--subj");
   const crumbs = [];
-  if (S.view !== "catalog" && S.view !== "transcript") crumbs.push(`<button type="button" data-act="go-catalog">Catalog</button>`);
+  if (!["catalog", "transcript", "profile"].includes(S.view)) crumbs.push(`<button type="button" data-act="go-catalog">Catalog</button>`);
   if (c && S.view !== "course") crumbs.push(`<span>/</span><button type="button" data-act="open-course" data-id="${esc(c.id)}">${esc(c.code)}</button>`);
   $("#crumbs").innerHTML = crumbs.join("");
   if (S.view === "catalog") main.innerHTML = viewCatalog();
   else if (S.view === "transcript") main.innerHTML = viewTranscript();
+  else if (S.view === "profile") main.innerHTML = viewProfile();
   else if (!c) main.innerHTML = S.catalogLoaded ? `<div class="empty">This course is not in the catalog. <button class="btn sm ghost" data-act="go-catalog">Back to catalog</button></div>` : `<p class="muted">Loading…</p>`;
   else if (S.view === "course") main.innerHTML = viewCourse(c);
   else if (S.view === "chapter") main.innerHTML = viewChapter(c, S.chapterN);
   else if (S.view === "final") main.innerHTML = viewFinal(c);
   else if (S.view === "cert") main.innerHTML = viewCert(c);
   else if (S.view === "notebook") main.innerHTML = viewNotebook(c);
+  else if (S.view === "glossary") main.innerHTML = viewGlossary(c);
+  else if (S.view === "biblio") main.innerHTML = viewBiblio(c);
+  if (S.pendingAnchor) { const el = document.getElementById(S.pendingAnchor); if (el) { el.scrollIntoView(); S.pendingAnchor = null; } }
 }
 
 function viewCatalog() {
@@ -726,17 +978,17 @@ function viewCatalog() {
   return `<div class="two">
   <div class="stack">
     <div class="stack-sm">
-      <div class="eyebrow">Course catalog</div>
-      <h1 class="h1">A full course on any subject, written for your level.</h1>
-      <p class="lede">Each course is a textbook and a workbook in one. Every chapter has readings, figures, worked examples, practice problems after each section, a lecture deck, a quiz, challenge exercises, homework readings and a watch list. Pass every chapter quiz and the final examination to earn a certificate.</p>
+      <div class="eyebrow">Dr. Professor Press · Course catalog</div>
+      <h1 class="h1">A full textbook on any subject, written for your level.</h1>
+      <p class="lede">Each book is a textbook and a workbook in one: cited readings, color figures, worked examples, practice after every section, lectures, quizzes, graded challenges and an audio edition. Every chapter is fact-checked. Pass the quizzes and the final to earn a certificate.</p>
     </div>
     <div class="stack-sm">
-      <div class="sec-head"><h2 class="h3">Courses on file</h2><span class="eyebrow">Shared library</span></div>
+      <div class="sec-head"><h2 class="h3">The shelf</h2><span class="eyebrow">Shared library</span></div>
       <div id="catalog-list">${catalogList()}</div>
     </div>
   </div>
-  <form class="sheet stack-sm" id="enroll" autocomplete="off">
-    <div class="sec-head"><h2 class="h3">Request a new course</h2><span class="eyebrow">Form DP-1</span></div>
+  <form class="sheet card stack-sm" id="enroll" autocomplete="off">
+    <div class="sec-head"><h2 class="h3">Commission a new textbook</h2><span class="eyebrow">Request slip DP-1</span></div>
     <div class="field">
       <label for="f-topic">Subject</label>
       <input class="input" id="f-topic" data-inp="topic" maxlength="140" placeholder="Any subject, field or skill" value="${esc(f.topic)}" required>
@@ -747,6 +999,10 @@ function viewCatalog() {
       <div class="levels">${LEVELS.map((l) => `<label><input type="radio" name="level" id="f-lv-${l.id}" data-inp="level" value="${l.id}" ${f.level === l.id ? "checked" : ""}>
         <span class="lv-name">${l.name}</span>${meter(l.id)}<span class="lv-desc muted small">${esc(l.short)}</span></label>`).join("")}</div>
     </fieldset>
+    <fieldset class="field" style="border:0;padding:0;margin:0">
+      <legend class="legend" style="margin-bottom:6px">Author</legend>
+      <div class="authors">${PERSONAS.map((p) => `<label class="author"><input type="radio" name="persona" id="f-p-${p.id}" data-inp="persona" value="${p.id}" ${f.persona === p.id ? "checked" : ""}><span><b>${esc(p.name)}</b><span class="muted small">${esc(p.blurb)}</span><i>“${esc(p.sample)}”</i></span></label>`).join("")}</div>
+    </fieldset>
     <div class="field">
       <label for="f-focus">What do you want out of it? <span class="muted" style="font-weight:400">(optional)</span></label>
       <textarea class="input" id="f-focus" data-inp="focus" maxlength="600" placeholder="For example: identify birds by ear in the eastern US; design levels for a 2D platformer">${esc(f.focus)}</textarea>
@@ -755,77 +1011,248 @@ function viewCatalog() {
       <span class="legend">Length</span>
       <div class="radio-row">${Object.entries(LENGTHS).map(([k, v]) => `<label><input type="radio" name="length" id="f-len-${k}" data-inp="length" value="${k}" ${f.length === k ? "checked" : ""}> ${k[0].toUpperCase() + k.slice(1)} <span class="muted num">(${v} ch.)</span></label>`).join("")}</div>
     </div>
+    <div class="field">
+      <span class="legend">Writing engine</span>
+      <div class="radio-row">
+        <label><input type="radio" name="engine" id="f-en-default" data-inp="engine" value="default" ${f.engine !== "complex" ? "checked" : ""}> Standard <span class="muted">(faster)</span></label>
+        <label><input type="radio" name="engine" id="f-en-complex" data-inp="engine" value="complex" ${f.engine === "complex" ? "checked" : ""}> Most capable <span class="muted">(slower, best writing)</span></label>
+      </div>
+    </div>
     <div class="row">
-      <button class="btn" type="submit" id="f-submit" ${S.busy.syllabus ? "disabled" : ""}>Draft syllabus</button>
+      <button class="btn" type="submit" id="f-submit" ${S.busy.syllabus ? "disabled" : ""}>Draft the book</button>
       ${S.busy.syllabus ? `<button class="btn ghost" type="button" data-act="stop" data-k="syllabus">Stop</button>` : ""}
     </div>
-    <div class="status" id="f-status" aria-live="polite">${esc(S.gen.syllabusMsg || "The syllabus takes about a minute. Chapters are written when you open them.")}</div>
+    <div class="status" id="f-status" aria-live="polite">${esc(S.gen.syllabusMsg || "The syllabus, preface and cover take about a minute. Chapters are written when you open them.")}</div>
   </form>
 </div>`;
 }
 
 function catalogList() {
-  if (!S.catalogLoaded) return `<p class="muted small">Loading the catalog…</p>`;
+  if (!S.catalogLoaded) return `<p class="muted small">Loading the shelf…</p>`;
   if (S.catalogError) return `<div class="empty">The shared library could not be read (${esc(S.catalogError)}). Reload the page to try again.</div>`;
   const list = [...S.courses.values()].sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
-  if (!list.length) return `<div class="empty">No courses on file yet. Request one with the form; it appears here once the syllabus is drafted.</div>`;
-  return `<div class="tbl-wrap"><table>
-    <thead><tr><th>Code</th><th>Course</th><th>Level</th><th>Ch.</th><th>Your progress</th></tr></thead>
-    <tbody>${list.map((c) => {
-      const p = S.prog[c.id]; const s = courseSummary(c, p);
-      const prog = s.cert ? `<span class="pill ok">Certified</span>` : p ? `<span class="num">${s.passed}/${s.n}</span> passed` : `<span class="muted">—</span>`;
-      return `<tr class="link" data-act="open-course" data-id="${esc(c.id)}" tabindex="0">
-        <td class="code"><span class="swatch" style="--sw:${subj(c)}"></span>${esc(c.code)}</td><td>${esc(c.title)}</td>
-        <td style="white-space:nowrap">${meter(c.level)} ${esc(lvl(c.level).name)}</td>
-        <td class="num">${c.chapters.length}</td><td>${prog}</td></tr>`;
-    }).join("")}</tbody></table></div>`;
+  if (!list.length) return `<div class="empty">No books on the shelf yet. Commission one with the form; it appears here once the syllabus is drafted.</div>`;
+  return `<div class="shelf">${list.map((c) => {
+    const p = S.prog[c.id], s = courseSummary(c, p);
+    const status = s.cert ? "Certified" : p && s.passed ? `${s.passed}/${s.n} chapters passed` : `${c.chapters.length} chapters · ${persona(c.persona).name}`;
+    return `<button type="button" class="shelf-item" data-act="open-course" data-id="${esc(c.id)}">${coverHTML(c, "sm")}<span class="plank" aria-hidden="true"></span><span class="shelf-cap"><span class="num">${esc(c.code)}</span> · ${esc(lvl(c.level).name)}<br><span class="muted">${esc(status)}</span></span></button>`;
+  }).join("")}</div>`;
 }
+
+function coverHTML(c, size) {
+  const P = persona(c.persona);
+  const [main, ...rest] = String(c.title).split(/:\s+/);
+  const m = c.coverSvg && /^<svg[\s>]/i.test(c.coverSvg) ? svgSrc(c.coverSvg).replace(/'/g, "%27").replace(/\(/g, "%28").replace(/\)/g, "%29") : "";
+  const art = m ? `<div class="cover-art foil" aria-hidden="true" style="-webkit-mask-image:url(${m});mask-image:url(${m})"></div>` : `<div class="cover-art cover-pattern" aria-hidden="true"></div>`;
+  return `<div class="book ${size}" style="--subj:${subj(c)}" role="img" aria-label="Cover of ${esc(c.title)}">
+    <div class="book-top"><span>${esc(c.code)}</span><span>${esc(lvl(c.level).name)}</span></div>
+    <div class="book-title">${esc(main)}${rest.length ? `<small>${esc(rest.join(": "))}</small>` : ""}</div>
+    ${art}
+    <div class="book-author">Dr. Professor<br><span>writing as ${esc(P.name)}</span></div>
+    <div class="book-pub">Dr. Professor Press</div>
+  </div>`;
+}
+
+function needNames(ids) {
+  const miss = [...new Set(ids.filter((id) => id && !(id in S.names)))];
+  if (!miss.length) return;
+  miss.forEach((id) => { S.names[id] = null; });
+  caps.user.then((u) => (u && u.profiles ? u.profiles(miss) : {})).catch(() => ({})).then((res) => {
+    miss.forEach((id) => { S.names[id] = (res && res[id]) || { name: "" }; });
+    document.querySelectorAll("[data-uid]").forEach((el) => { const n = S.names[el.dataset.uid]; if (n) el.textContent = n.name || "a reader"; });
+  });
+}
+const who = (id) => `<span data-uid="${esc(id)}">${esc((S.names[id] && S.names[id].name) || (S.names[id] ? "a reader" : "…"))}</span>`;
+const engineName = (t) => ENGINES[t] || "Standard";
 
 function viewCourse(c) {
   const p = S.prog[c.id];
   if (!p) { loadProg(c.id).then(() => S.view === "course" && S.courseId === c.id && render()); }
-  const L = lvl(c.level);
+  const L = lvl(c.level), P = persona(c.persona);
   const s = courseSummary(c, p);
+  const next = (c.chapters.findIndex((_, i) => !chapterState(c, p, i + 1).passed) + 1) || 1;
+  const started = p && (Object.keys(p.read).length || Object.keys(p.quiz).length);
   const finalRow = p && p.final ? `<span class="pill ${p.final.score >= PASS_FINAL ? "ok" : "warn"}">${pct(p.final.score)}</span>` : `<span class="muted small">Not taken</span>`;
-  return `<div class="stack col" style="max-width:900px">
-  <header class="cover">
-    <div class="eyebrow">${esc(c.code)} · ${esc(c.department || "")}</div>
-    <h1 class="h1">${esc(c.title)}</h1>
-    <div class="small">${meter(c.level)} ${esc(L.name)} level · ${c.chapters.length} chapters · about ${esc(c.hours || "—")} study hours</div>
-  </header>
-  <div class="prose">${paras(c.description)}</div>
-  <dl class="meta">
-    <dt>Level</dt><dd>${meter(c.level)} ${esc(L.name)} <span class="muted">· ${esc(L.short)}</span></dd>
-    <dt>Requested subject</dt><dd>${esc(c.topic)}</dd>
-    ${c.focus ? `<dt>Learner focus</dt><dd>${esc(c.focus)}</dd>` : ""}
-    <dt>Prerequisites</dt><dd>${arr(c.prerequisites).length ? esc(c.prerequisites.join("; ")) : "None"}</dd>
-    <dt>Study time</dt><dd class="num">≈ ${esc(c.hours || "—")} hours</dd>
-    <dt>On file since</dt><dd>${esc(date(c.createdAt))}</dd>
-    <dt>Your standing</dt><dd><span class="num">${s.passed}/${s.n}</span> chapters passed · final ${p && p.final ? pct(p.final.score) : "not taken"}${s.cert ? " · <strong>certified</strong>" : ""}</dd>
-  </dl>
-  <div class="stack-sm">
-    <div class="sec-head"><h2 class="h3">Course objectives</h2></div>
-    <ol class="obj">${arr(c.objectives).map((o) => `<li>${fmt(o)}</li>`).join("")}</ol>
+  const row = (act, label, title, sub, status) => `<tr class="link" data-act="${act}" tabindex="0"><td class="num">${label}</td><td><strong>${title}</strong><div class="muted">${sub}</div></td><td>${status}</td></tr>`;
+  return `<div class="stack" style="max-width:1000px">
+  <div class="book-front">
+    <div class="stack-sm">${coverHTML(c, "lg")}${c.coverSvg ? "" : `<button class="linkbtn" data-act="draw-cover">${S.busy["cover:" + c.id] ? "Drawing the cover…" : "Draw the cover illustration"}</button>`}</div>
+    <div class="stack-sm">
+      <div class="eyebrow">${esc(c.code)} · ${esc(c.department || "")}</div>
+      <h1 class="h1">${esc(c.title)}</h1>
+      <p class="byline">Dr. Professor, writing as <strong>${esc(P.name)}</strong></p>
+      <div class="prose">${paras(c.description)}</div>
+      <dl class="meta">
+        <dt>Level</dt><dd>${meter(c.level)} ${esc(L.name)} <span class="muted">· ${esc(L.short)}</span></dd>
+        <dt>Author voice</dt><dd>${esc(P.name)} <span class="muted">· ${esc(P.blurb)}</span></dd>
+        ${c.focus ? `<dt>Written for</dt><dd>${esc(c.focus)}</dd>` : ""}
+        <dt>Prerequisites</dt><dd>${arr(c.prerequisites).length ? esc(c.prerequisites.join("; ")) : "None"}</dd>
+        <dt>Study time</dt><dd class="num">≈ ${esc(c.hours || "—")} hours</dd>
+        <dt>Your standing</dt><dd><span class="num">${s.passed}/${s.n}</span> chapters passed · final ${p && p.final ? pct(p.final.score) : "not taken"}${s.cert ? " · <strong>certified</strong>" : ""}</dd>
+      </dl>
+      <div class="row"><button class="btn" data-act="open-chapter" data-n="${next}">${started ? "Continue" : "Start"} with chapter ${next}</button><button class="btn ghost" data-act="open-notebook">Notebook</button></div>
+    </div>
   </div>
-  <div class="stack-sm">
-    <div class="sec-head"><h2 class="h3">Syllabus</h2><span class="eyebrow">${c.chapters.length} chapters</span></div>
+  ${c.preface ? `<section class="stack-sm"><div class="sec-head"><h2 class="h2">Preface</h2></div><div class="prose">${paras(c.preface)}</div><p class="signature">Dr. Professor, writing as ${esc(P.name)}</p></section>` : ""}
+  <section class="stack-sm">
+    <div class="sec-head"><h2 class="h2">Course objectives</h2></div>
+    <ol class="obj">${arr(c.objectives).map((o) => `<li>${fmt(o)}</li>`).join("")}</ol>
+  </section>
+  <section class="stack-sm">
+    <div class="sec-head"><h2 class="h2">Contents</h2><span class="eyebrow">${c.chapters.length} chapters</span></div>
     <div class="tbl-wrap"><table>
       <thead><tr><th>Ch.</th><th>Contents</th><th>Status</th></tr></thead>
       <tbody>${c.chapters.map((ch, i) => {
         const n = i + 1, st = chapterState(c, p, n);
         return `<tr class="link" data-act="open-chapter" data-n="${n}" tabindex="0">
-          <td class="num">${n}</td>
+          <td class="num" style="color:var(--subj-ink)">${n}</td>
           <td><strong>${esc(ch.title)}</strong><div class="muted">${esc(ch.summary)}</div>
             <div class="small" style="margin-top:4px">${ch.sections.map((x, j) => `<span class="num muted">${n}.${j + 1}</span> ${esc(x.title)}`).join(" &nbsp;·&nbsp; ")}</div>
             ${ch.challenge ? `<div class="small muted" style="margin-top:4px">Challenge: ${esc(ch.challenge)}</div>` : ""}</td>
           <td><span class="pill ${st.cls}">${esc(st.label)}</span></td></tr>`;
       }).join("")}
-        <tr class="link" data-act="open-final" tabindex="0"><td class="num">F</td><td><strong>Final examination</strong><div class="muted">16 questions across all chapters. ${pct(PASS_FINAL)} to pass. You may sit it at any time for credit by examination.</div></td><td>${finalRow}</td></tr>
-        <tr class="link" data-act="open-cert" tabindex="0"><td class="num">C</td><td><strong>Certificate</strong><div class="muted">Issued when the final is passed. Records whether all chapter quizzes were passed too.</div></td><td>${s.cert ? `<span class="pill ok">Issued</span>` : `<span class="muted small">Not earned</span>`}</td></tr>
+        ${row("open-glossary", "G", "Glossary", "Every key term in the written chapters, A to Z.", "")}
+        ${row("open-biblio", "B", "Bibliography", "Every source cited in the book, with its fact-check status.", "")}
+        ${row("open-final", "F", "Final examination", `16 questions across all chapters, answer key verified. ${pct(PASS_FINAL)} to pass. You may sit it at any time for credit by examination.`, finalRow)}
+        ${row("open-cert", "C", "Certificate", "Issued when the final is passed. Records whether all chapter quizzes were passed too.", s.cert ? `<span class="pill ok">Issued</span>` : `<span class="muted small">Not earned</span>`)}
       </tbody></table></div>
-  </div>
-  <div class="row"><button class="btn ghost" data-act="open-notebook">Open your notebook for this course</button></div>
+  </section>
+  ${coachBox(c, p)}
+  ${colophon(c)}
 </div>`;
+}
+
+function colophon(c) {
+  const P = persona(c.persona), pv = c.prov || {};
+  needNames([c.createdBy]);
+  const written = Object.keys(c.written || {}).map(Number).sort((a, b) => a - b);
+  const rows = [
+    ["Author", `Dr. Professor, writing as ${esc(P.name)}: ${esc(P.blurb)}`],
+    ["Written by", pv.note ? esc(pv.note) : `Claude, an AI model made by Anthropic, through the Dr. Professor app. Syllabus and preface: ${engineName(pv.syllabus && pv.syllabus.tier)} engine, ${esc(date((pv.syllabus && pv.syllabus.at) || c.createdAt))}.${pv.cover ? ` Cover illustration: ${engineName(pv.cover.tier)} engine.` : ""}`],
+    ["Requested by", c.createdBy ? who(c.createdBy) : esc(pv.requester || "Not recorded")],
+    ["Drafting engine", `${esc(engineName(c.engine))} for writing; Most capable for every fact-check`],
+    ["Chapters written", written.length ? written.map((n) => `Ch. ${n} (${esc(date(c.written[n]))})`).join(", ") + ". Each chapter's own report lists who wrote and checked it." : "None yet"],
+    ["Sources policy", "Peer-reviewed journals, university-press and standard academic texts, and scientific agencies only. Every citation is checked by the fact-check pass."],
+    ["Edition", `First edition. Prompt version ${esc(pv.v || PROMPT_V)}.`],
+  ];
+  return `<section class="cbox k-check" id="colophon"><div class="cbox-h"><span>About this edition</span><span>Dr. Professor Press</span></div><div class="cbox-b">
+    <dl class="meta">${rows.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl>
+    <p class="small muted">Dr. Professor books are written and fact-checked by AI. Use them as a well-sourced study companion, and confirm anything important in the cited sources.</p></div></section>`;
+}
+
+/* ----- study coach: mastery from practice and quizzes, then a personal review sheet ----- */
+const secTitle = (c, sec) => { const [a, b] = String(sec).split(".").map(Number); const ch = c.chapters[a - 1]; return ch && ch.sections[b - 1] ? ch.sections[b - 1].title : ""; };
+const secCmp = (a, b) => { const [x1, y1] = a.split(".").map(Number), [x2, y2] = b.split(".").map(Number); return x1 - x2 || y1 - y2; };
+function mastery(p) {
+  const m = {};
+  const add = (sec, ok) => { if (!sec) return; const r = m[sec] = m[sec] || { right: 0, total: 0 }; r.total++; if (ok) r.right++; };
+  if (!p) return m;
+  Object.entries(p.practice).forEach(([k, v]) => { if (v && v.choice != null) add(k.split("#")[0], v.correct); });
+  Object.values(p.quiz).forEach((q) => arr(q.items).forEach((it) => add(it.sec, it.ok)));
+  return m;
+}
+function coachBox(c, p) {
+  if (!p) return "";
+  const m = mastery(p), secs = Object.keys(m).sort(secCmp);
+  const weak = secs.filter((s) => m[s].right / m[s].total < 0.7);
+  const busy = S.busy["coach:" + c.id];
+  const body = !secs.length
+    ? `<p class="small muted">Answer practice problems and chapter quizzes. The coach then shows which sections you have mastered, which need work, and writes you a personal review sheet built around your mistakes.</p>`
+    : `<div class="tbl-wrap"><table><thead><tr><th>Section</th><th>Accuracy</th><th></th></tr></thead><tbody>${secs.map((s) => {
+        const r = m[s], acc = r.right / r.total, ok = acc >= 0.7;
+        return `<tr><td><span class="num" style="color:var(--subj-ink)">${esc(s)}</span> ${esc(secTitle(c, s))}</td>
+          <td style="min-width:150px"><div class="bar-meter"><span style="width:${pct(acc)};--bw:${ok ? "var(--ok)" : "var(--warn)"}"></span></div><span class="small num">${r.right}/${r.total} correct</span></td>
+          <td>${ok ? `<span class="pill ok">Solid</span>` : `<button class="btn ghost sm" data-act="coach-alt" data-sec="${esc(s)}">Explain it differently</button>`}</td></tr>`;
+      }).join("")}</tbody></table></div>
+      <div class="row">${busy ? `<button class="btn ghost" data-act="stop" data-k="coach:${esc(c.id)}">Stop</button><span class="status">Writing your review sheet…</span>` : `<button class="btn" data-act="coach-write" ${weak.length ? "" : "disabled"}>${p.review ? "Write a new review sheet" : "Write my review sheet"}</button><span class="small muted">${weak.length ? `${weak.length} section${weak.length === 1 ? "" : "s"} below 70%.` : "Nothing below 70% right now."}</span>`}</div>
+      ${S.gen["coach:" + c.id] ? `<p class="status err">${esc(S.gen["coach:" + c.id])}</p>` : ""}`;
+  return `<section class="cbox k-subj" id="coach"><div class="cbox-h"><span>Study coach</span><span>Private to you</span></div><div class="cbox-b">${body}${p.review ? reviewSheet(c, p) : ""}</div></section>`;
+}
+function reviewSheet(c, p) {
+  const r = p.review, sh = r.sheet || {};
+  return `<div class="stack-sm" style="margin-top:8px"><div class="h3">Your review sheet</div>
+    <p class="small muted">Written ${esc(date(r.at))} by Dr. Professor as ${esc(persona(r.persona).name)}, using your study profile and your missed questions.</p>
+    ${sh.intro ? `<p>${fmt(sh.intro)}</p>` : ""}
+    ${arr(sh.items).map((it, i) => `<div class="cbox k-practice"><div class="cbox-h"><span>Review ${esc(it.sec)} · ${esc(it.title)}</span></div><div class="cbox-b">
+      <div class="prose">${paras(it.explain)}</div>
+      ${it.whyTempting ? `<p class="small"><strong>Why your answer was tempting.</strong> ${fmt(it.whyTempting)}</p>` : ""}
+      ${it.example ? `<p class="small"><strong>Example.</strong> ${fmt(it.example)}</p>` : ""}
+      ${it.check ? `<div class="prob" id="rv-${i}">${reviewCheck(i, it.check)}</div>` : ""}</div></div>`).join("")}
+    ${arr(sh.plan).length ? `<div class="cbox k-example"><div class="cbox-h"><span>Plan for your next session</span></div><div class="cbox-b"><ol class="obj">${sh.plan.map((x) => `<li>${fmt(x)}</li>`).join("")}</ol></div></div>` : ""}</div>`;
+}
+function reviewCheck(i, q) {
+  const pick = S.rvPick[i], done = pick != null;
+  return `<div class="q"><strong>Check.</strong> ${fmt(q.q)}</div><div class="choices">${q.choices.map((ch, j) => `<button class="choice ${done ? (j === q.answer ? "right" : j === pick ? "wrong" : "") : ""}" data-act="rv-pick" data-i="${i}" data-j="${j}" ${done ? "disabled" : ""}><span class="k">${LETTERS[j]}</span><span>${fmt(ch)}</span></button>`).join("")}</div>
+    ${done ? `<div class="verdict ${pick === q.answer ? "ok" : "bad"}">${pick === q.answer ? "Correct." : `The answer is ${LETTERS[q.answer]}.`}</div>${q.explanation ? `<div class="expl">${fmt(q.explanation)}</div>` : ""}` : ""}`;
+}
+
+/* ----- back matter ----- */
+async function loadChapters(c) {
+  await Promise.all(c.chapters.map((_, i) => {
+    const n = i + 1, key = `${c.id}:${n}`;
+    if (S.chapters[key] !== undefined || !(c.written && c.written[n])) return null;
+    return Store.get(chapterPath(c.id, n)).then((d) => { S.chapters[key] = d; });
+  }));
+}
+function withChapters(c, view) {
+  if (S.loadedAll[c.id]) return true;
+  loadChapters(c).then(() => { S.loadedAll[c.id] = true; if (S.view === view && S.courseId === c.id) render(); });
+  return false;
+}
+function writtenChapters(c) {
+  return c.chapters.map((_, i) => ({ n: i + 1, d: S.chapters[`${c.id}:${i + 1}`] })).filter((x) => x.d && x.d.lesson);
+}
+function viewGlossary(c) {
+  if (!withChapters(c, "glossary")) return `<p class="muted">Collecting terms…</p>`;
+  const terms = [];
+  writtenChapters(c).forEach(({ n, d }) => d.lesson.sections.forEach((s) => s.keyTerms.forEach((t) => terms.push({ ...t, sec: s.n, n }))));
+  terms.sort((a, b) => a.term.localeCompare(b.term, undefined, { sensitivity: "base" }));
+  const groups = {};
+  terms.forEach((t) => { const L = t.term[0].toUpperCase(); (groups[L] = groups[L] || []).push(t); });
+  return `<div class="stack col"><div class="stack-sm"><div class="eyebrow">${esc(c.code)} · Back matter</div><h1 class="h1">Glossary</h1>
+    <p class="small muted">${terms.length} terms from ${writtenChapters(c).length} written chapter${writtenChapters(c).length === 1 ? "" : "s"}. The glossary grows as more chapters are written.</p></div>
+    ${terms.length ? Object.entries(groups).map(([L, list]) => `<div class="stack-sm"><div class="sec-head"><h2 class="h2" style="color:var(--subj-ink)">${esc(L)}</h2></div>
+      <dl class="terms">${list.map((t) => `<dt>${esc(t.term)}</dt><dd>${fmt(t.def)} <button class="linkbtn" data-act="open-chapter" data-n="${t.n}" data-anchor="s-${esc(t.sec)}">${esc(t.sec)}</button></dd>`).join("")}</dl></div>`).join("") : `<div class="empty">No chapters written yet.</div>`}</div>`;
+}
+function viewBiblio(c) {
+  if (!withChapters(c, "biblio")) return `<p class="muted">Collecting sources…</p>`;
+  const map = new Map();
+  const add = (x, where, further) => {
+    const k = x.citation.toLowerCase().replace(/\s+/g, " ").trim();
+    const e = map.get(k) || { ...x, where: [], further: false };
+    e.where.push(where); e.further = e.further || further;
+    e.checked = e.checked || x.checked; e.unverified = e.unverified || x.unverified; e.withdrawn = e.withdrawn || x.withdrawn;
+    map.set(k, e);
+  };
+  writtenChapters(c).forEach(({ n, d }) => {
+    d.lesson.sections.forEach((s) => arr(s.sources).forEach((x) => add(x, s.n, false)));
+    arr(d.assess && d.assess.readings).forEach((r) => add(r, `Ch. ${n} reading`, true));
+  });
+  const list = [...map.values()].sort((a, b) => a.citation.localeCompare(b.citation));
+  const checked = list.filter((x) => x.checked).length;
+  return `<div class="stack col" style="max-width:900px"><div class="stack-sm"><div class="eyebrow">${esc(c.code)} · Back matter</div><h1 class="h1">Bibliography</h1>
+    <p class="small muted">${list.length} sources; ${checked} confirmed by fact-check. Sources policy: peer-reviewed journals, university-press and standard academic texts, and scientific agencies.</p></div>
+    ${list.length ? `<ol class="refs biblio">${list.map((x) => `<li class="${x.withdrawn ? "withdrawn" : ""}">${esc(x.citation)}
+      <div class="row" style="gap:6px;margin-top:3px">${x.withdrawn ? `<span class="pill warn">Withdrawn</span>` : x.checked ? `<span class="pill ok">Checked</span>` : x.unverified ? `<span class="pill warn">Unverified</span>` : ""}<span class="small muted">${x.further ? "Further reading" : "Cited"} in ${esc([...new Set(x.where)].join(", "))}</span><a class="small" href="${readingLink(x)}" target="_blank" rel="noopener">Find it ↗</a></div></li>`).join("")}</ol>` : `<div class="empty">No chapters written yet.</div>`}</div>`;
+}
+
+/* ----- study profile ----- */
+const LEARN_PREFS = ["Reading carefully", "Pictures and diagrams", "Worked examples", "Lots of practice", "Questions and discussion", "Listening", "Stories and history", "Real-world applications"];
+function viewProfile() {
+  const pr = S.profile;
+  return `<div class="stack col"><div class="stack-sm"><div class="eyebrow">Private to you</div><h1 class="h1">Study profile</h1>
+    <p class="lede">Dr. Professor uses this to tailor your tutoring: re-explanations, review sheets and office hours. The textbooks stay the same for everyone; the tutoring layer is yours.</p></div>
+  <form class="sheet stack-sm" id="profile-form" autocomplete="off">
+    <div class="field"><label for="pf-name">Your name <span class="muted" style="font-weight:400">(printed on certificates)</span></label><input class="input" id="pf-name" data-inp="pf-name" maxlength="80" value="${esc(pr.name || "")}"></div>
+    <fieldset class="field" style="border:0;padding:0;margin:0"><legend class="legend" style="margin-bottom:6px">Favorite tutor</legend>
+      <div class="authors">${PERSONAS.map((p) => `<label class="author"><input type="radio" name="pf-persona" id="pf-p-${p.id}" data-inp="pf-persona" value="${p.id}" ${pr.persona === p.id ? "checked" : ""}><span><b>${esc(p.name)}</b><span class="muted small">${esc(p.blurb)}</span></span></label>`).join("")}</div></fieldset>
+    <fieldset class="field" style="border:0;padding:0;margin:0"><legend class="legend" style="margin-bottom:6px">How you learn best</legend>
+      <div class="checks">${LEARN_PREFS.map((x, i) => `<label class="check"><input type="checkbox" id="pf-pref-${i}" data-inp="pf-pref" value="${esc(x)}" ${arr(pr.prefs).includes(x) ? "checked" : ""}> ${esc(x)}</label>`).join("")}</div></fieldset>
+    <div class="field"><label for="pf-goal">Your goal</label><textarea class="input" id="pf-goal" data-inp="pf-goal" maxlength="600" placeholder="For example: pass a certification, build a game, teach my kids, satisfy curiosity">${esc(pr.goal || "")}</textarea></div>
+    <div class="field"><label for="pf-background">What you already know</label><textarea class="input" id="pf-background" data-inp="pf-background" maxlength="600" placeholder="Related subjects you have studied or work you have done">${esc(pr.background || "")}</textarea></div>
+    <div class="field"><label for="pf-minutes">Study time per day</label><select class="input sel" id="pf-minutes" data-inp="pf-minutes">${["", "10", "20", "30", "45", "60", "90"].map((m) => `<option value="${m}" ${String(pr.minutes || "") === m ? "selected" : ""}>${m ? m + " minutes" : "Not set"}</option>`).join("")}</select></div>
+    <div class="status" id="pf-status" aria-live="polite"></div>
+  </form></div>`;
 }
 
 /* ----- chapter ----- */
@@ -853,13 +1280,14 @@ function viewChapter(c, n) {
   const L0 = chap && chap.lesson;
   const reviewed = !!(chap && chap.review && chap.review.full);
   const facts = L0
-    ? `<span>${L0.sections.length} sections</span><span>≈ ${Math.max(5, Math.round(words(L0) / 200))} min reading</span><span>${arr(chap.figures).length} figures</span><span>${L0.sections.reduce((k, s) => k + s.practice.length, 0)} practice problems</span>${reviewed ? `<span>✓ Fact-checked</span>` : ""}`
+    ? `<span>by ${esc(persona(c.persona).name)}</span><span>${L0.sections.length} sections</span><span>≈ ${Math.max(5, Math.round(words(L0) / 200))} min reading</span><span>${arr(chap.figures).length} figures</span><span>${L0.sections.reduce((k, s) => k + s.practice.length, 0)} practice problems</span>${reviewed ? `<span>✓ Fact-checked</span>` : ""}`
     : `<span>${ch.sections.length} sections</span><span>Not yet written</span>`;
   const head = `<header class="opener">
       <div class="eyebrow">${esc(c.code)} · ${esc(c.title)}</div>
       <div class="big" aria-hidden="true">${n}</div>
       <div class="stack-sm"><div class="eyebrow">Chapter ${n} of ${c.chapters.length}</div><h1 class="h1">${esc(ch.title)}</h1></div>
       <div class="sub">${meter(c.level)}<span>${esc(lvl(c.level).name)} level</span>${facts}</div>
+      ${reviewed ? `<div class="stamp" aria-label="Fact-checked"><b>Fact-checked</b><span>Dr. Professor Press</span><span>${esc(date(chap.review.at))}</span></div>` : ""}
     </header>`;
   if (!L0) {
     return `<div class="stack col" style="max-width:900px">${head}
@@ -876,6 +1304,7 @@ function viewChapter(c, n) {
   const rail = `<nav class="rail" aria-label="Chapter contents"><div class="eyebrow">Contents</div><ol>
       <li><a href="#top">Overview</a></li>
       ${chap.review ? `<li><a href="#factcheck">Fact-check report</a></li>` : ""}
+      <li><a href="#listen">Audio edition</a></li>
       ${A ? `<li><a href="#lecture">Lecture</a></li>` : ""}
       ${L.sections.map((s) => `<li><a href="#s-${esc(s.n)}" class="${p.read[s.n] ? "done" : ""}">${esc(s.n)} ${esc(s.title)}</a></li>`).join("")}
       ${A ? `<li><a href="#quiz">Chapter quiz</a></li><li><a href="#challenge">Challenge exercises</a></li><li><a href="#readings">Homework reading</a></li><li><a href="#media">Watch and look</a></li>` : ""}
@@ -886,17 +1315,21 @@ function viewChapter(c, n) {
       <div class="prose">${paras(L.overview)}</div>
       ${L.objectives.length ? `<div class="cbox k-subj"><div class="cbox-h"><span>After this chapter you can</span></div><div class="cbox-b"><ul class="plain">${L.objectives.map((o) => `<li>${fmt(o)}</li>`).join("")}</ul></div></div>` : ""}
       ${chap.review ? reviewBox(chap.review) : ""}
+      ${provLine(c, chap)}
       ${loose.map(figHTML).join("")}
       ${missing ? `<div class="sheet stack-sm" id="gen-box">${genBox(c, n, chap)}</div>` : ""}
     </section>
+    <section class="unit" id="listen"><div class="sec-head"><h2 class="h2">Audio edition</h2><span class="eyebrow">Listen</span></div><div id="player">${playerHTML(c, n, chap)}</div></section>
     ${A && A.slides.length ? `<section class="unit" id="lecture"><div class="sec-head"><h2 class="h2">Lecture</h2><span class="eyebrow">${A.slides.length} slides</span></div><div id="deck">${deck(c, n, A)}</div></section>` : ""}
     ${L.sections.map((s) => `<section class="unit" id="s-${esc(s.n)}">
       <div class="sec-head"><h2 class="h2"><span class="num" style="color:var(--subj-ink)">${esc(s.n)}</span> ${esc(s.title)}</h2></div>
-      <div class="prose">${s.reading.map((r) => `<p>${fmt(r)}</p>`).join("")}</div>
+      <div class="prose">${s.reading.map((r) => `<p>${cite(fmt(r), s.n)}</p>`).join("")}</div>
       ${figuresFor(chap, s.n).map(figHTML).join("")}
+      ${refsBlock(s)}
+      ${altBlock(c, n, s)}
       ${s.misconception && s.misconception.myth ? `<div class="cbox k-myth"><div class="cbox-h"><span>Common misconception</span></div><div class="cbox-b"><div class="myth"><b>Myth</b><span>${fmt(s.misconception.myth)}</span><b class="fact">Fact</b><span>${fmt(s.misconception.fact)}</span></div></div></div>` : ""}
       ${s.keyTerms.length ? `<div class="cbox k-terms"><div class="cbox-h"><span>Key terms</span><span>${s.keyTerms.length}</span></div><div class="cbox-b"><dl class="terms">${s.keyTerms.map((t) => `<dt>${esc(t.term)}</dt><dd>${fmt(t.def)}</dd>`).join("")}</dl></div></div>` : ""}
-      ${s.example.steps.length ? `<div class="cbox k-example"><div class="cbox-h"><span>Worked example</span></div><div class="cbox-b"><div class="h3">${fmt(((t) => t.charAt(0).toUpperCase() + t.slice(1))(s.example.title.replace(/^Worked example:\s*/i, "")))}</div><ol class="steps">${s.example.steps.map((x) => `<li>${fmt(x)}</li>`).join("")}</ol>${s.example.takeaway ? `<p class="small"><strong>Takeaway.</strong> ${fmt(s.example.takeaway)}</p>` : ""}</div></div>` : ""}
+      ${s.example.steps.length ? `<div class="cbox k-example"><div class="cbox-h"><span>Worked example</span></div><div class="cbox-b"><div class="h3">${fmt(s.example.title.replace(/^Worked example:\s*/i, ""))}</div><ol class="steps">${s.example.steps.map((x) => `<li>${fmt(x)}</li>`).join("")}</ol>${s.example.takeaway ? `<p class="small"><strong>Takeaway.</strong> ${fmt(s.example.takeaway)}</p>` : ""}</div></div>` : ""}
       ${s.practice.length ? `<div class="cbox k-practice"><div class="cbox-h"><span>Practice ${esc(s.n)}</span><span>${s.practice.length} problems</span></div><div class="cbox-b">${s.practice.map((pr, i) => `<div class="prob" id="pp-${esc(s.n)}-${i}">${practice(c, s.n, i, pr)}</div>`).join("")}</div></div>` : ""}
       <div class="field notes"><label for="note-${esc(s.n)}">Your notes · ${esc(s.n)}</label><textarea class="input" id="note-${esc(s.n)}" data-inp="note" data-sec="${esc(s.n)}" placeholder="Summarize the section in your own words, or write questions to bring to office hours.">${esc(p.notes[s.n] || "")}</textarea></div>
       <label class="check"><input type="checkbox" id="read-${esc(s.n)}" data-inp="read" data-sec="${esc(s.n)}" ${p.read[s.n] ? "checked" : ""}> I have read section ${esc(s.n)} and done its practice</label>
@@ -925,8 +1358,10 @@ function reviewBox(r) {
   return `<div class="cbox k-check" id="factcheck"><div class="cbox-h"><span>Fact-check report</span><span>${esc(date(r.at))}</span></div><div class="cbox-b">
     <p class="small">${esc(r.by || "Checked after writing by a second, more careful Claude pass.")}
       ${r.keysChecked ? ` Answer keys re-solved blind: <strong class="num">${r.keysAgreed}/${r.keysChecked}</strong> agreed${fixes.length ? `, ${plural(fixes.length, "key")} corrected` : ""}.` : ""}
+      ${r.srcChecked ? ` Sources checked: <strong class="num">${r.srcChecked - (r.srcWithdrawn || 0)}/${r.srcChecked}</strong> confirmed${r.srcWithdrawn ? `, ${r.srcWithdrawn} withdrawn` : ""}.` : ""}
       ${applied.length ? ` ${plural(applied.length, "correction")} applied to the text.` : " No text corrections were needed."}
-      ${removed.length ? ` ${plural(removed.length, "unverifiable reading")} removed.` : ""}</p>
+      ${removed.length ? ` ${plural(removed.length, "unverifiable reading")} removed.` : ""}
+      ${r.style ? (Object.keys(r.style).length ? ` Style check: ${esc(Object.entries(r.style).map(([w, k]) => `${w} ×${k}`).join(", "))} remaining.` : " Style check: no stock AI phrasing found.") : ""}</p>
     ${r.summary ? `<p class="small muted">${fmt(r.summary)}</p>` : ""}
     ${corr.length || fixes.length ? `<details class="report"><summary>Show every change</summary><div class="tbl-wrap" style="margin-top:8px"><table><thead><tr><th>Where</th><th>Change</th><th>Why</th></tr></thead><tbody>
       ${fixes.map((k) => `<tr><td>${esc(k.id)}</td><td>Answer key <span class="fix-before">${esc(k.from)}</span> → <span class="fix-after">${esc(k.to)}</span></td><td>${fmt(k.why)}</td></tr>`).join("")}
@@ -950,7 +1385,37 @@ function errataBlock(c, n, sec) {
       : `<div><button class="linkbtn" data-act="err-open" data-sec="${esc(sec)}">Report an error in ${esc(sec)}</button></div>`}
   </div>`;
 }
+
+const cite = (html, sec) => html.replace(/\[(\d+(?:\s*[,–-]\s*\d+)*)\]/g, (m, g) => `<sup class="cite"><a href="#ref-${esc(sec)}-${g.match(/\d+/)[0]}" title="See source">[${g}]</a></sup>`);
+function provLine(c, chap) {
+  const pv = chap.prov || {}, P = persona(c.persona);
+  needNames(Object.values(pv).map((x) => x && x.by));
+  const part = (k, label) => (pv[k] && pv[k].at ? `${label}: ${esc(engineName(pv[k].tier))} engine, ${esc(date(pv[k].at))}${pv[k].by ? `, requested by ${who(pv[k].by)}` : ""}` : "");
+  const bits = pv.note ? [esc(pv.note)] : [part("lesson", "Text and practice"), part("figures", "Figures"), part("assess", "Lecture and assessments"), part("review", "Fact-check"), part("audio", "Narrated edition")].filter(Boolean);
+  return `<p class="small muted prov"><strong>Who wrote this chapter.</strong> Dr. Professor, writing as ${esc(P.name)}, using Claude by Anthropic. ${bits.join(" · ")}${bits.length ? "." : ""}</p>`;
+}
+function refsBlock(s) {
+  if (!arr(s.sources).length) return "";
+  return `<details class="refs-wrap" open><summary class="box-title">Sources for ${esc(s.n)}</summary><ol class="refs">${s.sources.map((x) => `<li id="ref-${esc(s.n)}-${x.n}" value="${x.n}" class="${x.withdrawn ? "withdrawn" : ""}">${esc(x.citation)}
+    ${x.withdrawn ? `<span class="pill warn">Withdrawn by fact-check</span>` : x.checked ? `<span class="pill ok">Checked</span>` : x.unverified ? `<span class="pill warn">Unverified</span>` : ""}
+    <a href="${readingLink(x)}" target="_blank" rel="noopener">Find it ↗</a>${x.supports ? `<div class="muted">Cited for: ${esc(x.supports)}</div>` : ""}</li>`).join("")}</ol></details>`;
+}
+function altBlock(c, n, s) {
+  const p = S.prog[c.id], a = p.alt && p.alt[s.n], key = `${c.id}:${s.n}`;
+  const busy = S.busy["alt:" + key];
+  const cur = S.altPick[key] || (a && a.persona) || S.profile.persona || (c.persona === "socrates" ? "straight" : "socrates");
+  return `<div class="alt" id="alt-${esc(s.n)}">
+    <div class="row alt-bar"><label class="small" for="altp-${esc(s.n)}">Explain ${esc(s.n)} differently, as</label>
+      <select class="input sel" id="altp-${esc(s.n)}" data-inp="alt-pick" data-sec="${esc(s.n)}">${PERSONAS.map((P) => `<option value="${P.id}" ${P.id === cur ? "selected" : ""}>${esc(P.name)}</option>`).join("")}</select>
+      ${busy ? `<button class="btn ghost sm" data-act="stop" data-k="alt:${esc(key)}">Stop</button>` : `<button class="btn ghost sm" data-act="alt-explain" data-sec="${esc(s.n)}">${a ? "Explain it again" : "Explain it"}</button>`}</div>
+    ${a ? `<div class="cbox k-subj"><div class="cbox-h"><span>Your tutor: ${esc(persona(a.persona).name)} on ${esc(s.n)}</span><span>Private to you</span></div><div class="cbox-b"><div class="prose alt-text">${a.text ? paras(a.text) : "<p class='muted'>Thinking…</p>"}</div>${a.err ? `<p class="status err">${esc(a.err)}</p>` : ""}</div></div>` : ""}
+  </div>`;
+}
+
 function readingLink(r) {
+  const doi = String(r.citation).match(/https:\/\/doi\.org\/[^\s]+/), url = String(r.citation).match(/https?:\/\/[^\s)]+/);
+  if (doi) return doi[0].replace(/[.,]$/, "");
+  if (url) return url[0].replace(/[.,]$/, "");
   const q = encodeURIComponent(r.citation);
   if (r.kind === "book" || r.kind === "chapter") return "https://www.worldcat.org/search?q=" + q;
   if (r.kind === "website") return "https://duckduckgo.com/?q=" + q;
@@ -1098,23 +1563,23 @@ function certSVG(c, p, name) {
   const title = c.title.length > 64 ? c.title.slice(0, 61) + "…" : c.title;
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 780" role="img" aria-label="Certificate">
   <rect width="1100" height="780" fill="#FFFFFF"/>
-  <rect x="28" y="28" width="1044" height="724" fill="none" stroke="#1C4F6E" stroke-width="3"/>
-  <rect x="40" y="40" width="1020" height="700" fill="none" stroke="#1C4F6E" stroke-width="1"/>
-  <text x="550" y="120" text-anchor="middle" font-family="IBM Plex Mono, Menlo, monospace" font-size="18" letter-spacing="6" fill="#1C4F6E">DR. PROFESSOR</text>
-  <text x="550" y="190" text-anchor="middle" font-family="Source Serif 4, Georgia, serif" font-size="46" fill="#15191D">Certificate of Completion</text>
-  <text x="550" y="250" text-anchor="middle" font-family="Source Serif 4, Georgia, serif" font-size="20" font-style="italic" fill="#59626B">This certifies that</text>
-  <text x="550" y="320" text-anchor="middle" font-family="Source Serif 4, Georgia, serif" font-size="44" fill="#15191D">${e(name || "Name not entered")}</text>
+  <rect x="28" y="28" width="1044" height="724" fill="none" stroke="#24503E" stroke-width="3"/>
+  <rect x="40" y="40" width="1020" height="700" fill="none" stroke="#24503E" stroke-width="1"/>
+  <text x="550" y="120" text-anchor="middle" font-family="Courier Prime, Courier, monospace" font-size="18" letter-spacing="6" fill="#A07A3A">DR. PROFESSOR</text>
+  <text x="550" y="190" text-anchor="middle" font-family="Literata, Georgia, serif" font-size="50" fill="#15191D" style="font-family:'Libre Caslon Display', Georgia, serif">Certificate of Completion</text>
+  <text x="550" y="250" text-anchor="middle" font-family="Literata, Georgia, serif" font-size="20" font-style="italic" fill="#59626B">This certifies that</text>
+  <text x="550" y="320" text-anchor="middle" font-family="Literata, Georgia, serif" font-size="44" fill="#15191D">${e(name || "Name not entered")}</text>
   <line x1="260" y1="340" x2="840" y2="340" stroke="#A3ACB4"/>
-  <text x="550" y="390" text-anchor="middle" font-family="Source Serif 4, Georgia, serif" font-size="20" font-style="italic" fill="#59626B">has satisfied the requirements of</text>
-  <text x="550" y="440" text-anchor="middle" font-family="Source Serif 4, Georgia, serif" font-size="28" fill="#15191D">${e(c.code)} · ${e(title)}</text>
-  <text x="550" y="482" text-anchor="middle" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" fill="#15191D">${e(L.name)} level · ${c.chapters.length} chapters · approximately ${e(c.hours || "—")} study hours</text>
-  <text x="550" y="520" text-anchor="middle" font-family="IBM Plex Sans, Arial, sans-serif" font-size="16" fill="#59626B">Basis: ${e(info ? info.basis : "—")} · Final examination ${info ? pct(info.score) : "—"}</text>
+  <text x="550" y="390" text-anchor="middle" font-family="Literata, Georgia, serif" font-size="20" font-style="italic" fill="#59626B">has satisfied the requirements of</text>
+  <text x="550" y="440" text-anchor="middle" font-family="Literata, Georgia, serif" font-size="28" fill="#15191D">${e(c.code)} · ${e(title)}</text>
+  <text x="550" y="482" text-anchor="middle" font-family="Source Sans 3, Arial, sans-serif" font-size="18" fill="#15191D">${e(L.name)} level · ${c.chapters.length} chapters · approximately ${e(c.hours || "—")} study hours</text>
+  <text x="550" y="520" text-anchor="middle" font-family="Source Sans 3, Arial, sans-serif" font-size="16" fill="#59626B">Basis: ${e(info ? info.basis : "—")} · Final examination ${info ? pct(info.score) : "—"}</text>
   <line x1="140" y1="640" x2="440" y2="640" stroke="#15191D"/>
-  <text x="290" y="666" text-anchor="middle" font-family="IBM Plex Sans, Arial, sans-serif" font-size="15" fill="#59626B">Dr. Professor, instructor of record</text>
+  <text x="290" y="666" text-anchor="middle" font-family="Source Sans 3, Arial, sans-serif" font-size="15" fill="#59626B">Dr. Professor, instructor of record</text>
   <line x1="660" y1="640" x2="960" y2="640" stroke="#15191D"/>
-  <text x="810" y="630" text-anchor="middle" font-family="IBM Plex Mono, Menlo, monospace" font-size="17" fill="#15191D">${e(date(p.cert ? p.cert.at : Date.now()))}</text>
-  <text x="810" y="666" text-anchor="middle" font-family="IBM Plex Sans, Arial, sans-serif" font-size="15" fill="#59626B">Date issued</text>
-  <text x="550" y="716" text-anchor="middle" font-family="IBM Plex Mono, Menlo, monospace" font-size="13" fill="#59626B">Certificate no. ${e(no)}</text>
+  <text x="810" y="630" text-anchor="middle" font-family="Courier Prime, Courier, monospace" font-size="17" fill="#15191D">${e(date(p.cert ? p.cert.at : Date.now()))}</text>
+  <text x="810" y="666" text-anchor="middle" font-family="Source Sans 3, Arial, sans-serif" font-size="15" fill="#59626B">Date issued</text>
+  <text x="550" y="716" text-anchor="middle" font-family="Courier Prime, Courier, monospace" font-size="13" fill="#59626B">Certificate no. ${e(no)}</text>
 </svg>`;
 }
 function viewCert(c) {
@@ -1168,25 +1633,29 @@ async function draftSyllabus() {
   const f = S.form;
   if (!f.topic.trim()) { S.gen.syllabusMsg = "Enter a subject first."; $("#f-status").textContent = S.gen.syllabusMsg; $("#f-topic").focus(); return; }
   const ctl = new AbortController(); ctls.syllabus = ctl;
-  S.busy.syllabus = true; S.gen.syllabusMsg = "Dr. Professor is drafting the syllabus…"; render();
+  S.busy.syllabus = true; S.gen.syllabusMsg = "Dr. Professor is drafting the syllabus and preface…"; render();
   try {
-    const raw = await askJSON(PROMPTS.syllabus(f), { signal: ctl.signal, onLen: (len) => { const el = $("#f-status"); if (el) el.textContent = `Drafting the syllabus… ${(len / 1000).toFixed(1)}k characters written`; } });
+    const res = await askData(PROMPTS.syllabus(f), { signal: ctl.signal, tier: f.engine === "complex" ? "complex" : "default", onLen: (len) => { const el = $("#f-status"); if (el) el.textContent = `Drafting the book… ${(len / 1000).toFixed(1)}k characters written`; } });
+    const raw = res.data || {};
     const L = lvl(f.level);
     const chapters = arr(raw.chapters).map((ch) => ({ title: str(ch.title), summary: str(ch.summary), challenge: str(ch.challenge), sections: arr(ch.sections).map((s) => ({ title: str(s.title), summary: str(s.summary) })).filter((s) => s.title).slice(0, 5) })).filter((ch) => ch.title && ch.sections.length);
     if (!chapters.length) throw { code: "bad_shape" };
     const dept = str(raw.dept).toUpperCase().replace(/[^A-Z]/g, "").slice(0, 4) || "GEN";
     const c = {
       id: `${slug(f.topic)}-${L.id}-${rand(4)}`, v: 1, topic: f.topic.trim(), level: L.id, focus: f.focus.trim(), length: f.length,
-      code: `${dept} ${L.num}`, title: str(raw.title) || f.topic, department: str(raw.department), description: str(raw.description),
+      persona: persona(f.persona).id, engine: f.engine === "complex" ? "complex" : "default",
+      code: `${dept} ${L.num}`, title: str(raw.title) || f.topic, department: str(raw.department), description: str(raw.description), preface: str(raw.preface),
       prerequisites: arr(raw.prerequisites).map(str).filter(Boolean), objectives: arr(raw.objectives).map(str).filter(Boolean),
-      hours: Number(raw.hours) || null, chapters, written: {}, color: SUBJ[hashStr(f.topic.trim().toLowerCase()) % SUBJ.length], createdAt: Date.now(), createdBy: Store.uid || null,
+      hours: Number(raw.hours) || null, chapters, written: {}, color: SUBJ[hashStr(f.topic.trim().toLowerCase()) % SUBJ.length],
+      createdAt: Date.now(), createdBy: Store.uid || null, prov: { syllabus: stamp(res.tier), v: PROMPT_V },
     };
     await Store.set(coursePath(c.id), c);
     S.courses.set(c.id, c);
-    S.form = { topic: "", level: f.level, focus: "", length: f.length };
+    S.form = { ...S.form, topic: "", focus: "" };
     S.gen.syllabusMsg = "";
     S.busy.syllabus = false;
     go("course", c.id);
+    writeCover(c);
   } catch (e) {
     S.busy.syllabus = false;
     S.gen.syllabusMsg = e && e.code ? errCopy(e) : saveErr(e);
@@ -1194,6 +1663,243 @@ async function draftSyllabus() {
     const el = $("#f-status"); if (el && e && e.code !== "cancelled") el.classList.add("err");
   }
 }
+async function writeCover(c) {
+  const k = "cover:" + c.id;
+  if (S.busy[k]) return;
+  S.busy[k] = true; if (S.view === "course") render();
+  try {
+    const res = await askData(PROMPTS.cover(c), { tier: "default" });
+    const svg = str(res.data && res.data.svg);
+    if (/^<svg[\s>]/i.test(svg)) {
+      const cc = S.courses.get(c.id) || c;
+      cc.coverSvg = svg; cc.prov = { ...(cc.prov || {}), cover: stamp(res.tier) };
+      await Store.merge(coursePath(c.id), { coverSvg: svg, prov: { cover: cc.prov.cover } }).catch(() => {});
+    }
+  } catch {}
+  S.busy[k] = false;
+  if (S.view === "course" || S.view === "catalog") render();
+}
+
+function missesFor(c, p, sec) {
+  const out = [];
+  const [cn] = sec.split(".").map(Number);
+  const chap = S.chapters[`${c.id}:${cn}`];
+  if (!chap || !chap.lesson) return out;
+  const s = chap.lesson.sections.find((x) => x.n === sec);
+  if (s) s.practice.forEach((pr, i) => { const r = p.practice[`${sec}#${i}`]; if (pr.type === "mc" && r && r.choice != null && !r.correct) out.push(`"${pr.q}" They chose "${pr.choices[r.choice]}"; the answer is "${pr.choices[pr.answer]}".`); });
+  const q = p.quiz[cn];
+  if (q && chap.assess) arr(q.items).forEach((it, i) => { const qq = chap.assess.quiz[i]; if (it.sec === sec && !it.ok && qq) out.push(`"${qq.q}" They chose "${qq.choices[q.answers[i]] || "nothing"}"; the answer is "${qq.choices[qq.answer]}".`); });
+  return out;
+}
+async function altExplain(c, n, sec) {
+  const key = `${c.id}:${sec}`, p = S.prog[c.id], chap = S.chapters[`${c.id}:${n}`];
+  const s = chap.lesson.sections.find((x) => x.n === sec);
+  const pid = S.altPick[key] || S.profile.persona || (c.persona === "socrates" ? "straight" : "socrates");
+  const sample = await caps.sample;
+  p.alt = p.alt || {};
+  const box = () => document.getElementById("alt-" + sec);
+  const paint = () => { const el = box(); if (el) el.outerHTML = altBlock(c, n, s); };
+  if (!sample) { p.alt[sec] = { persona: pid, text: "", err: errCopy({ code: "unavailable_here" }) }; paint(); return; }
+  const ctl = new AbortController(); ctls["alt:" + key] = ctl;
+  S.busy["alt:" + key] = true;
+  const prev = p.alt[sec];
+  p.alt[sec] = { persona: pid, text: "", at: Date.now() };
+  paint();
+  try {
+    const res = await sample(PROMPTS.alt(c, chap, s, pid, missesFor(c, p, sec)), {
+      signal: ctl.signal, cache: false, modelTier: c.engine || "default",
+      onText: ({ text }) => { p.alt[sec].text = text; const el = box() && box().querySelector(".alt-text"); if (el) el.innerHTML = paras(text); },
+    });
+    p.alt[sec] = { persona: pid, text: res.text, at: Date.now(), tier: res.modelTierApplied };
+    saveProg(c.id, true);
+  } catch (e) {
+    if (e && e.text) p.alt[sec].text = e.text;
+    else if (prev) p.alt[sec] = prev;
+    if (!e || e.code !== "cancelled") p.alt[sec].err = errCopy(e);
+  }
+  S.busy["alt:" + key] = false;
+  paint();
+}
+async function coachWrite(c) {
+  const p = S.prog[c.id], k = "coach:" + c.id;
+  const m = mastery(p);
+  const weak = Object.keys(m).filter((s) => m[s].right / m[s].total < 0.7).sort(secCmp).slice(0, 6);
+  if (!weak.length) return;
+  const ctl = new AbortController(); ctls[k] = ctl;
+  S.busy[k] = true; S.gen[k] = ""; render();
+  try {
+    await Promise.all([...new Set(weak.map((s) => +s.split(".")[0]))].map((n) => {
+      const key = `${c.id}:${n}`;
+      return S.chapters[key] !== undefined ? null : Store.get(chapterPath(c.id, n)).then((d) => { S.chapters[key] = d; });
+    }));
+    const items = weak.map((sec) => {
+      const chap = S.chapters[`${c.id}:${sec.split(".")[0]}`];
+      const s = chap && chap.lesson && chap.lesson.sections.find((x) => x.n === sec);
+      return s ? { sec, title: s.title, ideas: [stripCites(s.reading[0] || "").slice(0, 700), s.keyTerms.map((t) => `${t.term}: ${t.def}`).join("; ")].join(" "), misses: missesFor(c, p, sec) } : null;
+    }).filter((x) => x && x.misses.length);
+    if (!items.length) throw { code: "bad_shape" };
+    const res = await askData(PROMPTS.coach(c, items), { signal: ctl.signal, tier: c.engine || "default" });
+    const d = res.data || {};
+    const sheet = {
+      intro: str(d.intro), plan: arr(d.plan).map(str).filter(Boolean),
+      items: arr(d.items).map((it) => ({ sec: str(it.sec), title: str(it.title), explain: str(it.explain), whyTempting: str(it.whyTempting), example: str(it.example), check: it.check ? normMC(it.check) : null })).filter((it) => it.explain),
+    };
+    if (!sheet.items.length) throw { code: "bad_shape" };
+    p.review = { at: Date.now(), persona: S.profile.persona || c.persona, tier: res.tier, sheet };
+    S.rvPick = {};
+    saveProg(c.id, true);
+  } catch (e) { if (!e || e.code !== "cancelled") S.gen[k] = errCopy(e); }
+  S.busy[k] = false;
+  if (S.view === "course" && S.courseId === c.id) { const y = window.scrollY; render(); window.scrollTo(0, y); }
+}
+let profileTimer;
+function saveProfile() {
+  clearTimeout(profileTimer);
+  profileTimer = setTimeout(() => {
+    Store.setUser("profile", S.profile).then(() => { const st = $("#pf-status"); if (st) st.textContent = "Saved."; }).catch(() => { const st = $("#pf-status"); if (st) st.textContent = "Could not save your profile."; });
+  }, 600);
+}
+
+/* ----- audio edition: device speech, best voice first ----- */
+const Speech = {
+  ok: typeof window.speechSynthesis !== "undefined" && typeof window.SpeechSynthesisUtterance === "function",
+  list() { try { return speechSynthesis.getVoices().filter((v) => /^en([-_]|$)/i.test(v.lang)); } catch { return []; } },
+  score(v) {
+    const n = v.name; let s = 0;
+    if (/natural|neural/i.test(n)) s += 50;
+    if (/premium/i.test(n)) s += 45;
+    if (/enhanced/i.test(n)) s += 35;
+    if (/siri/i.test(n)) s += 30;
+    if (/google/i.test(n)) s += 25;
+    if (/online/i.test(n)) s += 10;
+    if (/en[-_]us/i.test(v.lang)) s += 3; else if (/en[-_]gb/i.test(v.lang)) s += 2;
+    if (/compact|espeak|novelty|bad news|bells|boing|bubbles|cellos|whisper|zarvox|trinoids|albert|jester|organ|superstar|wobble|bahh|good news|deranged|hysterical|pipe/i.test(n)) s -= 100;
+    return s;
+  },
+  ranked() { return this.list().sort((a, b) => this.score(b) - this.score(a)); },
+  pick(uri) { const all = this.ranked(); return all.find((v) => v.voiceURI === uri) || all[0] || null; },
+};
+const plain = (t) => String(t).replace(/\*\*|\*|`/g, "");
+function audioItems(c, n, chap) {
+  if (chap.audio && arr(chap.audio.segments).length) return chap.audio.segments.flatMap((sg) => sg.paras.map((t) => ({ label: sg.title || sg.sec, text: plain(t) })));
+  const L = chap.lesson, items = [{ label: `Chapter ${n}`, text: `Chapter ${n}. ${c.chapters[n - 1].title}.` }, { label: "Overview", text: plain(L.overview) }];
+  L.sections.forEach((s) => {
+    const label = `${s.n} ${s.title}`;
+    items.push({ label, text: `Section ${s.n.replace(".", " point ")}. ${s.title}.` });
+    s.reading.forEach((r) => items.push({ label, text: plain(stripCites(r)) }));
+    if (s.misconception && s.misconception.myth) items.push({ label, text: `A common misconception: ${plain(s.misconception.myth)} The truth: ${plain(s.misconception.fact)}` });
+  });
+  return items;
+}
+function voiceTip(best) {
+  if (best && Speech.score(best) >= 25) return `Using ${best.name}, one of the best voices on this device. Pick another below if you prefer.`;
+  return "This device only offers basic voices. For a natural voice: on iPhone, iPad or Mac, download an English voice marked Premium or Enhanced (Settings, Accessibility, Spoken Content, Voices); on Windows, open this page in Microsoft Edge to get its Natural voices; on Android, install Speech Services by Google.";
+}
+function playerHTML(c, n, chap) {
+  const key = `${c.id}:${n}`, A = S.audio, on = A.key === key;
+  const items = audioItems(c, n, chap);
+  const p = S.prog[c.id] || {};
+  const idx = Math.min(on ? A.idx : ((p.audioPos || {})[n] || 0), items.length - 1);
+  const narrated = !!(chap.audio && arr(chap.audio.segments).length);
+  const busy = S.busy["audio:" + key];
+  const prep = narrated
+    ? `<p class="small muted">Narrated edition, rewritten for listening by Dr. Professor as ${esc(persona(c.persona).name)}${chap.prov && chap.prov.audio ? `, ${esc(date(chap.prov.audio.at))}` : ""}.</p>`
+    : `<p class="small muted">Now reading the textbook text as written. The narrated edition is rewritten for the ear by the author: figures described aloud, citations dropped, natural transitions.</p>
+       <div class="row">${busy ? `<button class="btn ghost sm" data-act="stop" data-k="audio:${esc(key)}">Stop</button><span class="status">${esc(S.gen["audio:" + key] || "Writing the narrated edition…")}</span>` : `<button class="btn ghost sm" data-act="au-prepare">Prepare the narrated edition</button>${S.gen["audio:" + key + ":err"] ? `<span class="status err">${esc(S.gen["audio:" + key + ":err"])}</span>` : ""}`}</div>`;
+  if (!Speech.ok) return `<div class="cbox k-subj"><div class="cbox-h"><span>Audio edition</span></div><div class="cbox-b"><p class="small">This view cannot read aloud. Open the page in a current browser (Safari, Edge or Chrome) to listen.</p>${prep}</div></div>`;
+  const voices = Speech.ranked(), best = voices[0], cur = Speech.pick(A.voice);
+  return `<div class="cbox k-subj player"><div class="cbox-h"><span>${narrated ? "Narrated edition" : "Read-aloud edition"}</span><span class="num">${idx + 1} / ${items.length}</span></div><div class="cbox-b">
+    <div class="row">
+      <button class="btn sm" data-act="au-play">${on && A.playing ? "❚❚ Pause" : "▶ Play"}</button>
+      <button class="btn ghost sm" data-act="au-skip" data-d="-1">Back</button>
+      <button class="btn ghost sm" data-act="au-skip" data-d="1">Next</button>
+      <label class="small" for="au-rate">Speed</label>
+      <select class="input sel" id="au-rate" data-inp="au-rate">${[0.8, 0.9, 1, 1.15, 1.3, 1.5].map((r) => `<option value="${r}" ${(A.rate || 1) === r ? "selected" : ""}>${r}×</option>`).join("")}</select>
+    </div>
+    <div class="small"><strong>Now:</strong> ${esc(items[idx].label)}</div>
+    <div class="bar-meter" style="max-width:none"><span style="width:${((idx + (on && A.playing ? 0.5 : 0)) / items.length) * 100}%"></span></div>
+    ${A.err ? `<p class="status err">${esc(A.err)}</p>` : ""}
+    <div class="field"><label for="au-voice" class="small">Voice</label>
+      <select class="input sel" id="au-voice" data-inp="au-voice">${voices.length ? voices.map((v) => `<option value="${esc(v.voiceURI)}" ${cur && v.voiceURI === cur.voiceURI ? "selected" : ""}>${esc(v.name)}${Speech.score(v) >= 25 ? " (natural)" : ""}</option>`).join("") : `<option>Loading voices…</option>`}</select></div>
+    <p class="small muted">${esc(voiceTip(best))}</p>
+    ${prep}
+    <details class="report" ${A.tOpen ? "open" : ""} data-transcript><summary>Transcript</summary><div class="transcript">${items.map((it, i) => `<p class="${i === idx ? "now" : ""}" data-act="au-jump" data-i="${i}">${esc(it.text)}</p>`).join("")}</div></details>
+  </div></div>`;
+}
+function paintPlayer() {
+  if (S.view !== "chapter") return;
+  const c = S.courses.get(S.courseId), n = S.chapterN, chap = c && S.chapters[`${c.id}:${n}`];
+  const el = $("#player");
+  if (el && chap && chap.lesson) {
+    el.innerHTML = playerHTML(c, n, chap);
+    const now = el.querySelector(".transcript p.now");
+    if (now && S.audio.playing) now.scrollIntoView({ block: "nearest" });
+  }
+}
+function auStop() { S.audio.playing = false; S.audio.gen++; try { speechSynthesis.cancel(); } catch {} }
+function sentenceChunks(text) {
+  const parts = String(text).match(/[^.!?]+[.!?]+["”’)]*\s*|[^.!?]+$/g) || [String(text)];
+  const out = []; let cur = "";
+  parts.forEach((s) => { if ((cur + s).length > 220 && cur) { out.push(cur.trim()); cur = s; } else cur += s; });
+  if (cur.trim()) out.push(cur.trim());
+  return out;
+}
+function auSpeak(c, n) {
+  const A = S.audio, gen = ++A.gen, chap = S.chapters[`${c.id}:${n}`], items = audioItems(c, n, chap);
+  const it = items[A.idx];
+  if (!it) { A.playing = false; A.idx = 0; paintPlayer(); return; }
+  const parts = sentenceChunks(it.text); let k = 0;
+  const step = () => {
+    if (gen !== A.gen) return;
+    if (k >= parts.length) {
+      A.idx++;
+      const p = S.prog[c.id]; p.audioPos = { ...(p.audioPos || {}), [n]: A.idx }; saveProg(c.id);
+      paintPlayer(); auSpeak(c, n); return;
+    }
+    const u = new SpeechSynthesisUtterance(parts[k++]);
+    const v = Speech.pick(A.voice);
+    if (v) { u.voice = v; u.lang = v.lang; } else u.lang = "en-US";
+    u.rate = A.rate || 1;
+    u.onend = step;
+    u.onerror = (e) => { if (gen === A.gen && e.error !== "interrupted" && e.error !== "canceled") { A.playing = false; A.err = "Playback stopped (" + e.error + "). Press Play to try again."; paintPlayer(); } };
+    speechSynthesis.speak(u);
+  };
+  step();
+}
+function auToggle(c, n) {
+  const key = `${c.id}:${n}`, A = S.audio;
+  A.err = "";
+  if (A.key !== key) { auStop(); A.key = key; A.idx = (S.prog[c.id].audioPos || {})[n] || 0; }
+  if (A.playing) { auStop(); paintPlayer(); return; }
+  const items = audioItems(c, n, S.chapters[key]);
+  if (A.idx >= items.length) A.idx = 0;
+  A.playing = true; paintPlayer(); auSpeak(c, n);
+}
+function auMove(c, n, to) {
+  const key = `${c.id}:${n}`, A = S.audio, items = audioItems(c, n, S.chapters[key]);
+  const playing = A.key === key && A.playing;
+  if (A.key !== key) { auStop(); A.key = key; A.idx = (S.prog[c.id].audioPos || {})[n] || 0; }
+  auStop();
+  A.idx = Math.max(0, Math.min(items.length - 1, typeof to === "function" ? to(A.idx) : to));
+  if (playing) { A.playing = true; auSpeak(c, n); }
+  paintPlayer();
+}
+async function writeAudio(c, n) {
+  const key = `${c.id}:${n}`, k = "audio:" + key, chap = S.chapters[key];
+  const ctl = new AbortController(); ctls[k] = ctl;
+  S.busy[k] = true; S.gen[k + ":err"] = ""; paintPlayer();
+  try {
+    const res = await askData(PROMPTS.audio(c, n, chap), { signal: ctl.signal, tier: c.engine || "default", onLen: (len) => { S.gen[k] = `Writing the narrated edition… ${(len / 1000).toFixed(1)}k characters`; const el = $("#player .status"); if (el) el.textContent = S.gen[k]; } });
+    chap.audio = normAudio(res.data);
+    chap.prov = { ...(chap.prov || {}), audio: stamp(res.tier) };
+    await Store.set(chapterPath(c.id, n), chap);
+    if (S.audio.key === key) { auStop(); S.audio.idx = 0; }
+  } catch (e) { S.gen[k + ":err"] = e && e.code ? errCopy(e) : saveErr(e); }
+  S.busy[k] = false; S.gen[k] = "";
+  paintPlayer();
+}
+if (Speech.ok) { try { speechSynthesis.onvoiceschanged = () => paintPlayer(); } catch {} }
+document.addEventListener("toggle", (e) => { if (e.target && e.target.matches && e.target.matches("details[data-transcript]")) S.audio.tOpen = e.target.open; }, true);
 
 async function writeChapter(c, n) {
   const key = `${c.id}:${n}`;
@@ -1213,9 +1919,10 @@ async function writeChapter(c, n) {
   const onLen = (k) => (len) => { g.parts[k].len = len; const now = Date.now(); if (now - lastPaint > 400) { lastPaint = now; refresh(); } };
   const run = async (k) => {
     try {
-      const raw = await askJSON(PROMPTS[k](c, n), { signal: ctl.signal, onLen: onLen(k) });
+      const res = await askData(PROMPTS[k](c, n), { signal: ctl.signal, onLen: onLen(k), tier: k === "figures" ? "default" : (c.engine || "default") });
+      const raw = res.data;
       const val = k === "lesson" ? normLesson(raw, c, n) : k === "figures" ? normFigures(raw) : normAssess(raw);
-      const doc = { ...S.chapters[key], [k]: val, n, updatedAt: Date.now() };
+      const doc = { ...S.chapters[key], [k]: val, n, updatedAt: Date.now(), prov: { ...(S.chapters[key].prov || {}), [k]: stamp(res.tier, { persona: c.persona || "scholar" }) } };
       S.chapters[key] = doc;
       g.parts[k] = { state: "done" };
       await Store.set(path, doc);
@@ -1258,27 +1965,36 @@ function keyItems(chap) {
   return items;
 }
 const mcText = (q) => q.choices.map((ch, j) => `  ${LETTERS[j]}. ${ch}`).join("\n");
-function sectionText(chap, s) {
-  const out = [`## Section ${s.n} ${s.title}`, ...s.reading];
+const stripCites = (t) => String(t).replace(/\s*\[\d+(?:\s*[,–-]\s*\d+)*\]/g, "");
+function sectionText(chap, s, o = {}) {
+  const out = [`## Section ${s.n} ${s.title}`, ...s.reading.map((r) => (o.forAudio ? stripCites(r) : r))];
+  if (!o.forAudio && arr(s.sources).length) out.push("Sources:\n" + s.sources.map((x) => `[S${s.n}-${x.n}] ${x.citation} (cited for: ${x.supports})`).join("\n"));
   if (s.keyTerms.length) out.push("Key terms:\n" + s.keyTerms.map((t) => `- ${t.term}: ${t.def}`).join("\n"));
   if (s.example.steps.length) out.push(`${s.example.title}\n${s.example.steps.map((x, i) => `${i + 1}. ${x}`).join("\n")}\nTakeaway: ${s.example.takeaway}`);
   if (s.misconception && s.misconception.myth) out.push(`Misconception. Myth: ${s.misconception.myth}\nFact: ${s.misconception.fact}`);
-  s.practice.forEach((p, i) => out.push(p.type === "mc"
+  if (!o.forAudio) s.practice.forEach((p, i) => out.push(p.type === "mc"
     ? `[P${s.n}-${i}] ${p.q}\n${mcText(p)}\n  Key: ${LETTERS[p.answer]}. Explanation: ${p.explanation}`
     : `[P${s.n}-${i}] (short answer) ${p.q}\n  Model answer: ${p.answer}\n  Explanation: ${p.explanation}`));
   arr(chap.figures).filter((f) => f.section === s.n).forEach((f) => out.push(`Figure for ${s.n}. Caption: ${f.caption}\n  Labels: ${svgLabels(f.svg).join(" | ")}`));
   return out.join("\n\n");
 }
-function chapterText(chap) {
+function chapterText(chap, o = {}) {
   const L = chap.lesson, A = chap.assess || {};
-  const out = ["## Overview", L.overview, "Objectives: " + L.objectives.join("; "), ...L.sections.map((s) => sectionText(chap, s))];
+  const out = ["## Overview", L.overview, o.forAudio ? "" : "Objectives: " + L.objectives.join("; "), ...L.sections.map((s) => sectionText(chap, s, o))];
   const secIds = new Set(L.sections.map((s) => s.n));
   arr(chap.figures).filter((f) => !secIds.has(f.section)).forEach((f) => out.push(`Figure. Caption: ${f.caption}\n  Labels: ${svgLabels(f.svg).join(" | ")}`));
-  if (arr(A.slides).length) out.push("## Lecture slides\n" + A.slides.map((s, i) => `${i + 1}. ${s.title}: ${s.bullets.join(" / ")}\n   Notes: ${s.notes}`).join("\n"));
-  if (arr(A.quiz).length) out.push("## Quiz\n" + A.quiz.map((q, i) => `[Q${i + 1}] ${q.q}\n${mcText(q)}\n  Key: ${LETTERS[q.answer]}. Explanation: ${q.explanation}`).join("\n\n"));
-  if (arr(A.challenge).length) out.push("## Challenge exercises\n" + A.challenge.map((x) => `${x.title}: ${x.prompt} Deliverable: ${x.deliverable} Rubric: ${x.rubric.join("; ")}`).join("\n"));
-  if (arr(A.readings).length) out.push("## Readings\n" + A.readings.map((r, i) => `[R${i + 1}] ${r.citation} ${r.pages ? "(" + r.pages + ")" : ""} — ${r.why}`).join("\n"));
+  if (!o.forAudio) {
+    if (arr(A.slides).length) out.push("## Lecture slides\n" + A.slides.map((s, i) => `${i + 1}. ${s.title}: ${s.bullets.join(" / ")}\n   Notes: ${s.notes}`).join("\n"));
+    if (arr(A.quiz).length) out.push("## Quiz\n" + A.quiz.map((q, i) => `[Q${i + 1}]${q.sec ? ` (section ${q.sec})` : ""} ${q.q}\n${mcText(q)}\n  Key: ${LETTERS[q.answer]}. Explanation: ${q.explanation}`).join("\n\n"));
+    if (arr(A.challenge).length) out.push("## Challenge exercises\n" + A.challenge.map((x) => `${x.title}: ${x.prompt} Deliverable: ${x.deliverable} Rubric: ${x.rubric.join("; ")}`).join("\n"));
+    if (arr(A.readings).length) out.push("## Readings\n" + A.readings.map((r, i) => `[R${i + 1}] ${r.citation} ${r.pages ? "(" + r.pages + ")" : ""}. Read it for: ${r.why}`).join("\n"));
+  }
   return out.filter(Boolean).join("\n\n");
+}
+function proseOf(chap) {
+  const L = chap.lesson, A = chap.assess || {};
+  return [L.overview, ...L.sections.flatMap((s) => [...s.reading, ...s.example.steps, s.example.takeaway, s.misconception && s.misconception.myth, s.misconception && s.misconception.fact, ...s.practice.map((p) => p.explanation)]),
+    ...arr(A.slides).flatMap((s) => [s.title, ...s.bullets, s.notes]), ...arr(A.quiz).map((q) => q.explanation)].filter(Boolean).join("\n");
 }
 function applyFix(scope, quote, correction) {
   if (!quote || quote === correction) return false;
@@ -1324,10 +2040,11 @@ async function resolveKeys(c, items, blind, extra, signal) {
 }
 async function factCheck(c, n, chap, signal, onLen) {
   const items = keyItems(chap);
-  const [fc, blind] = await Promise.all([
-    askJSON(PROMPTS.factcheck(c, n, chap), { signal, tier: "complex", onLen }),
+  const [fcRes, blind] = await Promise.all([
+    askData(PROMPTS.factcheck(c, n, chap), { signal, tier: "complex", onLen }),
     items.length ? askJSON(PROMPTS.blindKeys(c, items), { signal, tier: "complex" }) : [],
   ]);
+  const fc = fcRes.data || {};
   const extra = {};
   arr(fc.keys).forEach((k) => { if (str(k.id)) extra[str(k.id)] = str(k.problem) || "flagged"; });
   const kr = await resolveKeys(c, items, blind, extra, signal);
@@ -1335,6 +2052,18 @@ async function factCheck(c, n, chap, signal, onLen) {
   const corrections = arr(fc.issues).map((i) => ({ where: str(i.where), before: str(i.quote), after: str(i.correction), why: str(i.problem), severity: str(i.severity) }))
     .filter((x) => x.before && x.after && x.before !== x.after);
   corrections.forEach((x) => { x.applied = applyFix(scope, x.before, x.after); });
+  const srcVerdict = {};
+  arr(fc.sources).forEach((s) => { srcVerdict[str(s.id)] = s; });
+  let srcChecked = 0, srcWithdrawn = 0;
+  chap.lesson.sections.forEach((s) => arr(s.sources).forEach((x) => {
+    const v = srcVerdict[`S${s.n}-${x.n}`];
+    if (!v) return;
+    srcChecked++;
+    delete x.checked; delete x.unverified; delete x.withdrawn;
+    if (str(v.verdict) === "likely-invented") { x.withdrawn = true; srcWithdrawn++; }
+    else if (str(v.verdict) === "uncertain" || str(v.supports) === "no") x.unverified = true;
+    else if (str(v.verdict) === "real") x.checked = true;
+  }));
   const removed = [];
   if (chap.assess) {
     const verdict = {};
@@ -1346,7 +2075,9 @@ async function factCheck(c, n, chap, signal, onLen) {
       return true;
     });
   }
-  chap.review = { full: true, at: Date.now(), ...kr, corrections: [...arr(chap.review && chap.review.corrections), ...corrections], readingsRemoved: removed, summary: str(fc.summary) };
+  chap.review = { full: true, at: Date.now(), tier: fcRes.tier, by: null, ...kr, srcChecked, srcWithdrawn,
+    corrections: [...arr(chap.review && chap.review.corrections), ...corrections], readingsRemoved: removed, summary: str(fc.summary), style: styleLint(proseOf(chap)) };
+  chap.prov = { ...(chap.prov || {}), review: stamp(fcRes.tier) };
 }
 async function errSubmit(c, n, sec) {
   const ta = document.getElementById("err-text-" + sec);
@@ -1432,6 +2163,7 @@ async function chatSend(c, n) {
   const rules = `${preamble(c)}
 
 You are holding office hours for Chapter ${n}: "${c.chapters[n - 1].title}". Answer the student's question directly at the ${lvl(c.level).name} level, in one to four short paragraphs separated by blank lines. Use the chapter text below as the shared reference, and say so when you go beyond it. If the student is mistaken, say so and explain. Plain text; **bold** allowed.
+Learner profile: ${profileText()}
 
 CHAPTER TEXT
 ${text}`;
@@ -1484,7 +2216,19 @@ document.addEventListener("click", (e) => {
     case "go-catalog": go("catalog"); break;
     case "go-transcript": go("transcript"); break;
     case "open-course": go("course", a.dataset.id); break;
-    case "open-chapter": go("chapter", S.courseId, +a.dataset.n); break;
+    case "open-chapter": go("chapter", S.courseId, +a.dataset.n, a.dataset.anchor || null); break;
+    case "open-glossary": go("glossary", S.courseId); break;
+    case "open-biblio": go("biblio", S.courseId); break;
+    case "go-profile": go("profile"); break;
+    case "draw-cover": writeCover(c); break;
+    case "alt-explain": altExplain(c, S.chapterN, a.dataset.sec); break;
+    case "coach-write": coachWrite(c); break;
+    case "coach-alt": { const sec = a.dataset.sec; go("chapter", S.courseId, +sec.split(".")[0], "alt-" + sec); break; }
+    case "rv-pick": { const i = +a.dataset.i, it = S.prog[c.id].review.sheet.items[i]; S.rvPick[i] = +a.dataset.j; $("#rv-" + i).innerHTML = reviewCheck(i, it.check); break; }
+    case "au-play": auToggle(c, S.chapterN); break;
+    case "au-skip": auMove(c, S.chapterN, (i) => i + +a.dataset.d); break;
+    case "au-jump": auMove(c, S.chapterN, +a.dataset.i); break;
+    case "au-prepare": writeAudio(c, S.chapterN); break;
     case "open-final": go("final", S.courseId); break;
     case "open-cert": go("cert", S.courseId); break;
     case "open-notebook": go("notebook", S.courseId); break;
@@ -1515,7 +2259,7 @@ document.addEventListener("click", (e) => {
       else {
         const sel = S.quizSel[selKey] || [];
         const right = qs.filter((q, i) => sel[i] === q.answer).length;
-        const rec = { answers: qs.map((_, i) => sel[i] ?? null), score: right / qs.length, at: Date.now() };
+        const rec = { answers: qs.map((_, i) => sel[i] ?? null), score: right / qs.length, at: Date.now(), items: qs.map((q, i) => ({ sec: q.sec || null, ok: sel[i] === q.answer })) };
         if (kind === "quiz") p.quiz[n] = rec; else p.final = rec;
         delete S.quizSel[selKey]; delete S.quizSel[selKey + ":retake"];
         saveProg(c.id, true);
@@ -1550,19 +2294,31 @@ document.addEventListener("keydown", (e) => {
   }
 });
 document.addEventListener("submit", (e) => { if (e.target.id === "enroll") { e.preventDefault(); if (!S.busy.syllabus) draftSyllabus(); } });
-let nameTimer;
 document.addEventListener("input", (e) => {
   const t = e.target, k = t.dataset && t.dataset.inp;
   if (!k) return;
   const c = S.courses.get(S.courseId), p = c && S.prog[c.id];
-  if (k === "topic" || k === "focus" || k === "level" || k === "length") { S.form[k] = t.value; return; }
+  if (["topic", "focus", "level", "length", "persona", "engine"].includes(k)) { S.form[k] = t.value; return; }
+  if (k.startsWith("pf-")) {
+    const f = k.slice(3);
+    if (f === "pref") S.profile.prefs = [...document.querySelectorAll('[data-inp="pf-pref"]:checked')].map((x) => x.value);
+    else S.profile[f] = t.value;
+    const st = $("#pf-status"); if (st) st.textContent = "Saving…";
+    saveProfile(); return;
+  }
+  if (k === "alt-pick") { S.altPick[`${c.id}:${t.dataset.sec}`] = t.value; return; }
+  if (k === "au-rate" || k === "au-voice") {
+    if (k === "au-rate") S.audio.rate = +t.value; else { S.audio.voice = t.value; LS.set("me/voice", t.value); }
+    if (S.audio.playing) { const n = S.chapterN; auStop(); S.audio.playing = true; auSpeak(c, n); }
+    return;
+  }
   if (k === "note" && p) { p.notes[t.dataset.sec] = t.value; saveProg(c.id); }
   else if (k === "practice-text" && p) { const key = `${t.dataset.sec}#${t.dataset.i}`; p.practice[key] = { ...(p.practice[key] || {}), text: t.value }; saveProg(c.id); }
   else if (k === "challenge" && p) { const key = `${S.chapterN}#${t.dataset.i}`; p.challenge[key] = { ...(p.challenge[key] || {}), text: t.value }; saveProg(c.id); }
   else if (k === "chat") { const key = `${c.id}:${S.chapterN}`; S.chat[key] = S.chat[key] || { turns: [] }; S.chat[key].draft = t.value; }
   else if (k === "cert-name") {
     S.profile.name = t.value; $("#cert-svg").innerHTML = certSVG(c, p, t.value);
-    clearTimeout(nameTimer); nameTimer = setTimeout(() => Store.setUser("profile", { name: S.profile.name }).catch(() => {}), 700);
+    saveProfile();
   }
 });
 document.addEventListener("change", (e) => {

@@ -87,87 +87,139 @@ Accuracy is the first requirement. A learner relies on every sentence.
 
 **Limit:** the in-app fact-check uses Claude's own knowledge; it cannot look anything up. The standalone app (v1.0) adds web search and citation lookups (Crossref, Open Library) to the fact-check.
 
-## 6. Visual design
+## 6. Visual design: the reading room
 
-- **College textbook, in color.** Each course has a subject color carried through the course cover, the chapter opener (large chapter number), key terms in the text, slide headers and figure numbers.
-- **Color-coded boxes,** the same in every course:
-  - Objectives (subject color)
-  - Key terms (blue)
-  - Worked example (green)
-  - Practice (amber)
-  - Common misconception, Myth vs. Fact (red)
-  - Fact-check (purple)
-- **Figures are full-color illustrations** where color carries meaning: parts colored by region, labels matching their parts, and the field's standard colors where they exist (ICS colors for geologic periods).
-- Works in light and dark mode and at phone width.
+- **Mood.** A library reading room: warm paper and lamplight by day, walnut and brass after hours (dark mode). Paper grain and a lamp glow behind the page.
+- **Books, not cards.** Every course is a library-bound book: bookcloth color (forest, navy, oxblood, plum, teal, leather), gilt panel rules, a gold-foil cover emblem, a title in Caslon, and the author's name. They stand on wooden shelves in the catalog.
+- **Type:**
+  - Libre Caslon Display for titles: the classic book face.
+  - Literata for reading: designed for long-form screen reading.
+  - Source Sans 3 for controls.
+  - Courier Prime for catalog details (call numbers, labels).
+- **Library details:**
+  - The request form is a catalog card (red top rule, faint ruled lines, punch hole).
+  - Fact-checked chapters carry an ink stamp.
+  - Each chapter is laid out as a page on the desk.
+- **Color-coded textbook boxes:** objectives (book color), key terms (blue), worked example (green), practice (amber), misconception (oxblood), fact-check (violet).
+- **Figures are full-color illustrations** where color carries meaning, using a field's standard colors where they exist (ICS geologic-period colors).
 
-## 7. What's built now (prototype v0.2)
+## 7. Authors and personal tutoring
 
-`app/dr-professor.html` is a single-page app published as a private Claude artifact. Courses are written live by Claude on the viewer's own account through the artifact `sample` capability.
+**The textbook is shared; the tutoring is personal.** A book is written once, in one author's voice, and everyone reads the same fact-checked text. Around it sits a private tutoring layer tuned to each learner.
 
-- **Catalog:** shared course library plus a request form (subject, level, focus, length: 5, 8 or 12 chapters).
-- **Syllabus generation:** about one minute. Produces the course code, catalog entry, objectives, and chapters with sections.
-- **Chapter generation on demand,** in three parallel parts (text and practice / figures / lecture and assessments). Each part is saved as it finishes; a failed part can be retried alone.
-- **Chapter reader:** contents rail, lecture deck, sections, SVG figures, key terms, worked examples, practice with instant feedback, notes, read-tracking.
-- **Assessments:** quiz with explanations, challenge grading with a rubric table, final exam, certificate saved as SVG.
-- **Office hours:** chat scoped to the chapter text.
-- **Transcript and notebook** (private to each viewer); notes export as `.md`.
-- **Storage:** the shared library is in the artifact database (`courses/…`); progress is in the private `data/users/<id>/…`. The app falls back to browser storage when opened outside Claude.
+| Author | Voice |
+|---|---|
+| The Scholar | Formal, rigorous, evidence first, history of ideas |
+| The Kindergarten Teacher | Warm, very simple words, concrete; facts stay exact |
+| Socrates | Teaches by questions; you reason your way to each idea |
+| The Brainiac | Dense, fast, cross-disciplinary |
+| The Straight Shooter | Plain and short: the fact, then why it matters |
+| The Storyteller | Through the true people and discoveries behind ideas |
+| The Practitioner | How the work is actually done, common mistakes |
+
+- **No AI voice.** Every prompt carries a style guide that bans stock AI phrasing (delve, tapestry, crucial, em dashes, rule-of-three habits, summarizing morals). A built-in style checker counts leftovers, and the fact-check rewrites them.
+- **Study profile** (private): favorite tutor, how you learn best (reading, diagrams, worked examples, practice, discussion, listening, stories, real-world use), goal, background and daily study time.
+- **Explain it differently:** any section can be re-explained by any author for you. The re-explanation uses your profile and targets your wrong answers in that section.
+- **Study coach:** your accuracy per section is tracked from practice and quizzes. For weak sections it writes a personal review sheet: the idea you are missing, why your wrong answer was tempting, a fresh example, a new check question, and a plan for your next session.
+- Office hours also use your profile.
+
+## 8. Provenance: who wrote what
+
+- **"About this edition"** page in every book records:
+  - the author voice;
+  - that Claude by Anthropic wrote it, with the engine tier that actually answered each part (Standard or Most capable);
+  - dates and who requested it;
+  - the prompt version and the sources policy.
+- **Each chapter** has a "Who wrote this chapter" line covering text, figures, assessments, fact-check and narration, with engine, date and requester.
+- **The sample books** record that they were hand-written in Claude Code and verified by independent agents.
+
+## 9. Audio editions
+
+- **Now:** a read-aloud player using the device's best voice. It ranks Premium, Enhanced, Natural and Neural voices first and skips novelty voices, and offers speed, voice choice, a clickable transcript and a saved position. The **narrated edition** is the chapter rewritten for listening by its author: figures described aloud, citations dropped, units spoken naturally, sections announced.
+- **Voice quality depends on the device.** It is excellent with Edge "Natural" voices and with Apple Premium or Enhanced voices; basic elsewhere. The player says how to get a better voice.
+- **Next (studio narration):** pre-rendered audio files from a high-quality voice service (for example ElevenLabs, OpenAI TTS, or the Higgsfield connector already on this account), stored as artifact assets. This costs per minute of audio, so it needs an explicit go-ahead.
+
+## 10. Scholarly data sources (APIs)
+
+These are free scholarly APIs Dr. Professor should use. **Constraint:** a published Claude artifact cannot call outside websites (the page's security policy blocks it), and Claude's in-page model has no web access. So they need a small bridge.
+
+| Purpose | API | Use in Dr. Professor |
+|---|---|---|
+| Papers, citations, DOIs | **OpenAlex** (250M+ works, free, no key), **Crossref** (every DOI) | Verify every citation exists; fill in missing DOIs, volumes and pages; find the most-cited sources for a topic |
+| Paper search and summaries | **Semantic Scholar** (free key) | Suggest the strongest sources before writing; get abstracts so claims match papers |
+| Biomedical | **PubMed / NCBI E-utilities**, **Europe PMC** | Medical and biology courses |
+| Preprints | **arXiv** | Physics, CS, math frontier chapters (Expert, Mastery) |
+| Free full text | **Unpaywall** | Link each cited paper to a legal free copy |
+| Books | **Open Library**, Library of Congress | Verify textbooks and editions; cover and ISBN data |
+| Images | **Wikimedia Commons**, **NASA Image Library**, **Smithsonian Open Access**, Biodiversity Heritage Library | Real photos and historical plates with license and attribution |
+| Subject data | **GBIF**, **eBird** (birds), **Xeno-canto** and Macaulay Library (bird songs), NASA ADS (astronomy) | Range maps, real observations, actual bird recordings for "birding by ear" |
+| Facts | **Wikidata** | Cross-check dates, quantities and names |
+
+**Bridge options:**
+1. **A "Scholar" connector (recommended next step).** A small MCP server deployed on Vercel exposes tools like `search_works`, `verify_citation`, `find_images` and `get_recording`, backed by the APIs above. John adds it once as a custom connector in claude.ai. The artifact then calls it through the `mcp` capability, and the fact-check can look things up for real. This needs John's approval for the deployment and the connector.
+2. **Standalone app (v1.0).** Next.js on Vercel with the Claude API calling the same APIs server-side. It's needed anyway for public use, real accounts and billing.
+
+## 11. What's built now (prototype v0.3)
+
+`app/dr-professor.html` is a single-page app published as a private Claude artifact. Books are written live by Claude on the viewer's own account through the artifact `sample` capability.
+
+- **The shelf:** a shared library of book covers, plus a catalog-card request form (subject, level, author, focus, length, writing engine).
+- **Front matter:** generated cover art in gold foil, title page, preface in the author's voice, objectives, contents, and "About this edition".
+- **Back matter:** glossary (A to Z, linked to sections) and bibliography (deduplicated, with fact-check status).
+- **Chapters,** written in three parallel parts plus a fact-check pass:
+  - text with numbered citations and per-section sources;
+  - worked examples, misconception boxes and practice;
+  - color figures, a lecture deck, a quiz tagged by section, challenges, readings and watch-lists.
+- **Accuracy:** fact-check of claims, labels, citations and style; answer keys re-solved blind and disputes adjudicated; a report showing every change; learner error reports that check and fix the text.
+- **Tutoring:** study profile, "explain it differently", study coach with personal review sheets, office hours.
+- **Audio edition:** read-aloud player plus the narrated edition.
+- **Assessments:** quizzes, graded challenges, final exam with verified key, certificate.
+- **Storage:** the shared library lives in the artifact database (`courses/…`). Progress, notes, tutoring and profile live in private `data/users/<id>/…`. Opened outside Claude, the app falls back to browser storage.
 
 **Seed library** (in `app/seed/`, built with `scripts/build_seed.py`):
 
-| Code | Course | Level | State |
-|---|---|---|---|
-| ORN 101 | Birds: Anatomy, Behavior, and Field Identification | Beginner | Syllabus + Chapter 1 written by hand as the quality bar and independently fact-checked (3 color figures, 4 misconception boxes, 12 practice problems, 9 slides, 8-question quiz, 2 challenges) |
-| GDS 201 | Game Design: Systems, Mechanics, and Player Experience | Intermediate | Syllabus; chapters generate on open |
-| AST 050 | Outer Space from the Ground Up | Noob | Syllabus (short, 5 chapters) |
-| ENR 301 | Energy Systems: Conversion, Storage, and the Electric Grid | Advanced | Syllabus |
+| Code | Book | Level | Author | State |
+|---|---|---|---|---|
+| ORN 101 | Birds: Anatomy, Behavior, and Field Identification | Beginner | The Scholar | Chapter 1 hand-written as the quality bar: 22 cited sources (15 with confirmed DOIs), fact-checked and citation-verified by independent agents |
+| GDS 201 | Game Design: Systems, Mechanics, and Player Experience | Intermediate | The Practitioner | Syllabus, preface, cover |
+| AST 050 | Outer Space from the Ground Up | Noob | The Kindergarten Teacher | Chapter 1 generated live by John with v0.2: 14/14 keys confirmed, 2 corrections |
+| ENR 301 | Energy Systems: Conversion, Storage, and the Electric Grid | Advanced | The Brainiac | Syllabus, preface, cover |
 
-### Known limits of the prototype
-- **Figures** are SVG diagrams Claude draws. Fine for schematics, timelines and graphs, but not photos. Quality varies.
-- **No embedded video or photos.** The artifact sandbox blocks external images and iframes, so these are search links.
-- **Citations** are from model memory. They carry a "Find it" link and a warning, and are not verified.
-- **Grading** is by the model against a rubric. It's useful feedback but not proctored.
-- **The final exam is open-book** and can be retaken. The certificate is a record of completion, not an accredited credential.
+### Known limits
+- The in-app fact-check works from Claude's knowledge; live lookups need the Scholar connector (§10).
+- No embedded photos or video yet (sandbox); these are search links until the bridge exists.
+- Audio quality depends on the device's voices until studio narration is added.
+- Grading is by the model against a rubric. The certificate records completion and is not an accreditation.
 
-## 8. Roadmap
+## 12. Roadmap
 
-**v0.2: make it feel like a course**
-- Placement test → level recommendation.
-- Spaced-repetition review queue built from key terms and missed questions.
-- Per-chapter "explain it one level down / one level up" toggle.
-- Regenerate one section, with a reason ("too easy", "wrong", "more examples").
-- Error reports from learners ("this fact is wrong"), stored and fed into the next regeneration.
+**Next**
+- Scholar connector (OpenAlex, Crossref, Semantic Scholar, Unpaywall, Wikimedia, GBIF, Xeno-canto) wired into writing and fact-checking.
+- Studio narration (pre-rendered audio) once a voice service is approved.
+- Placement test that recommends a level and author.
+- Spaced-repetition queue from key terms and missed questions.
+- "Explain one level down / up" for any section.
+- Printable PDF book and workbook.
 
-**v1.0: standalone app (beyond the artifact sandbox)**
-- Backend (e.g. Next.js on Vercel + Supabase) with the Claude API, prompt caching for syllabus context, and batch generation of whole courses.
-- **Real media pipeline:**
-  - Images from Wikimedia Commons, NASA Image Library, Smithsonian Open Access, Macaulay Library, with license and attribution.
-  - Videos via the YouTube Data API, filtered to channels from universities, museums and agencies; embedded, with timestamps.
-  - Generated narrated slide videos (TTS over the lecture deck).
-- **Citation verification:** check books against Open Library/WorldCat, papers against Crossref/DOI, and drop anything that doesn't resolve.
-- Web search during generation, for subjects that change fast.
-- Printable PDF textbook and workbook per course.
-- Accounts, classes (Jack and John take the same course and compare transcripts), shareable certificate verification page.
+**v1.0: standalone app**
+- Next.js on Vercel with Supabase and the Claude API: prompt caching, batch generation of whole books, real accounts, classes (Jack and John on the same course), and certificate verification pages.
 
 **Later**
-- Labs and simulations per subject (e.g. orbit sandbox for space, circuit/grid sim for energy, game-loop prototyping for game design).
-- Audio lessons for birding by ear.
-- Instructor mode: edit and lock a course, then publish it to a class.
+- Labs and simulations per subject (orbit sandbox, grid dispatch sim, game-loop prototyper).
+- Birding by ear with real recordings.
+- Instructor mode.
 
-## 9. Open questions for John and Jack
+## 13. Open questions for John and Jack
 
-1. **Who is it for first:** you two, or the public? That decides whether the artifact is enough or v1.0 is needed.
-2. **Certificate weight:** should it require full coursework (no credit by exam)? Should the final be timed?
-3. **Shared or personal courses:** one shared "Birds 101" for everyone, or a course tailored to each person's focus? (The prototype shares by default and records the focus in the course.)
-4. **Media priority:** real photos and video (needs the v1.0 backend) or generated diagrams and slide videos first?
-5. **Cost:** generation runs on each viewer's Claude account in the prototype. A public app would need API billing.
+1. **Scholar connector:** OK to deploy a small MCP server on Vercel and add it as a connector? It unlocks real citation lookups and images.
+2. **Studio narration:** which voice service, and what monthly budget?
+3. **Who is it for first:** you two, or the public?
+4. **Certificate weight:** require full coursework, or allow credit by examination?
+5. **Default author:** should the app suggest an author from the study profile automatically?
 
-## 10. How to test the prototype
+## 14. How to test
 
-1. Open the artifact link and go to **ORN 101 → Chapter 1** to see the target quality.
-2. Open **GDS 201 → Chapter 1** and press **Write chapter 1** to watch it generate live (one to three minutes).
-3. Request a new course from the form: try the same subject at Noob and at Expert and compare.
-4. Take the Chapter 1 quiz, submit a challenge for grading, and ask a question in office hours.
-5. Sit the final for a course (credit by examination) and save the certificate.
-
-Note what feels wrong in each step (accuracy, level fit, pacing, missing learning modes). That is the input for v0.2.
+1. Open the shelf and pick **ORN 101**. Read the front matter, then Chapter 1: click a citation number, open the fact-check report, press Play in the audio edition, then try "Explain 1.2 differently" as Socrates.
+2. Set up your **Profile** (favorite tutor, how you learn), then get a few practice questions wrong and open the **Study coach** on the book page.
+3. Commission a new book with a different author, and compare the voice.
+4. Open **GDS 201 Chapter 1** and write it; watch the fact-check report and the citations appear.
