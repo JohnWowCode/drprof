@@ -9,7 +9,7 @@
     {
       "section": "3.3",
       "file": "ch3-fig-2.svg",
-      "caption": "The path of food in a seed-eating bird such as a pigeon. Storage (crop), chemical digestion (proventriculus) and grinding (gizzard) all happen before the intestine; the ceca are side pouches, and the cloaca is the shared exit."
+      "caption": "The path of food in a seed-eating bird such as a pigeon. Storage (crop), chemical digestion (proventriculus) and grinding (gizzard) all happen before the intestine; the ceca are side pouches (tiny in pigeons, large in plant-eaters such as grouse), and the cloaca is the shared exit."
     },
     {
       "section": "3.4",
@@ -43,31 +43,36 @@
             "n": 1,
             "citation": "Brown, R. E., Brain, J. D., & Wang, N. (1997). The avian respiratory system: A unique model for studies of respiratory toxicosis and for monitoring air quality. Environmental Health Perspectives, 105(2), 188–200. https://doi.org/10.1289/ehp.97105188",
             "kind": "article",
-            "supports": "Structure of the lung and air sacs, the pattern of airflow during inhalation and exhalation, the two-cycle summary, aerodynamic valving and cross-current gas exchange."
+            "supports": "Structure of the lung and air sacs, the pattern of airflow during inhalation and exhalation, the two-cycle summary, aerodynamic valving and cross-current gas exchange.",
+            "checked": true
           },
           {
             "n": 2,
             "citation": "Bretz, W. L., & Schmidt-Nielsen, K. (1971). Bird respiration: Flow patterns in the duck lung. Journal of Experimental Biology, 54(1), 103–118. https://doi.org/10.1242/jeb.54.1.103",
             "kind": "article",
-            "supports": "Direct measurements of airflow direction in the airways of ducks, showing one-way flow through the lung."
+            "supports": "Direct measurements of airflow direction in the airways of ducks, showing one-way flow through the lung.",
+            "checked": true
           },
           {
             "n": 3,
             "citation": "Farmer, C. G., & Sanders, K. (2010). Unidirectional airflow in the lungs of alligators. Science, 327(5963), 338–340. https://doi.org/10.1126/science.1180219",
             "kind": "article",
-            "supports": "One-way airflow in alligator lungs, including excised lungs, and its likely origin in early archosaurs."
+            "supports": "One-way airflow in alligator lungs, including excised lungs, and its likely origin in early archosaurs.",
+            "checked": true
           },
           {
             "n": 4,
             "citation": "O’Connor, P. M., & Claessens, L. P. A. M. (2005). Basic avian pulmonary design and flow-through ventilation in non-avian theropod dinosaurs. Nature, 436(7048), 253–256. https://doi.org/10.1038/nature03716",
             "kind": "article",
-            "supports": "Skeletal pneumaticity in Majungasaurus shows bird-style air sacs in non-avian theropods."
+            "supports": "Skeletal pneumaticity in Majungasaurus shows bird-style air sacs in non-avian theropods.",
+            "checked": true
           },
           {
             "n": 5,
             "citation": "Scott, G. R., Hawkes, L. A., Frappell, P. B., Butler, P. J., Bishop, C. M., & Milsom, W. K. (2015). How bar-headed geese fly over the Himalayas. Physiology, 30(2), 107–115. https://doi.org/10.1152/physiol.00050.2014",
             "kind": "article",
-            "supports": "The general advantages of the bird respiratory system and the specializations of Bar-headed Geese along the oxygen pathway."
+            "supports": "The general advantages of the bird respiratory system and the specializations of Bar-headed Geese along the oxygen pathway.",
+            "checked": true
           }
         ],
         "keyTerms": [
@@ -150,7 +155,7 @@
         "reading": [
           "Birds are **endotherms**: like mammals, they make most of their body heat internally by burning food, and they hold a steady core temperature whatever the weather. They run hotter than we do. Most birds keep their core between about 38 and 42 °C, usually a little higher during the active part of the day than at rest, compared with about 37 °C in a human [1]. A warm body has faster chemistry, so muscles contract quickly and nerves fire fast, which helps an animal that must react in flight. The cost is fuel. A bird’s **metabolic rate**, the rate at which it uses energy, is high even at rest and climbs steeply when it flies [1].",
           "Measuring that cost takes ingenuity. The standard method is to measure how much oxygen an animal uses, because each liter of oxygen consumed corresponds to a known amount of energy released. In 2019, Jessica Meir and colleagues raised Bar-headed Geese by hand from hatching, so that the birds imprinted on people, and trained them to fly in a wind tunnel while wearing masks that sampled their breath. In flight, the geese used energy about 16 times faster than at rest, and the extra oxygen was delivered mainly by more oxygen per heartbeat, with only a modest rise in heart rate [4]. The team then lowered the oxygen in the air to match altitudes of 5,500 and 9,000 meters. In thin air the geese’s metabolic rate in flight fell below its level in normal air, and their heart rate did not climb any higher [4].",
-          "Wild birds face the same budget. GPS tracking showed that Bar-headed Geese from lowland India can cross the Himalayas in a single day, typically climbing 4,000 to 6,000 meters in 7 to 8 hours, and that they tended to avoid the strong winds of the afternoon, climbing even in the still air of night [2]. A later study implanted loggers that recorded heart rate, a stand-in for energy use, along with altitude. Flight cost rose quickly as the air thinned, so the geese followed the terrain, dropping into valleys and climbing again rather than holding a high altitude. In that study, 98 percent of the recorded flight was below 6,000 meters, and the highest single record was a brief 7,290 meters [3]. The circulation behind this effort resembles ours in one way: birds have a four-chambered heart that keeps oxygen-rich and oxygen-poor blood fully apart. Bird hearts are also, on average, larger for their body size than mammal hearts [1].",
+          "Wild birds face the same budget. GPS tracking showed that Bar-headed Geese from lowland India can cross the Himalayas in a single day, typically climbing 4,000 to 6,000 meters in 7 to 8 hours, and that they tended to avoid the strong winds of the afternoon, climbing even in the still air of night [2]. A later study implanted loggers that recorded heart rate, a stand-in for energy use, along with altitude. Flight cost rose quickly as the air thinned, so the geese followed the terrain, dropping into valleys and climbing again rather than holding a high altitude. In that study the geese spent most of their flight time below 6,000 meters, and the highest single record was a brief 7,290 meters [3]. The circulation behind this effort resembles ours in one way: birds have a four-chambered heart that keeps oxygen-rich and oxygen-poor blood fully apart. Bird hearts are also, on average, larger for their body size than mammal hearts [1].",
           "Body size changes the budget. A small body has more surface for each gram of tissue, so it loses heat faster, and small birds must burn energy faster per gram to stay warm. Hummingbirds sit at the extreme: for their weight, hovering hummingbirds have some of the highest metabolic rates measured in any vertebrate [1]. A Ruby-throated Hummingbird (*Archilochus colubris*) weighs about 3 grams, and by day it refuels with nectar and small insects many times an hour. A long, cool night without food is therefore a real danger, because the bird’s small fat store could run out before dawn [1].",
           "The solution is **torpor**, a controlled drop in body temperature and metabolic rate. On a cold night a hummingbird can let its body temperature fall far below its daytime level and cut its energy use sharply, then rewarm by shivering before it starts feeding again [1]. The record holders are hummingbirds of the high Andes. In 2020, Blair Wolf and colleagues recorded a Black Metaltail (*Metallura phoebe*) whose body temperature fell to about 3.3 °C during torpor, the lowest yet measured in a bird [5]. One bird goes further still. In the 1940s the naturalist Edmund Jaeger found a Common Poorwill (*Phalaenoptilus nuttallii*) in a rock crevice in the California desert, cold and motionless, and it stayed torpid for weeks. The poorwill is still the only bird known to spend long stretches of the winter in a state close to hibernation [1].",
           "Holding a steady temperature also means getting rid of heat. Feathers are excellent insulation, and a cold bird fluffs them to trap more air and shivers to make heat. A hot bird does the reverse. Birds have no sweat glands, so they lose heat by evaporating water from the mouth and airways, either by panting or by rapidly vibrating the throat, a behavior called **gular fluttering** [1]. Legs and feet pose their own problem, because they are thin and bare. In many birds, warm arteries running down the leg lie against cold veins coming back up, so heat passes from one to the other before it reaches the foot. This **countercurrent heat exchange** lets a gull stand on ice with cold feet while its core stays warm [1]."
@@ -160,31 +165,36 @@
             "n": 1,
             "citation": "Lovette, I. J., & Fitzpatrick, J. W. (Eds.). (2016). Handbook of bird biology (3rd ed.). Wiley-Blackwell; Cornell Lab of Ornithology.",
             "kind": "book",
-            "supports": "Bird body temperatures, endothermy and metabolic rate, heart structure and size, hummingbird energetics, torpor, poorwill hibernation, and cooling and heat-saving mechanisms."
+            "supports": "Bird body temperatures, endothermy and metabolic rate, heart structure and size, hummingbird energetics, torpor, poorwill hibernation, and cooling and heat-saving mechanisms.",
+            "checked": true
           },
           {
             "n": 2,
             "citation": "Hawkes, L. A., Balachandran, S., Batbayar, N., Butler, P. J., Frappell, P. B., Milsom, W. K., Tseveenmyadag, N., Newman, S. H., Scott, G. R., Sathiyaselvam, P., Takekawa, J. Y., Wikelski, M., & Bishop, C. M. (2011). The trans-Himalayan flights of bar-headed geese (Anser indicus). Proceedings of the National Academy of Sciences, 108(23), 9516–9519. https://doi.org/10.1073/pnas.1017295108",
             "kind": "article",
-            "supports": "GPS tracking of single-day Himalayan crossings, climbs of 4,000 to 6,000 meters in 7 to 8 hours, and avoidance of afternoon winds."
+            "supports": "GPS tracking of single-day Himalayan crossings, climbs of 4,000 to 6,000 meters in 7 to 8 hours, and avoidance of afternoon winds.",
+            "checked": true
           },
           {
             "n": 3,
             "citation": "Bishop, C. M., Spivey, R. J., Hawkes, L. A., Batbayar, N., Chua, B., Frappell, P. B., Milsom, W. K., Natsagdorj, T., Newman, S. H., Scott, G. R., Takekawa, J. Y., Wikelski, M., & Butler, P. J. (2015). The roller coaster flight strategy of bar-headed geese conserves energy during Himalayan migrations. Science, 347(6219), 250–254. https://doi.org/10.1126/science.1258732",
             "kind": "article",
-            "supports": "Heart rate and altitude logging in migrating geese, terrain-following flight, 98 percent of flight below 6,000 meters and a brief maximum of 7,290 meters."
+            "supports": "Heart rate and altitude logging in migrating geese, terrain-following flight, 98 percent of flight below 6,000 meters and a brief maximum of 7,290 meters.",
+            "checked": true
           },
           {
             "n": 4,
             "citation": "Meir, J. U., York, J. M., Chua, B. A., Jardine, W., Hawkes, L. A., & Milsom, W. K. (2019). Reduced metabolism supports hypoxic flight in the high-flying bar-headed goose (Anser indicus). eLife, 8, Article e44986. https://doi.org/10.7554/eLife.44986",
             "kind": "article",
-            "supports": "Wind-tunnel measurements of metabolic rate and heart function in geese flying at simulated altitudes of 5,500 and 9,000 meters."
+            "supports": "Wind-tunnel measurements of metabolic rate and heart function in geese flying at simulated altitudes of 5,500 and 9,000 meters.",
+            "checked": true
           },
           {
             "n": 5,
             "citation": "Wolf, B. O., McKechnie, A. E., Schmitt, C. J., Czenze, Z. J., Johnson, A. B., & Witt, C. C. (2020). Extreme and variable torpor among high-elevation Andean hummingbird species. Biology Letters, 16(9), Article 20200428.",
             "kind": "article",
-            "supports": "A Black Metaltail cooled to about 3.3 °C during torpor, the lowest body temperature recorded in a bird."
+            "supports": "A Black Metaltail cooled to about 3.3 °C during torpor, the lowest body temperature recorded in a bird.",
+            "checked": true
           }
         ],
         "keyTerms": [
@@ -198,7 +208,7 @@
           },
           {
             "term": "Torpor",
-            "def": "A controlled drop in body temperature and metabolic rate that saves energy, lasting hours or, in a few species, weeks."
+            "def": "A controlled drop in body temperature and metabolic rate that saves energy, lasting hours or, in the Common Poorwill, weeks."
           },
           {
             "term": "Gular fluttering",
@@ -262,36 +272,40 @@
         "title": "Beaks, crops and gizzards",
         "reading": [
           "In Chapter 1 you saw that birds have no teeth: a keratin beak covers the jaws, and its shape is adapted to the diet. A beak can crack, tear, probe, filter or spear, but it cannot chew. Most birds swallow food whole or in pieces, and the processing that a mammal does in its mouth happens further down the digestive tract [1]. An American Robin (*Turdus migratorius*) that tugs an earthworm from a lawn swallows it whole. In autumn and winter, when worms are harder to reach, robins eat far more fruit, and they swallow berries whole too [1]. Figure 3.2 follows food from beak to cloaca.",
-          "The first stop is the **esophagus**, a stretchy tube from mouth to stomach. In many birds, including pigeons, gamebirds, many finches and most birds of prey, part of it is widened into a pouch called the **crop**. The crop is a storage bin. A pigeon on a busy sidewalk can fill its crop quickly and digest the meal later in safety, and you can sometimes see the bulge at the base of a well-fed pigeon’s neck. Not every bird has a crop, and in some it is only a slight widening [1]. In our Rock Pigeon the crop has a second use. Both parents produce **crop milk**, a rich secretion made of fat- and protein-filled cells shed from the crop lining, and feed it to their young [1].",
+          "The first stop is the **esophagus**, a stretchy tube from mouth to stomach. In many birds, including pigeons, gamebirds, parrots, some finches, and hawks, eagles and falcons (but not owls), part of it is widened into a pouch called the **crop**. The crop is a storage bin. A pigeon on a busy sidewalk can fill its crop quickly and digest the meal later in safety, and you can sometimes see the bulge at the base of a well-fed pigeon’s neck. Not every bird has a crop, and in some it is only a slight widening [1]. In our Rock Pigeon the crop has a second use. Both parents produce **crop milk**, a rich secretion made of fat- and protein-filled cells shed from the crop lining, and feed it to their young [1].",
           "Birds have a two-part stomach. The front part, the **proventriculus**, is glandular: it secretes acid and digestive enzymes that begin to break food down chemically. Food then passes to the **gizzard**, or ventriculus, a muscular grinding chamber with a tough, hard lining. In seed-eaters such as pigeons and sparrows the gizzard walls are thick and powerful, and the bird swallows small stones, called **grit**, which help crush hard seeds the way molars would. In birds that eat soft food such as fish, nectar or ripe fruit, the gizzard is thinner and less muscular [1]. Owls show what the gizzard can sort. They swallow small mammals whole, digest the flesh and cough up compact **pellets** of fur and bone, which researchers pull apart to learn exactly what an owl has eaten [1].",
           "Diet can reshape the whole system. The Hoatzin (*Opisthocomus hoazin*) of South American river forests eats mostly leaves, a food few birds can use because plant cell walls are made of tough cellulose. In 1989, Alejandro Grajal and colleagues showed that the Hoatzin ferments leaves with bacteria in its enlarged crop and lower esophagus, the same strategy a cow uses in its rumen; it was the first bird known to digest food this way [2]. Grit in the gizzard has a long history. Fossils of the small feathered dinosaur *Caudipteryx*, described in 1998, preserve clusters of stones in the stomach region, much like the grit of plant-eating birds today. The stones suggest that some of these dinosaurs, like many birds today, ground their food in a muscular gizzard [3].",
           "After the gizzard, food moves into the **small intestine**, where enzymes from the pancreas and bile from the liver finish digestion and nutrients are absorbed into the blood. Many birds have a pair of blind side pouches, the **ceca**, where the small and large intestines meet. They are largest in plant-eaters such as grouse, where bacteria inside them ferment tough plant fiber [1]. The large intestine is short and ends in the **cloaca**, a single chamber that also receives the outputs of the kidneys and the reproductive tract. Birds excrete nitrogen waste mainly as **uric acid**, which needs little water to flush away; it is the white part of a bird dropping, and the dark part is feces [1]. Fruit-eating birds pass seeds through quickly and drop them far from the parent plant, which makes them important seed dispersers [1].",
-          "The gut can also change size. Organs are heavy, and a flying bird pays to carry every gram. Theunis Piersma and Robert Gill examined Bar-tailed Godwits (*Limosa lapponica*) about to leave Alaska on their nonstop flight across the Pacific to New Zealand, a journey you will study in Chapter 7. The birds carried huge fat stores, but their digestive organs, including the gizzard and intestines, were unusually small for birds of their size [4]. Piersma and Gill concluded that the godwits had shrunk organs they would not use during the flight, trading digestive capacity for a lighter load. They titled their 1998 paper “Guts don’t fly” [4]."
+          "The gut can also change size. Organs are heavy, and a flying bird pays to carry every gram. Theunis Piersma and Robert Gill examined Bar-tailed Godwits (*Limosa lapponica*) that had died in Alaska, probably just after setting off on their nonstop flight across the Pacific to New Zealand, a journey you will study in Chapter 7. The birds carried huge fat stores, but their digestive organs, including the gizzard and intestines, were unusually small for birds of their size [4]. Piersma and Gill concluded that the godwits had shrunk organs they would not use during the flight, trading digestive capacity for a lighter load. They titled their 1998 paper “Guts don’t fly” [4]."
         ],
         "sources": [
           {
             "n": 1,
             "citation": "Lovette, I. J., & Fitzpatrick, J. W. (Eds.). (2016). Handbook of bird biology (3rd ed.). Wiley-Blackwell; Cornell Lab of Ornithology.",
             "kind": "book",
-            "supports": "Feeding without teeth, the crop and crop milk, the proventriculus and gizzard, grit, owl pellets, ceca, the cloaca, uric acid and seed dispersal."
+            "supports": "Feeding without teeth, the crop and crop milk, the proventriculus and gizzard, grit, owl pellets, ceca, the cloaca, uric acid and seed dispersal.",
+            "checked": true
           },
           {
             "n": 2,
             "citation": "Grajal, A., Strahl, S. D., Parra, R., Dominguez, M. G., & Neher, A. (1989). Foregut fermentation in the hoatzin, a neotropical leaf-eating bird. Science, 245(4923), 1236–1238.",
             "kind": "article",
-            "supports": "Bacterial fermentation of leaves in the crop and lower esophagus of the Hoatzin."
+            "supports": "Bacterial fermentation of leaves in the crop and lower esophagus of the Hoatzin.",
+            "checked": true
           },
           {
             "n": 3,
             "citation": "Ji, Q., Currie, P. J., Norell, M. A., & Ji, S.-A. (1998). Two feathered dinosaurs from northeastern China. Nature, 393(6687), 753–761.",
             "kind": "article",
-            "supports": "Description of Caudipteryx, including stomach stones (gastroliths)."
+            "supports": "Description of Caudipteryx, including stomach stones (gastroliths).",
+            "checked": true
           },
           {
             "n": 4,
             "citation": "Piersma, T., & Gill, R. E., Jr. (1998). Guts don’t fly: Small digestive organs in obese Bar-tailed Godwits. The Auk, 115(1), 196–203.",
             "kind": "article",
-            "supports": "Small digestive organs in heavily fattened godwits before their transpacific flight."
+            "supports": "Small digestive organs in heavily fattened godwits before their transpacific flight.",
+            "checked": true
           }
         ],
         "keyTerms": [
@@ -372,43 +386,48 @@
         "n": "3.4",
         "title": "Senses: vision, hearing and smell",
         "reading": [
-          "Birds are visual animals. Their eyes are very large for their heads; in many species the two eyes nearly meet in the middle of the skull and can barely move in their sockets, which is why an owl turns its whole head to look around [1]. The retina at the back of the eye is packed with light-sensing cells. **Rods** work in dim light. **Cones** work in bright light and detect color. Many birds have a **fovea**, a small pit where cones are packed most densely and vision is sharpest, and hawks, eagles and some other birds that judge distance at speed have two foveae in each eye [1].",
-          "Human color vision rests on three types of cone, most sensitive to violet-blue, green and yellow-green light. Most birds have four types of single cone, so their color vision is **tetrachromatic**. The fourth type is sensitive to violet or **ultraviolet** light, wavelengths shorter than about 400 nanometers that we cannot see (Figure 3.3). In many songbirds and parrots this cone is most sensitive well into the ultraviolet; in others, such as chickens and most birds of prey, it peaks in the violet but still reaches into the ultraviolet. Each cone also holds a colored droplet of oil that filters light before it reaches the pigment, narrowing the range each cone responds to and sharpening color discrimination. Birds have **double cones** as well, thought to be used for judging brightness and motion rather than color [2].",
+          "Birds are visual animals. Their eyes are very large for their heads; in many species the two eyes nearly meet in the middle of the skull, and an owl’s tube-shaped eyes can barely move in their sockets, which is why an owl turns its whole head to look around [1]. The retina at the back of the eye is packed with light-sensing cells. **Rods** work in dim light. **Cones** work in bright light and detect color. Many birds have a **fovea**, a small pit where cones are packed most densely and vision is sharpest, and hawks, eagles and some other birds that judge distance at speed have two foveae in each eye [1].",
+          "Human color vision rests on three types of cone, most sensitive to violet-blue, green and yellow-green light. Most birds have four types of single cone, so their color vision is **tetrachromatic**. The fourth type is sensitive to violet or **ultraviolet** light, wavelengths shorter than about 400 nanometers that we cannot see (Figure 3.3). In many songbirds and parrots this cone is most sensitive well into the ultraviolet; in others, such as chickens and most birds of prey, it peaks in the violet but still reaches into the ultraviolet. Most cones also hold a droplet of oil, usually colored, that filters light before it reaches the pigment, narrowing the range each cone responds to and sharpening color discrimination. Birds have **double cones** as well, thought to be used for judging brightness and motion rather than color [2].",
           "These facts come from a technique called **microspectrophotometry**. Researchers pass a tiny beam of light, one wavelength at a time, through a single cone cell from a bird’s retina and measure which wavelengths its pigment absorbs [2]. Feathers tell the same story from the other side. Many plumages that look plain to us reflect strongly in the ultraviolet. The crown of the Blue Tit (*Cyanistes caeruleus*) of Europe looks blue to us, but instruments show that it also reflects ultraviolet light, and males and females, which look alike to a human observer, differ in that reflectance [2].",
           "Hearing matters too, above all for song, the subject of Chapter 5. Most birds hear best between about 1 and 4 kilohertz, roughly the range of their songs, and few hear much above 10 kilohertz, while a young human can hear up to about 20 kilohertz [1]. Our running example uses its ears on the lawn. An American Robin hunting worms runs, stops and cocks its head. Because a robin’s eyes face sideways, the tilt was long read as looking. In experiments with captive robins, Robert Montgomerie and Patrick Weatherhead hid mealworms just under the soil surface and controlled which cues the birds could use. The robins still found prey when sound was the main cue available, evidence that they can hunt by ear as well as by eye [3].",
           "The Barn Owl (*Tyto alba*) is the champion listener. In experiments published in 1971, Roger Payne showed that Barn Owls could catch mice in a light-tight room, and that they would strike at a wad of paper dragged across the floor, which ruled out sight, body heat and smell as the cues [4]. A Barn Owl’s ear openings sit at different heights on the two sides of its head, so a sound from below reaches one ear slightly differently than the other, and the dish-shaped disc of feathers around the face funnels sound toward the ears. Together these let the owl pinpoint prey both left to right and up and down in darkness [4].",
-          "Smell was long thought to matter little to birds; in the 1800s John James Audubon concluded from experiments that vultures found carrion by sight [1]. We now know that many birds smell well. The Turkey Vulture (*Cathartes aura*) has a large olfactory bulb and finds carcasses hidden under forest canopy by their odor. Pipeline workers have even located gas leaks by watching where Turkey Vultures gathered, because the gas carried an added odorant similar to the smell of decay [1]. Kiwis, alone among birds, have nostrils at the tip of the bill and sniff out worms in the soil [1]. At sea, albatrosses, petrels and shearwaters, the **tubenoses**, are drawn to dimethyl sulfide, a compound released when krill and other small animals graze on plankton, which leads the birds to rich feeding areas [5]."
+          "Smell was long thought to matter little to birds; in the 1800s John James Audubon concluded from experiments that vultures found carrion by sight [1]. We now know that many birds smell well. The Turkey Vulture (*Cathartes aura*) has a large olfactory bulb and finds carcasses hidden under forest canopy by their odor. Pipeline workers have even located gas leaks by watching where Turkey Vultures gathered, because the gas carried an added odorant similar to the smell of decay [1]. Kiwis, alone among birds, have nostrils at the tip of the bill and sniff out worms in the soil [1]. At sea, many **tubenoses**, the group that includes albatrosses, petrels and shearwaters, can smell dimethyl sulfide, and some, such as storm-petrels and prions, are strongly drawn to it; the compound is released when krill and other small animals graze on plankton, so it leads the birds to rich feeding areas [5]."
         ],
         "sources": [
           {
             "n": 1,
             "citation": "Lovette, I. J., & Fitzpatrick, J. W. (Eds.). (2016). Handbook of bird biology (3rd ed.). Wiley-Blackwell; Cornell Lab of Ornithology.",
             "kind": "book",
-            "supports": "Eye size and foveae, the hearing range of birds, Audubon’s vulture experiments, smell in Turkey Vultures and kiwis."
+            "supports": "Eye size and foveae, the hearing range of birds, Audubon’s vulture experiments, smell in Turkey Vultures and kiwis.",
+            "checked": true
           },
           {
             "n": 2,
             "citation": "Hart, N. S. (2001). The visual ecology of avian photoreceptors. Progress in Retinal and Eye Research, 20(5), 675–703.",
             "kind": "article",
-            "supports": "Four single-cone types, violet- and ultraviolet-sensitive birds, oil droplets, double cones, microspectrophotometry and ultraviolet plumage signals."
+            "supports": "Four single-cone types, violet- and ultraviolet-sensitive birds, oil droplets, double cones, microspectrophotometry and ultraviolet plumage signals.",
+            "checked": true
           },
           {
             "n": 3,
             "citation": "Montgomerie, R., & Weatherhead, P. J. (1997). How robins find worms. Animal Behaviour, 54(1), 143–151.",
             "kind": "article",
-            "supports": "Experiments showing that American Robins can locate buried prey using sound."
+            "supports": "Experiments showing that American Robins can locate buried prey using sound.",
+            "checked": true
           },
           {
             "n": 4,
             "citation": "Payne, R. S. (1971). Acoustic location of prey by barn owls (Tyto alba). Journal of Experimental Biology, 54(3), 535–573.",
             "kind": "article",
-            "supports": "Barn Owls catching prey in darkness by sound, and the role of ear asymmetry."
+            "supports": "Barn Owls catching prey in darkness by sound, and the role of ear asymmetry.",
+            "checked": true
           },
           {
             "n": 5,
             "citation": "Nevitt, G. A., Veit, R. R., & Kareiva, P. (1995). Dimethyl sulphide as a foraging cue for Antarctic Procellariiform seabirds. Nature, 376(6542), 680–682.",
             "kind": "article",
-            "supports": "Tubenoses are attracted to dimethyl sulfide, an odor linked to productive feeding areas."
+            "supports": "Tubenoses are attracted to dimethyl sulfide, an odor linked to productive feeding areas.",
+            "checked": true
           }
         ],
         "keyTerms": [
@@ -426,7 +445,7 @@
           },
           {
             "term": "Oil droplet",
-            "def": "A colored droplet inside a bird cone that filters light and narrows the range of wavelengths the cone responds to."
+            "def": "A droplet of oil, usually colored, inside a bird cone that filters light and narrows the range of wavelengths the cone responds to."
           },
           {
             "term": "Microspectrophotometry",
@@ -449,7 +468,7 @@
         },
         "misconception": {
           "myth": "Birds have almost no sense of smell.",
-          "fact": "Many birds smell well. Turkey Vultures find hidden carcasses by odor, kiwis sniff for worms through nostrils at the tip of the bill, and tubenoses track the smell of dimethyl sulfide across the ocean. The old view rested on a few early experiments and on studying mainly songbirds."
+          "fact": "Many birds smell well. Turkey Vultures find hidden carcasses by odor, kiwis sniff for worms through nostrils at the tip of the bill, and many tubenoses track the smell of dimethyl sulfide across the ocean. The old view rested on a few early experiments and on studying mainly songbirds."
         },
         "practice": [
           {
@@ -860,25 +879,29 @@
         "citation": "Lovette, I. J., & Fitzpatrick, J. W. (Eds.). (2016). Handbook of bird biology (3rd ed.). Wiley-Blackwell; Cornell Lab of Ornithology.",
         "kind": "book",
         "why": "The standard introductory text. Read its chapters on physiology, digestion and the senses alongside this chapter.",
-        "pages": ""
+        "pages": "",
+        "checked": true
       },
       {
         "citation": "Scott, G. R., Hawkes, L. A., Frappell, P. B., Butler, P. J., Bishop, C. M., & Milsom, W. K. (2015). How bar-headed geese fly over the Himalayas. Physiology, 30(2), 107–115. https://doi.org/10.1152/physiol.00050.2014",
         "kind": "article",
         "why": "A short, freely available review by the research team that tracked the geese. Read it for the first challenge exercise.",
-        "pages": ""
+        "pages": "",
+        "checked": true
       },
       {
         "citation": "Brown, R. E., Brain, J. D., & Wang, N. (1997). The avian respiratory system: A unique model for studies of respiratory toxicosis and for monitoring air quality. Environmental Health Perspectives, 105(2), 188–200. https://doi.org/10.1289/ehp.97105188",
         "kind": "article",
         "why": "A freely available, well-illustrated account of the air sacs and airflow. Its diagrams of the breathing cycle support section 3.1.",
-        "pages": ""
+        "pages": "",
+        "checked": true
       },
       {
         "citation": "Cornell Lab of Ornithology. (n.d.). All about birds. https://www.allaboutbirds.org",
         "kind": "website",
         "why": "Species accounts with diet and behavior for the birds in this chapter. Use it to choose and identify the bird for the second challenge.",
-        "pages": ""
+        "pages": "",
+        "checked": true
       }
     ],
     "videos": [
@@ -912,5 +935,100 @@
         "why": "Look at the large, open nostril of a bird that finds food by smell."
       }
     ]
+  },
+  "review": {
+    "full": true,
+    "at": 1791600000000,
+    "by": "Researched and written with web-search verification; then fact-checked independently by a second agent using web search (bibliographic records and abstracts for Wolf et al. 2020, Grajal et al. 1989, Ji et al. 1998, Piersma & Gill 1998, Hart 2001, Montgomerie & Weatherhead 1997, Payne 1971, Nevitt et al. 1995, Hawkes et al. 2013, Bishop et al. 2015, Meir et al. 2019, Hart et al. 2000 and the 1973 Rüppell's Vulture strike), with expert review for textbook-level claims cited to Lovette & Fitzpatrick 2016 and where page fetches failed; figure SVGs checked by reading their geometry and labels; every answer key re-solved blind.",
+    "keysChecked": 16,
+    "keysAgreed": 16,
+    "keyFixes": [],
+    "corrections": [
+      {
+        "where": "3.2 reading",
+        "before": "In that study, 98 percent of the recorded flight was below 6,000 meters, and the highest single record was a brief 7,290 meters [3].",
+        "after": "In that study the geese spent most of their flight time below 6,000 meters, and the highest single record was a brief 7,290 meters [3].",
+        "why": "The 7,290 m maximum is confirmed (Hawkes et al. 2013; Bishop et al. 2015, as cited by Meir et al. 2019). The exact '98 percent below 6,000 m' figure could not be found in the abstract, press releases or later citations of Bishop et al. 2015. Softening it keeps the point without relying on a number I could not check.",
+        "severity": "unverifiable",
+        "applied": true
+      },
+      {
+        "where": "3.2 key terms (Torpor)",
+        "before": "A controlled drop in body temperature and metabolic rate that saves energy, lasting hours or, in a few species, weeks.",
+        "after": "A controlled drop in body temperature and metabolic rate that saves energy, lasting hours or, in the Common Poorwill, weeks.",
+        "why": "The reading itself says the poorwill is the only bird known to stay torpid for long stretches, so 'a few species' contradicts the text. Torpor lasting weeks is documented only in the poorwill.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "3.3 reading",
+        "before": "In many birds, including pigeons, gamebirds, many finches and most birds of prey, part of it is widened into a pouch called the **crop**.",
+        "after": "In many birds, including pigeons, gamebirds, parrots, some finches, and hawks, eagles and falcons (but not owls), part of it is widened into a pouch called the **crop**.",
+        "why": "Owls, which count as birds of prey, have no crop, and the section discusses owls two paragraphs later. Most passerines lack a true crop, and only some seed-eating finches have an esophageal pouch, so 'many finches' overstates it.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "3.3 reading",
+        "before": "Theunis Piersma and Robert Gill examined Bar-tailed Godwits (*Limosa lapponica*) about to leave Alaska on their nonstop flight across the Pacific to New Zealand, a journey you will study in Chapter 7.",
+        "after": "Theunis Piersma and Robert Gill examined Bar-tailed Godwits (*Limosa lapponica*) that had died in Alaska, probably just after setting off on their nonstop flight across the Pacific to New Zealand, a journey you will study in Chapter 7.",
+        "why": "Piersma & Gill (1998, Auk 115:196–203) studied godwits killed by striking a radar dome on the Alaska Peninsula, probably just after takeoff. They compared these birds with northbound godwits from New Zealand. The birds were not sampled before departure.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "figure 2 caption",
+        "before": "the ceca are side pouches, and the cloaca is the shared exit.",
+        "after": "the ceca are side pouches (tiny in pigeons, large in plant-eaters such as grouse), and the cloaca is the shared exit.",
+        "why": "The figure is presented as a pigeon-type seed-eater but shows large, paired fermenting ceca. Pigeons have only small, rudimentary ceca, so without the qualifier a beginner would take away the wrong picture. The reading correctly ties large ceca to grouse.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "3.4 reading",
+        "before": "Their eyes are very large for their heads; in many species the two eyes nearly meet in the middle of the skull and can barely move in their sockets, which is why an owl turns its whole head to look around [1].",
+        "after": "Their eyes are very large for their heads; in many species the two eyes nearly meet in the middle of the skull, and an owl’s tube-shaped eyes can barely move in their sockets, which is why an owl turns its whole head to look around [1].",
+        "why": "Owls' tubular eyes are essentially fixed, but many birds do move their eyes to a useful degree. The original makes near-immobility sound general to 'many species'.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "3.4 reading",
+        "before": "Each cone also holds a colored droplet of oil that filters light before it reaches the pigment, narrowing the range each cone responds to and sharpening color discrimination.",
+        "after": "Most cones also hold a droplet of oil, usually colored, that filters light before it reaches the pigment, narrowing the range each cone responds to and sharpening color discrimination.",
+        "why": "The oil droplet of the UV/violet-sensitive cone is transparent, not colored (Hart 2001; Hart et al. 2000), and the accessory member of the double cone usually has no droplet. So 'each cone ... colored droplet' is not accurate.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "3.4 key terms (Oil droplet)",
+        "before": "A colored droplet inside a bird cone that filters light and narrows the range of wavelengths the cone responds to.",
+        "after": "A droplet of oil, usually colored, inside a bird cone that filters light and narrows the range of wavelengths the cone responds to.",
+        "why": "Same issue as in the reading: the droplet in the UV/violet-sensitive cone is transparent.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "3.4 reading",
+        "before": "At sea, albatrosses, petrels and shearwaters, the **tubenoses**, are drawn to dimethyl sulfide, a compound released when krill and other small animals graze on plankton, which leads the birds to rich feeding areas [5].",
+        "after": "At sea, many **tubenoses**, the group that includes albatrosses, petrels and shearwaters, can smell dimethyl sulfide, and some, such as storm-petrels and prions, are strongly drawn to it; the compound is released when krill and other small animals graze on plankton, so it leads the birds to rich feeding areas [5].",
+        "why": "Nevitt, Veit & Kareiva (1995, Nature 376:680–682) found that many Antarctic procellariiforms detect DMS and that some species, for example storm-petrels, are highly attracted to it. Responses varied between species: Cape Petrels did not respond, and albatrosses are generally not attracted to DMS. The original sentence implies all tubenoses, albatrosses included, are drawn to it.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "3.4 misconception fact",
+        "before": "Turkey Vultures find hidden carcasses by odor, kiwis sniff for worms through nostrils at the tip of the bill, and tubenoses track the smell of dimethyl sulfide across the ocean.",
+        "after": "Turkey Vultures find hidden carcasses by odor, kiwis sniff for worms through nostrils at the tip of the bill, and many tubenoses track the smell of dimethyl sulfide across the ocean.",
+        "why": "Attraction to DMS varies among tubenose species (Nevitt et al. 1995), so the statement should not cover the whole group.",
+        "severity": "imprecise",
+        "applied": true
+      }
+    ],
+    "readingsRemoved": [],
+    "srcChecked": 19,
+    "srcWithdrawn": 0,
+    "summary": "The chapter is accurate overall: all 19 section sources are real and correctly cited, the airflow figure and the breath-order interactive show the correct two-cycle, back-to-front route, the figure 3 cone peaks match published values (Blue Tit about 372/449/502/563 nm per Hart et al. 2000; human about 420/530/560 nm), and every multiple-choice key is correct. The corrections are refinements, not reversals: they narrow overgeneralizations (DMS attraction across all tubenoses, colored oil droplets in every cone, crops in 'most birds of prey', pigeon ceca), describe the godwit sample correctly, and soften one unverified percentage.",
+    "style": {}
   }
 }

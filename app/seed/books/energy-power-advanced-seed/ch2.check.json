@@ -1,0 +1,81 @@
+{
+ "method": "Researched and written with web-search verification; then fact-checked independently by a second agent. Web search confirmed the EIA 2024 Table 8.1 heat rates, the EIA Table 8.2 combined-cycle tested heat rates, the GE 7HA.03 ratings (43.3 percent simple cycle, more than 64 percent combined), the Bouchain (62.22 percent net, 2016) and Nishi-Nagoya (63.08 percent gross, March 2018) records, and Carnot's 1824 edition (Bachelier, 118 pages, 600 copies, at his own expense). Bibliographic details for Clausius 1865, Curzon and Ahlborn 1975, Fox 1986, Mendoza 1960, Rankine 1859, and the Çengel, Moran and Gülen texts were checked by expert review. Every thermodynamic number was recomputed: steam states with CoolProp 8.0 (h3 3,502.0 kJ/kg, s3 6.7585, x4 0.8146, h4 2,140.4, η 0.4095, mean heat-addition temperature 540.2 K = 267 °C, reheat case η 0.428 and x 0.923), and the Brayton, Carnot, Curzon-Ahlborn, exergy, combined-cycle and CHP arithmetic by script. The SVG coordinates were checked against the stated data. Every answer key was re-solved blind.",
+ "keysChecked": 16,
+ "keysAgreed": 16,
+ "keyFixes": [],
+ "corrections": [
+  {
+   "where": "2.4 reading",
+   "quote": "U.S. gas combined-cycle units had average tested heat rates of about 7,600 Btu/kWh (HHV) from 2014 to 2021, about 45 percent, because real units run at part load, in hot weather and with aging parts [3].",
+   "correction": "U.S. gas combined-cycle units had average tested heat rates of about 7,600 Btu/kWh (HHV) from 2014 to 2021, about 45 percent on that basis (roughly 50 percent LHV); the gap from the ratings comes mainly from the many older, less efficient units in the fleet, with ambient conditions and wear adding to it [3].",
+   "why": "The explanation leaves out the two largest causes. The fleet figure is HHV while the 64 percent rating is LHV: dividing by about 1.11 alone takes 64 percent down to about 58 percent. Most of the fleet is also F-class or older and was built long before the 7HA.03. Part load is a poor explanation for a tested heat rate. The EIA Table 8.2 values found by search (7,658, 7,655 and 7,652 Btu/kWh for 2014 to 2016) confirm the 'about 7,600' figure itself.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "2.2 reading",
+   "quote": "The U.S. Energy Information Administration publishes fleet-average **heat rates**, the fuel energy used per kilowatt-hour generated, on a higher-heating-value basis.",
+   "correction": "The U.S. Energy Information Administration publishes fleet-average **heat rates**, the fuel energy used per kilowatt-hour generated, on a higher-heating-value basis for fossil fuels (for nuclear plants, the reactor heat).",
+   "why": "Nuclear fuel has no heating value. EIA's nuclear figure in Table 8.1 is a weighted average of tested heat rates for reactor thermal output, so 'higher-heating-value basis' applies only to the fossil rows. The 2024 values themselves (10,777, 10,443 and 7,754 Btu/kWh) were confirmed against EIA Table 8.1 by web search.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "2.2 reading",
+   "quote": "Nuclear plants do no better than coal despite a completely different heat source, because light-water reactors raise steam at under 300 °C, which keeps T_H low.",
+   "correction": "Nuclear plants do only about as well as coal despite a completely different heat source, because light-water reactors raise steam at under 300 °C, which keeps T_H low.",
+   "why": "On the chapter's own numbers nuclear (32.7 percent) is one point better than coal (31.7 percent), so 'no better' is not literally true.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "2.4 reading",
+   "quote": "GE rates its 7HA.03 gas turbine at 43.3 percent in simple cycle and above 64 percent in a combined cycle with one gas and one steam turbine, both net on a lower-heating-value (LHV) basis.",
+   "correction": "GE rates its 7HA.03 gas turbine at 43.3 percent in simple cycle and at more than 64 percent in combined cycle, both net on a lower-heating-value (LHV) basis.",
+   "why": "Search confirmed 43.3 percent net LHV simple cycle and GE's 'more than 64 percent' net combined-cycle claim. It did not tie that claim to the 1x1 configuration: launch reports gave 63.9 percent net, and the 1x1 and 2x1 ratings were quoted separately (640 MW and 1,282 MW). Removing the configuration detail keeps the sentence safe.",
+   "severity": "unverifiable"
+  },
+  {
+   "where": "2.4 example title",
+   "quote": "Worked example: our reference combined-cycle plant and one kilowatt-hour",
+   "correction": "Worked example: a best-in-class H-class combined-cycle plant and one kilowatt-hour",
+   "why": "Chapter 1 defines 'a 500 MW combined-cycle gas plant, one of this book’s two reference plants' at 55 percent efficiency and says Chapter 2 explains how two cycles reach that figure. Calling a 64 percent 7HA.03 plant 'our reference combined-cycle plant' contradicts that, and nothing in Chapter 2 reconciles the two.",
+   "severity": "error"
+  },
+  {
+   "where": "2.4 example step 1",
+   "quote": "Data, net and LHV: gas turbine η_B = 0.433 (the 7HA.03 rating) and effective bottoming efficiency η_R = 0.365, which together match the plant rating of 0.64.",
+   "correction": "Data, net and LHV: gas turbine η_B = 0.433 (the 7HA.03 rating) and effective bottoming efficiency η_R = 0.365, which together match the plant rating of 0.64; these are new-plant, full-load ratings, whereas Chapter 1’s 500 MW reference plant uses a more conservative in-service 55 percent.",
+   "why": "This states the difference from Chapter 1's 55 percent assumption explicitly, so learners do not read the two as conflicting values for the same plant.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "2.4 reading",
+   "quote": "The plant as a whole then takes in heat at the gas turbine’s firing temperature and rejects it at the condenser’s temperature, capturing the best end of each cycle.",
+   "correction": "The plant as a whole then takes in heat at the gas turbine’s high temperatures, from compressor discharge up to the firing temperature, and rejects it near the condenser’s temperature, capturing the best end of each cycle.",
+   "why": "In a Brayton cycle heat is added from compressor-discharge temperature (about 730 K in the chapter's own example) up to the firing temperature, not at the firing temperature. Section 2.3 builds the whole lesson on the mean temperature of heat addition, so this shortcut undercuts it.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "slide 10 (Cogeneration) bullet",
+   "quote": "Utilization factor up to about 80 percent",
+   "correction": "Utilization factor around 80 percent in good plants",
+   "why": "Çengel (the cited source) says actual cogeneration plants reach utilization factors 'as high as 80 percent' and that some recent plants go higher. Modern gas-engine and gas-turbine CHP often quotes 85 to 90 percent (LHV), so 'up to' wrongly implies a ceiling.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "interactive 1 step 2",
+   "quote": "Combustion destroys a large share of the fuel’s chemical exergy, and heat transfer from gas near 1,500 K to steam whose mean temperature is only about 540 K destroys more.",
+   "correction": "Combustion destroys a large share of the fuel’s chemical exergy, and heat transfer from gas near 1,500 K to steam whose mean temperature of heat addition is far lower (540 K in the ideal cycle of Section 2.3) destroys more.",
+   "why": "540 K is the mean heat-addition temperature of the ideal 10 MPa non-reheat, non-regenerative cycle. A 35 percent coal unit with reheat and feedwater heating has a higher mean temperature, so the figure should be credited to the example rather than to this plant.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "Q8 explanation",
+   "quote": "Heat at 120 °C has an exergy factor of about 0.24, so the exergy efficiency is far below 80 percent.",
+   "correction": "Heat at 120 °C, for example, has an exergy factor of about 0.24, so the exergy efficiency is far below 80 percent.",
+   "why": "The question gives no heat temperature, so the explanation should present 120 °C as an example, not as part of the data.",
+   "severity": "imprecise"
+  }
+ ],
+ "sourcesChecked": 15,
+ "sourcesWithdrawn": [],
+ "summary": "The chapter is highly accurate. Every recomputed number checks out: the Rankine state points and 41.0 percent efficiency, the 267 °C mean temperature, the Brayton model, the Carnot and Curzon-Ahlborn values, the combined-cycle and CHP arithmetic, the explorer formulas, and the T-s and Sankey proportions in the figures. All 16 keys are correct and all 15 sources are real and support their claims, so the corrections are mostly imprecisions, chiefly the explanation of the fleet heat-rate gap and the HHV/nuclear wording. It contradicts Chapter 1: Chapter 1's 500 MW reference combined-cycle plant runs at 55 percent, while Chapter 2's example calls a 64 percent 7HA.03 plant 'our reference combined-cycle plant' and never reconciles the two; the corrections retitle that example and add a sentence explaining the difference."
+}
