@@ -57,13 +57,15 @@
             "n": 3,
             "citation": "Clausius, R. (1865). Ueber verschiedene für die Anwendung bequeme Formen der Hauptgleichungen der mechanischen Wärmetheorie. Annalen der Physik und Chemie, 125(7), 353–400.",
             "kind": "article",
-            "supports": "Clausius introduced and named entropy in 1865."
+            "supports": "Clausius introduced and named entropy in 1865.",
+            "checked": true
           },
           {
             "n": 4,
             "citation": "Mendoza, E. (Ed.). (1960). Reflections on the motive power of fire by Sadi Carnot, and other papers on the second law of thermodynamics by E. Clapeyron and R. Clausius. Dover Publications.",
             "kind": "book",
-            "supports": "English translations of Clausius’s papers founding the second law from 1850."
+            "supports": "English translations of Clausius’s papers founding the second law from 1850.",
+            "checked": true
           }
         ],
         "keyTerms": [
@@ -148,7 +150,7 @@
           "Sadi Carnot published *Réflexions sur la puissance motrice du feu* in Paris in 1824, at his own expense, in an edition of 600 copies [1, 2]. He reasoned with the caloric theory of his day, which treated heat as an indestructible fluid, and compared a heat engine with a waterwheel: work comes from caloric “falling” from a high temperature to a low one, as water falls from a high level to a low one. The caloric theory was wrong, but Carnot’s central conclusion survived its overthrow. The maximum work obtainable from heat depends only on the temperatures of the bodies between which it flows, not on the working substance [2]. Émile Clapeyron restated the argument in mathematical form in 1834, and in the early 1850s Clausius and William Thomson, later Lord Kelvin, reconciled it with the conservation of energy [2].",
           "The modern derivation takes three lines. An engine takes heat Q_H from a reservoir at T_H, does work W and rejects Q_C to a reservoir at T_C. The first law gives W = Q_H − Q_C. The entropy balance from Section 2.1 gives Q_C = T_C(Q_H/T_H + S_gen). Substituting, W = Q_H(1 − T_C/T_H) − T_C·S_gen [3]. The first term is the most work any engine could deliver; the second is the work lost to irreversibility, and it is never negative. Dividing by Q_H gives the **Carnot efficiency**, η_C = 1 − T_C/T_H, reached only by a fully reversible engine with S_gen = 0. Figure 2.1 shows the bookkeeping for steam at 823 K and a condenser at 319 K. The limit is 61 percent, and the ideal steam cycle analyzed in Section 2.3 reaches 41 percent.",
           "Both temperatures must be **absolute temperatures**, in kelvin, because the derivation divides heat by temperature and entropy is measured from absolute zero. The Celsius error is large and common. For steam at 600 °C and a condenser at 33 °C, 1 − 33/600 gives an impossible 94.5 percent. The correct value is 1 − 306.15 K/873.15 K = 0.649, or 64.9 percent [3]. The formula also shows where effort pays. The derivative of η_C with respect to T_H is T_C/T_H², while with respect to T_C it is −1/T_H, so a kelvin removed from the cold side is worth more than a kelvin added to the hot side. In practice T_C is pinned near the temperature of the available cooling water or air, so designers push T_H upward until they reach the limits of steels and turbine alloys.",
-          "Real plants sit well below their Carnot limits. The U.S. Energy Information Administration publishes fleet-average **heat rates**, the fuel energy used per kilowatt-hour generated, on a higher-heating-value basis. In 2024 they were 10,777 Btu/kWh for coal plants, 10,443 Btu/kWh for nuclear plants and 7,754 Btu/kWh for natural gas plants [4]. Since 1 kWh = 3,412 Btu, the corresponding efficiencies are 3,412/10,777 = 31.7 percent for coal, 3,412/10,443 = 32.7 percent for nuclear and 3,412/7,754 = 44.0 percent for gas. Nuclear plants do no better than coal despite a completely different heat source, because light-water reactors raise steam at under 300 °C, which keeps T_H low. Gas leads because much of the gas fleet is combined-cycle, the subject of Section 2.4.",
+          "Real plants sit well below their Carnot limits. The U.S. Energy Information Administration publishes fleet-average **heat rates**, the fuel energy used per kilowatt-hour generated, on a higher-heating-value basis for fossil fuels (for nuclear plants, the reactor heat). In 2024 they were 10,777 Btu/kWh for coal plants, 10,443 Btu/kWh for nuclear plants and 7,754 Btu/kWh for natural gas plants [4]. Since 1 kWh = 3,412 Btu, the corresponding efficiencies are 3,412/10,777 = 31.7 percent for coal, 3,412/10,443 = 32.7 percent for nuclear and 3,412/7,754 = 44.0 percent for gas. Nuclear plants do only about as well as coal despite a completely different heat source, because light-water reactors raise steam at under 300 °C, which keeps T_H low. Gas leads because much of the gas fleet is combined-cycle, the subject of Section 2.4.",
           "The gap between real and Carnot efficiency has identifiable causes. A Carnot engine takes in all its heat at T_H and rejects all of it at T_C, with no temperature difference between the working fluid and the reservoirs. A real engine takes in heat over a range of temperatures, needs finite temperature differences to move heat at a useful rate, and loses work to friction and pressure drops. Curzon and Ahlborn showed in 1975 that an engine whose only irreversibility is finite-rate heat transfer, operated for maximum power output, has efficiency 1 − √(T_C/T_H) [5]. For T_H = 873 K and T_C = 306 K that gives 40.8 percent, close to what good steam plants achieve. The Carnot formula is a ceiling, not a forecast. A better measure of engineering quality is the **second-law efficiency**, η/η_C."
         ],
         "sources": [
@@ -156,13 +158,15 @@
             "n": 1,
             "citation": "Carnot, S. (1824). Réflexions sur la puissance motrice du feu et sur les machines propres à développer cette puissance. Bachelier.",
             "kind": "book",
-            "supports": "Carnot’s 1824 booklet, printed at his own expense in 600 copies."
+            "supports": "Carnot’s 1824 booklet, printed at his own expense in 600 copies.",
+            "checked": true
           },
           {
             "n": 2,
             "citation": "Carnot, S. (1986). Reflexions on the motive power of fire: A critical edition with the surviving scientific manuscripts (R. Fox, Ed. & Trans.). Manchester University Press.",
             "kind": "book",
-            "supports": "Carnot’s caloric reasoning, the waterfall analogy, his main conclusion, and the reception of the work by Clapeyron, Clausius and Thomson."
+            "supports": "Carnot’s caloric reasoning, the waterfall analogy, his main conclusion, and the reception of the work by Clapeyron, Clausius and Thomson.",
+            "checked": true
           },
           {
             "n": 3,
@@ -182,7 +186,8 @@
             "n": 5,
             "citation": "Curzon, F. L., & Ahlborn, B. (1975). Efficiency of a Carnot engine at maximum power output. American Journal of Physics, 43(1), 22–24.",
             "kind": "article",
-            "supports": "Efficiency at maximum power of an engine limited by finite-rate heat transfer, 1 − √(T_C/T_H)."
+            "supports": "Efficiency at maximum power of an engine limited by finite-rate heat transfer, 1 − √(T_C/T_H).",
+            "checked": true
           }
         ],
         "keyTerms": [
@@ -367,9 +372,9 @@
         "n": "2.4",
         "title": "Combined cycles and cogeneration",
         "reading": [
-          "Section 2.3 ended with a mismatch. The gas turbine takes in heat at a very high temperature but throws it away hot, at around 600 °C. The steam cycle rejects heat close to ambient but takes it in at a low mean temperature. A **combined cycle** stacks the two. The gas turbine is the **topping cycle**, and its exhaust flows through a **heat-recovery steam generator** (HRSG) that raises steam for a Rankine **bottoming cycle**, as in Figure 2.3 [1]. In large plants the HRSG produces steam at three pressure levels, with reheat, so that the water and steam temperatures follow the cooling exhaust closely and less exergy is destroyed in the heat transfer [1]. The plant as a whole then takes in heat at the gas turbine’s firing temperature and rejects it at the condenser’s temperature, capturing the best end of each cycle.",
+          "Section 2.3 ended with a mismatch. The gas turbine takes in heat at a very high temperature but throws it away hot, at around 600 °C. The steam cycle rejects heat close to ambient but takes it in at a low mean temperature. A **combined cycle** stacks the two. The gas turbine is the **topping cycle**, and its exhaust flows through a **heat-recovery steam generator** (HRSG) that raises steam for a Rankine **bottoming cycle**, as in Figure 2.3 [1]. In large plants the HRSG produces steam at three pressure levels, with reheat, so that the water and steam temperatures follow the cooling exhaust closely and less exergy is destroyed in the heat transfer [1]. The plant as a whole then takes in heat at the gas turbine’s high temperatures, from compressor discharge up to the firing temperature, and rejects it near the condenser’s temperature, capturing the best end of each cycle.",
           "The combined efficiency follows from a short energy balance. Let the fuel supply heat Q to the gas turbine, which delivers W_B = η_B·Q and rejects (1 − η_B)·Q in its exhaust. If all of that rejected heat reaches the steam cycle and the steam cycle converts a fraction η_R of it to work, then W_R = η_R(1 − η_B)·Q. Adding the outputs and dividing by Q gives η_cc = η_B + η_R(1 − η_B) [1, 2]. The relation rests on assumptions worth stating: all heat rejected by the gas turbine is offered to the steam cycle; the steam cycle receives no other heat, so there is no supplementary firing in the HRSG; both efficiencies refer to the same fuel heating value; and auxiliary loads are treated consistently. In practice some exhaust heat escapes through the stack, so η_R is best read as an effective efficiency from exhaust heat to steam-turbine work.",
-          "This relation explains how combined cycles moved past every other thermal plant. GE rates its 7HA.03 gas turbine at 43.3 percent in simple cycle and above 64 percent in a combined cycle with one gas and one steam turbine, both net on a lower-heating-value (LHV) basis. Solving for the bottoming cycle gives η_R = (0.64 − 0.433)/(1 − 0.433) = 0.365, so a steam cycle with an effective efficiency of only 36.5 percent adds 21 points. Measured records sit close to such ratings. In 2016 EDF’s Bouchain plant in France, built around a GE 9HA.01, was certified at 62.22 percent net, and in 2018 Chubu Electric’s Nishi-Nagoya Block 1 was recognized at 63.08 percent gross. Fleet averages are lower. U.S. gas combined-cycle units had average tested heat rates of about 7,600 Btu/kWh (HHV) from 2014 to 2021, about 45 percent, because real units run at part load, in hot weather and with aging parts [3].",
+          "This relation explains how combined cycles moved past every other thermal plant. GE rates its 7HA.03 gas turbine at 43.3 percent in simple cycle and at more than 64 percent in combined cycle, both net on a lower-heating-value (LHV) basis. Solving for the bottoming cycle gives η_R = (0.64 − 0.433)/(1 − 0.433) = 0.365, so a steam cycle with an effective efficiency of only 36.5 percent adds 21 points. Measured records sit close to such ratings. In 2016 EDF’s Bouchain plant in France, built around a GE 9HA.01, was certified at 62.22 percent net, and in 2018 Chubu Electric’s Nishi-Nagoya Block 1 was recognized at 63.08 percent gross. Fleet averages are lower. U.S. gas combined-cycle units had average tested heat rates of about 7,600 Btu/kWh (HHV) from 2014 to 2021, about 45 percent on that basis (roughly 50 percent LHV); the gap from the ratings comes mainly from the many older, less efficient units in the fleet, with ambient conditions and wear adding to it [3].",
           "Even a combined cycle rejects about a third of its fuel energy as low-temperature heat through its condenser and stack. **Cogeneration**, or combined heat and power (CHP), uses that heat for industrial process steam, district heating or hot water. The price is electrical output: to deliver useful heat at, say, 120 °C, a steam turbine must exhaust at a higher pressure and temperature than a condensing turbine, so each kilogram of steam does less work [2]. CHP performance is often summarized by the **utilization factor**, ε_u = (W_net + Q_useful)/Q_fuel. Actual cogeneration plants reach utilization factors as high as about 80 percent when there is a steady demand for the heat [2]. That number, however, adds electricity and heat as if a joule of each were equally valuable, which Section 2.1 showed they are not.",
           "An exergy view puts CHP on a fair footing. Heat at 120 °C has an exergy factor of 1 − 298.15 K/393.15 K = 0.24. A CHP plant that turns 100 MJ of fuel into 30 MJ of electricity and 50 MJ of useful heat at 120 °C has a utilization factor of 80 percent but an exergy efficiency of about (30 + 50 × 0.24)/100 = 42 percent, taking the fuel’s exergy as roughly its heating value [2]. The practical test is the fuel saved compared with making the same products separately. With a 60 percent combined cycle and a 90 percent boiler, separate production takes 30/0.60 + 50/0.90 = 105.6 MJ, so CHP saves only 5 percent. Against a 35 percent coal plant the saving is 1 − 100/(85.7 + 55.6) = 29 percent. CHP pays most where the electricity it displaces is inefficient and the heat demand is steady."
         ],
@@ -423,9 +428,9 @@
           }
         ],
         "example": {
-          "title": "Worked example: our reference combined-cycle plant and one kilowatt-hour",
+          "title": "Worked example: a best-in-class H-class combined-cycle plant and one kilowatt-hour",
           "steps": [
-            "Data, net and LHV: gas turbine η_B = 0.433 (the 7HA.03 rating) and effective bottoming efficiency η_R = 0.365, which together match the plant rating of 0.64.",
+            "Data, net and LHV: gas turbine η_B = 0.433 (the 7HA.03 rating) and effective bottoming efficiency η_R = 0.365, which together match the plant rating of 0.64; these are new-plant, full-load ratings, whereas Chapter 1’s 500 MW reference plant uses a more conservative in-service 55 percent.",
             "Per 100 MJ of fuel: the gas turbine makes 0.433 × 100 MJ = 43.3 MJ of work and sends (1 − 0.433) × 100 MJ = 56.7 MJ to the HRSG; the steam cycle turns 0.365 × 56.7 MJ = 20.7 MJ of that into work.",
             "Combined efficiency: η_cc = 0.433 + 0.365 × (1 − 0.433) = 0.433 + 0.207 = 0.640. The steam turbine supplies 20.7/64.0 = 32 percent of the plant’s output.",
             "Fuel per kilowatt-hour: 3,600 kJ / 0.640 = 5,625 kJ/kWh (LHV). Converting to the HHV basis used by EIA (natural gas HHV/LHV ≈ 1.11): 5,625 × 1.11 = 6,240 kJ/kWh, or 6,240 / 1.055 = 5,915 Btu/kWh, well below the U.S. combined-cycle fleet’s roughly 7,600 Btu/kWh.",
@@ -485,7 +490,7 @@
         },
         {
           "q": "Then where is the work potential being lost?",
-          "a": "In the boiler. Combustion destroys a large share of the fuel’s chemical exergy, and heat transfer from gas near 1,500 K to steam whose mean temperature is only about 540 K destroys more. The worked example in Section 2.1 found 174 kJ destroyed per 1,000 kJ moved across just part of that gap."
+          "a": "In the boiler. Combustion destroys a large share of the fuel’s chemical exergy, and heat transfer from gas near 1,500 K to steam whose mean temperature of heat addition is far lower (540 K in the ideal cycle of Section 2.3) destroys more. The worked example in Section 2.1 found 174 kJ destroyed per 1,000 kJ moved across just part of that gap."
         },
         {
           "q": "What design changes follow from the exergy audit?",
@@ -709,7 +714,7 @@
         "title": "Cogeneration",
         "bullets": [
           "Use rejected heat for process steam or district heating",
-          "Utilization factor up to about 80 percent",
+          "Utilization factor around 80 percent in good plants",
           "Exergy efficiency much lower: heat at 120 °C is worth 24 percent",
           "Judge by fuel saved against separate production"
         ],
@@ -821,7 +826,7 @@
           "It violates the Carnot limit"
         ],
         "answer": 2,
-        "explanation": "The utilization factor counts heat and electricity equally. Heat at 120 °C has an exergy factor of about 0.24, so the exergy efficiency is far below 80 percent. Whether it saves fuel depends on the separate plants it is compared with, and it does not violate Carnot because most of its output is heat, not work."
+        "explanation": "The utilization factor counts heat and electricity equally. Heat at 120 °C, for example, has an exergy factor of about 0.24, so the exergy efficiency is far below 80 percent. Whether it saves fuel depends on the separate plants it is compared with, and it does not violate Carnot because most of its output is heat, not work."
       }
     ],
     "challenge": [
@@ -875,7 +880,8 @@
         "citation": "Mendoza, E. (Ed.). (1960). Reflections on the motive power of fire by Sadi Carnot, and other papers on the second law of thermodynamics by E. Clapeyron and R. Clausius. Dover Publications.",
         "kind": "book",
         "why": "Carnot’s Reflections in English with the papers by Clapeyron and Clausius that turned it into the second law. Short, readable and still instructive.",
-        "pages": ""
+        "pages": "",
+        "checked": true
       }
     ],
     "videos": [
@@ -909,5 +915,100 @@
         "why": "Notice how the blades lengthen toward the low-pressure end, where the steam’s specific volume is largest."
       }
     ]
+  },
+  "review": {
+    "full": true,
+    "at": 1791600000000,
+    "by": "Researched and written with web-search verification; then fact-checked independently by a second agent. Web search confirmed the EIA 2024 Table 8.1 heat rates, the EIA Table 8.2 combined-cycle tested heat rates, the GE 7HA.03 ratings (43.3 percent simple cycle, more than 64 percent combined), the Bouchain (62.22 percent net, 2016) and Nishi-Nagoya (63.08 percent gross, March 2018) records, and Carnot's 1824 edition (Bachelier, 118 pages, 600 copies, at his own expense). Bibliographic details for Clausius 1865, Curzon and Ahlborn 1975, Fox 1986, Mendoza 1960, Rankine 1859, and the Çengel, Moran and Gülen texts were checked by expert review. Every thermodynamic number was recomputed: steam states with CoolProp 8.0 (h3 3,502.0 kJ/kg, s3 6.7585, x4 0.8146, h4 2,140.4, η 0.4095, mean heat-addition temperature 540.2 K = 267 °C, reheat case η 0.428 and x 0.923), and the Brayton, Carnot, Curzon-Ahlborn, exergy, combined-cycle and CHP arithmetic by script. The SVG coordinates were checked against the stated data. Every answer key was re-solved blind.",
+    "keysChecked": 16,
+    "keysAgreed": 16,
+    "keyFixes": [],
+    "corrections": [
+      {
+        "where": "2.4 reading",
+        "before": "U.S. gas combined-cycle units had average tested heat rates of about 7,600 Btu/kWh (HHV) from 2014 to 2021, about 45 percent, because real units run at part load, in hot weather and with aging parts [3].",
+        "after": "U.S. gas combined-cycle units had average tested heat rates of about 7,600 Btu/kWh (HHV) from 2014 to 2021, about 45 percent on that basis (roughly 50 percent LHV); the gap from the ratings comes mainly from the many older, less efficient units in the fleet, with ambient conditions and wear adding to it [3].",
+        "why": "The explanation leaves out the two largest causes. The fleet figure is HHV while the 64 percent rating is LHV: dividing by about 1.11 alone takes 64 percent down to about 58 percent. Most of the fleet is also F-class or older and was built long before the 7HA.03. Part load is a poor explanation for a tested heat rate. The EIA Table 8.2 values found by search (7,658, 7,655 and 7,652 Btu/kWh for 2014 to 2016) confirm the 'about 7,600' figure itself.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "2.2 reading",
+        "before": "The U.S. Energy Information Administration publishes fleet-average **heat rates**, the fuel energy used per kilowatt-hour generated, on a higher-heating-value basis.",
+        "after": "The U.S. Energy Information Administration publishes fleet-average **heat rates**, the fuel energy used per kilowatt-hour generated, on a higher-heating-value basis for fossil fuels (for nuclear plants, the reactor heat).",
+        "why": "Nuclear fuel has no heating value. EIA's nuclear figure in Table 8.1 is a weighted average of tested heat rates for reactor thermal output, so 'higher-heating-value basis' applies only to the fossil rows. The 2024 values themselves (10,777, 10,443 and 7,754 Btu/kWh) were confirmed against EIA Table 8.1 by web search.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "2.2 reading",
+        "before": "Nuclear plants do no better than coal despite a completely different heat source, because light-water reactors raise steam at under 300 °C, which keeps T_H low.",
+        "after": "Nuclear plants do only about as well as coal despite a completely different heat source, because light-water reactors raise steam at under 300 °C, which keeps T_H low.",
+        "why": "On the chapter's own numbers nuclear (32.7 percent) is one point better than coal (31.7 percent), so 'no better' is not literally true.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "2.4 reading",
+        "before": "GE rates its 7HA.03 gas turbine at 43.3 percent in simple cycle and above 64 percent in a combined cycle with one gas and one steam turbine, both net on a lower-heating-value (LHV) basis.",
+        "after": "GE rates its 7HA.03 gas turbine at 43.3 percent in simple cycle and at more than 64 percent in combined cycle, both net on a lower-heating-value (LHV) basis.",
+        "why": "Search confirmed 43.3 percent net LHV simple cycle and GE's 'more than 64 percent' net combined-cycle claim. It did not tie that claim to the 1x1 configuration: launch reports gave 63.9 percent net, and the 1x1 and 2x1 ratings were quoted separately (640 MW and 1,282 MW). Removing the configuration detail keeps the sentence safe.",
+        "severity": "unverifiable",
+        "applied": true
+      },
+      {
+        "where": "2.4 example title",
+        "before": "Worked example: our reference combined-cycle plant and one kilowatt-hour",
+        "after": "Worked example: a best-in-class H-class combined-cycle plant and one kilowatt-hour",
+        "why": "Chapter 1 defines 'a 500 MW combined-cycle gas plant, one of this book’s two reference plants' at 55 percent efficiency and says Chapter 2 explains how two cycles reach that figure. Calling a 64 percent 7HA.03 plant 'our reference combined-cycle plant' contradicts that, and nothing in Chapter 2 reconciles the two.",
+        "severity": "error",
+        "applied": true
+      },
+      {
+        "where": "2.4 example step 1",
+        "before": "Data, net and LHV: gas turbine η_B = 0.433 (the 7HA.03 rating) and effective bottoming efficiency η_R = 0.365, which together match the plant rating of 0.64.",
+        "after": "Data, net and LHV: gas turbine η_B = 0.433 (the 7HA.03 rating) and effective bottoming efficiency η_R = 0.365, which together match the plant rating of 0.64; these are new-plant, full-load ratings, whereas Chapter 1’s 500 MW reference plant uses a more conservative in-service 55 percent.",
+        "why": "This states the difference from Chapter 1's 55 percent assumption explicitly, so learners do not read the two as conflicting values for the same plant.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "2.4 reading",
+        "before": "The plant as a whole then takes in heat at the gas turbine’s firing temperature and rejects it at the condenser’s temperature, capturing the best end of each cycle.",
+        "after": "The plant as a whole then takes in heat at the gas turbine’s high temperatures, from compressor discharge up to the firing temperature, and rejects it near the condenser’s temperature, capturing the best end of each cycle.",
+        "why": "In a Brayton cycle heat is added from compressor-discharge temperature (about 730 K in the chapter's own example) up to the firing temperature, not at the firing temperature. Section 2.3 builds the whole lesson on the mean temperature of heat addition, so this shortcut undercuts it.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "slide 10 (Cogeneration) bullet",
+        "before": "Utilization factor up to about 80 percent",
+        "after": "Utilization factor around 80 percent in good plants",
+        "why": "Çengel (the cited source) says actual cogeneration plants reach utilization factors 'as high as 80 percent' and that some recent plants go higher. Modern gas-engine and gas-turbine CHP often quotes 85 to 90 percent (LHV), so 'up to' wrongly implies a ceiling.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "interactive 1 step 2",
+        "before": "Combustion destroys a large share of the fuel’s chemical exergy, and heat transfer from gas near 1,500 K to steam whose mean temperature is only about 540 K destroys more.",
+        "after": "Combustion destroys a large share of the fuel’s chemical exergy, and heat transfer from gas near 1,500 K to steam whose mean temperature of heat addition is far lower (540 K in the ideal cycle of Section 2.3) destroys more.",
+        "why": "540 K is the mean heat-addition temperature of the ideal 10 MPa non-reheat, non-regenerative cycle. A 35 percent coal unit with reheat and feedwater heating has a higher mean temperature, so the figure should be credited to the example rather than to this plant.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "Q8 explanation",
+        "before": "Heat at 120 °C has an exergy factor of about 0.24, so the exergy efficiency is far below 80 percent.",
+        "after": "Heat at 120 °C, for example, has an exergy factor of about 0.24, so the exergy efficiency is far below 80 percent.",
+        "why": "The question gives no heat temperature, so the explanation should present 120 °C as an example, not as part of the data.",
+        "severity": "imprecise",
+        "applied": true
+      }
+    ],
+    "readingsRemoved": [],
+    "srcChecked": 15,
+    "srcWithdrawn": 0,
+    "summary": "The chapter is highly accurate. Every recomputed number checks out: the Rankine state points and 41.0 percent efficiency, the 267 °C mean temperature, the Brayton model, the Carnot and Curzon-Ahlborn values, the combined-cycle and CHP arithmetic, the explorer formulas, and the T-s and Sankey proportions in the figures. All 16 keys are correct and all 15 sources are real and support their claims, so the corrections are mostly imprecisions, chiefly the explanation of the fleet heat-rate gap and the HHV/nuclear wording. It contradicts Chapter 1: Chapter 1's 500 MW reference combined-cycle plant runs at 55 percent, while Chapter 2's example calls a 64 percent 7HA.03 plant 'our reference combined-cycle plant' and never reconciles the two; the corrections retitle that example and add a sentence explaining the difference.",
+    "style": {}
   }
 }
