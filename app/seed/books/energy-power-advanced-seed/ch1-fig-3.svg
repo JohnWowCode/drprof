@@ -43,5 +43,5 @@
 <text x="712.0" y="388.2" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2F7D4F" text-anchor="start" font-weight="bold">Energy</text>
 <text x="712.0" y="406.2" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2F7D4F" text-anchor="start" font-weight="bold">services</text>
 <text x="712.0" y="424.2" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2F7D4F" text-anchor="start" font-weight="normal">32.1 (34%)</text>
-<text x="20.0" y="472.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">Simplified: the split of each fuel between power plants and direct use is not shown.</text>
+<text x="20.0" y="472.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">Simplified: bands do not show which fuels feed power plants or which sectors use electricity.</text>
 </svg>

@@ -1,0 +1,81 @@
+{
+ "method": "Researched and written with web-search verification; then fact-checked independently by a second agent using web search (bibliographic records and abstracts for Wolf et al. 2020, Grajal et al. 1989, Ji et al. 1998, Piersma & Gill 1998, Hart 2001, Montgomerie & Weatherhead 1997, Payne 1971, Nevitt et al. 1995, Hawkes et al. 2013, Bishop et al. 2015, Meir et al. 2019, Hart et al. 2000 and the 1973 Rüppell's Vulture strike), with expert review for textbook-level claims cited to Lovette & Fitzpatrick 2016 and where page fetches failed; figure SVGs checked by reading their geometry and labels; every answer key re-solved blind.",
+ "keysChecked": 16,
+ "keysAgreed": 16,
+ "keyFixes": [],
+ "corrections": [
+  {
+   "where": "3.2 reading",
+   "quote": "In that study, 98 percent of the recorded flight was below 6,000 meters, and the highest single record was a brief 7,290 meters [3].",
+   "correction": "In that study the geese spent most of their flight time below 6,000 meters, and the highest single record was a brief 7,290 meters [3].",
+   "why": "The 7,290 m maximum is confirmed (Hawkes et al. 2013; Bishop et al. 2015, as cited by Meir et al. 2019). The exact '98 percent below 6,000 m' figure could not be found in the abstract, press releases or later citations of Bishop et al. 2015. Softening it keeps the point without relying on a number I could not check.",
+   "severity": "unverifiable"
+  },
+  {
+   "where": "3.2 key terms (Torpor)",
+   "quote": "A controlled drop in body temperature and metabolic rate that saves energy, lasting hours or, in a few species, weeks.",
+   "correction": "A controlled drop in body temperature and metabolic rate that saves energy, lasting hours or, in the Common Poorwill, weeks.",
+   "why": "The reading itself says the poorwill is the only bird known to stay torpid for long stretches, so 'a few species' contradicts the text. Torpor lasting weeks is documented only in the poorwill.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "3.3 reading",
+   "quote": "In many birds, including pigeons, gamebirds, many finches and most birds of prey, part of it is widened into a pouch called the **crop**.",
+   "correction": "In many birds, including pigeons, gamebirds, parrots, some finches, and hawks, eagles and falcons (but not owls), part of it is widened into a pouch called the **crop**.",
+   "why": "Owls, which count as birds of prey, have no crop, and the section discusses owls two paragraphs later. Most passerines lack a true crop, and only some seed-eating finches have an esophageal pouch, so 'many finches' overstates it.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "3.3 reading",
+   "quote": "Theunis Piersma and Robert Gill examined Bar-tailed Godwits (*Limosa lapponica*) about to leave Alaska on their nonstop flight across the Pacific to New Zealand, a journey you will study in Chapter 7.",
+   "correction": "Theunis Piersma and Robert Gill examined Bar-tailed Godwits (*Limosa lapponica*) that had died in Alaska, probably just after setting off on their nonstop flight across the Pacific to New Zealand, a journey you will study in Chapter 7.",
+   "why": "Piersma & Gill (1998, Auk 115:196–203) studied godwits killed by striking a radar dome on the Alaska Peninsula, probably just after takeoff. They compared these birds with northbound godwits from New Zealand. The birds were not sampled before departure.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "figure 2 caption",
+   "quote": "the ceca are side pouches, and the cloaca is the shared exit.",
+   "correction": "the ceca are side pouches (tiny in pigeons, large in plant-eaters such as grouse), and the cloaca is the shared exit.",
+   "why": "The figure is presented as a pigeon-type seed-eater but shows large, paired fermenting ceca. Pigeons have only small, rudimentary ceca, so without the qualifier a beginner would take away the wrong picture. The reading correctly ties large ceca to grouse.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "3.4 reading",
+   "quote": "Their eyes are very large for their heads; in many species the two eyes nearly meet in the middle of the skull and can barely move in their sockets, which is why an owl turns its whole head to look around [1].",
+   "correction": "Their eyes are very large for their heads; in many species the two eyes nearly meet in the middle of the skull, and an owl’s tube-shaped eyes can barely move in their sockets, which is why an owl turns its whole head to look around [1].",
+   "why": "Owls' tubular eyes are essentially fixed, but many birds do move their eyes to a useful degree. The original makes near-immobility sound general to 'many species'.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "3.4 reading",
+   "quote": "Each cone also holds a colored droplet of oil that filters light before it reaches the pigment, narrowing the range each cone responds to and sharpening color discrimination.",
+   "correction": "Most cones also hold a droplet of oil, usually colored, that filters light before it reaches the pigment, narrowing the range each cone responds to and sharpening color discrimination.",
+   "why": "The oil droplet of the UV/violet-sensitive cone is transparent, not colored (Hart 2001; Hart et al. 2000), and the accessory member of the double cone usually has no droplet. So 'each cone ... colored droplet' is not accurate.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "3.4 key terms (Oil droplet)",
+   "quote": "A colored droplet inside a bird cone that filters light and narrows the range of wavelengths the cone responds to.",
+   "correction": "A droplet of oil, usually colored, inside a bird cone that filters light and narrows the range of wavelengths the cone responds to.",
+   "why": "Same issue as in the reading: the droplet in the UV/violet-sensitive cone is transparent.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "3.4 reading",
+   "quote": "At sea, albatrosses, petrels and shearwaters, the **tubenoses**, are drawn to dimethyl sulfide, a compound released when krill and other small animals graze on plankton, which leads the birds to rich feeding areas [5].",
+   "correction": "At sea, many **tubenoses**, the group that includes albatrosses, petrels and shearwaters, can smell dimethyl sulfide, and some, such as storm-petrels and prions, are strongly drawn to it; the compound is released when krill and other small animals graze on plankton, so it leads the birds to rich feeding areas [5].",
+   "why": "Nevitt, Veit & Kareiva (1995, Nature 376:680–682) found that many Antarctic procellariiforms detect DMS and that some species, for example storm-petrels, are highly attracted to it. Responses varied between species: Cape Petrels did not respond, and albatrosses are generally not attracted to DMS. The original sentence implies all tubenoses, albatrosses included, are drawn to it.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "3.4 misconception fact",
+   "quote": "Many birds smell well. Turkey Vultures find hidden carcasses by odor, kiwis sniff for worms through nostrils at the tip of the bill, and tubenoses track the smell of dimethyl sulfide across the ocean.",
+   "correction": "Many birds smell well. Turkey Vultures find hidden carcasses by odor, kiwis sniff for worms through nostrils at the tip of the bill, and many tubenoses track the smell of dimethyl sulfide across the ocean.",
+   "why": "Attraction to DMS varies among tubenose species (Nevitt et al. 1995), so the statement should not cover the whole group.",
+   "severity": "imprecise"
+  }
+ ],
+ "sourcesChecked": 19,
+ "sourcesWithdrawn": [],
+ "summary": "The chapter is accurate overall: all 19 section sources are real and correctly cited, the airflow figure and the breath-order interactive show the correct two-cycle, back-to-front route, the figure 3 cone peaks match published values (Blue Tit about 372/449/502/563 nm per Hart et al. 2000; human about 420/530/560 nm), and every multiple-choice key is correct. The corrections are refinements, not reversals: they narrow overgeneralizations (DMS attraction across all tubenoses, colored oil droplets in every cone, crops in 'most birds of prey', pigeon ceca), describe the godwit sample correctly, and soften one unverified percentage."
+}

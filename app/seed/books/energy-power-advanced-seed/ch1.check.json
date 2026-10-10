@@ -1,0 +1,74 @@
+{
+ "method": "Researched and written with web-search verification; then fact-checked independently by a second agent using web search (WebSearch worked; direct page fetches failed with DNS errors, so agency pages were checked through search-result summaries) plus expert review and full recomputation of every number, figure coordinate and explorer formula; every answer key re-solved blind.",
+ "keysChecked": 14,
+ "keysAgreed": 14,
+ "keyFixes": [],
+ "corrections": [
+  {
+   "where": "hook",
+   "quote": "roughly 3 percent on the method it used until its 2024 edition",
+   "correction": "roughly 3 percent on the substitution method it used through its 2024 edition",
+   "why": "The Energy Institute used the substitution method in the 2024 edition and switched in the 2025 edition (as Section 1.2 says correctly). 'Until its 2024 edition' suggests the change came with the 2024 edition. The arithmetic checks out: 7.72 EJ / ~590 EJ = 1.3 percent; 7.72/0.40 = 19.3 EJ out of ~635 EJ under substitution = 3.0 percent.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "P1.1-2 explanation",
+   "quote": "8.8 GW multiplies by the hours instead of dividing",
+   "correction": "8.8 GW misplaces the 8,760 hours of the year and is about 77 times too large",
+   "why": "Multiplying 1 TWh by 8,760 h does not give 8.8 GW, so the explanation of this distractor is wrong (8.76 GW / 114 MW = 77). The key (114 MW) is correct.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "1.2 misconception",
+   "quote": "Their share of electricity generation is several times higher than either, because electricity is the stage at which they enter the system.",
+   "correction": "Their share of electricity generation, about 15 percent in 2024, is much higher than either, because electricity is the stage at which they enter the system.",
+   "why": "Wind plus solar supplied about 15 percent of world electricity in 2024 (Ember, Energy Institute). That is about five times the 2.8 percent physical-content share but only about twice the ~7 percent substitution share, so 'several times higher than either' overstates the gap.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "1.3 reading",
+   "quote": "Electricity generation takes in about 32.1 quads of primary energy.",
+   "correction": "Electricity generation takes in about 32 quads of primary energy (we use 32.1 below).",
+   "why": "The secondary transcriptions of the 2023 LLNL chart I could find (Penn State EGEE 102) give electricity generation as 32 quads; I could not confirm 32.1. It is suspicious that this value would exactly equal the 32.1 quads of energy services. 'About 32.1' also claims more precision than the source supports. The derived values (13.2 delivered, ~41 percent) barely move if the input is 32.0.",
+   "severity": "unverifiable"
+  },
+  {
+   "where": "1.3 reading",
+   "quote": "while thermal power plants lose more than half of their fuel’s energy as heat.",
+   "correction": "while the US thermal fleet as a whole loses more than half of its fuel’s energy as heat.",
+   "why": "This is not true of every thermal plant. The chapter's own reference combined-cycle plant converts 55 percent and so rejects only 45 percent. The statement holds for the fleet average (EIA reports total electrical system losses of roughly 18 quads against about 13 quads of retail sales in 2023).",
+   "severity": "imprecise"
+  },
+  {
+   "where": "1.3 reading",
+   "quote": "The chart for 2022 totals 100.3 quads [3]; the chart for 2023 totals 93.6.",
+   "correction": "The chart for 2022, as first published, totals 100.3 quads [3]; the chart for 2023 totals 93.6.",
+   "why": "LLNL's October 2023 release gave 100.3 quads for 2022. Commentary on the 2023 chart (Lloyd Alter) reports that 2022 was later shown at 94.7 quads on the new basis, so a learner who downloads the current 2022 chart may see a different total. That 94.7 figure supports the chapter's 'mostly an accounting change' estimate: 5.6 of the 6.7 quad gap (about 84 percent) is accounting, consistent with the 5.5 quad estimate. EIA's electrical system losses also fell from about 23.1 to 17.8 quads.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "slide 'Why the method matters'",
+   "quote": "Nothing physical changed between those editions",
+   "correction": "Most of the drop is accounting; real supply grew about 2 percent in 2024",
+   "why": "The comparison is 620 EJ (2023, substitution) against ~590 EJ (2024, physical content), which covers different years. World energy supply actually grew about 2 percent in 2024 (Energy Institute 2025 coverage), so it is wrong to say nothing physical changed between those two numbers. The reading's 'Nothing physical changed' refers to re-counting the same 2024 electricity and is fine.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "figure 2 label",
+   "quote": "physical content, 55%",
+   "correction": "any method, 55%",
+   "why": "Gas is a fuel, and the worked example and caption both say every method gives the same answer. Labelling only this bar 'physical content' suggests the value depends on the method.",
+   "severity": "imprecise"
+  },
+  {
+   "where": "figure 3 label",
+   "quote": "Simplified: the split of each fuel between power plants and direct use is not shown.",
+   "correction": "Simplified: bands do not show which fuels feed power plants or which sectors use electricity.",
+   "why": "The bands are drawn to scale correctly. Every width matches 2.8 px per quad, and the node sums 93.6, 74.7, 61.5 and 32.1 all close. However, the 32.1-quad electricity band leaves from beside the petroleum box (petroleum supplies only ~0.1 quad to US power), and the 13.2-quad delivered band enters the top of the Transportation box (transport uses almost no electricity). The current note covers only the first of these.",
+   "severity": "imprecise"
+  }
+ ],
+ "sourcesChecked": 15,
+ "sourcesWithdrawn": [],
+ "summary": "The chapter is highly accurate. All 14 multiple-choice keys are correct. All calculations, unit conversions, explorer formulas and figure geometry (log-scale positions, bar lengths, Sankey widths) were recomputed and agree. Headline statistics checked out: EI 2026 (>600 EJ, ~86% fossil), EI 2024 (620 EJ), EIA 94.2 quads, LLNL 2023 totals and sector assignments (residential 11.3, commercial 9.3, industrial 26.1, transportation 28.0), EIA's September 2023 captured-energy switch, and ~5% T&D losses. The problems found are small precision and wording issues: the 'until its 2024 edition' phrasing, one distractor explanation, the unconfirmed 32.1-quad power-sector input, and two figure labels."
+}

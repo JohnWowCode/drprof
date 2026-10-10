@@ -18,7 +18,7 @@
     }
   ],
   "lesson": {
-    "hook": "Right now Earth is intercepting sunlight at a rate of about 174,000 terawatts. That figure is a short calculation: the solar irradiance above the atmosphere, about 1,361 watts per square meter, times the area of Earth’s disk, π(6,371 km)². Humanity’s total energy supply in 2025 was just over 600 exajoules, which averages to about 19 terawatts, so less than an hour of sunlight carries as much energy as civilization uses in a year. Yet solar power supplied only about 1.3 percent of world energy in 2024 on the accounting the Energy Institute now uses, and roughly 3 percent on the method it used until its 2024 edition. Same panels, same kilowatt-hours, a factor of more than two. Seeing why takes units, an accounting framework and a way to draw the flows.",
+    "hook": "Right now Earth is intercepting sunlight at a rate of about 174,000 terawatts. That figure is a short calculation: the solar irradiance above the atmosphere, about 1,361 watts per square meter, times the area of Earth’s disk, π(6,371 km)². Humanity’s total energy supply in 2025 was just over 600 exajoules, which averages to about 19 terawatts, so less than an hour of sunlight carries as much energy as civilization uses in a year. Yet solar power supplied only about 1.3 percent of world energy in 2024 on the accounting the Energy Institute now uses, and roughly 3 percent on the substitution method it used through its 2024 edition. Same panels, same kilowatt-hours, a factor of more than two. Seeing why takes units, an accounting framework and a way to draw the flows.",
     "overview": "This chapter sets up the quantitative language of the whole book. Section 1.1 separates energy from power and builds fluency in the units that energy statistics use, from the joule and kilowatt-hour to the exajoule and the quad, with a ladder of power levels for order-of-magnitude checks. Section 1.2 follows energy from primary sources through conversion to final and useful energy, starts the running example of one kilowatt-hour, and explains the three conventions for counting electricity from sources that burn no fuel. Section 1.3 teaches you to read and check Sankey diagrams, using the Lawrence Livermore chart of US energy flows. Later chapters supply the physics behind each loss you meet here: thermodynamic limits in Chapter 2, grid losses in Chapter 3, plant heat rates in Chapter 4 and capacity factors in Chapter 5.",
     "objectives": [
       "Convert among joules, kilowatt-hours, Btu, quads, tonnes of oil equivalent and exajoules, and identify whether a quantity is energy or power.",
@@ -42,31 +42,36 @@
             "n": 1,
             "citation": "Bureau International des Poids et Mesures. (2019). The International System of Units (SI) (9th ed.). BIPM.",
             "kind": "report",
-            "supports": "Definitions of the joule and watt, SI prefixes, and the hour as a unit accepted for use with the SI."
+            "supports": "Definitions of the joule and watt, SI prefixes, and the hour as a unit accepted for use with the SI.",
+            "checked": true
           },
           {
             "n": 2,
             "citation": "Thompson, A., & Taylor, B. N. (2008). Guide for the use of the International System of Units (SI) (NIST Special Publication 811, 2008 ed.). National Institute of Standards and Technology.",
             "kind": "report",
-            "supports": "Conversion factors for the International Table Btu (1,055.056 J) and the International Table calorie (4.1868 J)."
+            "supports": "Conversion factors for the International Table Btu (1,055.056 J) and the International Table calorie (4.1868 J).",
+            "checked": true
           },
           {
             "n": 3,
             "citation": "Kopp, G., & Lean, J. L. (2011). A new, lower value of total solar irradiance: Evidence and climate significance. Geophysical Research Letters, 38(1), Article L01706.",
             "kind": "article",
-            "supports": "Total solar irradiance of about 1,361 W/m² at solar minimum."
+            "supports": "Total solar irradiance of about 1,361 W/m² at solar minimum.",
+            "checked": true
           },
           {
             "n": 4,
             "citation": "Energy Institute. (2026). Statistical review of world energy 2026 (75th ed.). Energy Institute.",
             "kind": "report",
-            "supports": "World total energy supply of just over 600 EJ in 2025."
+            "supports": "World total energy supply of just over 600 EJ in 2025.",
+            "checked": true
           },
           {
             "n": 5,
             "citation": "U.S. Energy Information Administration. (2025, June). U.S. primary energy production, consumption, and exports increased in 2024. Today in Energy.",
             "kind": "website",
-            "supports": "US primary energy consumption of 94.2 quads in 2024, with petroleum 35.3, natural gas 34.2, renewables 8.6, nuclear 8.2 and coal 7.9 quads."
+            "supports": "US primary energy consumption of 94.2 quads in 2024, with petroleum 35.3, natural gas 34.2, renewables 8.6, nuclear 8.2 and coal 7.9 quads.",
+            "checked": true
           }
         ],
         "keyTerms": [
@@ -139,7 +144,7 @@
               "About 11.4 MW"
             ],
             "answer": 2,
-            "explanation": "P = 10¹² Wh / 8,760 h = 1.14 × 10⁸ W = 114 MW. Choosing 1 TW confuses energy per year with power; 8.8 GW multiplies by the hours instead of dividing; 11.4 MW is off by a factor of 10."
+            "explanation": "P = 10¹² Wh / 8,760 h = 1.14 × 10⁸ W = 114 MW. Choosing 1 TW confuses energy per year with power; 8.8 GW misplaces the 8,760 hours of the year and is about 77 times too large; 11.4 MW is off by a factor of 10."
           }
         ]
       },
@@ -159,31 +164,36 @@
             "n": 1,
             "citation": "International Energy Agency, Organisation for Economic Co-operation and Development, & Eurostat. (2005). Energy statistics manual. OECD/IEA.",
             "kind": "book",
-            "supports": "The chain from primary to final energy, net versus gross calorific values, the tonne of oil equivalent (41.868 GJ), and the physical energy content method with 33 percent (nuclear) and 10 percent (geothermal) conventions."
+            "supports": "The chain from primary to final energy, net versus gross calorific values, the tonne of oil equivalent (41.868 GJ), and the physical energy content method with 33 percent (nuclear) and 10 percent (geothermal) conventions.",
+            "checked": true
           },
           {
             "n": 2,
             "citation": "Krey, V., Masera, O., Blanford, G., Bruckner, T., Cooke, R., Fisher-Vanden, K., Haberl, H., Hertwich, E., Kriegler, E., Mueller, D., Paltsev, S., Price, L., Schlömer, S., Ürge-Vorsatz, D., van Vuuren, D., & Zwickel, T. (2014). Annex II: Metrics & methodology. In O. Edenhofer, R. Pichs-Madruga, Y. Sokona, E. Farahani, S. Kadner, K. Seyboth, A. Adler, I. Baum, S. Brunner, P. Eickemeier, B. Kriemann, J. Savolainen, S. Schlömer, C. von Stechow, T. Zwickel, & J. C. Minx (Eds.), Climate change 2014: Mitigation of climate change. Contribution of Working Group III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change (pp. 1281–1328). Cambridge University Press.",
             "kind": "chapter",
-            "supports": "The IPCC’s use of the direct equivalent method and its comparison with other primary energy accounting methods."
+            "supports": "The IPCC’s use of the direct equivalent method and its comparison with other primary energy accounting methods.",
+            "checked": true
           },
           {
             "n": 3,
             "citation": "Energy Institute. (2024). Statistical review of world energy 2024 (73rd ed.). Energy Institute.",
             "kind": "report",
-            "supports": "World primary energy of 620 EJ in 2023, reported with the substitution (input-equivalent) method."
+            "supports": "World primary energy of 620 EJ in 2023, reported with the substitution (input-equivalent) method.",
+            "checked": true
           },
           {
             "n": 4,
             "citation": "Energy Institute. (2025). Statistical review of world energy 2025 (74th ed.). Energy Institute.",
             "kind": "report",
-            "supports": "The switch to the physical energy content method for total energy supply, and 2024 wind (9.04 EJ) and solar (7.72 EJ) supply."
+            "supports": "The switch to the physical energy content method for total energy supply, and 2024 wind (9.04 EJ) and solar (7.72 EJ) supply.",
+            "checked": true
           },
           {
             "n": 5,
             "citation": "U.S. Energy Information Administration. (2026). Monthly energy review: April 2026 (DOE/EIA-0035(2026/4)). U.S. Department of Energy.",
             "kind": "report",
-            "supports": "The captured energy approach (3,412 Btu/kWh) for noncombustible renewables from September 2023, replacing fossil fuel equivalence, and the description of incident energy as a third approach."
+            "supports": "The captured energy approach (3,412 Btu/kWh) for noncombustible renewables from September 2023, replacing fossil fuel equivalence, and the description of incident energy as a third approach.",
+            "checked": true
           }
         ],
         "keyTerms": [
@@ -225,7 +235,7 @@
         },
         "misconception": {
           "myth": "“Wind and solar are under 3 percent of world energy, so they hardly matter to the energy system.”",
-          "fact": "The figure depends on the stage and the method. On the physical content method, wind and solar were about 2.8 percent of world primary energy in 2024; by substitution they would be about 7 percent. Their share of electricity generation is several times higher than either, because electricity is the stage at which they enter the system. Always ask which stage (primary, final or electricity) and which method a percentage uses."
+          "fact": "The figure depends on the stage and the method. On the physical content method, wind and solar were about 2.8 percent of world primary energy in 2024; by substitution they would be about 7 percent. Their share of electricity generation, about 15 percent in 2024, is much higher than either, because electricity is the stage at which they enter the system. Always ask which stage (primary, final or electricity) and which method a percentage uses."
         },
         "practice": [
           {
@@ -266,9 +276,9 @@
         "reading": [
           "In 1898 the engineer Matthew Henry Phineas Riall Sankey published a diagram of a steam engine in which the width of each arrow was proportional to the heat flowing through it; the broad band of heat entering the boiler narrowed to a thin band of useful work, with the rest peeling off as losses [1]. Diagrams of this kind now carry his name. Earlier flow maps existed, most famously Charles Joseph Minard’s 1869 chart of Napoleon’s army in Russia, but Sankey made the form a tool of energy engineering [1]. A **Sankey diagram** follows three rules. Band width is proportional to quantity. All bands share one unit. And flows are conserved at every **node**, so what enters a box equals what leaves it plus any change in storage.",
           "The best-known energy Sankey diagram is the chart of US energy flows that Lawrence Livermore National Laboratory (LLNL) publishes from EIA data [2]. Read it from left to right. Primary sources sit in a column on the left: solar, nuclear, hydro, wind, geothermal, natural gas, coal, biomass and petroleum. Some flows run to a box for electricity generation; the rest go straight to the four end-use sectors, residential, commercial, industrial and transportation, which also receive electricity. On the right, every sector splits into two sinks: **energy services**, the estimated useful energy, and **rejected energy**, heat released to the environment. The units are quads, and the chart for 2023 totals 93.6 quads (Figure 1.3) [2].",
-          "The 2023 chart can be checked with arithmetic. Of 93.6 quads, 61.5 appear as rejected energy and 32.1 as energy services, and 61.5 + 32.1 = 93.6, so the diagram closes [2]. Electricity generation takes in about 32.1 quads of primary energy. The four sectors receive 11.3 (residential), 9.3 (commercial), 26.1 (industrial) and 28.0 (transportation) quads, 74.7 quads in all, electricity included [2]. Fuel used directly in the sectors is 93.6 − 32.1 = 61.5 quads, so the electricity delivered must be 74.7 − 61.5 = 13.2 quads, about 3,870 TWh, and 32.1 − 13.2 = 18.9 quads leave the power sector as rejected energy. About 41 percent of the primary energy entering US power plants in 2023 reached customers as electricity.",
-          "Two cautions apply to the right-hand side. Rejected energy is not all waste that better engineering could recover: much of it is the heat that any heat engine must reject to its cold reservoir, a limit Chapter 2 derives from the second law. And energy services are not measured. LLNL estimates them by applying an assumed end-use efficiency to each sector, lowest for transportation, where most fuel burns in combustion engines, so the 32.1 quads of services is a model result [2]. Some losses are also smaller than intuition suggests. The EIA estimates that transmission and distribution losses average about 5 percent of the electricity moved through the US grid [4], while thermal power plants lose more than half of their fuel’s energy as heat.",
-          "Because LLNL builds its chart from EIA statistics, the accounting method of Section 1.2 sits inside every band. The chart for 2022 totals 100.3 quads [3]; the chart for 2023 totals 93.6. US energy use did not fall 7 percent in a year. Most of the gap reflects the EIA’s switch to the captured energy approach. A rough estimate shows the size: the United States generated on the order of 900 TWh from wind, solar and hydro, and re-counting that electricity at 3,412 Btu/kWh instead of a fossil-plant heat rate of roughly 9,500 Btu/kWh removes 9 × 10¹¹ kWh × 6,100 Btu/kWh ≈ 5.5 × 10¹⁵ Btu, or about 5.5 quads, mostly from the power sector’s rejected energy. Compare Sankey diagrams across years or countries only after checking that they share an accounting basis.",
+          "The 2023 chart can be checked with arithmetic. Of 93.6 quads, 61.5 appear as rejected energy and 32.1 as energy services, and 61.5 + 32.1 = 93.6, so the diagram closes [2]. Electricity generation takes in about 32 quads of primary energy (we use 32.1 below). The four sectors receive 11.3 (residential), 9.3 (commercial), 26.1 (industrial) and 28.0 (transportation) quads, 74.7 quads in all, electricity included [2]. Fuel used directly in the sectors is 93.6 − 32.1 = 61.5 quads, so the electricity delivered must be 74.7 − 61.5 = 13.2 quads, about 3,870 TWh, and 32.1 − 13.2 = 18.9 quads leave the power sector as rejected energy. About 41 percent of the primary energy entering US power plants in 2023 reached customers as electricity.",
+          "Two cautions apply to the right-hand side. Rejected energy is not all waste that better engineering could recover: much of it is the heat that any heat engine must reject to its cold reservoir, a limit Chapter 2 derives from the second law. And energy services are not measured. LLNL estimates them by applying an assumed end-use efficiency to each sector, lowest for transportation, where most fuel burns in combustion engines, so the 32.1 quads of services is a model result [2]. Some losses are also smaller than intuition suggests. The EIA estimates that transmission and distribution losses average about 5 percent of the electricity moved through the US grid [4], while the US thermal fleet as a whole loses more than half of its fuel’s energy as heat.",
+          "Because LLNL builds its chart from EIA statistics, the accounting method of Section 1.2 sits inside every band. The chart for 2022, as first published, totals 100.3 quads [3]; the chart for 2023 totals 93.6. US energy use did not fall 7 percent in a year. Most of the gap reflects the EIA’s switch to the captured energy approach. A rough estimate shows the size: the United States generated on the order of 900 TWh from wind, solar and hydro, and re-counting that electricity at 3,412 Btu/kWh instead of a fossil-plant heat rate of roughly 9,500 Btu/kWh removes 9 × 10¹¹ kWh × 6,100 Btu/kWh ≈ 5.5 × 10¹⁵ Btu, or about 5.5 quads, mostly from the power sector’s rejected energy. Compare Sankey diagrams across years or countries only after checking that they share an accounting basis.",
           "Sankey diagrams work at every scale, from one engine to the planet. Cullen and Allwood drew a global diagram for 2005 that follows energy from fuels through conversion devices, such as engines, furnaces and electric motors, to final services such as transport, heating and illumination [5]. To build one for a country, as this chapter’s challenge asks, start from an energy balance table: the IEA’s World Energy Balances or a national agency’s. Fix one year, one unit and one accounting method. Draw the nodes (primary sources, transformation, end-use sectors), size each band from the table, and check that every node closes to within the table’s statistical difference, the line in an energy balance that records what the data cannot reconcile."
         ],
         "sources": [
@@ -276,31 +286,36 @@
             "n": 1,
             "citation": "Schmidt, M. (2008). The Sankey diagram in energy and material flow management: Part I: History. Journal of Industrial Ecology, 12(1), 82–94.",
             "kind": "article",
-            "supports": "Sankey’s 1898 steam-engine diagram, earlier flow maps including Minard’s, and the conventions of Sankey diagrams."
+            "supports": "Sankey’s 1898 steam-engine diagram, earlier flow maps including Minard’s, and the conventions of Sankey diagrams.",
+            "checked": true
           },
           {
             "n": 2,
             "citation": "Lawrence Livermore National Laboratory. (2024). Estimated U.S. energy consumption in 2023: 93.6 quads [Energy flow chart]. https://flowcharts.llnl.gov/",
             "kind": "report",
-            "supports": "US energy flows in 2023: 93.6 quads total, 61.5 rejected, 32.1 energy services, about 32 quads to electricity generation, and sector totals; built from EIA data with assumed end-use efficiencies."
+            "supports": "US energy flows in 2023: 93.6 quads total, 61.5 rejected, 32.1 energy services, about 32 quads to electricity generation, and sector totals; built from EIA data with assumed end-use efficiencies.",
+            "checked": true
           },
           {
             "n": 3,
             "citation": "Lawrence Livermore National Laboratory. (2023). Estimated U.S. energy consumption in 2022: 100.3 quads [Energy flow chart]. https://flowcharts.llnl.gov/",
             "kind": "report",
-            "supports": "The 2022 chart total of 100.3 quads, before the EIA accounting change."
+            "supports": "The 2022 chart total of 100.3 quads, before the EIA accounting change.",
+            "checked": true
           },
           {
             "n": 4,
             "citation": "U.S. Energy Information Administration. (n.d.). How much electricity is lost in electricity transmission and distribution in the United States? Frequently Asked Questions. https://www.eia.gov/tools/faqs/faq.php?id=105&t=3",
             "kind": "website",
-            "supports": "US transmission and distribution losses of about 5 percent of electricity transmitted and distributed."
+            "supports": "US transmission and distribution losses of about 5 percent of electricity transmitted and distributed.",
+            "checked": true
           },
           {
             "n": 5,
             "citation": "Cullen, J. M., & Allwood, J. M. (2010). The efficient use of energy: Tracing the global flow of energy from fuel to service. Energy Policy, 38(1), 75–81.",
             "kind": "article",
-            "supports": "A global Sankey diagram following energy from fuels through conversion devices to final services."
+            "supports": "A global Sankey diagram following energy from fuels through conversion devices to final services.",
+            "checked": true
           }
         ],
         "keyTerms": [
@@ -680,7 +695,7 @@
           "Wind plus solar 2024: 16.8 EJ, about 2.8 percent by physical content",
           "About 6.8 percent by substitution at 40 percent",
           "Energy Institute: 620 EJ for 2023 (substitution), about 590 EJ for 2024 (physical content)",
-          "Nothing physical changed between those editions"
+          "Most of the drop is accounting; real supply grew about 2 percent in 2024"
         ],
         "notes": "When you read a decarbonization scenario in Chapter 8, find the primary energy accounting method before you read any shares."
       },
@@ -843,25 +858,29 @@
         "citation": "MacKay, D. J. C. (2009). Sustainable energy: Without the hot air. UIT Cambridge.",
         "kind": "book",
         "why": "A model of order-of-magnitude energy reasoning in consistent units (kWh per day per person). Read the opening chapters on units and the balance of consumption and production.",
-        "pages": ""
+        "pages": "",
+        "checked": true
       },
       {
         "citation": "International Energy Agency, Organisation for Economic Co-operation and Development, & Eurostat. (2005). Energy statistics manual. OECD/IEA.",
         "kind": "book",
         "why": "The reference for how energy statistics are compiled: primary and secondary energy, calorific values, conversion factors and the physical energy content method.",
-        "pages": ""
+        "pages": "",
+        "checked": true
       },
       {
         "citation": "Cullen, J. M., & Allwood, J. M. (2010). The efficient use of energy: Tracing the global flow of energy from fuel to service. Energy Policy, 38(1), 75–81.",
         "kind": "article",
         "why": "A global Sankey diagram carried through conversion devices to final services; a model for extending this chapter’s diagrams to the useful-energy stage.",
-        "pages": ""
+        "pages": "",
+        "checked": true
       },
       {
         "citation": "Schmidt, M. (2008). The Sankey diagram in energy and material flow management: Part I: History. Journal of Industrial Ecology, 12(1), 82–94.",
         "kind": "article",
         "why": "The history and conventions of Sankey diagrams, including Sankey’s original steam-engine figure.",
-        "pages": ""
+        "pages": "",
+        "checked": true
       }
     ],
     "videos": [
@@ -898,5 +917,92 @@
   },
   "prov": {
     "note": "Text, figures, practice, lecture and quiz hand-written in Claude Code by Claude (configured model claude-opus-5-5), October 2026. Statistics were checked with web search against Energy Institute, EIA and LLNL releases; direct access to agency websites was unavailable during writing, so several figures rest on search summaries of those releases and are rounded."
+  },
+  "review": {
+    "full": true,
+    "at": 1791600000000,
+    "by": "Researched and written with web-search verification; then fact-checked independently by a second agent using web search (WebSearch worked; direct page fetches failed with DNS errors, so agency pages were checked through search-result summaries) plus expert review and full recomputation of every number, figure coordinate and explorer formula; every answer key re-solved blind.",
+    "keysChecked": 14,
+    "keysAgreed": 14,
+    "keyFixes": [],
+    "corrections": [
+      {
+        "where": "hook",
+        "before": "roughly 3 percent on the method it used until its 2024 edition",
+        "after": "roughly 3 percent on the substitution method it used through its 2024 edition",
+        "why": "The Energy Institute used the substitution method in the 2024 edition and switched in the 2025 edition (as Section 1.2 says correctly). 'Until its 2024 edition' suggests the change came with the 2024 edition. The arithmetic checks out: 7.72 EJ / ~590 EJ = 1.3 percent; 7.72/0.40 = 19.3 EJ out of ~635 EJ under substitution = 3.0 percent.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "P1.1-2 explanation",
+        "before": "8.8 GW multiplies by the hours instead of dividing",
+        "after": "8.8 GW misplaces the 8,760 hours of the year and is about 77 times too large",
+        "why": "Multiplying 1 TWh by 8,760 h does not give 8.8 GW, so the explanation of this distractor is wrong (8.76 GW / 114 MW = 77). The key (114 MW) is correct.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "1.2 misconception",
+        "before": "Their share of electricity generation is several times higher than either, because electricity is the stage at which they enter the system.",
+        "after": "Their share of electricity generation, about 15 percent in 2024, is much higher than either, because electricity is the stage at which they enter the system.",
+        "why": "Wind plus solar supplied about 15 percent of world electricity in 2024 (Ember, Energy Institute). That is about five times the 2.8 percent physical-content share but only about twice the ~7 percent substitution share, so 'several times higher than either' overstates the gap.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "1.3 reading",
+        "before": "Electricity generation takes in about 32.1 quads of primary energy.",
+        "after": "Electricity generation takes in about 32 quads of primary energy (we use 32.1 below).",
+        "why": "The secondary transcriptions of the 2023 LLNL chart I could find (Penn State EGEE 102) give electricity generation as 32 quads; I could not confirm 32.1. It is suspicious that this value would exactly equal the 32.1 quads of energy services. 'About 32.1' also claims more precision than the source supports. The derived values (13.2 delivered, ~41 percent) barely move if the input is 32.0.",
+        "severity": "unverifiable",
+        "applied": true
+      },
+      {
+        "where": "1.3 reading",
+        "before": "while thermal power plants lose more than half of their fuel’s energy as heat.",
+        "after": "while the US thermal fleet as a whole loses more than half of its fuel’s energy as heat.",
+        "why": "This is not true of every thermal plant. The chapter's own reference combined-cycle plant converts 55 percent and so rejects only 45 percent. The statement holds for the fleet average (EIA reports total electrical system losses of roughly 18 quads against about 13 quads of retail sales in 2023).",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "1.3 reading",
+        "before": "The chart for 2022 totals 100.3 quads [3]; the chart for 2023 totals 93.6.",
+        "after": "The chart for 2022, as first published, totals 100.3 quads [3]; the chart for 2023 totals 93.6.",
+        "why": "LLNL's October 2023 release gave 100.3 quads for 2022. Commentary on the 2023 chart (Lloyd Alter) reports that 2022 was later shown at 94.7 quads on the new basis, so a learner who downloads the current 2022 chart may see a different total. That 94.7 figure supports the chapter's 'mostly an accounting change' estimate: 5.6 of the 6.7 quad gap (about 84 percent) is accounting, consistent with the 5.5 quad estimate. EIA's electrical system losses also fell from about 23.1 to 17.8 quads.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "slide 'Why the method matters'",
+        "before": "Nothing physical changed between those editions",
+        "after": "Most of the drop is accounting; real supply grew about 2 percent in 2024",
+        "why": "The comparison is 620 EJ (2023, substitution) against ~590 EJ (2024, physical content), which covers different years. World energy supply actually grew about 2 percent in 2024 (Energy Institute 2025 coverage), so it is wrong to say nothing physical changed between those two numbers. The reading's 'Nothing physical changed' refers to re-counting the same 2024 electricity and is fine.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "figure 2 label",
+        "before": "physical content, 55%",
+        "after": "any method, 55%",
+        "why": "Gas is a fuel, and the worked example and caption both say every method gives the same answer. Labelling only this bar 'physical content' suggests the value depends on the method.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "figure 3 label",
+        "before": "Simplified: the split of each fuel between power plants and direct use is not shown.",
+        "after": "Simplified: bands do not show which fuels feed power plants or which sectors use electricity.",
+        "why": "The bands are drawn to scale correctly. Every width matches 2.8 px per quad, and the node sums 93.6, 74.7, 61.5 and 32.1 all close. However, the 32.1-quad electricity band leaves from beside the petroleum box (petroleum supplies only ~0.1 quad to US power), and the 13.2-quad delivered band enters the top of the Transportation box (transport uses almost no electricity). The current note covers only the first of these.",
+        "severity": "imprecise",
+        "applied": true
+      }
+    ],
+    "readingsRemoved": [],
+    "srcChecked": 15,
+    "srcWithdrawn": 0,
+    "summary": "The chapter is highly accurate. All 14 multiple-choice keys are correct. All calculations, unit conversions, explorer formulas and figure geometry (log-scale positions, bar lengths, Sankey widths) were recomputed and agree. Headline statistics checked out: EI 2026 (>600 EJ, ~86% fossil), EI 2024 (620 EJ), EIA 94.2 quads, LLNL 2023 totals and sector assignments (residential 11.3, commercial 9.3, industrial 26.1, transportation 28.0), EIA's September 2023 captured-energy switch, and ~5% T&D losses. The problems found are small precision and wording issues: the 'until its 2024 edition' phrasing, one distractor explanation, the unconfirmed 32.1-quad power-sector input, and two figure labels.",
+    "style": {}
   }
 }
