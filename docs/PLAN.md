@@ -87,28 +87,30 @@ Accuracy is the first requirement. A learner relies on every sentence.
 
 **Limit:** the in-app fact-check uses Claude's own knowledge; it cannot look anything up. The standalone app (v1.0) adds web search and citation lookups (Crossref, Open Library) to the fact-check.
 
-## 6. Visual design: the reading room
+## 6. Visual design: a personal study app
 
-- **Mood.** A library reading room: warm paper and lamplight by day, walnut and brass after hours (dark mode). Paper grain and a lamp glow behind the page.
-- **Books, not cards.** Every course is a library-bound book: bookcloth color (forest, navy, oxblood, plum, teal, leather), gilt panel rules, a gold-foil cover emblem, a title in Caslon, and the author's name. They stand on wooden shelves in the catalog.
-- **Type:**
-  - Libre Caslon Display for titles: the classic book face.
-  - Literata for reading: designed for long-form screen reading.
-  - Source Sans 3 for controls.
-  - Courier Prime for catalog details (call numbers, labels).
-- **Library details:**
-  - The request form is a catalog card (red top rule, faint ruled lines, punch hole).
-  - Fact-checked chapters carry an ink stamp.
-  - Each chapter is laid out as a page on the desk.
-- **Color-coded textbook boxes:** objectives (book color), key terms (blue), worked example (green), practice (amber), misconception (oxblood), fact-check (violet).
-- **Figures are full-color illustrations** where color carries meaning, using a field's standard colors where they exist (ICS geologic-period colors).
+- **It's John's app, not a catalog.** Four tabs (Desk, Library, Review, Profile) along the top on desktop, and as a bottom tab bar on phones.
+- **Desk (home):**
+  - a greeting;
+  - **Continue reading** (cover, chapter, progress, Resume);
+  - **Today's review** (cards due);
+  - a profile prompt until it's filled in;
+  - **Learn something new** (one input);
+  - **Your books**;
+  - a short "How Dr. Professor teaches".
+- **Library:** the shelf of book covers, plus a **New book** flow. It's one question ("What do you want to learn?"), level chips and Dr. Professor as the recommended author; everything else sits under "More options".
+- **Book page:** cover, progress, Continue button, a contents list with status, then the coach and "About this book". Objectives, preface and edition record are collapsible.
+- **Look:** calm warm surfaces, rounded cards and 44px touch targets. Literata for reading and headings, Source Sans 3 for the interface, Libre Caslon Text for the gilt cloth book covers. Light and dark themes.
 
 ## 7. Authors and personal tutoring
+
+**Dr. Professor is the house author and the default for every new book.** The other voices are alternates, and any section can be re-explained in any of them. Every writing prompt now carries the reader's profile, so books are written with John in mind.
 
 **The textbook is shared; the tutoring is personal.** A book is written once, in one author's voice, and everyone reads the same fact-checked text. Around it sits a private tutoring layer tuned to each learner.
 
 | Author | Voice |
 |---|---|
+| **Dr. Professor (house author, default)** | Logical and evidence-first: every claim shows how we know it (observation, measurement, experiment or derivation), then what follows. First principles over lists. Says plainly what is a model or an open question. Written for the reader's profile. |
 | The Scholar | Formal, rigorous, evidence first, history of ideas |
 | The Kindergarten Teacher | Warm, very simple words, concrete; facts stay exact |
 | Socrates | Teaches by questions; you reason your way to each idea |
@@ -122,6 +124,17 @@ Accuracy is the first requirement. A learner relies on every sentence.
 - **Explain it differently:** any section can be re-explained by any author for you. The re-explanation uses your profile and targets your wrong answers in that section.
 - **Study coach:** your accuracy per section is tracked from practice and quizzes. For weak sections it writes a personal review sheet: the idea you are missing, why your wrong answer was tempting, a fresh example, a new check question, and a plan for your next session.
 - Office hours also use your profile.
+
+### Learning methods built in (v0.4)
+| Method | What it is | Where |
+|---|---|---|
+| Pretest | "Before you read: take a guess" on each section; guessing first makes the answer stick | Top of every section |
+| Worked examples | The idea shown step by step before you try it | Each section |
+| Retrieval practice | Practice problems and quizzes | Each section, each chapter |
+| Explain it back | You teach the section in your own words; Dr. Professor scores it and lists what you got, missed and got wrong | After each section's practice |
+| Spaced review | Flashcards (key terms of sections you finish, plus every question you miss) return at growing intervals; Again/Hard/Good/Easy ratings | Review tab, Desk |
+| Interleaving | Review cards from all books are mixed into one session | Review tab |
+| Coaching | Weak sections re-explained and a review sheet aimed at your mistakes | Book page |
 
 ## 8. Provenance: who wrote what
 
@@ -159,7 +172,7 @@ These are free scholarly APIs Dr. Professor should use. **Constraint:** a publis
 1. **A "Scholar" connector (recommended next step).** A small MCP server deployed on Vercel exposes tools like `search_works`, `verify_citation`, `find_images` and `get_recording`, backed by the APIs above. John adds it once as a custom connector in claude.ai. The artifact then calls it through the `mcp` capability, and the fact-check can look things up for real. This needs John's approval for the deployment and the connector.
 2. **Standalone app (v1.0).** Next.js on Vercel with the Claude API calling the same APIs server-side. It's needed anyway for public use, real accounts and billing.
 
-## 11. What's built now (prototype v0.3)
+## 11. What's built now (prototype v0.4)
 
 `app/dr-professor.html` is a single-page app published as a private Claude artifact. Books are written live by Claude on the viewer's own account through the artifact `sample` capability.
 
