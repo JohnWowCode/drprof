@@ -1,0 +1,584 @@
+{
+  "assess": {
+    "challenge": [
+      {
+        "deliverable": "A typed explanation of 150 to 250 words, with your prediction for the first quarter Moon stated clearly.",
+        "prompt": "Imagine you are standing on Earth and watching a full Moon rise at about sunset. Using Earth's rotation and the Moon's orbit, explain why a full Moon rises around sunset, and predict roughly where in the sky and at what time a first quarter Moon would be visible in the evening. State any assumptions you make.",
+        "rubric": [
+          "Correctly places the full Moon opposite the Sun in the sky, so it rises as the Sun sets",
+          "Uses Earth's rotation to explain rising and setting",
+          "Uses the Moon's orbit to explain the change to first quarter, about a quarter of an orbit later",
+          "Gives a reasonable prediction (a first quarter Moon is high in the south around sunset and sets around midnight)",
+          "States assumptions and uses terms accurately"
+        ],
+        "title": "Explain a Day on the Moon from Earth's Viewpoint"
+      },
+      {
+        "deliverable": "A typed argument of 200 to 300 words with three numbered pieces of evidence and a short paragraph on a no-tilt Earth.",
+        "prompt": "A classmate believes seasons happen because Earth gets closer to the Sun in summer. Write a persuasive argument that uses at least three pieces of evidence from this chapter to show why this is wrong, then describe what the seasons would be like if Earth had no tilt.",
+        "rubric": [
+          "Cites that the hemispheres have opposite seasons at the same time",
+          "Cites that Earth is closest to the Sun in early January, during Northern winter, and that the distance varies only about 3 percent",
+          "Explains how tilt changes the Sun's height and day length",
+          "Describes a no-tilt Earth as having essentially no seasons, with day length near 12 hours everywhere",
+          "Writing is clear and uses defined terms correctly"
+        ],
+        "title": "Design a Seasons Argument Against the Distance Myth"
+      }
+    ],
+    "images": [
+      {
+        "search": "Moon phases diagram orbit Earth Sun",
+        "source": "nasa",
+        "why": "Look for the Moon at several orbital positions with the half facing the Sun always lit."
+      },
+      {
+        "search": "Earth seasons diagram axial tilt orbit",
+        "source": "wikimedia",
+        "why": "Look for the axis pointing the same way at all four points of the orbit."
+      },
+      {
+        "search": "star trails circling Polaris long exposure",
+        "source": "wikimedia",
+        "why": "Look for the circular arcs around a nearly fixed point, showing Earth's rotation."
+      }
+    ],
+    "quiz": [
+      {
+        "answer": 1,
+        "choices": [
+          "The Sun orbits Earth once a day",
+          "Earth rotates toward the east",
+          "Earth moves closer to and farther from the Sun",
+          "The atmosphere bends sunlight around Earth"
+        ],
+        "explanation": "Earth spins eastward about once every 24 hours, so the Sun appears to move from east to west across the sky.",
+        "q": "What causes the Sun to appear to rise in the east and set in the west?"
+      },
+      {
+        "answer": 2,
+        "choices": [
+          "It is the closest star to Earth",
+          "It is the brightest star in the sky",
+          "It lies almost directly in line with Earth's axis above the North Pole",
+          "It does not emit light"
+        ],
+        "explanation": "Polaris sits nearly along the extension of Earth's rotation axis, so as Earth spins it stays almost in the same place while others appear to circle it.",
+        "q": "Why does Polaris appear almost stationary while other stars circle around it?"
+      },
+      {
+        "answer": 1,
+        "choices": [
+          "The Moon is between Earth and the Sun",
+          "We see nearly the entire lit half of the Moon",
+          "Earth's shadow covers the Moon",
+          "The Moon makes its own light"
+        ],
+        "explanation": "At full Moon, the Moon is on the far side of Earth from the Sun, so the lit half faces us. Earth's shadow only covers it during a lunar eclipse.",
+        "q": "During a full Moon, which statement is correct?"
+      },
+      {
+        "answer": 1,
+        "choices": [
+          "Correct, the shadow grows and shrinks each month",
+          "Incorrect, phases come from our changing view of the Moon's lit half",
+          "Correct, but only for crescent phases",
+          "Incorrect, phases come from the Moon changing its own brightness"
+        ],
+        "explanation": "Half the Moon is always lit by the Sun. Phases are how much of that lit half we see as the Moon orbits. Earth's shadow causes only lunar eclipses.",
+        "q": "A friend says the Moon's phases are caused by Earth's shadow falling on it. What is the best response?"
+      },
+      {
+        "answer": 0,
+        "choices": [
+          "The Moon's orbit is tilted relative to Earth's path around the Sun, so the alignment is usually imperfect",
+          "The Moon moves too fast",
+          "Earth's shadow is too small to ever reach the Moon",
+          "Full Moons occur only twice a year"
+        ],
+        "explanation": "The Moon's orbit is tilted by about 5 degrees to Earth's orbital plane, so most months the Moon passes above or below Earth's shadow.",
+        "q": "Why do we not have a lunar eclipse every month at full Moon?"
+      },
+      {
+        "answer": 1,
+        "choices": [
+          "Earth's changing distance from the Sun",
+          "Earth's axis being tilted about 23.5 degrees",
+          "The Sun's brightness changing through the year",
+          "The Moon's gravity"
+        ],
+        "explanation": "The tilt changes how high the Sun climbs and how long days last, which changes how much sunlight a hemisphere receives.",
+        "q": "The main cause of Earth's seasons is:"
+      },
+      {
+        "answer": 2,
+        "choices": [
+          "Summer, because both are on Earth at the same distance from the Sun",
+          "Summer, because July is always warm",
+          "Winter, because the Southern Hemisphere is tilted away from the Sun",
+          "Winter, because Earth is farthest from the Sun in July"
+        ],
+        "explanation": "In July the Northern Hemisphere tilts toward the Sun and the Southern Hemisphere tilts away, so Sydney has winter. Distance is the same for both cities.",
+        "q": "It is July in Chicago. What season is it in Sydney, Australia, and why?"
+      },
+      {
+        "answer": 1,
+        "choices": [
+          "It is a waning Moon about to be new, rising before dawn",
+          "It is a waxing Moon a few days after new Moon",
+          "It is a full Moon partly blocked by clouds",
+          "It is in lunar eclipse"
+        ],
+        "explanation": "A thin crescent visible after sunset in the west is a young, waxing Moon a few days past new. Waning crescents appear in the eastern sky before sunrise.",
+        "q": "You see a Moon that is a thin crescent low in the western sky just after sunset. Which is the best conclusion?"
+      }
+    ],
+    "readings": [
+      {
+        "checked": true,
+        "citation": "NASA. Moon Phases. NASA Science (science.nasa.gov).",
+        "kind": "website",
+        "pages": "",
+        "why": "Official explanations and diagrams of the lunar phases and the Moon's orbit."
+      },
+      {
+        "citation": "NASA. Earth's Seasons and Tilt. NASA Science (science.nasa.gov).",
+        "kind": "website",
+        "pages": "",
+        "unverified": true,
+        "why": "Authoritative overview of how axial tilt causes seasons, with solstice and equinox dates."
+      },
+      {
+        "checked": true,
+        "citation": "OpenStax. 2016. Astronomy. OpenStax, Rice University.",
+        "kind": "book",
+        "pages": "Chapter 4: Earth, Moon, and Sky",
+        "why": "Free, peer-reviewed college textbook; read the chapter on Earth, Moon and Sky for rotation, phases, eclipses and seasons."
+      },
+      {
+        "checked": true,
+        "citation": "NASA. Eclipses. NASA Science (science.nasa.gov).",
+        "kind": "website",
+        "pages": "",
+        "why": "Clear explanations of solar and lunar eclipses and why they do not happen every month."
+      }
+    ],
+    "slides": [
+      {
+        "bullets": [
+          "1.1 Day, night and the spinning Earth",
+          "1.2 The Moon and its phases",
+          "1.3 Seasons and Earth's tilt",
+          "Goal: explain what you see overhead using only a few simple ideas"
+        ],
+        "notes": "This chapter is about what you can see with your own eyes, no equipment needed. We will find that three simple facts explain almost everything: Earth spins, the Moon orbits Earth, and Earth's axis is tilted. Keep those three in mind as we go.",
+        "title": "Chapter 1 Agenda: Looking Up"
+      },
+      {
+        "bullets": [
+          "The Sun, Moon and stars appear to rise in the east and set in the west",
+          "Really, Earth **rotates** (spins) once about every 24 hours",
+          "Analogy: on a merry-go-round, the park seems to swirl past you",
+          "The spin axis is an imaginary line through the North and South Poles"
+        ],
+        "notes": "Ancient observers reasonably concluded the sky turned around them. The modern explanation is that the ground under us turns. Rotation means spinning around an axis, and Earth's axis runs through the poles.",
+        "title": "The Sky Seems to Move, but You Are Moving"
+      },
+      {
+        "bullets": [
+          "The Sun lights half of Earth at any moment",
+          "Your location turns into the lit half at sunrise and out of it at sunset",
+          "Earth spins toward the east, so the Sun appears to move east to west",
+          "Time zones exist because different places face the Sun at different times"
+        ],
+        "notes": "Picture a lamp shining on a ball: one half is lit, one half is dark. Spin the ball and each spot on its surface passes from light to dark and back. Earth spins eastward, which is why the Sun appears to climb in the east.",
+        "title": "Day and Night"
+      },
+      {
+        "bullets": [
+          "Stars also rise and set because of Earth's spin",
+          "Stars are far beyond the Moon and Sun, so their patterns stay fixed relative to each other",
+          "Near the North Pole direction, stars appear to circle a point near **Polaris**, the North Star",
+          "Different stars are visible in different seasons because Earth orbits the Sun"
+        ],
+        "notes": "Stars keep the same patterns, called constellations, night after night. Polaris sits almost directly above Earth's North Pole, so it barely moves while other stars circle it. Over a year, Earth's position on its orbit changes which stars are in the night sky.",
+        "title": "Stars and the Night Sky"
+      },
+      {
+        "bullets": [
+          "An **orbit** is the curved path one object takes around another",
+          "The Moon circles Earth about once every 27 days",
+          "The Moon makes no light of its own; it reflects sunlight",
+          "Half of the Moon is always lit by the Sun"
+        ],
+        "notes": "The Moon is a rocky ball that shines only by reflected sunlight, like a ball under a lamp. Always half of it faces the Sun and is lit. What changes over the month is how much of that lit half we can see from Earth.",
+        "title": "The Moon Orbits Earth"
+      },
+      {
+        "bullets": [
+          "A **phase** is the portion of the Moon's lit half that we see",
+          "New Moon: the Moon is between Earth and Sun, so its lit side faces away from us",
+          "Full Moon: Earth is roughly between Moon and Sun, so we see the whole lit face",
+          "The cycle from new Moon to new Moon takes about 29.5 days"
+        ],
+        "notes": "Phases are not caused by Earth's shadow. They come from our changing viewing angle on the lit half. The cycle takes about 29.5 days, a bit longer than the 27-day orbit, because Earth moves around the Sun during that time and the Moon must catch up.",
+        "title": "Why the Moon Has Phases"
+      },
+      {
+        "bullets": [
+          "**Waxing** means the lit part is growing; **waning** means it is shrinking",
+          "Sequence: new, crescent, first quarter, gibbous, full, then back down",
+          "A **lunar eclipse** happens when the Moon passes through Earth's shadow",
+          "A **solar eclipse** happens when the Moon blocks the Sun from part of Earth"
+        ],
+        "notes": "Gibbous means more than half lit but not full. Eclipses are different from phases: a lunar eclipse really is Earth's shadow on the Moon. Eclipses are not monthly because the Moon's orbit is tilted slightly relative to Earth's path around the Sun, so the three bodies rarely line up exactly.",
+        "title": "Waxing, Waning and Eclipses"
+      },
+      {
+        "bullets": [
+          "Earth's axis is tilted about 23.5 degrees from straight up relative to its orbit",
+          "Earth orbits the Sun once about every 365 days",
+          "The axis keeps pointing the same direction (toward Polaris) all year",
+          "Summer in a hemisphere: it tilts toward the Sun, giving longer days and higher Sun"
+        ],
+        "notes": "Seasons come from tilt. When the Northern Hemisphere tilts toward the Sun, the Sun climbs higher and days are longer, so the ground gets more concentrated sunlight for more hours. Six months later, the Southern Hemisphere is the one tilted toward the Sun.",
+        "title": "Earth's Tilt Makes Seasons"
+      },
+      {
+        "bullets": [
+          "Earth's orbit is nearly circular; the distance varies only by about 3 percent",
+          "Earth is closest to the Sun in early January, during Northern Hemisphere winter",
+          "The two hemispheres have opposite seasons at the same time",
+          "Solstices are the longest and shortest days; equinoxes have nearly equal day and night"
+        ],
+        "notes": "If distance caused seasons, the whole planet would have summer at once. Instead, when it is summer in the United States it is winter in Australia. The summer solstice occurs around June 20 or 21 in the north, the winter solstice around December 21 or 22, and equinoxes around March 20 and September 22 or 23.",
+        "title": "Common Myth: Distance Does Not Cause Seasons"
+      },
+      {
+        "bullets": [
+          "Earth's rotation (about 24 hours) causes day, night, and rising and setting",
+          "The Moon's orbit and our viewing angle cause phases over about 29.5 days",
+          "Earth's 23.5 degree tilt, plus its yearly orbit, causes seasons",
+          "Appearance is not always reality: motion in the sky is often our own motion"
+        ],
+        "notes": "Everything we covered follows from three motions: Earth spinning, the Moon orbiting, and Earth orbiting with a tilt. When you look up, try to work out which motion is responsible for what you see. The next chapter turns to the planets that share our Sun.",
+        "title": "Summary: Three Ideas Explain the Sky"
+      }
+    ],
+    "videos": [
+      {
+        "search": "why do we have seasons axial tilt explained NASA",
+        "why": "Watch for how the tilt stays fixed in space while Earth orbits, and how the Sun's angle changes."
+      },
+      {
+        "search": "Moon phases explained demonstration lamp and ball",
+        "why": "Watch for how half the Moon is always lit and how the viewing angle creates the phases."
+      },
+      {
+        "search": "Earth rotation day and night explained animation",
+        "why": "Watch for how one spinning ball produces day, night and the apparent motion of the Sun and stars."
+      }
+    ]
+  },
+  "figures": [
+    {
+      "caption": "Seen from above the North Pole, Earth turns counterclockwise, so a spot on the surface is carried from the night side into daylight at sunrise and back into darkness at sunset. The Sun does not actually circle Earth each day; your location turns toward it and then away from it, once about every 24 hours.",
+      "section": "1.1",
+      "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 480'><rect width='800' height='480' fill='#ffffff'/><defs><marker id='a' markerWidth='8' markerHeight='8' refX='7' refY='4' orient='auto'><path d='M0,0 L8,4 L0,8 Z' fill='#A0781A'/></marker><marker id='b' markerWidth='8' markerHeight='8' refX='6' refY='4' orient='auto'><path d='M0,0 L8,4 L0,8 Z' fill='#C8691C'/></marker></defs><text x='20' y='30' font-family='Helvetica, Arial, sans-serif' font-size='18' fill='#222222'>Why the Sun rises and sets: a spinning Earth</text><text x='20' y='52' font-family='Helvetica, Arial, sans-serif' font-size='14' fill='#444444'>Earth seen from above the North Pole; not to scale</text><text x='30' y='150' font-family='Helvetica, Arial, sans-serif' font-size='14' fill='#A0781A'>Sunlight from the Sun</text><line x1='150' y1='180' x2='292' y2='180' stroke='#A0781A' stroke-width='2.5' marker-end='url(#a)'/><line x1='150' y1='215' x2='275' y2='215' stroke='#A0781A' stroke-width='2.5' marker-end='url(#a)'/><line x1='150' y1='285' x2='275' y2='285' stroke='#A0781A' stroke-width='2.5' marker-end='url(#a)'/><line x1='150' y1='320' x2='292' y2='320' stroke='#A0781A' stroke-width='2.5' marker-end='url(#a)'/><circle cx='400' cy='250' r='120' fill='#DDDDDD'/><path d='M400,130 A120,120 0 0 0 400,370 Z' fill='#EFE0B4'/><circle cx='400' cy='250' r='120' fill='none' stroke='#444444' stroke-width='2'/><line x1='400' y1='130' x2='400' y2='370' stroke='#444444' stroke-width='1.5' stroke-dasharray='5 4'/><text x='330' y='305' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='16' fill='#A0781A'>DAY</text><text x='470' y='305' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='16' fill='#444444'>NIGHT</text><circle cx='280' cy='250' r='5' fill='#B0303A'/><line x1='190' y1='250' x2='274' y2='250' stroke='#B0303A' stroke-width='1'/><text x='30' y='255' font-family='Helvetica, Arial, sans-serif' font-size='14' fill='#B0303A'>Observer at noon</text><circle cx='520' cy='250' r='5' fill='#B0303A'/><text x='508' y='255' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='14' fill='#B0303A'>Midnight</text><text x='400' y='96' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='14' fill='#C8691C'>Sunrise: place rotates into daylight</text><line x1='400' y1='102' x2='400' y2='128' stroke='#C8691C' stroke-width='1'/><line x1='400' y1='372' x2='400' y2='396' stroke='#C8691C' stroke-width='1'/><text x='400' y='412' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='14' fill='#C8691C'>Sunset: place rotates into darkness</text><path d='M506,356 A150,150 0 0 0 506,144' fill='none' stroke='#C8691C' stroke-width='3' marker-end='url(#b)'/><text x='570' y='190' font-family='Helvetica, Arial, sans-serif' font-size='14' fill='#C8691C'>Earth spins west to east:</text><text x='570' y='208' font-family='Helvetica, Arial, sans-serif' font-size='14' fill='#C8691C'>counterclockwise as seen from</text><text x='570' y='226' font-family='Helvetica, Arial, sans-serif' font-size='14' fill='#C8691C'>above the North Pole.</text><text x='570' y='290' font-family='Helvetica, Arial, sans-serif' font-size='14' fill='#444444'>One full turn: about 24 hours</text><text x='570' y='310' font-family='Helvetica, Arial, sans-serif' font-size='14' fill='#444444'>About 15° of turn each hour</text></svg>"
+    },
+    {
+      "caption": "The Moon is always half lit by the Sun, and the lit half always faces the Sun. As the Moon circles Earth, we see a changing share of that lit half: none at New Moon (position 1), all of it at Full Moon (position 5). One full cycle takes about 29.5 days.",
+      "section": "1.2",
+      "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 480'><rect width='800' height='480' fill='#ffffff'/><defs><marker id='a' markerWidth='8' markerHeight='8' refX='7' refY='4' orient='auto'><path d='M0,0 L8,4 L0,8 Z' fill='#A0781A'/></marker></defs><text x='20' y='30' font-family='Helvetica, Arial, sans-serif' font-size='18' fill='#222222'>Moon phases: the lit half always faces the Sun</text><text x='20' y='52' font-family='Helvetica, Arial, sans-serif' font-size='14' fill='#444444'>Looking down from above Earth's North Pole; not to scale</text><text x='30' y='195' font-family='Helvetica, Arial, sans-serif' font-size='14' fill='#A0781A'>Sunlight</text><line x1='30' y1='215' x2='150' y2='215' stroke='#A0781A' stroke-width='2.5' marker-end='url(#a)'/><line x1='30' y1='270' x2='150' y2='270' stroke='#A0781A' stroke-width='2.5' marker-end='url(#a)'/><line x1='30' y1='325' x2='150' y2='325' stroke='#A0781A' stroke-width='2.5' marker-end='url(#a)'/><circle cx='300' cy='270' r='115' fill='none' stroke='#444444' stroke-width='1.5' stroke-dasharray='5 4'/><circle cx='300' cy='270' r='22' fill='#BBD5EE' stroke='#2E6DA4' stroke-width='2'/><text x='300' y='314' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='14' fill='#2E6DA4'>Earth</text><g stroke='#444444' stroke-width='1.5'><circle cx='185' cy='270' r='16' fill='#444444'/><circle cx='219' cy='351' r='16' fill='#444444'/><circle cx='300' cy='385' r='16' fill='#444444'/><circle cx='381' cy='351' r='16' fill='#444444'/><circle cx='415' cy='270' r='16' fill='#444444'/><circle cx='381' cy='189' r='16' fill='#444444'/><circle cx='300' cy='155' r='16' fill='#444444'/><circle cx='219' cy='189' r='16' fill='#444444'/></g><g fill='#EFE0B4'><path d='M185,254 A16,16 0 0 0 185,286 Z'/><path d='M219,335 A16,16 0 0 0 219,367 Z'/><path d='M300,369 A16,16 0 0 0 300,401 Z'/><path d='M381,335 A16,16 0 0 0 381,367 Z'/><path d='M415,254 A16,16 0 0 0 415,286 Z'/><path d='M381,173 A16,16 0 0 0 381,205 Z'/><path d='M300,139 A16,16 0 0 0 300,171 Z'/><path d='M219,173 A16,16 0 0 0 219,205 Z'/></g><g font-family='Helvetica, Arial, sans-serif' font-size='14' fill='#6B4FA0' text-anchor='middle'><text x='220' y='275'>1</text><text x='243' y='332'>2</text><text x='300' y='358'>3</text><text x='357' y='332'>4</text><text x='380' y='275'>5</text><text x='357' y='223'>6</text><text x='300' y='203'>7</text><text x='243' y='223'>8</text></g><text x='300' y='438' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='14' fill='#444444'>Moon orbits counterclockwise</text><text x='460' y='75' font-family='Helvetica, Arial, sans-serif' font-size='14' fill='#6B4FA0'>As seen from Earth (Northern Hemisphere)</text><g font-family='Helvetica, Arial, sans-serif' font-size='14' fill='#444444'><text x='460' y='105'>1</text><text x='460' y='151'>2</text><text x='460' y='197'>3</text><text x='460' y='243'>4</text><text x='460' y='289'>5</text><text x='460' y='335'>6</text><text x='460' y='381'>7</text><text x='460' y='427'>8</text><text x='540' y='105'>New Moon</text><text x='540' y='151'>Waxing crescent</text><text x='540' y='197'>First quarter</text><text x='540' y='243'>Waxing gibbous</text><text x='540' y='289'>Full Moon</text><text x='540' y='335'>Waning gibbous</text><text x='540' y='381'>Last quarter</text><text x='540' y='427'>Waning crescent</text></g><g stroke='#444444' stroke-width='1.5'><circle cx='510' cy='100' r='14' fill='#444444'/><circle cx='510' cy='146' r='14' fill='#444444'/><circle cx='510' cy='192' r='14' fill='#444444'/><circle cx='510' cy='238' r='14' fill='#444444'/><circle cx='510' cy='284' r='14' fill='#EFE0B4'/><circle cx='510' cy='330' r='14' fill='#444444'/><circle cx='510' cy='376' r='14' fill='#444444'/><circle cx='510' cy='422' r='14' fill='#444444'/></g><g fill='#EFE0B4'><path d='M510,132 A14,14 0 0 1 510,160 A8,14 0 0 0 510,132 Z'/><path d='M510,178 A14,14 0 0 1 510,206 Z'/><path d='M510,224 A14,14 0 0 1 510,252 A8,14 0 0 1 510,224 Z'/><path d='M510,316 A14,14 0 0 0 510,344 A8,14 0 0 0 510,316 Z'/><path d='M510,362 A14,14 0 0 0 510,390 Z'/><path d='M510,408 A14,14 0 0 0 510,436 A8,14 0 0 1 510,408 Z'/></g><text x='460' y='464' font-family='Helvetica, Arial, sans-serif' font-size='14' fill='#A0781A'>Full cycle: about 29.5 days</text></svg>"
+    },
+    {
+      "caption": "Earth's axis tilts about 23.5° and points the same way in space all year. In June the North Pole leans toward the Sun, giving the Northern Hemisphere summer; in December it leans away, giving winter. Distance is not the cause of the seasons.",
+      "section": "1.3",
+      "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 480'><rect width='800' height='480' fill='#ffffff'/><text x='20' y='30' font-family='Helvetica, Arial, sans-serif' font-size='18' fill='#222222'>Seasons: Earth's tilt, not its distance</text><text x='20' y='52' font-family='Helvetica, Arial, sans-serif' font-size='14' fill='#444444'>Orbit viewed from above and slightly to the side; not to scale</text><ellipse cx='400' cy='260' rx='260' ry='105' fill='none' stroke='#444444' stroke-width='1.5' stroke-dasharray='6 4'/><circle cx='400' cy='260' r='30' fill='#F6D2AE' stroke='#C8691C' stroke-width='2'/><text x='400' y='265' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='14' fill='#C8691C'>Sun</text><g fill='#BBD5EE' stroke='#2E6DA4' stroke-width='2'><circle cx='140' cy='260' r='28'/><circle cx='400' cy='155' r='28'/><circle cx='660' cy='260' r='28'/><circle cx='400' cy='365' r='28'/></g><g stroke='#2E6DA4' stroke-width='1.5'><line x1='114.3' y1='248.8' x2='165.7' y2='271.2'/><line x1='374.3' y1='143.8' x2='425.7' y2='166.2'/><line x1='634.3' y1='248.8' x2='685.7' y2='271.2'/><line x1='374.3' y1='353.8' x2='425.7' y2='376.2'/></g><g stroke='#B0303A' stroke-width='2.5'><line x1='122.5' y1='300.3' x2='157.5' y2='219.7'/><line x1='382.5' y1='195.3' x2='417.5' y2='114.7'/><line x1='642.5' y1='300.3' x2='677.5' y2='219.7'/><line x1='382.5' y1='405.3' x2='417.5' y2='324.7'/></g><g fill='#B0303A'><circle cx='157.5' cy='219.7' r='4'/><circle cx='417.5' cy='114.7' r='4'/><circle cx='677.5' cy='219.7' r='4'/><circle cx='417.5' cy='324.7' r='4'/></g><g font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='middle'><g fill='#C8691C'><text x='140' y='325'>June solstice</text><text x='140' y='343'>about June 21</text><text x='140' y='361'>Northern summer</text><text x='660' y='325'>December solstice</text><text x='660' y='343'>about Dec 21</text><text x='660' y='361'>Northern winter</text></g><g fill='#2F7D4F'><text x='400' y='68'>March equinox</text><text x='400' y='86'>about Mar 20</text><text x='400' y='104'>Northern spring</text><text x='400' y='425'>September equinox</text><text x='400' y='443'>about Sept 22</text><text x='400' y='461'>Northern autumn</text></g><text x='400' y='214' fill='#222222'>Tilt: about 23.5°, same direction all year</text><text x='400' y='312' fill='#222222'>Seasons come from tilt, not distance</text></g><line x1='20' y1='441' x2='36' y2='441' stroke='#B0303A' stroke-width='2.5'/><text x='42' y='446' font-family='Helvetica, Arial, sans-serif' font-size='14' fill='#B0303A'>Earth's axis</text><circle cx='28' cy='461' r='4' fill='#B0303A'/><text x='42' y='466' font-family='Helvetica, Arial, sans-serif' font-size='14' fill='#B0303A'>North Pole end</text><text x='780' y='445' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='14' fill='#444444'>Not to scale.</text><text x='780' y='463' text-anchor='end' font-family='Helvetica, Arial, sans-serif' font-size='14' fill='#444444'>Orbit: counterclockwise from above.</text></svg>"
+    }
+  ],
+  "lesson": {
+    "objectives": [
+      "Explain why the Sun, Moon and stars appear to rise and set, using Earth's rotation.",
+      "Describe how the Moon's phases arise from the changing view of its sunlit half.",
+      "Predict the phase of the Moon from its position relative to the Sun and Earth.",
+      "Explain how Earth's axial tilt causes the seasons, and why distance from the Sun does not.",
+      "Apply these ideas to new situations, such as comparing day length in different places or seasons."
+    ],
+    "overview": "This chapter starts with what you can see without any equipment: the Sun crossing the sky, the Moon changing shape, and the year turning from warm to cold and back. Each of these has a simple physical cause, and all of them come from the motions of just three bodies: Earth, the Moon, and the Sun. Understanding them gives you a mental model of how these bodies move, and you will use that model throughout the course. In Chapter 2 you will meet the other planets, which spin and orbit in similar ways, and in Chapter 3 you will see that the Sun is one star among countless others. For now, the goal is to look up and understand what is happening, using nothing more than patient observation and a few clear ideas.",
+    "sections": [
+      {
+        "example": {
+          "steps": [
+            "Start with what you know: Earth's circumference at the equator is about 40,000 km, and one rotation takes about 24 hours.",
+            "Use the speed formula: v = d / t, where v is speed, d is distance and t is time.",
+            "Put in the numbers: v = 40,000 km / 24 h.",
+            "Divide: 40,000 / 24 is about 1,670, so the speed is roughly 1,700 km/h.",
+            "Check that it makes sense: this is faster than a passenger jet, which is why it is surprising that we feel nothing."
+          ],
+          "takeaway": "Earth's surface moves at roughly 1,700 km/h at the equator, but because everything around us moves with it, we feel no motion.",
+          "title": "Worked example: How fast does the ground move at the equator?"
+        },
+        "keyTerms": [
+          {
+            "def": "The spinning of a body, such as Earth, around its own axis.",
+            "term": "rotation"
+          },
+          {
+            "def": "The imaginary line through a spinning body's poles around which it turns.",
+            "term": "axis"
+          },
+          {
+            "def": "The North Star, a star that sits almost directly above Earth's North Pole and so appears nearly motionless in the northern sky.",
+            "term": "Polaris"
+          },
+          {
+            "def": "The time for Earth to rotate once relative to the Sun, about 24 hours.",
+            "term": "day"
+          },
+          {
+            "def": "The line where the ground or sea appears to meet the sky.",
+            "term": "horizon"
+          }
+        ],
+        "misconception": {
+          "fact": "The Sun's daily path across the sky is caused by Earth rotating once about every 24 hours. The same rotation explains why the Moon and stars also rise and set, which would be a strange coincidence if each of them were circling Earth on its own.",
+          "myth": "The Sun goes around the Earth every day, which is why it rises and sets."
+        },
+        "n": "1.1",
+        "practice": [
+          {
+            "answer": 0,
+            "choices": [
+              "Earth rotates from west to east",
+              "Each object orbits Earth in a westward direction on its own schedule",
+              "Earth moves in a straight line toward the west",
+              "The sky is a dome that turns around us"
+            ],
+            "explanation": "Earth's rotation toward the east makes the whole sky appear to move toward the west. The other choices describe separate motions for each object or motions that do not happen; one rotation explains everything at once.",
+            "q": "Why do the Sun, Moon and stars all appear to rise in the east and set in the west?",
+            "type": "mc"
+          },
+          {
+            "answer": "The Sun always lights half of Earth. Earth's rotation has carried my location into the half facing away from the Sun, so it is night for me. The Sun is still shining on the other side.",
+            "explanation": "A good answer says that the Sun lights only the half of Earth facing it, and that rotation turns your location away from it.",
+            "q": "Explain in two or three sentences why it is night where you are, without saying the Sun goes away.",
+            "type": "short"
+          },
+          {
+            "answer": 0,
+            "choices": [
+              "The place on the sky above Earth's North Pole, near Polaris",
+              "The Sun's position at midnight",
+              "The Moon",
+              "The east horizon"
+            ],
+            "explanation": "The arcs are centered on the point in the sky directly above Earth's axis, which is near Polaris. The Sun, Moon and horizon positions all change and are not the center of the turning.",
+            "q": "A photographer points a camera at the northern sky and takes a long exposure. The stars appear as arcs around one point. What does that point most closely match in the Northern Hemisphere?",
+            "type": "mc"
+          }
+        ],
+        "reading": [
+          "Step outside on a clear day and watch the Sun for a few hours. It seems to climb the sky, cross it, and sink out of sight. For most of human history, people reasonably took this at face value: the Sun moves and the ground stays still. The ground certainly feels still. But the evidence points the other way. The Sun, Moon and stars appear to move across the sky because Earth is turning beneath them, and we are riding along on its surface.",
+          "Think of sitting on a slowly turning merry-go-round. The trees and buildings around the playground seem to drift past you, even though they are standing still. Your own motion makes the world look like it is moving the opposite way. Earth works the same way. We call Earth's turning **rotation**: it spins around an imaginary line through the North and South Poles, called its **axis**. One full rotation takes about 24 hours, which is the length of a day as we usually count it.",
+          "Day and night follow directly from this. The Sun lights up only the half of Earth facing it, just as a lamp lights one side of a ball in a dark room. As Earth rotates, your location carries you into the lit half, and you experience morning. Later you are carried out of it, and you experience evening and night. The Sun never switches off for night to happen; your part of the world simply turns away from it.",
+          "Which way does Earth spin? Seen from above the North Pole, it turns counterclockwise, which means it rotates from west to east. Because you are carried eastward, the sky appears to move westward. That is why the Sun, Moon and stars all rise in the east and set in the west. This is not a special rule for each object. It is one single effect of one single rotation.",
+          "The stars show the rotation especially well. In a long-exposure photograph pointed at the northern sky, the stars trace arcs, or circles, around one point. For a viewer in the Northern Hemisphere, that point is close to a star called Polaris, the North Star. Polaris sits almost directly above Earth's North Pole, so it stays nearly in place while everything else appears to turn around it. A viewer at the equator sees stars rise and set rather than circle, and the Southern Hemisphere has no bright star marking its pole.",
+          "How fast are you moving? Earth's circumference, the distance around it, is about 40,000 kilometers at the equator. Dividing by 24 hours gives roughly 1,700 kilometers per hour for someone standing on the equator. You do not feel this because you, the air and the ground all move together smoothly, the way you do not feel the motion of a plane cruising at a steady speed. Closer to the poles, the circle you travel is smaller, so you move more slowly."
+        ],
+        "title": "Day, night and the spinning Earth"
+      },
+      {
+        "example": {
+          "steps": [
+            "Recall the setup: at full moon, Earth is roughly between the Sun and the Moon, so the Moon is on the opposite side of the sky from the Sun.",
+            "When the Sun sets in the west, the opposite part of the sky is just rising in the east.",
+            "So the full moon rises in the east at about the time the Sun sets in the west.",
+            "Through the night, the Moon crosses the sky, and it sets in the west around the time the Sun rises.",
+            "Conclusion: a full moon is visible all night long."
+          ],
+          "takeaway": "A full moon sits opposite the Sun in the sky, so it rises at sunset and sets at sunrise.",
+          "title": "Worked example: When does a full moon rise?"
+        },
+        "keyTerms": [
+          {
+            "def": "An object that orbits a larger object, such as the Moon orbiting Earth.",
+            "term": "satellite"
+          },
+          {
+            "def": "The shape of the Moon's lit part as seen from Earth at a given time.",
+            "term": "phase"
+          },
+          {
+            "def": "The phase when the Moon is roughly between Earth and the Sun and its lit side faces away from us.",
+            "term": "new moon"
+          },
+          {
+            "def": "The phase when Earth is roughly between the Sun and the Moon and we see the Moon's entire lit face.",
+            "term": "full moon"
+          },
+          {
+            "def": "Waxing means the visible lit part is growing; waning means it is shrinking.",
+            "term": "waxing and waning"
+          }
+        ],
+        "misconception": {
+          "fact": "Phases come from our changing view of the Moon's sunlit half as it orbits Earth. Earth's shadow falls on the Moon only during a lunar eclipse, which happens only a few times a year at most, and only at full moon, while phases occur every month.",
+          "myth": "The phases of the Moon are caused by Earth's shadow falling on it."
+        },
+        "n": "1.2",
+        "practice": [
+          {
+            "answer": 1,
+            "choices": [
+              "Earth's shadow covers it",
+              "Its lit half faces away from Earth",
+              "It is too far from Earth",
+              "Clouds always block it then"
+            ],
+            "explanation": "At new moon the Moon is roughly between Earth and the Sun, so the sunlit half faces away from us. Earth's shadow is not the cause, and distance does not change much during a month.",
+            "q": "At new moon, why can we not see the Moon?",
+            "type": "mc"
+          },
+          {
+            "answer": "Not for the side we see. At full moon, the half of the Moon lit by the Sun is the half facing Earth, so we see it fully lit. The far side is dark at that time, but we cannot see it from Earth.",
+            "explanation": "A good answer says that the Sun always lights one half of the Moon and that at full moon this lit half faces Earth.",
+            "q": "A friend says that half of the Moon is dark at full moon. Is that correct? Explain briefly.",
+            "type": "short"
+          },
+          {
+            "answer": 1,
+            "choices": [
+              "Around sunrise",
+              "Around midnight",
+              "Right at sunset",
+              "Around noon the next day"
+            ],
+            "explanation": "A first-quarter moon is highest at sunset and sets around midnight. A moon that sets around sunrise would be a full moon, and one that sets near noon would be close to new.",
+            "q": "You step outside at sunset and see a first-quarter moon high in the southern sky. Roughly when will it set?",
+            "type": "mc"
+          }
+        ],
+        "reading": [
+          "The Moon is Earth's natural **satellite**, meaning an object that orbits a larger one. It is about 384,000 kilometers away on average and takes roughly 27 days to circle Earth once. Unlike the Sun, the Moon makes no light of its own. It shines because its surface reflects sunlight, much as a white wall glows when a flashlight hits it. At any moment, the Sun lights exactly half of the Moon, the half facing the Sun.",
+          "If half of the Moon is always lit, why does it change shape in the sky? The answer is about our viewpoint. As the Moon orbits Earth, we see its lit half from different angles. Sometimes we look at the lit side head-on, sometimes we see only a sliver of it, and sometimes we see none of it. These different views of the Moon's lit portion are called **phases**.",
+          "Picture holding a ball at arm's length in a dark room with a single lamp on one side. Turn slowly in a circle while keeping the ball in front of you. When the ball is on the far side of you from the lamp, you see its whole lit face. When it is between you and the lamp, you see its dark side. In between, you see part-lit shapes. You are Earth, the ball is the Moon, and the lamp is the Sun.",
+          "The main phases follow a regular order. At **new moon**, the Moon is roughly between Earth and the Sun, so its lit side faces away from us and we cannot see it. A few days later a thin **crescent** appears. About a week after new moon is the first quarter, when we see half of the Moon's face lit. At **full moon**, about two weeks after new moon, Earth is roughly between the Sun and Moon, and we see the whole face lit. Then the phases run backward: third quarter, a thinning crescent, and new moon again.",
+          "The full cycle from one new moon to the next takes about 29.5 days. This is longer than the 27-day orbit because Earth is also moving around the Sun during that time, so the Moon must travel a little extra to line up with the Sun again. The word *month* comes from the same root as *moon* and reflects this old connection between the calendar and the sky.",
+          "When the lit part is growing from night to night, we call the Moon **waxing**. When it is shrinking, we call it **waning**. Phases also affect when you can see the Moon. A full moon rises around sunset and sets around sunrise, so it is up all night. A first-quarter moon is highest in the sky around sunset and sets around midnight. A new moon travels across the sky with the Sun, so it is up in daytime and lost in the Sun's glare."
+        ],
+        "title": "The Moon and its phases"
+      },
+      {
+        "example": {
+          "steps": [
+            "Chicago is in the Northern Hemisphere and Sydney is in the Southern Hemisphere.",
+            "In June, the Northern Hemisphere is tilted toward the Sun, so Chicago has long days and a high Sun: summer.",
+            "At the same time, the Southern Hemisphere is tilted away from the Sun, so Sydney has short days and a low Sun: winter.",
+            "Six months later, in December, the situation reverses: Sydney has summer and Chicago has winter.",
+            "Conclusion: the two cities have opposite seasons at any given time."
+          ],
+          "takeaway": "Opposite seasons in the two hemispheres show that tilt, not distance from the Sun, causes the seasons.",
+          "title": "Worked example: Is it summer in Sydney when it is summer in Chicago?"
+        },
+        "keyTerms": [
+          {
+            "def": "The angle, about 23.5 degrees, between Earth's rotation axis and a line perpendicular to the plane of its orbit around the Sun.",
+            "term": "axial tilt"
+          },
+          {
+            "def": "The path one object takes around another, such as Earth around the Sun.",
+            "term": "orbit"
+          },
+          {
+            "def": "One of the two days each year when a hemisphere is tilted most toward or away from the Sun, giving the longest or shortest day.",
+            "term": "solstice"
+          },
+          {
+            "def": "One of the two days each year when neither hemisphere leans toward the Sun and day and night are nearly equal in length.",
+            "term": "equinox"
+          },
+          {
+            "def": "A part of the year with a typical pattern of weather and daylight, caused by Earth's tilt.",
+            "term": "season"
+          }
+        ],
+        "misconception": {
+          "fact": "Earth is closest to the Sun in early January, during Northern Hemisphere winter, and the difference in distance is small. Seasons come from Earth's 23.5-degree tilt, which changes how high the Sun climbs and how long the days last. If distance were the cause, both hemispheres would have summer together.",
+          "myth": "It is hot in summer because Earth is closer to the Sun then."
+        },
+        "n": "1.3",
+        "practice": [
+          {
+            "answer": 1,
+            "choices": [
+              "The Moon has phases",
+              "Summer in Australia happens while it is winter in Canada",
+              "Days are longer at the equator",
+              "Polaris stays nearly fixed"
+            ],
+            "explanation": "If distance caused seasons, the whole Earth would be in the same season at once. Opposite seasons in the two hemispheres point to tilt. The other observations are true but do not address the cause of seasons.",
+            "q": "Which observation best shows that distance from the Sun does not cause the seasons?",
+            "type": "mc"
+          },
+          {
+            "answer": "In winter the Sun is lower in the sky, so its light hits the ground at a slant. Like a flashlight beam at a slant, the same amount of light is spread over a larger area, so each patch of ground gets less heat. Days are also shorter, so there is less time to warm up.",
+            "explanation": "A good answer mentions a lower Sun, light spread over a larger area, and ideally shorter days.",
+            "q": "Explain why the Sun's light is less effective at heating the ground in winter, using the flashlight idea.",
+            "type": "short"
+          },
+          {
+            "answer": 2,
+            "choices": [
+              "Very strong seasons in each hemisphere",
+              "Opposite seasons in each hemisphere",
+              "Little or no seasonal change over the year",
+              "Seasons that depend on how fast it rotates"
+            ],
+            "explanation": "Without tilt, neither hemisphere would lean toward or away from the star, so day length and Sun height would stay about the same all year. Strong or opposite seasons need a tilt.",
+            "q": "Imagine a planet with no axial tilt, orbiting its star in a nearly circular path. What would you expect about its seasons?",
+            "type": "mc"
+          }
+        ],
+        "reading": [
+          "Most people live somewhere with seasons: warm summers, cold winters, and milder spring and fall between. A common first guess is that summer happens when Earth is closer to the Sun. That guess is wrong. Earth's orbit is only slightly oval, and Earth is actually closest to the Sun in early January, in the middle of Northern Hemisphere winter. The real cause is something else: Earth's tilt.",
+          "Earth's axis is not straight up and down relative to its path around the Sun. It is tilted by about 23.5 degrees. The key fact is that the axis keeps pointing toward the same place in space, near Polaris, throughout the year. Earth takes about 365 days to travel once around the Sun, an orbit. Because the tilt direction stays fixed while Earth moves, sometimes the Northern Hemisphere leans toward the Sun, and six months later it leans away.",
+          "When the Northern Hemisphere leans toward the Sun, two things happen. First, the Sun climbs higher in the sky, so its light hits the ground more directly. Direct light is concentrated: think of shining a flashlight straight down on a table versus at a slant, where the slanted beam spreads over a larger, dimmer patch. Second, the days are longer, so the ground has more hours to absorb heat. Both effects together make summer warm.",
+          "In winter the reverse happens. The Northern Hemisphere leans away from the Sun, so the Sun stays lower in the sky, its light is spread thinner, and the days are shorter. Less heat arrives, and the weather is colder. The seasons in the Southern Hemisphere are opposite: when it is summer in the north, it is winter in the south, because one half leans toward the Sun while the other leans away. December in Australia is a summer month.",
+          "Four dates mark the year. The **solstices** are the days when the tilt is most extreme: around June 21 the Northern Hemisphere has its longest day, and around December 21 it has its shortest. The **equinoxes**, around March 20 and September 22, are the days when neither hemisphere leans toward the Sun, and day and night are close to equal length everywhere. The word equinox comes from Latin roots meaning equal night.",
+          "The tilt also explains some dramatic sights. Near the poles, summer brings days when the Sun does not set for weeks or months, and winter brings the reverse, a long stretch of darkness. At the equator, the Sun is always high and day length barely changes, so there are no strong seasons. This also gives you a test of the tilt idea. If distance caused seasons, the whole planet would have summer at once. Instead, the two hemispheres have opposite seasons at the same moment, which only tilt can explain."
+        ],
+        "title": "Seasons"
+      }
+    ]
+  },
+  "n": 1,
+  "review": {
+    "at": 1791592845091,
+    "corrections": [
+      {
+        "after": "The Sun does not actually circle Earth each day; your location turns toward it and then away from it",
+        "applied": true,
+        "before": "The Sun does not move across the sky; your location turns toward it and then away from it",
+        "severity": "imprecise",
+        "where": "Figure for 1.1 caption",
+        "why": "The Sun does appear to move across the sky. The point is that this daily motion is apparent, not real."
+      },
+      {
+        "after": "which happens only a few times a year at most, and only at full moon",
+        "applied": true,
+        "before": "which is rare and happens only at full moon",
+        "severity": "imprecise",
+        "where": "1.2 misconception fact",
+        "why": "Lunar eclipses happen on average about twice a year, so calling them 'rare' overstates it. The intended contrast is that they are not monthly."
+      }
+    ],
+    "full": true,
+    "keyFixes": [],
+    "keysAgreed": 14,
+    "keysChecked": 14,
+    "readingsRemoved": [],
+    "summary": "The chapter is accurate throughout. Its numbers, mechanisms, answer keys and explanations check out, and each multiple-choice question has exactly one defensible answer. Only two minor wording imprecisions and one uncertain reading title were found."
+  },
+  "updatedAt": 1791592824358
+}

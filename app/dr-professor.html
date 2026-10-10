@@ -444,7 +444,7 @@ const S = {
   form: { topic: "", level: "beginner", focus: "", length: "standard", persona: "professor", engine: "default" },
   gen: {}, slide: {}, quizSel: {}, chat: {}, busy: {}, errata: {}, errOpen: {}, wx: {}, wxAll: {}, ix: {},
   names: {}, altPick: {}, rvPick: {}, loadedAll: {}, pendingAnchor: null,
-  audio: { key: null, idx: 0, playing: false, rate: 1, voice: null, gen: 0, tOpen: false },
+  audio: { key: null, idx: 0, playing: false, rate: 1, voice: null, gen: 0, tOpen: false, el: null },
 };
 
 /* ---------- storage: db when served, browser storage otherwise ---------- */
@@ -2153,7 +2153,10 @@ const Speech = {
   pick(uri) { const all = this.ranked(); return all.find((v) => v.voiceURI === uri) || all[0] || null; },
 };
 const plain = (t) => String(t).replace(/\*\*|\*|`/g, "");
+const studioOf = (chap) => (chap && chap.studio && arr(chap.studio.tracks).filter((t) => t && t.src).length ? chap.studio : null);
 function audioItems(c, n, chap) {
+  const st = studioOf(chap);
+  if (st) return st.tracks.filter((t) => t && t.src).map((t) => ({ label: str(t.label), text: str(t.text), src: str(t.src) }));
   if (chap.audio && arr(chap.audio.segments).length) return chap.audio.segments.flatMap((sg) => sg.paras.map((t) => ({ label: sg.title || sg.sec, text: plain(t) })));
   const L = chap.lesson, items = [{ label: `Chapter ${n}`, text: `Chapter ${n}. ${c.chapters[n - 1].title}.` }, { label: "Overview", text: plain(L.overview) }];
   L.sections.forEach((s) => {
@@ -2179,9 +2182,10 @@ function playerHTML(c, n, chap) {
     ? `<p class="small muted">Narrated edition, rewritten for listening by Dr. Professor as ${esc(persona(c.persona).name)}${chap.prov && chap.prov.audio ? `, ${esc(date(chap.prov.audio.at))}` : ""}.</p>`
     : `<p class="small muted">Now reading the textbook text as written. The narrated edition is rewritten for the ear by the author: figures described aloud, citations dropped, natural transitions.</p>
        <div class="row">${busy ? `<button class="btn ghost sm" data-act="stop" data-k="audio:${esc(key)}">Stop</button><span class="status">${esc(S.gen["audio:" + key] || "Writing the narrated edition…")}</span>` : `<button class="btn ghost sm" data-act="au-prepare">Prepare the narrated edition</button>${S.gen["audio:" + key + ":err"] ? `<span class="status err">${esc(S.gen["audio:" + key + ":err"])}</span>` : ""}`}</div>`;
-  if (!Speech.ok) return `<div class="cbox k-subj"><div class="cbox-h"><span>Audio edition</span></div><div class="cbox-b"><p class="small">This view cannot read aloud. Open the page in a current browser (Safari, Edge or Chrome) to listen.</p>${prep}</div></div>`;
-  const voices = Speech.ranked(), best = voices[0], cur = Speech.pick(A.voice);
-  return `<div class="cbox k-subj player"><div class="cbox-h"><span>${narrated ? "Narrated edition" : "Read-aloud edition"}</span><span class="num">${idx + 1} / ${items.length}</span></div><div class="cbox-b">
+  const studio = studioOf(chap);
+  if (!Speech.ok && !studio) return `<div class="cbox k-subj"><div class="cbox-h"><span>Audio edition</span></div><div class="cbox-b"><p class="small">This view cannot read aloud. Open the page in a current browser (Safari, Edge or Chrome) to listen.</p>${prep}</div></div>`;
+  const voices = Speech.ok ? Speech.ranked() : [], best = voices[0], cur = Speech.ok ? Speech.pick(A.voice) : null;
+  return `<div class="cbox k-subj player"><div class="cbox-h"><span>${studio ? "Audiobook" : narrated ? "Narrated edition" : "Read-aloud edition"}</span><span class="num">${idx + 1} / ${items.length}</span></div><div class="cbox-b">
     <div class="row">
       <button class="btn sm" data-act="au-play">${on && A.playing ? "❚❚ Pause" : "▶ Play"}</button>
       <button class="btn ghost sm" data-act="au-skip" data-d="-1">Back</button>
@@ -2192,10 +2196,11 @@ function playerHTML(c, n, chap) {
     <div class="small"><strong>Now:</strong> ${esc(items[idx].label)}</div>
     <div class="bar-meter" style="max-width:none"><span style="width:${((idx + (on && A.playing ? 0.5 : 0)) / items.length) * 100}%"></span></div>
     ${A.err ? `<p class="status err">${esc(A.err)}</p>` : ""}
+    ${studio ? `<p class="small muted">Recorded narration: ${esc(studio.voice || "studio voice")}${studio.engine ? `, ${esc(studio.engine)}` : ""}${studio.at ? `, ${esc(date(studio.at))}` : ""}. The words match the textbook; only citations are left out.</p>` : `
     <div class="field"><label for="au-voice" class="small">Voice</label>
       <select class="input sel" id="au-voice" data-inp="au-voice">${voices.length ? voices.map((v) => `<option value="${esc(v.voiceURI)}" ${cur && v.voiceURI === cur.voiceURI ? "selected" : ""}>${esc(v.name)}${Speech.score(v) >= 25 ? " (natural)" : ""}</option>`).join("") : `<option>Loading voices…</option>`}</select></div>
     <p class="small muted">${esc(voiceTip(best))}</p>
-    ${prep}
+    ${prep}`}
     <details class="report" ${A.tOpen ? "open" : ""} data-transcript><summary>Transcript</summary><div class="transcript">${items.map((it, i) => `<p class="${i === idx ? "now" : ""}" data-act="au-jump" data-i="${i}">${esc(it.text)}</p>`).join("")}</div></details>
   </div></div>`;
 }
@@ -2209,7 +2214,7 @@ function paintPlayer() {
     if (now && S.audio.playing) now.scrollIntoView({ block: "nearest" });
   }
 }
-function auStop() { S.audio.playing = false; S.audio.gen++; try { speechSynthesis.cancel(); } catch {} }
+function auStop() { S.audio.playing = false; S.audio.gen++; try { speechSynthesis.cancel(); } catch {} if (S.audio.el) { try { S.audio.el.pause(); } catch {} } }
 function sentenceChunks(text) {
   const parts = String(text).match(/[^.!?]+[.!?]+["”’)]*\s*|[^.!?]+$/g) || [String(text)];
   const out = []; let cur = "";
@@ -2221,6 +2226,15 @@ function auSpeak(c, n) {
   const A = S.audio, gen = ++A.gen, chap = S.chapters[`${c.id}:${n}`], items = audioItems(c, n, chap);
   const it = items[A.idx];
   if (!it) { A.playing = false; A.idx = 0; paintPlayer(); return; }
+  if (it.src) {
+    const el = A.el = A.el || new Audio();
+    if (el.dataset.src !== it.src) { el.src = it.src; el.dataset.src = it.src; }
+    el.playbackRate = A.rate || 1; el.preservesPitch = true;
+    el.onended = () => { if (gen !== A.gen) return; A.idx++; const p = S.prog[c.id]; p.audioPos = { ...(p.audioPos || {}), [n]: A.idx }; saveProg(c.id); try { el.currentTime = 0; } catch {} paintPlayer(); auSpeak(c, n); };
+    el.onerror = () => { if (gen !== A.gen) return; A.playing = false; A.err = "This recording could not load. Check the connection and press Play again."; paintPlayer(); };
+    el.play().catch((e) => { if (gen === A.gen && e && e.name !== "AbortError") { A.playing = false; A.err = "Playback was blocked. Press Play again."; paintPlayer(); } });
+    return;
+  }
   const parts = sentenceChunks(it.text); let k = 0;
   const step = () => {
     if (gen !== A.gen) return;
@@ -2254,6 +2268,7 @@ function auMove(c, n, to) {
   if (A.key !== key) { auStop(); A.key = key; A.idx = (S.prog[c.id].audioPos || {})[n] || 0; }
   auStop();
   A.idx = Math.max(0, Math.min(items.length - 1, typeof to === "function" ? to(A.idx) : to));
+  if (A.el) { try { A.el.dataset.src = ""; } catch {} }
   if (playing) { A.playing = true; auSpeak(c, n); }
   paintPlayer();
 }
@@ -2717,6 +2732,7 @@ document.addEventListener("input", (e) => {
   if (k === "alt-pick") { S.altPick[`${c.id}:${t.dataset.sec}`] = t.value; return; }
   if (k === "au-rate" || k === "au-voice") {
     if (k === "au-rate") S.audio.rate = +t.value; else { S.audio.voice = t.value; LS.set("me/voice", t.value); }
+    if (k === "au-rate" && S.audio.el && S.audio.el.dataset.src) { S.audio.el.playbackRate = S.audio.rate; return; }
     if (S.audio.playing) { const n = S.chapterN; auStop(); S.audio.playing = true; auSpeak(c, n); }
     return;
   }
