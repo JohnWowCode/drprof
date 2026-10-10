@@ -10,7 +10,7 @@ BANNED = ["delve", "tapestry", "testament to", "in the realm of", "embark", "unl
           "leverage", "game-changer", "ever-evolving", "it's important to note", "it is important to note", "it is worth noting",
           "in conclusion", "in summary", "at its core", "let's dive in", "fascinating world", "navigate the", "journey of", "landscape of"]
 FUNCS = {"sqrt", "abs", "sin", "cos", "tan", "log", "log10", "exp", "min", "max", "pow", "round", "floor", "ceil"}
-TYPES = {"explorer", "sort", "order", "timeline", "scale", "case"}
+TYPES = {"explorer", "sort", "order", "timeline", "scale", "case", "sim"}
 
 def check_expr(expr, names):
     toks = re.findall(r"\s*(\d+\.?\d*(?:[eE][-+]?\d+)?|[A-Za-z_][A-Za-z_0-9]*|\*\*|[-+*/^(),])", expr)
@@ -93,7 +93,8 @@ def main(path):
         if not f.get("caption"): P.append(f"{fp.name}: caption missing")
     if not 2 <= len(ch.get("figureFiles", [])) <= 4: P.append("need 2-4 figures")
     its = ch.get("interactives", [])
-    if not 2 <= len(its) <= 4: P.append(f"{len(its)} interactives (want 2-4)")
+    core = [x for x in its if x.get("type") != "sim"]
+    if not 2 <= len(core) <= 4: P.append(f"{len(core)} interactives besides follow-alongs (want 2-4)")
     for i, it in enumerate(its):
         t = it.get("type"); tag = f"interactive {i+1} ({t})"
         if t not in TYPES: P.append(f"{tag}: unknown type"); continue
@@ -117,6 +118,10 @@ def main(path):
         if t == "timeline" and (len(it.get("events", [])) < 4 or any("t" not in x or not x.get("label") for x in it.get("events", []))): P.append(f"{tag}: need 4+ events with t and label")
         if t == "scale" and (len(it.get("items", [])) < 3 or any(not isinstance(x.get("value"), (int, float)) or x["value"] <= 0 for x in it.get("items", []))): P.append(f"{tag}: need 3+ items with positive numeric values")
         if t == "case" and len(it.get("steps", [])) < 2: P.append(f"{tag}: need 2+ steps")
+        if t == "sim":
+            if len(it.get("steps", [])) < 3 or any(not x.get("do") for x in it.get("steps", [])): P.append(f"{tag}: need 3+ steps, each with 'do'")
+            ck = it.get("check")
+            if ck and not (ck.get("q") and len(ck.get("choices", [])) >= 2 and isinstance(ck.get("answer"), int) and 0 <= ck["answer"] < len(ck["choices"])): P.append(f"{tag}: bad check question")
     blob = " ".join(text + [L.get("hook", ""), L.get("overview", "")]).lower()
     for w in BANNED:
         if w in blob: P.append(f"banned phrase: {w!r}")

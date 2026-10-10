@@ -339,6 +339,7 @@ details.report summary { cursor: pointer; font-size: 0.92rem; font-weight: 700; 
 
 .k-lab { --k: var(--c-lab); }
 .hook { font-family: var(--f-read); font-size: 1.2rem; line-height: 1.62; max-width: 64ch; border-left: 3px solid var(--subj-ink); padding-left: 16px; }
+.wx-sim{padding-left:1.2em;display:grid;gap:.6rem}.wx-sim li{line-height:1.5}.wx-sim li .chip{margin-right:.5rem;vertical-align:middle}.wx-sim li.ok>span{color:var(--muted,inherit)}
 .wx-inputs { display: grid; gap: 12px; }
 .wx-slider { display: grid; grid-template-columns: minmax(7rem, 12rem) minmax(0, 1fr) minmax(5.5rem, auto); gap: 10px; align-items: center; }
 .wx-slider input[type="range"] { width: 100%; accent-color: var(--c-lab); min-height: 32px; }
@@ -1702,16 +1703,22 @@ function normInteractives(list) {
       const items = arr(it.items).map((x) => ({ label: str(x.label), value: +x.value, note: str(x.note) })).filter((x) => x.label && x.value > 0);
       return items.length >= 2 ? { ...base, unit: str(it.unit), log: !!it.log, items } : null;
     }
+    if (base.type === "sim") {
+      const steps = arr(it.steps).map((x) => ({ do: str(x.do), see: str(x.see) })).filter((x) => x.do);
+      const ch = it.check || {}, choices = arr(ch.choices).map(str).filter(Boolean), ans = +ch.answer;
+      const check = ch.q && choices.length >= 2 && Number.isInteger(ans) && ans >= 0 && ans < choices.length ? { q: str(ch.q), choices, answer: ans, why: str(ch.why) } : null;
+      return steps.length >= 3 ? { ...base, app: str(it.app) || "SpaceEngine", setup: str(it.setup), steps, notice: str(it.notice), check } : null;
+    }
     if (base.type === "case") { const steps = arr(it.steps).map((x) => ({ q: str(x.q), a: str(x.a) })).filter((x) => x.q && x.a); return steps.length ? { ...base, steps } : null; }
     return null;
   }).filter(Boolean);
 }
-const WX_LABEL = { explorer: "Explore", sort: "Sort it", order: "Put in order", timeline: "Timeline", scale: "To scale", case: "Case study" };
+const WX_LABEL = { sim: "Follow along", explorer: "Explore", sort: "Sort it", order: "Put in order", timeline: "Timeline", scale: "To scale", case: "Case study" };
 const fmtNum = (x, d) => (Number.isFinite(x) ? x.toLocaleString(undefined, { maximumFractionDigits: d, minimumFractionDigits: 0 }) : "—");
 const hashShuffle = (list, seed) => list.map((x, i) => ({ x, i, k: hashStr(seed + ":" + i) })).sort((a, b) => a.k - b.k).map((o) => o);
 function wxState(id, init) { return (S.wx[id] = S.wx[id] || init()); }
 function wxHTML(id, it) {
-  return `<div class="cbox k-lab wx" id="${esc(id)}"><div class="cbox-h"><span>${esc(WX_LABEL[it.type] || "Try it")}</span><span>Interactive</span></div><div class="cbox-b">
+  return `<div class="cbox k-lab wx" id="${esc(id)}"><div class="cbox-h"><span>${esc(WX_LABEL[it.type] || "Try it")}</span><span>${it.type === "sim" ? `In ${esc(it.app)}` : "Interactive"}</span></div><div class="cbox-b">
     <div class="h3">${esc(it.title)}</div>${it.intro ? `<p class="small muted">${fmt(it.intro)}</p>` : ""}<div class="wx-body">${wxBody(id, it)}</div></div></div>`;
 }
 function wxBody(id, it) {
@@ -1763,6 +1770,19 @@ function wxBody(id, it) {
         <div class="wx-track"><span style="width:${w(x.value).toFixed(2)}%"></span></div>${x.note ? `<div class="small muted">${fmt(x.note)}</div>` : ""}</div>`).join("")}</div>
       <div class="row"><button class="btn ghost sm" data-act="wx-log" data-wx="${esc(id)}">${st.log ? "Show linear scale" : "Show log scale"}</button>
         <span class="small muted">${st.log ? "Log scale: each step to the right is a multiple, not an addition." : `Linear scale: the largest is ${fmtNum(mx / mn, 0)} times the smallest.`}</span></div>`;
+  }
+  if (it.type === "sim") {
+    const st = wxState(id, () => ({ done: {}, pick: null }));
+    const all = it.steps.every((_, i) => st.done[i]);
+    const c = it.check;
+    return `${it.setup ? `<p class="small"><b>Before you start:</b> ${fmt(it.setup)}</p>` : ""}<ol class="wx-sim">${it.steps.map((x, i) => `<li class="${st.done[i] ? "ok" : ""}">
+        <button type="button" class="chip ${st.done[i] ? "on" : ""}" data-act="wx-simstep" data-wx="${esc(id)}" data-i="${i}" aria-pressed="${!!st.done[i]}">${st.done[i] ? "✓ Done" : "Mark done"}</button>
+        <span>${fmt(x.do)}</span>${st.done[i] && x.see ? `<p class="small muted"><b>You should see:</b> ${fmt(x.see)}</p>` : ""}</li>`).join("")}</ol>
+      ${all && it.notice ? `<p class="small"><b>Notice:</b> ${fmt(it.notice)}</p>` : ""}
+      ${all && c ? `<div class="wx-step"><p class="q">${fmt(c.q)}</p><div class="choices">${c.choices.map((t, j) => `<button type="button" class="choice ${st.pick === j ? (j === c.answer ? "ok" : "bad") : ""}" data-act="wx-simans" data-wx="${esc(id)}" data-j="${j}" ${st.pick != null ? "disabled" : ""}>${fmt(t)}</button>`).join("")}</div>
+        ${st.pick != null ? `<p class="verdict ${st.pick === c.answer ? "ok" : "bad"}">${st.pick === c.answer ? "Right." : `Not quite: ${fmt(c.choices[c.answer])}`}</p>${c.why ? `<p class="small">${fmt(c.why)}</p>` : ""}` : ""}</div>` : ""}
+      <p class="small muted">${esc(it.app)} is a separate app for Windows (on Steam); this guide works alongside the chapter, and the chapter stands on its own without it.</p>
+      ${Object.keys(st.done).length ? `<div><button class="linkbtn" data-act="wx-reset" data-wx="${esc(id)}">Start over</button></div>` : ""}`;
   }
   if (it.type === "case") {
     const st = wxState(id, () => ({ shown: 0 }));
@@ -2622,6 +2642,8 @@ document.addEventListener("click", (e) => {
     case "wx-order": S.wx[a.dataset.wx].picked.push(+a.dataset.k); wxPaint(a.dataset.wx); break;
     case "wx-tl": S.wx[a.dataset.wx].sel = +a.dataset.i; wxPaint(a.dataset.wx); break;
     case "wx-log": S.wx[a.dataset.wx].log = !S.wx[a.dataset.wx].log; wxPaint(a.dataset.wx); break;
+    case "wx-simstep": { const st = S.wx[a.dataset.wx]; const i = +a.dataset.i; if (st.done[i]) delete st.done[i]; else st.done[i] = true; wxPaint(a.dataset.wx); break; }
+    case "wx-simans": S.wx[a.dataset.wx].pick = +a.dataset.j; wxPaint(a.dataset.wx); break;
     case "wx-reveal": S.wx[a.dataset.wx].shown++; wxPaint(a.dataset.wx); break;
     case "wx-reset": delete S.wx[a.dataset.wx]; wxPaint(a.dataset.wx); break;
     case "go-transcript": go("transcript"); break;

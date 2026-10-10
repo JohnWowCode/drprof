@@ -59,3 +59,22 @@ Every item has `"type"`, `"section"` (e.g. "2.1"), `"title"`, `"intro"` (what to
 - **timeline**: `"unit": "million years ago"`, `"reverse": true` if larger numbers are earlier, `"events": [ { "t": 150, "label": "...", "detail": "..." } ]` (5-9).
 - **scale**: `"unit": "grams"`, `"log": true|false`, `"items": [ { "label": "...", "value": 2.0, "note": "..." } ]` (4-8, real values).
 - **case**: a think-then-reveal showcase. `"intro"` sets a real scenario; `"steps": [ { "q": "question to think about", "a": "the answer and reasoning" } ]` (2-4).
+
+### Follow-along in an outside app (`sim`)
+
+An optional extra beside the 2-4 interactives, for following the chapter inside a real program the
+reader runs (first: SpaceEngine for the Outer Space book). It never replaces an in-page interactive,
+and the chapter must make complete sense without it.
+
+```json
+{ "type": "sim", "section": "1.2", "app": "SpaceEngine", "title": "Watch a month of Moon phases in an hour",
+  "intro": "why this is worth doing in the simulator",
+  "setup": "what to have open first (optional)",
+  "steps": [ { "do": "one concrete action, naming the real menu, panel or key", "see": "what the reader should now see" } ],
+  "notice": "the takeaway once all steps are done",
+  "check": { "q": "question answered from what they saw", "choices": ["..", ".."], "answer": 0, "why": ".." } }
+```
+Rules: 3-8 steps. Every control, menu name and key must be verified against the app's own manual or
+documentation; where it cannot be verified, describe the goal in words ("open the search panel and find
+the Moon") instead of naming a key. Never claim the simulator is a source of fact; it illustrates what the
+chapter's cited sources say.
