@@ -43,25 +43,29 @@
             "n": 1,
             "citation": "Pennycuick, C. J. (2008). Modelling the flying bird (Theoretical Ecology Series, Vol. 5). Academic Press.",
             "kind": "book",
-            "supports": "The four forces, the lift equation, downwash, profile and induced drag, and the history of wind-tunnel studies of bird flight."
+            "supports": "The four forces, the lift equation, downwash, profile and induced drag, and the history of wind-tunnel studies of bird flight.",
+            "checked": true
           },
           {
             "n": 2,
             "citation": "Babinsky, H. (2003). How do wings work? Physics Education, 38(6), 497–503.",
             "kind": "article",
-            "supports": "Lift arises from the wing curving the airflow, which requires lower pressure above the wing; the equal-transit-time explanation is wrong."
+            "supports": "Lift arises from the wing curving the airflow, which requires lower pressure above the wing; the equal-transit-time explanation is wrong.",
+            "checked": true
           },
           {
             "n": 3,
             "citation": "Lee, S.-i., Kim, J., Park, H., Jabłoński, P. G., & Choi, H. (2015). The function of the alula in avian flight. Scientific Reports, 5, Article 9914. https://doi.org/10.1038/srep09914",
             "kind": "article",
-            "supports": "Wind-tunnel tests on magpie wings showing the alula raises lift, delays stall and acts as a vortex generator."
+            "supports": "Wind-tunnel tests on magpie wings showing the alula raises lift, delays stall and acts as a vortex generator.",
+            "checked": true
           },
           {
             "n": 4,
             "citation": "Lovette, I. J., & Fitzpatrick, J. W. (Eds.). (2016). Handbook of bird biology (3rd ed.). Wiley-Blackwell; Cornell Lab of Ornithology.",
             "kind": "book",
-            "supports": "Forces in flight and the structure and use of the alula."
+            "supports": "Forces in flight and the structure and use of the alula.",
+            "checked": true
           }
         ],
         "keyTerms": [
@@ -96,7 +100,7 @@
             "Take a bird of 350 grams, about the mass of a Rock Pigeon (*Columba livia*), with about 0.06 square meters of wing. Its weight is 0.35 kg × 9.81 m/s² ≈ 3.4 newtons.",
             "At an airspeed of 10 m/s, ½ × 1.225 × 10² ≈ 61 pascals. Multiplied by the wing area, 61 × 0.06 ≈ 3.7 newtons of lift for each unit of lift coefficient.",
             "To carry 3.4 newtons the bird needs a lift coefficient of 3.4 ÷ 3.7 ≈ 0.93, which a cambered wing at a moderate angle of attack can produce.",
-            "Now slow to 5 m/s. Speed halves, so lift at the same lift coefficient falls to a quarter: about 0.9 newtons. Holding its weight would take a lift coefficient near 3.7, far beyond what any wing can reach before it stalls.",
+            "Now slow to 5 m/s. Speed halves, so lift at the same lift coefficient falls to a quarter: about 0.9 newtons. Holding its weight would take a lift coefficient near 3.7, far beyond what a bird’s wing can reach in steady flight before it stalls.",
             "So at 5 m/s gliding is impossible. The bird must flap hard, as birds do at takeoff and landing, to make extra airflow over its wings."
           ],
           "takeaway": "Lift grows with the square of airspeed, so halving speed cuts lift to a quarter, which is why slow flight is the hardest flight."
@@ -153,31 +157,36 @@
             "n": 1,
             "citation": "Savile, D. B. O. (1957). Adaptive evolution in the avian wing. Evolution, 11(2), 212–224.",
             "kind": "article",
-            "supports": "The four wing types (elliptical, high-speed, high aspect ratio, slotted high-lift) and the birds that have them."
+            "supports": "The four wing types (elliptical, high-speed, high aspect ratio, slotted high-lift) and the birds that have them.",
+            "checked": true
           },
           {
             "n": 2,
             "citation": "Lovette, I. J., & Fitzpatrick, J. W. (Eds.). (2016). Handbook of bird biology (3rd ed.). Wiley-Blackwell; Cornell Lab of Ornithology.",
             "kind": "book",
-            "supports": "Aspect ratio, wing loading, the trade-offs of each wing type, and the wingspan of the Wandering Albatross."
+            "supports": "Aspect ratio, wing loading, the trade-offs of each wing type, and the wingspan of the Wandering Albatross.",
+            "checked": true
           },
           {
             "n": 3,
             "citation": "Sheard, C., Neate-Clegg, M. H. C., Alioravainen, N., Jones, S. E. I., Vincent, C., MacGregor, H. E. A., Bregman, T. P., Claramunt, S., & Tobias, J. A. (2020). Ecological drivers of global gradients in avian dispersal inferred from wing morphology. Nature Communications, 11, Article 2463. https://doi.org/10.1038/s41467-020-16313-6",
             "kind": "article",
-            "supports": "Hand-wing index for 10,338 species; more pointed wings in migrants and at high latitudes, rounder wings in territorial species."
+            "supports": "Hand-wing index for 10,338 species; more pointed wings in migrants and at high latitudes, rounder wings in territorial species.",
+            "checked": true
           },
           {
             "n": 4,
             "citation": "Hedenström, A., Norevik, G., Warfvinge, K., Andersson, A., Bäckman, J., & Åkesson, S. (2016). Annual 10-month aerial life phase in the common swift Apus apus. Current Biology, 26, 3066–3070.",
             "kind": "article",
-            "supports": "Common Swifts stay airborne for about ten months of the non-breeding period, landing for less than 1 percent of the time."
+            "supports": "Common Swifts stay airborne for about ten months of the non-breeding period, landing for less than 1 percent of the time.",
+            "checked": true
           },
           {
             "n": 5,
             "citation": "Sachs, G., Traugott, J., Nesterova, A. P., Dell’Omo, G., Kümmeth, F., Heidrich, W., Vyssotski, A. L., & Bonadonna, F. (2012). Flying at no mechanical energy cost: Disclosing the secret of wandering albatrosses. PLoS ONE, 7(9), Article e41449. https://doi.org/10.1371/journal.pone.0041449",
             "kind": "article",
-            "supports": "GPS tracking shows albatrosses gain energy from the wind by a repeated up-and-down curve adjusted to the wind."
+            "supports": "GPS tracking shows albatrosses gain energy from the wind by a repeated up-and-down curve adjusted to the wind.",
+            "checked": true
           }
         ],
         "keyTerms": [
@@ -269,37 +278,42 @@
             "n": 1,
             "citation": "Tobalske, B. W., Hedrick, T. L., Dial, K. P., & Biewener, A. A. (2003). Comparative power curves in bird flight. Nature, 421(6921), 363–366.",
             "kind": "article",
-            "supports": "Theory predicts a U-shaped power curve; muscle-force measurements gave a U-shaped curve in cockatiels, a shallower one in doves, after a nearly flat curve in magpies."
+            "supports": "Theory predicts a U-shaped power curve; muscle-force measurements gave a U-shaped curve in cockatiels, a shallower one in doves, after a nearly flat curve in magpies.",
+            "checked": true
           },
           {
             "n": 2,
             "citation": "Williams, H. J., Shepard, E. L. C., Holton, M. D., Alarcón, P. A. E., Wilson, R. P., & Lambertucci, S. A. (2020). Physical limits of flight performance in the heaviest soaring bird. Proceedings of the National Academy of Sciences, 117(30), 17884–17890.",
             "kind": "article",
-            "supports": "Andean Condors flapped for about 1 percent of more than 216 hours of flight, mostly at takeoff; one flew five hours and about 172 km without flapping."
+            "supports": "Andean Condors flapped for about 1 percent of more than 216 hours of flight, mostly at takeoff; one flew five hours and about 172 km without flapping.",
+            "checked": true
           },
           {
             "n": 3,
             "citation": "Weimerskirch, H., Guionnet, T., Martin, J., Shaffer, S. A., & Costa, D. P. (2000). Fast and fuel efficient? Optimal use of wind by flying albatrosses. Proceedings of the Royal Society of London. Series B: Biological Sciences, 267, 1869–1874.",
             "kind": "article",
-            "supports": "Heart rates of albatrosses flying with tail or side winds were close to resting levels; headwinds, takeoff and landing were costly."
+            "supports": "Heart rates of albatrosses flying with tail or side winds were close to resting levels; headwinds, takeoff and landing were costly.",
+            "checked": true
           },
           {
             "n": 4,
             "citation": "Gill, R. E., Jr., Tibbitts, T. L., Douglas, D. C., Handel, C. M., Mulcahy, D. M., Gottschalck, J. C., Warnock, N., McCaffery, B. J., Battley, P. F., & Piersma, T. (2009). Extreme endurance flights by landbirds crossing the Pacific Ocean: Ecological corridor rather than barrier? Proceedings of the Royal Society B: Biological Sciences, 276, 447–457. https://doi.org/10.1098/rspb.2008.1142",
             "kind": "article",
-            "supports": "Satellite-tracked Bar-tailed Godwits flew nonstop 8,117 to 11,680 km in about six to nine days along a wind-assisted route."
+            "supports": "Satellite-tracked Bar-tailed Godwits flew nonstop 8,117 to 11,680 km in about six to nine days along a wind-assisted route.",
+            "checked": true
           },
           {
             "n": 5,
             "citation": "Warrick, D. R., Tobalske, B. W., & Powers, D. R. (2005). Aerodynamics of the hovering hummingbird. Nature, 435(7045), 1094–1097.",
             "kind": "article",
-            "supports": "Hovering Rufous Hummingbirds get about 75 percent of weight support from the downstroke and 25 percent from the upstroke; other birds rely on the downstroke in slow flight."
+            "supports": "Hovering Rufous Hummingbirds get about 75 percent of weight support from the downstroke and 25 percent from the upstroke; other birds rely on the downstroke in slow flight.",
+            "checked": true
           }
         ],
         "keyTerms": [
           {
             "term": "Downstroke and upstroke",
-            "def": "The two halves of a wingbeat; in most birds the downstroke makes the lift and thrust while the upstroke repositions the wing."
+            "def": "The two halves of a wingbeat; in most birds the downstroke makes most of the lift and thrust while the upstroke mainly repositions the wing."
           },
           {
             "term": "Power curve",
@@ -353,7 +367,7 @@
           {
             "type": "short",
             "q": "A migrating songbird has a fixed amount of fat to burn and must cross a stretch of desert. Using the power curve in Figure 2.3, explain why it should fly a little faster than its minimum-power speed.",
-            "answer": "The minimum-power speed keeps the bird aloft for the longest time per unit of fuel, but the aim here is distance. Distance per unit of fuel depends on power divided by speed. Flying a little faster costs a little more power per second but covers ground faster, so each unit of fat carries the bird farther. That best speed is the maximum-range speed, where a line from the origin just touches the curve.",
+            "answer": "The minimum-power speed keeps the bird aloft for the longest time per unit of fuel, but the aim here is distance. Fuel burned per kilometer is power divided by speed, so distance per unit of fuel is speed divided by power. Flying a little faster costs a little more power per second but covers ground faster, so each unit of fat carries the bird farther. That best speed is the maximum-range speed, where a line from the origin just touches the curve.",
             "explanation": "Look for the distinction between time aloft (minimum power) and distance per unit of fuel (maximum range), and the idea that a modest increase in power buys a larger gain in speed."
           },
           {
@@ -377,39 +391,44 @@
           "Flight is enormously useful, and it is also expensive to keep. Flight muscles are large and costly to maintain, and a flying body limits how heavy a bird can become. Where flight stops paying for itself, birds lose it. Living flightless birds include the **ratites** (ostriches, rheas, the Emu, cassowaries and kiwis), the penguins, and a scattering of island species such as the Kakapo, a heavy, ground-dwelling parrot of New Zealand, and a number of rails [1, 2]. Each case is a natural experiment: it shows which parts of the flying body disappear when they are no longer needed, and which stay.",
           "The ratites show what happens when flight goes. As Chapter 1 showed, they have a flat sternum without a keel and small flight muscles. Their wings are reduced, in kiwis to stubs hidden in the plumage, and their feathers lack the hooked barbules that lock a vane into one surface, so ostrich plumes are soft and loose [1]. Ratites were long thought to share a single flightless ancestor that rode the pieces of the southern supercontinent Gondwana as it broke apart. DNA has overturned that idea. The tinamous of Central and South America, which can fly, sit inside the ratite family tree. In 2014 a team that recovered DNA from bones of the extinct elephant birds of Madagascar found that their closest relatives were the kiwis of New Zealand, not the ostriches of nearby Africa. The simplest explanation is that ratite ancestors could fly, spread across oceans, and lost flight several times over [3].",
           "Islands are where flight is lost most often. Where there are no rats, cats or other ground predators, a bird that walks risks little, and a bird that stops building big flight muscles saves energy. In 1994 Brian McNab showed that flightless island rails have unusually low resting metabolic rates, and that the rates fall as their flight muscles shrink; kiwis show the same pattern [2]. The smallest flightless bird alive, the Inaccessible Island Rail (*Atlantisia rogersi*), weighs about 40 grams, less than a chicken’s egg, and lives only on Inaccessible Island in the South Atlantic. Its DNA shows that its closest relatives are small rails of South America that can fly, and that its ancestor reached the island about 1.5 million years ago. It must have flown there, then lost the ability [4].",
-          "Flight can be lost quickly. The Galápagos Cormorant (*Phalacrocorax harrisi*, now often placed in the genus *Nannopterum*) is the only flightless species among about 40 cormorants, and it split from flying relatives within the last 2 million years. When Alejandro Burga and colleagues compared its genome with those of flying cormorants in 2017, they found changes in genes needed for the primary cilium, a tiny structure on cells that helps control skeletal growth. In people, faults in such genes cause conditions in which bones stop growing too early [5]. A small number of genetic changes, in other words, can shrink a wing.",
-          "Penguins took a different path. They gave up flight in air but kept a deep keel and powerful flight muscles, because they use their wings to fly underwater. McNab found that, unlike flightless rails, penguins do not have low metabolic rates, which fits their continued use of the wings for locomotion [2]. Loss of flight has a darker side, too. Many island flightless birds, from the Dodo of Mauritius, a giant relative of pigeons, to the moa of New Zealand, vanished after people arrived with the predators they brought. Chapter 8 returns to that story."
+          "Flight can be lost quickly. The Galápagos Cormorant (*Phalacrocorax harrisi*, now often placed in the genus *Nannopterum*) is the only flightless species among about 40 cormorants, and it split from flying relatives within the last 2 million years. When Alejandro Burga and colleagues compared its genome with those of flying cormorants in 2017, they found changes in genes needed for the primary cilium, a tiny structure on cells that helps control skeletal growth. In people, faults in such genes cause skeletal disorders, often with unusually short limbs [5]. A small number of genetic changes, in other words, can shrink a wing.",
+          "Penguins took a different path. They gave up flight in air but kept a deep keel and powerful flight muscles, because they use their wings to fly underwater. McNab found that, unlike flightless rails, penguins do not have low metabolic rates, which fits their continued use of the wings for locomotion [2]. Loss of flight has a darker side, too. Many island flightless birds, from the Dodo of Mauritius, a giant relative of pigeons, to the moa of New Zealand, vanished after people arrived, through hunting and the predators people brought. Chapter 8 returns to that story."
         ],
         "sources": [
           {
             "n": 1,
             "citation": "Lovette, I. J., & Fitzpatrick, J. W. (Eds.). (2016). Handbook of bird biology (3rd ed.). Wiley-Blackwell; Cornell Lab of Ornithology.",
             "kind": "book",
-            "supports": "The groups of flightless birds and the anatomy of ratites: flat sternum, reduced wings and loose feathers."
+            "supports": "The groups of flightless birds and the anatomy of ratites: flat sternum, reduced wings and loose feathers.",
+            "checked": true
           },
           {
             "n": 2,
-            "citation": "McNab, B. K. (1994). Energy conservation and the evolution of flightlessness in birds. The American Naturalist, 144(4). https://doi.org/10.1086/285697",
+            "citation": "McNab, B. K. (1994). Energy conservation and the evolution of flightlessness in birds. The American Naturalist, 144(4), 628–642. https://doi.org/10.1086/285697",
             "kind": "article",
-            "supports": "Flightless rails and kiwis have low basal metabolic rates linked to small flight muscles; penguins, which swim with their wings, do not; island rails repeatedly lost flight."
+            "supports": "Flightless rails and kiwis have low basal metabolic rates linked to small flight muscles; penguins, which swim with their wings, do not; island rails repeatedly lost flight.",
+            "checked": true
           },
           {
             "n": 3,
             "citation": "Mitchell, K. J., Llamas, B., Soubrier, J., Rawlence, N. J., Worthy, T. H., Wood, J., Lee, M. S. Y., & Cooper, A. (2014). Ancient DNA reveals elephant birds and kiwi are sister taxa and clarifies ratite bird evolution. Science, 344(6186), 898–900.",
             "kind": "article",
-            "supports": "Elephant birds are the closest relatives of kiwis; ratite lineages dispersed by flight and lost flight independently."
+            "supports": "Elephant birds are the closest relatives of kiwis; ratite lineages dispersed by flight and lost flight independently.",
+            "checked": true
           },
           {
             "n": 4,
             "citation": "Stervander, M., Ryan, P. G., Melo, M., & Hansson, B. (2019). The origin of the world’s smallest flightless bird, the Inaccessible Island Rail Atlantisia rogersi (Aves: Rallidae). Molecular Phylogenetics and Evolution, 130, 92–98.",
             "kind": "article",
-            "supports": "The Inaccessible Island Rail descends from flying South American rails and colonized the island about 1.5 million years ago."
+            "supports": "The Inaccessible Island Rail descends from flying South American rails and colonized the island about 1.5 million years ago.",
+            "checked": true
           },
           {
             "n": 5,
             "citation": "Burga, A., Wang, W., Ben-David, E., Wolf, P. C., Ramey, A. M., Verdugo, C., Lyons, K., Parker, P. G., & Kruglyak, L. (2017). A genetic signature of the evolution of loss of flight in the Galapagos cormorant. Science, 356(6341), Article eaal3345. https://doi.org/10.1126/science.aal3345",
             "kind": "article",
-            "supports": "The Galápagos Cormorant is the only flightless cormorant, diverged within 2 million years, and carries variants in cilia-related genes linked to skeletal growth."
+            "supports": "The Galápagos Cormorant is the only flightless cormorant, diverged within 2 million years, and carries variants in cilia-related genes linked to skeletal growth.",
+            "checked": true
           }
         ],
         "keyTerms": [
@@ -439,7 +458,7 @@
           "steps": [
             "The question: the rail cannot fly, yet it lives on a small volcanic island in the middle of the South Atlantic, far from any continent. When the species was described in 1923, its describer suggested its ancestors had walked there over land bridges since sunk beneath the sea.",
             "First clue: the island is volcanic and rose from the sea floor, so there is no geological sign of a land bridge to a continent.",
-            "Second clue: DNA places the rail among a group of small South American rails, all of which fly.",
+            "Second clue: DNA places the rail among small rails of the Americas; its closest living relative, the Dot-winged Crake of South America, can fly.",
             "Third clue: the DNA divergence dates its arrival to about 1.5 million years ago, long after the island formed, at least 3 million years ago.",
             "Conclusion: the ancestor flew, or was blown, across the ocean from South America and then lost flight on an island with no ground predators."
           ],
@@ -890,25 +909,29 @@
         "citation": "Lovette, I. J., & Fitzpatrick, J. W. (Eds.). (2016). Handbook of bird biology (3rd ed.). Wiley-Blackwell; Cornell Lab of Ornithology.",
         "kind": "book",
         "why": "The standard introductory text. Read its chapter on flight alongside sections 2.1 to 2.3.",
-        "pages": ""
+        "pages": "",
+        "checked": true
       },
       {
         "citation": "Babinsky, H. (2003). How do wings work? Physics Education, 38(6), 497–503.",
         "kind": "article",
         "why": "A short, clear explanation of lift by a Cambridge aerodynamicist, written for physics students, that takes apart the equal-transit-time story. Supports section 2.1.",
-        "pages": "497–503"
+        "pages": "497–503",
+        "checked": true
       },
       {
         "citation": "Pennycuick, C. J. (2008). Modelling the flying bird (Theoretical Ecology Series, Vol. 5). Academic Press.",
         "kind": "book",
         "why": "For readers who want the physics behind the power curve, wing loading and gliding, by the scientist who trained pigeons to fly in wind tunnels. Read the opening chapters.",
-        "pages": ""
+        "pages": "",
+        "checked": true
       },
       {
         "citation": "Williams, H. J., Shepard, E. L. C., Holton, M. D., Alarcón, P. A. E., Wilson, R. P., & Lambertucci, S. A. (2020). Physical limits of flight performance in the heaviest soaring bird. Proceedings of the National Academy of Sciences, 117(30), 17884–17890.",
         "kind": "article",
         "why": "An open-access study showing how wingbeat-logging tags revealed that condors almost never flap. Read the introduction and the figures for section 2.3.",
-        "pages": ""
+        "pages": "",
+        "checked": true
       }
     ],
     "videos": [
@@ -945,5 +968,76 @@
   },
   "prov": {
     "note": "Text, figures, practice, lecture and quiz hand-written in Claude Code by Claude (configured model claude-opus-5-5) from sources checked by web search, October 2026."
+  },
+  "review": {
+    "full": true,
+    "at": 1791600000000,
+    "by": "Researched and written with web-search verification; then fact-checked independently by a second agent using live web search (WebSearch; WebFetch could not resolve publisher hosts, so the full texts were checked through search-result abstracts and summaries), backed by expert review and recomputation of all arithmetic, explorer formulas and figure geometry; every answer key re-solved blind.",
+    "keysChecked": 16,
+    "keysAgreed": 16,
+    "keyFixes": [],
+    "corrections": [
+      {
+        "where": "2.4 sources [2]",
+        "before": "McNab, B. K. (1994). Energy conservation and the evolution of flightlessness in birds. The American Naturalist, 144(4). https://doi.org/10.1086/285697",
+        "after": "McNab, B. K. (1994). Energy conservation and the evolution of flightlessness in birds. The American Naturalist, 144(4), 628–642. https://doi.org/10.1086/285697",
+        "why": "The citation has no page range. Search confirmed the author, title, year, volume 144, issue 4 and DOI 10.1086/285697. The pages 628–642 come from the standard citation of this paper. The abstract supports the sentences it is cited for: flightless rails have low basal rates that fall as pectoral muscle mass falls, kiwis are included, and penguins and flightless ducks do not show the pattern.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "2.1 worked example step 4",
+        "before": "Holding its weight would take a lift coefficient near 3.7, far beyond what any wing can reach before it stalls.",
+        "after": "Holding its weight would take a lift coefficient near 3.7, far beyond what a bird’s wing can reach in steady flight before it stalls.",
+        "why": "The arithmetic is right: 3.43 N ÷ (0.5 × 1.225 × 25 × 0.06 = 0.92 N) ≈ 3.7. But 'any wing' goes too far. Aircraft wings with flaps and slats reach lift coefficients of about 3, and flapping wings can briefly go higher. A bird's wing in steady gliding stays well below this, at about 1.5 or less, which is why the explorer slider stops at 1.6.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "P2.3-1 model answer",
+        "before": "Distance per unit of fuel depends on power divided by speed.",
+        "after": "Fuel burned per kilometer is power divided by speed, so distance per unit of fuel is speed divided by power.",
+        "why": "As written, the sentence suggests distance per unit of fuel rises with power ÷ speed. In fact it rises with speed ÷ power, the inverse. A beginner could take away the wrong relationship. The rest of the answer, including the tangent from the origin, is correct.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "2.4 reading, paragraph 4",
+        "before": "In people, faults in such genes cause conditions in which bones stop growing too early [5].",
+        "after": "In people, faults in such genes cause skeletal disorders, often with unusually short limbs [5].",
+        "why": "Burga et al. (2017) tie the cormorant's variants to genes that cause human skeletal ciliopathies. These are marked by short limbs and other skeletal defects caused by faulty cartilage growth. 'Bones stop growing too early' describes a particular mechanism, premature growth-plate closure, that the source does not claim.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "2.4 worked example step 3 (second clue)",
+        "before": "Second clue: DNA places the rail among a group of small South American rails, all of which fly.",
+        "after": "Second clue: DNA places the rail among small rails of the Americas; its closest living relative, the Dot-winged Crake of South America, can fly.",
+        "why": "Stervander et al. (2019) found the closest relative is the Dot-winged Crake (Porzana/Laterallus spiloptera). The group also contains the Black Rail of North and South America and probably the Galápagos Crake, which is a weak, nearly flightless flier. 'All of which fly' and 'South American' are therefore not strictly true. The point the step makes, a flying close relative, still stands.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "2.4 reading, paragraph 5",
+        "before": "vanished after people arrived with the predators they brought",
+        "after": "vanished after people arrived, through hunting and the predators people brought",
+        "why": "Moa were driven extinct mainly by human hunting within about two centuries of Polynesian settlement, not mainly by introduced predators. The Dodo's decline also involved hunting along with introduced animals. As worded, the sentence names predators as the only cause.",
+        "severity": "imprecise",
+        "applied": true
+      },
+      {
+        "where": "2.3 key terms (Downstroke and upstroke)",
+        "before": "The two halves of a wingbeat; in most birds the downstroke makes the lift and thrust while the upstroke repositions the wing.",
+        "after": "The two halves of a wingbeat; in most birds the downstroke makes most of the lift and thrust while the upstroke mainly repositions the wing.",
+        "why": "The reading correctly limits the 'downstroke only' claim to slow flight, and Warrick et al. (2005) show hummingbirds get about 25 percent of support from the upstroke. In faster flight many birds also get some lift on the upstroke. The definition states as absolute what the reading presents as a slow-flight rule.",
+        "severity": "imprecise",
+        "applied": true
+      }
+    ],
+    "readingsRemoved": [],
+    "srcChecked": 19,
+    "srcWithdrawn": 0,
+    "summary": "The chapter is accurate. The hook (Hedenström et al. 2016, Current Biology 26, 3066–3070), Gill et al. 2009 (all ten authors, Proc R Soc B 276, 447–457, doi 10.1098/rspb.2008.1142), Weimerskirch et al. 2000, Williams et al. 2020, Lee et al. 2015 and the other citations check out. So do the four-force and glide geometry in figure 1 (lift is perpendicular to the path, L = W cos θ, D = W sin θ), the power-curve tangent in figure 3, the explorer formulas (a pigeon's minimum speed is 9.7 m/s, wing loading is in N/m²) and all 16 answer keys. The seven corrections are wording-level imprecisions: a missing page range for McNab 1994, an overstatement about 'any wing', an inverted fuel/distance phrase, and over-general statements about ciliopathies, the rail's relatives, moa extinction and the upstroke.",
+    "style": {}
   }
 }
