@@ -1,0 +1,293 @@
+{
+ "id": "quantum-physics-advanced-dp",
+ "v": 1,
+ "topic": "Quantum physics",
+ "level": "advanced",
+ "focus": "",
+ "length": "standard",
+ "code": "PHY 331",
+ "title": "Quantum Mechanics: From Atomic Spectra to Entanglement",
+ "department": "Department of Physics",
+ "description": "An upper-division course in quantum mechanics for readers with calculus, linear algebra and introductory physics. It follows Griffiths and Schroeter's Introduction to Quantum Mechanics (3rd ed.), with Shankar, Sakurai and Napolitano, and the Feynman Lectures Volume III as companions, and introduces every idea through the experiment that forced it. Readers solve the Schrödinger equation, work in Dirac notation, derive the hydrogen spectrum, handle spin and identical particles, and use approximation methods on real atoms. The last chapter covers entanglement and the Bell tests recognized by the 2022 Nobel Prize, presents the interpretations of quantum mechanics as an open debate, and prepares the reader for PHY 341, Particle Physics.",
+ "prerequisites": [
+  "Calculus through ordinary and partial differential equations (separation of variables)",
+  "Linear algebra: complex vectors, matrices, eigenvalues and eigenvectors",
+  "Introductory classical mechanics, waves, and electricity and magnetism",
+  "A modern physics survey is helpful but not required"
+ ],
+ "objectives": [
+  "Explain, with numbers, how blackbody radiation, the photoelectric effect, atomic spectra and electron diffraction forced quantum theory.",
+  "Use Dirac notation, Hermitian operators and commutators to compute measurement probabilities, expectation values and uncertainty relations.",
+  "Solve the Schrödinger equation for the standard one-dimensional potentials and interpret bound states, scattering and tunneling.",
+  "Derive the energy levels of hydrogen and predict its spectral lines to within the accuracy of the model.",
+  "Describe spin one-half with Pauli matrices, predict the outcomes of Stern-Gerlach sequences, add angular momenta, and apply the Pauli principle.",
+  "Apply perturbation theory and the variational principle to fine structure, the Zeeman effect, helium and atomic transitions.",
+  "Derive the CHSH form of Bell's inequality, compute the quantum prediction, and evaluate what a published Bell test does and does not establish.",
+  "Compare the main interpretations of quantum mechanics and say which questions experiments have settled and which remain open."
+ ],
+ "hours": 60,
+ "chapters": [
+  {
+   "title": "The Experimental Crisis",
+   "summary": "The measurements made between 1900 and 1927 that classical physics could not explain, and the quantum ideas they forced on physicists.",
+   "challenge": "From the measured wavelengths of the first four Balmer lines of hydrogen, find the Rydberg constant, then show where the Bohr model succeeds and name two facts it cannot explain.",
+   "sections": [
+    {
+     "title": "Blackbody radiation and Planck's quantum",
+     "summary": "The ultraviolet catastrophe, Planck's 1900 fit, and energy in steps of hν."
+    },
+    {
+     "title": "Light as particles: the photoelectric and Compton effects",
+     "summary": "Einstein's photons and Compton's X-ray scattering, with the numbers that convinced physicists."
+    },
+    {
+     "title": "Atomic spectra and the Bohr model",
+     "summary": "The sharp lines of hydrogen, Bohr's quantized orbits, and where the model breaks."
+    },
+    {
+     "title": "Matter as waves",
+     "summary": "De Broglie's wavelength, the Davisson-Germer experiment, and the double slit one particle at a time."
+    }
+   ]
+  },
+  {
+   "title": "Wave Functions and the Schrödinger Equation",
+   "summary": "The wave function, Born's rule and the Schrödinger equation, solved first for a particle confined in a box.",
+   "challenge": "For a particle in an infinite square well prepared in an equal superposition of its two lowest states, compute ⟨x⟩ as a function of time, find the period of its oscillation, and check the uncertainty principle at t = 0.",
+   "sections": [
+    {
+     "title": "The wave function and Born's rule",
+     "summary": "Probability densities, normalization, and the double slit read as a probability pattern."
+    },
+    {
+     "title": "The Schrödinger equation and stationary states",
+     "summary": "Separation of variables, energy eigenstates, and how superpositions change in time."
+    },
+    {
+     "title": "The infinite square well",
+     "summary": "The first solved problem: quantized energies, orthogonality and completeness."
+    },
+    {
+     "title": "Momentum, expectation values and uncertainty",
+     "summary": "Operators for observables, Ehrenfest's theorem, and the Heisenberg uncertainty principle."
+    }
+   ]
+  },
+  {
+   "title": "The Formalism: Hilbert Space and Dirac Notation",
+   "summary": "States as vectors, observables as operators, and the rules that turn them into predictions, illustrated on the Stern-Gerlach two-state system.",
+   "challenge": "Write the state of a spin one-half particle as a ket, compute the probabilities for a Stern-Gerlach measurement along an axis tilted by an angle θ, and verify the generalized uncertainty relation for two noncommuting spin components.",
+   "sections": [
+    {
+     "title": "State vectors, bras and kets",
+     "summary": "Hilbert space, inner products, and changing basis."
+    },
+    {
+     "title": "Observables and Hermitian operators",
+     "summary": "Eigenvalues as the possible results, eigenvectors, and completeness."
+    },
+    {
+     "title": "The measurement postulates",
+     "summary": "Born's rule in general form and the projection postulate, stated as rules of the theory and revisited in Chapter 8."
+    },
+    {
+     "title": "Time evolution and the generalized uncertainty principle",
+     "summary": "Unitary evolution, commutators, conserved quantities, and the energy-time relation."
+    }
+   ]
+  },
+  {
+   "title": "Potentials in One Dimension",
+   "summary": "The harmonic oscillator, the free particle, bound states and tunneling, solved with the tools of Chapter 3.",
+   "challenge": "Compute the transmission probability through a rectangular barrier and use it to explain why the current in a scanning tunneling microscope changes by roughly a factor of ten when the tip moves 0.1 nanometer.",
+   "sections": [
+    {
+     "title": "The harmonic oscillator and ladder operators",
+     "summary": "Energy levels from raising and lowering operators, and the vibrations of real molecules."
+    },
+    {
+     "title": "The free particle and wave packets",
+     "summary": "Plane waves, group velocity, and why a wave packet spreads."
+    },
+    {
+     "title": "Bound states in wells",
+     "summary": "The delta-function well and the finite square well, and how many bound states fit."
+    },
+    {
+     "title": "Scattering and tunneling",
+     "summary": "Reflection and transmission, alpha decay, and the scanning tunneling microscope."
+    }
+   ]
+  },
+  {
+   "title": "Angular Momentum and the Hydrogen Atom",
+   "summary": "The Schrödinger equation in three dimensions, quantized angular momentum, and the hydrogen spectrum derived from first principles.",
+   "challenge": "Predict the wavelengths of the first four Balmer lines from the energy levels you derived, compare them with the NIST Atomic Spectra Database, and explain the remaining differences (reduced mass, air versus vacuum wavelengths, fine structure).",
+   "sections": [
+    {
+     "title": "The Schrödinger equation in three dimensions",
+     "summary": "Separation in spherical coordinates and the radial equation."
+    },
+    {
+     "title": "Orbital angular momentum",
+     "summary": "Commutation relations, ladder operators, and spherical harmonics."
+    },
+    {
+     "title": "The hydrogen atom",
+     "summary": "Energy levels, degeneracy, and the shapes of the wave functions."
+    },
+    {
+     "title": "The hydrogen spectrum explained",
+     "summary": "The Lyman, Balmer and Paschen series, and why Bohr's energies came out right."
+    }
+   ]
+  },
+  {
+   "title": "Spin and Identical Particles",
+   "summary": "Spin one-half from the Stern-Gerlach experiment, the addition of angular momenta, and the symmetry rules that build the periodic table.",
+   "challenge": "Predict the beam intensities after three Stern-Gerlach magnets oriented along z, then x, then z, and explain why the third magnet splits the beam again.",
+   "sections": [
+    {
+     "title": "The Stern-Gerlach experiment",
+     "summary": "Silver atoms in a nonuniform magnetic field (Frankfurt, 1922), and why the result was understood as spin only after 1925."
+    },
+    {
+     "title": "Spin one-half as a two-state system",
+     "summary": "Spinors, Pauli matrices, sequential measurements, and spin precession in a magnetic field."
+    },
+    {
+     "title": "Adding angular momenta",
+     "summary": "Singlet and triplet states, and Clebsch-Gordan coefficients."
+    },
+    {
+     "title": "Identical particles",
+     "summary": "Bosons and fermions, the Pauli exclusion principle, helium, and the structure of the periodic table."
+    }
+   ]
+  },
+  {
+   "title": "Approximation Methods",
+   "summary": "Perturbation theory and the variational principle, used to explain the fine details of real atoms and how they absorb and emit light.",
+   "challenge": "Use the variational method with an effective nuclear charge to estimate the ground-state energy of helium, compare it with the measured value, and explain why your estimate must lie above it.",
+   "sections": [
+    {
+     "title": "Time-independent perturbation theory",
+     "summary": "First- and second-order corrections, and what changes when levels are degenerate."
+    },
+    {
+     "title": "Fine structure and the Zeeman effect",
+     "summary": "Relativistic and spin-orbit corrections to hydrogen, and atoms in magnetic fields."
+    },
+    {
+     "title": "The variational principle",
+     "summary": "Upper bounds on ground-state energies, applied to helium."
+    },
+    {
+     "title": "Time-dependent perturbation theory",
+     "summary": "Transitions, selection rules, spontaneous emission, and Fermi's Golden Rule."
+    }
+   ]
+  },
+  {
+   "title": "Measurement, Entanglement and Bell Tests",
+   "summary": "Entanglement, Bell's theorem and the experiments that tested it, ending with the measurement problem presented as an open debate.",
+   "challenge": "Compute the quantum prediction for the CHSH quantity S at the optimal analyzer angles, compare it with the 2015 Delft result S = 2.42 ± 0.20, and state precisely what that result rules out and what it leaves open.",
+   "sections": [
+    {
+     "title": "Entanglement and the EPR argument",
+     "summary": "Einstein, Podolsky and Rosen's 1935 challenge, and the spin singlet as the cleanest example."
+    },
+    {
+     "title": "Bell's theorem",
+     "summary": "Local hidden variables, the CHSH inequality, the quantum violation, and why entanglement cannot send signals."
+    },
+    {
+     "title": "Testing Bell: from Clauser and Aspect to loophole-free tests",
+     "summary": "Experiments from 1972 to 2015, the loopholes each one closed, and the 2022 Nobel Prize."
+    },
+    {
+     "title": "The measurement problem and its interpretations",
+     "summary": "Decoherence, Copenhagen, many worlds, pilot waves, collapse models and QBism, each in its own terms, as an open debate."
+    }
+   ]
+  }
+ ],
+ "written": {},
+ "createdAt": 1791694080000,
+ "createdBy": null,
+ "color": "#35306A",
+ "persona": "professor",
+ "engine": "default",
+ "preface": "In 1922, in a laboratory in Frankfurt, Otto Stern and Walther Gerlach sent a beam of silver atoms through a magnet and found the silver deposited on a glass plate in two separate traces. Classical physics predicted one smeared band. Results like that one, which would not go away however carefully they were repeated, are where this book begins, because quantum mechanics was not invented for its elegance. Experiments forced it on physicists who did not want it.\n\nThis book is for readers who know calculus, some linear algebra and introductory physics, and who want to do quantum mechanics, not only read about it. It follows Griffiths and Schroeter's Introduction to Quantum Mechanics, the standard upper-division text, and borrows from Shankar, from Sakurai and Napolitano, and from Feynman's Lectures wherever they explain something better. Every chapter works the same way: a measurement raises a question, the mathematics answers it, and the answer is checked against a number someone actually measured.\n\nFour experiments will keep coming back. The hydrogen spectrum is our first puzzle in Chapter 1 and our first great success in Chapter 5. The Stern-Gerlach magnet is the cleanest quantum measurement there is, and we use it to learn the formalism and then spin. The double slit, run one particle at a time, shows what a probability amplitude is. Pairs of entangled particles, first photons and then electron spins 1.3 kilometers apart, carry us to the Bell tests honored by the 2022 Nobel Prize.\n\nThe last chapter ends where physicists still argue: what a measurement is, and what the wave function describes. I will show you exactly what experiments have settled, set out the main interpretations fairly, and leave the open question open. If you go on to particle physics (PHY 341), everything here, from spin and angular momentum to perturbation theory and identical particles, is used from its first pages.",
+ "coverSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\"><g fill=\"none\" stroke=\"#FFFFFF\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"22\" y=\"176\" width=\"44\" height=\"48\" rx=\"8\" fill=\"#FFFFFF\" fill-opacity=\"0.18\" stroke-width=\"2.5\"/><path d=\"M96 168 L96 192 M96 208 L96 232\" stroke-width=\"3\"/><path d=\"M66 200 L66.9 200 L67.8 199.9 L68.8 199.9 L69.7 199.9 L70.6 199.9 L71.5 200.1 L72.5 200.3 L73.4 200.4 L74.3 200.5 L75.2 200.3 L76.2 200 L77.1 199.5 L78 199 L79 198.7 L79.9 198.8 L80.8 199.5 L81.7 200.7 L82.7 202 L83.6 203 L84.5 203 L85.4 201.9 L86.3 199.8 L87.3 197.1 L88.2 194.9 L89.1 194 L90 195.2 L91 198.4 L91.9 202.8 L92.8 206.9 L93.8 209.3 L94.7 208.7 L95.6 205 L96.5 199.2 L97.5 193 L98.4 188.8 L99.3 188 L100.2 191.2 L101.2 197.5 L102.1 204.7 L103 210.6 L103.9 212.9 L104.8 211.1 L105.8 205.7 L106.7 198.8 L107.6 192.5 L108.6 189.1 L109.5 189.3 L110.4 192.9 L111.3 198.3 L112.2 203.6 L113.2 207.2 L114.1 208 L115 206.3 L116 202.9 L116.9 199.2 L117.8 196.4 L118.7 195.3 L119.7 195.8 L120.6 197.4 L121.5 199.5 L122.4 201.2 L123.3 202.2 L124.3 202.2 L125.2 201.6 L126.1 200.7 L127.1 199.8 L128 199.2 L128.9 199.1 L129.8 199.3 L130.8 199.6 L131.7 199.9 L132.6 200.2 L133.5 200.3 L134.4 200.3 L135.4 200.2 L136.3 200.1 L137.2 200 L138.2 199.9 L139.1 199.9 L140 199.9\" stroke-width=\"2\" stroke-opacity=\"0.9\"/><path d=\"M66 200 L150 200\" stroke-width=\"1.5\" stroke-opacity=\"0.5\"/><path d=\"M140 104 L262 104 L262 158 L201 182 L140 158 Z\" fill=\"#FFFFFF\" fill-opacity=\"0.16\" stroke-width=\"2.5\"/><path d=\"M140 296 L262 296 L262 226 L226 226 L214 240 L188 240 L176 226 L140 226 Z\" fill=\"#FFFFFF\" fill-opacity=\"0.16\" stroke-width=\"2.5\"/><path d=\"M193.5 184 Q177.0 205 165.0 238\" stroke-width=\"1\" stroke-opacity=\"0.35\"/><path d=\"M197.5 184 Q189.8 205 184.2 238\" stroke-width=\"1\" stroke-opacity=\"0.35\"/><path d=\"M201.0 184 Q201.0 205 201.0 238\" stroke-width=\"1\" stroke-opacity=\"0.35\"/><path d=\"M204.5 184 Q212.2 205 217.8 238\" stroke-width=\"1\" stroke-opacity=\"0.35\"/><path d=\"M208.5 184 Q225.0 205 237.0 238\" stroke-width=\"1\" stroke-opacity=\"0.35\"/><path d=\"M150 200 C 222 200, 262 188, 344 126\" stroke-width=\"2.5\"/><path d=\"M150 200 C 222 200, 262 212, 344 274\" stroke-width=\"2.5\"/><path d=\"M336 70 L366 92 L366 330 L336 308 Z\" fill=\"#FFFFFF\" fill-opacity=\"0.08\" stroke-width=\"2\"/><path d=\"M340 122 C 346 112, 358 113, 362 124 C 357 134, 346 134, 340 122 Z\" fill=\"#FFFFFF\" fill-opacity=\"0.75\" stroke-width=\"1.5\"/><path d=\"M340 270 C 346 260, 358 261, 362 272 C 357 282, 346 282, 340 270 Z\" fill=\"#FFFFFF\" fill-opacity=\"0.75\" stroke-width=\"1.5\"/></g></svg>",
+ "bible": {
+  "teacher": "Dr. Professor teaches this book as a physicist who works at the blackboard and in the lab: each idea is introduced by the experiment that forced it, built into the formalism of Griffiths and Schroeter, and then tested against a measured number. Feynman's Volume III supplies the two-state-system viewpoint and the physical intuition; Shankar and Sakurai and Napolitano supply rigor and the deeper formal treatment where the reader is ready for it.",
+  "promise": "By the last page you will set up and solve the Schrödinger equation for real systems, use Dirac notation and approximation methods fluently, predict the hydrogen spectrum and any Stern-Gerlach sequence, and explain exactly what Bell tests prove and what they leave open.",
+  "threads": [
+   "Experiment first: every postulate is introduced by the measurement that forced it, with the place, year and numbers.",
+   "One formalism: states are vectors, observables are operators, probabilities are squared amplitudes; every chapter is that idea at work.",
+   "Exact solutions are rare; approximation and order-of-magnitude estimates are the working physicist's main tools.",
+   "Keep three things apart: what is measured, what the theory predicts, and what an interpretation adds.",
+   "This book is the foundation for PHY 341 (Particle Physics): spin, angular momentum, two-state systems, perturbation theory and identical particles all return there."
+  ],
+  "runningExamples": [
+   {
+    "name": "The hydrogen spectrum",
+    "use": "The Chapter 1 puzzle (Balmer lines and the Bohr model), solved exactly in Chapter 5, refined by fine structure and the Zeeman effect in Chapter 7, and the doorway to quantum electrodynamics (the Lamb shift) in PHY 341."
+   },
+   {
+    "name": "The Stern-Gerlach experiment (Frankfurt, 1922)",
+    "use": "The model quantum measurement: the two-state system that teaches the formalism in Chapter 3, spin one-half and sequential measurements in Chapter 6, and spin measurements in Bell tests in Chapter 8."
+   },
+   {
+    "name": "The double slit, one particle at a time",
+    "use": "An interference pattern built from single detections: wave-particle duality in Chapter 1, Born's rule in Chapter 2, superposition in Chapter 3, and which-path information and decoherence in Chapter 8."
+   },
+   {
+    "name": "Entangled pairs: Clauser's and Aspect's photons, and the Delft electron spins",
+    "use": "Photon polarization as a two-state system in Chapter 3, the spin singlet in Chapter 6, and the Bell tests from 1972 to the 2015 loophole-free experiments and the 2022 Nobel Prize in Chapter 8."
+   }
+  ],
+  "conventions": [
+   "Follow Griffiths and Schroeter's notation: Ψ(x, t) for the full wave function, ψ(x) for stationary states, ħ kept explicit; Dirac notation from Chapter 3 onward.",
+   "SI units, with electron volts for atomic energies and nanometers for wavelengths; physical constants from the current CODATA recommended values (NIST) and spectral lines from the NIST Atomic Spectra Database, with the source named.",
+   "Name the experimenters, place and year at an experiment's first mention in a chapter (for example, Stern and Gerlach, Frankfurt, 1922).",
+   "Label every claim as measurement, prediction or interpretation when the difference matters; no interpretation is presented as established fact.",
+   "\"Observer\" and \"measurement\" mean a physical interaction that leaves a record; never suggest that consciousness is required.",
+   "Show each worked calculation step by step with units, then check the answer by an order-of-magnitude estimate or a limiting case.",
+   "Point forward to PHY 341 by chapter where an idea returns in particle physics (for example, Fermi's Golden Rule, or neutrino oscillation as a two-state system)."
+  ],
+  "canon": [
+   {
+    "cite": "Griffiths, D. J., & Schroeter, D. F. (2018). Introduction to quantum mechanics (3rd ed.). Cambridge University Press.",
+    "role": "The main text: level, pace, notation and the order of topics; most worked examples and challenges are modeled on its problems."
+   },
+   {
+    "cite": "Shankar, R. (1994). Principles of quantum mechanics (2nd ed.). Plenum Press.",
+    "role": "Companion for the mathematical formalism (Chapter 3): Hilbert space, Dirac notation and operators, developed more fully than in Griffiths and Schroeter."
+   },
+   {
+    "cite": "Sakurai, J. J., & Napolitano, J. (2020). Modern quantum mechanics (3rd ed.). Cambridge University Press.",
+    "role": "Graduate-level companion: Stern-Gerlach as the entry to the formalism, angular momentum, and the deeper treatment of symmetry, for readers who want more."
+   },
+   {
+    "cite": "Feynman, R. P., Leighton, R. B., & Sands, M. (2010). The Feynman lectures on physics, Vol. III: Quantum mechanics (New millennium ed.). Basic Books.",
+    "role": "Physical intuition: amplitudes, the double slit and two-state systems (first published 1965); used for explanations, not for notation."
+   },
+   {
+    "cite": "Hensen, B., et al. (2015). Loophole-free Bell inequality violation using electron spins separated by 1.3 kilometres. Nature, 526(7575), 682.",
+    "role": "Primary source for Chapter 8: the Delft event-ready Bell test (CHSH value S = 2.42 ± 0.20) that closed the detection and locality loopholes in one experiment."
+   },
+   {
+    "cite": "Royal Swedish Academy of Sciences. (2022). The Nobel Prize in Physics 2022 [Press release]. NobelPrize.org.",
+    "role": "The prize to Alain Aspect, John F. Clauser and Anton Zeilinger and its official citation; the authoritative short account of what each laureate's experiments showed."
+   }
+  ],
+  "care": "Quantum mechanics is widely misused in popular culture (\"quantum healing\", claims that consciousness creates reality). State plainly, where relevant, that measurement in standard physics does not require a conscious observer, that entanglement cannot be used to send signals faster than light (the no-signaling theorem), and that the uncertainty principle is a property of quantum states, not of clumsy instruments. The interpretation of quantum mechanics is a genuine open debate among physicists and philosophers: present Copenhagen, many worlds, Bohmian (pilot-wave) mechanics, objective-collapse models and QBism fairly, each in its own terms and with its strongest case, note that the standard versions agree on all experiments done so far while collapse models are testable in principle, and do not declare a winner."
+ },
+ "prov": {
+  "note": "Course plan written in Claude Code by Claude research agents, October 2026; canon editions verified by web search.",
+  "requester": "John",
+  "v": "dp-0.5"
+ }
+}
