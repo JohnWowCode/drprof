@@ -1,0 +1,289 @@
+{
+ "id": "personal-wealth-beginner-dp",
+ "v": 1,
+ "topic": "Building personal wealth",
+ "level": "beginner",
+ "focus": "",
+ "length": "standard",
+ "code": "FIN 101",
+ "title": "How to Get Rich (Slowly, and for Real): What the Evidence Says About Building Wealth",
+ "department": "Department of Economics and Finance",
+ "description": "The reader asked how to get rich; this course answers with what the evidence supports. It covers the things that reliably build wealth over a lifetime: earning more through skills and career choices, spending less than you earn, letting compound growth work for decades, avoiding expensive debt, and owning low-cost diversified index funds instead of trying to pick winners. It also looks squarely at the get-rich stories (stock tips, trading, crypto, startup fortunes), how often they work out, and how to spot scams. Examples use US accounts and tax rules, and the course is education, not personal financial advice.",
+ "prerequisites": [
+  "Arithmetic with percentages",
+  "No finance background needed"
+ ],
+ "objectives": [
+  "Calculate net worth, savings rate and compound growth, and explain how time, return, contributions and fees each change the result.",
+  "Build a monthly budget with a savings target and an emergency fund goal.",
+  "Compare debts by APR, compute the interest cost of minimum payments, and rank debts for payoff.",
+  "Explain, using SPIVA data and cost arithmetic, why most actively managed funds trail their benchmark index over long periods.",
+  "Describe risk, diversification and asset allocation, and choose a stock and bond mix for a goal and time horizon.",
+  "Explain how US tax-advantaged accounts (401(k), traditional and Roth IRA, HSA) work, using the current year's IRS limits.",
+  "Identify investment fraud warning signs and survivorship bias in success stories."
+ ],
+ "hours": 32,
+ "chapters": [
+  {
+   "title": "How Wealth Is Built",
+   "summary": "Net worth, the wealth equation, and income: the biggest lever most people have early on.",
+   "challenge": "Calculate your net worth and last month's savings rate (or a sample person's), and look up the pay range for a job you want in Bureau of Labor Statistics data.",
+   "sections": [
+    {
+     "title": "Income versus net worth",
+     "summary": "What you own minus what you owe, and why a high earner can still be broke."
+    },
+    {
+     "title": "The wealth equation",
+     "summary": "Earn, keep the gap between earning and spending, invest it, and give it time."
+    },
+    {
+     "title": "What studies of millionaires found",
+     "summary": "Stanley and Danko's surveys of US millionaires in the 1990s, and the limits of their data."
+    },
+    {
+     "title": "Raising your income",
+     "summary": "Skills, education, career capital and negotiating pay, and what earnings data show."
+    }
+   ]
+  },
+  {
+   "title": "Spending and Saving",
+   "summary": "Spending less than you earn on purpose, and building a cushion before anything else.",
+   "challenge": "Track every expense for two weeks, then set up one automatic transfer to savings and write down your emergency fund target.",
+   "sections": [
+    {
+     "title": "Where money goes",
+     "summary": "Tracking spending, and the big three: housing, transportation and food."
+    },
+    {
+     "title": "Budgets that work",
+     "summary": "Simple methods: pay yourself first and automate it."
+    },
+    {
+     "title": "Emergency funds",
+     "summary": "Why a cash cushion comes before investing, and how big to make it."
+    },
+    {
+     "title": "Lifestyle creep and enough",
+     "summary": "How spending rises with income, and Housel's idea of enough."
+    }
+   ]
+  },
+  {
+   "title": "Compound Growth",
+   "summary": "How money grows on its own growth, why time matters most, and why inflation and fees matter too.",
+   "challenge": "Use the compound-growth explorer, or Investor.gov's Compound Interest Calculator, to compare three savers who start at different ages, and write what you notice.",
+   "sections": [
+    {
+     "title": "Simple and compound interest",
+     "summary": "The formula, worked step by step with units."
+    },
+    {
+     "title": "Time, rate and contributions",
+     "summary": "Starting at 25 versus 35, and the Rule of 72."
+    },
+    {
+     "title": "Inflation and real returns",
+     "summary": "Why long projections must be measured in today's dollars."
+    },
+    {
+     "title": "Fees compound too",
+     "summary": "How a 1 percent annual fee grows into a large share of the final balance over decades."
+    }
+   ]
+  },
+  {
+   "title": "Debt",
+   "summary": "How interest works against you, which debts are dangerous, and how to get out.",
+   "challenge": "List a set of debts (yours or a sample) with balances and APRs, and compute the total interest under avalanche and snowball payoff plans.",
+   "sections": [
+    {
+     "title": "APR and the cost of borrowing",
+     "summary": "Credit cards, car loans, student loans and mortgages compared."
+    },
+    {
+     "title": "Credit cards and minimum payments",
+     "summary": "Why paying only the minimum can take years and cost more than the original purchase."
+    },
+    {
+     "title": "Payoff strategies",
+     "summary": "Highest rate first (avalanche) versus smallest balance first (snowball), with the evidence on each."
+    },
+    {
+     "title": "Predatory lending and credit scores",
+     "summary": "Payday loans, buy now pay later, and how credit scores work."
+    }
+   ]
+  },
+  {
+   "title": "Index Funds Versus Picking Winners",
+   "summary": "What stocks, bonds and funds are, and what decades of data show about trying to beat the market.",
+   "challenge": "Compute what $10,000 grows to over 30 years at a 6 percent annual return before fees, in a fund charging 0.05 percent and in one charging 1 percent, and explain the gap.",
+   "sections": [
+    {
+     "title": "Stocks, bonds and funds",
+     "summary": "Owning part of a company, lending money, and pooling both in mutual funds and ETFs."
+    },
+    {
+     "title": "The evidence on active management",
+     "summary": "SPIVA scorecards: most active funds trail their benchmark, and the share grows with time."
+    },
+    {
+     "title": "Costs matter",
+     "summary": "Bogle's arithmetic: investors as a group earn the market's return minus costs."
+    },
+    {
+     "title": "Why picking and trading tempt us",
+     "summary": "Overconfidence, short runs of luck, and the random walk."
+    }
+   ]
+  },
+  {
+   "title": "Risk and Diversification",
+   "summary": "Why higher expected returns come with bigger falls, how spreading money out reduces risk, and choosing a mix for your timeline.",
+   "challenge": "Pick a goal and a date, choose a stock and bond mix for it, and write what you will do if it falls 30 percent in a year.",
+   "sections": [
+    {
+     "title": "Risk and return",
+     "summary": "Volatility, drawdowns, and why no investment is risk-free."
+    },
+    {
+     "title": "Diversification",
+     "summary": "Owning many companies, countries and asset types, and what diversification cannot do."
+    },
+    {
+     "title": "Asset allocation and time horizon",
+     "summary": "Stock and bond mixes by goal and age, and target-date funds."
+    },
+    {
+     "title": "Staying the course",
+     "summary": "Panic selling, market timing, and the gap between fund returns and investor returns."
+    }
+   ]
+  },
+  {
+   "title": "Taxes and Retirement Accounts (US)",
+   "summary": "How US tax-advantaged accounts work, and why the account can matter as much as the investment.",
+   "challenge": "Using this year's IRS limits, sketch how a person earning $50,000 a year might split savings across accounts, and list the questions you would check with the IRS or a fee-only adviser.",
+   "sections": [
+    {
+     "title": "How income tax works",
+     "summary": "Brackets, marginal versus average rates, and capital gains."
+    },
+    {
+     "title": "Workplace plans and the employer match",
+     "summary": "401(k) and similar plans: pre-tax and Roth contributions, matches and vesting."
+    },
+    {
+     "title": "IRAs, Roth IRAs and HSAs",
+     "summary": "Who can use them, this year's contribution limits, and withdrawal rules."
+    },
+    {
+     "title": "Putting it in order",
+     "summary": "A common sequence (emergency fund, employer match, high-interest debt, more saving) and when to get professional help."
+    }
+   ]
+  },
+  {
+   "title": "Business, Equity and Get-Rich Stories",
+   "summary": "Starting a business and owning equity as real but risky routes to wealth, and how survivorship bias and scams distort the picture.",
+   "challenge": "Take one get-rich pitch from social media and write a one-page analysis: who is missing from the story, what the base rate is, and which scam warning signs it shows.",
+   "sections": [
+    {
+     "title": "Starting a business",
+     "summary": "How many new businesses survive (Bureau of Labor Statistics data), and typical owner earnings versus the famous few."
+    },
+    {
+     "title": "Equity and stock options",
+     "summary": "How startup equity works, dilution, and why its value is uncertain until a sale."
+    },
+    {
+     "title": "Survivorship bias",
+     "summary": "Why stories of winners (traders, crypto buyers, dropout founders) leave out the many who lost."
+    },
+    {
+     "title": "Spotting scams",
+     "summary": "Guaranteed returns, pressure and unregistered sellers: the SEC's warning signs and how to check who you are dealing with."
+    }
+   ]
+  }
+ ],
+ "written": {},
+ "createdAt": 1791760120000,
+ "createdBy": null,
+ "color": "#6B5414",
+ "persona": "professor",
+ "engine": "default",
+ "preface": "You asked how to get rich. Here is the honest answer, and it is better news than it sounds: most people who build real wealth do it in ordinary ways that you can copy. They earn a decent income and grow it, spend less than they earn, avoid expensive debt, and put the difference into low-cost, diversified investments for a long time. Nothing on that list needs luck, a secret or a guru.\n\nWhat this book will not do is promise you a shortcut. We will look closely at the shortcuts people sell (stock tips, day trading, the next coin, the dropout founder) and ask the question their stories skip: out of everyone who tried, how many won? Some did, and we will say how. We will also learn to recognize the scams that dress up as shortcuts.\n\nEach chapter does the math with you. You will follow three savers who start at different ages and watch what time, fees and debt do to them, and you can move the sliders yourself in the compound-growth explorer. The examples use US accounts and taxes, and every rule that changes each year comes with its date. This is education, not advice about your own money; by the end you will know enough to make your own decisions, and to know when to ask a professional.",
+ "coverSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\"><g fill=\"none\" stroke=\"#FFFFFF\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><g transform=\"translate(0 -36)\"><path d=\"M158 334 L158 310 A20 7 0 0 1 198 310 L198 334 A20 7 0 0 1 158 334 Z\" fill=\"#FFFFFF\" fill-opacity=\"0.14\" stroke=\"none\"/><path d=\"M158 334 A20 7 0 0 0 198 334\" stroke-width=\"2\"/><path d=\"M158 322 A20 7 0 0 0 198 322\" stroke-width=\"2\"/><path d=\"M158 334 L158 310 M198 334 L198 310\" stroke-width=\"2\"/><ellipse cx=\"178\" cy=\"310\" rx=\"20\" ry=\"7\" fill=\"#FFFFFF\" fill-opacity=\"0.3\" stroke-width=\"2\"/><path d=\"M206 334 L206 298 A20 7 0 0 1 246 298 L246 334 A20 7 0 0 1 206 334 Z\" fill=\"#FFFFFF\" fill-opacity=\"0.14\" stroke=\"none\"/><path d=\"M206 334 A20 7 0 0 0 246 334\" stroke-width=\"2\"/><path d=\"M206 322 A20 7 0 0 0 246 322\" stroke-width=\"2\"/><path d=\"M206 310 A20 7 0 0 0 246 310\" stroke-width=\"2\"/><path d=\"M206 334 L206 298 M246 334 L246 298\" stroke-width=\"2\"/><ellipse cx=\"226\" cy=\"298\" rx=\"20\" ry=\"7\" fill=\"#FFFFFF\" fill-opacity=\"0.3\" stroke-width=\"2\"/><path d=\"M254 334 L254 274 A20 7 0 0 1 294 274 L294 334 A20 7 0 0 1 254 334 Z\" fill=\"#FFFFFF\" fill-opacity=\"0.14\" stroke=\"none\"/><path d=\"M254 334 A20 7 0 0 0 294 334\" stroke-width=\"2\"/><path d=\"M254 322 A20 7 0 0 0 294 322\" stroke-width=\"2\"/><path d=\"M254 310 A20 7 0 0 0 294 310\" stroke-width=\"2\"/><path d=\"M254 298 A20 7 0 0 0 294 298\" stroke-width=\"2\"/><path d=\"M254 286 A20 7 0 0 0 294 286\" stroke-width=\"2\"/><path d=\"M254 334 L254 274 M294 334 L294 274\" stroke-width=\"2\"/><ellipse cx=\"274\" cy=\"274\" rx=\"20\" ry=\"7\" fill=\"#FFFFFF\" fill-opacity=\"0.3\" stroke-width=\"2\"/><path d=\"M302 334 L302 238 A20 7 0 0 1 342 238 L342 334 A20 7 0 0 1 302 334 Z\" fill=\"#FFFFFF\" fill-opacity=\"0.14\" stroke=\"none\"/><path d=\"M302 334 A20 7 0 0 0 342 334\" stroke-width=\"2\"/><path d=\"M302 322 A20 7 0 0 0 342 322\" stroke-width=\"2\"/><path d=\"M302 310 A20 7 0 0 0 342 310\" stroke-width=\"2\"/><path d=\"M302 298 A20 7 0 0 0 342 298\" stroke-width=\"2\"/><path d=\"M302 286 A20 7 0 0 0 342 286\" stroke-width=\"2\"/><path d=\"M302 274 A20 7 0 0 0 342 274\" stroke-width=\"2\"/><path d=\"M302 262 A20 7 0 0 0 342 262\" stroke-width=\"2\"/><path d=\"M302 250 A20 7 0 0 0 342 250\" stroke-width=\"2\"/><path d=\"M302 334 L302 238 M342 334 L342 238\" stroke-width=\"2\"/><ellipse cx=\"322\" cy=\"238\" rx=\"20\" ry=\"7\" fill=\"#FFFFFF\" fill-opacity=\"0.3\" stroke-width=\"2\"/><path d=\"M60 268 C 170 262, 270 226, 344 104\" stroke-width=\"3\"/><path d=\"M344 104 L326 112 M344 104 L346 124\" stroke-width=\"3\"/><path d=\"M52 334 C 54 300, 120 296, 124 334 Z\" fill=\"#FFFFFF\" fill-opacity=\"0.2\" stroke-width=\"2.5\"/><path d=\"M72 330 L80 308 L98 306 L106 330 M80 308 L88 300 L98 306\" stroke-width=\"1.5\" stroke-opacity=\"0.75\"/><path d=\"M122 326 C 132 318, 142 316, 146 324 C 148 330, 138 334, 124 333\" fill=\"#FFFFFF\" fill-opacity=\"0.2\" stroke-width=\"2.5\"/><path d=\"M64 334 L60 346 M112 334 L116 346 M52 330 L42 334\" stroke-width=\"2.5\"/><circle cx=\"139\" cy=\"323\" r=\"1.6\" fill=\"#FFFFFF\" stroke=\"none\"/><path d=\"M30 348 L370 348\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/></g></g></svg>",
+ "bible": {
+  "teacher": "Dr. Professor teaches this book as an economist who teaches personal finance from evidence: index-fund cost arithmetic (Bogle), research on market efficiency (Malkiel), SPIVA scorecards, regulators' guidance (SEC, FINRA, CFPB, IRS), and behavioral finance, with every number dated and every calculation shown.",
+  "promise": "By the last page you will know how wealth is actually built, be able to run the numbers on saving, debt and investing yourself, choose low-cost diversified investments with your eyes open, and recognize a scam or a survivorship story when you see one.",
+  "threads": [
+   "The wealth equation: earn, spend less than you earn, invest the gap, and give it time.",
+   "Control what you can: costs, taxes, debt and your own behavior; returns are not yours to control.",
+   "Possible versus likely: every get-rich route is judged by its base rate, not its best story.",
+   "Show the math: every claim about growth, debt or fees comes with a worked calculation.",
+   "Education, not advice: general principles, no specific securities, and clear signs for when to see a professional."
+  ],
+  "runningExamples": [
+   {
+    "name": "Three savers: Ana, Ben and Cal",
+    "use": "Hypothetical people who start saving at 25, 35 and 45 with different savings rates, fees and debts; used for compound growth, debt payoff, fees and account choices."
+   },
+   {
+    "name": "The compound-growth explorer",
+    "use": "Sliders for starting amount, monthly contribution, annual return, years and annual fee, used from Chapter 3 on; results cross-checked with Investor.gov's Compound Interest Calculator."
+   },
+   {
+    "name": "The reader's own numbers",
+    "use": "Optional and private: a net worth sheet, budget and debt list the reader builds in Chapters 1 to 4 and reuses later. Sample numbers are given for readers who prefer not to use their own."
+   },
+   {
+    "name": "A get-rich pitch",
+    "use": "A typical pitch (a trading course, a new coin, a dropout founder's story) taken apart in Chapter 8 for survivorship bias, base rates and scam warning signs."
+   }
+  ],
+  "conventions": [
+   "US dollars, US accounts, taxes and agencies (IRS, SEC, FINRA, CFPB), stated as US-specific; readers elsewhere are told to look up local equivalents.",
+   "Date every number that changes (contribution limits, tax brackets, SPIVA results, interest rates) with its year and source.",
+   "Use real (after-inflation) returns for long projections and say which rate is used; never promise a return.",
+   "Never name a specific stock, fund, crypto asset or company as something to buy; use fund types and hypothetical numbers.",
+   "Mark popular books (Housel; Stanley and Danko) as popular and state the limits of their evidence.",
+   "Show every calculation step with units (dollars, percent per year)."
+  ],
+  "canon": [
+   {
+    "cite": "Bogle, J. C. (2017). The little book of common sense investing: The only way to guarantee your fair share of stock market returns (10th anniversary ed.). Wiley.",
+    "role": "The case for low-cost broad index funds: the cost-matters arithmetic and long-run returns, plus chapters on asset allocation and retirement; Chapters 3, 5 and 6."
+   },
+   {
+    "cite": "Malkiel, B. G. (2023). A random walk down Wall Street (13th ed., 50th anniversary ed.). W. W. Norton.",
+    "role": "Standard account of market efficiency, the evidence on active management, bubbles from tulips to crypto, and a life-cycle guide to asset allocation; Chapters 5 and 6."
+   },
+   {
+    "cite": "S&P Dow Jones Indices. (2026). SPIVA U.S. scorecard: Year-end 2025. S&P Global.",
+    "role": "Primary data on how actively managed US funds compare with their benchmarks over 1 to 20 years; Chapter 5. Writers use the latest scorecard and quote its exact figures."
+   },
+   {
+    "cite": "Housel, M. (2020). The psychology of money: Timeless lessons on wealth, greed, and happiness. Harriman House.",
+    "role": "Popular book, not research: behavior, enough, room for error, luck and risk, and patience; Chapters 2 and 6, labeled as popular."
+   },
+   {
+    "cite": "Stanley, T. J., & Danko, W. D. (1996). The millionaire next door: The surprising secrets of America's wealthy. Longstreet Press.",
+    "role": "Popular book based on 1990s surveys of US millionaires: frugality and the gap between income and net worth; Chapter 1, with its limits stated (survey sample, era, survivorship)."
+   },
+   {
+    "cite": "U.S. Securities and Exchange Commission. (n.d.). Investor.gov: Compound interest calculator, investing basics and fraud warnings. Retrieved October 2026, from https://www.investor.gov",
+    "role": "Official investor education: the Compound Interest Calculator and Rule of 72 (Chapter 3), fees and fund basics (Chapter 5), and fraud warning signs (Chapter 8)."
+   }
+  ],
+  "care": "Education, not personal financial advice: teach principles and arithmetic, never recommend a specific stock, fund, crypto asset or adviser, and say when to consult the IRS or a qualified fee-only professional. US-focused: accounts, tax rules and agencies are American, and limits and brackets change every year, so give the year and point to IRS.gov. State the safe rules plainly in the relevant chapters: keep an emergency fund and pay off high-interest debt before investing; no investment is risk-free; anyone promising guaranteed high returns is a warning sign; check sellers on FINRA BrokerCheck and the SEC's adviser search; never send money to someone met online or by message who offers investments; most people in multilevel marketing schemes earn little or lose money. Treat get-rich stories fairly and without mockery: some people do become rich through business, equity and investing, and the book says how, alongside the base rates."
+ },
+ "prov": {
+  "note": "Course plan written in Claude Code by Claude research agents, October 2026; canon editions verified by web search.",
+  "requester": "John",
+  "v": "dp-0.5"
+ }
+}

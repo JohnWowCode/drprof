@@ -1,0 +1,285 @@
+{
+ "id": "ancient-aliens-beginner-dp",
+ "v": 1,
+ "topic": "Ancient aliens: the claims and the archaeological evidence",
+ "level": "beginner",
+ "focus": "",
+ "length": "standard",
+ "code": "ARC 101",
+ "title": "Ancient Aliens: The Claims, the Evidence, and the People Who Really Built the Ancient World",
+ "department": "Department of Anthropology, Archaeology Program",
+ "description": "An introduction to the ancient-astronaut idea for curious readers with no background in archaeology. The book takes the famous claims seriously enough to test them: where the idea came from, what is said about Giza, the Nazca lines, Puma Punku, the moai of Rapa Nui, Palenque and Baalbek, and what excavation, dating and experiment have actually found at each site. It does not teach that aliens built these places, because the evidence shows, site by site, that people did; instead it names those people and shows how they did it. Along the way you learn how archaeologists date and read evidence, and a fair method for weighing any extraordinary claim.",
+ "prerequisites": [],
+ "objectives": [
+  "Trace the ancient-astronaut idea from its earlier roots through Erich von Däniken's 1968 bestseller to modern television, and state its core claims fairly.",
+  "Explain how archaeologists date a site and read its evidence, using context, stratigraphy, radiocarbon dating, inscriptions and tool marks.",
+  "For Giza, the Nazca lines, Puma Punku, Baalbek, the moai and the Palenque tomb lid, state the ancient-astronaut claim and summarize the evidence for who made each and how.",
+  "Describe how experimental archaeology tests ancient methods, using the moai-walking experiment and the 3D-printed reconstruction of Puma Punku as examples.",
+  "Apply a six-question checklist (claim, source, burden of proof, testability, simplest sufficient explanation, expert evidence) to a claim you have not seen before.",
+  "Explain how ancient-astronaut claims take credit away from real ancient peoples, and why that matters to their descendants.",
+  "Follow a claim about the ancient past back to an excavation report, museum record or peer-reviewed study."
+ ],
+ "hours": 32,
+ "chapters": [
+  {
+   "title": "Where the Ancient Astronaut Idea Came From",
+   "summary": "The idea's earlier roots, Erich von Däniken's 1968 bestseller, and how the claims spread from paperbacks to television and the internet.",
+   "challenge": "Pick one ancient-astronaut claim from a book, video or post and trace it back to the earliest source you can find; record it on your first claim card.",
+   "sections": [
+    {
+     "title": "Before von Däniken",
+     "summary": "Earlier roots in occult writing, pulp science fiction and Pauwels and Bergier's The Morning of the Magicians."
+    },
+    {
+     "title": "Chariots of the Gods?",
+     "summary": "Von Däniken's 1968 book (in English in 1969 and 1970), how a reworked manuscript became a bestseller, and how its argument works."
+    },
+    {
+     "title": "From paperback to television",
+     "summary": "How the claims spread through sequels, documentaries, cable television and the internet, including Zecharia Sitchin's Anunnaki (taught in ANE 101)."
+    },
+    {
+     "title": "The shape of a claim",
+     "summary": "The recurring pattern: an impressive monument, a question about how it was made, and an implied answer that leaves out the builders."
+    }
+   ]
+  },
+  {
+   "title": "How Archaeologists Know: Dating and Evidence",
+   "summary": "The toolkit shared by all three of our ancient-world books: context, stratigraphy, dating methods, inscriptions, the traces of making, and experiment.",
+   "challenge": "Put five layers and their finds from an imaginary excavation in order using the rules of stratigraphy, then use one radiocarbon date to give the sequence real years.",
+   "sections": [
+    {
+     "title": "Context is everything",
+     "summary": "Why where an object was found, in which layer and with what, tells us more than the object alone."
+    },
+    {
+     "title": "Putting dates on the past",
+     "summary": "Stratigraphy, radiocarbon dating, tree rings, inscriptions and king lists, and how independent methods check each other."
+    },
+    {
+     "title": "The fingerprints of builders",
+     "summary": "Quarries, tool marks, unfinished work, workshops, waste and workers' homes as evidence of how something was made."
+    },
+    {
+     "title": "Experimental archaeology",
+     "summary": "Testing how something could have been made by trying it with the materials and tools that were available."
+    }
+   ]
+  },
+  {
+   "title": "Giza: Who Built the Great Pyramid",
+   "summary": "The claims about the pyramids, and the evidence of earlier pyramids, quarries, a workers' town and the logbook of an inspector named Merer.",
+   "challenge": "Write the strongest case you can, in 300 words, for how the Great Pyramid was built and by whom, citing at least four different kinds of evidence.",
+   "sections": [
+    {
+     "title": "The claims",
+     "summary": "Size, precision and the argument that no ancient people could have built it, stated as proponents state them."
+    },
+    {
+     "title": "Practice before perfection",
+     "summary": "How Egyptian builders learned, from mastaba tombs through Djoser's step pyramid to Sneferu's failed and successful pyramids."
+    },
+    {
+     "title": "The builders' town and tombs",
+     "summary": "Excavations of the workers' settlement and the cemetery of the builders south of the pyramids at Giza."
+    },
+    {
+     "title": "Merer's logbook",
+     "summary": "The Wadi al-Jarf papyri, found in 2013, in which an inspector recorded boat trips carrying limestone to Giza in Khufu's reign."
+    }
+   ]
+  },
+  {
+   "title": "The Nazca Lines",
+   "summary": "Giant lines and figures on the desert of southern Peru, the landing-strip claim, and how and why the Nazca people made them.",
+   "challenge": "Lay out a figure at least 10 meters across on a field or beach using only stakes, string and a small sketch, then describe how well it worked.",
+   "sections": [
+    {
+     "title": "Lines, shapes and figures",
+     "summary": "What the geoglyphs are, how they were made by clearing dark surface stones, and why the desert preserved them."
+    },
+    {
+     "title": "The landing-strip claim",
+     "summary": "Why soft desert ground and the layout of the lines do not fit runways, and what the lines look like from the ground."
+    },
+    {
+     "title": "The Nazca people",
+     "summary": "The culture that made the lines, the matching designs on Nazca pottery, and how the lines are dated."
+    },
+    {
+     "title": "What the lines were for, and new finds",
+     "summary": "Walking, water and ritual explanations, and the 2024 AI-assisted survey that found 303 new figurative geoglyphs."
+    }
+   ]
+  },
+  {
+   "title": "Puma Punku and Baalbek: Precision and Giant Stones",
+   "summary": "The precisely cut stones of Puma Punku at Tiwanaku and the huge Roman-era blocks of Baalbek, and what quarries, tools and reconstruction reveal.",
+   "challenge": "Estimate how many people and how much time it would take to move a 100-tonne block along a prepared track, showing every assumption you make.",
+   "sections": [
+    {
+     "title": "Puma Punku's precise stones",
+     "summary": "The claim of machine-cut stone, and how Tiwanaku masons shaped andesite and sandstone with stone tools and abrasives."
+    },
+    {
+     "title": "Rebuilding Puma Punku in miniature",
+     "summary": "The 2018 study that 3D-printed scale models of 140 andesite pieces and 17 sandstone slabs and fitted them together, revealing a modular design."
+    },
+    {
+     "title": "Baalbek's giant blocks",
+     "summary": "The Roman temple of Jupiter at Baalbek, its enormous foundation stones, and the quarry they came from."
+    },
+    {
+     "title": "The stones left in the quarry",
+     "summary": "The 2014 discovery of a block of about 1,650 tonnes, the largest known from antiquity, still lying where Roman quarrymen cut it."
+    }
+   ]
+  },
+  {
+   "title": "The Moai and the Palenque Lid",
+   "summary": "The great statues of Rapa Nui and the carved lid of a Maya king's sarcophagus, and how the people who made them understood them.",
+   "challenge": "Label a photograph of the Palenque lid (the king, the World Tree, the bird at its top and the jaws of the underworld), then explain why the rocket reading falls apart.",
+   "sections": [
+    {
+     "title": "The moai of Rapa Nui",
+     "summary": "Who carved the statues, the Rano Raraku quarry, and the unfinished moai still lying in the rock."
+    },
+    {
+     "title": "How the moai walked",
+     "summary": "Rapa Nui tradition that the statues walked, the 2012 experiment in which 18 people walked a replica 100 meters in 40 minutes, and the continuing debate."
+    },
+    {
+     "title": "The 'astronaut' of Palenque",
+     "summary": "The claim that the lid of K'inich Janaab Pakal's sarcophagus shows a man piloting a rocket."
+    },
+    {
+     "title": "Reading Maya art in its own terms",
+     "summary": "How Maya imagery and inscriptions show the king at the threshold of death and rebirth beneath the World Tree."
+    }
+   ]
+  },
+  {
+   "title": "Weighing Extraordinary Claims",
+   "summary": "A fair, repeatable method for testing any claim about the ancient past, built from the cases in Chapters 3 to 6.",
+   "challenge": "Use the book's six-question checklist on an ancient-astronaut claim you have not met before, and write a fair one-page verdict.",
+   "sections": [
+    {
+     "title": "Burden of proof",
+     "summary": "Why the person making a claim must supply the evidence, and why bigger claims need stronger evidence."
+    },
+    {
+     "title": "Arguments from ignorance and incredulity",
+     "summary": "Why 'we don't know how, so it was aliens' and 'I can't imagine how they did it' are not evidence."
+    },
+    {
+     "title": "Testable claims and simple explanations",
+     "summary": "Falsifiability and the simplest sufficient explanation, applied to the sites in this book."
+    },
+    {
+     "title": "Checking sources",
+     "summary": "How to follow a claim back to excavation reports, museum records and peer-reviewed studies, and how to judge what you find."
+    }
+   ]
+  },
+  {
+   "title": "Whose Past Is It?",
+   "summary": "How ancient-astronaut claims take credit from real ancient peoples, the older history of that pattern, and how to give the builders their due.",
+   "challenge": "Write a 150-word museum label for one site in this book that names its builders and explains how they made it.",
+   "sections": [
+    {
+     "title": "Taking the credit away",
+     "summary": "Why the claims cluster on monuments built by non-European peoples, and what that implies."
+    },
+    {
+     "title": "An older pattern: the Mound Builder myth",
+     "summary": "How 19th-century Americans credited a vanished race with Native American earthworks, and how archaeology showed who built them."
+    },
+    {
+     "title": "Descendants and their ancestors",
+     "summary": "How people in Egypt, Peru, Bolivia, Rapa Nui and the Maya region regard the achievements of their ancestors."
+    },
+    {
+     "title": "Curiosity, kept",
+     "summary": "Why the true stories are better than the mysteries, and how to keep asking good questions about the past."
+    }
+   ]
+  }
+ ],
+ "written": {},
+ "createdAt": 1791694000000,
+ "createdBy": null,
+ "color": "#57514A",
+ "persona": "professor",
+ "engine": "default",
+ "preface": "If you have ever watched a program about ancient aliens and wondered whether there might be something to it, this book is for you. Wondering is the right instinct. The Great Pyramid, the Nazca lines and the stones of Puma Punku are astonishing, and anyone who sees them should ask how they were made. This book asks that question seriously, site by site, and follows the evidence wherever it leads.\n\nHere is how it works. Each chapter states a famous claim fairly, in the words of the people who make it, and then shows what archaeologists have found: quarries and tool marks, workers' towns, dated layers, inscriptions and experiments. Chapter 2 gives you the toolkit archaeologists use to date things and read evidence, and you will use it in every chapter after. You will also keep claim cards, one for each claim you meet: what is said, who said it first, what the evidence shows, and your verdict.\n\nI will tell you now where the evidence leads, so there are no tricks. At every site in this book, people built what we see, and we know a great deal about who they were and how they did it. That is the best part of the story. The crews who hauled limestone for King Khufu, the Nazca who drew on the desert, the stonemasons of Tiwanaku and the carvers of Rapa Nui deserve the credit. By the last page you will be able to give it to them, and to weigh any extraordinary claim fairly.",
+ "coverSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\"><g fill=\"none\" stroke=\"#FFFFFF\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M170 120 L210 318 L300 288 Z\" fill=\"#FFFFFF\" fill-opacity=\"0.16\" stroke-width=\"2.5\"/><path d=\"M170 120 L50 300 L210 318\" stroke-width=\"3\"/><path d=\"M134 174 L182 179 M116 201 L188 209 M98 228 L194 239 M80 255 L200 268 M62 282 L206 298\" stroke-width=\"1.5\" stroke-opacity=\"0.7\"/><path d=\"M158 177 L161 203 M140 204 L146 230 M152 233 L156 261 M118 231 L123 258 M134 261 L138 287 M100 258 L104 285 M178 266 L181 293\" stroke-width=\"1.2\" stroke-opacity=\"0.5\"/><path d=\"M20 342 C 80 328, 140 334, 200 344 S 320 354, 380 336\" stroke-width=\"2\"/><circle cx=\"272\" cy=\"186\" r=\"46\" fill=\"#FFFFFF\" fill-opacity=\"0.1\" stroke-width=\"3.5\"/><path d=\"M246 168 A 32 32 0 0 1 266 152\" stroke-width=\"2\" stroke-opacity=\"0.7\"/><path d=\"M305 219 L346 260\" stroke-width=\"9\"/><g fill=\"#FFFFFF\" stroke=\"none\"><circle cx=\"60\" cy=\"62\" r=\"2.6\"/><circle cx=\"112\" cy=\"38\" r=\"1.8\"/><circle cx=\"345\" cy=\"58\" r=\"2.4\"/><circle cx=\"372\" cy=\"122\" r=\"1.8\"/><circle cx=\"38\" cy=\"150\" r=\"2\"/><circle cx=\"232\" cy=\"52\" r=\"1.6\"/><circle cx=\"292\" cy=\"104\" r=\"1.4\"/></g></g></svg>",
+ "bible": {
+  "teacher": "Dr. Professor teaches this book as a field archaeologist who has heard every ancient-astronaut claim and still enjoys them: from excavation reports, quarries, tool marks, dated layers, inscriptions and experiments, and from the claimants' own books, quoted fairly before they are tested.",
+  "promise": "By the last page you will be able to take any claim about the ancient past, find out where it came from, weigh the evidence fairly, and tell the true story of who built the world's great monuments.",
+  "threads": [
+   "Claim, then evidence: every chapter states the claim fairly, as its proponents put it, before testing it.",
+   "How we know: The archaeologist's toolkit, shared by ARC 101, EGY 101 and ANE 101: context (where a thing was found and with what), stratigraphy (lower layers are older), dating methods that check each other (radiocarbon, tree rings, inscriptions and king lists, styles of pottery and objects), materials analysis, written texts read in the original, and experimental archaeology.",
+   "Name the builders: every site is credited to the people who made it, with how they did it.",
+   "Curiosity is the point: a mystery is an invitation to look harder, and the real answers are more remarkable than the claims."
+  ],
+  "runningExamples": [
+   {
+    "name": "The Great Pyramid of Khufu",
+    "use": "The anchor site: dated and read in Chapter 2, examined in Chapter 3, and used to test the checklist in Chapter 7."
+   },
+   {
+    "name": "Merer's logbook (the Wadi al-Jarf papyri)",
+    "use": "A primary source written by a man who worked on the Great Pyramid; the model of direct evidence."
+   },
+   {
+    "name": "Chariots of the Gods? (1968)",
+    "use": "The source text whose claims are quoted and checked site by site; never treated as evidence."
+   },
+   {
+    "name": "Claim cards",
+    "use": "A simple form the reader fills in for every claim: the claim, its earliest source, the evidence, and a verdict. Started in Chapter 1, used in every chapter, shared with ANE 101."
+   }
+  ],
+  "conventions": [
+   "State each claim fairly, in its proponents' own words where possible, before examining it; criticize arguments, never people, and never mock the reader for asking.",
+   "Name the builders: the Egyptians of Khufu's reign, the Nazca, the people of Tiwanaku, the Rapa Nui, the Maya of Palenque, the Romans at Baalbek; not 'the ancients'.",
+   "Say 'ancient-astronaut claim' or 'idea', not 'theory', which in science means a well-tested explanation.",
+   "Dates as BC and AD, with 'about' for approximate dates; give the dating method behind any key date. Metric units with a familiar comparison.",
+   "Cross-reference the companion books by code: ANE 101 (Sumer and Sitchin's Anunnaki) and EGY 101 (Egyptian faience and glass) share this book's dating and evidence methods.",
+   "Refer back to earlier chapters by number when building on them."
+  ],
+  "canon": [
+   {
+    "cite": "Feder, K. L. (2025). Frauds, myths, and mysteries: Science and pseudoscience in archaeology (11th ed.). Oxford University Press.",
+    "role": "The core textbook: scientific method in archaeology, the history of the ancient-astronaut idea, the Mound Builder myth, and site case studies."
+   },
+   {
+    "cite": "Fagan, G. G. (Ed.). (2006). Archaeological fantasies: How pseudoarchaeology misrepresents the past and misleads the public. Routledge.",
+    "role": "What separates pseudoarchaeology from archaeology, why it appeals, and how television spreads it (Chapters 1, 7 and 8)."
+   },
+   {
+    "cite": "Lehner, M. (1997). The complete pyramids. Thames & Hudson.",
+    "role": "The development of Egyptian pyramids and how they were built (Chapter 3)."
+   },
+   {
+    "cite": "Lehner, M., & Hawass, Z. (2017). Giza and the pyramids: The definitive history. University of Chicago Press.",
+    "role": "The Giza plateau in full: the workers' town, the builders' cemetery and construction evidence (Chapters 2 and 3)."
+   },
+   {
+    "cite": "Sakai, M., Sakurai, A., Lu, S., Olano, J., Albrecht, C. M., Hamann, H. F., & Freitag, M. (2024). AI-accelerated Nazca survey nearly doubles the number of known figurative geoglyphs and sheds light on their purpose. Proceedings of the National Academy of Sciences, 121. https://doi.org/10.1073/pnas.2407652121",
+    "role": "Primary research: 303 new figurative geoglyphs and what the two kinds of figures depict (Chapter 4)."
+   },
+   {
+    "cite": "Vranich, A. (2018). Reconstructing ancient architecture at Tiwanaku, Bolivia: The potential and promise of 3D printing. Heritage Science, 6, 65. https://doi.org/10.1186/s40494-018-0231-0",
+    "role": "Primary research: the 3D-printed reconstruction of Puma Punku and its modular stonework (Chapter 5)."
+   }
+  ],
+  "care": "The reader asked for 'Ancient Aliens'. This book does not teach that aliens visited or built anything in the ancient world, because no evidence supports it and abundant evidence shows that people built every site discussed. It teaches the claims as claims: stated fairly, traced to their sources, and tested against excavation, dating and experiment. Say so plainly and kindly; never mock the reader for being curious, and criticize arguments rather than the people who make or believe them. Where archaeologists genuinely disagree (how the moai were moved, which ramps built the Great Pyramid, what the Nazca lines were for), present the debate honestly as open questions about how people did it, not whether they did. Treat the claims' habit of denying credit to non-European peoples plainly and with respect for their descendants. Von Däniken's and Sitchin's books are quoted as the sources of the claims, never cited as evidence."
+ },
+ "prov": {
+  "note": "Course plan written in Claude Code by Claude research agents, October 2026; canon editions verified by web search.",
+  "requester": "John",
+  "v": "dp-0.5"
+ }
+}

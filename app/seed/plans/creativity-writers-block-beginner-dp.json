@@ -1,0 +1,288 @@
+{
+ "id": "creativity-writers-block-beginner-dp",
+ "v": 1,
+ "topic": "Creativity and writer's block",
+ "level": "beginner",
+ "focus": "",
+ "length": "standard",
+ "code": "WRT 101",
+ "title": "Creativity and Inspiration: Beating Writer's Block",
+ "department": "Department of Writing and Rhetoric",
+ "description": "A course for anyone who wants to write, or make anything, and keeps getting stuck. It starts with what psychologists have found about creativity: how ideas form, why they often arrive after a break, and why limits can help more than they hurt. It then explains why blocks happen, using Mike Rose's studies of blocked student writers and Robert Boice's studies of blocked professors, and turns that evidence into methods you can use tomorrow. Every chapter ends with a writing exercise, so you finish with a habit and a stack of pages, not just ideas.",
+ "prerequisites": [
+  "None; a notebook or a document you can write in is enough",
+  "A writing project you care about, large or small (helpful but not required)"
+ ],
+ "objectives": [
+  "Explain divergent and convergent thinking and point to each in your own writing process.",
+  "Describe Wallas's four stages of creative work and summarize what experiments show about incubation.",
+  "Diagnose a writing block using Rose's analysis of rigid rules and plans and Boice's findings on bingeing and perfectionism.",
+  "Set up a scheduled writing routine and keep a log of minutes and words for at least four weeks.",
+  "Use freewriting, idea capture and chosen constraints to produce material on demand.",
+  "Revise a draft in separate passes for structure, paragraphs and sentences.",
+  "Tell research findings apart from practitioner advice and judge how strong each claim about inspiration is."
+ ],
+ "hours": 32,
+ "chapters": [
+  {
+   "title": "What Creativity Is",
+   "summary": "The research definition of creativity, and the myths that make starting feel harder than it is.",
+   "challenge": "Write 300 words about a time you made something new, then mark which parts came from effort, which from luck and which from other people.",
+   "sections": [
+    {
+     "title": "Novel and useful: the working definition",
+     "summary": "How researchers define creativity, and why both parts of the definition matter."
+    },
+    {
+     "title": "Big-C, little-c and everyday creativity",
+     "summary": "Creativity in daily work and hobbies, not only in famous geniuses."
+    },
+    {
+     "title": "The lone genius and the lightning bolt",
+     "summary": "What studies of real creators show about effort, drafts, collaboration and sudden inspiration."
+    },
+    {
+     "title": "Creativity as something you practice",
+     "summary": "Why knowledge, skill and habits matter alongside personality."
+    }
+   ]
+  },
+  {
+   "title": "Generating and Choosing: Divergent and Convergent Thinking",
+   "summary": "Producing many options and judging among them are different kinds of thinking, and writers get stuck when they mix them up.",
+   "challenge": "In ten minutes, list 30 possible titles or first lines for your project without judging any of them, then choose three and write why.",
+   "sections": [
+    {
+     "title": "Divergent thinking and how it is measured",
+     "summary": "J. P. Guilford's idea, the Alternate Uses Task, and fluency, flexibility and originality."
+    },
+    {
+     "title": "Convergent thinking and judgment",
+     "summary": "Narrowing, choosing and evaluating ideas."
+    },
+    {
+     "title": "Why mixing the two causes trouble",
+     "summary": "Judging each sentence as you write it, and why separating the modes helps."
+    },
+    {
+     "title": "Quantity and quality",
+     "summary": "What research says about producing many ideas in order to find good ones."
+    }
+   ]
+  },
+  {
+   "title": "The Stages of Creative Work",
+   "summary": "Wallas's four stages, what experiments show about incubation, and what they mean for a writer's week.",
+   "challenge": "Start a short piece today, stop after 20 minutes in the middle of a sentence, take a walk, and write for 20 more minutes tomorrow; note what changed.",
+   "sections": [
+    {
+     "title": "Wallas's four stages",
+     "summary": "Preparation, incubation, illumination and verification, from The Art of Thought (1926), and why the stages overlap."
+    },
+    {
+     "title": "What incubation experiments show",
+     "summary": "When a break helps with a stuck problem, and what kind of break helps most."
+    },
+    {
+     "title": "Insight and the aha moment",
+     "summary": "What research says about sudden solutions, and why preparation comes first."
+    },
+    {
+     "title": "Building incubation into a schedule",
+     "summary": "Starting early, stopping mid-thought and coming back."
+    }
+   ]
+  },
+  {
+   "title": "Constraints as Fuel",
+   "summary": "Why limits on form, time and material often help creative work, and how to choose good ones.",
+   "challenge": "Write the same short scene twice: once with no rules, once under a constraint you choose (exactly 100 words, or no adjectives), then compare the two.",
+   "sections": [
+    {
+     "title": "The evidence on constraints",
+     "summary": "Studies showing that limits can raise creativity, and the point where too many limits start to hurt."
+    },
+    {
+     "title": "Forms as constraints",
+     "summary": "Sonnets, word limits and the Oulipo writers' games with rules."
+    },
+    {
+     "title": "Time and scope limits",
+     "summary": "Deadlines, timers and small units of work."
+    },
+    {
+     "title": "Choosing your own constraints",
+     "summary": "Picking a limit that opens a project up instead of closing it down."
+    }
+   ]
+  },
+  {
+   "title": "Why Writers Get Blocked",
+   "summary": "What Mike Rose and Robert Boice found when they studied blocked writers, and what it means for you.",
+   "challenge": "Write a one-page block report: the last time you got stuck, the rules you were following, and one rule you could loosen.",
+   "sections": [
+    {
+     "title": "Rose's blocked students: rigid rules and plans",
+     "summary": "How inflexible rules and conflicting plans stalled capable writers (Rose, 1984)."
+    },
+    {
+     "title": "Boice's blocked professors",
+     "summary": "What his studies of academic writers found about busyness, binge writing, perfectionism and procrastination."
+    },
+    {
+     "title": "Anxiety and the inner critic",
+     "summary": "How fear of judgment interrupts composing, and what helps."
+    },
+    {
+     "title": "Is it a block, or something else?",
+     "summary": "Telling a block apart from a missing plan, missing knowledge, exhaustion, or low mood that needs real help."
+    }
+   ]
+  },
+  {
+   "title": "Showing Up: Scheduled Writing",
+   "summary": "The best-supported practical finding in the field: regular, scheduled sessions beat waiting for inspiration.",
+   "challenge": "Schedule five 25-minute writing sessions this week, log minutes and words for each, and write a short note on what the log shows.",
+   "sections": [
+    {
+     "title": "Boice's study of writing schedules",
+     "summary": "What his 1983 comparison of waiting, spontaneous and scheduled writers found, and how much weight a small study can bear."
+    },
+    {
+     "title": "Silvia's method: schedule it like a class",
+     "summary": "Fixed times, specific goals and tracking, from How to Write a Lot."
+    },
+    {
+     "title": "Brief regular sessions versus binges",
+     "summary": "Why short, frequent sessions tend to produce more than marathons."
+    },
+    {
+     "title": "Logs and small goals",
+     "summary": "Keeping a simple record and setting goals you can meet."
+    }
+   ]
+  },
+  {
+   "title": "Making Material: Freewriting and Idea Capture",
+   "summary": "Tools for getting words and ideas onto the page before judging them.",
+   "challenge": "Do three 10-minute freewrites on your project on three different days, underline the best sentence in each, and build one paragraph from them.",
+   "sections": [
+    {
+     "title": "Freewriting",
+     "summary": "Writing without stopping for a set time, and what it is and is not good for."
+    },
+    {
+     "title": "Idea capture",
+     "summary": "Notebooks, phone notes and idea files, so incubation has something to work on."
+    },
+    {
+     "title": "Permission to write badly",
+     "summary": "Drafts as raw material: Anne Lamott's practitioner advice and the research behind separating drafting from judging."
+    },
+    {
+     "title": "Loose plans",
+     "summary": "Lists, prompts and outlines that guide without freezing you, like the flexible plans of Rose's unblocked writers."
+    }
+   ]
+  },
+  {
+   "title": "Revision and Finishing",
+   "summary": "Turning raw material into finished work, and keeping the cycle going after the first piece.",
+   "challenge": "Revise one piece from earlier chapters in three separate passes (structure, paragraphs, sentences), then write a one-paragraph plan for your next month of writing.",
+   "sections": [
+    {
+     "title": "Revision as convergent thinking",
+     "summary": "Seeing a draft again: structure first, then paragraphs, then sentences."
+    },
+    {
+     "title": "Getting feedback",
+     "summary": "Asking readers for useful responses and using them without losing heart."
+    },
+    {
+     "title": "Finishing and letting go",
+     "summary": "Deciding when a piece is done, and why finishing builds momentum."
+    },
+    {
+     "title": "Your writing system",
+     "summary": "Putting schedule, capture, constraints and revision together into a routine that lasts."
+    }
+   ]
+  }
+ ],
+ "written": {},
+ "createdAt": 1791760000000,
+ "createdBy": null,
+ "color": "#1F6B5A",
+ "persona": "professor",
+ "engine": "default",
+ "preface": "This book is for anyone who wants to write and keeps not writing. Maybe you stare at a blank page, or start strong and stall halfway, or wait for a mood that rarely comes. You are in good company, and here is the good news: being stuck has been studied. Researchers have watched blocked writers at work, counted their pages, and tested what helps.\n\nWe begin with what creativity research says: how ideas form, why the answer often turns up after you walk away, and why a limit can help you more than a blank page. Then we look at why blocks happen, through two careful studies of stuck writers: Mike Rose's work with college students and Robert Boice's work with professors. The second half turns that evidence into methods: writing on a schedule, freewriting, catching ideas, choosing constraints and revising in passes.\n\nPick one project in Chapter 1, anything you want to write, and bring it to every chapter. Each chapter ends with a timed writing exercise, and you will keep a small log of what you wrote. When an idea comes from research, I will tell you how strong the evidence is; when it comes from a writer's experience, I will say that too. By the end you will have a routine, a log that shows it working, and pages you did not have before.",
+ "coverSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\"><g fill=\"none\" stroke=\"#FFFFFF\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M60 300 C 110 284, 160 284, 200 300 L200 352 C 160 336, 110 336, 60 352 Z\" fill=\"#FFFFFF\" fill-opacity=\"0.14\" stroke-width=\"2.5\"/><path d=\"M200 300 C 240 284, 290 284, 340 300 L340 352 C 290 336, 240 336, 200 352 Z\" fill=\"#FFFFFF\" fill-opacity=\"0.14\" stroke-width=\"2.5\"/><path d=\"M78 314 C 115 302, 150 302, 184 312 M78 328 C 115 316, 150 316, 184 326\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><path d=\"M216 312 C 250 302, 285 302, 322 314 M216 326 C 250 316, 285 316, 322 328\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><path d=\"M200 296 C 196 262, 214 246, 200 222 C 186 198, 214 176, 200 150 C 192 134, 200 118, 200 112\" stroke-width=\"2.5\"/><path d=\"M200 296 C 160 270, 92 252, 96 206 C 99 172, 132 166, 134 186 C 136 204, 108 200, 116 176 C 126 146, 170 128, 200 112\" stroke-width=\"2.5\"/><path d=\"M200 296 C 240 270, 308 252, 304 206 C 301 172, 268 166, 266 186 C 264 204, 292 200, 284 176 C 274 146, 230 128, 200 112\" stroke-width=\"2.5\"/><path d=\"M200 54 L208 80 L234 88 L208 96 L200 122 L192 96 L166 88 L192 80 Z\" fill=\"#FFFFFF\" fill-opacity=\"0.3\" stroke-width=\"2.5\"/><g fill=\"#FFFFFF\" stroke=\"none\"><circle cx=\"150\" cy=\"62\" r=\"3\"/><circle cx=\"252\" cy=\"58\" r=\"2.5\"/><circle cx=\"268\" cy=\"112\" r=\"2\"/><circle cx=\"130\" cy=\"112\" r=\"2\"/></g></g></svg>",
+ "bible": {
+  "teacher": "Dr. Professor teaches this book as a writing researcher who also writes every day: claims about creativity come from psychology and composition research (Sawyer and Henriksen, Rose, Boice, Silvia), practitioner advice is labeled as practitioner advice, and every idea is tried on the page in the same chapter.",
+  "promise": "By the last page you will know why you get stuck, have a writing routine that does not wait for inspiration, and have finished pages to show for it.",
+  "threads": [
+   "Generate first, judge later: divergent and convergent thinking are different jobs.",
+   "Habits beat moods: regular scheduled writing is the best-supported answer to blocking.",
+   "Blocks have causes you can find (rigid rules, perfectionism, binge writing), so they can be fixed.",
+   "Research or practitioner wisdom: say which is which, and how strong the evidence is.",
+   "Write in every chapter: each one ends with pages, not just notes."
+  ],
+  "runningExamples": [
+   {
+    "name": "Your project",
+    "use": "One piece of writing the reader chooses in Chapter 1 (a story, essay, blog post, song, or the store description and devlog for a game) and works on in every exercise. Readers of Video Game Marketing (GMK 201) can use their game's store page text."
+   },
+   {
+    "name": "Rose's blocked and unblocked students",
+    "use": "Case studies from Writer's Block: The Cognitive Dimension (1984), used in Chapters 5 and 7 to contrast rigid rules with flexible ones."
+   },
+   {
+    "name": "Boice's scheduled-writing study",
+    "use": "His 1983 comparison of writers who abstained, wrote when they felt like it, or wrote on a schedule with consequences; introduced in Chapter 5 and central to Chapter 6, with its small sample stated."
+   },
+   {
+    "name": "The writing log",
+    "use": "A simple record of minutes, words and new ideas per session that the reader starts in Chapter 1 and uses as evidence about their own habits."
+   }
+  ],
+  "conventions": [
+   "Label every claim's source: a study (with year and who was studied), a review, or practitioner advice.",
+   "Say plainly when a finding comes from a small, old or lab-only study.",
+   "Use 'block' in Rose's sense: an inability to begin or continue writing for reasons other than a lack of skill or commitment.",
+   "Every chapter ends with a writing exercise timed in minutes, with a word or page count the reader logs.",
+   "Give a person's full name at first mention in a chapter, with the year of the work cited."
+  ],
+  "canon": [
+   {
+    "cite": "Sawyer, R. K., & Henriksen, D. (2024). Explaining creativity: The science of human innovation (3rd ed.). Oxford University Press.",
+    "role": "Main research textbook: definitions of creativity, divergent and convergent thinking, Wallas's stages, incubation and insight, and creativity under constraints."
+   },
+   {
+    "cite": "Rose, M. (1984). Writer's block: The cognitive dimension. Southern Illinois University Press.",
+    "role": "Primary study of blocking in college writers: rigid rules and conflicting plans versus flexible ones; Chapters 5 and 7. Reissued in 2009 with a new preface."
+   },
+   {
+    "cite": "Boice, R. (1990). Professors as writers: A self-help guide to productive writing. New Forums Press.",
+    "role": "Research-based program from Boice's studies of blocked academic writers: spontaneous and generative writing, brief scheduled sessions, and handling relapse; Chapters 5 and 6."
+   },
+   {
+    "cite": "Silvia, P. J. (2019). How to write a lot: A practical guide to productive academic writing (2nd ed.). American Psychological Association.",
+    "role": "Practical scheduled-writing method from a creativity researcher: fixed times, goals and tracking; Chapter 6. An advice book grounded in research, not itself a study."
+   },
+   {
+    "cite": "Csikszentmihalyi, M. (1996). Creativity: Flow and the psychology of discovery and invention. HarperCollins.",
+    "role": "Interviews with nearly one hundred highly creative people, the systems view (person, domain, field) and flow; Chapters 1 and 3. Interviews show how creators describe their work, not what causes creativity."
+   },
+   {
+    "cite": "Lamott, A. (1994). Bird by bird: Some instructions on writing and life. Pantheon Books.",
+    "role": "Practitioner book, not research: short assignments, rough first drafts and quieting the inner critic; quoted for craft advice in Chapters 7 and 8 and labeled as one writer's experience."
+   }
+  ],
+  "care": "Present creativity research at its real strength: many findings come from lab tasks, small samples or interviews, and the book says so. Keep practitioner advice (Lamott, the tips in Silvia and Boice) labeled as such. Do not promise that any method cures every block. Chapter 5 says plainly that long-lasting inability to write together with low mood, loss of interest or anxiety that affects daily life can be depression or an anxiety disorder, and that a doctor or counselor can help. Do not repeat popular myths as fact (left-brain and right-brain creativity, the tortured genius, creativity as a fixed gift)."
+ },
+ "prov": {
+  "note": "Course plan written in Claude Code by Claude research agents, October 2026; canon editions verified by web search.",
+  "requester": "John",
+  "v": "dp-0.5"
+ }
+}

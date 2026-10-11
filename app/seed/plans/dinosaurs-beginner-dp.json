@@ -1,0 +1,284 @@
+{
+ "id": "dinosaurs-beginner-dp",
+ "v": 1,
+ "topic": "Dinosaurs",
+ "level": "beginner",
+ "focus": "",
+ "length": "standard",
+ "code": "PAL 101",
+ "title": "Dinosaurs: How They Lived, How They Died, and How We Know",
+ "department": "Department of Earth Sciences, Paleontology Program",
+ "description": "An introduction to dinosaurs for readers with no background in geology or biology. The course explains what makes an animal a dinosaur, how fossils form and how rocks are dated, the main dinosaur groups, and what bones, eggs, footprints and fossil feathers reveal about how dinosaurs grew, moved and behaved. It follows one line of small feathered dinosaurs into the birds alive today and examines the asteroid impact that ended the age of the non-avian dinosaurs 66 million years ago. Throughout, every claim is tied to the evidence and methods paleontologists use, and settled findings are kept apart from open questions.",
+ "prerequisites": [],
+ "objectives": [
+  "Define a dinosaur by its anatomy and family tree, and distinguish dinosaurs from pterosaurs, marine reptiles and other prehistoric animals.",
+  "Explain how fossils form and how rocks are dated, and place the Triassic, Jurassic and Cretaceous on the geologic time scale.",
+  "Name the major dinosaur groups and identify a skeleton's group from its key features.",
+  "Explain how bone microstructure, eggs, trackways and fossil feathers reveal growth, metabolism and behavior.",
+  "Explain the evidence that birds are living dinosaurs.",
+  "Evaluate the evidence for the asteroid impact and for volcanism in the end-Cretaceous extinction.",
+  "Use the Paleobiology Database to find where, and in what rocks, a dinosaur has been found."
+ ],
+ "hours": 32,
+ "chapters": [
+  {
+   "title": "What Is a Dinosaur?",
+   "summary": "The anatomy and family tree that define dinosaurs, and the famous prehistoric animals that are not dinosaurs at all.",
+   "challenge": "Sort ten prehistoric animals into dinosaurs and non-dinosaurs, giving the anatomical reason for each; then choose the dinosaur for your dinosaur file.",
+   "sections": [
+    {
+     "title": "Reptiles, archosaurs and dinosaurs",
+     "summary": "Where dinosaurs sit on the tree of life, alongside crocodiles and pterosaurs."
+    },
+    {
+     "title": "Hips and upright legs",
+     "summary": "The open hip socket, legs held straight under the body, and the other features that define the group."
+    },
+    {
+     "title": "Not dinosaurs",
+     "summary": "Pterosaurs, plesiosaurs, ichthyosaurs, mosasaurs and Dimetrodon, and why each is something else."
+    },
+    {
+     "title": "Reading a family tree",
+     "summary": "Cladograms, shared features and why birds sit inside the dinosaur tree (ORN 101 Chapter 1)."
+    }
+   ]
+  },
+  {
+   "title": "Deep Time and Fossils",
+   "summary": "How fossils form, how rock layers are ordered and dated, and how the age of dinosaurs fits into Earth's long history.",
+   "challenge": "Make a scaled timeline of Earth's history on a strip of paper and mark the first dinosaurs, the end-Cretaceous extinction and the first humans.",
+   "sections": [
+    {
+     "title": "How a fossil forms",
+     "summary": "Burial, mineral replacement and the rare conditions that preserve bones, skin and feathers."
+    },
+    {
+     "title": "Reading rock layers",
+     "summary": "Stratigraphy and index fossils, and how they put events in order."
+    },
+    {
+     "title": "Clocks in the rocks",
+     "summary": "Radiometric dating of volcanic ash layers, and how it puts numbers on the time scale."
+    },
+    {
+     "title": "The Mesozoic world",
+     "summary": "The Triassic, Jurassic and Cretaceous: drifting continents, climates and plants."
+    }
+   ]
+  },
+  {
+   "title": "The Dinosaur Family Tree",
+   "summary": "Theropods, sauropodomorphs and ornithischians, the features that identify each, and the recent debate over how the branches connect.",
+   "challenge": "Identify the groups of five dinosaur skeletons from photographs using this chapter's features, then look one up in the Paleobiology Database.",
+   "sections": [
+    {
+     "title": "Theropods",
+     "summary": "Two-legged hunters and their relatives, from Coelophysis to Tyrannosaurus and the birds."
+    },
+    {
+     "title": "Sauropodomorphs",
+     "summary": "The long-necked plant-eaters, and how sauropods became the largest land animals ever."
+    },
+    {
+     "title": "Ornithischians",
+     "summary": "Armored, plated, horned, duck-billed and dome-headed plant-eaters."
+    },
+    {
+     "title": "Rearranging the tree",
+     "summary": "How new fossils and analyses have challenged the classic split, including the Ornithoscelida proposal and its critics."
+    }
+   ]
+  },
+  {
+   "title": "Growing Up Dinosaur",
+   "summary": "How growth rings in bone and fossil eggs, nests and babies reveal how fast dinosaurs grew and how they cared for their young.",
+   "challenge": "Plot a growth curve from a table of ages and body masses estimated from bone rings, and say when the animal grew fastest.",
+   "sections": [
+    {
+     "title": "Reading growth rings in bone",
+     "summary": "Thin sections of bone and the yearly lines of arrested growth, read like tree rings."
+    },
+    {
+     "title": "Growth curves and growth spurts",
+     "summary": "How Tyrannosaurus grew fastest in its teenage years, and what growth rates suggest."
+    },
+    {
+     "title": "Eggs and nests",
+     "summary": "Egg shapes and clutches, and the evidence that some early dinosaurs laid soft-shelled eggs."
+    },
+    {
+     "title": "Parenting",
+     "summary": "Oviraptorosaurs brooding on nests, Maiasaura nesting grounds, and the limits of the evidence."
+    }
+   ]
+  },
+  {
+   "title": "Warm Blood, Feathers and Color",
+   "summary": "The evidence on dinosaur metabolism, the feathered dinosaurs of China and elsewhere, and how fossil pigment structures reveal color.",
+   "challenge": "Write a short argument, citing three kinds of evidence, for how warm-blooded a medium-sized theropod was.",
+   "sections": [
+    {
+     "title": "Warm-blooded, cold-blooded or in between",
+     "summary": "Bone tissue, growth rates, air sacs and chemical thermometers in fossil eggshell and teeth."
+    },
+    {
+     "title": "Feathered dinosaurs",
+     "summary": "Sinosauropteryx and the feathered fossils of the Jehol Biota, and the range of feather types."
+    },
+    {
+     "title": "Dinosaur colors",
+     "summary": "Melanosomes, the fossil pigment structures that reveal stripes, iridescence and countershading."
+    },
+    {
+     "title": "Changing pictures of dinosaurs",
+     "summary": "From sluggish lizards to active animals, and how paleoartists work from evidence."
+    }
+   ]
+  },
+  {
+   "title": "How Dinosaurs Lived",
+   "summary": "What trackways, teeth, stomach contents, injuries and bonebeds reveal about how dinosaurs moved, fed and lived together.",
+   "challenge": "Estimate a dinosaur's speed from a trackway using footprint length and stride length, stating every assumption.",
+   "sections": [
+    {
+     "title": "Footprints and speed",
+     "summary": "Trackways, stride length and Alexander's formula for estimating speed."
+    },
+    {
+     "title": "What dinosaurs ate",
+     "summary": "Teeth, jaws, fossil dung and stomach contents."
+    },
+    {
+     "title": "Herds, packs and bonebeds",
+     "summary": "Evidence for group living, and how to tell it from bones washed together."
+    },
+    {
+     "title": "Spinosaurus and the water question",
+     "summary": "An open debate about how much time one large predator spent in water."
+    }
+   ]
+  },
+  {
+   "title": "Birds: The Dinosaurs That Survived",
+   "summary": "The evidence that birds evolved from small feathered theropods, from Archaeopteryx to the toothed birds of the Cretaceous, and how flight began.",
+   "challenge": "List ten features shared by Velociraptor and a chicken, and say which ones appeared first in non-avian dinosaurs.",
+   "sections": [
+    {
+     "title": "Archaeopteryx",
+     "summary": "The 19th-century fossil with feathers, teeth and a bony tail, and where it sits among feathered dinosaurs."
+    },
+    {
+     "title": "Ostrom and the dinosaur renaissance",
+     "summary": "John Ostrom's study of Deinonychus and his case that birds descend from theropods."
+    },
+    {
+     "title": "How flight began",
+     "summary": "Feathers before flight, and the running, climbing and gliding hypotheses."
+    },
+    {
+     "title": "Birds then and now",
+     "summary": "Toothed birds of the Cretaceous, the bird lineages that survived, and the American Robin of ORN 101 as a living dinosaur."
+    }
+   ]
+  },
+  {
+   "title": "The End of the Non-Avian Dinosaurs, and How We Know",
+   "summary": "The asteroid impact 66 million years ago, the volcanic eruptions debated alongside it, who survived, and how new discoveries keep changing the picture.",
+   "challenge": "Write a one-page summary of the evidence for the Chicxulub impact as the main cause of the extinction, including the strongest objection and how scientists answer it.",
+   "sections": [
+    {
+     "title": "The iridium clue",
+     "summary": "The 1980 discovery by the Alvarez team of an iridium-rich layer at the Cretaceous-Paleogene boundary."
+    },
+    {
+     "title": "Chicxulub",
+     "summary": "The buried crater in Mexico, impact debris around the world, and the 2010 review that judged the impact the cause."
+    },
+    {
+     "title": "Volcanoes, debate and survivors",
+     "summary": "The Deccan Traps eruptions, the continuing debate, and why birds, mammals, crocodiles and turtles survived."
+    },
+    {
+     "title": "Paleontology now",
+     "summary": "CT scans, the Paleobiology Database, new species named every year, and how to follow new discoveries."
+    }
+   ]
+  }
+ ],
+ "written": {},
+ "createdAt": 1791694180000,
+ "createdBy": null,
+ "color": "#4F5B1F",
+ "persona": "professor",
+ "engine": "default",
+ "preface": "This book is for anyone who has stood under a dinosaur skeleton and wanted to know more than its name. We begin with what a dinosaur actually is, which is more surprising than it sounds, and with how fossils form and how rocks are dated. Then we meet the big groups, look inside their bones to see how fast they grew, follow their footprints, and examine the feathered fossils that changed how we picture them. The book ends with the asteroid that struck 66 million years ago, and with the dinosaurs that survived it.\n\nThose survivors are the birds. If you have read our Birds book (ORN 101), you have already met the American Robin as a living dinosaur; here you will see the evidence from the other side of that story. You will also keep a dinosaur file. In Chapter 1 you choose one dinosaur, and in every chapter after you add what you have learned about it, using the Paleobiology Database, the same open database scientists use.\n\nPaleontology changes every year, as new fossils are found and old ones are studied with new tools. So each chapter separates what is settled from what is still argued, and every claim comes with the evidence behind it. By the end you will know not just what we think about dinosaurs, but how we know it.",
+ "coverSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\"><g fill=\"none\" stroke=\"#FFFFFF\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M190 292 C 165 292, 150 272, 155 250 C 138 226, 116 192, 100 150 C 124 176, 150 204, 174 222 C 170 176, 178 120, 192 82 C 206 120, 214 176, 206 222 C 230 204, 258 180, 282 156 C 266 196, 246 228, 226 250 C 230 274, 215 292, 190 292 Z\" fill=\"#FFFFFF\" fill-opacity=\"0.16\" stroke-width=\"3\"/><path d=\"M176 178 Q 191 184 206 178 M180 130 Q 191 135 202 130 M132.6 214.8 L153.4 199.2 M114.8 183.4 L129.2 172.6 M228 200.7 L248 217.3 M253 177.3 L267 188.7\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><path d=\"M307.8 299.4 Q 350 262 353 205 Q 353 182 350 172 Q 330 186 316 212 Q 296 250 307.8 299.4 Z\" fill=\"#FFFFFF\" fill-opacity=\"0.12\" stroke-width=\"2\"/><path d=\"M298 332 Q 322 250 350 172\" stroke-width=\"2.5\"/><path d=\"M307.8 299.4 L323.6 291.3 M312.8 283.2 L334 272.4 M317.8 267 L341.6 254.9 M323 251 L347.7 238.4 M328.2 235 L351.2 223.4 M333.6 219.2 L353 209.3 M339 203.4 L353.1 196.2 M344.4 187.6 L352.4 183.6\" stroke-width=\"1.3\" stroke-opacity=\"0.75\"/><path d=\"M307.8 299.4 L299.7 283.5 M312.8 283.2 L302 262 M317.8 267 L305.7 243.2 M323 251 L310.4 226.3 M328.2 235 L316.5 212.1 M333.6 219.2 L323.7 199.8 M339 203.4 L331.8 189.3 M344.4 187.6 L340.3 179.7\" stroke-width=\"1.3\" stroke-opacity=\"0.75\"/><path d=\"M30 336 C 100 326, 160 344, 230 334 S 330 326, 370 334\" stroke-width=\"2\"/><path d=\"M30 354 C 110 346, 170 362, 240 352 S 330 346, 370 352\" stroke-width=\"1.5\" stroke-opacity=\"0.7\"/><path d=\"M30 372 C 100 366, 180 378, 250 370 S 330 366, 370 370\" stroke-width=\"1.2\" stroke-opacity=\"0.5\"/></g></svg>",
+ "bible": {
+  "teacher": "Dr. Professor teaches this book as a field paleontologist would: from fossils in the ground and in museum drawers, from rock layers and their dates, and from the lab methods (thin sections, CT scans, chemistry) that let bones answer questions.",
+  "promise": "By the last page you will know what a dinosaur is, how dinosaurs lived and died, why birds count as dinosaurs, and how paleontologists know all of it.",
+  "threads": [
+   "How we know: every claim is tied to fossils, rocks and methods (dating, bone microstructure, trackways, CT scans, chemistry).",
+   "Birds are living dinosaurs: evolution connects the Mesozoic to the backyard (ORN 101).",
+   "Science changes its mind with evidence: the picture of dinosaurs has been redrawn many times, and some questions are still open.",
+   "Deep time is real time: keep the scale of millions of years in view."
+  ],
+  "runningExamples": [
+   {
+    "name": "Tyrannosaurus rex",
+    "use": "The famous dinosaur revisited for anatomy, place in the theropod tree, growth (Chapter 4), metabolism, feeding and the last days before the impact."
+   },
+   {
+    "name": "Triceratops",
+    "use": "The ornithischian representative, and a witness to the final Cretaceous world in the Hell Creek Formation (Chapter 8)."
+   },
+   {
+    "name": "Archaeopteryx",
+    "use": "The fossil link between feathered dinosaurs and birds, shared with ORN 101."
+   },
+   {
+    "name": "The American Robin",
+    "use": "The living dinosaur from ORN 101, compared with its Mesozoic relatives in Chapters 1, 5 and 7."
+   },
+   {
+    "name": "Your dinosaur file",
+    "use": "The reader picks one dinosaur in Chapter 1 and adds to its file every chapter, using the Paleobiology Database."
+   }
+  ],
+  "conventions": [
+   "Genus names capitalized and italic (Tyrannosaurus), species as Tyrannosaurus rex at first mention, T. rex after; English group names lowercase (theropods).",
+   "Say 'non-avian dinosaurs' whenever birds are excluded, since birds are dinosaurs.",
+   "Ages in millions of years ago with the geologic period; metric units with a familiar comparison; body sizes, masses and speeds as estimated ranges.",
+   "Label settled findings and open debates as such.",
+   "Cross-reference ORN 101 by chapter (birds as dinosaurs is its Chapter 1)."
+  ],
+  "canon": [
+   {
+    "cite": "Fastovsky, D. E., & Weishampel, D. B. (2021). Dinosaurs: A concise natural history (4th ed.). Cambridge University Press.",
+    "role": "The core textbook: anatomy, the family tree, biology, birds and extinction."
+   },
+   {
+    "cite": "Brusatte, S. (2018). The rise and fall of the dinosaurs: A new history of a lost world. William Morrow.",
+    "role": "Popular book by a working paleontologist: the narrative of dinosaur evolution and extinction, and how fieldwork is done."
+   },
+   {
+    "cite": "Holtz, T. R., Jr. (2007). Dinosaurs: The most complete, up-to-date encyclopedia for dinosaur lovers of all ages (L. V. Rey, Illus.). Random House.",
+    "role": "Popular reference for beginners: groups, genera and how paleontologists reason."
+   },
+   {
+    "cite": "Alvarez, L. W., Alvarez, W., Asaro, F., & Michel, H. V. (1980). Extraterrestrial cause for the Cretaceous-Tertiary extinction. Science, 208(4448), 1095–1108.",
+    "role": "Primary research: the iridium evidence that launched the impact hypothesis (Chapter 8)."
+   },
+   {
+    "cite": "The Paleobiology Database. (n.d.). https://paleobiodb.org",
+    "role": "Open scientific database of fossil occurrences; the reader's research tool for the dinosaur file."
+   }
+  ],
+  "care": "Where the science is unsettled (how the main dinosaur branches connect, how aquatic Spinosaurus was, the role of Deccan volcanism, how flight began, how warm-blooded particular dinosaurs were), present the main views with their evidence and say the question is open. Sizes, masses, speeds and colors are estimates; give ranges and say how they were made. If religious objections to deep time or evolution arise, describe the scientific evidence plainly and respectfully, without disparaging anyone's faith. Safety and law: fossil collecting is regulated in many places, and vertebrate fossils on public land usually require a permit; challenges use photographs, museum collections and databases rather than collecting."
+ },
+ "prov": {
+  "note": "Course plan written in Claude Code by Claude research agents, October 2026; canon editions verified by web search.",
+  "requester": "John",
+  "v": "dp-0.5"
+ }
+}

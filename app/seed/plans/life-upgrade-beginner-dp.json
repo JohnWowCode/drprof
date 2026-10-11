@@ -1,0 +1,285 @@
+{
+ "id": "life-upgrade-beginner-dp",
+ "v": 1,
+ "topic": "Evidence-based ways to improve a life",
+ "level": "beginner",
+ "focus": "",
+ "length": "standard",
+ "code": "PSY 101",
+ "title": "Your Life, 1000× Better*: *Results May Vary. What the Evidence Says Actually Improves a Life",
+ "department": "Department of Psychology",
+ "description": "The reader asked for a textbook that makes your life 1000 times better the moment you finish it. No book can do that, and this one says so on the cover; what it can do is teach the changes with good evidence behind them and help you test them on yourself. It covers how to judge self-help claims, sleep, physical activity, relationships, habits, attention and phones, money and happiness, and purpose, using official guidelines, long-term studies and trials. Each chapter ends with a small two-week experiment you run on your own life and record.",
+ "prerequisites": [],
+ "objectives": [
+  "Grade the evidence behind a self-help claim: type of study, size of effect, and whether it has been replicated.",
+  "State the adult sleep recommendation and the Physical Activity Guidelines for Americans, and plan a week that meets them.",
+  "Describe what the Harvard Study of Adult Development found about relationships and health, and what it cannot show.",
+  "Use cues, context and friction to build one habit and weaken another, based on Wendy Wood's research.",
+  "Measure your phone use and run a two-week experiment changing it.",
+  "Explain what research shows about money and happiness, and apply Dunn and Norton's spending principles.",
+  "Run, record and evaluate small experiments on your own life, and keep the changes that work."
+ ],
+ "hours": 32,
+ "chapters": [
+  {
+   "title": "Better, Not 1000×: Judging Self-Help Claims",
+   "summary": "Why no book can deliver a 1000-times-better life, how to tell strong evidence from weak, and how to test changes on yourself.",
+   "challenge": "Grade one self-help claim you have seen online with the chapter's checklist, and start a one-week baseline log of sleep, activity, social time, screen time and mood.",
+   "sections": [
+    {
+     "title": "Measuring a good life",
+     "summary": "Life satisfaction, daily mood and meaning, and how researchers ask about them."
+    },
+    {
+     "title": "Strong and weak evidence",
+     "summary": "Trials, long-term studies, correlations and anecdotes; effect sizes; and well-known findings that failed to replicate."
+    },
+    {
+     "title": "How much can well-being change?",
+     "summary": "Set points, adaptation, and the disputed claim that 40 percent of happiness is under your control."
+    },
+    {
+     "title": "Experiments on yourself",
+     "summary": "A baseline, one change at a time, and honest records."
+    }
+   ]
+  },
+  {
+   "title": "Sleep",
+   "summary": "How much sleep adults need, what short sleep costs, and the habits with the best evidence.",
+   "challenge": "Keep a two-week sleep diary: one week as usual, then one week with a fixed wake-up time, and compare sleep and mood.",
+   "sections": [
+    {
+     "title": "How much adults need",
+     "summary": "The American Academy of Sleep Medicine and Sleep Research Society consensus: 7 or more hours a night, regularly."
+    },
+    {
+     "title": "What short sleep does",
+     "summary": "Effects on mood, attention, health and safety, and which links are causal."
+    },
+    {
+     "title": "Habits that help",
+     "summary": "Regular timing, daylight, caffeine, alcohol and screens: what the evidence supports."
+    },
+    {
+     "title": "When to see a doctor",
+     "summary": "Insomnia, sleep apnea, and cognitive behavioral therapy for insomnia as the first-line treatment."
+    }
+   ]
+  },
+  {
+   "title": "Movement",
+   "summary": "The Physical Activity Guidelines for Americans, and why some activity is better than none.",
+   "challenge": "Log your active minutes for one week, then add two 10-minute walks a day for a second week and compare minutes and mood.",
+   "sections": [
+    {
+     "title": "The guidelines",
+     "summary": "150 to 300 minutes of moderate activity a week, or 75 to 150 vigorous, plus muscle strengthening on 2 or more days."
+    },
+    {
+     "title": "What activity does",
+     "summary": "Benefits for the heart, metabolism, sleep and mood, including trials on exercise and depression."
+    },
+    {
+     "title": "Some is better than none",
+     "summary": "Benefits start at low amounts; sitting less and moving more."
+    },
+    {
+     "title": "Making it stick",
+     "summary": "Choosing activities you enjoy and fitting them into the day you already have."
+    }
+   ]
+  },
+  {
+   "title": "Relationships",
+   "summary": "What the Harvard Study of Adult Development and other research show about connection, health and happiness.",
+   "challenge": "Draw a map of your relationships, then contact two people you have drifted away from this week and note how each conversation went.",
+   "sections": [
+    {
+     "title": "The Harvard Study of Adult Development",
+     "summary": "Harvard sophomores and boys from Boston's poorest neighborhoods, followed for more than 80 years, and what such a study can and cannot show."
+    },
+    {
+     "title": "Loneliness and health",
+     "summary": "Evidence linking social connection to health and length of life."
+    },
+    {
+     "title": "Quality, not just quantity",
+     "summary": "Warmth, conflict and why a few close relationships matter most."
+    },
+    {
+     "title": "Practicing connection",
+     "summary": "Small, regular contact, and what Waldinger and Schulz call social fitness."
+    }
+   ]
+  },
+  {
+   "title": "Habits",
+   "summary": "How habits form and how to change them, from Wendy Wood's research.",
+   "challenge": "Pick one habit to build and one to weaken; change the cue and the friction for each, and track both every day for two weeks.",
+   "sections": [
+    {
+     "title": "What a habit is",
+     "summary": "Automatic responses to familiar cues, and how much of daily behavior runs on habit."
+    },
+    {
+     "title": "Why willpower is not the answer",
+     "summary": "What self-control research shows, and why people with good self-control rely on habits."
+    },
+    {
+     "title": "Cues, repetition and reward",
+     "summary": "Designing your setting so the good behavior is easy, and how long new habits take to form (Lally and colleagues, 2010)."
+    },
+    {
+     "title": "Friction",
+     "summary": "Adding steps to unwanted habits, removing them from wanted ones, and using changes of context."
+    }
+   ]
+  },
+  {
+   "title": "Attention and Phones",
+   "summary": "What research does and does not show about smartphones, social media and well-being, and how to take back your attention.",
+   "challenge": "Record your screen time for a week, then turn off all nonessential notifications for a week and compare screen time and mood.",
+   "sections": [
+    {
+     "title": "How phones capture attention",
+     "summary": "Notifications, unpredictable rewards and design for engagement."
+    },
+    {
+     "title": "Social media and well-being",
+     "summary": "Small average links, an unsettled scientific debate, and experiments in which people quit."
+    },
+    {
+     "title": "Multitasking and focus",
+     "summary": "Why switching between tasks costs time and accuracy."
+    },
+    {
+     "title": "Designing your phone use",
+     "summary": "Turning off notifications, moving apps and setting phone-free times and places."
+    }
+   ]
+  },
+  {
+   "title": "Money and Happiness",
+   "summary": "What income can and cannot buy, and how to spend in ways that research links to happiness.",
+   "challenge": "Spend a small amount (about $10 to $20) on someone else or on an experience, and compare your mood before and after with an ordinary purchase.",
+   "sections": [
+    {
+     "title": "Income and well-being",
+     "summary": "What large studies find, including the 2023 adversarial collaboration on whether happiness levels off at higher incomes."
+    },
+    {
+     "title": "Five ways to spend",
+     "summary": "Dunn and Norton's principles: buy experiences, make it a treat, buy time, pay now and consume later, invest in others."
+    },
+    {
+     "title": "Money worries and a cushion",
+     "summary": "Why savings and less financial stress matter for well-being."
+    },
+    {
+     "title": "Comparison and enough",
+     "summary": "Relative income, comparing yourself to others, and deciding what is enough."
+    }
+   ]
+  },
+  {
+   "title": "Purpose, and Putting It Together",
+   "summary": "Meaning, purpose and kindness, and turning the book's experiments into a plan you can keep.",
+   "challenge": "Review your logs from every chapter, keep the two changes with the clearest effect, and write a one-page plan for the next three months.",
+   "sections": [
+    {
+     "title": "Meaning and purpose",
+     "summary": "What researchers mean by purpose, and evidence linking it to health and well-being."
+    },
+    {
+     "title": "Kindness, gratitude and other happiness activities",
+     "summary": "Lyubomirsky's intentional activities, the trial evidence and its modest effect sizes."
+    },
+    {
+     "title": "Fit and stacking changes",
+     "summary": "Choosing changes that suit you and adding them one at a time."
+    },
+    {
+     "title": "Your plan",
+     "summary": "Reviewing your experiments and keeping what worked."
+    }
+   ]
+  }
+ ],
+ "written": {},
+ "createdAt": 1791760180000,
+ "createdBy": null,
+ "color": "#6E2A72",
+ "persona": "professor",
+ "engine": "default",
+ "preface": "The person who asked for this book wanted a textbook that, once finished, makes your life 1000 times better. I would love to write that book. Nobody can, and I would be fooling you if I tried, which is the one thing Dr. Professor never does. So the title keeps the joke, and the asterisk tells the truth: results vary.\n\nHere is what I can honestly offer. A handful of changes have good evidence behind them: sleeping enough, moving your body, keeping close relationships, building habits that run without willpower, taking your attention back from your phone, spending money in ways that bring more happiness, and having a sense of purpose. None of them is magic. Each helps a little, and together they help more than any single big promise.\n\nThe first chapter teaches you to judge self-help claims, so you can check everything that follows, including me. Then each chapter ends with a two-week experiment you run on your own life, recorded in a simple daily log. By the last page you will have real data about what helps you: not 1000 times better, but better in ways you can measure and keep.",
+ "coverSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\"><g fill=\"none\" stroke=\"#FFFFFF\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><g transform=\"translate(0 -24)\"><path d=\"M140 286 A60 60 0 0 1 260 286\" fill=\"#FFFFFF\" fill-opacity=\"0.18\" stroke-width=\"3\"/><path d=\"M125.2 272.8 L97.6 267.9\" stroke-width=\"3\"/><path d=\"M134.2 248.0 L109.9 234.0\" stroke-width=\"3\"/><path d=\"M151.1 227.8 L133.2 206.3\" stroke-width=\"3\"/><path d=\"M174.0 214.6 L164.4 188.3\" stroke-width=\"3\"/><path d=\"M200.0 210.0 L200.0 182.0\" stroke-width=\"3\"/><path d=\"M226.0 214.6 L235.6 188.3\" stroke-width=\"3\"/><path d=\"M248.9 227.8 L266.8 206.3\" stroke-width=\"3\"/><path d=\"M265.8 248.0 L290.1 234.0\" stroke-width=\"3\"/><path d=\"M274.8 272.8 L302.4 267.9\" stroke-width=\"3\"/><path d=\"M36 286 L364 286\" stroke-width=\"2.5\"/><path d=\"M36 286 C 80 268, 110 270, 138 286 M262 286 C 292 266, 330 266, 364 280\" stroke-width=\"2\" stroke-opacity=\"0.7\"/><path d=\"M128 380 C 170 352, 168 318, 194 288 M272 380 C 232 352, 228 318, 206 288\" stroke-width=\"2.5\"/><path d=\"M200 372 L200 360 M200 340 L200 330 M200 314 L200 307 M200 298 L200 294\" stroke-width=\"2\" stroke-opacity=\"0.7\"/></g><path d=\"M332.0 52.0 L332.0 88.0\" stroke-width=\"4\"/><path d=\"M316.4 61.0 L347.6 79.0\" stroke-width=\"4\"/><path d=\"M316.4 79.0 L347.6 61.0\" stroke-width=\"4\"/><g fill=\"#FFFFFF\" stroke=\"none\"><circle cx=\"70\" cy=\"80\" r=\"2.5\"/><circle cx=\"110\" cy=\"50\" r=\"2\"/><circle cx=\"280\" cy=\"40\" r=\"2\"/></g></g></svg>",
+ "bible": {
+  "teacher": "Dr. Professor teaches this book as a health psychologist who reads the studies before the headlines: official guidelines and consensus statements first (HHS, AASM and SRS), then large long-term studies and trials, then popular books by researchers, always saying what kind of evidence it is and how big the effect is.",
+  "promise": "By the last page you will know which changes have real evidence behind them, have tested several on your own life with honest records, and be able to judge the next big self-help claim yourself.",
+  "threads": [
+   "Small, steady and measured beats big promises: no single change makes a life 1000 times better, but several modest ones add up.",
+   "How strong is the evidence? Every claim is graded (guideline, trial, long-term study, correlation, anecdote) and its size stated.",
+   "Change the setting, not your willpower: cues, friction and context.",
+   "Run the experiment: every chapter ends with a two-week test on your own life.",
+   "Everything connects: sleep, movement, relationships, habits and attention affect one another."
+  ],
+  "runningExamples": [
+   {
+    "name": "Your life log",
+    "use": "A simple daily record (hours slept, active minutes, social contact, screen time, mood from 1 to 10) started in Chapter 1 as a baseline and used for every chapter's experiment."
+   },
+   {
+    "name": "The Harvard Study of Adult Development",
+    "use": "The study begun in 1938 that followed Harvard sophomores and boys from Boston's poorest neighborhoods for their whole lives, and later their families; central in Chapter 4 and revisited for health, money and purpose, with its limits (an all-male, mostly white original sample) stated."
+   },
+   {
+    "name": "The 1000× claim",
+    "use": "The book's own title, graded as the first claim in Chapter 1 and revisited in Chapter 8 to compare the promise with the reader's results."
+   },
+   {
+    "name": "Links to other books",
+    "use": "Money and happiness connects to How to Get Rich (Slowly, and for Real) (FIN 101); habits connect to scheduled writing in Creativity and Inspiration (WRT 101)."
+   }
+  ],
+  "conventions": [
+   "State the kind of evidence for every claim (guideline, randomized trial, meta-analysis, long-term observational study, or anecdote) and whether the effect is small, moderate or large.",
+   "Cite guidelines by name, edition and year (Physical Activity Guidelines for Americans, 2nd edition, 2018).",
+   "Never call a correlation a cause; say when a finding comes from following people over time rather than an experiment.",
+   "Mention findings that failed to replicate when relevant, plainly and without mockery.",
+   "Each experiment lasts about two weeks and changes one thing at a time."
+  ],
+  "canon": [
+   {
+    "cite": "U.S. Department of Health and Human Services. (2018). Physical activity guidelines for Americans (2nd ed.). U.S. Department of Health and Human Services.",
+    "role": "Official activity recommendations: 150 to 300 minutes of moderate (or 75 to 150 vigorous) aerobic activity a week plus muscle strengthening on 2 or more days for adults; Chapter 3."
+   },
+   {
+    "cite": "Watson, N. F., et al. (2015). Recommended amount of sleep for a healthy adult: A joint consensus statement of the American Academy of Sleep Medicine and Sleep Research Society. Sleep, 38(6), 843-844.",
+    "role": "Consensus that adults should sleep 7 or more hours a night regularly, and that timing, regularity and quality also matter; Chapter 2."
+   },
+   {
+    "cite": "Wood, W. (2019). Good habits, bad habits: The science of making positive changes that stick. Farrar, Straus and Giroux.",
+    "role": "Research-based account of habits by a leading habit researcher: context, repetition, reward and friction; Chapter 5 and the book's approach to change."
+   },
+   {
+    "cite": "Waldinger, R., & Schulz, M. (2023). The good life: Lessons from the world's longest scientific study of happiness. Simon & Schuster.",
+    "role": "The Harvard Study of Adult Development, told by its director and associate director: relationships, health and social fitness; Chapter 4. A popular book by the researchers."
+   },
+   {
+    "cite": "Lyubomirsky, S. (2008). The how of happiness: A scientific approach to getting the life you want. Penguin Press.",
+    "role": "Intentional happiness activities and person-activity fit; Chapters 1 and 8. A popular book by a researcher; its 40 percent pie chart has been criticized by later researchers and is taught as disputed."
+   },
+   {
+    "cite": "Dunn, E., & Norton, M. (2013). Happy money: The science of smarter spending. Simon & Schuster.",
+    "role": "Five research-based spending principles; Chapter 7. A popular book by the researchers."
+   }
+  ],
+  "care": "Education, not medical or mental health care. State plainly in the relevant chapters: ongoing trouble sleeping, loud snoring with daytime sleepiness, low mood lasting two weeks or more, or thoughts of self-harm call for a doctor or mental health professional (in the US, call or text 988 to reach the Suicide and Crisis Lifeline). Anyone with a heart condition, another chronic illness or a pregnancy should check with a clinician before starting vigorous exercise, and everyone should build up gradually, as the guidelines advise. Grade every claim honestly; present the debate on phones, social media and well-being as unsettled where it is. Avoid sources with documented accuracy problems: do not use Matthew Walker's Why We Sleep (2017), whose errors critics have documented, and cite the consensus statement and primary studies instead; do not teach power posing or ego depletion as established. Never promise outcomes; the title's 1000× is a joke and the book says so. No shaming about weight, income, relationships or screen time."
+ },
+ "prov": {
+  "note": "Course plan written in Claude Code by Claude research agents, October 2026; canon editions verified by web search.",
+  "requester": "John",
+  "v": "dp-0.5"
+ }
+}

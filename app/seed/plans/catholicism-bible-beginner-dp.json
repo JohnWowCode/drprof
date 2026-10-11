@@ -1,0 +1,289 @@
+{
+ "id": "catholicism-bible-beginner-dp",
+ "v": 1,
+ "topic": "Catholicism and the Bible",
+ "level": "beginner",
+ "focus": "",
+ "length": "standard",
+ "code": "THE 101",
+ "title": "Catholicism and the Bible: Scripture, Creed, Sacraments and Prayer",
+ "department": "Department of Theology and Religious Studies",
+ "description": "A first course for anyone who wants to understand what the Catholic Church believes and how it reads the Bible, whether you are Catholic, from another tradition, or of no religion. It explains the Bible's books and why the Catholic Bible has 73 of them, how Catholics read Scripture together with Tradition and the Church's teaching office, and then the Creed, the sacraments, the moral life and prayer, always in the Church's own words from the Catechism and the Second Vatican Council. Throughout, it marks clearly what the Church teaches as a matter of faith and what historians and biblical scholars argue from evidence. It explains belief without asking you to share it.",
+ "prerequisites": [
+  "No prior knowledge of the Bible, Christianity or theology",
+  "A Catholic Bible, such as the New American Bible, Revised Edition (NABRE), in print or free online"
+ ],
+ "objectives": [
+  "Find any passage in a Catholic Bible by book, chapter and verse, and name the main sections and kinds of writing in each Testament.",
+  "Explain why Catholic Bibles contain 73 books, name the deuterocanonical books, and distinguish the Church's teaching on the canon from historians' account of how it formed.",
+  "Explain how the Church understands revelation, Scripture, Tradition and the Magisterium, using Dei Verbum.",
+  "Identify the literal sense and the three spiritual senses of Scripture in a given passage.",
+  "Summarize each article of the Nicene Creed and what the Church teaches about it, citing the Catechism.",
+  "Name the seven sacraments, describe the shape of the Mass, and explain the seasons of the liturgical year.",
+  "State the main principles of Catholic moral and social teaching and describe the main forms of Catholic prayer.",
+  "For any claim in the book, say whether it is Church teaching, theological opinion or a finding of historical scholarship."
+ ],
+ "hours": 32,
+ "chapters": [
+  {
+   "title": "What the Bible Is",
+   "summary": "A library of books written over many centuries, and how the Catholic Bible came to have 73 of them.",
+   "challenge": "Look up and read one short passage from each of four kinds of writing (law, history, prophecy and wisdom), recording each reference and saying what kind of writing it is and how you can tell.",
+   "sections": [
+    {
+     "title": "A library in two testaments",
+     "summary": "Books, kinds of writing, chapters and verses, and how to find a passage."
+    },
+    {
+     "title": "The Catholic canon and the deuterocanonical books",
+     "summary": "The 46 books of the Old Testament and 27 of the New, and why most Protestant Bibles have fewer."
+    },
+    {
+     "title": "How the canon formed: history and teaching",
+     "summary": "What historians reconstruct about the canon's growth, and what the Church defined at the Councils of Florence and Trent."
+    },
+    {
+     "title": "Translations and Catholic Bibles",
+     "summary": "From Hebrew, Aramaic and Greek into English, and what makes an edition a Catholic one."
+    }
+   ]
+  },
+  {
+   "title": "How Catholics Read Scripture",
+   "summary": "Revelation, Scripture and Tradition, the Church's teaching office, and the senses of Scripture.",
+   "challenge": "Take the crossing of the Red Sea (Exodus 14) and write a short paragraph on each of its four senses, using Catechism 115 to 119 as your guide.",
+   "sections": [
+    {
+     "title": "Revelation, Scripture and Tradition",
+     "summary": "Dei Verbum's teaching that God's word comes through Scripture and Tradition together, and the role of the Magisterium."
+    },
+    {
+     "title": "Inspiration and truth",
+     "summary": "What the Church means by inspiration, and Dei Verbum 11 on the truth Scripture teaches 'for the sake of salvation'."
+    },
+    {
+     "title": "The four senses of Scripture",
+     "summary": "The literal sense and the allegorical, moral and anagogical senses (Catechism 115 to 119)."
+    },
+    {
+     "title": "Methods old and new",
+     "summary": "The Church Fathers' reading, and the Pontifical Biblical Commission's 1993 account of historical criticism and other methods."
+    }
+   ]
+  },
+  {
+   "title": "The Old Testament",
+   "summary": "The story, law, prophecy, poetry and wisdom of Israel, read for what it says and for how the Church receives it.",
+   "challenge": "Read Exodus 12 to 15 and write three short notes: what the text says, what historians and archaeologists say about the Exodus, and how the Church reads it at the Easter Vigil.",
+   "sections": [
+    {
+     "title": "Beginnings: Genesis and the Pentateuch",
+     "summary": "Creation, the ancestors of Israel, the Exodus and the covenant at Sinai, and how scholars think the first five books were composed."
+    },
+    {
+     "title": "Land, kings and exile",
+     "summary": "The historical books from Joshua to the return from Babylon, and what archaeology adds."
+    },
+    {
+     "title": "Prophets, psalms and wisdom",
+     "summary": "Isaiah, Jeremiah and the other prophets, the Psalms, and the wisdom books, including the deuterocanonical Wisdom and Sirach."
+    },
+    {
+     "title": "The Old Testament in the Church",
+     "summary": "Its lasting value, the reading of types and figures, and respect for Jewish reading of the same Scriptures."
+    }
+   ]
+  },
+  {
+   "title": "The New Testament",
+   "summary": "Gospels, Acts, letters and Revelation: what they contain and how they came to be written.",
+   "challenge": "Compare the Lord's Prayer in Matthew 6 and Luke 11 and explain the differences first as a historian would and then as the Church reads them.",
+   "sections": [
+    {
+     "title": "Four Gospels and three stages",
+     "summary": "Jesus' life, the apostles' preaching and the written Gospels (Dei Verbum 19), and why Matthew, Mark and Luke are so alike."
+    },
+    {
+     "title": "Acts and the letters of Paul",
+     "summary": "The early Church's spread and Paul's letters, the oldest Christian writings we have."
+    },
+    {
+     "title": "The other letters and Revelation",
+     "summary": "Hebrews and the letters of James, Peter, John and Jude, and how to read apocalyptic writing."
+    },
+    {
+     "title": "Faith and history in the Gospels",
+     "summary": "What the Church teaches about the Gospels' historical character and what historians conclude, with a pointer to the companion Historical Christianity."
+    }
+   ]
+  },
+  {
+   "title": "The Creed",
+   "summary": "The core of Catholic belief, article by article, in the Nicene Creed said at Sunday Mass.",
+   "challenge": "Write a one-page explanation of a single article of the Creed, citing two biblical passages and two Catechism paragraphs that the Church connects with it.",
+   "sections": [
+    {
+     "title": "What a creed is",
+     "summary": "The Apostles' Creed and the Nicene Creed, and where they came from."
+    },
+    {
+     "title": "God, creation and the Trinity",
+     "summary": "One God in three Persons, creation, and how the Church reads Genesis 1 to 3 (Catechism 337 and 390)."
+    },
+    {
+     "title": "Jesus Christ",
+     "summary": "The Incarnation, the Passion, the Resurrection and the Ascension as the Church professes them."
+    },
+    {
+     "title": "The Spirit, the Church and the life to come",
+     "summary": "The Church as one, holy, catholic and apostolic, Mary and the saints, and the last things."
+    }
+   ]
+  },
+  {
+   "title": "Liturgy and the Seven Sacraments",
+   "summary": "How the Church worships, and the seven sacraments that mark a Catholic life.",
+   "challenge": "Attend or watch a Sunday Mass, or read its order in a missal, and map each part onto this chapter's outline, noting every place where Scripture is read or quoted.",
+   "sections": [
+    {
+     "title": "Liturgy and the shape of the Mass",
+     "summary": "The Liturgy of the Word and the Liturgy of the Eucharist, and what the Church teaches about the Eucharist."
+    },
+    {
+     "title": "Sacraments of initiation",
+     "summary": "Baptism, Confirmation and the Eucharist, and the scriptural roots the Church sees in each."
+    },
+    {
+     "title": "Sacraments of healing",
+     "summary": "Penance (Reconciliation) and the Anointing of the Sick."
+    },
+    {
+     "title": "Sacraments at the service of communion",
+     "summary": "Holy Orders and Matrimony."
+    }
+   ]
+  },
+  {
+   "title": "The Moral Life and Social Teaching",
+   "summary": "Conscience, virtue, the Commandments and the Beatitudes, and the Church's social teaching.",
+   "challenge": "Read the parable of the Good Samaritan (Luke 10:25-37) and explain how it bears on two principles of Catholic social teaching, citing the Catechism or a papal encyclical.",
+   "sections": [
+    {
+     "title": "Freedom, conscience and virtue",
+     "summary": "The Church's teaching on conscience, natural law, and the cardinal and theological virtues."
+    },
+    {
+     "title": "The Ten Commandments and the Beatitudes",
+     "summary": "The Decalogue as the Catechism arranges it, and the Sermon on the Mount."
+    },
+    {
+     "title": "Catholic social teaching",
+     "summary": "Human dignity, the common good, solidarity, subsidiarity and care for creation, from Rerum Novarum (1891) to Laudato Si' (2015)."
+    },
+    {
+     "title": "Development, authority and disagreement",
+     "summary": "How teaching develops (the 2018 revision on the death penalty), levels of authority, and where Catholics disagree."
+    }
+   ]
+  },
+  {
+   "title": "Prayer and the Liturgical Year",
+   "summary": "How Catholics pray, alone and together, through the day and through the year.",
+   "challenge": "Read the Lord's Prayer phrase by phrase with Catechism 2759 to 2865 and write, in your own words, what the Church says each petition means.",
+   "sections": [
+    {
+     "title": "What prayer is",
+     "summary": "Blessing, petition, intercession, thanksgiving and praise; vocal prayer, meditation and contemplation."
+    },
+    {
+     "title": "The Lord's Prayer",
+     "summary": "The prayer Jesus taught, petition by petition, as the Catechism explains it."
+    },
+    {
+     "title": "The liturgical year and the Lectionary",
+     "summary": "Advent, Christmas, Lent, the Triduum, Easter and Ordinary Time, and the cycle of Sunday readings."
+    },
+    {
+     "title": "Praying with Scripture",
+     "summary": "The Psalms, the Liturgy of the Hours, lectio divina and the Rosary."
+    }
+   ]
+  }
+ ],
+ "written": {},
+ "createdAt": 1791700060000,
+ "createdBy": null,
+ "color": "#5B2333",
+ "persona": "professor",
+ "engine": "default",
+ "preface": "This book explains what the Catholic Church believes and how it reads the Bible, for anyone who wants to understand it: Catholics who want to know their faith better, Christians from other churches, and readers of any religion or none. You do not need to know anything about the Bible yet. You only need a Catholic Bible to hand, or the free online text, so that you can look things up as we go.\n\nThe first half is about the Bible itself: what it is, which books are in it and why, how Catholics read it, and what is in the Old and New Testaments. The second half follows the four parts of the Catechism of the Catholic Church: what Catholics believe (the Creed), how they worship (the liturgy and sacraments), how they are called to live (the moral life), and how they pray. Whenever I write 'the Church teaches', I give you the paragraph of the Catechism or the Council document, so you can read it for yourself.\n\nI will also tell you which kind of claim you are reading. 'The Church teaches that Scripture is inspired by God' is a statement of faith. 'Most scholars date Mark's Gospel to around the year 70' is a judgment of historical scholarship. Both are worth knowing, and the Church itself asks for both kinds of study, but they are different things, and you will understand Catholicism far better if you keep them apart.\n\nA few passages travel with us through the whole book: the creation stories of Genesis, the Exodus and the Passover, the Lord's Prayer and the parable of the Good Samaritan. By the end you will have read each of them in several ways and seen how one text can carry history, teaching, worship and prayer at once.",
+ "coverSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\"><g fill=\"none\" stroke=\"#FFFFFF\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M193 60 L207 60 L207 90 L236 90 L236 104 L207 104 L207 186 L193 186 L193 104 L164 104 L164 90 L193 90 Z\" fill=\"#FFFFFF\" fill-opacity=\"0.22\" stroke-width=\"2.5\"/><path d=\"M262.0 98.0 L282.0 98.0 M253.7 67.0 L265.8 60.0 M231.0 44.3 L241.0 27.0 M200.0 36.0 L200.0 22.0 M169.0 44.3 L159.0 27.0 M146.3 67.0 L134.2 60.0 M138.0 98.0 L118.0 98.0 M253.7 129.0 L264.1 135.0 M146.3 129.0 L135.9 135.0\" stroke-width=\"2.2\" stroke-opacity=\"0.85\"/><path d=\"M200 300 C 165 282, 122 280, 78 292 L78 196 C 122 184, 165 186, 200 206 Z\" fill=\"#FFFFFF\" fill-opacity=\"0.14\" stroke-width=\"2.5\"/><path d=\"M200 300 C 235 282, 278 280, 322 292 L322 196 C 278 184, 235 186, 200 206 Z\" fill=\"#FFFFFF\" fill-opacity=\"0.14\" stroke-width=\"2.5\"/><path d=\"M78 292 L78 302 C 122 290, 165 292, 200 312 C 235 292, 278 290, 322 302 L322 292\" stroke-width=\"2.5\"/><path d=\"M200 206 L200 300\" stroke-width=\"2\"/><path d=\"M96 216 C 128 208, 160 210, 186 222 M96 236 C 128 228, 160 230, 186 242 M96 256 C 128 248, 160 250, 186 262 M96 276 C 128 268, 160 270, 186 282\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><path d=\"M304 216 C 272 208, 240 210, 214 222 M304 236 C 272 228, 240 230, 214 242 M304 256 C 272 248, 240 250, 214 262 M304 276 C 272 268, 240 270, 214 282\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><path d=\"M200 312 C 196 328, 207 338, 199 358\" stroke-width=\"3\"/></g></svg>",
+ "bible": {
+  "teacher": "Dr. Professor teaches this book as a careful scholar of Catholic theology and of the Bible would: explaining Catholic belief from the Church's own sources (the Catechism, the documents of the Second Vatican Council, the Pontifical Biblical Commission) and from the biblical text, and reporting historical and critical scholarship (Raymond Brown, Lawrence Boadt) as scholarship, always saying which is which.",
+  "promise": "By the last page you will be able to find your way around a Catholic Bible, explain the Creed, sacraments, moral teaching and prayer of the Catholic Church in its own terms, and tell Church teaching apart from historical scholarship.",
+  "threads": [
+   "Scripture, Tradition and the Magisterium work together in Catholic belief (Dei Verbum 10); every chapter shows how.",
+   "Every claim is labeled: Church teaching (with a Catechism or council reference), theological opinion, or historical scholarship.",
+   "The Bible is heard in the Church's worship: each chapter shows where its passages are read at Mass or prayed.",
+   "The Old and New Testaments shed light on each other, in the saying of Augustine quoted in Dei Verbum 16."
+  ],
+  "runningExamples": [
+   {
+    "name": "Genesis 1 to 3",
+    "use": "The creation stories and the fall: literary forms and inspiration (Chapter 2), the Pentateuch (Chapter 3), and creation and original sin in the Creed (Chapter 5), with the Church's own reading (Catechism 337, 390)."
+   },
+   {
+    "name": "The Exodus and the Passover (Exodus 12 to 15)",
+    "use": "The model passage for the four senses of Scripture, for history and archaeology set beside teaching, and for Baptism, the Eucharist and the Easter Vigil."
+   },
+   {
+    "name": "The Lord's Prayer (Matthew 6:9-13; Luke 11:2-4)",
+    "use": "Two Gospel versions for the synoptic question (Chapter 4), the prayer said at every Mass, and the Catechism's closing commentary (Chapter 8)."
+   },
+   {
+    "name": "The Good Samaritan (Luke 10:25-37)",
+    "use": "A parable read literally and, by Church Fathers such as Augustine, allegorically; the anchor for moral and social teaching in Chapter 7."
+   }
+  ],
+  "conventions": [
+   "Quote the Bible from the NABRE; give references as book chapter:verse (Exodus 14:21-22), with Catholic book names and the NABRE's psalm numbering.",
+   "Cite the Catechism by paragraph number (CCC 115-119) and council documents by name and section (Dei Verbum 12).",
+   "Introduce teaching with 'the Church teaches' or 'Catholics believe', and scholarship with 'most scholars', 'many historians' or a named scholar; never blur the two.",
+   "Use the Church's own terms (Eucharist, Magisterium, deuterocanonical) and define each at first use; note other Christians' terms where they differ (for example, Apocrypha).",
+   "Dates as BC and AD, following the Church's own usage; Chapter 1 notes once that the companion books use BCE and CE for the same years.",
+   "Companion books: for the history of the councils, the East-West schism and the Reformation, point to Historical Christianity (REL 201); for Christianity among the world's religions, point to History of Religion (REL 101). Do not retell those histories here."
+  ],
+  "canon": [
+   {
+    "cite": "Catholic Church. (2000). Catechism of the Catholic Church (2nd ed.). Libreria Editrice Vaticana; United States Catholic Conference.",
+    "role": "The primary source for Catholic teaching in Chapters 5 to 8 and for the senses of Scripture, cited by paragraph; use the current text, including the 2018 revision of paragraph 2267."
+   },
+   {
+    "cite": "Second Vatican Council. (1965). Dei Verbum: Dogmatic constitution on divine revelation. Holy See.",
+    "role": "The Church's teaching on revelation, Scripture, Tradition, inspiration and the formation of the Gospels (Chapters 2 and 4); promulgated by Pope Paul VI on November 18, 1965."
+   },
+   {
+    "cite": "Pontifical Biblical Commission. (1993). The interpretation of the Bible in the Church. Libreria Editrice Vaticana.",
+    "role": "How the Church evaluates the historical-critical method and other approaches (Chapter 2); the warrant for reporting scholarship alongside teaching."
+   },
+   {
+    "cite": "Confraternity of Christian Doctrine. (2011). The New American Bible, Revised Edition. Confraternity of Christian Doctrine.",
+    "role": "The Bible text quoted throughout, with its book introductions and notes; free to read online from the United States Conference of Catholic Bishops."
+   },
+   {
+    "cite": "Brown, R. E. (1997). An introduction to the New Testament. Doubleday.",
+    "role": "Standard historical-critical introduction by a Catholic priest and scholar (Anchor Bible Reference Library): dating, authorship and content of each New Testament book (Chapter 4), reported as scholarship, not teaching."
+   },
+   {
+    "cite": "Boadt, L. (2012). Reading the Old Testament: An introduction (2nd ed., R. J. Clifford & D. J. Harrington, Rev.). Paulist Press.",
+    "role": "Catholic scholarly introduction to the Old Testament, updated for archaeology and recent scholarship (Chapter 3), reported as scholarship."
+   }
+  ],
+  "care": "This book presents Catholic belief accurately and respectfully in the Church's own terms and sources, and it never preaches, argues the reader into faith, or argues against it. Faith claims and historical claims are kept apart: claims of faith (that Scripture is inspired, that Jesus rose from the dead, that Christ is truly present in the Eucharist) are stated as what the Church teaches and Catholics believe, with the source, and are never presented as findings of history; historical findings are never presented as proving or disproving them. Historical and critical scholarship (dating and authorship, the archaeology of the Exodus and the conquest, the synoptic question) is reported as scholarship, with the range of views and with the Church's own stance on such methods (Dei Verbum 12; Pontifical Biblical Commission, 1993). Distinguish defined dogma, ordinary teaching, theological opinion and popular devotion, and never present an opinion or a private revelation as Church teaching. Describe other Christians, Jews and people of other faiths fairly: explain the Protestant canon and the Jewish reading of the Hebrew Bible without polemic, and follow the Church's own teaching that the Jewish people are not to be blamed for Christ's death (Nostra Aetate 4). On contested moral teaching (sexuality, marriage, abortion, the end of life, the death penalty), state the teaching with Catechism references, including the 2018 revision of CCC 2267, note honestly that some Catholics and others disagree, and give no personal pastoral advice; point readers with personal questions to a priest, pastoral minister or counselor."
+ },
+ "prov": {
+  "note": "Course plan written in Claude Code by Claude research agents, October 2026; canon editions verified by web search.",
+  "requester": "John",
+  "v": "dp-0.5"
+ }
+}

@@ -1,0 +1,205 @@
+{
+ "id": "rom-corruption-beginner-dp",
+ "v": 1,
+ "topic": "ROM corruption and glitch art",
+ "level": "beginner",
+ "focus": "",
+ "length": "short",
+ "code": "DMA 101",
+ "title": "ROM Corrupting: Bytes, Glitches and the Art of Breaking Games",
+ "department": "Department of Digital Media and Art",
+ "description": "A short, hands-on course for curious players who have seen corrupted games online and want to know what is happening inside. It explains what a ROM is, how bytes and hexadecimal work, and how NES and SNES-era games store their code, graphics and data, so that every glitch you make has a cause you can name. You then use corruption tools, from simple byte changers to the Real-Time Corruptor, and look at glitch art as a serious art form. It uses only ROMs you dumped from cartridges you own, or homebrew and public-domain games, never pirated copies.",
+ "prerequisites": [
+  "Comfort using a computer: installing a program and finding a file",
+  "No programming required"
+ ],
+ "objectives": [
+  "Explain what a ROM and a ROM image are, and how a cartridge is dumped legally.",
+  "Convert numbers between binary, decimal and hexadecimal, and read a file's header in a hex editor.",
+  "Describe how NES and SNES-era games separate code, graphics and data, and predict what corrupting each will do.",
+  "Make controlled corruptions with a byte-changing tool and with the Real-Time Corruptor, recording settings so others can reproduce them.",
+  "Discuss glitch art as an art practice using Rosa Menkman's ideas.",
+  "Share a corruption legally as a video, images or a patch, never as a ROM."
+ ],
+ "hours": 15,
+ "chapters": [
+  {
+   "title": "What a ROM Is",
+   "summary": "Cartridges, memory chips and ROM images, and the legal ways to get one.",
+   "challenge": "Find a free homebrew NES game, read its license, and write down where it came from and what the author allows you to do with it.",
+   "sections": [
+    {
+     "title": "Read-only memory and cartridges",
+     "summary": "The chips on a cartridge's circuit board that hold a game's program and graphics."
+    },
+    {
+     "title": "ROM images and emulators",
+     "summary": "Copying a cartridge's contents into a file, and programs that run that file."
+    },
+    {
+     "title": "Getting ROMs legally",
+     "summary": "Dumping cartridges you own, homebrew and public-domain games, and why downloading commercial ROMs is piracy."
+    }
+   ]
+  },
+  {
+   "title": "Bytes and Hex",
+   "summary": "Bits, bytes and hexadecimal, and how to read a game file in a hex editor.",
+   "challenge": "Open a homebrew NES ROM in a hex editor, decode its 16-byte iNES header by hand, and convert three bytes to binary and decimal.",
+   "sections": [
+    {
+     "title": "Bits and bytes",
+     "summary": "Eight on-off switches make a byte with 256 possible values; try it in the byte-flip lab."
+    },
+    {
+     "title": "Hexadecimal",
+     "summary": "Why programmers write bytes as two hex digits, and converting by hand."
+    },
+    {
+     "title": "Hex editors and headers",
+     "summary": "Offsets, changing one byte safely on a copy, and what the iNES header tells an emulator."
+    }
+   ]
+  },
+  {
+   "title": "Inside an 8-bit and 16-bit Game",
+   "summary": "How NES and SNES games store code, graphics and data, and why that shapes what each glitch looks like.",
+   "challenge": "Predict, then test: change one byte in the graphics area and one in the program area of a homebrew ROM, and record what happens in each case.",
+   "sections": [
+    {
+     "title": "The NES: CPU, PPU and memory",
+     "summary": "A 6502-based processor, a separate picture processor, and very little RAM."
+    },
+    {
+     "title": "Graphics as tiles",
+     "summary": "8x8-pixel tiles stored in 16 bytes, two bits per pixel, with palettes and pattern tables."
+    },
+    {
+     "title": "Code and data",
+     "summary": "Machine instructions, level maps, tables and text, and why changing code often crashes a game."
+    },
+    {
+     "title": "What changes on the SNES",
+     "summary": "More memory, more colors and bigger cartridges, and what that means for corruption."
+    }
+   ]
+  },
+  {
+   "title": "Corrupting: Tools and Techniques",
+   "summary": "What corruption does at the byte level, and how to use a file corruptor and the Real-Time Corruptor.",
+   "challenge": "Make five corruptions of the same homebrew game with different settings, log each setting, and choose the most interesting result.",
+   "sections": [
+    {
+     "title": "Kinds of corruption",
+     "summary": "Bit flips, adding to a byte, random replacement and shifting bytes."
+    },
+    {
+     "title": "File corruptors",
+     "summary": "Tools such as the Vinesauce ROM Corruptor that change bytes across a chosen range of a ROM file."
+    },
+    {
+     "title": "The Real-Time Corruptor",
+     "summary": "RTCV: corrupting an emulator's memory while the game runs, with the Glitch Harvester and saved states."
+    },
+    {
+     "title": "Working like a scientist",
+     "summary": "Small ranges, one setting at a time, notes and results others can reproduce."
+    }
+   ]
+  },
+  {
+   "title": "Glitch Art and Sharing",
+   "summary": "Glitch art as an art form, and how to share your corruptions legally and well.",
+   "challenge": "Make one finished piece (a short video, a set of images or an animated GIF) from a legal corruption, with a short artist's note and your exact settings.",
+   "sections": [
+    {
+     "title": "Glitch as art",
+     "summary": "Rosa Menkman's glitch moment(um), and how artists use failure on purpose."
+    },
+    {
+     "title": "Errors in game history",
+     "summary": "Nathan Altice's I Am Error, and the Zelda II line that players mistook for a bug."
+    },
+    {
+     "title": "Corruption as performance",
+     "summary": "Livestreamed corruptions, and why audiences enjoy watching games come apart."
+    },
+    {
+     "title": "Sharing legally",
+     "summary": "Videos, screenshots and patch files instead of ROMs, with credits and settings."
+    }
+   ]
+  }
+ ],
+ "written": {},
+ "createdAt": 1791760240000,
+ "createdBy": null,
+ "color": "#2E2E38",
+ "persona": "professor",
+ "engine": "default",
+ "preface": "You may have seen a video of a classic game falling apart: a hero walking through a world of scrambled blocks, music turned to noise, a face built from the wrong tiles. That is ROM corruption, and this short book shows you how it works and how to do it yourself, carefully and legally.\n\nWe start inside the cartridge. A game is a long list of numbers, and once you can read those numbers in hexadecimal you can find where the game keeps its program, its pictures and its level data. Then a glitch stops being random noise. A changed graphics byte scrambles a picture; a changed instruction crashes the game; a changed number in a table sends an enemy somewhere it should not be. The byte-flip lab lets you watch this happen one bit at a time.\n\nThen we corrupt for real, with a simple file corruptor and with the Real-Time Corruptor, and finish with glitch art: the artists and thinkers who treat broken images as something worth making. One rule runs through every chapter. Use only games you dumped from cartridges you own, or free homebrew and public-domain games, and share your results as videos, pictures and patches, never as ROMs.",
+ "coverSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\"><g fill=\"none\" stroke=\"#FFFFFF\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><g transform=\"translate(0 14)\"><rect x=\"82\" y=\"46\" width=\"236\" height=\"236\" rx=\"6\" stroke-width=\"2\" stroke-opacity=\"0.5\" stroke-dasharray=\"4 8\"/><rect x=\"118\" y=\"54\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.4\" stroke-width=\"2\"/><rect x=\"146\" y=\"54\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.4\" stroke-width=\"2\"/><rect x=\"230\" y=\"54\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.4\" stroke-width=\"2\"/><rect x=\"258\" y=\"54\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.4\" stroke-width=\"2\"/><rect x=\"90\" y=\"82\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.4\" stroke-width=\"2\"/><rect x=\"118\" y=\"82\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.4\" stroke-width=\"2\"/><rect x=\"146\" y=\"82\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.4\" stroke-width=\"2\"/><rect x=\"174\" y=\"82\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.4\" stroke-width=\"2\"/><rect x=\"202\" y=\"82\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.4\" stroke-width=\"2\"/><rect x=\"230\" y=\"82\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.4\" stroke-width=\"2\"/><rect x=\"258\" y=\"82\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.4\" stroke-width=\"2\"/><rect x=\"286\" y=\"82\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.4\" stroke-width=\"2\"/><rect x=\"90\" y=\"110\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.4\" stroke-width=\"2\"/><rect x=\"118\" y=\"110\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.4\" stroke-width=\"2\"/><rect x=\"146\" y=\"110\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.4\" stroke-width=\"2\"/><rect x=\"174\" y=\"110\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.4\" stroke-width=\"2\"/><rect x=\"202\" y=\"110\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.4\" stroke-width=\"2\"/><rect x=\"230\" y=\"110\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.4\" stroke-width=\"2\"/><rect x=\"258\" y=\"110\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.4\" stroke-width=\"2\"/><rect x=\"286\" y=\"110\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.4\" stroke-width=\"2\"/><rect x=\"146\" y=\"138\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.12\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><rect x=\"174\" y=\"138\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.12\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><rect x=\"202\" y=\"138\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.12\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><rect x=\"230\" y=\"138\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.12\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><rect x=\"258\" y=\"138\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.12\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><rect x=\"286\" y=\"138\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.12\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><rect x=\"314\" y=\"138\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.12\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><rect x=\"342\" y=\"138\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.12\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><rect x=\"146\" y=\"166\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.12\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><rect x=\"174\" y=\"166\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.12\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><rect x=\"202\" y=\"166\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.12\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><rect x=\"230\" y=\"166\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.12\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><rect x=\"258\" y=\"166\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.12\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><rect x=\"286\" y=\"166\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.12\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><rect x=\"146\" y=\"194\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.4\" stroke-width=\"2\"/><rect x=\"174\" y=\"194\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.4\" stroke-width=\"2\"/><rect x=\"202\" y=\"194\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.4\" stroke-width=\"2\"/><rect x=\"230\" y=\"194\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.4\" stroke-width=\"2\"/><rect x=\"174\" y=\"222\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.4\" stroke-width=\"2\"/><rect x=\"202\" y=\"222\" width=\"24\" height=\"24\" rx=\"2\" fill=\"#FFFFFF\" fill-opacity=\"0.4\" stroke-width=\"2\"/><rect x=\"38\" y=\"226\" width=\"16\" height=\"16\" fill=\"#FFFFFF\" fill-opacity=\"0.6\" stroke=\"none\"/><rect x=\"346\" y=\"86\" width=\"16\" height=\"16\" fill=\"#FFFFFF\" fill-opacity=\"0.6\" stroke=\"none\"/><rect x=\"318\" y=\"226\" width=\"16\" height=\"16\" fill=\"#FFFFFF\" fill-opacity=\"0.6\" stroke=\"none\"/><path d=\"M50 135 L350 135 M50 193 L350 193\" stroke-width=\"1.5\" stroke-opacity=\"0.5\"/><rect x=\"93\" y=\"310\" width=\"18\" height=\"18\" rx=\"3\" stroke-width=\"2\"/><rect x=\"121\" y=\"310\" width=\"18\" height=\"18\" rx=\"3\" fill=\"#FFFFFF\" fill-opacity=\"0.85\" stroke-width=\"2\"/><rect x=\"149\" y=\"310\" width=\"18\" height=\"18\" rx=\"3\" fill=\"#FFFFFF\" fill-opacity=\"0.85\" stroke-width=\"2\"/><rect x=\"177\" y=\"310\" width=\"18\" height=\"18\" rx=\"3\" stroke-width=\"2\"/><rect x=\"205\" y=\"310\" width=\"18\" height=\"18\" rx=\"3\" stroke-width=\"2\"/><rect x=\"233\" y=\"310\" width=\"18\" height=\"18\" rx=\"3\" fill=\"#FFFFFF\" fill-opacity=\"0.85\" stroke-width=\"2\"/><rect x=\"261\" y=\"310\" width=\"18\" height=\"18\" rx=\"3\" fill=\"#FFFFFF\" fill-opacity=\"0.85\" stroke-width=\"2\"/><rect x=\"289\" y=\"310\" width=\"18\" height=\"18\" rx=\"3\" stroke-width=\"2\"/><path d=\"M88 296 L312 296\" stroke-width=\"1.5\" stroke-opacity=\"0.5\"/></g></g></svg>",
+ "bible": {
+  "teacher": "Dr. Professor teaches this book as a curious engineer and media historian: every glitch is explained down to the byte that caused it, hardware facts come from community technical documentation (the NESdev Wiki) and platform studies (Altice), and glitch art is treated as a real art practice (Menkman).",
+  "promise": "By the last page you will be able to open a game file, say what its bytes are for, make deliberate corruptions with real tools, explain why each glitch looks the way it does, and share your work legally.",
+  "threads": [
+   "Every glitch has a cause: name the byte and what it was for.",
+   "Code, graphics and data break in different ways.",
+   "Legal and safe: only your own dumps, homebrew or public-domain games; share results, never ROMs.",
+   "Breaking a thing shows how it works: corruption as a way to study hardware and game design."
+  ],
+  "runningExamples": [
+   {
+    "name": "The byte-flip lab",
+    "use": "An in-page interactive: one 8x8 NES-style tile stored as 16 bytes in two bit planes. The reader flips bits and changes bytes and watches pixels and colors change. Introduced in Chapter 2 and extended in Chapters 3 and 4."
+   },
+   {
+    "name": "A free homebrew NES game",
+    "use": "One modern homebrew game whose author allows free download and modification, with its license checked in Chapter 1; used for every hands-on corruption."
+   },
+   {
+    "name": "Zelda II's 'I AM ERROR'",
+    "use": "The line from Zelda II: The Adventure of Link (1987) that gave Altice's book its title: a character's name that players took for a bug. Used in Chapter 5 to separate real errors from apparent ones."
+   },
+   {
+    "name": "Corruption streams",
+    "use": "Vinesauce's livestreamed corruptions as the hobby's best-known public face, described rather than reproduced."
+   },
+   {
+    "name": "Link to Game Design",
+    "use": "Readers of Game Design: Systems, Mechanics, and Player Experience (GDS 201) can corrupt a homebrew game's data to see its systems from the inside, such as what happens when one value in a table changes."
+   }
+  ],
+  "conventions": [
+   "Write hexadecimal with a dollar sign as NES programmers do ($4E), and give the decimal value the first time a number appears in a chapter.",
+   "File offsets count from 0 at the start of the file and are written in hex.",
+   "Name tools with their version number and the date they were checked; corruption tools change.",
+   "Always work on a copy of a ROM, never on your only dump.",
+   "Italicize game titles and give the release year at first mention."
+  ],
+  "canon": [
+   {
+    "cite": "Altice, N. (2015). I am error: The Nintendo Family Computer / Entertainment System platform. MIT Press.",
+    "role": "Platform study of the Famicom and NES: hardware, cartridges, graphics and translation; the main source for how NES games store code and graphics (Chapters 1 and 3) and for the history of errors (Chapter 5)."
+   },
+   {
+    "cite": "Menkman, R. (2011). The glitch moment(um) (Network Notebooks 04). Institute of Network Cultures.",
+    "role": "Foundational text of glitch studies: glitch as a genre, noise, failure and the accident as artistic material; Chapter 5. Free to read under a Creative Commons license."
+   },
+   {
+    "cite": "Redscientist Labs. (n.d.). RTCV: Real-Time Corruptor Vanguard [Software, MIT License] and Corrupt.wiki documentation. Retrieved October 2026, from https://github.com/redscientistlabs/RTCV",
+    "role": "Primary documentation for the Real-Time Corruptor: supported emulators (including BizHawk), the Glitch Harvester, Blast Editor, Blast Generator and Stockpile Player; Chapter 4. Check the current version and development status before writing."
+   },
+   {
+    "cite": "NESdev Wiki contributors. (n.d.). NESdev Wiki: iNES; PPU pattern tables; PPU palettes. Retrieved October 2026, from https://www.nesdev.org/wiki",
+    "role": "Community technical reference for the iNES header (16 bytes, beginning NES and $1A), tile format (16 bytes per tile in two bit planes) and palettes; Chapters 2 and 3."
+   }
+  ],
+  "care": "Legal: use only ROM images you dumped yourself from cartridges you own, homebrew games whose authors allow download and modification, or public-domain software. Downloading commercial ROMs from websites is copyright infringement in the US and most other countries, even for a game you own, and the book never links to ROM sites. Laws on making personal backups vary by country, so say that rather than promising that dumping is legal everywhere. Share corruptions as videos, images or patch files, never as ROMs. Safety: work on copies; corrupted games can produce rapid flashing, so warn readers with photosensitive epilepsy before every video or hands-on lab. Corrupting emulator memory cannot harm hardware, but RTCV can also corrupt other running Windows programs and files on disk, which can crash them or destroy data, so the book uses it only with an emulator and with copies. No writing to real cartridges."
+ },
+ "prov": {
+  "note": "Course plan written in Claude Code by Claude research agents, October 2026; canon editions verified by web search.",
+  "requester": "John",
+  "v": "dp-0.5"
+ }
+}
