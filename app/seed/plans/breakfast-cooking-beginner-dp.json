@@ -1,0 +1,214 @@
+{
+ "id": "breakfast-cooking-beginner-dp",
+ "v": 1,
+ "topic": "Breakfast cooking",
+ "level": "beginner",
+ "focus": "",
+ "length": "short",
+ "code": "CUL 101",
+ "title": "Breakfast Cooking: Eggs, Pancakes, Porridge and the Morning Cup",
+ "department": "Department of Culinary Arts",
+ "description": "A hands-on first cooking course built around the meal most people cook for themselves. Five chapters cover eggs, pancakes and waffles, bacon and sausage, oats and other grains, and coffee and tea, and every chapter is a cook-along: you cook while you read. Each technique comes with the short reason it works and the safety rule that goes with it, including the USDA rules for eggs and meat. For the full science, each chapter points to the matching chapter of its companion book, Food Science (FDS 201).",
+ "prerequisites": [
+  "No cooking experience needed.",
+  "Equipment: a stove, a nonstick or well-seasoned frying pan, a saucepan, a kitchen scale or measuring cups, and an instant-read food thermometer."
+ ],
+ "objectives": [
+  "Cook eggs six ways (boiled, poached, fried, scrambled, as an omelet and baked) and control their texture with temperature and time.",
+  "Follow the USDA egg rules: keep eggs refrigerated, cook them until yolks and whites are firm, cook egg dishes to 160°F (71°C), and use pasteurized eggs for runny yolks or raw-egg dishes.",
+  "Make pancakes and waffles from scratch and explain how baking soda, baking powder, eggs and steam make them rise.",
+  "Cook bacon and sausage to a browned, safe finish, keeping raw meat apart from ready-to-eat food and cooking fresh pork or beef sausage to 160°F (71°C) and poultry sausage to 165°F (74°C).",
+  "Cook porridge from rolled and steel-cut oats and other grains, adjusting liquid and time to the grain.",
+  "Brew coffee and tea by controlling ratio, grind or leaf, water temperature and time, and taste the effect of each change.",
+  "Plan and cook a complete breakfast for four, timing each part to be ready together."
+ ],
+ "hours": 15,
+ "chapters": [
+  {
+   "title": "Eggs Every Way",
+   "summary": "Boiled, poached, fried, scrambled, omelets and baked eggs, with the protein science behind each texture and the USDA rules: keep eggs refrigerated at 40°F (4°C) or below, cook them until yolks and whites are firm, cook egg dishes to 160°F (71°C), and use pasteurized eggs for runny yolks.",
+   "challenge": "Cook-along: boil six pasteurized eggs for six different times, line them up from runny to firm and explain each texture by the proteins that have set, then scramble eggs low and slow and hot and fast and describe the difference.",
+   "sections": [
+    {
+     "title": "Inside an egg",
+     "summary": "Shell, white and yolk, the proteins in each, and how to buy, store and crack eggs safely."
+    },
+    {
+     "title": "Boiled and poached",
+     "summary": "Cooking eggs in water: timing a boiled egg, making it easy to peel, and keeping a poached egg together."
+    },
+    {
+     "title": "Fried, scrambled, omelets and frittatas",
+     "summary": "Cooking eggs in a pan: heat level, fat, and why low heat and steady stirring make creamy curds."
+    },
+    {
+     "title": "Egg safety",
+     "summary": "Salmonella, the USDA handling rules, the 160°F (71°C) rule for egg dishes, and pasteurized in-shell eggs for anything served runny or raw."
+    }
+   ]
+  },
+  {
+   "title": "Pancakes, Waffles and Leavening",
+   "summary": "How batters work and what makes them rise: gluten, baking soda with an acid, double-acting baking powder, steam and beaten eggs.",
+   "challenge": "Cook-along: make one batch of buttermilk pancake batter, cook some at once and some after a 20-minute rest, then make a small batch with the baking soda left out, and explain the differences you see and taste.",
+   "sections": [
+    {
+     "title": "What is in a batter",
+     "summary": "Flour, liquid, eggs, fat and sugar, and the job each one does."
+    },
+    {
+     "title": "Chemical leavening",
+     "summary": "Baking soda needs an acid, baking powder carries its own, and both make bubbles of carbon dioxide."
+    },
+    {
+     "title": "Mixing and resting",
+     "summary": "Why a lumpy batter makes tender pancakes and an overmixed one makes tough ones."
+    },
+    {
+     "title": "Griddle and waffle iron",
+     "summary": "Heat level, why the first pancake often fails, and what makes a waffle crisp outside and soft inside."
+    }
+   ]
+  },
+  {
+   "title": "Bacon, Sausage and the Maillard Reaction",
+   "summary": "Rendering fat and browning meat, with the safety rules: keep raw meat and its juices away from ready-to-eat food, and cook fresh pork or beef sausage to 160°F (71°C) and poultry sausage to 165°F (74°C), checked with a thermometer.",
+   "challenge": "Cook-along: cook bacon three ways (started in a cold pan, in a hot pan and in the oven) and compare fat rendering, crispness and browning, then cook sausage patties and check each one with a thermometer.",
+   "sections": [
+    {
+     "title": "Cured and fresh meats",
+     "summary": "What bacon, ham and sausage are, and how curing changes meat."
+    },
+    {
+     "title": "Rendering fat",
+     "summary": "Why bacon started in a cold pan or in the oven melts its fat before the meat browns."
+    },
+    {
+     "title": "The Maillard reaction at the stove",
+     "summary": "The browning reaction behind bacon, sausage and toast, and why a dry, hot surface browns best."
+    },
+    {
+     "title": "Cooking meat safely",
+     "summary": "Keeping raw meat separate, washing hands and boards, using a thermometer, and the safe temperatures for sausage."
+    }
+   ]
+  },
+  {
+   "title": "Oats, Porridge and Grains",
+   "summary": "How rolled, steel-cut and whole oats and other grains take up water and soften, and how to make porridge creamy or chewy, plus overnight oats, grits and rice porridge.",
+   "challenge": "Cook-along: cook rolled oats and steel-cut oats side by side, measuring the water and time each needs, then make a jar of overnight oats and compare all three textures.",
+   "sections": [
+    {
+     "title": "What a grain is",
+     "summary": "Bran, germ and endosperm, and how oats are cut, rolled and steamed into different products."
+    },
+    {
+     "title": "Starch and water",
+     "summary": "How starch granules swell and leak starch to make porridge creamy."
+    },
+    {
+     "title": "Porridge methods",
+     "summary": "Stovetop, overnight and baked oats, with ratios and times for each kind of oat."
+    },
+    {
+     "title": "Beyond oats",
+     "summary": "Grits, polenta, rice porridge and homemade granola."
+    }
+   ]
+  },
+  {
+   "title": "Coffee and Tea",
+   "summary": "Brewing as extraction: how grind, ratio, water temperature and time draw flavor out of coffee and tea, starting from the Specialty Coffee Association's widely used ratio of about 55 grams of coffee per liter of water.",
+   "challenge": "Cook-along: brew the same coffee at three grind sizes (or the same tea for three steeping times), taste each, describe the change from sour through balanced to bitter, then cook and serve the whole Saturday breakfast.",
+   "sections": [
+    {
+     "title": "Extraction",
+     "summary": "What dissolves from coffee and tea into hot water, in what order, and how that changes the taste."
+    },
+    {
+     "title": "Brewing coffee",
+     "summary": "Ratio, grind size, water temperature and contact time in pour-over, French press, drip and espresso."
+    },
+    {
+     "title": "Brewing tea",
+     "summary": "Black, green, oolong and white teas from one plant, and how leaf, water temperature and steeping time shape the cup."
+    },
+    {
+     "title": "The finished cup",
+     "summary": "How water, milk and sugar change the drink, and how much caffeine coffee and tea contain."
+    }
+   ]
+  }
+ ],
+ "written": {},
+ "createdAt": 1791700000000,
+ "createdBy": null,
+ "color": "#8A4512",
+ "persona": "professor",
+ "engine": "default",
+ "preface": "This is a cooking book you use at the stove. Every chapter is a cook-along: read a little, cook a little, taste, and read on. Breakfast is the right place to start, because it is quick, cheap and made every day, so you get to practice every morning. By the end you will cook eggs exactly the way you like them, make pancakes from scratch, cook bacon and sausage well and safely, make a good bowl of porridge, and brew coffee or tea you enjoy.\n\nEach technique comes with a short reason. Eggs set because their proteins unfold and link together as they heat. Pancakes rise because baking soda and an acid make bubbles of gas. Bacon browns because of the Maillard reaction. Knowing the reason lets you fix a dish instead of starting over. When you want the whole story, each chapter points to the chapter of the companion book, Food Science, that explains it in depth.\n\nSome rules here are not about taste. Eggs and raw meat can carry bacteria that make people sick, so you will use a thermometer and follow the USDA safe temperatures, and I will give you each one plainly where it applies. You will need a frying pan, a saucepan, a scale or measuring cups, and that thermometer. Keep a few notes on what you cooked and how it turned out. By the last chapter you will cook a whole breakfast for four and have it all ready at the same time.",
+ "coverSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\"><g fill=\"none\" stroke=\"#FFFFFF\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"170\" cy=\"225\" r=\"112\" stroke-width=\"3.5\"/><circle cx=\"170\" cy=\"225\" r=\"98\" stroke-width=\"1.5\" stroke-opacity=\"0.6\"/><rect x=\"-13\" y=\"0\" width=\"26\" height=\"112\" rx=\"13\" transform=\"translate(250 305) rotate(-45)\" fill=\"#FFFFFF\" fill-opacity=\"0.16\" stroke-width=\"3\"/><circle cx=\"0\" cy=\"96\" r=\"5\" transform=\"translate(250 305) rotate(-45)\" stroke-width=\"2\"/><path d=\"M110 215 C 104 178, 140 150, 176 160 C 206 150, 238 172, 232 206 C 246 236, 222 274, 186 270 C 160 290, 116 276, 118 248 C 98 240, 100 224, 110 215 Z\" fill=\"#FFFFFF\" fill-opacity=\"0.2\" stroke-width=\"2.5\"/><circle cx=\"174\" cy=\"216\" r=\"30\" fill=\"#FFFFFF\" fill-opacity=\"0.45\" stroke-width=\"2.5\"/><path d=\"M160 204 Q 166 196 176 196\" stroke-width=\"2\" stroke-opacity=\"0.8\"/><path d=\"M286 62 L292 118 Q294 128 304 128 L332 128 Q342 128 344 118 L350 62 Z\" fill=\"#FFFFFF\" fill-opacity=\"0.16\" stroke-width=\"3\"/><path d=\"M348 76 Q 368 76 366 92 Q 364 106 346 106\" stroke-width=\"3\"/><path d=\"M278 132 L358 132\" stroke-width=\"2.5\"/><path d=\"M306 50 C 300 40, 312 34, 306 22\" stroke-width=\"2.2\" stroke-opacity=\"0.8\"/><path d=\"M328 50 C 322 40, 334 34, 328 22\" stroke-width=\"2.2\" stroke-opacity=\"0.8\"/></g></svg>",
+ "bible": {
+  "teacher": "Dr. Professor teaches this book as a cook standing beside you at the stove: show the technique, give the reason in a sentence or two, state the safety rule plainly, then hand you the pan. Reasons come from McGee and the companion Food Science book, tested technique from López-Alt and Nosrat, and safety rules from USDA FSIS.",
+  "promise": "By the last page you will cook a whole breakfast (eggs, pancakes, bacon or sausage, porridge, and coffee or tea) confidently, safely and to your own taste, and know why each step works.",
+  "threads": [
+   "Cook along: every section ends at the stove with something to make, look at and taste.",
+   "Heat and time control texture: the same egg, batter or grain changes completely with a few degrees or a few minutes.",
+   "Know the reason: one or two sentences of science per technique, with a pointer to Food Science (FDS 201) for the full story.",
+   "Safety rules are stated plainly and never skipped: refrigeration, keeping raw meat separate, and safe temperatures checked with a thermometer."
+  ],
+  "runningExamples": [
+   {
+    "name": "The Saturday breakfast",
+    "use": "A full breakfast for four built up one chapter at a time and cooked all together at the end of Chapter 5, so the reader learns timing as well as technique."
+   },
+   {
+    "name": "The egg",
+    "use": "The ingredient in every chapter's story: on its own (Ch 1), in the batter (Ch 2), beside the bacon (Ch 3), and on top of a savory porridge (Ch 4)."
+   },
+   {
+    "name": "The breakfast notebook",
+    "use": "A short record of each cook-along: what you changed, what happened, and what you will do next time."
+   }
+  ],
+  "conventions": [
+   "Every cook-along lists equipment, ingredients by weight and by volume, numbered steps, and what to look, listen and smell for.",
+   "Give temperatures in °F and °C, quoting USDA safety temperatures exactly as USDA states them (160°F, 71°C; 165°F, 74°C).",
+   "Point to the companion book by chapter number and title when the science is fuller there (\"see Food Science, Chapter 2, Proteins\").",
+   "Plain words and short steps; define any technical term the first time it appears.",
+   "Present practitioner advice (Nosrat, López-Alt) as a cook's tested experience, and science (McGee, Food Science) as mechanism."
+  ],
+  "canon": [
+   {
+    "cite": "McGee, H. (2004). On food and cooking: The science and lore of the kitchen (Completely rev. and updated ed.). Scribner.",
+    "role": "The science of eggs, batters, cured meats, grains, coffee and tea; the source for each short 'why'."
+   },
+   {
+    "cite": "López-Alt, J. K. (2015). The food lab: Better home cooking through science. W. W. Norton.",
+    "role": "Practitioner cookbook: tested breakfast techniques (eggs, pancakes, bacon) and side-by-side kitchen tests that the cook-alongs adapt."
+   },
+   {
+    "cite": "Nosrat, S. (2017). Salt, fat, acid, heat: Mastering the elements of good cooking. Simon & Schuster.",
+    "role": "Practitioner book (a chef's teaching, not a science text): how salt, fat, acid and heat shape flavor and texture; used for seasoning and cooking judgment, not for scientific claims."
+   },
+   {
+    "cite": "U.S. Department of Agriculture, Food Safety and Inspection Service. (n.d.). Safe minimum internal temperature chart. https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+    "role": "Safe minimum internal temperatures quoted exactly: 160°F for egg dishes and for ground meat, including fresh pork or beef sausage; 165°F for poultry, including poultry sausage; raw eggs cooked until yolk and white are firm."
+   },
+   {
+    "cite": "U.S. Department of Agriculture, Food Safety and Inspection Service. (n.d.). Shell eggs from farm to table. https://www.fsis.usda.gov",
+    "role": "Egg handling: keep eggs refrigerated, cook them until the yolks are firm, avoid raw or undercooked eggs (especially for infants, young children, older adults, pregnant women and people with weakened immune systems), and use pasteurized in-shell eggs for dishes served without cooking."
+   },
+   {
+    "cite": "U.S. Department of Agriculture, Food Safety and Inspection Service. (n.d.). \"Danger zone\" (40°F - 140°F). https://www.fsis.usda.gov",
+    "role": "The danger zone and the 2-hour rule (1 hour above 90°F) for leftovers and for food left out on a breakfast table."
+   }
+  ],
+  "care": "Safety rules are stated plainly in the chapters where they apply. Eggs: keep them in a refrigerator at 40°F (4°C) or below, cook them until yolks and whites are firm, and cook egg dishes such as frittatas and quiches to 160°F (71°C). For runny yolks, soft scrambles or anything made with raw egg, use pasteurized in-shell eggs, which USDA says may be used safely without cooking. Infants, young children, older adults, pregnant women and people with weakened immune systems should not eat raw or undercooked eggs. Meat: keep raw meat and its juices away from ready-to-eat food, wash hands, boards and tools after handling it, and cook fresh pork or beef sausage to 160°F (71°C) and poultry sausage to 165°F (74°C), checked with a thermometer. Leftovers go into the refrigerator within 2 hours, or 1 hour when it is above 90°F (32°C). Hot fat, boiling water and hot drinks burn, so every cook-along says how to handle them safely. Coffee and tea brewing figures (such as the Specialty Coffee Association's ratio) are quality guidelines, not safety rules, and are presented as starting points to adjust by taste."
+ },
+ "prov": {
+  "note": "Course plan written in Claude Code by Claude research agents, October 2026; canon editions verified by web search.",
+  "requester": "John",
+  "v": "dp-0.5"
+ }
+}

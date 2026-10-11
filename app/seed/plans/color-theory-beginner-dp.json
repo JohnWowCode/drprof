@@ -1,0 +1,292 @@
+{
+ "id": "color-theory-beginner-dp",
+ "v": 1,
+ "topic": "Colors and color theory",
+ "level": "beginner",
+ "focus": "",
+ "length": "standard",
+ "code": "CLR 101",
+ "title": "Color: Light, Vision, and the Art of Combining Colors",
+ "department": "Department of Art and Design",
+ "description": "An introduction to color for artists, designers and anyone curious about why things look the way they do. The course follows color from light and the spectrum through the eye and brain, then to the systems people use to mix, specify and combine colors: additive and subtractive mixing, RGB, CMYK, HSL, CIELAB and Munsell, and the contrast studies of Itten and Albers. Later chapters cover color in art and design, accessibility for people with color vision deficiency, and how languages and cultures name colors. On-screen labs with sliders and calculators, and paper studies in the spirit of Albers, let you test every idea with your own eyes.",
+ "prerequisites": [
+  "None.",
+  "For the labs and studies: a computer or phone, and colored paper, paints or colored pencils."
+ ],
+ "objectives": [
+  "Explain how the color we see depends on the light source, the surface and the observer.",
+  "Describe how three cone types and opponent processing in the brain produce color vision, and use them to explain metamers, afterimages and color constancy.",
+  "Predict the results of additive mixing with light and subtractive mixing with inks and paints.",
+  "Describe a color in RGB, CMYK, HSL, CIELAB and Munsell terms, and say what each system is for.",
+  "Demonstrate simultaneous contrast and other color interactions with Albers-style studies.",
+  "Build a palette for a design and check it against the WCAG contrast rules and the common types of color vision deficiency.",
+  "Explain how languages divide up color and what research shows about color terms and meanings across cultures."
+ ],
+ "hours": 32,
+ "chapters": [
+  {
+   "title": "Light and the Spectrum",
+   "summary": "What light is, how Newton's prism experiments split white light into a spectrum, and how surfaces absorb, reflect and scatter light to give objects their colors; a wavelength explorer lab fits here.",
+   "challenge": "Look at sunlight, an incandescent or LED bulb and a phone screen through a prism or an inexpensive diffraction grating, sketch each spectrum, and explain why they differ.",
+   "sections": [
+    {
+     "title": "Light as electromagnetic radiation",
+     "summary": "Wavelength, frequency and the narrow band, roughly 400 to 700 nanometers, that our eyes can see."
+    },
+    {
+     "title": "Newton and the spectrum",
+     "summary": "How prisms split and recombine white light, and why the spectrum has no sharp boundaries between colors."
+    },
+    {
+     "title": "Light sources",
+     "summary": "Why sunlight, incandescent bulbs and LEDs have different spectra, and why the same shirt looks different under each."
+    },
+    {
+     "title": "How surfaces make color",
+     "summary": "Absorption, reflection and scattering, from a red apple to the blue sky."
+    }
+   ]
+  },
+  {
+   "title": "The Eye and Color Vision",
+   "summary": "How three types of cone cells and the brain's opponent channels turn light into color, and why color is made by the observer as much as by the light; an afterimage and cone-response lab fits here.",
+   "challenge": "Make a set of afterimage tests (stare at a colored shape, then look at white paper), record the colors you see, and explain each result with opponent processing.",
+   "sections": [
+    {
+     "title": "Rods and cones",
+     "summary": "The light-sensing cells of the retina, and the three cone types most sensitive to long, medium and short wavelengths."
+    },
+    {
+     "title": "Trichromacy and metamers",
+     "summary": "The three-receptor theory of Young and Helmholtz, and how different mixtures of light can look exactly the same."
+    },
+    {
+     "title": "Opponent processing",
+     "summary": "Hering's red-green, blue-yellow and light-dark channels, afterimages, and how the two theories fit together."
+    },
+    {
+     "title": "Color constancy and context",
+     "summary": "How the brain discounts the color of the light, and what the 2015 dress photograph revealed about it."
+    }
+   ]
+  },
+  {
+   "title": "Mixing Color: Additive and Subtractive",
+   "summary": "Why red and green light make yellow while cyan and magenta inks make blue, and how screens, printers and paints each mix color; an RGB slider lab fits here.",
+   "challenge": "Paint a color wheel from three paints (cyan, magenta and yellow, or a warm and a cool version of each traditional primary), then match three of its colors on screen with RGB sliders and compare the two kinds of mixing.",
+   "sections": [
+    {
+     "title": "Additive mixing with light",
+     "summary": "Red, green and blue primaries, and how a screen's tiny lights make every color it shows."
+    },
+    {
+     "title": "Subtractive mixing with inks and pigments",
+     "summary": "How cyan, magenta and yellow each absorb part of the spectrum, and why mixtures get darker."
+    },
+    {
+     "title": "Real paints",
+     "summary": "Why paint mixtures depart from the ideal theory, and where the traditional red, yellow and blue primaries come from."
+    },
+    {
+     "title": "Halftones and pointillism",
+     "summary": "How printing builds colors from small dots, and what Seurat's dots do and do not do in the eye."
+    }
+   ]
+  },
+  {
+   "title": "Color Models and Color Spaces",
+   "summary": "The systems used to describe and measure color: RGB and CMYK for devices, HSL for picking, Munsell for artists, and CIE XYZ and CIELAB for measurement; a converter lab that shows one color in every model fits here.",
+   "challenge": "Choose five colors from objects around you, match each on screen, record them in RGB, HSL and CIELAB, find the nearest Munsell notation, and compute the color difference between two of them.",
+   "sections": [
+    {
+     "title": "Hue, saturation and lightness",
+     "summary": "The three dimensions of color appearance, and the HSL and HSV models built on them."
+    },
+    {
+     "title": "The Munsell system",
+     "summary": "Albert Munsell's hue, value and chroma, spaced by how colors look to people."
+    },
+    {
+     "title": "Device color: RGB, sRGB and CMYK",
+     "summary": "Why the same RGB numbers can look different on two screens, and what a color profile does."
+    },
+    {
+     "title": "CIE colorimetry and CIELAB",
+     "summary": "The 1931 standard observer, XYZ values and the chromaticity diagram, and CIELAB's attempt to space colors evenly."
+    }
+   ]
+  },
+  {
+   "title": "Harmony and Contrast",
+   "summary": "The classic color schemes and Itten's seven contrasts, then Albers's studies showing that one color can look like two and two colors can look like one; a simultaneous-contrast lab fits here.",
+   "challenge": "Following Albers, make one color look like two different colors by placing it on two different grounds, using colored paper or a screen, then make two different colors look alike.",
+   "sections": [
+    {
+     "title": "Color wheels and schemes",
+     "summary": "Complementary, analogous, triadic and split-complementary schemes, and what a color wheel can and cannot tell you."
+    },
+    {
+     "title": "Itten's seven contrasts",
+     "summary": "Contrasts of hue, light and dark, cold and warm, complements, simultaneous contrast, saturation and extension."
+    },
+    {
+     "title": "Albers and the relativity of color",
+     "summary": "Exercises from Interaction of Color showing that surrounding colors change what we see."
+    },
+    {
+     "title": "Do harmony rules work?",
+     "summary": "What experiments on color preference show, and where harmony rules are tradition rather than law."
+    }
+   ]
+  },
+  {
+   "title": "Color in Art and Design",
+   "summary": "How painters and designers have used color, from mineral pigments to synthetic dyes and screens, and how to build a palette that works; a grayscale-check lab fits here.",
+   "challenge": "Design a five-color palette for a poster or an app screen, explain each choice with the ideas from Chapter 5, and check that it still reads when converted to grayscale.",
+   "sections": [
+    {
+     "title": "A short history of pigments and dyes",
+     "summary": "From ochre and ultramarine to Prussian blue, mauve and modern synthetic colors."
+    },
+    {
+     "title": "How painters use color",
+     "summary": "Value, temperature and atmosphere in painting from the Impressionists onward, and what vision science says about how these effects work."
+    },
+    {
+     "title": "Color in graphic and interface design",
+     "summary": "Palettes, hierarchy and emphasis, and why differences in lightness, more than in hue, make text and shapes easy to read."
+    },
+    {
+     "title": "Color in charts and maps",
+     "summary": "Sequential, diverging and categorical palettes, and why rainbow color scales mislead."
+    }
+   ]
+  },
+  {
+   "title": "Accessibility and Color Blindness",
+   "summary": "The types and causes of color vision deficiency, which affects about 8 percent of men and under 1 percent of women of Northern European ancestry, and how to design for everyone using the WCAG contrast rules; a contrast-ratio calculator and color-blindness simulator lab fits here.",
+   "challenge": "Audit a website or poster: compute the contrast ratio of its text with the WCAG formula, simulate how it looks to a viewer with deuteranopia, and redesign whatever fails.",
+   "sections": [
+    {
+     "title": "Types of color vision deficiency",
+     "summary": "Protan, deutan and tritan types, anomalous trichromacy and dichromacy, and why red-green types are by far the most common."
+    },
+    {
+     "title": "Genetics and testing",
+     "summary": "X-linked inheritance, how prevalence varies across populations, and how Ishihara plates and anomaloscopes work."
+    },
+    {
+     "title": "Contrast and WCAG",
+     "summary": "Relative luminance, the contrast ratio, and the minimums of 4.5:1 for normal text and 3:1 for large text and for interface parts and graphics."
+    },
+    {
+     "title": "Never color alone",
+     "summary": "Labels, patterns, shapes and position, so that no information is carried by color alone."
+    }
+   ]
+  },
+  {
+   "title": "Color Names and Culture",
+   "summary": "How languages divide up color, what Berlin and Kay's 1969 study and later research found, and how the meanings of colors vary across cultures and history.",
+   "challenge": "List the basic color words of a language you know, or interview a speaker of another language, and compare them with the Berlin and Kay sequence.",
+   "sections": [
+    {
+     "title": "Basic color terms",
+     "summary": "Berlin and Kay's survey, the World Color Survey that followed, and the debate over universals."
+    },
+    {
+     "title": "Does language change what we see?",
+     "summary": "Experiments on Russian speakers' two words for blue and other tests of whether words shape perception."
+    },
+    {
+     "title": "Color meanings across cultures",
+     "summary": "White for weddings or for mourning, red for luck or for danger: which associations are widely shared and which are local."
+    },
+    {
+     "title": "Naming colors precisely",
+     "summary": "Standard naming systems, from Munsell and ISCC-NBS to web color names and paint-chip names."
+    }
+   ]
+  }
+ ],
+ "written": {},
+ "createdAt": 1791700000000,
+ "createdBy": null,
+ "color": "#7A1F4B",
+ "persona": "professor",
+ "engine": "default",
+ "preface": "Color seems simple until you look closely. A red apple is not red in the dark. The same gray square looks lighter on a black background than on a white one. Red and green light together make yellow, but red and green paint make a muddy brown. This book explains all of that, and it starts at the beginning, with light, then the eye, then the brain, because color happens in all three.\n\nThe first half is the science: what light is, how three kinds of cone cells and the brain turn it into color, how mixing works on a screen and on paper, and how color is measured and described in numbers. The second half is the craft: how colors change each other, how artists and designers choose them, how to make sure people with color blindness can read what you make, and how languages and cultures name colors.\n\nYou will learn by doing. Most chapters have a lab on screen, with sliders that mix light or a calculator that checks contrast, and a study on paper in the spirit of Josef Albers, who taught that the way to understand color is to watch it change before your eyes. Keep your studies in one folder. By the last chapter it will hold a tested palette of your own and a small color course you made yourself.",
+ "coverSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\"><g fill=\"none\" stroke=\"#FFFFFF\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"200\" cy=\"158\" r=\"86\" fill=\"#FFFFFF\" fill-opacity=\"0.16\" stroke-width=\"3\"/><circle cx=\"152\" cy=\"240\" r=\"86\" fill=\"#FFFFFF\" fill-opacity=\"0.16\" stroke-width=\"3\"/><circle cx=\"248\" cy=\"240\" r=\"86\" fill=\"#FFFFFF\" fill-opacity=\"0.16\" stroke-width=\"3\"/><path d=\"M208.9 42.2 A170 170 0 0 1 277.2 60.5\" stroke-width=\"9\" stroke-opacity=\"0.3\"/><path d=\"M292.6 69.4 A170 170 0 0 1 342.6 119.4\" stroke-width=\"9\" stroke-opacity=\"0.35\"/><path d=\"M351.5 134.8 A170 170 0 0 1 369.8 203.1\" stroke-width=\"9\" stroke-opacity=\"0.41\"/><path d=\"M369.8 220.9 A170 170 0 0 1 351.5 289.2\" stroke-width=\"9\" stroke-opacity=\"0.46\"/><path d=\"M342.6 304.6 A170 170 0 0 1 292.6 354.6\" stroke-width=\"9\" stroke-opacity=\"0.52\"/><path d=\"M277.2 363.5 A170 170 0 0 1 208.9 381.8\" stroke-width=\"9\" stroke-opacity=\"0.57\"/><path d=\"M191.1 381.8 A170 170 0 0 1 122.8 363.5\" stroke-width=\"9\" stroke-opacity=\"0.63\"/><path d=\"M107.4 354.6 A170 170 0 0 1 57.4 304.6\" stroke-width=\"9\" stroke-opacity=\"0.68\"/><path d=\"M48.5 289.2 A170 170 0 0 1 30.2 220.9\" stroke-width=\"9\" stroke-opacity=\"0.74\"/><path d=\"M30.2 203.1 A170 170 0 0 1 48.5 134.8\" stroke-width=\"9\" stroke-opacity=\"0.79\"/><path d=\"M57.4 119.4 A170 170 0 0 1 107.4 69.4\" stroke-width=\"9\" stroke-opacity=\"0.85\"/><path d=\"M122.8 60.5 A170 170 0 0 1 191.1 42.2\" stroke-width=\"9\" stroke-opacity=\"0.9\"/></g></svg>",
+ "bible": {
+  "teacher": "Dr. Professor teaches this book as a color scientist who also paints: physics and vision science explain what color is, and the studio exercises of Albers and Itten train the eye. Scientific claims rest on Fairchild, Berns, Livingstone and the CIE; studio methods come from Albers and Itten and are presented as artists' teaching, not as laws of nature.",
+  "promise": "By the last page you will explain why any color looks the way it does, mix and specify colors on screen and on paper, and choose palettes that work, read clearly and include people with color vision deficiency.",
+  "threads": [
+   "Color is made in three places: the light, the object, and the observer's eye and brain.",
+   "Context changes color: the same light can look different, and different light can look the same.",
+   "Numbers and eyes together: every color model is a tool for describing what people see, and is tested against what people see.",
+   "Learn by doing: each chapter has an on-screen lab and a paper study.",
+   "Design for everyone: contrast and accessibility for color vision deficiency are part of good color, not an afterthought."
+  ],
+  "runningExamples": [
+   {
+    "name": "A red apple",
+    "use": "Followed through the book: the light that falls on it (Ch 1), the cones it excites (Ch 2), how to paint or print it (Ch 3), its numbers in sRGB and CIELAB (Ch 4), and how it looks to a viewer with deuteranopia (Ch 7)."
+   },
+   {
+    "name": "The gray square",
+    "use": "One gray placed on different grounds, used to show simultaneous contrast (Ch 2), Albers's relativity of color (Ch 5) and the role of value in design (Ch 6)."
+   },
+   {
+    "name": "The 2015 dress photograph",
+    "use": "A real case of people disagreeing about a color, used for color constancy (Ch 2) and as a reminder that color is made by the observer."
+   },
+   {
+    "name": "Your color study folder",
+    "use": "Screen and paper studies the reader makes chapter by chapter, ending with a palette tested for contrast and color vision deficiency (Ch 6, Ch 7)."
+   }
+  ],
+  "conventions": [
+   "Wavelengths in nanometers (nm); always name the model with color coordinates (sRGB 255, 0, 0; CIELAB L*, a*, b*).",
+   "American spelling (color) except in titles and quotations; write model and standard names as their standards do (CIELAB, sRGB, CIE 1931).",
+   "Keep measured facts and artistic tradition apart: Itten's and Albers's teachings are presented as influential practice, harmony rules as conventions, and claims about color and emotion with the strength of their evidence.",
+   "Use correct terms for color vision deficiency (protanopia, deuteranopia, tritanopia, anomalous trichromacy), and never imply that people with it see no color.",
+   "Each chapter names where a hands-on lab fits; labs use correct formulas, such as WCAG relative luminance and the sRGB to CIELAB conversion."
+  ],
+  "canon": [
+   {
+    "cite": "Albers, J. (2013). Interaction of color (50th anniversary ed.). Yale University Press.",
+    "role": "The studio method: exercises showing that colors change with their surroundings (Chapters 5 and 6), presented as an artist's teaching, with the perceptual explanations checked against vision science."
+   },
+   {
+    "cite": "Itten, J. (1970). The elements of color (F. Birren, Ed.; E. van Hagen, Trans.). Van Nostrand Reinhold.",
+    "role": "Itten's color wheel and seven contrasts (Chapter 5), a condensation of his The Art of Color (1961), presented as influential Bauhaus teaching rather than scientific law."
+   },
+   {
+    "cite": "Fairchild, M. D. (2013). Color appearance models (3rd ed.). John Wiley & Sons.",
+    "role": "The standard reference on color vision, colorimetry and color appearance: cones, opponent processing, chromatic adaptation, CIELAB and appearance effects (Chapters 2, 4 and 5)."
+   },
+   {
+    "cite": "Berns, R. S. (2019). Billmeyer and Saltzman's principles of color technology (4th ed.). John Wiley & Sons.",
+    "role": "The color science textbook for light sources, colorants and subtractive mixing, measurement, metamerism and color difference (Chapters 1, 3 and 4)."
+   },
+   {
+    "cite": "Livingstone, M. (2014). Vision and art: The biology of seeing (Rev. and expanded ed.). Abrams.",
+    "role": "How the visual system explains effects that artists use, especially luminance and equiluminance; written for general readers by a Harvard neurobiologist (Chapters 2 and 6)."
+   },
+   {
+    "cite": "CIE. (2018). Colorimetry (4th ed., CIE 015:2018). International Commission on Illumination. https://doi.org/10.25039/TR.015.2018",
+    "role": "The international standard for standard observers, illuminants, tristimulus values, chromaticity and CIELAB (Chapter 4)."
+   },
+   {
+    "cite": "World Wide Web Consortium. (2023). Web content accessibility guidelines (WCAG) 2.2. W3C Recommendation.",
+    "role": "The accessibility rules used in Chapter 7: text contrast of at least 4.5:1 (3:1 for large text), 3:1 for interface components and meaningful graphics, and color never the only means of conveying information."
+   }
+  ],
+  "care": "Color theory mixes science with a long artistic tradition, and the book keeps them distinct. Itten's and Albers's teachings and color-wheel harmony rules are presented as influential practice, and popular claims that particular colors reliably change mood, appetite or behavior are reported with their evidence, which is often weaker than popular accounts suggest. Color vision deficiency is described accurately and respectfully: it is common (about 8 percent of men and under 1 percent of women of Northern European ancestry, and less common in some other populations), it rarely means seeing no color at all, and designing for it is the designer's job. Color meanings in other cultures are described with sources and without stereotypes."
+ },
+ "prov": {
+  "note": "Course plan written in Claude Code by Claude research agents, October 2026; canon editions verified by web search.",
+  "requester": "John",
+  "v": "dp-0.5"
+ }
+}

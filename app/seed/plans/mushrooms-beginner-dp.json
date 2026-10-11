@@ -1,0 +1,284 @@
+{
+ "id": "mushrooms-beginner-dp",
+ "v": 1,
+ "topic": "Mushrooms",
+ "level": "beginner",
+ "focus": "",
+ "length": "standard",
+ "code": "MYC 101",
+ "title": "Mushrooms: The Hidden Life of Fungi, from Forest to Kitchen",
+ "department": "Department of Biology, Mycology Program",
+ "description": "An introduction to mushrooms and the fungi that make them, for readers with no background in biology. The course explains what fungi are, how mycelium grows and spreads by spores, and how mushrooms form, then teaches the identification skills mycologists use (spore prints, gills and pores, habitat) and the deadly look-alikes every beginner must know. Later chapters cover fungi in ecosystems, growing oyster and shiitake mushrooms at home, and fungi in food and medicine. The safety rule comes first and is repeated throughout: never eat a wild mushroom identified from a book, photograph or app alone; have it confirmed in person by an expert.",
+ "prerequisites": [
+  "None.",
+  "For the practical work: a notebook, a hand lens, white and dark paper for spore prints, and access to a park, woodland or a store that sells several kinds of mushrooms."
+ ],
+ "objectives": [
+  "Explain what fungi are and the evidence that they are more closely related to animals than to plants.",
+  "Describe the life of a mushroom-forming fungus from spore to mycelium to mushroom.",
+  "Describe a mushroom completely using the features identification depends on: cap, gills or pores, stem, ring, volva, spore print color, habitat and season.",
+  "Recognize the features of the deadly Amanitas and other dangerous species, and explain why no single feature or folk test shows that a mushroom is safe to eat.",
+  "Explain how fungi decompose wood and leaves, partner with plant roots as mycorrhizae, and form lichens with algae or cyanobacteria.",
+  "Grow oyster mushrooms at home and describe how shiitake are grown on logs and sawdust blocks.",
+  "Describe the main uses of fungi in food and medicine, including penicillin, and separate established uses from unproven claims."
+ ],
+ "hours": 32,
+ "chapters": [
+  {
+   "title": "What Fungi Are",
+   "summary": "Fungi are a kingdom of their own, more closely related to animals than to plants, and a mushroom is only the fruiting body of a much larger organism; the book's safety rule starts here: never eat a wild mushroom identified from a book, photograph or app alone.",
+   "challenge": "Find fungi in three different places (a lawn, a fallen log and your kitchen), describe each one without touching your face or tasting anything, and say what each is living on.",
+   "sections": [
+    {
+     "title": "A kingdom of their own",
+     "summary": "What sets fungi apart from plants, animals and bacteria: cell walls of chitin, no photosynthesis, and feeding by absorbing food from outside the body."
+    },
+    {
+     "title": "Closer to animals than to plants",
+     "summary": "What DNA evidence shows about where fungi sit on the tree of life."
+    },
+    {
+     "title": "The main groups",
+     "summary": "Yeasts, molds, mushrooms, rusts and lichen fungi, and the two big mushroom-forming groups, basidiomycetes and ascomycetes."
+    },
+    {
+     "title": "How many fungi are there?",
+     "summary": "Why most fungal species are still undescribed, and how mycologists name the ones we know."
+    }
+   ]
+  },
+  {
+   "title": "Mycelium and Spores",
+   "summary": "How fungi grow as networks of fine threads called hyphae, how they feed, and how they make and spread enormous numbers of spores.",
+   "challenge": "Make spore prints from two store-bought mushrooms (such as a portobello and an oyster mushroom) on white and dark paper, compare their colors, and look at the spores with a hand lens or microscope.",
+   "sections": [
+    {
+     "title": "Hyphae and mycelium",
+     "summary": "How fungi grow at their tips and branch into a network that explores soil, wood and food."
+    },
+    {
+     "title": "Feeding by digesting outside the body",
+     "summary": "Enzymes and absorption, and the fungi that live on dead matter, with living partners or as parasites."
+    },
+    {
+     "title": "Spores",
+     "summary": "What spores are, how mushrooms launch them from gills and pores, and how wind, water and animals carry them."
+    },
+    {
+     "title": "Giant individuals",
+     "summary": "The vast Armillaria mycelium in an Oregon forest, and what counts as a single fungus."
+    }
+   ]
+  },
+  {
+   "title": "How Mushrooms Grow",
+   "summary": "The life cycle from spore to mycelium to mushroom, the moisture, temperature and seasonal cues that trigger fruiting, and the parts of a mushroom that identification depends on.",
+   "challenge": "Follow one patch of mushrooms outdoors, or a store-bought growing kit, for several days, and record how it changes with notes, sketches and photographs.",
+   "sections": [
+    {
+     "title": "From spore to mycelium",
+     "summary": "Germination, mating between compatible mycelia, and the long hidden life in soil or wood."
+    },
+    {
+     "title": "Fruiting",
+     "summary": "How rain, temperature and season trigger mushrooms to form, and why they can seem to appear overnight."
+    },
+    {
+     "title": "Anatomy of a mushroom",
+     "summary": "Cap, gills or pores, stem, ring and volva, and the veils that leave the ring and volva behind."
+    },
+    {
+     "title": "Other fruiting bodies",
+     "summary": "Puffballs, brackets, morels, cup fungi and truffles."
+    }
+   ]
+  },
+  {
+   "title": "Identification Skills",
+   "summary": "How mycologists identify mushrooms by spore print, gills or pores, gill attachment, the base of the stem, smell, habitat and season, with keys, microscopes and experts; identification for learning is not identification for eating, and no wild mushroom is eaten without in-person confirmation by an expert.",
+   "challenge": "Collect five different mushrooms (or photograph them where collecting is not allowed), record every feature on a field sheet with a spore print, and bring them to a local mycological society meeting or foray to check your identifications with an expert.",
+   "sections": [
+    {
+     "title": "Observing a mushroom completely",
+     "summary": "Digging up the whole base, and noting cap, gills, stem, ring, volva, bruising colors and smell."
+    },
+    {
+     "title": "Spore prints",
+     "summary": "How to make one, and what its color narrows down."
+    },
+    {
+     "title": "Gills, pores, teeth and ridges",
+     "summary": "The surfaces that bear spores, how gills attach to the stem, and what each feature points to."
+    },
+    {
+     "title": "Habitat, season, keys and experts",
+     "summary": "Using habitat and partner trees, dichotomous keys and microscopes, and why photographs and apps are never enough to eat by."
+    }
+   ]
+  },
+  {
+   "title": "Edible Mushrooms and Deadly Look-alikes",
+   "summary": "The deadly Amanitas (the death cap, Amanita phalloides, and the destroying angels), other dangerous species and the edible mushrooms they resemble, why folk tests fail, and why anyone who may have eaten a poisonous mushroom needs emergency medical help at once, before symptoms appear; the rule stands: never eat a wild mushroom without in-person expert confirmation.",
+   "challenge": "Make a comparison chart of three dangerous species and their edible look-alikes (for example the death cap and the paddy straw mushroom, the jack-o'-lantern and the chanterelle, a false morel and a true morel), list the features that separate them, and explain why those features alone are still not enough to eat by.",
+   "sections": [
+    {
+     "title": "The deadly Amanitas",
+     "summary": "Death caps and destroying angels: how they look, their amatoxins, and the delayed symptoms that make them so dangerous."
+    },
+    {
+     "title": "Other dangerous mushrooms",
+     "summary": "Deadly Galerina, Cortinarius species that damage the kidneys, false morels, and the many mushrooms that cause severe stomach upset."
+    },
+    {
+     "title": "Edible species and their look-alikes",
+     "summary": "Chanterelles, morels, boletes, puffballs and oyster mushrooms, and the poisonous species each can be mistaken for."
+    },
+    {
+     "title": "Myths, folk tests and emergencies",
+     "summary": "Why peeling, silver spoons, pleasant taste or animals eating a mushroom prove nothing, and what to do if someone may have been poisoned."
+    }
+   ]
+  },
+  {
+   "title": "Fungi in Ecosystems",
+   "summary": "Fungi as the great decomposers, as mycorrhizal partners of most land plants, as lichens and as pathogens, with an honest look at the evidence behind the 'wood wide web'.",
+   "challenge": "Survey a small patch of woodland or park: record fungi decomposing wood or leaves, mushrooms growing near living trees, and lichens, and explain the role each one plays.",
+   "sections": [
+    {
+     "title": "Decomposers",
+     "summary": "White rot and brown rot, how fungi break down wood, and why the carbon cycle depends on them."
+    },
+    {
+     "title": "Mycorrhizae",
+     "summary": "Partnerships between fungi and plant roots that trade the plant's sugars for water and minerals."
+    },
+    {
+     "title": "Lichens",
+     "summary": "A fungus living with algae or cyanobacteria, and what lichens can tell us about air quality."
+    },
+    {
+     "title": "Pathogens and the wood wide web",
+     "summary": "Fungi that cause disease in plants, insects and amphibians, and what the evidence does and does not show about trees sharing resources through fungal networks."
+    }
+   ]
+  },
+  {
+   "title": "Growing Mushrooms at Home",
+   "summary": "Growing oyster mushrooms from a kit or on pasteurized straw, and shiitake on logs or sawdust blocks, with the rules: grow only known edible species from a reputable spawn supplier, keep the work clean, cook the harvest, and never cultivate psychoactive species.",
+   "challenge": "Grow a flush of oyster mushrooms from a kit or a bucket of pasteurized straw, keep a daily log of temperature, moisture and growth, then cook and eat the harvest.",
+   "sections": [
+    {
+     "title": "How cultivation works",
+     "summary": "Spawn, substrate, colonization and fruiting, and why clean technique keeps out competing molds."
+    },
+    {
+     "title": "Oyster mushrooms",
+     "summary": "The easiest mushroom to grow: kits, straw and coffee grounds, and how to trigger fruiting."
+    },
+    {
+     "title": "Shiitake",
+     "summary": "Growing shiitake on hardwood logs and sawdust blocks, and why it takes patience."
+    },
+    {
+     "title": "Harvesting, storing and cooking",
+     "summary": "When to pick, how to store, and why mushrooms should be cooked before eating."
+    }
+   ]
+  },
+  {
+   "title": "Fungi and People",
+   "summary": "Fungi in bread, beer, cheese and soy sauce, in medicine from penicillin onward, as crop diseases and human infections, and how to judge health claims about medicinal mushrooms, most of which remain unproven.",
+   "challenge": "Pick one health claim made for a mushroom supplement, find what human clinical trials actually show, and write a one-page verdict that separates established evidence from marketing.",
+   "sections": [
+    {
+     "title": "Fungi in food",
+     "summary": "Yeast in bread and beer, molds in cheese, koji in soy sauce and miso, and mushrooms themselves as food."
+    },
+    {
+     "title": "Penicillin and other fungal medicines",
+     "summary": "Fleming's 1928 observation, the Oxford team that turned penicillin into a medicine, and later drugs from fungi such as cyclosporine and the first statins."
+    },
+    {
+     "title": "Fungi that harm",
+     "summary": "Crop diseases, ergot, mycotoxins in food, and fungal infections in people."
+    },
+    {
+     "title": "Medicinal mushrooms: evidence and claims",
+     "summary": "What studies show about lion's mane, reishi, turkey tail and others, and why most popular claims are still unproven."
+    }
+   ]
+  }
+ ],
+ "written": {},
+ "createdAt": 1791700000000,
+ "createdBy": null,
+ "color": "#4E3B2A",
+ "persona": "professor",
+ "engine": "default",
+ "preface": "A mushroom is the part of a fungus you can see, the way an apple is the part of a tree you can pick. The rest of the fungus is a web of fine threads hidden in soil, wood or leaves, and it is doing some of the most important work on Earth: breaking down dead plants, feeding the roots of trees, and now and then pushing up a mushroom to scatter its spores. This book is about that hidden life, and about the mushrooms we find, grow, eat and fear.\n\nWe begin with what fungi are and how they live, then learn how a mushroom grows and how to look at one the way a mycologist does: spore print, gills or pores, the base of the stem, habitat and season. Then come the dangerous mushrooms and their look-alikes, the work fungi do in forests and fields, growing your own mushrooms at home, and the long story of fungi and people, from bread and cheese to penicillin.\n\nOne rule comes before everything else, and I will repeat it often: never eat a wild mushroom that you have identified from a book, a photograph or an app alone. Some of the deadliest mushrooms look quite ordinary, and by the time their poison makes you feel ill it is already damaging the liver. Learn identification for the pleasure of knowing, and if you ever want to eat what you find, have every mushroom checked in person by an expert, such as an experienced identifier at a local mycological society.\n\nYou will need a notebook, a hand lens, some paper for spore prints, and a walk outdoors after rain. Two mushrooms will follow us through the book: the oyster mushroom, which you can buy, study and grow, and the death cap, which you will learn to recognize and never eat.",
+ "coverSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\"><g fill=\"none\" stroke=\"#FFFFFF\" stroke-linecap=\"round\" stroke-linejoin=\"round\" transform=\"translate(0 -40)\"><path d=\"M92 196 C 96 112, 304 112, 308 196 Q 200 212 92 196 Z\" fill=\"#FFFFFF\" fill-opacity=\"0.18\" stroke-width=\"3\"/><path d=\"M92 196 Q 200 246 308 196\" fill=\"#FFFFFF\" fill-opacity=\"0.06\" stroke-width=\"2.5\"/><path d=\"M110 200 L121 203 M128 202 L137 209 M146 204 L152 214 M164 205 L168 217 M182 205 L184 219 M200 206 L200 220 M218 205 L216 219 M236 205 L232 217 M254 204 L248 214 M272 202 L263 209 M290 200 L279 203\" stroke-width=\"1.4\" stroke-opacity=\"0.8\"/><path d=\"M184 221 C 180 256, 176 286, 172 306 Q 200 316 228 306 C 224 286, 220 256, 216 221\" fill=\"#FFFFFF\" fill-opacity=\"0.1\" stroke-width=\"3\"/><path d=\"M268 284 C 270 252, 334 252, 336 284 Q 302 292 268 284 Z\" fill=\"#FFFFFF\" fill-opacity=\"0.18\" stroke-width=\"2.5\"/><path d=\"M296 288 C 295 296, 294 302, 293 308 L 311 308 C 310 302, 309 296, 308 288\" stroke-width=\"2.5\"/><path d=\"M40 310 C 90 302, 140 314, 200 308 S 310 302, 360 310\" stroke-width=\"2.5\"/><path d=\"M200 312 C 196 330, 176 344, 150 352 C 126 360, 104 356, 82 368\" stroke-width=\"1.4\" stroke-opacity=\"0.7\"/><path d=\"M200 312 C 206 334, 228 346, 256 350 C 284 354, 306 366, 330 372\" stroke-width=\"1.4\" stroke-opacity=\"0.7\"/><path d=\"M200 312 C 200 336, 198 358, 204 384\" stroke-width=\"1.4\" stroke-opacity=\"0.7\"/><path d=\"M150 352 C 146 366, 136 376, 122 384 M256 350 C 262 364, 270 374, 284 384 M108 358 C 100 346, 86 338, 70 336 M302 360 C 312 348, 326 340, 344 338 M300 309 C 302 322, 310 330, 322 336\" stroke-width=\"1.2\" stroke-opacity=\"0.6\"/><g fill=\"#FFFFFF\" stroke=\"none\"><circle cx=\"124\" cy=\"236\" r=\"2.5\"/><circle cx=\"108\" cy=\"254\" r=\"2\"/><circle cx=\"130\" cy=\"268\" r=\"2.5\"/><circle cx=\"114\" cy=\"284\" r=\"2\"/><circle cx=\"276\" cy=\"232\" r=\"2.5\"/><circle cx=\"290\" cy=\"246\" r=\"2\"/><circle cx=\"262\" cy=\"250\" r=\"2\"/></g></g></svg>",
+ "bible": {
+  "teacher": "Dr. Professor teaches this book as a field mycologist would: from specimens, spore prints, microscopes, cultures and DNA, following Arora's field method for identification, Kendrick's textbook for biology, and Money's research on how mushrooms grow and release spores. Safety comes first in every chapter that touches eating.",
+  "promise": "By the last page you will understand how fungi live, describe any mushroom with the features experts use, recognize the deadly Amanitas, grow your own oyster mushrooms, and know exactly why a book, photograph or app is never enough to eat a wild mushroom.",
+  "threads": [
+   "The mushroom is the fruit; the fungus is the hidden mycelium.",
+   "Safety first: identification is taught for knowledge, and eating any wild mushroom requires in-person confirmation by an expert.",
+   "Observe completely: the whole mushroom with its base, the spore print, the habitat and the season.",
+   "How we know: claims are tied to specimens, experiments and DNA, and unproven claims are labeled unproven.",
+   "Fungi connect living things: decomposition, plant partnerships, food and medicine."
+  ],
+  "runningExamples": [
+   {
+    "name": "Oyster mushroom (Pleurotus ostreatus)",
+    "use": "The friendly mushroom followed through the book: spore-printed from the store (Ch 2), studied as a wood decomposer (Ch 3, Ch 6), grown at home (Ch 7), and cooked as food (Ch 8)."
+   },
+   {
+    "name": "Death cap (Amanita phalloides)",
+    "use": "The deadly mushroom the reader learns to recognize and never eat: its ring, volva and white spore print (Ch 3, Ch 4), its amatoxins and look-alikes (Ch 5), and its partnership with tree roots and spread to new continents (Ch 6)."
+   },
+   {
+    "name": "Bread mold and baker's yeast",
+    "use": "Kitchen fungi for seeing hyphae, spores and fermentation without going outdoors (Ch 1, Ch 2, Ch 8)."
+   },
+   {
+    "name": "Your mushroom notebook",
+    "use": "Field sheets, spore prints and growing logs the reader keeps from Chapter 1."
+   }
+  ],
+  "conventions": [
+   "Give the scientific name in italics with the common name at a species' first mention in a chapter; common names vary by region, so the scientific name is the reference.",
+   "Never call a wild mushroom safe to eat on the strength of described features; every edible species is shown alongside its dangerous look-alikes and the in-person expert rule.",
+   "Label claims by strength of evidence (established, under study, or unproven); a health claim is called established only when human clinical trials support it.",
+   "Metric units: centimeters for mushrooms, micrometers for spores.",
+   "Refer back to earlier chapters by number when building on them."
+  ],
+  "canon": [
+   {
+    "cite": "Arora, D. (1986). Mushrooms demystified: A comprehensive guide to the fleshy fungi (2nd ed.). Ten Speed Press.",
+    "role": "The field method: how to observe, describe and key out mushrooms, and the treatment of edible and poisonous species and their look-alikes (Chapters 3 to 5). Used as a learning tool, not as permission to eat; older names are given with current ones."
+   },
+   {
+    "cite": "Kendrick, B. (2017). The fifth kingdom: An introduction to mycology (4th ed.). Hackett Publishing (Focus).",
+    "role": "The mycology textbook the course follows for fungal biology, classification, ecology, cultivation, poisoning and fungi in medicine and industry."
+   },
+   {
+    "cite": "Money, N. P. (2011). Mushroom. Oxford University Press.",
+    "role": "A research mycologist's account for general readers of how mushrooms develop and release spores, and of cultivation, poisoning and medicinal claims (Chapters 2, 3, 7 and 8)."
+   },
+   {
+    "cite": "Sheldrake, M. (2020). Entangled life: How fungi make our worlds, change our minds and shape our futures. Random House.",
+    "role": "Popular book, marked as such: vivid accounts of mycelium, lichens and mycorrhizal networks used for examples and questions, with every claim checked against the research literature, especially on the 'wood wide web'."
+   },
+   {
+    "cite": "North American Mycological Association, Toxicology Committee. (2010-2014). NAMA toxicology committee reports: North American mushroom poisonings. North American Mycological Association. https://namyco.org/interests/toxicology/",
+    "role": "Real poisoning cases and the toxins involved, including the death cap's place in most amatoxin poisonings reported to NAMA (Chapter 5)."
+   }
+  ],
+  "care": "Wild mushrooms can kill, and the book says so plainly and often. The rule: never eat a wild mushroom identified from a book, a photograph, an app or this course alone; every mushroom meant for eating must be confirmed in person, specimen in hand, by an experienced expert such as an identifier at a local mycological society, and when in doubt, throw it out. No folk test (peeling, silver, color, smell, pleasant taste, or animals eating it) shows that a mushroom is safe. Death caps and destroying angels look ordinary, and their amatoxins cause symptoms only many hours after the meal, by which time the liver is already being damaged; anyone who may have eaten a poisonous mushroom needs emergency medical help at once, with a sample of the mushroom if possible, even if they feel well. Keep wild mushrooms away from children and pets. Cook edible mushrooms before eating them; some edible species, such as morels and shiitake, can cause illness or skin reactions when eaten raw or undercooked. Cultivation covers only known edible species (oyster, shiitake and similar) grown from reputable spawn suppliers; the book does not teach the cultivation or use of psychoactive species, which are illegal in many places. Health claims for medicinal mushrooms, and popular claims (including some from well-known mushroom advocates) about fungi curing disease, improving memory or forming forest-wide 'brains', are reported as unproven unless human clinical trials or strong field evidence support them; the 'wood wide web' is taught with its real, mixed evidence, including recent reviews that found the field evidence for trees sharing resources through fungal networks weaker than often claimed."
+ },
+ "prov": {
+  "note": "Course plan written in Claude Code by Claude research agents, October 2026; canon editions verified by web search.",
+  "requester": "John",
+  "v": "dp-0.5"
+ }
+}
