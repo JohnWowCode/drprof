@@ -625,7 +625,9 @@ function preamble(c, extra) {
   const L = lvl(c.level), b = c.bible || {};
   const plan = [b.promise ? "Promise: " + b.promise : "", arr(b.threads).length ? "Threads that run through every chapter: " + b.threads.join(" ") : "",
     arr(b.runningExamples).length ? "Running examples to reuse: " + b.runningExamples.map((x) => `${x.name} (${x.use})`).join("; ") + "." : "",
-    arr(b.conventions).length ? "Conventions: " + b.conventions.join(" ") : ""].filter(Boolean).join(" ");
+    arr(b.conventions).length ? "Conventions: " + b.conventions.join(" ") : "",
+    arr(b.canon).length ? "Core texts this course follows (build on them, cite them where they support a claim, never contradict them without saying why): " + b.canon.map((x) => str(x.cite || x)).join(" | ") + "." : "",
+    b.care ? "Handle with care: " + str(b.care) : ""].filter(Boolean).join(" ");
   return [
     "You are Dr. Professor, writing a textbook for a self-paced learner.",
     `Course: ${c.code} — ${c.title}`,
