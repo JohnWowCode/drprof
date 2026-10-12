@@ -339,6 +339,7 @@ details.report summary { cursor: pointer; font-size: 0.92rem; font-weight: 700; 
 
 .k-lab { --k: var(--c-lab); }
 .hook { font-family: var(--f-read); font-size: 1.2rem; line-height: 1.62; max-width: 64ch; border-left: 3px solid var(--subj-ink); padding-left: 16px; }
+.k-kit .kit{border:1px solid var(--line,#d9d2c3);border-radius:10px;padding:.6rem .75rem}.k-kit .kit .row{justify-content:space-between;align-items:center}.kit-text{white-space:pre-wrap;word-break:break-word;font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;margin:.5rem 0 0;max-height:22rem;overflow:auto}
 .wx-sim{padding-left:1.2em;display:grid;gap:.6rem}.wx-sim li{line-height:1.5}.wx-sim li .chip{margin-right:.5rem;vertical-align:middle}.wx-sim li.ok>span{color:var(--muted,inherit)}
 .wx-inputs { display: grid; gap: 12px; }
 .wx-slider { display: grid; grid-template-columns: minmax(7rem, 12rem) minmax(0, 1fr) minmax(5.5rem, auto); gap: 10px; align-items: center; }
@@ -947,6 +948,7 @@ function normLesson(raw, c, n) {
       reading: arr(r.reading).map(str).filter(Boolean),
       sources: normSources(r.sources),
       keyTerms: arr(r.keyTerms).map((t) => ({ term: str(t.term), def: str(t.def) })).filter((t) => t.term),
+      templates: arr(r.templates).map((t) => ({ title: str(t.title), text: str(t.text), note: str(t.note) })).filter((t) => t.title && t.text),
       example: { title: str(ex.title), steps: arr(ex.steps).map(str).filter(Boolean), takeaway: str(ex.takeaway) },
       misconception: { myth: str((r.misconception || {}).myth), fact: str((r.misconception || {}).fact) },
       practice: arr(r.practice).map((p) => p.type === "short" ? { type: "short", q: str(p.q), answer: str(p.answer), explanation: str(p.explanation) } : (normMC(p) && { type: "mc", ...normMC(p) })).filter((p) => p && p.q),
@@ -1343,6 +1345,7 @@ function viewChapter(c, n) {
       ${altBlock(c, n, s)}
       ${wxFor(s.n)}
       ${s.misconception && s.misconception.myth ? `<div class="cbox k-myth"><div class="cbox-h"><span>Common misconception</span></div><div class="cbox-b"><div class="myth"><b>Myth</b><span>${fmt(s.misconception.myth)}</span><b class="fact">Fact</b><span>${fmt(s.misconception.fact)}</span></div></div></div>` : ""}
+      ${arr(s.templates).length ? `<div class="cbox k-kit"><div class="cbox-h"><span>Prompt kit</span><span>${arr(s.templates).length} to copy</span></div><div class="cbox-b stack-sm">${arr(s.templates).map((t, k) => `<div class="kit"><div class="row"><b>${esc(t.title)}</b><button type="button" class="btn ghost sm" data-act="copy-kit" data-sec="${esc(s.n)}" data-k="${k}">Copy</button></div><pre class="kit-text">${esc(t.text)}</pre>${t.note ? `<p class="small muted">${fmt(t.note)}</p>` : ""}</div>`).join("")}</div></div>` : ""}
       ${s.keyTerms.length ? `<div class="cbox k-terms"><div class="cbox-h"><span>Key terms</span><span>${s.keyTerms.length}</span></div><div class="cbox-b"><dl class="terms">${s.keyTerms.map((t) => `<dt>${esc(t.term)}</dt><dd>${fmt(t.def)}</dd>`).join("")}</dl></div></div>` : ""}
       ${s.example.steps.length ? `<div class="cbox k-example"><div class="cbox-h"><span>Worked example</span></div><div class="cbox-b"><div class="h3">${fmt(s.example.title.replace(/^Worked example:\s*/i, ""))}</div><ol class="steps">${s.example.steps.map((x) => `<li>${fmt(x)}</li>`).join("")}</ol>${s.example.takeaway ? `<p class="small"><strong>Takeaway.</strong> ${fmt(s.example.takeaway)}</p>` : ""}</div></div>` : ""}
       ${s.practice.length ? `<div class="cbox k-practice"><div class="cbox-h"><span>Practice ${esc(s.n)}</span><span>${s.practice.length} problems</span></div><div class="cbox-b">${s.practice.map((pr, i) => `<div class="prob" id="pp-${esc(s.n)}-${i}">${practice(c, s.n, i, pr)}</div>`).join("")}</div></div>` : ""}
@@ -2646,6 +2649,12 @@ document.addEventListener("click", (e) => {
     case "wx-log": S.wx[a.dataset.wx].log = !S.wx[a.dataset.wx].log; wxPaint(a.dataset.wx); break;
     case "wx-simstep": { const st = S.wx[a.dataset.wx]; const i = +a.dataset.i; if (st.done[i]) delete st.done[i]; else st.done[i] = true; wxPaint(a.dataset.wx); break; }
     case "wx-simans": S.wx[a.dataset.wx].pick = +a.dataset.j; wxPaint(a.dataset.wx); break;
+    case "copy-kit": {
+      const ch = S.chapters[`${c.id}:${S.chapterN}`], sec = ch && ch.lesson.sections.find((x) => x.n === a.dataset.sec), t = sec && arr(sec.templates)[+a.dataset.k];
+      if (t) { const done = () => { a.textContent = "Copied"; setTimeout(() => { a.textContent = "Copy"; }, 1500); };
+        try { navigator.clipboard.writeText(t.text).then(done, () => { a.textContent = "Select and copy"; }); } catch { a.textContent = "Select and copy"; } }
+      break;
+    }
     case "wx-reveal": S.wx[a.dataset.wx].shown++; wxPaint(a.dataset.wx); break;
     case "wx-reset": delete S.wx[a.dataset.wx]; wxPaint(a.dataset.wx); break;
     case "go-transcript": go("transcript"); break;

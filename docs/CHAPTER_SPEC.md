@@ -78,3 +78,14 @@ Rules: 3-8 steps. Every control, menu name and key must be verified against the 
 documentation; where it cannot be verified, describe the goal in words ("open the search panel and find
 the Moon") instead of naming a key. Never claim the simulator is a source of fact; it illustrates what the
 chapter's cited sources say.
+
+### Prompt kit (`templates`, optional, per section)
+
+Reusable prompt templates the reader copies with one tap (rendered as a "Prompt kit" box after the key
+terms). Use them in books where the reader produces prompts or specs (first: VCD 201).
+
+```json
+"templates": [ { "title": "Bug report for a coding agent", "text": "Multi-line template with [PLACEHOLDERS] in brackets", "note": "when to use it, what to fill in" } ]
+```
+1-3 per section; each must be something the reader can paste into a real tool today, built only from
+techniques the chapter teaches and sources support.
