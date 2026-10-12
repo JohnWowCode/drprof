@@ -57,6 +57,6 @@
 <text x="202" y="430" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">Both complete files, then a list</text>
 <text x="202" y="450" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">of every choice the spec left open</text>
 <rect x="492" y="407" width="292" height="54" rx="6" fill="#ffffff" stroke="#C8691C" stroke-width="1.5"/>
-<text x="502" y="430" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">PNG at 1920×1080,</text>
-<text x="502" y="450" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">four variations to choose from</text>
+<text x="502" y="430" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">4 variations as 16:9 PNGs,</text>
+<text x="502" y="450" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">scaled to 1920×1080 if needed</text>
 </svg>

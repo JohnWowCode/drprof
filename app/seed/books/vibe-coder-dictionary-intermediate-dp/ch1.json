@@ -24,7 +24,7 @@
   ],
   "lesson": {
     "hook": "On September 23, 1999, NASA lost the Mars Climate Orbiter as it fired its engine to enter orbit around Mars. The investigation found that a ground software file called “Small Forces” had reported thruster impulse in pound-force seconds, while the document both teams worked from, the Software Interface Specification, required newton-seconds. Every firing’s effect was underestimated by a factor of 4.45, and the spacecraft’s path had drifted far lower than the navigators believed. The specification named the right unit. What failed was the check: nothing in the process compared the delivered file against the spec before it was trusted. Every time you ask an AI for something, you are writing an interface specification for a contractor who works in seconds and rarely asks questions. This chapter is about writing it so that both of you can tell when it has been met.",
-    "overview": "This chapter is the foundation for the rest of the book, and it works the same way whether you are asking for code, a screen, a picture or a sound. Section 1.1 explains why vague requests come back competent but generic: models fill every unmade decision with a default, quietly pick one reading of ambiguous words, follow your wording literally, and stumble over prohibitions. Section 1.2 introduces the six-part spec (goal, context, constraints, acceptance criteria, examples, output format), the requirements standards behind it, and current vendor advice to describe outcomes rather than steps. Section 1.3 turns qualities like “readable” and “feels good” into checks and shows how examples teach format. Section 1.4 covers usable output (including what replaced the old prefill trick), checks an agent can run itself, and revisions that change only what you name. Every section ends with a Prompt kit you can paste into a real tool today, and along the way you write the first spec for Lamplighter.",
+    "overview": "This chapter is the foundation for the rest of the book, and it works the same way whether you are asking for code, a screen, a picture or a sound. Section 1.1 explains why vague requests come back competent but generic: models fill unmade decisions with defaults, often pick one reading of ambiguous words without saying so, follow wording precisely and, in some media, handle prohibitions badly. Section 1.2 introduces the six-part spec (goal, context, constraints, acceptance criteria, examples, output format), the requirements standards behind it, and current vendor advice to describe outcomes rather than steps. Section 1.3 turns qualities like “readable” and “feels good” into checks and shows how examples teach format. Section 1.4 covers usable output (including what replaced the old prefill trick), checks an agent can run itself, and revisions that change only what you name. Throughout, each claim is marked as one of three kinds, the habit the whole book follows: established (a standard, a definition or a peer-reviewed finding, cited), vendor guidance (attributed to the company and dated), or practice and opinion (labeled as such, with what is known about whether it holds). Every section ends with a Prompt kit you can paste into a real tool today, and along the way you write the first spec for Lamplighter.",
     "objectives": [
       "Identify underspecified, ambiguous and negatively phrased parts of a request in any medium, and predict the defaults a model will choose for them.",
       "Write a six-part spec (goal, context, constraints, acceptance criteria, examples, output format) for a code task, an interface, an image and a sound effect.",
@@ -37,13 +37,13 @@
         "n": "1.1",
         "title": "Why vague prompts fail",
         "reading": [
-          "Ask a coding agent to “make a cozy platformer about a lamplighter” and you will get a game. It will probably be a single web page with a rectangle for a hero, arrow keys to move, a jump, some floating platforms and perhaps warm orange colors standing in for “cozy.” It will not be the game you pictured, because almost nothing you pictured was in the request. Your sentence left most decisions open: where the game runs, which keys do what, how big the level is, what winning means, what “cozy” looks and sounds like. That condition is called **underspecification**: the request fits many different outputs, and the words do not choose among them. A model does not leave those decisions blank. It fills each one with a **default**, roughly the most typical choice for requests like yours (Chapter 2 explains the machinery), and that is why underspecified prompts tend to come back competent and average (Figure 1.1).",
+          "Ask a coding agent to “make a cozy platformer about a lamplighter” and you will get a game. In my experience it will usually be a single web page with a rectangle for a hero, arrow keys to move, a jump, some floating platforms and perhaps warm orange colors standing in for “cozy.” Your sentence left most decisions open: where the game runs, which keys do what, how big the level is, what winning means, what “cozy” looks and sounds like. That condition is called **underspecification**: the request fits many different outputs, and the words do not choose among them. A model does not leave those decisions blank. It fills each one with a **default**, and a useful first picture of a default is the most typical choice for requests like yours (Chapter 2 explains the machinery, and where that picture is too simple). In everyday use, mine included, underspecified requests tend to come back competent and average (Figure 1.1).",
           "The same thing happens in every medium. Ask an image model for “a lamplighter at night” and the open decisions include the framing, where the light comes from, the style, the setting and the shape of the frame, so you get whatever combination the model treats as typical. Ask a sound generator for “a lamp lighting sound” and it has to guess whether you mean a match, a gas jet or a magical chime, how long the sound lasts, and whether it should ring out as if in a large hall. Ask for “a settings screen” and the model chooses which controls appear, in what order, and what happens when you press Escape. None of these results is wrong. Each is the model’s choice in a place where you did not make one, and you meet that choice only after it has been built into the result.",
-          "Anthropic’s guide to prompting its Claude models puts the problem in human terms. It asks you to think of the model as “a brilliant but new employee who lacks context on your norms and workflows,” and adds that the more precisely you explain what you want, the better the result [1]. Its test for a prompt, which it calls the golden rule, is to show the prompt to a colleague with minimal context on the task and ask them to follow it; if they would be confused, the model will be too [1]. The guide also says that current Claude models are trained for precise instruction following, and that cuts both ways. If you write “can you suggest some changes,” Claude will sometimes give suggestions rather than make the changes, even when changes were what you meant, and if you want work that goes beyond the basics, you have to ask for it explicitly [1].",
-          "Underspecification has a cousin, **ambiguity**, where the words are present but can be read more than one way. “Make the lamps lighter” could mean brighter, paler, smaller on screen or lower in weight in the physics code. “Fix the button” assumes the model knows which button and what is wrong with it. “Make the enemies faster” leaves open movement, attack rate or spawn rate, and in which levels. Models are poor at catching this. Alisa Liu and colleagues built AmbiEnt, a set of 1,645 linguist-annotated examples, about a third of them ambiguous, and asked models to spell out the possible readings; crowdworkers judged GPT-4’s disambiguations correct only 32% of the time, against 90% for the ones written for the dataset [2]. Handed an ambiguous instruction, a model usually picks one reading and carries on without telling you it chose.",
-          "A third trap is the instruction written as a prohibition. A negation still puts the unwanted idea into the request, and models that turn descriptions into pictures handle it especially badly. Runway’s guide for its Gen-4 video model says the model is built to follow descriptions of what should happen, not of what should be avoided, and that “negative phrasing is not supported and may produce unpredictable or even opposite results” [3]. Its fix for “no camera movement” is to describe a locked camera instead [3]. Language models cope with negation better, but Anthropic’s guide still advises telling Claude what to do instead of what not to do [1]. “An empty street at dawn” is a decision. “No people” names the thing you did not want and leaves the street itself undecided. A few image tools offer a separate field for true exclusions, which Chapter 7 covers tool by tool.",
-          "People new to prompting leave these gaps for understandable reasons. J. D. Zamfirescu-Pereira and colleagues watched people without AI training design prompts for a chatbot. Their participants tried ideas opportunistically rather than systematically, overgeneralized from a single success or failure, and carried over habits from giving instructions to other people [4]. With a human colleague, shared context fills the holes: they were in yesterday’s meeting, and they know your taste. A model knows only what is in the conversation in front of it, plus general patterns from its training. Your taste, your project and your earlier decisions exist for it only if they are written down where it can read them.",
-          "The cure is not a longer prompt but fewer unmade decisions. Before you send a request, list the questions a capable stranger would need answered, then answer each one or hand it over on purpose. Handing it over on purpose, **explicit delegation**, sounds like this: “Choose the platform layout yourself, keep every lamp reachable, and list the choices you made.” Delegating is often the right call, since the model may know conventions you do not. Silent delegation is the problem, because you discover the decision only after it has been built into the result. The Prompt kit at the end of this section turns the stranger’s questions into a prompt you can run before the real one."
+          "Anthropic’s guide to prompting its Claude models (October 2026) puts the problem in human terms. It asks you to think of the model as “a brilliant but new employee who lacks context on your norms and workflows” [1]. Its test for a prompt, which it calls the golden rule, is to show the prompt to a colleague with minimal context on the task and ask them to follow it; if they would be confused, the model will be too [1]. The reason outlives any model: both have only what you wrote. The guide also says that current Claude models are trained for precise instruction following, and that cuts both ways. If you write “can you suggest some changes,” Claude will sometimes give suggestions rather than make the changes, even when changes were what you meant, and if you want work that goes beyond the basics, you have to ask for it explicitly [1].",
+          "Underspecification has a cousin, **ambiguity**, where the words are present but can be read more than one way. “Make the lamps lighter” could mean brighter, paler, smaller on screen or lower in weight in the physics code. “Fix the button” assumes the model knows which button and what is wrong with it. “Make the enemies faster” leaves open movement, attack rate or spawn rate, and in which levels. In a peer-reviewed 2023 study, models were poor at catching this. Alisa Liu and colleagues built AmbiEnt, a set of 1,645 linguist-annotated examples, about a third of them ambiguous, and asked models to spell out the possible readings; crowdworkers judged GPT-4’s disambiguations correct only 32% of the time, against 90% for the ones written for the dataset [2]. Newer models may do better, and that has not been measured the same way, so take the lasting lesson rather than the number: practitioners widely report that, handed an ambiguous instruction, a model picks one reading and carries on without telling you it chose.",
+          "A third trap is the instruction written as a prohibition. A negation still names the unwanted thing, and at least one generator vendor documents that this backfires. Runway’s guide for its Gen-4 video model, checked in October 2026, says the model is built to follow descriptions of what should happen, not of what should be avoided, and that “negative phrasing is not supported and may produce unpredictable or even opposite results” [3]. Its fix for “no camera movement” is to describe a locked camera instead [3]. A common explanation, plausible but not stated by Runway, is that such models learn from captions, which describe what is in a picture, not what is missing. Chat models generally handle “don’t” better in my experience, and Anthropic’s guide still advises telling Claude what to do instead of what not to do [1]. “An empty street at dawn” is a decision. “No people” names the thing you did not want and leaves the street itself undecided.",
+          "People new to prompting leave these gaps for understandable reasons. J. D. Zamfirescu-Pereira and colleagues watched people without AI training design prompts for a chatbot. Their participants tried ideas opportunistically rather than systematically, overgeneralized from a single success or failure, and carried over habits from giving instructions to other people [4]. With a human colleague, shared context fills the holes: they were in yesterday’s meeting, and they know your taste. A model knows only what is in the conversation in front of it, plus general patterns from its training and whatever files or memory its tool gives it (Chapter 5). Your taste, your project and your earlier decisions exist for it only if they are written down where it can read them.",
+          "The cure is not a longer prompt but fewer unmade decisions. Before you send a request, list the questions a capable stranger would need answered, then answer each one or hand it over on purpose. Handing it over on purpose, **explicit delegation**, sounds like this: “Choose the platform layout yourself, keep every lamp reachable, and list the choices you made.” In my practice delegating is often the right call, since the model may know conventions you do not. Silent delegation is the problem, because you discover the decision only after it has been built into the result. The Prompt kit at the end of this section turns the stranger’s questions into a prompt you can run before the real one."
         ],
         "sources": [
           {
@@ -82,7 +82,7 @@
           },
           {
             "term": "Default",
-            "def": "The choice a model makes for a decision the request left open, usually the most typical choice for similar requests."
+            "def": "The choice a model makes for a decision the request left open, often roughly the most typical choice for similar requests."
           },
           {
             "term": "Ambiguity",
@@ -90,7 +90,7 @@
           },
           {
             "term": "Golden rule (colleague test)",
-            "def": "Anthropic’s check that a prompt a colleague with little context could not follow will also confuse the model."
+            "def": "Anthropic’s documented check (vendor guidance) that a prompt a colleague with little context could not follow will also confuse the model."
           },
           {
             "term": "Positive phrasing",
@@ -131,7 +131,7 @@
         },
         "misconception": {
           "myth": "A smart enough model will figure out what I mean.",
-          "fact": "Capability helps a model carry out a request, not recover the parts you left out. The model has your words and its general training, so every missing decision gets a typical default. Anthropic’s own guidance says its current models follow instructions precisely and that work beyond the basics has to be asked for, and in the AmbiEnt study even GPT-4 usually failed to spell out the readings of an ambiguous sentence correctly."
+          "fact": "Capability helps a model carry out a request, not recover the parts you left out. The model has your words and its general training, so every missing decision gets a typical default. Anthropic’s guidance (October 2026) says its current models follow instructions precisely and that work beyond the basics has to be asked for, and in the 2023 AmbiEnt study even GPT-4 usually failed to spell out the readings of an ambiguous sentence correctly."
         },
         "practice": [
           {
@@ -172,11 +172,11 @@
         "reading": [
           "A **spec**, short for specification, is a description of something to be built, written so that one person can build it and another can check it. Requirements engineers have worked for decades on what makes such descriptions succeed. Their international standard, ISO/IEC/IEEE 29148:2018, lists characteristics that each individual requirement should have, among them that it be necessary, unambiguous, complete, singular (one requirement per statement), feasible and **verifiable** [1]. Two of these do most of the work in prompts. Unambiguous means only one reasonable reading. Verifiable means there is a way to show the requirement has been met. Singular is the quiet third: one statement, one requirement, so each can pass or fail on its own and a reviewer can point at the one that failed [1]. A prompt is a spec for a very fast contractor who starts work the moment you press Enter, so the same standards apply.",
           "The hook of this chapter shows what a spec can and cannot do. The Mars Climate Orbiter’s Software Interface Specification defined the format and units of a file passed from ground software to the navigation team, and it called for thruster impulse in newton-seconds. The ground software file named “Small Forces” reported pound-force seconds instead, so the navigation software underestimated the effect of thruster firings by a factor of 4.45 [2]. Among the contributing causes, the investigation board listed the lack of complete end-to-end verification of the navigation software and related models [2]. The spec was right. It failed because nothing checked the delivered file against it, which is why every spec in this book ends with criteria you can check.",
-          "This book uses six parts for every spec (Figure 1.2). The **goal** says what you want and why. The **context** says who it is for, where it will be used and what already exists. The **constraints** set the limits. The acceptance criteria say how you will know it is done. The examples show what good looks like. The output format says what shape the answer should take. Each part prevents a particular failure. Without a goal the model works hard on the wrong thing; without context it guesses the platform and audience; without constraints it picks tools and scope for you; without criteria neither of you can tell when to stop; without examples it guesses the style; without a format you get prose when you needed files. Sections 1.3 and 1.4 cover the last three.",
-          "Notice what the six parts leave out: the steps. A spec describes the result and the limits and leaves the route to the builder, unless the route itself matters. Vendor guidance has moved the same way. OpenAI’s guide for its GPT-5.5 model, as of October 2026, recommends describing the expected outcome, success criteria, allowed side effects, evidence rules and output shape, and avoiding step-by-step process guidance unless the exact path matters; it warns that older prompts which spelled out every step can now narrow what the model tries [3]. The same logic sets a spec’s length. It should be as long as the decisions you need to fix and no longer: two sentences for a quick image, a page for an hour of agent work. Adjectives such as “amazing,” “polished” or “AAA quality” add length without adding a decision, because nobody can check them.",
-          "The goal is the part people skip most often, because it feels obvious to them. Anthropic’s documentation recommends giving the reason behind an instruction, not just the instruction. Its example replaces “NEVER use ellipses” with an explanation that the response will be read aloud by a text-to-speech engine that cannot pronounce them, and it notes that the model can generalize from the explanation [4]. A goal with a reason works the same way: “a first playable build, to test whether jumping and lighting lamps is fun before I spend time on art” tells the model to put its effort into controls and none into graphics. Context covers the rest of what lives in your head: your skill level, your machine, your files, your audience. The same guide suggests placing long documents near the top of a prompt, above the instructions, and wrapping each kind of content in its own labeled XML tag so instructions, context and examples are not confused [4].",
-          "A **constraint** is a limit the output must respect. Hard constraints are requirements (“plain JavaScript, no libraries, exactly two files”); soft constraints are preferences the model may trade off (“prefer short functions”). Say which is which. A useful special case is the **non-goal**, a statement of what is out of scope: “no menus, sound or touch controls in this build.” A model that has not been told the scope may reasonably add a feature or tidy a file nobody asked about, and a non-goal draws the line before it is crossed. Where you can, phrase limits as what to do instead of what to avoid, as Section 1.1 showed. Keep the tone calm, too. Anthropic’s guide notes that some recent Claude models (it names Claude Opus 4.5 and 4.6) are more responsive to the system prompt than earlier ones, so wording such as “CRITICAL: You MUST use this tool when...” can now make them overreact, and it recommends normal phrasing such as “Use this tool when...” [4].",
-          "The six parts are not only for code. Google’s guide to prompting its Imagen image models builds a prompt from a subject, its context and background, and a style, and says prompts need not be long or complex but that most good ones are descriptive and clear [5]. Those three slots are the goal and the core constraints of an image spec, and the rest of the skeleton still applies. For Lamplighter’s title art, the context is a 1920×1080 title screen with the logo across the top third; the constraints are a soft painted style, a four-color palette and a 16:9 frame set with the tool’s own control; the acceptance criteria are a lamplighter in the right third and a top third calm enough to carry the logo; the example is a reference image; the output format is four variations as 16:9 PNGs, resized or upscaled to 1920×1080 if the tool’s native size is smaller. Figure 1.2 lays the code spec and the image spec side by side, and the practice below does the same for a sound."
+          "This book uses six parts for every spec (Figure 1.2). The six-part split is this book’s teaching framework, not a standard: it gathers what requirements engineers and vendor guides ask for into one checklist you can remember. The **goal** says what you want and why. The **context** says who it is for, where it will be used and what already exists. The **constraints** set the limits. The acceptance criteria say how you will know it is done. The examples show what good looks like. The output format says what shape the answer should take. Each part is meant to prevent a particular failure. Without a goal the model works hard on the wrong thing; without context it guesses the platform and audience; without constraints it picks tools and scope for you; without criteria neither of you can tell when to stop; without examples it guesses the style; without a format you get prose when you needed files. Sections 1.3 and 1.4 cover the last three.",
+          "Notice what the six parts leave out: the steps. A spec describes the result and the limits and leaves the route to the builder, unless the route itself matters. Vendor guidance, as of October 2026, points the same way. OpenAI’s guide for its GPT-5.5 model recommends describing the expected outcome, success criteria, allowed side effects, evidence rules and output shape, and avoiding step-by-step process guidance unless the exact path matters; it warns that older prompts which spelled out every step can now narrow what the model tries [3]. The lasting reason is simple: a procedure fixes the route, and a capable builder, human or model, may know a better one. The same logic sets a spec’s length. It should be as long as the decisions you need to fix and no longer: two sentences for a quick image, a page for an hour of agent work. Adjectives such as “amazing,” “polished” or “AAA quality” add length without adding a decision, because nobody can check them.",
+          "The goal is the part people most often skip, because it feels obvious. Anthropic’s documentation, as of October 2026, recommends giving the reason behind an instruction, not just the instruction. Its example replaces “NEVER use ellipses” with an explanation that the response will be read aloud by a text-to-speech engine that cannot pronounce them, and it notes that the model can generalize from the explanation [4]. A goal with a reason works the same way: “a first playable build, to test whether jumping and lighting lamps is fun before I spend time on art” gives the model a reason to put its effort into controls rather than graphics. Context covers the rest of what lives in your head: your skill, machine, files and audience. The same guide suggests placing long documents near the top of a prompt, above the instructions, with each kind of content in its own labeled XML tag, and reports that in its own tests (method unpublished) a question placed last improved answers on long inputs [4].",
+          "A **constraint** is a limit the output must respect; in requirements language, a limit on how the result may be built rather than on what it must do. Hard constraints are requirements (“plain JavaScript, two files”); soft constraints are preferences the model may trade off (“prefer short functions”). A useful special case is the **non-goal**, a statement of what is out of scope: “no menus or sound in this build.” In practice, a model not told the scope may add a feature nobody asked for; a non-goal draws the line first. Keep the tone calm: Anthropic’s guide, as of October 2026, notes that some recent Claude models (it names Claude Opus 4.5 and 4.6) are more responsive to the system prompt than earlier ones, so wording such as “CRITICAL: You MUST use this tool when...” can now make them overreact, and it recommends normal phrasing instead [4]. The lasting reason: a model that follows the system prompt closely may treat shouting as a cue to apply the rule everywhere.",
+          "The six parts are not only for code. Google’s guide to prompting its Imagen image models, checked in October 2026, builds a prompt from a subject, its context and background, and a style, and says prompts need not be long or complex but that most good ones are descriptive and clear [5]. For Lamplighter’s title art, the context is a 1920×1080 title screen with the logo across the top third; the constraints are a soft painted style, a four-color palette and a 16:9 frame set with the tool’s own control; the acceptance criteria are a lamplighter in the right third and a top third calm enough to carry the logo; the example is a reference image; the output format is four variations as 16:9 PNGs, resized or upscaled to 1920×1080 if the tool’s native size is smaller. Figure 1.2 lays the code spec and the image spec side by side, and the practice below does the same for a sound."
         ],
         "sources": [
           {
@@ -230,7 +230,7 @@
           },
           {
             "term": "Constraint",
-            "def": "A limit the output must respect; hard constraints are requirements, soft constraints are preferences that may be traded off."
+            "def": "A limit on how the result may be built or what it may contain, rather than on what it must do; hard constraints are requirements, soft constraints are preferences that may be traded off."
           },
           {
             "term": "Non-goal",
@@ -272,7 +272,7 @@
         },
         "misconception": {
           "myth": "A longer, more forceful prompt is always a better prompt.",
-          "fact": "Length helps only when it carries decisions. Adjectives like “polished” or “stunning” cannot be checked, step-by-step instructions can narrow what a current model tries, and capitals are no substitute for a reason: Anthropic notes that aggressive “CRITICAL: You MUST” wording can make recent models overreact. A short prompt that settles the six parts beats a long one that circles them."
+          "fact": "Length helps only when it carries decisions. Adjectives like “polished” or “stunning” cannot be checked, OpenAI’s GPT-5.5 guide warns that step-by-step instructions can narrow what the model tries, and capitals are no substitute for a reason: Anthropic notes that aggressive “CRITICAL: You MUST” wording can make recent models overreact (both vendor guidance, October 2026). A short prompt that settles the six parts beats a long one that circles them."
         },
         "practice": [
           {
@@ -311,11 +311,12 @@
         "n": "1.3",
         "title": "Acceptance criteria and examples",
         "reading": [
-          "An **acceptance criterion** is a condition the result must meet to count as done, written so that anyone who checks it gets the same answer. Software teams attach a short list of them to each piece of work, and they are the verifiable requirements of Section 1.2 in practical form. Anthropic’s guide to evaluating prompts makes the point with a contrast: “The model should classify sentiments well” is a bad criterion, while an F1 score of at least 0.85 on a held-out test set of 10,000 posts is a good one, because it is specific and measurable [1]. A game or an app rarely needs statistics, but it always needs the same move: replace a quality you can only feel with a check you can run. Some checks you run with your own eyes and ears; others a coding agent can run itself, as Section 1.4 shows.",
+          "An **acceptance criterion** is a condition the result must meet to count as done, written so that anyone who checks it gets the same answer. Agile software teams commonly attach a short list of them to each piece of work, and they are the verifiable requirements of Section 1.2 in practical form. Anthropic’s guide to evaluating prompts (October 2026) makes the point with a contrast: “The model should classify sentiments well” is a bad criterion, while an F1 score of at least 0.85 on a held-out test set of 10,000 posts is a good one, because it is specific and measurable [1]. A game or an app rarely needs statistics, but it always needs the same move: replace a quality you can only feel with a check you can run. Some checks you run with your own eyes and ears; others a coding agent can run itself, as Section 1.4 shows.",
           "Most vague words in prompts can be translated (Figure 1.3). “Fast” becomes “the level appears less than two seconds after the page opens on my laptop.” “Readable” becomes a number. The Web Content Accessibility Guidelines (WCAG) 2.2, the W3C’s accessibility standard, are written almost entirely as criteria of this kind; success criterion 1.4.3 requires a contrast ratio of at least 4.5:1 between normal text and its background, and 3:1 for large text [2]. “Make the HUD text readable” leaves the model guessing, while “HUD text meets the WCAG 2.2 contrast minimum of 4.5:1” can be checked with any contrast tool. When a quality resists numbers, list what you could observe. “Cozy” art becomes four named colors and a lamp as the brightest spot in the frame; a “punchy” sound becomes a sharp start, a quick fade and a length under one second.",
-          "For behavior, one format works especially well. Behaviour-driven development, the practice built into the Cucumber testing tool and its Gherkin language, writes each scenario in three clauses: Given a starting situation, When something happens, Then an expected outcome follows [3]. “Given the player is touching an unlit lamp, when they press E, then the lamp lights and the lamp counter goes up by one.” Each **Given/When/Then scenario** is one check, it reads as plain English, and a coding agent can turn it into an automated test (Chapter 4). Writing three or four of them also pushes you to think about **edge cases**, the unusual situations where bugs hide: pressing E in mid-air, at a lamp that is already lit, or at the instant the timer reaches zero. Interfaces have edge cases too: the empty inventory, the name too long for its box, the button pressed twice.",
-          "Criteria say what must be true; examples show what good looks like. Putting a few worked examples in the prompt is called **few-shot prompting** (with one example, one-shot). Anthropic calls examples “one of the most reliable ways to steer Claude’s output format, tone, and structure,” and recommends three to five that are relevant to the real task, diverse enough to cover edge cases, and wrapped in example tags so the model can tell them apart from the instructions [4]. Diversity matters because a model copies more than you intend. If all three level sketches you provide are wide and flat, expect a wide, flat fourth. For pictures and sounds the example is usually a **reference**: an image, a clip or a recording that shows the look or sound you mean, which many generators accept directly (Chapters 7 to 9 cover how each tool uses one).",
-          "Research on why examples work supports that caution. Sewon Min and colleagues tested demonstrations on classification and multiple-choice tasks across 12 models and found that replacing the correct answers in the examples with random ones lowered performance only slightly; what the examples mainly conveyed was the set of possible answers, the kind of input text and the overall format [5]. For a vibe coder the lesson is practical. Examples are strongest at teaching shape: format, length, tone and structure. They also teach their accidents along with their intent, so vary everything you do not want copied, and if you include a **counterexample** of what you do not want, label it plainly as one.",
+          "Two more terms from requirements work sharpen these checks. A requirement about how well something works rather than what it does (speed, readability, accessibility, reliability) is a **non-functional requirement**; the contrast rule above is one, and in my experience these are the requirements vague prompts most often leave as adjectives. Acceptance criteria also differ from a **definition of done**, the Scrum framework’s term for the checklist that applies to every piece of work, while acceptance criteria belong to one item. For Lamplighter the definition of done might read: the game opens in Chrome with no console errors, every acceptance criterion passes, and nothing that passed in the last build fails. Criteria say the feature is right; the definition of done says the build is sound.",
+          "For behavior, one format works especially well. Behaviour-driven development, the practice built into the Cucumber testing tool and its Gherkin language, writes each scenario in three clauses: Given a starting situation, When something happens, Then an expected outcome follows, with And and But for extra clauses and the scenarios grouped under a Feature [3]. “Given the player is touching an unlit lamp, when they press E, then the lamp lights and the lamp counter goes up by one.” Each **Given/When/Then scenario** is one check, it reads as plain English, and a coding agent can turn it into an automated test (Chapter 4). Writing three or four of them also pushes you to think about **edge cases**, the unusual situations where bugs hide: pressing E in mid-air, at a lamp that is already lit, or at the instant the timer reaches zero. Interfaces have edge cases too: the empty inventory, the name too long for its box, the button pressed twice.",
+          "Criteria say what must be true; examples show what good looks like. Putting a few worked examples in the prompt is called **few-shot prompting** (with one example, one-shot). Anthropic’s guide, as of October 2026, calls examples “one of the most reliable ways to steer Claude’s output format, tone, and structure,” and recommends three to five that are relevant to the real task, diverse enough to cover edge cases, and wrapped in example tags so the model can tell them apart from the instructions [4]. Diversity matters because a model copies more than you intend; practitioners commonly find that if all three level sketches are wide and flat, the fourth comes back wide and flat too. For pictures and sounds the example is usually a **reference**: an image, a clip or a recording that shows the look or sound you mean, which many generators accept directly (Chapters 7 to 9 cover how each tool uses one).",
+          "Research on why examples work supports that caution. Sewon Min and colleagues tested demonstrations on classification and multiple-choice tasks across 12 models and found that replacing the correct answers in the examples with random ones lowered performance only slightly; what the examples mainly conveyed was the set of possible answers, the kind of input text and the overall format [5]. Those were 2022 models on classification tasks, so carry forward the direction of the finding rather than its numbers. My reading of it for a vibe coder is practical. Examples are strongest at teaching shape: format, length, tone and structure. They also teach their accidents along with their intent, so vary everything you do not want copied, and if you include a **counterexample** of what you do not want, label it plainly as one.",
           "Criteria and examples work best together. A criterion such as “each lamp description is one sentence of 15 to 25 words” can be checked but says nothing about voice; an example sets the voice but cannot say which of its features are required. Give both, and say which features of the examples are requirements and which are incidental. For Lamplighter, each lamp shows a one-line note when it is lit. The spec gives the criterion (one sentence, 15 to 25 words, present tense, no exclamation marks), three example notes in different moods, and a line saying that the examples set the voice while their subjects (a baker, a cat, a train) are free to change. The Prompt kit below packages both halves."
         ],
         "sources": [
@@ -361,8 +362,16 @@
             "def": "A condition the result must meet to count as done, stated so that anyone checking it gets the same pass or fail."
           },
           {
-            "term": "Given/When/Then scenario",
-            "def": "A behavior check written as a starting situation, an action and an expected outcome, from behaviour-driven development."
+            "term": "Definition of done",
+            "def": "A checklist that every piece of work must pass before it counts as finished, such as building cleanly and passing all tests; a Scrum term, distinct from the acceptance criteria of one item."
+          },
+          {
+            "term": "Non-functional requirement",
+            "def": "A requirement about how well a system works (speed, contrast, reliability) rather than what it does; also called a quality requirement."
+          },
+          {
+            "term": "Given/When/Then scenario (Gherkin)",
+            "def": "A behavior check written as a starting situation, an action and an expected outcome, in the Gherkin language of behaviour-driven development."
           },
           {
             "term": "Edge case",
@@ -370,15 +379,7 @@
           },
           {
             "term": "Few-shot prompting",
-            "def": "Including a small number of worked examples in a prompt to show the model the format, tone and structure you want."
-          },
-          {
-            "term": "Reference",
-            "def": "An image, clip or recording supplied as the example of a look or sound, instead of describing it only in words."
-          },
-          {
-            "term": "Counterexample",
-            "def": "An example of what you do not want, clearly labeled so the model does not copy it."
+            "def": "Including a small number of worked examples in a prompt to show the model the format, tone and structure you want; with one example it is one-shot, with none zero-shot."
           }
         ],
         "templates": [
@@ -390,7 +391,7 @@
           {
             "title": "Examples with required and incidental features",
             "text": "<examples>\n<example>[EXAMPLE 1]</example>\n<example>[EXAMPLE 2, DIFFERENT IN LENGTH, MOOD OR SUBJECT]</example>\n<example>[EXAMPLE 3, AN EDGE CASE]</example>\n</examples>\n\nCopy from the examples: [WHAT IS REQUIRED, e.g. the voice, the sentence length, the structure].\nVary freely: [WHAT IS INCIDENTAL, e.g. the subject and setting of each one].\nEvery result must also meet: [CRITERIA, e.g. one sentence of 15 to 25 words, present tense].",
-            "note": "Anthropic recommends three to five relevant, diverse examples wrapped in tags (as of October 2026). Examples teach their accidents too, so vary everything you do not want copied and name what is required."
+            "note": "Anthropic’s guide recommends three to five relevant, diverse examples wrapped in tags (as of October 2026). Examples teach their accidents too, so vary everything you do not want copied and name what is required."
           }
         ],
         "example": {
@@ -406,7 +407,7 @@
         },
         "misconception": {
           "myth": "Acceptance criteria are paperwork for big companies, not something you need for a quick AI prompt.",
-          "fact": "They matter more with AI, not less. A model produces a finished-looking result in seconds and will not tell you which of your unstated hopes it missed. Three or four checks take a minute to write and turn review from a vague impression into a list you can tick off, and a coding agent can run many of them itself."
+          "fact": "They matter more with AI, not less. A model produces a finished-looking result in seconds and will not tell you which of your unstated hopes it missed unless you ask (Section 1.4). Three or four checks take a minute to write and turn review from a vague impression into a list you can tick off, and a coding agent can run many of them itself."
         },
         "practice": [
           {
@@ -445,13 +446,13 @@
         "n": "1.4",
         "title": "Output format and the first revision",
         "reading": [
-          "The **output format** is the shape of what comes back: which files, in which language, with what structure, at what length, in what markup. It is the most practical part of a spec, because it decides how much work you do after the model finishes. Ask for the form you will use. If you will paste code into files, ask for complete files with their names, not fragments. If you will compare options, ask for a table with the columns you need. Anthropic’s guide advises being specific about the desired format, telling the model what to do rather than what not to do (“Your response should be composed of smoothly flowing prose paragraphs” instead of “Do not use markdown”), and matching the style of your prompt to the style you want back, since the formatting of a prompt can influence the formatting of the response [1].",
-          "When the output will be read by a program, ask for **structured output**: data in a fixed, machine-readable shape, usually JSON. For a Lamplighter level that might be an object with a width and height in tiles, a list of roofs and a list of lamps. In a chat window, show the exact shape with a short template. Through an API, Anthropic’s structured outputs feature, as of October 2026, constrains Claude’s responses to a **JSON schema** you supply, so that the result can be parsed reliably (the documentation notes exceptions, such as refusals and replies cut off at the token limit) [2]. Older tutorials taught a different trick, **prefill**: writing the first characters of the reply yourself, such as an opening brace. Anthropic’s guide says that starting with Claude 4.6 models, prefilled responses on the last assistant turn are no longer supported and return an error, and it points to structured outputs instead, or to a plain instruction such as “Respond directly without preamble” [1].",
-          "Two format requests pay for themselves on any larger task. The first is an **assumption list**: “after the files, list every decision you made that this spec did not settle.” It turns the hidden defaults of Section 1.1 into a list you can read in a minute, and it shows you what to add to the spec next time. The second reverses the order of work: **clarifying questions** before anything is built. Anthropic’s Claude Code guide suggests that for larger features you have the agent interview you about implementation, interface, edge cases and tradeoffs, write the result to a SPEC.md file, and then start a fresh session to build from it [3]. Questions cost a few messages and catch ambiguity before it is built in. Skip them for cheap drafts, where looking at a result is faster than answering questions.",
-          "No spec is perfect, so the first result starts a loop: build, check every acceptance criterion, revise (Figure 1.4). A good **revision request** names the failing criterion and the evidence, states the change, and fences off everything else: “Criterion 3 fails: a full jump rises about 6 tiles, not 3. Lower the jump to 3 tiles. Change only the jump constants in game.js and leave everything else as it is.” The fence matters. A model asked to fix one thing may change more than you wanted, and a change that breaks something that used to work is called a **regression** (Chapter 4). After each revision, recheck all the criteria, not only the one you fixed.",
-          "The strongest criterion is one the builder can check for itself. Anthropic’s Claude Code guide opens its best practices with this advice: “Give Claude a check it can run: tests, a build, a screenshot to compare” [3]. Its reasoning is that an agent stops when the work looks done, and without a check, looking done is the only signal available, so you become the one who catches every mistake [3]. The same guide asks for evidence rather than assertions: the test output, the command that was run and what it returned, or a screenshot of the result [3]. For images, sounds and game feel you are usually the check, so write your criteria down before you look or listen. Criteria chosen after seeing a result make it too easy to accept whatever came back.",
-          "Change one thing per revision when you can, and do not draw conclusions from one run. Melanie Sclar and colleagues changed only the formatting of prompts (separators, spacing, capitalization) while keeping the meaning the same, and on one open model, LLaMA-2-13B, accuracy on few-shot tasks varied by up to 76 percentage points across formats [4]. Their tasks were benchmarks, not creative briefs, but a prompt that worked last week can wobble on a small edit. The study of non-expert prompt designers found that newcomers often overgeneralized from a single success or failure [5]. If a result is good, write down what produced it; if it is bad, find the criterion it fails before you rewrite the prompt. A bare “that’s wrong, try again” gives the model no new information, so you are simply asking for another draw from the same request.",
-          "When you change your mind, change the spec too. Midway through a session it is tempting to steer only in chat (“actually make it four lamps”), but after a dozen such messages the real requirements are scattered across the conversation, and neither you nor the model can see them in one place. Keep the written spec as the single record of what you want and paste the current version when you start a new session. The Claude Code guide adds a rule of thumb for sessions that go wrong: if you have corrected the agent more than twice on the same issue, clear the conversation and start again with a more specific prompt that includes what you learned, because “A clean session with a better prompt almost always outperforms a long session with accumulated corrections” [3]. Chapter 5 explains why long sessions degrade, and Chapter 12 builds a whole project on the written spec."
+          "The **output format** is the shape of what comes back: which files, in which language, with what structure, at what length, in what markup. It is the most practical part of a spec, because it decides how much work you do after the model finishes. Ask for the form you will use. If you will paste code into files, ask for complete files with their names, not fragments. If you will compare options, ask for a table with the columns you need. Anthropic’s guide, as of October 2026, advises being specific about the desired format, telling the model what to do rather than what not to do (“Your response should be composed of smoothly flowing prose paragraphs” instead of “Do not use markdown”), and matching the style of your prompt to the style you want back, since the formatting of a prompt can influence the formatting of the response [1].",
+          "When the output will be read by a program, ask for **structured output**: data in a fixed, machine-readable shape, usually JSON. In a chat window, show the exact shape with a short template. Through an API, Anthropic’s structured outputs feature, as of October 2026, constrains Claude’s responses to a **JSON schema** you supply (written in JSON Schema, an open standard for describing JSON data), so that the result can be parsed reliably (the documentation notes exceptions, such as refusals and replies cut off at the token limit) [2]. Older tutorials taught a different trick, **prefill**: writing the first characters of the reply yourself, such as an opening brace. Anthropic’s guide says that starting with Claude 4.6 models, prefilled responses on the last assistant turn are no longer supported and return an error, and it points to structured outputs instead, or to a plain instruction such as “Respond directly without preamble” [1].",
+          "Two format requests pay for themselves on any larger task. The first is an **assumption list**, a habit of mine rather than a documented feature: “after the files, list every decision you made that this spec did not settle.” It turns the hidden defaults of Section 1.1 into a list you can read in a minute, and it shows you what to add to the spec next time. The second reverses the order of work: **clarifying questions** before anything is built. Anthropic’s Claude Code guide (October 2026) suggests that for larger features you have the agent interview you about implementation, interface, edge cases and tradeoffs, write the result to a SPEC.md file, and then start a fresh session to build from it [3]. Questions cost a few messages and catch ambiguity before it is built in. Skip them for cheap drafts, where looking at a result is faster than answering questions.",
+          "No spec is perfect, so the first result starts a loop: build, check every acceptance criterion, revise (Figure 1.4). A good **revision request** names the failing criterion and the evidence, states the change, and fences off everything else: “Criterion 3 fails: a full jump rises about 6 tiles, not 3. Lower the jump to 3 tiles. Change only the jump constants in game.js and leave everything else as it is.” The fence matters. In practice, a model asked to fix one thing may change more than you wanted, and a change that breaks something that used to work is called a **regression** (Chapter 4). After each revision, recheck all the criteria, not only the one you fixed.",
+          "The strongest criterion is one the builder can check for itself. Anthropic’s Claude Code guide, as of October 2026, opens its best practices with this advice: “Give Claude a check it can run: tests, a build, a screenshot to compare” [3]. Its reasoning is that an agent stops when the work looks done, and without a check, looking done is the only signal available, so you become the one who catches every mistake [3]. The same guide asks for evidence rather than assertions: the test output, the command that was run and what it returned, or a screenshot of the result [3]. For images, sounds and game feel you are usually the check, so write your criteria down before you look or listen. Testers in every field learn the same lesson: criteria chosen after seeing a result make it too easy to accept whatever came back.",
+          "Change one thing per revision when you can, and do not draw conclusions from one run. Melanie Sclar and colleagues changed only the formatting of prompts (separators, spacing, capitalization) while keeping the meaning the same, and on one open model, LLaMA-2-13B, accuracy on few-shot tasks varied by up to 76 percentage points across formats [4]. Their tasks were benchmarks on 2023 open models, not creative briefs, and newer models may be less sensitive, which nobody has shown in the same way; the safe lesson is that a prompt that worked last week can wobble on a small edit. The study of non-expert prompt designers found that newcomers often overgeneralized from a single success or failure [5]. If a result is good, write down what produced it; if it is bad, find the criterion it fails before you rewrite the prompt. A bare “that’s wrong, try again” tells the model you are unhappy but not why, so you are mostly asking for another draw from the same request.",
+          "When you change your mind, change the spec too. It is tempting to steer only in chat (“actually make it four lamps”), but after a dozen such messages the real requirements are scattered across the conversation, and neither you nor the model can see them in one place. Keep the written spec as the single record of what you want and paste the current version when you start a new session. The Claude Code guide (October 2026) adds a rule of thumb for sessions that go wrong: if you have corrected the agent more than twice on the same issue, clear the conversation and start again with a more specific prompt that includes what you learned, because “A clean session with a better prompt almost always outperforms a long session with accumulated corrections” [3]. The likely reason is that every failed attempt stays in the context the model reads. Chapter 5 explains why long sessions degrade, and Chapter 12 builds a whole project on the written spec."
         ],
         "sources": [
           {
@@ -497,7 +498,7 @@
           },
           {
             "term": "JSON schema",
-            "def": "A description of the fields a JSON object must contain and the type of each, used to define or enforce structured output."
+            "def": "A description, written in the open JSON Schema standard, of the fields a JSON object must contain and the type of each, used to define or enforce structured output."
           },
           {
             "term": "Prefill",
@@ -530,7 +531,7 @@
           {
             "title": "Scoped revision request",
             "text": "[N] acceptance criteria fail:\n1. [CRITERION]: expected [TARGET], got [WHAT HAPPENED, WITH EVIDENCE].\n2. [CRITERION]: expected [TARGET], got [WHAT HAPPENED, WITH EVIDENCE].\n\nMake only the changes these fixes need, in [FILES OR AREA]. Keep everything else exactly as it is, including [WHAT MUST STAY THE SAME].\n[OPTIONAL SCOPE FIX, e.g. Remove the music button; sound is out of scope for this build.]\n\nThen recheck every acceptance criterion, not only these, show me the evidence for each, and list every change you made.",
-            "note": "Send it after any result that fails a check. If you have already corrected the same issue twice in one conversation, put what you learned into the spec and start a new session instead."
+            "note": "Send it after any result that fails a check. If you have already corrected the same issue twice in one conversation, put what you learned into the spec and start a new session instead, following the rule of thumb in Anthropic’s Claude Code guide (October 2026)."
           }
         ],
         "example": {
@@ -547,7 +548,7 @@
         },
         "misconception": {
           "myth": "If the answer is wrong, keep regenerating, or keep correcting it in the same chat, until it comes out right.",
-          "fact": "Regenerating samples the same request again, so you may get a result that is wrong in a new way, and you learn nothing about why. Find the criterion that failed and say so. If corrections keep failing, Anthropic’s Claude Code guide advises starting a clean session with a better prompt after two failed attempts, rather than piling more corrections into the same conversation."
+          "fact": "Regenerating samples the same request again, so you may get a result that is wrong in a new way, and you learn nothing about why. Find the criterion that failed and say so. If corrections keep failing, Anthropic’s Claude Code guide (October 2026) advises starting a clean session with a better prompt after two failed attempts, rather than piling more corrections into the same conversation."
         },
         "practice": [
           {
@@ -613,7 +614,7 @@
         {
           "text": "Use only these four colors: #1B2A41, #F2A541, #F5E9D3, #5C4B51.",
           "bucket": 1,
-          "why": "Anyone can check every pixel against four hex codes."
+          "why": "Anyone can check the colors against four hex codes (exactly for flat or pixel art; painted art needs a tolerance, Section 1.3)."
         },
         {
           "text": "A lamplighter at night, epic, masterpiece, 8k.",
@@ -631,7 +632,7 @@
           "why": "“Cool” is a feeling; source, length and shape of the sound are all undecided."
         },
         {
-          "text": "A match strike into a soft gas whoomp, under one second, with no echo.",
+          "text": "A match strike into a soft gas whoomp, under one second, dry and close.",
           "bucket": 1,
           "why": "Source, length and space are stated, and you can confirm each by listening."
         },
@@ -789,7 +790,7 @@
         "title": "Ambiguity, literal reading and negation",
         "bullets": [
           "Words with several readings: lighter, faster, fix it",
-          "AmbiEnt: GPT-4’s disambiguations correct 32% of the time vs 90%",
+          "AmbiEnt (2023): GPT-4’s disambiguations correct 32% of the time vs 90%",
           "“Can you suggest” gets suggestions, not changes",
           "Runway Gen-4: negative phrasing may produce opposite results"
         ],
@@ -815,7 +816,7 @@
           "Give the reason: the model generalizes from it",
           "“CRITICAL: You MUST” can make recent models overreact"
         ],
-        "notes": "Vendors now agree that a clear result and clear limits beat a scripted procedure. Anthropic’s text-to-speech example shows a reason doing more work than an order in capitals."
+        "notes": "OpenAI’s and Anthropic’s guides (October 2026) both favor a clear result and clear limits over a scripted procedure; that is vendor guidance, dated, so recheck it. Anthropic’s text-to-speech example shows a reason doing more work than an order in capitals."
       },
       {
         "title": "The same skeleton for any medium",
@@ -856,6 +857,16 @@
           "Two failed corrections: new session, better spec"
         ],
         "notes": "A bare “try again” adds no information. Change one thing at a time, draw no conclusions from a single run, and keep the written spec as the record."
+      },
+      {
+        "title": "Three kinds of claim, and keeping them current",
+        "bullets": [
+          "Established: standards, definitions, peer-reviewed findings (ISO/IEC/IEEE 29148, WCAG 2.2, Gherkin)",
+          "Vendor guidance: attributed and dated (Anthropic, OpenAI, Google, Runway, October 2026)",
+          "Practice and opinion: marked as such, with what is known",
+          "To recheck a tool fact: read the vendor’s current page, then run your own small test"
+        ],
+        "notes": "Standards and definitions in this chapter will still hold in ten years; model names, settings and vendor advice may not. When a tool fact matters, open the vendor’s current documentation, note the date, and run the same prompt on three or four of your own inputs before and after any change."
       },
       {
         "title": "Summary",
@@ -1053,100 +1064,5 @@
         "why": "A spec from another craft: every measurement has a unit, every symbol has a legend, and a builder can check the result against it."
       }
     ]
-  },
-  "review": {
-    "full": true,
-    "at": 1791600000000,
-    "by": "Researched and written with web-search verification, revised in a second pass with current vendor documentation; then fact-checked independently by a second agent, which read every string in ch1.json and every <text> label in ch1-fig-1..4.svg, fetched the live Anthropic pages on October 12, 2026 (Prompting best practices, Best practices for Claude Code, Define success criteria and build evaluations, Structured outputs) and compared each quotation word for word, confirmed the OpenAI GPT-5.5 guide wording, the Runway Gen-4 negative-phrasing sentence and the Imagen subject/context/style guidance through repeated web-search excerpts of the vendor pages (those hosts were unreachable directly), confirmed the AmbiEnt figures and the Mars Climate Orbiter findings (NASA's November 10, 1999 release of the board's findings) by search, relied on expert knowledge for ISO/IEC/IEEE 29148:2018, Sclar et al. (ICLR 2024), Min et al. (EMNLP 2022), WCAG 2.2 SC 1.4.3 and the Cucumber Book, checked figure numbering against the app's renderer (figures are numbered in section order), tested each of the 11 Prompt kit templates against the chapter's own advice, and re-solved all 16 multiple-choice keys, both sort exercises (20 items) and the order exercise blind before comparing.",
-    "keysChecked": 37,
-    "keysAgreed": 37,
-    "keyFixes": [],
-    "corrections": [
-      {
-        "where": "1.3 reading[1], figure cross-reference",
-        "before": "Most vague words in prompts can be translated (Figure 1.4).",
-        "after": "Most vague words in prompts can be translated (Figure 1.3).",
-        "why": "The app numbers figures in section order (dr-professor.html figHTML increments figNo per section). The section 1.3 figure (ch1-fig-4.svg, feeling-to-check) renders as Figure 1.3, so the text points to the wrong figure.",
-        "severity": "error",
-        "applied": true
-      },
-      {
-        "where": "1.4 reading[3], figure cross-reference",
-        "before": "build, check every acceptance criterion, revise (Figure 1.3).",
-        "after": "build, check every acceptance criterion, revise (Figure 1.4).",
-        "why": "The section 1.4 figure (ch1-fig-3.svg, the build-check-revise loop) is the fourth figure in section order and renders as Figure 1.4.",
-        "severity": "error",
-        "applied": true
-      },
-      {
-        "where": "1.2 reading[5], Anthropic attribution",
-        "before": "Anthropic’s guide notes that recent Claude models respond more strongly to instructions than earlier ones",
-        "after": "Anthropic’s guide notes that some recent Claude models (it names Claude Opus 4.5 and 4.6) are more responsive to the system prompt than earlier ones",
-        "why": "The live page (checked October 12, 2026) says: “Claude Opus 4.5 and Claude Opus 4.6 are also more responsive to the system prompt than previous models... may now overtrigger.” It names those two models and the system prompt, not recent models and instructions in general. The quoted CRITICAL/MUST wording is verbatim.",
-        "severity": "imprecise",
-        "applied": true
-      },
-      {
-        "where": "1.1 Prompt kit, Decision audit template",
-        "before": "Do not start the task yet. Read my request below the way a capable stranger would.",
-        "after": "Before you start the task, read my request below the way a capable stranger would.",
-        "why": "The chapter's own advice (1.1 reading, Anthropic: tell the model what to do instead of what not to do) asks for positive phrasing; the template opens with a prohibition. The rewrite keeps the meaning.",
-        "severity": "imprecise",
-        "applied": true
-      },
-      {
-        "where": "1.2 Prompt kit, Sound-effect brief template",
-        "before": "Space: dry and close, with no echo or room sound.",
-        "after": "Space: dry and close, as if recorded right next to the source.",
-        "why": "This line is pasted into a sound generator, the kind of model the chapter warns handles negation badly (1.1 reading on Runway; the template kit's own Negatives to positives tool). Naming “echo” and “room sound” can pull them in. The positive description says the same thing.",
-        "severity": "imprecise",
-        "applied": true
-      },
-      {
-        "where": "1.2 practice[2] model answer (Constraints)",
-        "before": "Under 1 second, dry, one sound only; no music or voice.",
-        "after": "Under 1 second, dry, a single isolated sound effect on its own.",
-        "why": "The model answer is a prompt for a sound-effect generator but uses a prohibition (“no music or voice”), which contradicts the chapter's positive-phrasing advice for generative media models.",
-        "severity": "imprecise",
-        "applied": true
-      },
-      {
-        "where": "1.2 practice[2] model answer (Output format)",
-        "before": "Output format: “WAV, mono, 48 kHz, three variations.”",
-        "after": "Output format: “WAV, mono, 48 kHz, three variations” (a delivery choice for this project, set in the generator’s export settings or by converting afterwards, since prompt text rarely controls the file format).",
-        "why": "WAV, mono and 48 kHz are reasonable project choices, not universal requirements. Most sound generators set format, sample rate and variation count through controls or plans rather than prompt text (the chapter's own Sound-effect brief note says so). Without that framing the answer suggests typing the format into the prompt will produce it.",
-        "severity": "imprecise",
-        "applied": true
-      },
-      {
-        "where": "1.1 worked example, steps[1] (decision list)",
-        "before": "Where does it run? In which language?",
-        "after": "Where does it run, and in which language? Who lays out the platforms?",
-        "why": "Step 3 promises to decide or delegate “each one” but then delegates the platform layout, which is not on the list. Figure 1.1 shows eight decisions that include Platform layout and not language. The merged question keeps the count at eight (step 2) and makes the list match both step 3 and Figure 1.1.",
-        "severity": "imprecise",
-        "applied": true
-      },
-      {
-        "where": "1.2 reading[6], image spec output format",
-        "before": "the output format is a PNG at 1920×1080 in four variations",
-        "after": "the output format is four variations as 16:9 PNGs, resized or upscaled to 1920×1080 if the tool’s native size is smaller",
-        "why": "Few image generators output exactly 1920×1080. Their native 16:9 sizes are usually smaller or different, for example Imagen's 1408×768 and Midjourney's 1456×816 at default settings. As written, the spec asks the tool for a size it usually cannot produce directly. The template note already says size is set through the tool's controls.",
-        "severity": "imprecise",
-        "applied": true
-      },
-      {
-        "where": "ch1-fig-4.svg, Image row, check column",
-        "before": "only the 4 palette colors;",
-        "after": "mostly the 4 palette colors;",
-        "why": "The row is for soft painted title art. A generated painted image always contains blends and anti-aliased edges, so a check that only four colors appear fails for every result. A tolerant check that the dominant colors match the palette is one that can actually pass or fail.",
-        "severity": "imprecise",
-        "applied": true
-      }
-    ],
-    "readingsRemoved": [],
-    "srcChecked": 19,
-    "srcWithdrawn": 0,
-    "summary": "Every Anthropic quotation (the brilliant-new-employee framing, golden rule, can-you-suggest example, ellipses example, CRITICAL/MUST, examples wording, prefill 400 on Claude 4.6+, Claude Code verification, interview and clean-session lines) matches the live pages. The OpenAI GPT-5.5, Runway Gen-4 and Imagen claims match vendor-page excerpts, and all 37 keys agree. The fixes are two swapped figure cross-references (1.3 and 1.4), one over-generalized Anthropic attribution, and seven alignment fixes so the templates, model answers, worked-example list and image checks follow the chapter's own positive-phrasing and tool-control advice.",
-    "style": {}
   }
 }
