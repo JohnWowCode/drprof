@@ -34,7 +34,7 @@
 <text x="442" y="286" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="middle" font-weight="normal">warm lamp light</text>
 <text x="442" y="306" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="middle" font-weight="normal">against a cool sky</text>
 <rect x="572" y="258" width="204" height="64" rx="6" fill="#C4E3C9" stroke="#2F7D4F" stroke-width="2"/>
-<text x="674" y="286" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2F7D4F" text-anchor="middle" font-weight="normal">only the 4 palette colors;</text>
+<text x="674" y="286" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2F7D4F" text-anchor="middle" font-weight="normal">mostly the 4 palette colors;</text>
 <text x="674" y="306" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2F7D4F" text-anchor="middle" font-weight="normal">lamp is the brightest spot</text>
 <line x1="313" y1="290" x2="337" y2="290" stroke="#444444" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
 <line x1="545" y1="290" x2="569" y2="290" stroke="#444444" stroke-width="1.5" fill="none" marker-end="url(#a)"/>

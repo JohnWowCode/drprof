@@ -339,7 +339,7 @@ details.report summary { cursor: pointer; font-size: 0.92rem; font-weight: 700; 
 
 .k-lab { --k: var(--c-lab); }
 .hook { font-family: var(--f-read); font-size: 1.2rem; line-height: 1.62; max-width: 64ch; border-left: 3px solid var(--subj-ink); padding-left: 16px; }
-.k-kit .kit{border:1px solid var(--line,#d9d2c3);border-radius:10px;padding:.6rem .75rem}.k-kit .kit .row{justify-content:space-between;align-items:center}.kit-text{white-space:pre-wrap;word-break:break-word;font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;margin:.5rem 0 0;max-height:22rem;overflow:auto}
+.k-kit .kit{border:1px solid var(--line,#d9d2c3);border-radius:10px;padding:.6rem .75rem}.k-kit .kit .row{justify-content:space-between;align-items:center}.kit-text{white-space:pre-wrap;word-break:break-word;font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;margin:.5rem 0;padding:.6rem .7rem;border-radius:8px;background:var(--paper-2,rgba(0,0,0,.045));border:1px solid var(--line,#d9d2c3)}
 .wx-sim{padding-left:1.2em;display:grid;gap:.6rem}.wx-sim li{line-height:1.5}.wx-sim li .chip{margin-right:.5rem;vertical-align:middle}.wx-sim li.ok>span{color:var(--muted,inherit)}
 .wx-inputs { display: grid; gap: 12px; }
 .wx-slider { display: grid; grid-template-columns: minmax(7rem, 12rem) minmax(0, 1fr) minmax(5.5rem, auto); gap: 10px; align-items: center; }
@@ -2652,7 +2652,8 @@ document.addEventListener("click", (e) => {
     case "copy-kit": {
       const ch = S.chapters[`${c.id}:${S.chapterN}`], sec = ch && ch.lesson.sections.find((x) => x.n === a.dataset.sec), t = sec && arr(sec.templates)[+a.dataset.k];
       if (t) { const done = () => { a.textContent = "Copied"; setTimeout(() => { a.textContent = "Copy"; }, 1500); };
-        try { navigator.clipboard.writeText(t.text).then(done, () => { a.textContent = "Select and copy"; }); } catch { a.textContent = "Select and copy"; } }
+        const legacy = () => { try { const ta = document.createElement("textarea"); ta.value = t.text; ta.setAttribute("readonly", ""); ta.style.position = "fixed"; ta.style.opacity = "0"; document.body.appendChild(ta); ta.select(); const ok = document.execCommand("copy"); ta.remove(); if (ok) done(); else a.textContent = "Select and copy"; } catch { a.textContent = "Select and copy"; } };
+        try { navigator.clipboard.writeText(t.text).then(done, legacy); } catch { legacy(); } }
       break;
     }
     case "wx-reveal": S.wx[a.dataset.wx].shown++; wxPaint(a.dataset.wx); break;
