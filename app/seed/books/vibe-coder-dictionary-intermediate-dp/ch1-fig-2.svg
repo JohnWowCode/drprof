@@ -1,55 +1,62 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480">
 <rect width="800" height="480" fill="#ffffff"/>
-<text x="24" y="36" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#444444" text-anchor="start" font-weight="bold">Anatomy of a spec: six parts, and the failure each one prevents</text>
-<text x="24" y="64" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="bold">Part</text>
-<text x="206" y="64" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="bold">Lamplighter v0.1 says</text>
-<text x="600" y="64" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="bold">Without it you get</text>
-<rect x="24" y="76" width="166" height="54" rx="6" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="2"/>
-<text x="107" y="108" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#2E6DA4" text-anchor="middle" font-weight="bold">Goal</text>
-<rect x="200" y="76" width="380" height="54" rx="6" fill="#ffffff" stroke="#2E6DA4" stroke-width="1.5"/>
-<text x="212" y="99" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">First playable build, to test whether</text>
-<text x="212" y="118" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">climbing and lighting lamps is fun</text>
-<line x1="580" y1="103" x2="596" y2="103" stroke="#444444" stroke-width="1.5"/>
-<text x="600" y="99" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#B0303A" text-anchor="start" font-weight="normal">effort spent on</text>
-<text x="600" y="118" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#B0303A" text-anchor="start" font-weight="normal">the wrong thing</text>
-<rect x="24" y="140" width="166" height="54" rx="6" fill="#EFE0B4" stroke="#A0781A" stroke-width="2"/>
-<text x="107" y="172" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#A0781A" text-anchor="middle" font-weight="bold">Context</text>
-<rect x="200" y="140" width="380" height="54" rx="6" fill="#ffffff" stroke="#A0781A" stroke-width="1.5"/>
-<text x="212" y="163" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">Not a programmer; runs index.html</text>
-<text x="212" y="182" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">in Chrome on a laptop; no files yet</text>
-<line x1="580" y1="167" x2="596" y2="167" stroke="#444444" stroke-width="1.5"/>
-<text x="600" y="163" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#B0303A" text-anchor="start" font-weight="normal">wrong platform or</text>
-<text x="600" y="182" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#B0303A" text-anchor="start" font-weight="normal">wrong level of detail</text>
-<rect x="24" y="204" width="166" height="54" rx="6" fill="#F2C4C8" stroke="#B0303A" stroke-width="2"/>
-<text x="107" y="236" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#B0303A" text-anchor="middle" font-weight="bold">Constraints</text>
-<rect x="200" y="204" width="380" height="54" rx="6" fill="#ffffff" stroke="#B0303A" stroke-width="1.5"/>
-<text x="212" y="227" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">Plain JavaScript and canvas, 2 files,</text>
-<text x="212" y="246" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">960×540. Non-goals: menus, sound</text>
-<line x1="580" y1="231" x2="596" y2="231" stroke="#444444" stroke-width="1.5"/>
-<text x="600" y="227" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#B0303A" text-anchor="start" font-weight="normal">surprise tools,</text>
-<text x="600" y="246" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#B0303A" text-anchor="start" font-weight="normal">scope creep</text>
-<rect x="24" y="268" width="166" height="54" rx="6" fill="#C4E3C9" stroke="#2F7D4F" stroke-width="2"/>
-<text x="107" y="300" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#2F7D4F" text-anchor="middle" font-weight="bold">Acceptance criteria</text>
-<rect x="200" y="268" width="380" height="54" rx="6" fill="#ffffff" stroke="#2F7D4F" stroke-width="1.5"/>
-<text x="212" y="291" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">All 5 lamps lit before the 90 s timer</text>
-<text x="212" y="310" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">ends shows “Level complete”</text>
-<line x1="580" y1="295" x2="596" y2="295" stroke="#444444" stroke-width="1.5"/>
-<text x="600" y="291" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#B0303A" text-anchor="start" font-weight="normal">no way to tell</text>
-<text x="600" y="310" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#B0303A" text-anchor="start" font-weight="normal">when it is done</text>
-<rect x="24" y="332" width="166" height="54" rx="6" fill="#DCD2EE" stroke="#6B4FA0" stroke-width="2"/>
-<text x="107" y="364" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#6B4FA0" text-anchor="middle" font-weight="bold">Examples</text>
-<rect x="200" y="332" width="380" height="54" rx="6" fill="#ffffff" stroke="#6B4FA0" stroke-width="1.5"/>
-<text x="212" y="355" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">Level sketch in characters:</text>
-<text x="212" y="374" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal"># roof, L lamp, P player start</text>
-<line x1="580" y1="359" x2="596" y2="359" stroke="#444444" stroke-width="1.5"/>
-<text x="600" y="355" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#B0303A" text-anchor="start" font-weight="normal">guessed layout</text>
-<text x="600" y="374" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#B0303A" text-anchor="start" font-weight="normal">and style</text>
-<rect x="24" y="396" width="166" height="54" rx="6" fill="#F6D2AE" stroke="#C8691C" stroke-width="2"/>
-<text x="107" y="428" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#C8691C" text-anchor="middle" font-weight="bold">Output format</text>
-<rect x="200" y="396" width="380" height="54" rx="6" fill="#ffffff" stroke="#C8691C" stroke-width="1.5"/>
-<text x="212" y="419" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">Both complete files, then a list</text>
-<text x="212" y="438" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">of every choice the spec left open</text>
-<line x1="580" y1="423" x2="596" y2="423" stroke="#444444" stroke-width="1.5"/>
-<text x="600" y="419" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#B0303A" text-anchor="start" font-weight="normal">fragments and</text>
-<text x="600" y="438" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#B0303A" text-anchor="start" font-weight="normal">hidden defaults</text>
+<text x="24" y="34" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#444444" text-anchor="start" font-weight="bold">One skeleton, two media: the six parts of a spec</text>
+<text x="24" y="62" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="bold">Part</text>
+<text x="24" y="80" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#B0303A" text-anchor="start" font-weight="normal">and the risk without it</text>
+<text x="200" y="70" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#2E6DA4" text-anchor="start" font-weight="bold">Code: Lamplighter v0.1 build</text>
+<text x="500" y="70" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#6B4FA0" text-anchor="start" font-weight="bold">Image: title illustration</text>
+<rect x="24" y="92" width="160" height="54" rx="6" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="2"/>
+<text x="104" y="115" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#2E6DA4" text-anchor="middle" font-weight="bold">Goal</text>
+<text x="104" y="135" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#B0303A" text-anchor="middle" font-weight="normal">effort misplaced</text>
+<rect x="192" y="92" width="292" height="54" rx="6" fill="#ffffff" stroke="#2E6DA4" stroke-width="1.5"/>
+<text x="202" y="115" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">First playable build, to test whether</text>
+<text x="202" y="135" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">climbing and lighting lamps is fun</text>
+<rect x="492" y="92" width="292" height="54" rx="6" fill="#ffffff" stroke="#2E6DA4" stroke-width="1.5"/>
+<text x="502" y="115" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">Title art that sets the dusk mood</text>
+<text x="502" y="135" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">before the player presses Start</text>
+<rect x="24" y="155" width="160" height="54" rx="6" fill="#EFE0B4" stroke="#A0781A" stroke-width="2"/>
+<text x="104" y="178" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#A0781A" text-anchor="middle" font-weight="bold">Context</text>
+<text x="104" y="198" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#B0303A" text-anchor="middle" font-weight="normal">wrong platform</text>
+<rect x="192" y="155" width="292" height="54" rx="6" fill="#ffffff" stroke="#A0781A" stroke-width="1.5"/>
+<text x="202" y="178" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">Not a programmer; runs index.html</text>
+<text x="202" y="198" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">in Chrome on a laptop; no files yet</text>
+<rect x="492" y="155" width="292" height="54" rx="6" fill="#ffffff" stroke="#A0781A" stroke-width="1.5"/>
+<text x="502" y="178" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">Shown at 1920×1080 behind the logo,</text>
+<text x="502" y="198" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">which covers the top third</text>
+<rect x="24" y="218" width="160" height="54" rx="6" fill="#F2C4C8" stroke="#B0303A" stroke-width="2"/>
+<text x="104" y="241" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#B0303A" text-anchor="middle" font-weight="bold">Constraints</text>
+<text x="104" y="261" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#B0303A" text-anchor="middle" font-weight="normal">scope creep</text>
+<rect x="192" y="218" width="292" height="54" rx="6" fill="#ffffff" stroke="#B0303A" stroke-width="1.5"/>
+<text x="202" y="241" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">Plain JS and canvas, 2 files, 960×540.</text>
+<text x="202" y="261" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">Non-goals: menus, sound</text>
+<rect x="492" y="218" width="292" height="54" rx="6" fill="#ffffff" stroke="#B0303A" stroke-width="1.5"/>
+<text x="502" y="241" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">Soft painted style, 4-color palette,</text>
+<text x="502" y="261" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">16:9 set with the tool’s control</text>
+<rect x="24" y="281" width="160" height="54" rx="6" fill="#C4E3C9" stroke="#2F7D4F" stroke-width="2"/>
+<text x="104" y="304" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#2F7D4F" text-anchor="middle" font-weight="bold">Acceptance</text>
+<text x="104" y="324" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#B0303A" text-anchor="middle" font-weight="normal">no finish line</text>
+<rect x="192" y="281" width="292" height="54" rx="6" fill="#ffffff" stroke="#2F7D4F" stroke-width="1.5"/>
+<text x="202" y="304" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">All 5 lamps lit before the 90 s timer</text>
+<text x="202" y="324" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">ends shows “Level complete”</text>
+<rect x="492" y="281" width="292" height="54" rx="6" fill="#ffffff" stroke="#2F7D4F" stroke-width="1.5"/>
+<text x="502" y="304" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">Lamplighter in the right third; top</text>
+<text x="502" y="324" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">third calm enough for the logo</text>
+<rect x="24" y="344" width="160" height="54" rx="6" fill="#DCD2EE" stroke="#6B4FA0" stroke-width="2"/>
+<text x="104" y="367" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#6B4FA0" text-anchor="middle" font-weight="bold">Examples</text>
+<text x="104" y="387" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#B0303A" text-anchor="middle" font-weight="normal">guessed style</text>
+<rect x="192" y="344" width="292" height="54" rx="6" fill="#ffffff" stroke="#6B4FA0" stroke-width="1.5"/>
+<text x="202" y="367" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">Level sketch in characters:</text>
+<text x="202" y="387" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal"># roof, L lamp, P player start</text>
+<rect x="492" y="344" width="292" height="54" rx="6" fill="#ffffff" stroke="#6B4FA0" stroke-width="1.5"/>
+<text x="502" y="367" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">Reference image: warm lamp light</text>
+<text x="502" y="387" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">against a cool blue sky</text>
+<rect x="24" y="407" width="160" height="54" rx="6" fill="#F6D2AE" stroke="#C8691C" stroke-width="2"/>
+<text x="104" y="430" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#C8691C" text-anchor="middle" font-weight="bold">Output format</text>
+<text x="104" y="450" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#B0303A" text-anchor="middle" font-weight="normal">unusable shape</text>
+<rect x="192" y="407" width="292" height="54" rx="6" fill="#ffffff" stroke="#C8691C" stroke-width="1.5"/>
+<text x="202" y="430" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">Both complete files, then a list</text>
+<text x="202" y="450" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">of every choice the spec left open</text>
+<rect x="492" y="407" width="292" height="54" rx="6" fill="#ffffff" stroke="#C8691C" stroke-width="1.5"/>
+<text x="502" y="430" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">PNG at 1920×1080,</text>
+<text x="502" y="450" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">four variations to choose from</text>
 </svg>
