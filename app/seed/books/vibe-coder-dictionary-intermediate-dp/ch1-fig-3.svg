@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480">
+<rect width="800" height="480" fill="#ffffff"/>
+<text x="24" y="36" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#444444" text-anchor="start" font-weight="bold">The build, check, revise loop</text>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#444444"/></marker></defs>
+<rect x="24" y="200" width="160" height="80" rx="8" fill="#BBD5EE" stroke="#2E6DA4" stroke-width="2"/>
+<text x="104.0" y="225.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#2E6DA4" text-anchor="middle" font-weight="bold">1. Spec</text>
+<text x="104.0" y="245.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2E6DA4" text-anchor="middle" font-weight="normal">six parts, with</text>
+<text x="104.0" y="265.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2E6DA4" text-anchor="middle" font-weight="normal">acceptance criteria</text>
+<rect x="234" y="200" width="160" height="80" rx="8" fill="#DCD2EE" stroke="#6B4FA0" stroke-width="2"/>
+<text x="314.0" y="225.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#6B4FA0" text-anchor="middle" font-weight="bold">2. Build</text>
+<text x="314.0" y="245.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6B4FA0" text-anchor="middle" font-weight="normal">the AI produces</text>
+<text x="314.0" y="265.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6B4FA0" text-anchor="middle" font-weight="normal">files or media</text>
+<rect x="444" y="200" width="160" height="80" rx="8" fill="#C4E3C9" stroke="#2F7D4F" stroke-width="2"/>
+<text x="524.0" y="225.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#2F7D4F" text-anchor="middle" font-weight="bold">3. Check</text>
+<text x="524.0" y="245.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2F7D4F" text-anchor="middle" font-weight="normal">run each</text>
+<text x="524.0" y="265.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2F7D4F" text-anchor="middle" font-weight="normal">criterion: pass/fail</text>
+<path d="M640 240 L690 196 L740 240 L690 284 Z" fill="#EFE0B4" stroke="#A0781A" stroke-width="2"/>
+<text x="690" y="245" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#A0781A" text-anchor="middle" font-weight="bold">All pass?</text>
+<rect x="610" y="352" width="160" height="70" rx="8" fill="#C4E3C9" stroke="#2F7D4F" stroke-width="2"/>
+<text x="690.0" y="382.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#2F7D4F" text-anchor="middle" font-weight="bold">Done</text>
+<text x="690.0" y="402.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2F7D4F" text-anchor="middle" font-weight="normal">update the spec</text>
+<rect x="380" y="72" width="200" height="84" rx="8" fill="#F6D2AE" stroke="#C8691C" stroke-width="2"/>
+<text x="480.0" y="99.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#C8691C" text-anchor="middle" font-weight="bold">4. Scoped revision</text>
+<text x="480.0" y="119.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#C8691C" text-anchor="middle" font-weight="normal">failing check + evidence,</text>
+<text x="480.0" y="139.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#C8691C" text-anchor="middle" font-weight="normal">change, fence the rest</text>
+<line x1="184" y1="240" x2="230" y2="240" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<line x1="394" y1="240" x2="440" y2="240" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<line x1="604" y1="240" x2="636" y2="240" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<line x1="690" y1="284" x2="690" y2="348" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<text x="700" y="322" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2F7D4F" text-anchor="start" font-weight="bold">yes</text>
+<path d="M690 196 L690 114 L584 114" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<text x="700" y="160" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#B0303A" text-anchor="start" font-weight="bold">no</text>
+<path d="M380 114 L314 114 L314 196" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<text x="24" y="330" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#B0303A" text-anchor="start" font-weight="bold">After every revision, recheck</text>
+<text x="24" y="350" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#B0303A" text-anchor="start" font-weight="normal">all criteria, not only the one</text>
+<text x="24" y="370" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#B0303A" text-anchor="start" font-weight="normal">you fixed. A fix that breaks</text>
+<text x="24" y="390" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#B0303A" text-anchor="start" font-weight="normal">something that used to work</text>
+<text x="24" y="410" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#B0303A" text-anchor="start" font-weight="normal">is a regression (Chapter 4).</text>
+<text x="24" y="100" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2E6DA4" text-anchor="start" font-weight="bold">Change the spec first when</text>
+<text x="24" y="120" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2E6DA4" text-anchor="start" font-weight="normal">you change your mind; the spec,</text>
+<text x="24" y="140" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2E6DA4" text-anchor="start" font-weight="normal">not the chat, is the record.</text>
+<text x="250" y="456" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">A bare “try again” skips step 3 and gives the model no new information.</text>
+</svg>

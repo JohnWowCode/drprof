@@ -1,0 +1,388 @@
+{
+ "id": "vibe-coder-dictionary-intermediate-dp",
+ "v": 1,
+ "topic": "Vibe coding and directing AI tools",
+ "level": "intermediate",
+ "focus": "Vocabulary and specification skills for directing AI tools across code, UI, art, video, audio, game design and 3D",
+ "length": "full",
+ "code": "VCD 201",
+ "title": "The Vibe Coder's Dictionary: The Words, Specs and Prompts That Get You Exactly What You Want",
+ "department": "Department of Digital Media and Art",
+ "description": "A course for people who build games, apps, sites, art and sound by directing AI tools, and who want to get exactly what they picture instead of the most typical thing a model can produce. Each chapter teaches the working vocabulary of one craft (software, interface design, interaction, image making, film and animation, audio, game design, 3D) and shows how to turn it into precise, testable requests, with a before and after prompt for every idea. Claims about how models behave come from vendors’ documentation and peer-reviewed research, and every tool-specific detail is dated, because tools change faster than books. You build one small game, Lamplighter, from first spec to finished project across the twelve chapters.",
+ "prerequisites": [
+  "Regular use of at least one AI chat assistant (for example Claude or ChatGPT)",
+  "Willingness to install and try a coding agent or an image, video or audio generator",
+  "No programming, art or audio training is assumed"
+ ],
+ "objectives": [
+  "Rewrite a vague request as a six-part spec with goal, context, constraints, acceptance criteria, examples and output format.",
+  "Explain tokens, context windows, sampling, system prompts, tools, agents and hallucination, and change a prompt because of each.",
+  "Apply prompting patterns (examples, references, decomposition, structured output, critique) and measure whether they helped.",
+  "Write bug reports, feature requests and review notes a coding agent can act on, using correct software and version-control terms.",
+  "Specify screens, components, states, motion and accessibility targets in the terms designers and developers use.",
+  "Direct image, video and audio generators with exact terms for framing, light, style, shots, timing, loudness, mixing and voice.",
+  "Describe game feel, difficulty, economy, level design and 3D assets in measurable units an AI can implement.",
+  "Run a small project end to end with a PRD, style guides, verified steps, reviews and a versioned prompt log."
+ ],
+ "hours": 60,
+ "chapters": [
+  {
+   "title": "How to Ask Exactly",
+   "summary": "Why vague requests fail, and the six parts of a spec (goal, context, constraints, acceptance criteria, examples, output format) that turn a wish into something an AI can build.",
+   "challenge": "Take three prompts you actually sent an AI this month. Rewrite each as a six-part spec, rerun both versions, and record what changed. Then write the one-page spec for the first playable build of Lamplighter.",
+   "sections": [
+    {
+     "title": "Why vague prompts fail",
+     "summary": "Underspecification, ambiguity and defaults: what a model does with the gaps you leave, and the evidence that people new to prompting leave many."
+    },
+    {
+     "title": "The anatomy of a spec",
+     "summary": "Goal, context, constraints, acceptance criteria, examples and output format, with what each part prevents and how requirements engineers judge a good requirement."
+    },
+    {
+     "title": "Acceptance criteria and examples",
+     "summary": "Writing “done” as checks you can run, Given/When/Then scenarios, and how a few well-chosen examples teach format and edge cases."
+    },
+    {
+     "title": "Output format and the first revision",
+     "summary": "Asking for the deliverable in a shape you can use, and writing a revision request that changes only what you name."
+    }
+   ]
+  },
+  {
+   "title": "How Language Models Work, for People Who Prompt Them",
+   "summary": "The parts of a large language model that change how you should write to it: tokens, the context window, sampling, system prompts, tools, agents and hallucination.",
+   "challenge": "Run one Lamplighter prompt three times at the same settings and once with a long pasted document in front of it. Write a half-page note explaining the differences in the terms of this chapter, and a model-choice note for three tasks.",
+   "sections": [
+    {
+     "title": "Tokens and the context window",
+     "summary": "What a token is, why limits and prices are counted in tokens, and what happens to instructions buried in a long context."
+    },
+    {
+     "title": "Sampling and randomness",
+     "summary": "Next-token prediction, temperature and related settings, and why the same prompt gives different answers."
+    },
+    {
+     "title": "System prompts, tools and agents",
+     "summary": "Message roles, tool calls, agent loops and the harnesses (chat apps, coding agents) that wrap a model."
+    },
+    {
+     "title": "Hallucination and choosing a model",
+     "summary": "Why models state false things fluently, how to ask for checkable output, and how to compare model families for a task without trusting last year’s rankings."
+    }
+   ]
+  },
+  {
+   "title": "Prompting Patterns That Work",
+   "summary": "A toolkit of patterns that hold across vendors: role and audience, examples and reference files, task decomposition, structured output, and critique loops.",
+   "challenge": "Build a small prompt library for Lamplighter: one prompt for each pattern in this chapter, each with a before version, an after version and one sentence on what the pattern fixed.",
+   "sections": [
+    {
+     "title": "Role, audience and context",
+     "summary": "When a role helps, when it is decoration, and why the reader of the output matters more than the persona."
+    },
+    {
+     "title": "Examples, references and delimiters",
+     "summary": "Few-shot examples, reference files and images, and separating instructions from material with tags or headings."
+    },
+    {
+     "title": "Breaking work into steps",
+     "summary": "Asking for reasoning, splitting a task into a chain of prompts, and planning before building."
+    },
+    {
+     "title": "Structured output, critique and iteration",
+     "summary": "JSON and schemas, rubrics, asking the model to check its own work, and changing one thing at a time."
+    }
+   ]
+  },
+  {
+   "title": "Software and Code Vocabulary",
+   "summary": "The words developers use for the parts of a program and the way work on it is organized, so you can direct a coding agent and understand its answers.",
+   "challenge": "Write a bug report and a feature request for Lamplighter in the formats from this chapter, have a coding agent act on them on a new branch, and review its pull request using the chapter’s checklist.",
+   "sections": [
+    {
+     "title": "Frontend, backend, APIs and data",
+     "summary": "Client and server, endpoints and requests, databases, files and the formats (JSON, CSV) that move between them."
+    },
+    {
+     "title": "State, components and structure",
+     "summary": "State and events, components and modules, dependencies, configuration and the build."
+    },
+    {
+     "title": "Bugs, refactors and regressions",
+     "summary": "The anatomy of a reproducible bug report, logs and stack traces, refactoring versus rewriting, and regressions."
+    },
+    {
+     "title": "Version control and tests",
+     "summary": "Repository, commit, branch, diff, merge and pull request; unit, integration and end-to-end tests as acceptance criteria an agent can run."
+    }
+   ]
+  },
+  {
+   "title": "UI Vocabulary",
+   "summary": "The names for what is on a screen: layout, spacing, type, hierarchy, components and their states, responsive behavior, accessibility and design tokens.",
+   "challenge": "Specify Lamplighter’s title screen, pause menu and settings screen in words alone: layout, components, every state, breakpoints and contrast targets. Have an AI build them and compare the result to your spec.",
+   "sections": [
+    {
+     "title": "Layout, grids and spacing",
+     "summary": "Grids, columns, gutters, margins and padding, alignment, and spacing scales in px and rem."
+    },
+    {
+     "title": "Typography, color and hierarchy",
+     "summary": "Type scale, weight, line height, contrast and the visual hierarchy that tells the eye where to go first."
+    },
+    {
+     "title": "Components and their states",
+     "summary": "Buttons, modals, toasts, drawers, tabs and menus, and the states every component needs: default, hover, focus, active, disabled, loading, empty and error."
+    },
+    {
+     "title": "Responsive design, accessibility and design tokens",
+     "summary": "Breakpoints, touch targets, WCAG 2.2 contrast and keyboard rules, and naming design decisions as tokens."
+    }
+   ]
+  },
+  {
+   "title": "UX, Interaction and Motion",
+   "summary": "How an interface feels to use: affordances and feedback, flows and onboarding, microinteractions, and motion described in durations and easing curves.",
+   "challenge": "Map Lamplighter’s first five minutes as a user flow, specify three microinteractions with trigger, rules, feedback and timing, and write motion specs an AI can implement exactly.",
+   "sections": [
+    {
+     "title": "Affordances, signifiers and feedback",
+     "summary": "What tells a user what they can do, and what tells them it worked."
+    },
+    {
+     "title": "Flows, onboarding and empty states",
+     "summary": "User flows, first-run experiences, progressive disclosure and what a screen shows before there is anything to show."
+    },
+    {
+     "title": "Microinteractions",
+     "summary": "Small single-purpose moments described as trigger, rules, feedback, and loops and modes."
+    },
+    {
+     "title": "Motion: easing, duration and choreography",
+     "summary": "Easing curves, durations in milliseconds, staggering, and reduced-motion settings."
+    }
+   ]
+  },
+  {
+   "title": "Image Generation and Visual Art",
+   "summary": "The language of pictures for image models: composition, framing, camera and lens, light, color, style and medium, plus the controls that make results repeatable.",
+   "challenge": "Write a visual style guide for Lamplighter (palette, lighting, medium, framing, references) and use it to generate a title illustration, a character concept sheet and a background, keeping them consistent.",
+   "sections": [
+    {
+     "title": "Composition, framing and the camera",
+     "summary": "Rule of thirds, leading lines, negative space, shot sizes, camera angles, focal length and depth of field."
+    },
+    {
+     "title": "Light and color",
+     "summary": "Key, fill and rim light, hard and soft light, time of day, color temperature, palettes and grading."
+    },
+    {
+     "title": "Style, medium and reference images",
+     "summary": "Naming art movements, mediums and techniques precisely, and using reference images instead of adjectives."
+    },
+    {
+     "title": "Controls and consistency",
+     "summary": "Aspect ratio, resolution, seeds, negative prompts, inpainting and outpainting, upscaling, and keeping a character the same across images, as each tool documents them."
+    }
+   ]
+  },
+  {
+   "title": "Video and Animation",
+   "summary": "Directing moving pictures: shots, cuts and camera moves, frame rate and timing, game animation assets, and prompting video models.",
+   "challenge": "Write a shot list and animation spec for Lamplighter’s 20-second intro cutscene and its player sprite (idle, run, jump, land), with frame counts and loop points, and generate or brief each piece.",
+   "sections": [
+    {
+     "title": "Shots, cuts and camera moves",
+     "summary": "Shot sizes in sequence, the 180-degree rule, pan, tilt, dolly, truck, crane and handheld, and cut types."
+    },
+    {
+     "title": "Frame rate, keyframes and timing",
+     "summary": "Frames per second, keyframes and in-betweens, and the classic principles of animation as working vocabulary."
+    },
+    {
+     "title": "Game animation assets",
+     "summary": "Sprite sheets, frame counts, loops, pivots, animation states and transitions."
+    },
+    {
+     "title": "Directing AI video and cutscenes",
+     "summary": "Writing a video prompt as subject, action, camera and duration, storyboards and animatics, and joining generated clips."
+    }
+   ]
+  },
+  {
+   "title": "Audio and Music",
+   "summary": "The words of sound for games and apps: digital audio basics, loudness, mixing, music structure, adaptive game audio, sound effects and voice direction.",
+   "challenge": "Write an audio brief for Lamplighter: a music cue sheet with BPM, key and loop points, an SFX list with layers, loudness targets, and voice direction for two lines of dialogue.",
+   "sections": [
+    {
+     "title": "Digital audio basics and loudness",
+     "summary": "Sample rate, bit depth, file formats, peak versus loudness, LUFS and true peak, and headroom."
+    },
+    {
+     "title": "Mixing vocabulary",
+     "summary": "EQ, compression, reverb and delay, panning, stems and the mix bus, in the terms engineers use."
+    },
+    {
+     "title": "Music for games",
+     "summary": "BPM, key, meter, sections, seamless loops, stingers, and vertical layering and horizontal resequencing."
+    },
+    {
+     "title": "Sound effects and voice direction",
+     "summary": "Layering an SFX from transient to tail, variation and randomization, and directing a voice by intent, energy and delivery."
+    }
+   ]
+  },
+  {
+   "title": "Game Design Vocabulary",
+   "summary": "The words designers use for how a game works and feels: loops, mechanics, game feel, collision, difficulty, economy, progression and level design.",
+   "challenge": "Write Lamplighter’s game design one-pager and a tuning table (jump height, coyote time, input buffer, i-frames) in exact units, have an AI implement it, and playtest two variants.",
+   "sections": [
+    {
+     "title": "Core loops, mechanics and goals",
+     "summary": "Core loop, mechanics, rules, goals and the MDA framework as a shared language."
+    },
+    {
+     "title": "Game feel and juice",
+     "summary": "Input, response, hitboxes and hurtboxes, coyote time, input buffering, i-frames, hit-stop, screen shake and particles."
+    },
+    {
+     "title": "Difficulty, progression and economy",
+     "summary": "Difficulty curves, flow, sources and sinks, progression and unlocks."
+    },
+    {
+     "title": "Level design words",
+     "summary": "Critical path, gating, landmarks, teaching through level design, pacing and set pieces."
+    }
+   ]
+  },
+  {
+   "title": "3D and Technical Art",
+   "summary": "Vocabulary for 3D assets and real-time graphics: meshes and topology, UVs, PBR materials, rigging, shaders, lighting and performance budgets.",
+   "challenge": "Specify a low-poly 3D diorama of Lamplighter’s rooftop for a title screen: polycount, texel density, material list, rig needs and a frame-time budget; generate or brief it and check the result against the spec.",
+   "sections": [
+    {
+     "title": "Meshes, topology and UVs",
+     "summary": "Vertices, edges and faces, quads and triangles, edge flow, normals, and UV unwrapping."
+    },
+    {
+     "title": "PBR materials and textures",
+     "summary": "Base color, metallic, roughness, normal and ambient occlusion maps, texel density and texture resolution."
+    },
+    {
+     "title": "Rigging and 3D animation",
+     "summary": "Skeletons, skinning and weights, rigs and controls, and exporting animation."
+    },
+    {
+     "title": "Shaders, lighting and performance",
+     "summary": "Shaders, real-time and baked lighting, level of detail, draw calls and frame-time budgets."
+    }
+   ]
+  },
+  {
+   "title": "Directing AI on a Whole Project",
+   "summary": "Running a whole project with AI help: product documents, style guides, small verified steps, reviewing output, handoffs between tools, and versioned prompts.",
+   "challenge": "Assemble the Lamplighter project binder (PRD, design doc, style guide, audio brief, prompt log, project instruction file) and use it to take one feature from spec to merged, reviewed, playable build.",
+   "sections": [
+    {
+     "title": "PRDs, design docs and style guides",
+     "summary": "Product requirements, game design documents, art and audio bibles, and what each one tells an AI."
+    },
+    {
+     "title": "Planning in small, verified steps",
+     "summary": "Milestones, vertical slices, task lists and definitions of done that an agent can work through."
+    },
+    {
+     "title": "Reviewing output and handing off between AIs",
+     "summary": "Review checklists, diffs and playtests, and passing work between chat, coding, image and audio tools without losing the spec."
+    },
+    {
+     "title": "Versioning prompts and project memory",
+     "summary": "Prompt logs, templates, project instruction files and changelogs, kept in version control."
+    }
+   ]
+  }
+ ],
+ "written": {},
+ "createdAt": 1791790000000,
+ "createdBy": null,
+ "color": "#134E6F",
+ "persona": "professor",
+ "engine": "default",
+ "preface": "This book is for people who make things by asking. You describe a game, a screen, a picture or a sound to an AI, and it makes something. Often it makes something close, and then you spend an hour pushing it toward what you meant. The distance between what you pictured and what you got is mostly a distance in words. Designers, developers, animators, sound engineers and game designers have spent decades naming the parts of their work precisely, and an AI trained on their writing understands those names. When you say “a 200 ms ease-out on the modal” instead of “make it smoother,” you are speaking a language the model already knows.\n\nEach chapter teaches one craft’s vocabulary and then puts it to work. Every idea comes with a before and after pair: a vague request, the same request rewritten with the right terms and a clear definition of done, and what changed in the result. The first three chapters are about asking well and about how language models actually behave, because those habits carry over to every tool. The middle chapters go craft by craft: code, interfaces, interaction, images, video, audio, game design and 3D. The last chapter puts it all together into a way of running a whole project.\n\nOur running example is Lamplighter, a small 2D platformer for the web browser in which a lamplighter climbs rooftops at dusk, lighting lamps before night falls. You will specify it, build it with a coding agent, give it art, animation, music and sound, tune how it feels to play and, by Chapter 12, keep it all in a project binder that any AI can pick up and continue. Tools and model names change every few months, so when I name a specific feature I give the month I checked it. The vocabulary underneath lasts much longer.",
+ "coverSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\"><g fill=\"none\" stroke=\"#FFFFFF\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M200 318 C 165 300, 110 296, 58 308 L 58 360 C 110 348, 165 352, 200 370 Z\" fill=\"#FFFFFF\" fill-opacity=\"0.1\" stroke-width=\"2.5\"/><path d=\"M200 318 C 235 300, 290 296, 342 308 L 342 360 C 290 348, 235 352, 200 370 Z\" fill=\"#FFFFFF\" fill-opacity=\"0.1\" stroke-width=\"2.5\"/><path d=\"M200 318 L 200 370\" stroke-width=\"2.5\"/><path d=\"M76 322 C 110 315, 150 316, 182 328 M76 336 C 110 329, 150 330, 182 342 M76 350 C 110 343, 150 344, 182 356\" stroke-width=\"1.5\" stroke-opacity=\"0.7\"/><path d=\"M218 328 C 250 316, 290 315, 324 322 M218 342 C 250 330, 290 329, 324 336 M218 356 C 250 344, 290 343, 324 350\" stroke-width=\"1.5\" stroke-opacity=\"0.7\"/><path d=\"M130 64 L 270 64 Q 290 64, 290 84 L 290 164 Q 290 184, 270 184 L 196 184 L 168 212 L 172 184 L 130 184 Q 110 184, 110 164 L 110 84 Q 110 64, 130 64 Z\" fill=\"#FFFFFF\" fill-opacity=\"0.14\" stroke-width=\"2.5\"/><path d=\"M134 96 L 250 96 M134 120 L 266 120 M134 144 L 220 144\" stroke-width=\"3\" stroke-opacity=\"0.85\"/><rect x=\"230\" y=\"136\" width=\"10\" height=\"18\" fill=\"#FFFFFF\" fill-opacity=\"0.9\" stroke-width=\"1\"/><path d=\"M200 214 L 200 296\" stroke-width=\"1.5\" stroke-dasharray=\"4 7\" stroke-opacity=\"0.6\"/><rect x=\"34\" y=\"118\" width=\"54\" height=\"32\" rx=\"14\" fill=\"#FFFFFF\" fill-opacity=\"0.12\" stroke-width=\"2.2\"/><path d=\"M50 128 L 50 140 M44 134 L 56 134\" stroke-width=\"2\"/><circle cx=\"72\" cy=\"130\" r=\"2.5\" fill=\"#FFFFFF\"/><circle cx=\"78\" cy=\"138\" r=\"2.5\" fill=\"#FFFFFF\"/><path d=\"M88 134 L 108 116\" stroke-width=\"1.5\" stroke-dasharray=\"3 5\" stroke-opacity=\"0.6\"/><rect x=\"38\" y=\"214\" width=\"56\" height=\"44\" rx=\"3\" fill=\"#FFFFFF\" fill-opacity=\"0.1\" stroke-width=\"2.2\"/><path d=\"M44 252 L 60 232 L 70 244 L 78 236 L 90 252\" stroke-width=\"2\"/><circle cx=\"80\" cy=\"224\" r=\"4\" stroke-width=\"2\"/><path d=\"M94 222 L 126 196\" stroke-width=\"1.5\" stroke-dasharray=\"3 5\" stroke-opacity=\"0.6\"/><path d=\"M332 110 L 332 146 M332 110 L 356 104 L 356 140\" stroke-width=\"2.4\"/><ellipse cx=\"326\" cy=\"147\" rx=\"7\" ry=\"5\" fill=\"#FFFFFF\" fill-opacity=\"0.8\" stroke-width=\"2\"/><ellipse cx=\"350\" cy=\"141\" rx=\"7\" ry=\"5\" fill=\"#FFFFFF\" fill-opacity=\"0.8\" stroke-width=\"2\"/><path d=\"M314 128 L 292 120\" stroke-width=\"1.5\" stroke-dasharray=\"3 5\" stroke-opacity=\"0.6\"/><path d=\"M336 206 L 360 218 L 336 230 L 312 218 Z\" fill=\"#FFFFFF\" fill-opacity=\"0.2\" stroke-width=\"2.2\"/><path d=\"M312 218 L 312 248 L 336 260 L 360 248 L 360 218 M336 230 L 336 260\" stroke-width=\"2.2\"/><path d=\"M308 214 L 276 194\" stroke-width=\"1.5\" stroke-dasharray=\"3 5\" stroke-opacity=\"0.6\"/><path d=\"M200 26 L 200 40 M193 33 L 207 33\" stroke-width=\"2\"/><path d=\"M318 64 L 318 74 M313 69 L 323 69\" stroke-width=\"1.8\" stroke-opacity=\"0.8\"/><path d=\"M78 74 L 78 84 M73 79 L 83 79\" stroke-width=\"1.8\" stroke-opacity=\"0.8\"/></g></svg>",
+ "bible": {
+  "teacher": "Dr. Professor teaches this book as a working director of AI tools who also knows each craft’s own literature: prompting advice comes from Anthropic’s and OpenAI’s documentation and from peer-reviewed research on language models; craft vocabulary comes from the field’s standard texts (Schell and Swink for games, Tidwell and colleagues and WCAG for interfaces, Bordwell, Thompson and Smith for film, Senior for mixing) and from reference documentation such as MDN Web Docs and the Blender Manual. Every term is defined, shown in a before and after prompt, and tied to something you can check in the result.",
+  "promise": "By the last page you will be able to describe what you want from any AI tool in the precise terms of the craft involved, write it as a spec with checkable acceptance criteria, judge the output against that spec, and run a small project from first prompt to finished game.",
+  "threads": [
+   "A good request is a spec: goal, context, constraints, acceptance criteria, examples and output format.",
+   "Craft vocabulary is compression: one exact term (ease-out, rim light, LUFS, coyote time) replaces a paragraph of adjectives and is understood by people and models alike.",
+   "Make “done” checkable: numbers, units, states and examples, so you can tell whether the output meets the request.",
+   "Durable concepts over fleeting features: tools change, so tool details are dated and documented, and nothing is claimed about a tool that its own documentation does not say.",
+   "Iterate deliberately: change one thing at a time, keep what worked in writing, and version your prompts like code."
+  ],
+  "runningExamples": [
+   {
+    "name": "Lamplighter",
+    "use": "A small 2D platformer for the web browser, written in JavaScript, in which a lamplighter climbs city rooftops at dusk lighting lamps before night falls. Each chapter adds a part: the first spec (Ch. 1), code and bug reports (Ch. 4), menus and HUD (Ch. 5 and 6), art (Ch. 7), cutscene and sprites (Ch. 8), music and sound (Ch. 9), tuning and levels (Ch. 10), a 3D title diorama (Ch. 11) and the project binder (Ch. 12). A worked example, not a real product."
+   },
+   {
+    "name": "Before and after prompt pairs",
+    "use": "Every section shows a real-style vague request, the rewritten request using the section’s terms, and what each change prevents. Results are described, never presented as quotations of a specific model’s output."
+   },
+   {
+    "name": "The project binder",
+    "use": "The folder of documents the reader builds across the book: spec, style guide, audio brief, tuning table, prompt log and project instruction file, assembled in Chapter 12."
+   }
+  ],
+  "conventions": [
+   "Bold each key term at first use and define it in one sentence; reuse the same term afterwards (do not alternate synonyms).",
+   "Quote prompts in typographic quotes and label them Before and After; keep them short enough to type.",
+   "Name tools and models only with the month and year checked (for example “as of October 2026”) and cite the vendor’s documentation page; never invent a feature, parameter, limit or price.",
+   "Give measurable quantities with units: px and rem, ms, fps, Hz and kHz, bits, dB, LUFS and dBTP, BPM, tokens.",
+   "Use the field’s reference documentation for definitions: MDN Web Docs for web terms, Nielsen Norman Group articles for UX terms, WCAG 2.2 for accessibility, the Blender Manual for 3D terms, vendor docs for model behavior.",
+   "Italicize game and film titles and give the release year at first mention.",
+   "Refer back to earlier chapters by number and to Lamplighter’s project binder by document name."
+  ],
+  "canon": [
+   {
+    "cite": "Anthropic. (n.d.). Prompting best practices [Claude API documentation]. Retrieved October 2026, from https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+    "role": "Vendor documentation and the primary source for how Claude models respond to instructions, context, examples, XML tags and format requests; Chapters 1 to 3 and 12. Vendor guidance, dated and rechecked, since the page changes with each model generation."
+   },
+   {
+    "cite": "OpenAI. (n.d.). Prompt engineering [OpenAI API documentation]. Retrieved October 2026, from https://platform.openai.com/docs/guides/prompt-engineering",
+    "role": "Vendor documentation for GPT models: message roles, few-shot examples, formatting with Markdown and XML, and reference text; Chapters 2 and 3. Used to show which advice holds across vendors."
+   },
+   {
+    "cite": "Schell, J. (2019). The art of game design: A book of lenses (3rd ed.). CRC Press.",
+    "role": "Standard game design text; its lenses supply vocabulary for loops, mechanics, balance, interest curves and playtesting in Chapters 10 and 12."
+   },
+   {
+    "cite": "Swink, S. (2009). Game feel: A game designer’s guide to virtual sensation. Morgan Kaufmann.",
+    "role": "The reference on game feel: real-time control, response, polish and the metrics of character movement; Chapter 10 and the motion parts of Chapter 6."
+   },
+   {
+    "cite": "Tidwell, J., Brewer, C., & Valencia, A. (2020). Designing interfaces: Patterns for effective interaction design (3rd ed.). O’Reilly Media.",
+    "role": "Pattern catalog for screen layout, navigation, components and interaction; Chapters 5 and 6. A practitioner reference rather than a research text."
+   },
+   {
+    "cite": "World Wide Web Consortium. (2023). Web Content Accessibility Guidelines (WCAG) 2.2 [W3C Recommendation, 5 October 2023; updated 12 December 2024]. https://www.w3.org/TR/WCAG22/",
+    "role": "The accessibility standard: contrast ratios, focus visibility, target size and keyboard operation stated as testable success criteria; Chapter 5, and a model of acceptance criteria for Chapter 1."
+   },
+   {
+    "cite": "Senior, M. (2025). Mixing secrets for the small studio (3rd ed.). Routledge.",
+    "role": "Practitioner text on mixing: EQ, compression, reverb, loudness and monitoring in the terms engineers use; Chapter 9."
+   },
+   {
+    "cite": "Bordwell, D., Thompson, K., & Smith, J. (2024). Film art: An introduction (13th ed.). McGraw Hill.",
+    "role": "Standard film studies textbook for shot scale, angle, camera movement, editing and lighting vocabulary; Chapters 7 and 8."
+   }
+  ],
+  "care": "AI tools, model names, features, limits and prices change every few months. Teach the durable concept first; give any tool-specific detail with the month it was checked and its documentation page, and never invent or guess a feature, parameter or setting of a specific tool. Do not present imagined model outputs as real quotations. Treat generated code as unreviewed until tested; never paste secrets (API keys, passwords) into prompts or public repositories. Respect copyright and likeness: prompt for styles by describing their techniques rather than naming living artists to copy, do not clone a real person’s voice or face without consent, and follow each tool’s terms and licenses for commercial use."
+ },
+ "prov": {
+  "note": "Course plan written in Claude Code by Claude research agents, October 2026; canon editions verified by web search.",
+  "requester": "John",
+  "v": "dp-0.5"
+ }
+}

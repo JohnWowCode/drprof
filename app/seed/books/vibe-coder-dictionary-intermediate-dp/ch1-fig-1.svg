@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480">
+<rect width="800" height="480" fill="#ffffff"/>
+<text x="24" y="36" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#444444" text-anchor="start" font-weight="bold">Every gap in a request is a decision someone makes</text>
+<text x="24" y="70" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#B0303A" text-anchor="start" font-weight="bold">Before: “Make a cozy platformer about a lamplighter.”</text>
+<text x="776" y="70" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2F7D4F" text-anchor="end" font-weight="bold">After: the six-part spec (Section 1.2)</text>
+<rect x="24" y="88" width="364" height="30" rx="5" fill="#F6D2AE" stroke="#C8691C" stroke-width="1.5"/>
+<text x="34" y="108" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">Where it runs</text>
+<text x="378" y="108" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#C8691C" text-anchor="end" font-weight="bold">default</text>
+<rect x="412" y="88" width="364" height="30" rx="5" fill="#C4E3C9" stroke="#2F7D4F" stroke-width="1.5"/>
+<text x="422" y="108" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">Where it runs</text>
+<text x="766" y="108" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2F7D4F" text-anchor="end" font-weight="bold">Chrome, index.html</text>
+<rect x="24" y="128" width="364" height="30" rx="5" fill="#F6D2AE" stroke="#C8691C" stroke-width="1.5"/>
+<text x="34" y="148" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">Controls</text>
+<text x="378" y="148" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#C8691C" text-anchor="end" font-weight="bold">default</text>
+<rect x="412" y="128" width="364" height="30" rx="5" fill="#C4E3C9" stroke="#2F7D4F" stroke-width="1.5"/>
+<text x="422" y="148" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">Controls</text>
+<text x="766" y="148" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2F7D4F" text-anchor="end" font-weight="bold">arrows, Space, E</text>
+<rect x="24" y="168" width="364" height="30" rx="5" fill="#F6D2AE" stroke="#C8691C" stroke-width="1.5"/>
+<text x="34" y="188" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">Level size</text>
+<text x="378" y="188" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#C8691C" text-anchor="end" font-weight="bold">default</text>
+<rect x="412" y="168" width="364" height="30" rx="5" fill="#C4E3C9" stroke="#2F7D4F" stroke-width="1.5"/>
+<text x="422" y="188" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">Level size</text>
+<text x="766" y="188" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2F7D4F" text-anchor="end" font-weight="bold">one 960×540 screen</text>
+<rect x="24" y="208" width="364" height="30" rx="5" fill="#F6D2AE" stroke="#C8691C" stroke-width="1.5"/>
+<text x="34" y="228" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">How you win or lose</text>
+<text x="378" y="228" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#C8691C" text-anchor="end" font-weight="bold">default</text>
+<rect x="412" y="208" width="364" height="30" rx="5" fill="#C4E3C9" stroke="#2F7D4F" stroke-width="1.5"/>
+<text x="422" y="228" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">How you win or lose</text>
+<text x="766" y="228" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2F7D4F" text-anchor="end" font-weight="bold">5 lamps, 90 s timer</text>
+<rect x="24" y="248" width="364" height="30" rx="5" fill="#F6D2AE" stroke="#C8691C" stroke-width="1.5"/>
+<text x="34" y="268" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">What “cozy” means</text>
+<text x="378" y="268" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#C8691C" text-anchor="end" font-weight="bold">default (ambiguous)</text>
+<rect x="412" y="248" width="364" height="30" rx="5" fill="#C4E3C9" stroke="#2F7D4F" stroke-width="1.5"/>
+<text x="422" y="268" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">What “cozy” means</text>
+<text x="766" y="268" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2F7D4F" text-anchor="end" font-weight="bold">warm palette, slow pace</text>
+<rect x="24" y="288" width="364" height="30" rx="5" fill="#F6D2AE" stroke="#C8691C" stroke-width="1.5"/>
+<text x="34" y="308" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">Art</text>
+<text x="378" y="308" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#C8691C" text-anchor="end" font-weight="bold">default</text>
+<rect x="412" y="288" width="364" height="30" rx="5" fill="#C4E3C9" stroke="#2F7D4F" stroke-width="1.5"/>
+<text x="422" y="308" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">Art</text>
+<text x="766" y="308" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2F7D4F" text-anchor="end" font-weight="bold">colored rectangles</text>
+<rect x="24" y="328" width="364" height="30" rx="5" fill="#F6D2AE" stroke="#C8691C" stroke-width="1.5"/>
+<text x="34" y="348" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">Platform layout</text>
+<text x="378" y="348" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#C8691C" text-anchor="end" font-weight="bold">default</text>
+<rect x="412" y="328" width="364" height="30" rx="5" fill="#DCD2EE" stroke="#6B4FA0" stroke-width="1.5"/>
+<text x="422" y="348" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">Platform layout</text>
+<text x="766" y="348" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6B4FA0" text-anchor="end" font-weight="bold">delegated, with limits</text>
+<rect x="24" y="368" width="364" height="30" rx="5" fill="#F6D2AE" stroke="#C8691C" stroke-width="1.5"/>
+<text x="34" y="388" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">What to send back</text>
+<text x="378" y="388" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#C8691C" text-anchor="end" font-weight="bold">default</text>
+<rect x="412" y="368" width="364" height="30" rx="5" fill="#C4E3C9" stroke="#2F7D4F" stroke-width="1.5"/>
+<text x="422" y="388" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">What to send back</text>
+<text x="766" y="388" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2F7D4F" text-anchor="end" font-weight="bold">2 files + assumptions</text>
+<rect x="24" y="430" width="22" height="16" rx="3" fill="#C4E3C9" stroke="#2F7D4F" stroke-width="1.5"/>
+<text x="54" y="443" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2F7D4F" text-anchor="start" font-weight="normal">decided by you</text>
+<rect x="220" y="430" width="22" height="16" rx="3" fill="#F6D2AE" stroke="#C8691C" stroke-width="1.5"/>
+<text x="250" y="443" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#C8691C" text-anchor="start" font-weight="normal">filled by a model default</text>
+<rect x="470" y="430" width="22" height="16" rx="3" fill="#DCD2EE" stroke="#6B4FA0" stroke-width="1.5"/>
+<text x="500" y="443" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6B4FA0" text-anchor="start" font-weight="normal">delegated on purpose</text>
+<text x="24" y="468" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#444444" text-anchor="start" font-weight="normal">Before: 0 of 8 decisions made. After: 7 made, 1 handed over with limits and a request to report the choice.</text>
+</svg>
