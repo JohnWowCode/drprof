@@ -1,0 +1,46 @@
+{
+  "method": "Researched and written with web-search verification; then fact-checked independently by a second agent, which re-read every string in ch1.json and every <text> label in ch1-fig-1..3.svg, fetched the live Anthropic pages (Prompting best practices, Define success criteria and build evaluations, Structured outputs) on October 12, 2026 to compare each quotation word for word, used web search to confirm the bibliographic details and quoted numbers for Liu et al. 2023 (EMNLP, pp. 790-807), Min et al. 2022 (EMNLP, pp. 11048-11064), Zamfirescu-Pereira et al. CHI 2023, the Cucumber Book 2nd ed. (2017), WCAG 2.2 SC 1.4.3 and the Mars Climate Orbiter Phase I findings (the primary MCO PDF and the W3C, ACL Anthology and ACM pages could not be reached directly, so mirrors, NASA summaries and abstracts were used), relied on expert knowledge for ISO/IEC/IEEE 29148:2018 and Sclar et al. ICLR 2024, and re-solved all 16 multiple-choice keys, both sort exercises (20 items) and the order exercise blind before comparing.",
+  "keysChecked": 37,
+  "keysAgreed": 37,
+  "keyFixes": [],
+  "corrections": [
+    {
+      "where": "ch1-fig-1.svg, After column, row “What “cozy” means”",
+      "quote": "warm palette, slow pace",
+      "correction": "deferred: no art or sound yet",
+      "why": "No spec in the chapter defines cozy as a warm palette or slow pace. The 1.1 After prompt never mentions cozy, and spec v0.1 in 1.2 explicitly puts art and sound off until later (“before any art or sound is made”; non-goal: no sound). The figure says it shows the 1.2 spec, so it credits the spec with a decision the spec never makes.",
+      "severity": "error"
+    },
+    {
+      "where": "lesson.sections[0].example.steps[3] (1.1 worked example, decide or delegate)",
+      "quote": "Delegate the platform layout explicitly.",
+      "correction": "Delegate the platform layout explicitly. Set “cozy” aside on purpose for this build, and leave the reply format to the full spec in Section 1.2.",
+      "why": "Step 3 lists eight open decisions, and this step promises to “decide or delegate each one.” It settles only six (run, language, keys, level size, win/lose, art) and delegates platform layout, which was not on the list. “Cozy” and “what should come back” are never addressed, and the After prompt (step 5) leaves both open. That undercuts the example’s own takeaway that nothing should be decided silently.",
+      "severity": "imprecise"
+    },
+    {
+      "where": "lesson.sections[0].reading[2] (AmbiEnt)",
+      "quote": "a set of 1,645 linguist-annotated examples of ambiguous sentences",
+      "correction": "a set of 1,645 linguist-annotated examples, about a third of them ambiguous",
+      "why": "AmbiEnt is made of NLI premise-hypothesis pairs. Only 35.2% of its 1,645 examples are ambiguous (multi-label); the rest are unambiguous controls (Liu et al., 2023, EMNLP). The 32% vs 90% figures are correct.",
+      "severity": "imprecise"
+    },
+    {
+      "where": "lesson.sections[3].reading[1] (structured outputs)",
+      "quote": "so that the result can always be parsed",
+      "correction": "so that the result can be parsed reliably (the documentation notes exceptions, such as refusals and replies cut off at the token limit)",
+      "why": "Anthropic’s Structured outputs page (checked October 12, 2026) says outputs “guarantee schema compliance in most cases, there are scenarios where the output may not match your schema,” naming stop_reason refusal and max_tokens. “Always” overstates the documentation, which breaks the book’s rule against claiming more about a tool than its own docs say.",
+      "severity": "imprecise"
+    },
+    {
+      "where": "lesson.sections[2].reading[4] (Min et al.)",
+      "quote": "tested demonstrations on classification tasks across 12 models",
+      "correction": "tested demonstrations on classification and multiple-choice tasks across 12 models",
+      "why": "The abstract reports random labels “barely hurts performance on a range of classification and multi-choice tasks, consistently over 12 different models including GPT-3.”",
+      "severity": "imprecise"
+    }
+  ],
+  "sourcesChecked": 20,
+  "sourcesWithdrawn": [],
+  "summary": "All Anthropic quotations match the live documentation exactly, and every cited work, number and answer key checks out: MCO (SIS in newton-seconds, “Small Forces” in pound-force seconds, factor 4.45, end-to-end verification), Sclar’s 76 points, AmbiEnt’s 32% vs 90%, ISO 29148’s characteristics, WCAG 4.5:1/3:1 and the 2017 Cucumber Book. The real problems are one internal inconsistency in the 1.1 worked example and in Figure 1 (the “cozy” and reply-format decisions are claimed but never made) and three small overstatements: AmbiEnt is not all ambiguous, structured outputs are not “always” parseable, and Min’s tasks included multiple choice. Lost in the Middle, flagged by the writer, does not appear in this chapter."
+}
