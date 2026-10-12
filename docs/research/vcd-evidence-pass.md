@@ -154,3 +154,32 @@ Not searched this pass, stated from expert knowledge in plan summaries only:
 - Holtzman et al. (2020), Wei et al. (2022), Kojima et al. (2022) and Zheng et al. (2024). These appear in the LLM research brief.
 
 The chapter writers should verify these against primary sources when chapters 2 to 12 are written.
+
+## Plan check (independent fact-check, October 12, 2026)
+
+An independent second agent checked the plan's canon entries and the standards named in the chapter summaries, focusing on the items listed above as unverified. It used about 20 web searches. Khronos, OpenAI, Runway and Google hosts could not be fetched directly: the proxy returned CONNECT 403. Results:
+
+| Item | Result | Basis |
+|---|---|---|
+| WCAG 2.2 SC 2.4.7 Focus Visible; SC 2.5.8 Target Size (Minimum), 24 by 24 CSS px, Level AA | Correct as named | W3C "What's New in WCAG 2.2" and Deque/DAISY excerpts; 2.4.7 from expert knowledge |
+| Fullerton's formal elements (players, objectives, procedures, rules, resources, conflict, boundaries, outcome) | Correct, eight elements | University lecture slides and a thesis citing the 5th ed. (2024) |
+| glTF 2.0: metres, +Y up | Correct (right-handed, Y-up, metres) | Secondary excerpts pointing to the spec's "Coordinate System and Units" section |
+| EBU R 128 −23 LUFS; ITU-R BS.1770-5 (2023); ISO/IEC 12113:2022 | Correct | Earlier pass's primary records; not contradicted |
+| SSML 1.1 (7 Sept 2010); WAI-ARIA 1.2 (6 June 2023) | Correct | Expert knowledge, matching earlier pass |
+| SMPTE ST 12-1 rates | Correct: ST 12-1:2014 covers 23.98, 24, 25, 29.97, 30, 47.95, 48, 50, 59.94, 60 fps (48 and 47.95 added by the 2013 amendment) | GlobalSpec abstract |
+| Thomas & Johnston (1981), Abbeville Press, twelve principles | Correct; role reworded (fix 2) | Expert knowledge |
+| Hunicke, LeBlanc & Zubek (2004), MDA | Authors, year, workshop and AAAI Technical Report WS-04-04 confirmed. Page range "pp. 1–5" not confirmed, so replaced (fix 1) | AAAI workshop page, author CV, grandtextauto |
+| Holtzman et al. (ICLR 2020); Wei et al. and Kojima et al. (NeurIPS 2022) | Correct as named | Brief (arXiv) and expert knowledge |
+| Zheng et al. (2023), LLM-as-a-judge | NeurIPS 2023 Datasets and Benchmarks Track confirmed. The brief's "[Unverified]" venue note can be cleared | proceedings.neurips.cc and neurips.cc poster page |
+| Zheng et al. (2024), personas (plan ch3 §3.1) | Findings of EMNLP 2024; fine as "Zheng and colleagues, 2024" | Brief |
+| Bordwell, Thompson & Smith, 13th ed. | 2024 copyright (released October 2023); 2024 kept | Library catalogs, McGraw Hill listings |
+| Senior, *Mixing Secrets*, 3rd ed. (2025) | Confirmed, Routledge, September 2025 | Routledge author page, booksellers |
+| Care text: prefill and non-default temperature errors on newest Claude models | Consistent with the live Prompting best practices page (prefill unsupported from Claude 4.6) and the LLM brief (temperature, Opus 4.7+) | Live page |
+
+**Plan fixes made** (JSON still valid; `merge_plans.py --write` printed OK):
+
+1. **Canon[6], MDA citation.** Before: "In Proceedings of the AAAI Workshop on Challenges in Game AI (pp. 1–5). AAAI Press." After: "In Challenges in Game AI: Papers from the 2004 AAAI Workshop (Technical Report WS-04-04). AAAI Press." The technical-report number is confirmed; the page range is not.
+2. **Canon[4], Thomas & Johnston role.** Before: "The source of the twelve principles of animation". After: "The book that first set out in print the twelve principles of animation developed at the Disney studio". The principles came from studio practice in the 1930s; the 1981 book published them. It did not originate them.
+3. **Preface paragraph 1.** Before: "an AI trained on their writing understands those names. Much of that writing is public, and models learn from public text, so when you say..." After: "much of their writing is public text of the kind models learn from. So when you say...". The old wording stated what a model "understands" as fact, which breaks convention (c). The rest of the sentence already gave the hedged version.
+
+No other plan detail was found to be wrong. The chapter-level findings are in `ch1.check.json` (12 corrections, no key fixes).

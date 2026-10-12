@@ -1,81 +1,95 @@
 {
-  "method": "Researched and written with web-search verification, revised in a second pass with current vendor documentation; then fact-checked independently by a second agent, which read every string in ch1.json and every <text> label in ch1-fig-1..4.svg, fetched the live Anthropic pages on October 12, 2026 (Prompting best practices, Best practices for Claude Code, Define success criteria and build evaluations, Structured outputs) and compared each quotation word for word, confirmed the OpenAI GPT-5.5 guide wording, the Runway Gen-4 negative-phrasing sentence and the Imagen subject/context/style guidance through repeated web-search excerpts of the vendor pages (those hosts were unreachable directly), confirmed the AmbiEnt figures and the Mars Climate Orbiter findings (NASA's November 10, 1999 release of the board's findings) by search, relied on expert knowledge for ISO/IEC/IEEE 29148:2018, Sclar et al. (ICLR 2024), Min et al. (EMNLP 2022), WCAG 2.2 SC 1.4.3 and the Cucumber Book, checked figure numbering against the app's renderer (figures are numbered in section order), tested each of the 11 Prompt kit templates against the chapter's own advice, and re-solved all 16 multiple-choice keys, both sort exercises (20 items) and the order exercise blind before comparing.",
+  "method": "Researched and written with web-search verification, revised twice (current vendor documentation; evidence-grade audit); then fact-checked independently by a second agent, which read every decoded string in ch1.json and every <text> label in ch1-fig-1..4.svg. On October 12, 2026 it fetched the live Anthropic pages (Prompting best practices through WebFetch; Best practices for Claude Code, Define success criteria and Structured outputs as .md files through curl) and compared every Anthropic quotation and paraphrase word for word. The OpenAI GPT-5.5 guide, the Runway Gen-4 guide and the Google Imagen guide could not be reached (DNS failure, then proxy CONNECT 403), so their wording was confirmed through web-search excerpts of the vendor pages. AmbiEnt (1,645 examples, 32% vs 90%, pp. 790–807), Min et al. (12 models, pp. 11048–11064, DOI) and the Mars Climate Orbiter board's root and contributing causes were confirmed by web search. A search for later formatting-sensitivity work turned up He et al. (2024). ISO/IEC/IEEE 29148:2018, WCAG 2.2 SC 1.4.3, the Scrum Guide 2020, Gherkin keywords, the Cucumber Book (2nd ed., 2017), Sclar et al. (ICLR 2024) and Zamfirescu-Pereira et al. (CHI 2023) were checked from expert knowledge. Formal terms (constraint, non-functional requirement, definition of done, Gherkin, zero/one/few-shot, JSON Schema, acceptance criterion) were compared against standard usage. Each of the 11 Prompt kit templates was tested against the chapter's own advice and the live vendor docs. All 16 multiple-choice keys, both sort exercises (20 items) and the order exercise were solved blind before the keys were compared.",
   "keysChecked": 37,
   "keysAgreed": 37,
   "keyFixes": [],
   "corrections": [
     {
-      "where": "1.3 reading[1], figure cross-reference",
-      "quote": "Most vague words in prompts can be translated (Figure 1.4).",
-      "correction": "Most vague words in prompts can be translated (Figure 1.3).",
-      "why": "The app numbers figures in section order (dr-professor.html figHTML increments figNo per section). The section 1.3 figure (ch1-fig-4.svg, feeling-to-check) renders as Figure 1.3, so the text points to the wrong figure.",
-      "severity": "error"
-    },
-    {
-      "where": "1.4 reading[3], figure cross-reference",
-      "quote": "build, check every acceptance criterion, revise (Figure 1.3).",
-      "correction": "build, check every acceptance criterion, revise (Figure 1.4).",
-      "why": "The section 1.4 figure (ch1-fig-3.svg, the build-check-revise loop) is the fourth figure in section order and renders as Figure 1.4.",
-      "severity": "error"
-    },
-    {
-      "where": "1.2 reading[5], Anthropic attribution",
-      "quote": "Anthropic’s guide notes that recent Claude models respond more strongly to instructions than earlier ones",
-      "correction": "Anthropic’s guide notes that some recent Claude models (it names Claude Opus 4.5 and 4.6) are more responsive to the system prompt than earlier ones",
-      "why": "The live page (checked October 12, 2026) says: “Claude Opus 4.5 and Claude Opus 4.6 are also more responsive to the system prompt than previous models... may now overtrigger.” It names those two models and the system prompt, not recent models and instructions in general. The quoted CRITICAL/MUST wording is verbatim.",
+      "where": "Hook, root-cause framing",
+      "quote": "What failed was the check: nothing in the process compared the delivered file against the spec before it was trusted.",
+      "correction": "The investigation board named the unit error as the root cause and listed several contributing causes, among them the lack of complete end-to-end verification of the navigation software, so the gap that matters here was a missing check.",
+      "why": "The Phase I report (NASA release of November 10, 1999) names the metric-unit error in the “Small Forces” file as the root cause and lists several contributing causes, including inadequate consideration of the mission as a total system, inconsistent communication and training within the project, a navigation team not fully familiar with the spacecraft, and incomplete end-to-end verification. “What failed was the check” presents one contributing cause as the whole explanation, and “nothing in the process” overstates the board's finding. Section 1.2 reading[1] words this more carefully (“Among the contributing causes”).",
       "severity": "imprecise"
     },
     {
-      "where": "1.1 Prompt kit, Decision audit template",
-      "quote": "Do not start the task yet. Read my request below the way a capable stranger would.",
-      "correction": "Before you start the task, read my request below the way a capable stranger would.",
-      "why": "The chapter's own advice (1.1 reading, Anthropic: tell the model what to do instead of what not to do) asks for positive phrasing; the template opens with a prohibition. The rewrite keeps the meaning.",
+      "where": "Hook, scope of the 4.45 error",
+      "quote": "Every firing’s effect was underestimated by a factor of 4.45",
+      "correction": "The effect of the small thruster firings recorded in that file was underestimated by a factor of 4.45",
+      "why": "The “Small Forces” file held impulse data for the small thruster firings (angular momentum desaturation events and similar). It did not cover every engine firing, such as the trajectory correction maneuvers, which were modeled separately. Section 1.2 reading[1] correctly says “thruster firings” without “every”.",
       "severity": "imprecise"
     },
     {
-      "where": "1.2 Prompt kit, Sound-effect brief template",
-      "quote": "Space: dry and close, with no echo or room sound.",
-      "correction": "Space: dry and close, as if recorded right next to the source.",
-      "why": "This line is pasted into a sound generator, the kind of model the chapter warns handles negation badly (1.1 reading on Runway; the template kit's own Negatives to positives tool). Naming “echo” and “room sound” can pull them in. The positive description says the same thing.",
+      "where": "1.2 reading[1], cause of the failure",
+      "quote": "It failed because nothing checked the delivered file against it",
+      "correction": "It failed in part because no step verified the delivered file against it",
+      "why": "The sentence before this one correctly says the missing end-to-end verification was among the contributing causes. This sentence then makes it the only cause, which the board did not find (see the hook correction).",
       "severity": "imprecise"
     },
     {
-      "where": "1.2 practice[2] model answer (Constraints)",
-      "quote": "Under 1 second, dry, one sound only; no music or voice.",
-      "correction": "Under 1 second, dry, a single isolated sound effect on its own.",
-      "why": "The model answer is a prompt for a sound-effect generator but uses a prohibition (“no music or voice”), which contradicts the chapter's positive-phrasing advice for generative media models.",
+      "where": "1.2 reading[5], which models the CRITICAL/MUST note covers",
+      "quote": "some recent Claude models (it names Claude Opus 4.5 and 4.6) are more responsive to the system prompt than earlier ones",
+      "correction": "two Claude models (it names Claude Opus 4.5 and 4.6, both since superseded) are more responsive to the system prompt than the models before them",
+      "why": "The live page, fetched October 12, 2026, says: “Claude Opus 4.5 and Claude Opus 4.6 are also more responsive to the system prompt than previous models.” The quote is accurate, but the page's list of current models now runs to Claude Opus 5.5, Sonnet 5.5, Haiku 5.5, Fable 5.1 and Mythos 5.1. Calling 4.5 and 4.6 “recent” in October 2026 misdates the advice. The same wording (“recent models”) appears in the 1.2 misconception fact and on slide 6, and should be changed to match.",
       "severity": "imprecise"
     },
     {
-      "where": "1.2 practice[2] model answer (Output format)",
-      "quote": "Output format: “WAV, mono, 48 kHz, three variations.”",
-      "correction": "Output format: “WAV, mono, 48 kHz, three variations” (a delivery choice for this project, set in the generator’s export settings or by converting afterwards, since prompt text rarely controls the file format).",
-      "why": "WAV, mono and 48 kHz are reasonable project choices, not universal requirements. Most sound generators set format, sample rate and variation count through controls or plans rather than prompt text (the chapter's own Sound-effect brief note says so). Without that framing the answer suggests typing the format into the prompt will produce it.",
+      "where": "Quiz item 7 (index 6) stem, prefill scope",
+      "quote": "What happens with current Claude models as of October 2026, and what should you use instead?",
+      "correction": "What happens with Claude 4.6 and later models as of October 2026, and what should you use instead?",
+      "why": "The live guide says prefill on the last assistant turn is unsupported “starting with Claude 4.6 models and Claude Mythos Preview” and that “Earlier models continue to support prefills.” Claude Haiku 4.5 is still on the page's list of current models, so “current Claude models” overstates the scope. The key (choice 3) stays correct once the stem is scoped. Slide 9's notes (“no longer work on current Claude models”) need the same fix.",
       "severity": "imprecise"
     },
     {
-      "where": "1.1 worked example, steps[1] (decision list)",
-      "quote": "Where does it run? In which language?",
-      "correction": "Where does it run, and in which language? Who lays out the platforms?",
-      "why": "Step 3 promises to decide or delegate “each one” but then delegates the platform layout, which is not on the list. Figure 1.1 shows eight decisions that include Platform layout and not language. The merged question keeps the count at eight (step 2) and makes the list match both step 3 and Figure 1.1.",
+      "where": "1.4 reading[5], Sclar caveat on newer models",
+      "quote": "newer models may be less sensitive, which nobody has shown in the same way",
+      "correction": "later work suggests larger, newer models are less sensitive but not immune (He and colleagues, 2024, found GPT-4 more robust to prompt templates than GPT-3.5, though results still varied by format)",
+      "why": "This is a universal negative about the literature that cannot be verified, and it is close to contradicted. He et al. (2024, arXiv:2411.10541, “Does Prompt Formatting Have Any Impact on LLM Performance?”) varied prompt templates and found GPT-4 more robust than GPT-3.5 (up to 40% variation for GPT-3.5 on one task), with no format best across the board. If no new citation is wanted, write “how much less sensitive newer models are is not settled”.",
+      "severity": "unverifiable"
+    },
+    {
+      "where": "1.3 reading[2], definition of done",
+      "quote": "the Scrum framework’s term for the checklist that applies to every piece of work, while acceptance criteria belong to one item",
+      "correction": "the Scrum Guide’s term for the formal description of the quality every increment must meet, which teams usually keep as a checklist that applies to every piece of work, while acceptance criteria belong to one item",
+      "why": "The Scrum Guide (Schwaber & Sutherland, 2020) defines it as “a formal description of the state of the Increment when it meets the quality measures required for the product”. “Checklist” is common practitioner shorthand, not the Guide's wording, and “acceptance criteria” is not a Scrum Guide term. The sentence also has no citation, although the plan's reference shelf lists the 2020 Scrum Guide for exactly this, so it should be added to 1.3's sources.",
       "severity": "imprecise"
     },
     {
-      "where": "1.2 reading[6], image spec output format",
-      "quote": "the output format is a PNG at 1920×1080 in four variations",
-      "correction": "the output format is four variations as 16:9 PNGs, resized or upscaled to 1920×1080 if the tool’s native size is smaller",
-      "why": "Few image generators output exactly 1920×1080. Their native 16:9 sizes are usually smaller or different, for example Imagen's 1408×768 and Midjourney's 1456×816 at default settings. As written, the spec asks the tool for a size it usually cannot produce directly. The template note already says size is set through the tool's controls.",
+      "where": "Slide 4 notes, unattributed vendor claim",
+      "quote": "Current models follow your words precisely, so say the action you want and describe what should be present.",
+      "correction": "Anthropic’s guide (October 2026) says its current models follow instructions precisely, so say the action you want and describe what should be present.",
+      "why": "This is vendor guidance (1.1 reading[2] attributes it to Anthropic), but here it is stated as an undated fact about all models. That breaks the book's own convention (b).",
       "severity": "imprecise"
     },
     {
-      "where": "ch1-fig-4.svg, Image row, check column",
-      "quote": "only the 4 palette colors;",
-      "correction": "mostly the 4 palette colors;",
-      "why": "The row is for soft painted title art. A generated painted image always contains blends and anti-aliased edges, so a check that only four colors appear fails for every result. A tolerant check that the dominant colors match the palette is one that can actually pass or fail.",
+      "where": "Overview, claim classification",
+      "quote": "models fill unmade decisions with defaults, often pick one reading of ambiguous words without saying so, follow wording precisely and, in some media, handle prohibitions badly",
+      "correction": "models fill unmade decisions with defaults, often (practitioners report) pick one reading of ambiguous words without saying so, follow wording precisely (Anthropic’s guidance for its models) and, in some media, handle prohibitions badly (as at least one video vendor documents)",
+      "why": "In the body, “picks one reading” is marked as practitioner report, “precise instruction following” is Anthropic's claim about Claude, and the negation problem is Runway's documentation about Gen-4. The overview presents all three as plain facts about models in general, in the same paragraph that promises every claim is marked.",
+      "severity": "imprecise"
+    },
+    {
+      "where": "1.1 misconception fact, opinion stated as fact",
+      "quote": "Capability helps a model carry out a request, not recover the parts you left out.",
+      "correction": "In my experience, capability helps a model carry out a request far more than it helps it recover the parts you left out.",
+      "why": "No cited source supports this. More capable models do infer some unstated intent from context, and vendors describe exactly that, for example Anthropic's guidance on inferring “above and beyond” behavior only when asked. As a flat statement it is opinion, so it needs a marker under convention (c).",
+      "severity": "imprecise"
+    },
+    {
+      "where": "1.4 reading[4], unmarked generalization",
+      "quote": "Testers in every field learn the same lesson: criteria chosen after seeing a result make it too easy to accept whatever came back.",
+      "correction": "Testers and experimenters learn the same lesson, which is why scientists preregister their criteria: criteria chosen after seeing a result make it too easy to accept whatever came back.",
+      "why": "“In every field” is an uncited universal claim. The idea is sound and has an established basis (preregistration, guarding against confirmation bias), so either cite that or mark the sentence as practice.",
+      "severity": "imprecise"
+    },
+    {
+      "where": "1.4 reading[5], “another draw from the same request”",
+      "quote": "so you are mostly asking for another draw from the same request",
+      "correction": "so, in my experience, the model has little more to go on than before",
+      "why": "In a continuing chat the model also sees its failed attempt and your objection, so the request is not literally “the same request”. That differs from regenerating, which the 1.4 misconception fact covers correctly. The sentence is the author's inference stated as fact, and it does not match how chat context works.",
       "severity": "imprecise"
     }
   ],
   "sourcesChecked": 19,
   "sourcesWithdrawn": [],
-  "summary": "Every Anthropic quotation (the brilliant-new-employee framing, golden rule, can-you-suggest example, ellipses example, CRITICAL/MUST, examples wording, prefill 400 on Claude 4.6+, Claude Code verification, interview and clean-session lines) matches the live pages. The OpenAI GPT-5.5, Runway Gen-4 and Imagen claims match vendor-page excerpts, and all 37 keys agree. The fixes are two swapped figure cross-references (1.3 and 1.4), one over-generalized Anthropic attribution, and seven alignment fixes so the templates, model answers, worked-example list and image checks follow the chapter's own positive-phrasing and tool-control advice."
+  "summary": "Every Anthropic quotation (brilliant new employee, golden rule, can-you-suggest, ellipses, examples and 3–5 tags, smoothly flowing prose, prefill 400 from Claude 4.6, CRITICAL/MUST, Claude Code check, evidence, interview, more-than-twice and clean-session lines, F1 0.85) matches the live pages of October 12, 2026; the OpenAI, Runway, Imagen, AmbiEnt, Min and MCO details are confirmed; all 37 keys agree, and the earlier check's ten fixes are all in place. The remaining problems are classification and scope: the hook and 1.2 reduce the Orbiter's several contributing causes to one missing check; the prefill and CRITICAL/MUST notes are scoped to “current” or “recent” models although the October 2026 page lists newer models and Haiku 4.5 still accepts prefill; one universal negative about newer models is contradicted by later work; and a few vendor claims, opinions and the Scrum definition of done appear unattributed, unmarked or uncited."
 }
